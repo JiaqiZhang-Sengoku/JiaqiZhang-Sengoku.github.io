@@ -22,5 +22,3 @@ redirect_from:
 {% include_relative includes/honers.md %}  
 <br>
 
-{% include_relative includes/others.md %}  
-<br>
