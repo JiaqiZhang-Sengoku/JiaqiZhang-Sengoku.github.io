@@ -8,6 +8,9 @@
     <td width="400" style="border: none;">
     <div class="col-sm-5 col-md-4 col-lg-4 col-xl-4 m-auto"><img class="img-pub shadow-pub" src="images/cert02.png" width="400"></div>
     </td>
+    <td width="400" style="border: none;">
+    <div class="col-sm-5 col-md-4 col-lg-4 col-xl-4 m-auto"><img class="img-pub shadow-pub" src="images/cert03.png" width="400"></div>
+    </td>
   </tr>  
   <tr>
     <td width="400" style="border: none;">
@@ -15,7 +18,10 @@
       2024年第六届全球校园人工智能算法精英大赛——算法挑战赛:钢材表面缺陷检测与分割
     </td>
     <td width="400" style="border: none;">
-      Xxxx
+      02
+    </td>
+    <td width="400" style="border: none;">
+      03
     </td>
   </tr>
   
