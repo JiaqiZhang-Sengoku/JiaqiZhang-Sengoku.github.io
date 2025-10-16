@@ -5,7 +5,8 @@
 <div class='paper-box-text' markdown="1">
 [Zero-Shot Medical Image Super-Resolution Using Denoising Diffusion Models with Gradient-Frequency Priors]() \\
 **Jiaqi Zhang**, Yang Yang  
-[**Project**]() 
+<br>
+[Project]() 
   - Xxxx
   - Xxxx
 </div>
