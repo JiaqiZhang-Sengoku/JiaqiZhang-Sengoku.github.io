@@ -88,7 +88,10 @@
 
 <div class="awards-container">
 
-<div class="section-title">🏆 国家级奖项 (18项)</div>
+<div class="section-title" style="font-size: 16px;">
+  🏆 National-level awards (18)
+</div>
+
 
 <div class="awards-grid">
 
@@ -238,7 +241,9 @@
 
 </div>
 
-<div class="section-title">🎖️ 省部级奖项 (24项)</div>
+<div class="section-title" style="font-size: 16px;">
+  🎖️ Provincial and Ministerial Level Awards (24)
+</div>
 
 <div class="awards-grid">
 
