@@ -5,7 +5,7 @@
 [Zero-Shot Medical Image Super-Resolution Using Denoising Diffusion Models with Gradient-Frequency Priors]() \\
 **Jiaqi Zhang**, Guo Yang, Rongrong Gao, Yang Yang*
 <br>
-[Github](https://github.com/JiaqiZhang-Sengoku/DDGF)
+[Code](https://github.com/JiaqiZhang-Sengoku/DDGF)
 </div>
 </div>
 
@@ -14,7 +14,7 @@
 [Image Restoration via Optimizing Fidelity with Diffusion and Gradient Regularization]() \\
 **Jiaqi Zhang**, Yang Yang*
 <br>
-[Github](https://github.com/JiaqiZhang-Sengoku/FDGR)
+[Code](https://github.com/JiaqiZhang-Sengoku/FDGR)
 </div>
 </div>
 
@@ -23,7 +23,7 @@
 [Information-Guided Rebalance for Multimodal Classification]() \\
 **Jiaqi Zhang**, Kai Han*, Zhe Liu*
 <br>
-[Github](https://github.com/JiaqiZhang-Sengoku/IGR)
+[Code](https://github.com/JiaqiZhang-Sengoku/IGR)
 </div>
 </div>
 
@@ -32,6 +32,6 @@
 [HASTNet: A Hierarchical Adaptive Spatial Transformer Network for Cross-Model Generalazation in Medical Image Segmentation]() \\
 **Jiaqi Zhang**, Kai Han, Zhe Liu*
 <br>
-[Github](https://github.com/JiaqiZhang-Sengoku/HASTNet)
+[Code](https://github.com/JiaqiZhang-Sengoku/HASTNet)
 </div>
 </div>
