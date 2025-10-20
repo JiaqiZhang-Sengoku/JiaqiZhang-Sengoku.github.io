@@ -89,7 +89,7 @@
 <div class="awards-container">
 
 <div class="section-title" style="font-size: 16px;">
-  🏆 National-level awards (18)
+  🏆 National Level awards (18)
 </div>
 
 
@@ -242,7 +242,7 @@
 </div>
 
 <div class="section-title" style="font-size: 16px;">
-  🎖️ Provincial and Ministerial Level Awards (24)
+  🎖️ Provincial Level Awards (24)
 </div>
 
 <div class="awards-grid">
@@ -264,7 +264,7 @@
 </div>
 
 <div class="award-card">
-    <img class="award-image" src="images/Award/Sheng_3.png" alt="省奖3">
+    <img class="award-image" src="images/Award/Sheng_3.jpg" alt="省奖3">
     <div class="award-info">
         <div class="award-title">省部级奖项</div>
         <div class="award-date">2024年</div>
@@ -272,7 +272,7 @@
 </div>
 
 <div class="award-card">
-    <img class="award-image" src="images/Award/Sheng_4.png" alt="省奖4">
+    <img class="award-image" src="images/Award/Sheng_4.jpg" alt="省奖4">
     <div class="award-info">
         <div class="award-title">省部级奖项</div>
         <div class="award-date">2024年</div>
@@ -352,7 +352,7 @@
 </div>
 
 <div class="award-card">
-    <img class="award-image" src="images/Award/Sheng_14.png" alt="省奖14">
+    <img class="award-image" src="images/Award/Sheng_14.jpg" alt="省奖14">
     <div class="award-info">
         <div class="award-title">省部级奖项</div>
         <div class="award-date">2024年</div>
@@ -416,7 +416,7 @@
 </div>
 
 <div class="award-card">
-    <img class="award-image" src="images/Award/Sheng_22.png" alt="省奖22">
+    <img class="award-image" src="images/Award/Sheng_22.jpg" alt="省奖22">
     <div class="award-info">
         <div class="award-title">省部级奖项</div>
         <div class="award-date">2024年</div>
