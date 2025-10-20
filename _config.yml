@@ -23,9 +23,9 @@ google_scholar_stats_use_cdn : true
 author:
   name             : "Jiaqi Zhang"
   avatar           : "images/profile.png"
-  bio              : "My research focuses on Computer Graphics, Computer Vision and Image Processing Computational Photography, and Multimodal Foundation Models."
-  location         : "China"
-  employer         : "School of Computer Science and Telecommunication Engineering, Jiangsu University, Zhenjiang, Jiangsu, China"
+  bio              : "My research focuses on Computer Graphics, Computer Vision and Image Processing Computational Photography, and Multimodal Foundation Models. <br>School of Computer Science and Telecommunication Engineering, Jiangsu University"
+  location         : "Jiangsu China"
+  employer         : 
   pubmed           : 
   googlescholar    : #"https://scholar.google.com/citations?user=4FA6C0AAAAAJ"
   email            : "sengokuzjq@gmail.com@gmail.com"
