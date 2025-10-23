@@ -35,3 +35,7 @@
 [Code](https://github.com/JiaqiZhang-Sengoku/HASTNet)
 </div>
 </div>
+
+# 🎖 Academical Services
+Reviewer of ACM Transactions on Knowledge Discovery from Data (TKDD), ICASSP 2026.
+
