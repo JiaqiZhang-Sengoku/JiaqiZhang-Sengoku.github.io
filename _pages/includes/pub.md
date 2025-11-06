@@ -3,7 +3,7 @@
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/Publication/DDGF.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Zero-Shot Medical Image Super-Resolution Using Denoising Diffusion Models with Gradient-Frequency Priors]() <br>
-Biomedical Signal Processing and Control(BSPC) **Under Review**
+Biomedical Signal Processing and Control (BSPC) **Under Review**
 <br>
 **Jiaqi Zhang**, Guo Yang, Rongrong Gao, Yang Yang<sup>†</sup>(Corresponding Author)
 <br>
@@ -15,7 +15,7 @@ Biomedical Signal Processing and Control(BSPC) **Under Review**
 <div class='paper-box-text' markdown="1">
 [Image Restoration via Optimizing Fidelity with Diffusion and Gradient Regularization]()
 <br>
-Engineering Applications of Artificial Intelligence(EAAI) **Under Review**
+Engineering Applications of Artificial Intelligence (EAAI) **Under Review**
 <br>
 **Jiaqi Zhang**, Guo Yang, Zheng Pang, Yao Zhu, Bingbing Gu, Yang Yang<sup>†</sup>(Corresponding Author)
 <br>
@@ -27,7 +27,7 @@ Engineering Applications of Artificial Intelligence(EAAI) **Under Review**
 <div class='paper-box-text' markdown="1">
 [Information-Guided Rebalance for Multimodal Classification]()
 <br>
-International Conference on Acoustics, Speech, and Signal Processing(ICASSP) **Under Review**
+International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2026) **Under Review**
 <br>
 Lingling Yan, Jun Chen, Chongwen Lyu, Qiaoying Teng, **Jiaqi Zhang**, Yan Zhu, Yi Liu, Kai Han<sup>†</sup>(Corresponding Author), Zhe Liu<sup>†</sup>(Corresponding Author)
 <br>
@@ -39,7 +39,7 @@ Lingling Yan, Jun Chen, Chongwen Lyu, Qiaoying Teng, **Jiaqi Zhang**, Yan Zhu, Y
 <div class='paper-box-text' markdown="1">
 [HASTNet: A Hierarchical Adaptive Spatial Transformer Network for Cross-Model Generalazation in Medical Image Segmentation]()
 <br>
-International Conference on Acoustics, Speech, and Signal Processing(ICASSP) **Under Review**
+International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2026) **Under Review**
 <br>
 **Jiaqi Zhang**, Kai Han, Guo Yang, Laihua Yang, Min Wang, Dabao Zu, Chongwen Lyu, Jun Chen<sup>†</sup>(Corresponding Author), Zhe Liu<sup>†</sup>(Corresponding Author)
 <br>
@@ -66,11 +66,11 @@ Guo Yang, **Jiaqi Zhang**, Hu Lu<sup>†</sup>(Corresponding Author)
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/Publication/FreqDMS3.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/Publication/' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Rethinking Imbalance in Radiology Report Generation: A Curriculum Learning Perspective]()
 <br>
-IEEE/CVF Conference on Computer Vision and Pattern Recognition 2026(CVPR) **Under Review**
+IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026) **Under Review**
 <br>
 Chongwen Lyu, Kai Han, Jun Chen, Qiaoying Teng, **Jiaqi Zhang**, Zhe Liu<sup>†</sup>(Corresponding Author)
 <br>
@@ -80,4 +80,3 @@ Chongwen Lyu, Kai Han, Jun Chen, Qiaoying Teng, **Jiaqi Zhang**, Zhe Liu<sup>†
 # 🎖 Academical Services
 
 Reviewer of ACM Transactions on Knowledge Discovery from Data (TKDD), ICASSP 2026.
-
