@@ -1,0 +1,3 @@
+# Hi! I am Jiaqi Zhang (Chinese name: 张家旗)
+I am an undergraduate student from the [School of Computer Science and Communication Engineering](https://cs.ujs.edu.cn/), Jiangsu University, majoring in Computer Science and Technology. My primary research interests include computer graphics, computer vision, and multimodal learning. I am particularly passionate about diffusion models, which I find to be an elegant and creative algorithm. I work closely with [Associate Professor Yang Yang](https://ujsyyoung.github.io/homepage/), [Professor Liu Zhe](https://scholar.google.com/citations?user=k32nt3sAAAAJ&hl=zh-TW), and [Han Kai](https://scholar.google.com/citations?user=QS9gjHUAAAAJ&hl=zh-TW&oi=sra), and I am deeply grateful to them for introducing me to the world of research.
+
