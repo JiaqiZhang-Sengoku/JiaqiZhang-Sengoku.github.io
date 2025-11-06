@@ -1,6 +1,6 @@
 
-# 📝 Publications 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/Publication/DDGF.png' alt="sym" width="100%"></div></div>
+# 📝 Publications <div class='paper-box'>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/DDGF.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Zero-Shot Medical Image Super-Resolution Using Denoising Diffusion Models with Gradient-Frequency Priors]() <br>
 Biomedical Signal Processing and Control (BSPC) **Under Review**
@@ -11,7 +11,7 @@ Biomedical Signal Processing and Control (BSPC) **Under Review**
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/Publication/FDGR.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/FDGR.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Image Restoration via Optimizing Fidelity with Diffusion and Gradient Regularization]()
 <br>
@@ -23,7 +23,7 @@ Engineering Applications of Artificial Intelligence (EAAI) **Under Review**
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/Publication/IGR.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/IGR.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Information-Guided Rebalance for Multimodal Classification]()
 <br>
@@ -35,7 +35,7 @@ Lingling Yan, Jun Chen, Chongwen Lyu, Qiaoying Teng, **Jiaqi Zhang**, Yan Zhu, Y
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/Publication/HASTNet.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/HASTNet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [HASTNet: A Hierarchical Adaptive Spatial Transformer Network for Cross-Model Generalazation in Medical Image Segmentation]()
 <br>
@@ -47,7 +47,7 @@ International Conference on Acoustics, Speech, and Signal Processing (ICASSP 202
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/Publication/PIRP.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/PIRP.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Parameterized Image Restoration with Diffusion and Gradient Priors]()
 <br>
@@ -58,7 +58,7 @@ Yang Yang<sup>†</sup>(Corresponding Author), Xi Zhang, **Jiaqi Zhang**, Lanlin
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/Publication/FreqDMS3.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/FreqDMS3.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Frequency Domain Decoupling-Guided Multidimensional Re-Selection State Space Network for Surface Defect Detection]() \\
 Guo Yang, **Jiaqi Zhang**, Hu Lu<sup>†</sup>(Corresponding Author)
@@ -66,7 +66,7 @@ Guo Yang, **Jiaqi Zhang**, Hu Lu<sup>†</sup>(Corresponding Author)
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/Publication/' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Rethinking Imbalance in Radiology Report Generation: A Curriculum Learning Perspective]()
 <br>
