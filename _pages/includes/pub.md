@@ -57,6 +57,17 @@ Yang Yang<sup>†</sup>(Corresponding Author), Xi Zhang, **Jiaqi Zhang**, Lanlin
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/FD3N.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Frequency Domain Dynamic Disentanglement Network For Modality-agnostic Domain Generalizable Medical Image Segmentation]()
+<br>
+
+<br>
+**Jiaqi Zhang**, Yang Yang<sup>†</sup>(Corresponding Author)
+<br>
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/FreqDMS3.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Frequency Domain Decoupling-Guided Multidimensional Re-Selection State Space Network for Surface Defect Detection]() \\
