@@ -76,6 +76,28 @@ Chongwen Lyu, Kai Han, Jun Chen, Qiaoying Teng, **Jiaqi Zhang**, Zhe Liu<sup>†
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Diffusive Image Restoration with Time Leap andDeviation Prediction Guidance]()
+<br>
+
+<br>
+Yang Yang, Yi Wang, **Jiaqi Zhang**, Lanling Zeng<sup>†</sup>(Corresponding Author)
+<br>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Zero-shot Single Image Super-resolution via Plug-and-play Diffusive Sampling]()
+<br>
+
+<br>
+Yang Yang, Xiaoya Song, **Jiaqi Zhang**, Wei Gao, Lanling Zeng<sup>†</sup>(Corresponding Author)
+<br>
+</div>
+</div>
+
 # 🎖 Academical Services
 
 Reviewer of ACM Transactions on Knowledge Discovery from Data (TKDD), ICASSP 2026.
