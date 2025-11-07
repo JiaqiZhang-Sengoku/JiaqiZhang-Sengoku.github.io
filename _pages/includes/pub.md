@@ -78,7 +78,7 @@ Chongwen Lyu, Kai Han, Jun Chen, Qiaoying Teng, **Jiaqi Zhang**, Zhe Liu<sup>†
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[Diffusive Image Restoration with Time Leap andDeviation Prediction Guidance]()
+[Diffusive Image Restoration with Time Leap and Deviation Prediction Guidance]()
 <br>
 
 <br>
