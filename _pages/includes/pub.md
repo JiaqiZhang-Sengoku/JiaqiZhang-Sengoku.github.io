@@ -76,13 +76,13 @@ Guo Yang, **Jiaqi Zhang**, Hu Lu<sup>†</sup>(Corresponding Author)
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/RRGCL.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Rethinking Imbalance in Radiology Report Generation: A Curriculum Learning Perspective]()
 <br>
 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026) **Under Review**
 <br>
-Chongwen Lyu, Kai Han, Jun Chen, Qiaoying Teng, **Jiaqi Zhang**, Zhe Liu<sup>†</sup>(Corresponding Author)
+Anonymous
 <br>
 </div>
 </div>
