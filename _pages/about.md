@@ -22,4 +22,5 @@ redirect_from:
 {% include_relative includes/honers.md %}  
 <br>
 
-<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=4f5ywz0QCldWdo1HQtndXPkH-6N8fUtAbbXysvqJfaA&cl=ffffff&w=a"></script>
+<div><script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=4f5ywz0QCldWdo1HQtndXPkH-6N8fUtAbbXysvqJfaA&cl=ffffff&w=a"></script>
+</div>
