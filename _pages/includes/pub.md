@@ -104,7 +104,18 @@ Yang Yang, Yi Wang, **Jiaqi Zhang**, Lanling Zeng<sup>†</sup>(Corresponding Au
 <br>
 
 <br>
-Yang Yang, Xiaoya Song, **Jiaqi Zhang**, Wei Gao, Lanling Zeng<sup>†</sup>(Corresponding Author)
+Xiaoya Song, **Jiaqi Zhang**,  Lanling Zeng, Yang Yang<sup>†</sup>(Corresponding Author)
+<br>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[CGR: Calibrating Generative Replay for Exemplar-Free Class-Incremental Learning]()
+<br>
+Multimedia Systems
+<br>
+**Jiaqi Zhang**
 <br>
 </div>
 </div>
