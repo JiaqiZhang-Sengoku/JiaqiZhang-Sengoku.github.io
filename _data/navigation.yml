@@ -1,0 +1,27 @@
+# main links links
+main:
+  - title: "About Me"
+    url: "/#about-me"
+
+  - title: "Research Interests"
+    url: "/#-research-interests"
+
+  - title: "News"
+    url: "/#-news"
+
+  - title: "Publications"
+    url: "/#-publications"
+
+  - title: "Honors"
+    url: "/#-honors"
+
+  - title: "CV"
+    url: "/images/CV.pdf"
+  #- title: "Educations"
+  #  url: "/#-educations"
+
+  #- title: "Invited Talks"
+  #  url: "/#-invited-talks"
+
+  #- title: "Internships"
+  #  url: "/#-internships"
