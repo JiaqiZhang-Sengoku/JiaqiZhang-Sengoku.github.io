@@ -142,7 +142,7 @@ Yang Yang<sup>†</sup>(Corresponding Author), Qi Wu, Jiaqi Zhang, Lanling Zeng
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/AH-Trans-Diff' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/AH-Trans-Diff.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [AH-Trans-Diff: Physics-Consistent Heteroscedastic Latent Diffusion for Uncertainty-Aware MR Restoration and Tumor Segmentation]()
 <br>
