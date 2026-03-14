@@ -10,6 +10,18 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/DG-SCL.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[DG-SCL: Diffusion-Guided Semantic Contrastive Learning for Imbalanced Malicious
+Traffic Detectionl]()
+<br>
+Bingbing Gu, Saihua Cai, Jing Wang, Zhuole Li, Xiheng Jia, **Jiaqi Zhang**
+<br>
+**Jiaqi Zhang**, Anonymous
+<br>
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [OrthoSeg: A Structure-Texture Orthogonal Disentanglement Network for General Medical Segmentation]()
