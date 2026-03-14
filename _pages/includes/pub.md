@@ -1,4 +1,37 @@
 # 📝 Publications
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/A2L.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Breaking Confirmation Bias: Single-Round Active Manifold Calibration for Source-Free Domain Adaptation in Segmentation-Supplementary Material]()
+<br>
+European Conference on Computer Vision (ECCV 2026) **Under Review**
+<br>
+**Jiaqi Zhang**, Anonymous
+<br>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[OrthoSeg: A Structure-Texture Orthogonal Disentanglement Network for General Medical Segmentation]()
+<br>
+Journal of Biomedical and Health Informatics (JBHI) **Under Review**
+<br>
+**Jiaqi Zhang**, Kai Han, Chongwen Lyu
+<br>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Intrinsic Feature Consistency Learning Network for Generalizable Medical Image Segmentation]()
+<br>
+International Conference On Intelligent Computing (ICIC 2026) **Under Review**
+<br>
+**Jiaqi Zhang**, Anonymous
+<br>
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/DDGF.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Zero-Shot Medical Image Super-Resolution Using Denoising Diffusion Models with Gradient-Frequency Priors]() <br>
@@ -34,7 +67,7 @@ Lingling Yan, Jun Chen, Chongwen Lyu, Qiaoying Teng, **Jiaqi Zhang**, Yan Zhu, Y
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/HASTNet.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/HASTNet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [HASTNet: A Hierarchical Adaptive Spatial Transformer Network for Cross-Model Generalazation in Medical Image Segmentation]()
 <br>
@@ -44,7 +77,7 @@ International Conference on Acoustics, Speech, and Signal Processing (ICASSP 202
 <br>
 [Code](https://github.com/JiaqiZhang-Sengoku/HASTNet)
 </div>
-</div>
+</div> -->
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">KBS 2026</div><img src='images/Publication/PIRP.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -76,11 +109,11 @@ Guo Yang, **Jiaqi Zhang**, Hu Lu<sup>†</sup>(Corresponding Author)
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/RRGCL.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026 Finding</div><img src='images/Publication/RRGCL.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Rethinking Imbalance in Radiology Report Generation: A Curriculum Learning Perspective]()
 <br>
-IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026) **Under Review**
+IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026 Finding)
 <br>
 Anonymous
 <br>
@@ -126,7 +159,7 @@ Xingcheng Zhu, Kai Han, **Jiaqi Zhang**, Chongwen Lyu, Jun Chen, Yi Liu, Zhe Liu
 <br>
 Biomedical Signal Processing and Control (BSPC) **Under Review**
 <br>
-Jialiang Qiua, Kai Han, Jun Chen, **Jiaqi Zhang**, Yan Zhu, Chongwen Lyu, Min Xu<sup>†</sup>(Corresponding Author), Zhe Liu<sup>†</sup>(Corresponding Author)
+Jialiang Qiu, Kai Han, Jun Chen, **Jiaqi Zhang**, Yan Zhu, Chongwen Lyu, Min Xu<sup>†</sup>(Corresponding Author), Zhe Liu<sup>†</sup>(Corresponding Author)
 <br>
 </div>
 </div>
