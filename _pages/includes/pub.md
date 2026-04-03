@@ -68,7 +68,7 @@ Zhe Liu, Lingling Yan, Jun Chen, Chongwen Lyu, **Jiaqi Zhang**, Qingli Li, Kai H
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/SCA-Net.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Adaptive Risk-aware Implicit Quantile Network: Towards Safe andEnergy-Efficient USV Navigation in Dynamic Environments]()
 <br>
@@ -124,7 +124,7 @@ Jiaqi Zhang(First Author), Anonymous
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/Mamba.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [PathoMamba: Piecewise-Diffeomorphic Registration via Stiffness-Modulated State Space Dynamics]()
 <br>
