@@ -17,7 +17,7 @@ Kai Han, **Jiaqi Zhang**, Chongwen Lyu, Mengting Li, Jun Chen, Laihua Yang, Yang
 <br>
 IEEE Transactions on Image Processing (TIP) **Under Review**
 <br>
-Yang Yang*<sup>,†</sup>, Pengyu Li*, **Jiaqi Zhang**, Lanling Zeng
+Yang Yang*<sup>†</sup>, Pengyu Li*, **Jiaqi Zhang**, Lanling Zeng
 <br>
 </div>
 </div>
