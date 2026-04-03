@@ -17,7 +17,7 @@ Kai Han, **Jiaqi Zhang**, Chongwen Lyu, Mengting Li, Jun Chen, Laihua Yang, Yang
 <br>
 IEEE Transactions on Image Processing (TIP) **Under Review**
 <br>
-Yang Yang*<sup>†</sup>, Pengyu Li*, **Jiaqi Zhang**, Lanling Zeng
+Yang Yang*<sup>†</sup><sup>*</sup>, Pengyu Li<sup>*</sup>, **Jiaqi Zhang**, Lanling Zeng
 <br>
 </div>
 </div>
@@ -68,7 +68,7 @@ Zhe Liu, Lingling Yan, Jun Chen, Chongwen Lyu, **Jiaqi Zhang**, Qingli Li, Kai H
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/SCA-Net.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Adaptive Risk-aware Implicit Quantile Network: Towards Safe andEnergy-Efficient USV Navigation in Dynamic Environments]()
 <br>
@@ -79,11 +79,11 @@ Wenjing Wang, Jintao Liu, Songyan Wang, Wenlong Meng, **Jiaqi Zhang**
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/SCA-Net.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [SCA-Net: A Scale- and Contrast-Aware Network for Subtle and Low-Contrast Polyp Segmentation]()
 <br>
-Medical & Biological Eng & Computing (MBEC) **Under Review**
+Medical &amp Biological Eng &amp Computing (MBEC) **Under Review**
 <br>
 **Jiaqi Zhang**(Third Author), Anonymous
 <br>
@@ -97,7 +97,7 @@ Traffic Detectionl]()
 <br>
 Journal of Network and Computer Applications **Under Review**
 <br>
-Bingbing Gu*, Saihua <sup>*, †</sup>, Jing Wang, Zhuole Li, Xiheng Jia, **Jiaqi Zhang**
+Bingbing Gu<sup>*</sup>, Saihua Cai<sup>*</sup><sup>†</sup>, Jing Wang, Zhuole Li, Xiheng Jia, **Jiaqi Zhang**
 <br>
 </div>
 </div>
@@ -119,7 +119,7 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
 <br>
 International Conference On Intelligent Computing (ICIC 2026) **Under Review**
 <br>
-Jiaqi Zhang(First Author), Anonymous
+**Jiaqi Zhang**(First Author), Anonymous
 <br>
 </div>
 </div>
