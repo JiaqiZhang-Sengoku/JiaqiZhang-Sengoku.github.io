@@ -17,7 +17,7 @@ Kai Han, **Jiaqi Zhang**, Chongwen Lyu, Mengting Li, Jun Chen, Laihua Yang, Yang
 <br>
 IEEE Transactions on Image Processing (TIP) **Under Review**
 <br>
-Yang Yang<sup>*, †</sup>, Pengyu Li*, **Jiaqi Zhang**, Lanling Zeng
+Yang Yang*<sup>,†</sup>,, Pengyu Li*, **Jiaqi Zhang**, Lanling Zeng
 <br>
 </div>
 </div>
@@ -157,7 +157,6 @@ Anonymous ICME submission
 <br>
 </div>
 </div>
-
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">KBS 2026</div><img src='images/Publication/PIRP.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
