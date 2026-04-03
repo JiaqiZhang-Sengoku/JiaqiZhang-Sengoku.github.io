@@ -16,7 +16,7 @@ main:
     url: "/#-honors"
 
   - title: "CV"
-    url: "/images/CV.pdf"
+    url: "/images/.pdf"
   #- title: "Educations"
   #  url: "/#-educations"
 
