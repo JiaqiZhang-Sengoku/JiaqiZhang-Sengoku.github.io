@@ -1,5 +1,16 @@
 # 📝 Publications
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/AMON-Flow.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[AMON-Flow: Adaptive Momentum and Noise Scaling for Plug-and-Play Image Restoration]()
+<br>
+Journal of Biomedical and Health Informatics (JBHI) **Under Review**
+<br>
+Xiaoyu Gu, **Jiaqi Zhang**, Lanling Zeng, Yang Yang<sup>†</sup>
+<br>
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/OrthoSeg.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Learning Orthogonal Disentanglement for Modality-Agnostic Medical Image Segmentation]()
@@ -83,7 +94,7 @@ Wenjing Wang, Jintao Liu, Songyan Wang, Wenlong Meng, **Jiaqi Zhang**
 <div class='paper-box-text' markdown="1">
 [SCA-Net: A Scale- and Contrast-Aware Network for Subtle and Low-Contrast Polyp Segmentation]()
 <br>
-Medical &amp Biological Eng &amp Computing (MBEC) **Under Review**
+Journal of Imaging Informatics in Medicine (JIIM) **Under Review**
 <br>
 **Jiaqi Zhang**(Third Author), Anonymous
 <br>
