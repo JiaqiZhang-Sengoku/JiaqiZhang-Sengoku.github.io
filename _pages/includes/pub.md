@@ -4,7 +4,7 @@
 <div class='paper-box-text' markdown="1">
 [AMON-Flow: Adaptive Momentum and Noise Scaling for Plug-and-Play Image Restoration]()
 <br>
-Journal of Biomedical and Health Informatics (JBHI) **Under Review**
+
 <br>
 Xiaoyu Gu, **Jiaqi Zhang**, Lanling Zeng, Yang Yang<sup>†</sup>
 <br>
@@ -106,7 +106,7 @@ Journal of Imaging Informatics in Medicine (JIIM) **Under Review**
 [DG-SCL: Diffusion-Guided Semantic Contrastive Learning for Imbalanced Malicious
 Traffic Detectionl]()
 <br>
-Journal of Network and Computer Applications **Under Review**
+Information Sciences **Under Review**
 <br>
 Bingbing Gu<sup>*</sup>, Saihua Cai<sup>*</sup><sup>†</sup>, Jing Wang, Zhuole Li, Xiheng Jia, **Jiaqi Zhang**
 <br>
@@ -179,14 +179,6 @@ Yang Yang<sup>†</sup>(Corresponding Author), Xi Zhang, **Jiaqi Zhang**, Lanlin
 <br>
 </div>
 </div>
-
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/FreqDMS3.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[Frequency Domain Decoupling-Guided Multidimensional Re-Selection State Space Network for Surface Defect Detection]() \\
-Guo Yang, **Jiaqi Zhang**, Hu Lu<sup>†</sup>(Corresponding Author)
-<br>
-</div>
-</div> -->
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026 Finding</div><img src='images/Publication/RRGCL.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
