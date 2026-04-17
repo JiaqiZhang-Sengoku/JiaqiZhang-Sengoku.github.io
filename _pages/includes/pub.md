@@ -1,5 +1,28 @@
 # 📝 Publications
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCES</div><img src='images/Publication/.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Attention-Aware Multi-Scale Segmentation for Industrial Defects with Low Contrast and High Intra-Class Variation]()
+<br>
+International Conference on Computational & Experimental Engineering and Sciences (ICCES)
+<br>
+Xiaocheng, **Jiaqi Zhang**, Jianguo Zhu, Xudong Ren, Kai Han, Zhe Liu<sup>†</sup>
+<br>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCES</div><img src='images/Publication/ProtoDBSeg.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Prototype Guided Dual-Branch Framework for Industrial Surface Defect Segmentation]()
+<br>
+International Conference on Computational & Experimental Engineering and Sciences (ICCES)
+<br>
+**Jiaqi Zhang**, Xinjie Li, Jianguo Zhu, Xudong Ren, Kai Han, Zhe Liu<sup>†</sup>
+<br>
+</div>
+</div>
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/AMON-Flow.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [AMON-Flow: Adaptive Momentum and Noise Scaling for Plug-and-Play Image Restoration]()
@@ -69,8 +92,7 @@ ACM International Conference on Multimedia (ACM MM 2026) **Under Review**
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/NeuroCom.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[A Survey of Deep Learning-based Multimodal Fusion Techniques for
-Medical Classification]()
+[A Survey of Deep Learning-based Multimodal Fusion Techniques for Medical Classification]()
 <br>
 Neurocomputing **Under Review**
 <br>
@@ -120,6 +142,18 @@ Bingbing Gu<sup>*</sup>, Saihua Cai<sup>*</sup><sup>†</sup>, Jing Wang, Zhuole
 European Conference on Computer Vision (ECCV 2026) **Under Review**
 <br>
 **Jiaqi Zhang**(First Author), Anonymous
+<br>
+</div>
+</div>
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/Agent-SAM-I2V.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Agent-SAM-I2V: Self-Correcting Promptable Video Segmentation via Agentic Drift Detection and Multi-Prompt Fusion]()
+<br>
+International Conference On Intelligent Computing (ICIC 2026) **Under Review**
+<br>
+**Jiaqi Zhang**(Second Author), Anonymous
 <br>
 </div>
 </div>
