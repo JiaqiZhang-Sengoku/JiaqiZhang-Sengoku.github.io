@@ -232,39 +232,39 @@
 
 <div class="awards-grid">
 
-<div class="award-card" onclick="openLightbox('images/Soft/Soft_1.png')">
-    <div class="award-image-container">
-        <img class="award-image" src="images/Soft/Soft_1.png" alt="软著1">
-    </div>
-    <div class="award-info">
-        <div class="award-title">基于Mamba网络的钢铁表面瑕疵智能检测系统 V1.0</div>
-        <div class="award-date">2024年</div>
-    </div>
-</div>
-
 <div class="award-card" onclick="openLightbox('images/Soft/Soft_2.png')">
     <div class="award-image-container">
-        <img class="award-image" src="images/Soft/Soft_2.png" alt="软著2">
+        <img class="award-image" src="images/Soft/Soft_2.png" alt="软著1">
     </div>
     <div class="award-info">
         <div class="award-title">高清图像修复增强系统 V1.0</div>
-        <div class="award-date">2024年</div>
+        <div class="award-date">2024年11月29日</div>
     </div>
 </div>
 
 <div class="award-card" onclick="openLightbox('images/Soft/Soft_3.png')">
     <div class="award-image-container">
-        <img class="award-image" src="images/Soft/Soft_3.png" alt="软著3">
+        <img class="award-image" src="images/Soft/Soft_3.png" alt="软著2">
     </div>
     <div class="award-info">
         <div class="award-title">基于深度卷积神经网络的图像破损修复系统 V1.0</div>
-        <div class="award-date">2024年</div>
+        <div class="award-date">2024年12月27日</div>
+    </div>
+</div>
+
+<div class="award-card" onclick="openLightbox('images/Soft/Soft_1.png')">
+    <div class="award-image-container">
+        <img class="award-image" src="images/Soft/Soft_1.png" alt="软著3">
+    </div>
+    <div class="award-info">
+        <div class="award-title">基于Mamba网络的钢铁表面瑕疵智能检测系统 V1.0</div>
+        <div class="award-date">2025年04月27日</div>
     </div>
 </div>
 
 </div>
 
-# 🥇 Honors
+
 
 <style>
 .awards-container {
@@ -352,6 +352,8 @@
 }
 </style>
 
+# 🥇 Honors
+
 <div class="awards-container">
 
 <div class="section-title" style="font-size: 16px;">
@@ -364,16 +366,18 @@
 <div class="award-card">
     <img class="award-image" src="images/Award/Guo_1.png" alt="国奖1">
     <div class="award-info">
-        <div class="award-title">国家级奖项</div>
-        <div class="award-date">2024年</div>
+        <div class="award-title">第六届全球校园人工智能算法精英大赛-算法专项赛-算法巅峰赛<br>
+        国家级二等奖</div>
+        <div class="award-date">2024年12月</div>
     </div>
 </div>
 
 <div class="award-card">
     <img class="award-image" src="images/Award/Guo_2.png" alt="国奖2">
     <div class="award-info">
-        <div class="award-title">国家级奖项</div>
-        <div class="award-date">2024年</div>
+        <div class="award-title">第六届全球校园人工智能算法精英大赛-算法挑战赛-钢材表面缺陷检测与分割<br>
+        国家级三等奖</div>
+        <div class="award-date">2024年11月</div>
     </div>
 </div>
 
