@@ -40,14 +40,74 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
+.hero-card {
+    background: linear-gradient(135deg, #f8fbff 0%, #eef4ff 100%);
+    border: 1px solid #dbe7ff;
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    margin: 1.2rem 0 2rem 0;
+    box-shadow: 0 10px 24px rgba(0, 54, 159, 0.08);
+}
+
+.hero-kicker {
+    display: inline-block;
+    margin-bottom: 0.6rem;
+    font-size: 0.82rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #2f5fce;
+    font-weight: 700;
+}
+
+.hero-title {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    margin: 0.5rem 0 0;
+    color: #3f4d63;
+    font-weight: 600;
+}
+
+.hero-description {
+    margin: 1rem 0 0;
+    max-width: 760px;
+    color: #36455b;
+}
+
+.hero-actions {
+    margin-top: 1.2rem;
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.section-card {
+    background: #ffffff;
+    border: 1px solid #e9eef7;
+    border-radius: 14px;
+    padding: 1.2rem;
+    margin: 0 0 1.2rem 0;
+    box-shadow: 0 6px 16px rgba(16, 24, 40, 0.05);
+}
+
+.section-note {
+    color: #5b6474;
+    margin: 0.2rem 0 0.5rem 0;
+    font-size: 0.95rem;
+}
+
 .paper-box {
     display: flex;
     justify-content: left;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    border-bottom: 1px #efefef solid;
+    border-bottom: 1px #eef1f5 solid;
     padding: 2em 0 2em 0;
+    gap: 0.8rem;
     
 
     .paper-box-image{
@@ -57,7 +117,8 @@
         order: 2;
         img {
             max-width: 400px;
-            box-shadow: 3px 3px 6px #888;
+            border-radius: 12px;
+            box-shadow: 0 8px 18px rgba(15, 23, 42, 0.18);
             object-fit: cover;
         }
     }
@@ -65,6 +126,7 @@
     .paper-box-text{
         max-width: 100%;
         order: 1;
+        line-height: 1.65;
     }
     
     @include breakpoint($medium) {
@@ -104,6 +166,22 @@ h1:before, .anchor:before {
     margin-top: .5em;
     margin-left: -.5em;
     color: white;
-    background-color: #00369f;
+    background-color: #2152ba;
     font-size: .8em;
+    border-radius: 999px;
+    box-shadow: 0 4px 12px rgba(0, 54, 159, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+    .hero-card {
+        padding: 1.4rem 1rem;
+    }
+
+    .hero-title {
+        font-size: 1.65rem;
+    }
+
+    .section-card {
+        padding: 0.9rem;
+    }
 }

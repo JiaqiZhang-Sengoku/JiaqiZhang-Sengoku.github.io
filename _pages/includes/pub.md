@@ -1,4 +1,7 @@
 # 📝 Publications
+<p class="section-note"><sup>†</sup> Corresponding Author, <sup>*</sup> Equal Contribution</p>
+<p class="section-note">Representative and recent works are listed below.</p>
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCES</div><img src='images/Publication/.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -300,7 +303,7 @@ Engineering Applications of Artificial Intelligence (EAAI) **Under Review**
 [Zero-Shot Medical Image Super-Resolution Using Denoising Diffusion Models with Gradient-Frequency Priors]() <br>
 Biomedical Signal Processing and Control (BSPC) **Under Review**
 <br>
-**Jiaqi Zhang**, Guo Yang, Rongrong Gao, Yang Yang<sup>†</sup>(Corresponding Author)
+**Jiaqi Zhang**, Guo Yang, Rongrong Gao, Yang Yang<sup>†</sup>
 <br>
 [Code](https://github.com/JiaqiZhang-Sengoku/DDGF)
 </div>
@@ -321,6 +324,6 @@ Reviewer of ACM Transactions on Knowledge Discovery from Data (TKDD), ICASSP 202
     <strong>Insightful Vision: An Intelligent Healthcare System Based on Fundus Image Recognition</strong><br>
     Team Leader | Dec 2024 – May 2025<br>
     <em>Achievements:</em> First Prize in the National Finals of the China Robotics and Artificial Intelligence Competition; Third Prize in the China College Students Service Outsourcing Innovation and Entrepreneurship Competition; Third Prize in the Global Campus Artificial Intelligence Algorithm Elite Competition; One software copyright registered.<br>
-    <em>Description:</em> 
+    <em>Description:</em> End-to-end intelligent screening workflow for fundus images, including data curation, classification, and result visualization.
   </div>
 </div>

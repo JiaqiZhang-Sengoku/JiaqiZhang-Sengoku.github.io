@@ -9,18 +9,23 @@ redirect_from:
 ---
 
 <span class='anchor' id='about-me'></span>
-<br><br>
-{% include_relative includes/intro.md %}  
-<br>
+{% include_relative includes/homepage.md %}
 
+<section class="section-card">
+{% include_relative includes/intro.md %}
+</section>
+
+<section class="section-card">
 {% include_relative includes/news.md %}  
-<br>
+</section>
 
+<section class="section-card">
 {% include_relative includes/pub.md %}  
-<br>
+</section>
 
+<section class="section-card">
 {% include_relative includes/honers.md %}  
-<br>
+</section>
 
 <div><script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=4f5ywz0QCldWdo1HQtndXPkH-6N8fUtAbbXysvqJfaA&cl=ffffff&w=a"></script>
 </div>
