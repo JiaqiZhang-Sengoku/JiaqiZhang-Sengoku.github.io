@@ -367,7 +367,7 @@
     <img class="award-image" src="images/Award/Guo_1.png" alt="国奖1">
     <div class="award-info">
         <div class="award-title">第六届全球校园人工智能算法精英大赛-算法专项赛-算法巅峰赛<br>
-        国家级二等奖</div>
+        **国家级二等奖**</div>
         <div class="award-date">2024年12月</div>
     </div>
 </div>
@@ -376,7 +376,7 @@
     <img class="award-image" src="images/Award/Guo_2.png" alt="国奖2">
     <div class="award-info">
         <div class="award-title">第六届全球校园人工智能算法精英大赛-算法挑战赛-钢材表面缺陷检测与分割<br>
-        国家级三等奖</div>
+        **国家级三等奖**</div>
         <div class="award-date">2024年11月</div>
     </div>
 </div>
