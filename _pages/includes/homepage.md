@@ -10,8 +10,8 @@
     industry and medicine.
   </p>
   <div class="hero-actions">
-    <a class="btn btn--primary" href="https://scholar.google.com/citations?user=4FA6C0AAAAAJ">Google Scholar</a>
-    <a class="btn btn--inverse" href="https://dblp.org/pid/75/6568-6.html">DBLP</a>
+    <a class="btn btn--primary" href="https://scholar.google.com/citations?user=WylY07wAAAAJ">Google Scholar</a>
+    <!-- <a class="btn btn--inverse" href="https://dblp.org/pid/75/6568-6.html">DBLP</a> -->
     <a class="btn btn--info" href="mailto:sengokuzjq@gmail.com">Email</a>
   </div>
 </section>
