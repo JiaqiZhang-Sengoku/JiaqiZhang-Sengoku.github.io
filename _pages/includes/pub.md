@@ -1,7 +1,5 @@
 # 📝 Publications
 <p class="section-note"><sup>†</sup> Corresponding Author, <sup>*</sup> Equal Contribution</p>
-<p class="section-note">Representative and recent works are listed below.</p>
-
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCES</div><img src='images/Publication/.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
