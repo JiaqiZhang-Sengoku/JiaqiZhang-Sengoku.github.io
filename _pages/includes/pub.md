@@ -89,6 +89,7 @@ ACM International Conference on Multimedia (ACM MM 2026) **Under Review**
 <br>
 **Jiaqi Zhang**(First Author), Anonymous
 <br>
+[Paper](/Paper/DynKD_Paper.pdf)<br>
 </div>
 </div>
 
