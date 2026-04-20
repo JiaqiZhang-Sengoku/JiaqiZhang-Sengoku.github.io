@@ -253,17 +253,6 @@ Xiaoya Song, **Jiaqi Zhang**, Lanling Zeng, Yang Yang<sup>†</sup>(Correspondin
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Multimedia Systems</div><img src='images/Publication/CGR.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[CGR: Calibrating Generative Replay for Exemplar-Free Class-Incremental Learning]()
-<br>
-Multimedia Systems (2026)
-<br>
-Xingcheng Zhu, Kai Han, **Jiaqi Zhang**, Chongwen Lyu, Jun Chen, Yi Liu, Zhe Liu<sup>†</sup>(Corresponding Author)
-<br>
-</div>
-</div>
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/LR.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Laplacian Regularization for Edge-preserving Image Smoothing]()
