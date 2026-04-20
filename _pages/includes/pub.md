@@ -147,7 +147,7 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
 <br>
 **Jiaqi Zhang**(First Author), Anonymous
 <br>
-[Paper](/Paper/A2L_Paper.pdf) | [Supplementary Material](/Paper/A2L_Supplementary_Material.pdf)<br>
+[Paper](/Paper/A2L_Paper.pdf) | [Supplementary Material](/Paper/A2L_Supplementary_Meterial.pdf)<br>
 </div>
 </div>
 
