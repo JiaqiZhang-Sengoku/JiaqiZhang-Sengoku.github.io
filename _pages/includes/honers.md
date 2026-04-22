@@ -357,7 +357,7 @@
 <div class="awards-container">
 
 <div class="section-title" style="font-size: 16px;">
-  🏆 National Level awards (24)
+  🏆 National Level awards (21)
 </div>
 
 

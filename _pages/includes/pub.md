@@ -313,9 +313,17 @@ Reviewer of ACM Transactions on Knowledge Discovery from Data (TKDD), ICASSP 202
     </div>
   </div>
   <div class="paper-box-text">
-    <strong>Insightful Vision: An Intelligent Healthcare System Based on Fundus Image Recognition</strong><br>
-    Team Leader | Dec 2024 – May 2025<br>
-    <em>Achievements:</em> First Prize in the National Finals of the China Robotics and Artificial Intelligence Competition; Third Prize in the China College Students Service Outsourcing Innovation and Entrepreneurship Competition; Third Prize in the Global Campus Artificial Intelligence Algorithm Elite Competition; One software copyright registered.<br>
-    <em>Description:</em> End-to-end intelligent screening workflow for fundus images, including data curation, classification, and result visualization.
+    <strong>Insightful Vision: 基于增强-恢复-识别的智能眼底疾病医疗系统</strong><br>
+    项目负责人 | 2024年12月 – 2025年08月<br>
+    <em>项目简介:</em><br>
+    针对临床中低质量的眼底图像，我们首先采用IM-LIME双目亮度增强算法优化对比度，并结合扩散模型与变分自编码器进行保真修复，确保诊断数据的可靠性。在识别环节，系统通过自主研发的Oception双分支架构，深度聚合左右眼跨眼特征与多尺度信息，实现对青光眼、白内障等8种眼疾的精准多标签分类。最后，系统接入多模态大模型，将分类特征转化为符合医疗规范的结构化诊断报告，实现了从影像到诊断反馈的流程闭环。<br>
+    <em>项目成果: </em><br>
+    第二十七届中国机器人及人工智能大赛-人工智能创新赛：国家级一等奖 <br>
+    第六届全球校园人工智能算法精英大赛-专项赛数码艺术-创新创业项：国家级三等奖 <br>
+    第七届全球校园人工智能算法精英大赛-算法创新赛-AI+应用创新-新医科：省级优秀奖 <br>
+    第二十七届中国机器人及人工智能大赛-人工智能创新赛：省级二等奖 <br>
+    第十六届中国大学生服务外包创新创业大赛东部区域赛-企业命题类：省级三等奖 <br>
+    第六届全球校园人工智能算法精英大赛-专项赛数码艺术-创新创业项省级二等奖 <br>
+    受理一项软件著作权
   </div>
 </div>
