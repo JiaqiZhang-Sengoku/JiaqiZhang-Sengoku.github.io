@@ -41,7 +41,14 @@
 @import "print";
 
 html, body {
-    font-family: Constantia, "Times New Roman", Georgia, serif;
+    font-family: Constantia, "Times New Roman", Georgia, serif !important;
+}
+
+body, p, li, a, span, div, button, input, textarea, select, option, label, th, td,
+h1, h2, h3, h4, h5, h6, strong, em, small, blockquote, figcaption, figcaption *,
+.paper-box, .paper-box *, .award-card, .award-card *, .award-title, .award-date,
+.section-title, .section-note, .honors-title, .honor-name, .honor-date {
+    font-family: Constantia, "Times New Roman", Georgia, serif !important;
 }
 
 .hero-card {
