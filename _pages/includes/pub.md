@@ -230,6 +230,7 @@ Knowledge-Based Systems (2026)
 <br>
 Yang Yang<sup>†</sup>(Corresponding Author), Xi Zhang, **Jiaqi Zhang**, Lanling Zeng
 <br>
+[Paper](https://www.sciencedirect.com/science/article/abs/pii/S0950705126002303)
 </div>
 </div>
 
