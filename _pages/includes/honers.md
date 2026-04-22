@@ -1,168 +1,359 @@
 <span class='anchor' id='honors'></span>
+# 📜 Software Copyrights
 
-<div class="honors-page">
-  <style>
-    .honors-page {
-      --honor-accent: #667eea;
-      --honor-bg: #ffffff;
-      --honor-text: #2b2b2b;
-      --honor-muted: #7a7a7a;
-      --honor-shadow: 0 8px 24px rgba(20, 32, 70, 0.08);
-      max-width: 1400px;
-      margin: 24px auto 40px;
+<style>
+.awards-container {
+    max-width: 1400px;
+    margin: 30px auto;
+}
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 30px 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #667eea;
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.award-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.award-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.award-image-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.award-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.award-info {
+    padding: 12px;
+}
+
+.award-title {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 6px;
+    min-height: 40px;
+}
+
+.award-date {
+    font-size: 11px;
+    color: #888;
+    font-weight: 500;
+}
+
+/* 灯箱样式 */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
     }
-
-    .honors-header {
-      margin: 8px 0 22px;
-      padding-bottom: 12px;
-      border-bottom: 3px solid var(--honor-accent);
+    to {
+        opacity: 1;
     }
+}
 
-    .honors-title {
-      margin: 0;
-      font-size: 26px;
-      font-weight: 800;
-      line-height: 1.2;
-      color: var(--honor-text);
+.lightbox-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
     }
-
-    .honors-subtitle {
-      margin: 10px 0 0;
-      font-size: 14px;
-      color: var(--honor-muted);
+    to {
+        transform: scale(1);
+        opacity: 1;
     }
+}
 
-    .honors-grid {
-      display: grid;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-      gap: 20px;
+.lightbox-image {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.1);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.lightbox-close:hover {
+    transform: scale(1.2);
+}
+
+.lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 20px;
+    width: 60px;
+    height: 60px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.lightbox-nav:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.lightbox-prev {
+    left: 20px;
+}
+
+.lightbox-next {
+    right: 20px;
+}
+
+.lightbox-caption {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+}
+
+@media (max-width: 1200px) {
+    .awards-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
     }
+}
 
-    .honor-card {
-      background: var(--honor-bg);
-      border-radius: 14px;
-      overflow: hidden;
-      box-shadow: var(--honor-shadow);
-      border: 1px solid rgba(102, 126, 234, 0.08);
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
+@media (max-width: 900px) {
+    .awards-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
     }
+}
 
-    .honor-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 14px 34px rgba(20, 32, 70, 0.14);
+@media (max-width: 600px) {
+    .awards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
     }
-
-    .honor-image-wrap {
-      position: relative;
-      aspect-ratio: 4 / 3;
-      overflow: hidden;
-      background: #f6f8fc;
+    
+    .award-image-container {
+        height: 150px;
     }
-
-    .honor-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.35s ease;
+    
+    .lightbox-nav {
+        font-size: 32px;
+        padding: 10px;
+        width: 45px;
+        height: 45px;
     }
-
-    .honor-card:hover .honor-image {
-      transform: scale(1.03);
+    
+    .lightbox-prev {
+        left: 10px;
     }
-
-    .honor-body {
-      padding: 14px 14px 16px;
+    
+    .lightbox-next {
+        right: 10px;
     }
+}
+</style>
 
-    .honor-name {
-      margin: 0 0 8px;
-      font-size: 13px;
-      line-height: 1.55;
-      color: var(--honor-text);
-      min-height: 42px;
-    }
+<div class="awards-container" id="Software Copyrights">
 
-    .honor-date {
-      display: inline-block;
-      font-size: 12px;
-      color: var(--honor-muted);
-      font-weight: 600;
-      padding: 4px 10px;
-      border-radius: 999px;
-      background: #f4f7ff;
-    }
+<div class="awards-grid">
 
-    .honor-group {
-      margin-top: 36px;
-    }
-
-    .honor-group-title {
-      margin: 0 0 16px;
-      padding: 10px 14px;
-      font-size: 16px;
-      font-weight: 700;
-      color: var(--honor-text);
-      background: linear-gradient(90deg, rgba(102,126,234,0.12), rgba(102,126,234,0.03));
-      border-left: 4px solid var(--honor-accent);
-      border-radius: 10px;
-    }
-
-    @media (max-width: 1200px) {
-      .honors-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-    }
-
-    @media (max-width: 900px) {
-      .honors-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    }
-
-    @media (max-width: 600px) {
-      .honors-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
-      .honors-title { font-size: 22px; }
-      .honor-body { padding: 12px; }
-    }
-  </style>
-
-  <div class="honors-header">
-    <h1 class="honors-title">📜 Software Copyrights</h1>
-    <p class="honors-subtitle">我参与或主导的软著成果展示</p>
-  </div>
-
-  <div class="honors-grid">
-    <div class="honor-card" onclick="openLightbox('images/Soft/Soft_2.png')">
-      <div class="honor-image-wrap">
-        <img class="honor-image" src="images/Soft/Soft_2.png" alt="高清图像修复增强系统 V1.0">
-      </div>
-      <div class="honor-body">
-        <div class="honor-name">高清图像修复增强系统 V1.0</div>
-        <div class="honor-date">2024年11月29日</div>
-      </div>
+<div class="award-card" onclick="openLightbox('images/Soft/Soft_2.png')">
+    <div class="award-image-container">
+        <img class="award-image" src="images/Soft/Soft_2.png" alt="软著1">
     </div>
-
-    <div class="honor-card" onclick="openLightbox('images/Soft/Soft_3.png')">
-      <div class="honor-image-wrap">
-        <img class="honor-image" src="images/Soft/Soft_3.png" alt="基于深度卷积神经网络的图像破损修复系统 V1.0">
-      </div>
-      <div class="honor-body">
-        <div class="honor-name">基于深度卷积神经网络的图像破损修复系统 V1.0</div>
-        <div class="honor-date">2024年12月27日</div>
-      </div>
+    <div class="award-info">
+        <div class="award-title">高清图像修复增强系统 V1.0</div>
+        <div class="award-date">2024年11月29日</div>
     </div>
+</div>
 
-    <div class="honor-card" onclick="openLightbox('images/Soft/Soft_1.png')">
-      <div class="honor-image-wrap">
-        <img class="honor-image" src="images/Soft/Soft_1.png" alt="基于Mamba网络的钢铁表面瑕疵智能检测系统 V1.0">
-      </div>
-      <div class="honor-body">
-        <div class="honor-name">基于Mamba网络的钢铁表面瑕疵智能检测系统 V1.0</div>
-        <div class="honor-date">2025年04月27日</div>
-      </div>
+<div class="award-card" onclick="openLightbox('images/Soft/Soft_3.png')">
+    <div class="award-image-container">
+        <img class="award-image" src="images/Soft/Soft_3.png" alt="软著2">
     </div>
-  </div>
+    <div class="award-info">
+        <div class="award-title">基于深度卷积神经网络的图像破损修复系统 V1.0</div>
+        <div class="award-date">2024年12月27日</div>
+    </div>
+</div>
 
-  <div class="honor-group">
-    <h2 class="honor-group-title">🏆 National Level Awards</h2>
+<div class="award-card" onclick="openLightbox('images/Soft/Soft_1.png')">
+    <div class="award-image-container">
+        <img class="award-image" src="images/Soft/Soft_1.png" alt="软著3">
+    </div>
+    <div class="award-info">
+        <div class="award-title">基于Mamba网络的钢铁表面瑕疵智能检测系统 V1.0</div>
+        <div class="award-date">2025年04月27日</div>
+    </div>
+</div>
 
+</div>
+
+
+
+<style>
+.awards-container {
+    max-width: 1400px;
+    margin: 30px auto;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 30px 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #667eea;
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.award-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.award-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.award-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.award-info {
+    padding: 12px;
+}
+
+.award-title {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 6px;
+    min-height: 40px;
+}
+
+.award-date {
+    font-size: 11px;
+    color: #888;
+    font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+    .awards-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    .awards-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .awards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    
+    .award-image {
+        height: 150px;
+    }
+}
+</style>
+
+<h1>🥇 Honors</h1>
 
 <div class="awards-container">
 
@@ -353,7 +544,6 @@
         <div class="award-date">2024年06月</div>
     </div>
 
-  </div>
 </div>
 
 </div>
