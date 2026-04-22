@@ -1,8 +1,2 @@
 # Hi! I am Jiaqi Zhang (Chinese name: 张家旗)
-I am an undergraduate student from the [School of Computer Science and Communication Engineering](https://cs.ujs.edu.cn/), Jiangsu University, majoring in Computer Science and Technology.
-
-My research focuses on computer graphics, computer vision, and multimodal learning. I am especially interested in building robust image restoration and segmentation methods that can transfer to real-world industrial and medical scenarios.
-
-
-<!-- I am particularly passionate about diffusion models, which I find to be an elegant and creative algorithm. I work closely with [Associate Professor Yang Yang](https://ujsyyoung.github.io/homepage/), [Professor Liu Zhe](https://scholar.google.com/citations?user=k32nt3sAAAAJ&hl=zh-TW), and [Han Kai](https://scholar.google.com/citations?user=QS9gjHUAAAAJ&hl=zh-TW&oi=sra), and I am deeply grateful to them for introducing me to the world of research. -->
-
+I am an undergraduate student from the [School of Computer Science and Communication Engineering](https://cs.ujs.edu.cn/), Jiangsu University, majoring in Computer Science and Technology. During my undergraduate studies, my academic advisor was [Associate Professor Yang Yang](https://ujsyyoung.github.io/homepage/), [Professor Zhe Liu](https://scholar.google.com/citations?user=k32nt3sAAAAJ&hl=zh-TW), and [Kai Han](https://scholar.google.com/citations?user=QS9gjHUAAAAJ&hl=zh-TW&oi=sra). I also benefited from the guidance of [Professor Yang Chen](https://chenyang10.github.io/chengyang/) and [Professor Guangquan Zhou](https://scholar.google.com/citations?user=HTWQB-UAAAAJ&hl=zh-CN&oi=sra). I am deeply grateful to them for introducing me to the world of research.
