@@ -4,15 +4,16 @@
 <style>
 .awards-container {
     max-width: 1400px;
-    margin: 30px auto;
+    margin: 28px auto 36px;
 }
 .section-title {
     font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    margin: 30px 0 20px 0;
+    font-weight: 700;
+    color: #2b2b2b;
+    margin: 30px 0 18px 0;
     padding-bottom: 10px;
     border-bottom: 3px solid #667eea;
+    letter-spacing: 0.2px;
 }
 
 .awards-grid {
@@ -23,17 +24,18 @@
 }
 
 .award-card {
-    background: white;
-    border-radius: 10px;
+    background: linear-gradient(180deg, #ffffff 0%, #fbfcff 100%);
+    border-radius: 14px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
     cursor: pointer;
+    border: 1px solid rgba(102, 126, 234, 0.08);
 }
 
 .award-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.16);
 }
 
 .award-image-container {
@@ -41,6 +43,7 @@
     height: 200px;
     overflow: hidden;
     position: relative;
+    background: #f6f8fc;
 }
 
 .award-image {
@@ -48,24 +51,29 @@
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: transform 0.35s ease;
+}
+
+.award-card:hover .award-image {
+    transform: scale(1.03);
 }
 
 .award-info {
-    padding: 12px;
+    padding: 14px 14px 12px;
 }
 
 .award-title {
     font-size: 13px;
-    line-height: 1.5;
+    line-height: 1.6;
     color: #333;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     min-height: 40px;
 }
 
 .award-date {
     font-size: 11px;
-    color: #888;
-    font-weight: 500;
+    color: #7f8794;
+    font-weight: 600;
 }
 
 /* 灯箱样式 */
@@ -76,11 +84,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.88);
     z-index: 9999;
     justify-content: center;
     align-items: center;
-    animation: fadeIn 0.3s ease;
+    animation: fadeIn 0.25s ease;
+    backdrop-filter: blur(2px);
 }
 
 .lightbox.active {
@@ -100,12 +109,12 @@
     position: relative;
     max-width: 90%;
     max-height: 90%;
-    animation: zoomIn 0.3s ease;
+    animation: zoomIn 0.25s ease;
 }
 
 @keyframes zoomIn {
     from {
-        transform: scale(0.8);
+        transform: scale(0.85);
         opacity: 0;
     }
     to {
@@ -118,13 +127,13 @@
     max-width: 100%;
     max-height: 90vh;
     object-fit: contain;
-    border-radius: 8px;
-    box-shadow: 0 0 50px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 12px 40px rgba(255, 255, 255, 0.08);
 }
 
 .lightbox-close {
     position: absolute;
-    top: -40px;
+    top: -42px;
     right: 0;
     color: white;
     font-size: 36px;
@@ -137,11 +146,13 @@
     height: 40px;
     line-height: 40px;
     text-align: center;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    opacity: 0.9;
 }
 
 .lightbox-close:hover {
-    transform: scale(1.2);
+    transform: scale(1.15);
+    opacity: 1;
 }
 
 .lightbox-nav {
@@ -152,21 +163,22 @@
     font-size: 48px;
     font-weight: bold;
     cursor: pointer;
-    background: rgba(255, 255, 255, 0.1);
-    border: none;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     padding: 20px;
     width: 60px;
     height: 60px;
     line-height: 20px;
     text-align: center;
     border-radius: 50%;
-    transition: all 0.3s ease;
+    transition: all 0.25s ease;
     user-select: none;
+    backdrop-filter: blur(4px);
 }
 
 .lightbox-nav:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateY(-50%) scale(1.1);
+    background: rgba(255, 255, 255, 0.18);
+    transform: translateY(-50%) scale(1.08);
 }
 
 .lightbox-prev {
@@ -186,6 +198,7 @@
     text-align: center;
     font-size: 16px;
     padding: 10px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
 }
 
 @media (max-width: 1200px) {
@@ -210,6 +223,19 @@
     
     .award-image-container {
         height: 150px;
+    }
+    
+    .section-title {
+        font-size: 20px;
+        margin: 24px 0 14px 0;
+    }
+    
+    .award-card {
+        border-radius: 12px;
+    }
+    
+    .award-info {
+        padding: 12px 12px 10px;
     }
     
     .lightbox-nav {
