@@ -53,7 +53,7 @@ International Conference on Computational & Experimental Engineering and Science
 <br>
 
 <br>
-Xiaoyu Gu, **Jiaqi Zhang**, Lanling Zeng, Yang Yang<sup>†</sup>
+Xiaoyu Gu, **Jiaqi Zhang**, Lanling Zeng, Yang Yang <sup>†</sup>
 <br>
 </div>
 </div>
@@ -64,7 +64,7 @@ Xiaoyu Gu, **Jiaqi Zhang**, Lanling Zeng, Yang Yang<sup>†</sup>
 <br>
 Journal of Biomedical and Health Informatics (JBHI) **Under Review**
 <br>
-Kai Han, **Jiaqi Zhang**, Chongwen Lyu, Mengting Li, Jun Chen, Laihua Yang, Yang Chen<sup>†</sup>, Zhe Liu<sup>†</sup>
+Kai Han, **Jiaqi Zhang**, Chongwen Lyu, Mengting Li, Jun Chen, Laihua Yang, Yang Chen <sup>†</sup>, Zhe Liu <sup>†</sup>
 <br>
 [Paper](/Paper/OrthoSeg_Paper.pdf)<br>
 </div>
@@ -76,7 +76,7 @@ Kai Han, **Jiaqi Zhang**, Chongwen Lyu, Mengting Li, Jun Chen, Laihua Yang, Yang
 <br>
 IEEE Transactions on Image Processing (TIP) **Under Review**
 <br>
-Yang Yang*<sup>†</sup><sup>*</sup>, Pengyu Li<sup>*</sup>, **Jiaqi Zhang**, Lanling Zeng
+Yang Yang <sup>†</sup>, <sup>*</sup>, Pengyu Li <sup>*</sup>, **Jiaqi Zhang**, Lanling Zeng
 <br>
 </div>
 </div>
@@ -123,7 +123,7 @@ ACM International Conference on Multimedia (ACM MM 2026) **Under Review**
 <br>
 Neurocomputing **Under Review**
 <br>
-Zhe Liu, Lingling Yan, Jun Chen, Chongwen Lyu, **Jiaqi Zhang**, Qingli Li, Kai Han<sup>†</sup>, Lu Liu<sup>†</sup>, Zipeng Lu<sup>†</sup>
+Zhe Liu, Lingling Yan, Jun Chen, Chongwen Lyu, **Jiaqi Zhang**, Qingli Li, Kai Han <sup>†</sup>, Lu Liu <sup>†</sup>, Zipeng Lu <sup>†</sup>
 <br>
 </div>
 </div>
@@ -157,7 +157,7 @@ Traffic Detectionl]()
 <br>
 Information Sciences **Under Review**
 <br>
-Bingbing Gu<sup>*</sup>, Saihua Cai<sup>*</sup><sup>†</sup>, Jing Wang, Zhuole Li, Xiheng Jia, **Jiaqi Zhang**
+Bingbing Gu <sup>*</sup>, Saihua Cai <sup>*</sup>, <sup>†</sup>, Jing Wang, Zhuole Li, Xiheng Jia, **Jiaqi Zhang**
 <br>
 </div>
 </div>
