@@ -57,7 +57,7 @@ html, body {
 body, p, li, a, span, div, button, input, textarea, select, option, label, th, td,
 h1, h2, h3, h4, h5, h6, strong, em, small, blockquote, figcaption, figcaption *,
 .paper-box, .paper-box *, .award-card, .award-card *, .award-title, .award-date,
-.section-title, .section-note, .honors-title, .honor-name, .honor-date,
+.section-title, .section-note, .section-heading, .section-heading *, .honors-title, .honor-name, .honor-date,
 .masthead, .masthead *, .nav, .nav *, .page__content, .page__content * {
     font-family: Constantia, "Times New Roman", Georgia, serif !important;
 }
@@ -68,7 +68,15 @@ h1, h2, h3, h4, h5, h6, strong, em, small, blockquote, figcaption, figcaption *,
 }
 
 .page__content {
-    line-height: 1.8;
+    line-height: 1.82;
+}
+
+.page__content > *:first-child {
+    margin-top: 0;
+}
+
+.page__content > *:last-child {
+    margin-bottom: 0;
 }
 
 .page__content h1,
@@ -113,7 +121,7 @@ h1, h2, h3, h4, h5, h6, strong, em, small, blockquote, figcaption, figcaption *,
 }
 
 .section-heading {
-    margin: 1.8rem 0 1rem;
+    margin: 2.3rem 0 1rem;
     padding: 0.15rem 0 0.9rem;
     border-bottom: 1px solid #e6ecf7;
 }
@@ -133,6 +141,7 @@ h1, h2, h3, h4, h5, h6, strong, em, small, blockquote, figcaption, figcaption *,
     font-size: 1.55rem;
     line-height: 1.25;
     color: #1f2740;
+    font-weight: 700;
 }
 
 .section-heading--publications .section-heading__title,
@@ -204,7 +213,7 @@ h1, h2, h3, h4, h5, h6, strong, em, small, blockquote, figcaption, figcaption *,
     border: 1px solid #e9eef7;
     border-radius: 18px;
     box-shadow: 0 8px 22px rgba(16, 24, 40, 0.05);
-    padding: 1.6rem 1.8rem;
+    padding: 1.5rem 1.7rem 1.8rem;
 }
 
 .hero-card {
@@ -212,7 +221,7 @@ h1, h2, h3, h4, h5, h6, strong, em, small, blockquote, figcaption, figcaption *,
     border: 1px solid #dbe7ff;
     border-radius: 18px;
     padding: 2rem 1.5rem;
-    margin: 1.2rem 0 2rem 0;
+    margin: 1.0rem 0 1.6rem 0;
     box-shadow: 0 10px 24px rgba(0, 54, 159, 0.08);
 }
 
@@ -230,11 +239,13 @@ h1, h2, h3, h4, h5, h6, strong, em, small, blockquote, figcaption, figcaption *,
     margin: 0;
     font-size: 2rem;
     line-height: 1.2;
+    font-weight: 700;
+    color: #1f2740;
 }
 
 .hero-subtitle {
     margin: 0.5rem 0 0;
-    color: #3f4d63;
+    color: #4a586f;
     font-weight: 600;
 }
 
@@ -242,6 +253,7 @@ h1, h2, h3, h4, h5, h6, strong, em, small, blockquote, figcaption, figcaption *,
     margin: 1rem 0 0;
     max-width: 760px;
     color: #36455b;
+    font-size: 1.02rem;
 }
 
 .hero-actions {
@@ -256,13 +268,13 @@ h1, h2, h3, h4, h5, h6, strong, em, small, blockquote, figcaption, figcaption *,
     border: 1px solid #e9eef7;
     border-radius: 16px;
     padding: 1.2rem;
-    margin: 0 0 1.2rem 0;
+    margin: 0 0 1rem 0;
     box-shadow: 0 6px 16px rgba(16, 24, 40, 0.05);
 }
 
 .section-note {
-    color: #5b6474;
-    margin: 0.2rem 0 0.5rem 0;
+    color: #667085;
+    margin: 0.2rem 0 0.35rem 0;
     font-size: 0.95rem;
 }
 
@@ -333,6 +345,17 @@ body, p, li, a, span, div, button, input, textarea {
         color: #2c3748;
     }
     
+    .paper-box-text strong:first-child,
+    .paper-box-text > strong:first-child,
+    .paper-box-text strong:first-of-type {
+        display: inline-block;
+        margin-bottom: 0.25rem;
+        font-size: 1.08rem;
+        font-weight: 700;
+        line-height: 1.45;
+        color: #1f2740;
+    }
+    
     @include breakpoint($medium) {
         .paper-box-text{
             padding-left: 0;
@@ -373,7 +396,8 @@ h1:before, .anchor:before {
 
 @media screen and (max-width: 768px) {
     .hero-card {
-        padding: 1.4rem 1rem;
+        padding: 1.35rem 1rem;
+        margin: 0.8rem 0 1.2rem 0;
     }
 
     .hero-title {
@@ -382,6 +406,12 @@ h1:before, .anchor:before {
 
     .section-card {
         padding: 0.9rem;
+        margin-bottom: 0.9rem;
+    }
+
+    .section-heading {
+        margin: 1.8rem 0 0.85rem;
+        padding-bottom: 0.75rem;
     }
 
     .section-heading__title {
@@ -391,6 +421,7 @@ h1:before, .anchor:before {
     .paper-box {
         flex-wrap: wrap;
         gap: 0.8rem;
+        padding: 1.15rem 0;
     }
 
     .paper-box .paper-box-image {
@@ -401,10 +432,11 @@ h1:before, .anchor:before {
     .paper-box .paper-box-text {
         max-width: 100%;
         font-size: 1rem;
+        line-height: 1.68;
     }
 
     .page__content {
-        padding: 1.1rem 1rem;
+        padding: 1.05rem 0.95rem 1.2rem;
         border-radius: 16px;
     }
 
