@@ -1,6 +1,5 @@
 <span class='anchor' id='intro'></span>
 <div class="hero-card">
-  <div class="hero-kicker">Academic Homepage</div>
   <h1 class="hero-title">Hi! I am Jiaqi Zhang (Chinese name: 张家旗)</h1>
   <p class="hero-subtitle">Undergraduate Student · Jiangsu University</p>
   <p class="hero-description">I am an undergraduate student from the <a href="https://cs.ujs.edu.cn/">School of Computer Science and Communication Engineering</a>, Jiangsu University, majoring in Computer Science and Technology. During my undergraduate studies, my academic advisor was <a href="https://ujsyyoung.github.io/homepage/">Associate Professor Yang Yang</a>, <a href="https://scholar.google.com/citations?user=k32nt3sAAAAJ&hl=zh-TW">Professor Zhe Liu</a>, and <a href="https://scholar.google.com/citations?user=QS9gjHUAAAAJ&hl=zh-TW&oi=sra">Kai Han</a>. I also benefited from the guidance of <a href="https://chenyang10.github.io/chengyang/">Professor Yang Chen</a> and <a href="https://scholar.google.com/citations?user=HTWQB-UAAAAJ&hl=zh-CN&oi=sra">Professor Guangquan Zhou</a>. I am deeply grateful to them for introducing me to the world of research.</p>

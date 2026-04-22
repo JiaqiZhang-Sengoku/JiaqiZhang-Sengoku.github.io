@@ -1,6 +1,5 @@
 <span class='anchor' id='honors'></span>
 <div class="section-heading section-heading--honors">
-  <span class="section-heading__eyebrow">Recognition & IP</span>
   <h2 class="section-heading__title">📜 Software Copyrights</h2>
 </div>
 
