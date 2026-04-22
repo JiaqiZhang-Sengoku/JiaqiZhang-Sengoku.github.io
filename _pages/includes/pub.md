@@ -1,6 +1,18 @@
 # 📝 Publications
 <p class="section-note"><sup>†</sup> Corresponding Author, <sup>*</sup> Equal Contribution</p>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/IGR.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Balancing Representation and Fusion for Multimodal Classification]()
+<br>
+Engineering Applications of Artificial Intelligence (EAAI) **Under Review**
+<br>
+Zhe Liu, Lingling Yan, Chongwen Lyu, **Jiaqi Zhang**, Yi Liu, Jun Chen <sup>†</sup>, Kai Han <sup>†</sup>
+<br>
+[Code](https://github.com/JiaqiZhang-Sengoku/IGR)
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCES</div><img src='images/Publication/.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Attention-Aware Multi-Scale Segmentation for Industrial Defects with Low Contrast and High Intra-Class Variation]()
@@ -185,17 +197,6 @@ Medical Image Computing and Computer Assisted Intervention (MICCAI 2026) **Under
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/IGR.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[Information-Guided Rebalance for Multimodal Classification]()
-<br>
-ICME 2026: IEEE International Conference on Multimedia & Expo **Under Review**
-<br>
-Lingling Yan, Jun Chen, Chongwen Lyu, Qiaoying Teng, **Jiaqi Zhang**, Yan Zhu, Yi Liu, Kai Han<sup>†</sup>(Corresponding Author), Zhe Liu<sup>†</sup>(Corresponding Author)
-<br>
-[Code](https://github.com/JiaqiZhang-Sengoku/IGR)
-</div>
-</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/AH-Trans-Diff.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
