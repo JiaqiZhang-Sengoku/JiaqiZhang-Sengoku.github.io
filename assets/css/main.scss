@@ -42,19 +42,80 @@
 
 html, body {
     font-family: Constantia, "Times New Roman", Georgia, serif !important;
+    background: #fbfcfe;
+    color: #243041;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
 body, p, li, a, span, div, button, input, textarea, select, option, label, th, td,
 h1, h2, h3, h4, h5, h6, strong, em, small, blockquote, figcaption, figcaption *,
 .paper-box, .paper-box *, .award-card, .award-card *, .award-title, .award-date,
-.section-title, .section-note, .honors-title, .honor-name, .honor-date {
+.section-title, .section-note, .honors-title, .honor-name, .honor-date,
+.masthead, .masthead *, .nav, .nav *, .page__content, .page__content * {
     font-family: Constantia, "Times New Roman", Georgia, serif !important;
+}
+
+::selection {
+    background: rgba(102, 126, 234, 0.18);
+    color: #1f2740;
+}
+
+.page__content {
+    line-height: 1.8;
+}
+
+.page__content h1,
+.page__content h2,
+.page__content h3 {
+    color: #1f2740;
+    letter-spacing: 0.01em;
+    margin-top: 1.4em;
+    margin-bottom: 0.7em;
+}
+
+.page__content h1 {
+    font-size: 1.9rem;
+}
+
+.page__content h2 {
+    font-size: 1.5rem;
+}
+
+.page__content h3 {
+    font-size: 1.2rem;
+}
+
+.page__content p,
+.page__content li {
+    color: #2c3748;
+}
+
+.page__content a {
+    color: #355bd7;
+    text-underline-offset: 0.14em;
+    text-decoration-thickness: 1px;
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.page__content a:hover {
+    color: #2747b0;
+}
+
+.page__content img {
+    border-radius: 12px;
 }
 
 .hero-card {
     background: linear-gradient(135deg, #f8fbff 0%, #eef4ff 100%);
     border: 1px solid #dbe7ff;
-    border-radius: 16px;
+    border-radius: 18px;
     padding: 2rem 1.5rem;
     margin: 1.2rem 0 2rem 0;
     box-shadow: 0 10px 24px rgba(0, 54, 159, 0.08);
@@ -98,7 +159,7 @@ h1, h2, h3, h4, h5, h6, strong, em, small, blockquote, figcaption, figcaption *,
 .section-card {
     background: #ffffff;
     border: 1px solid #e9eef7;
-    border-radius: 14px;
+    border-radius: 16px;
     padding: 1.2rem;
     margin: 0 0 1.2rem 0;
     box-shadow: 0 6px 16px rgba(16, 24, 40, 0.05);
@@ -112,6 +173,32 @@ h1, h2, h3, h4, h5, h6, strong, em, small, blockquote, figcaption, figcaption *,
 
 body, p, li, a, span, div, button, input, textarea {
     font-family: Constantia, "Times New Roman", Georgia, serif;
+}
+
+.page__content {
+    line-height: 1.8;
+}
+
+.page__content h1,
+.page__content h2,
+.page__content h3,
+.page__content h4 {
+    letter-spacing: 0.01em;
+    color: #1f2d3d;
+}
+
+.page__content p,
+.page__content li {
+    color: #2c3748;
+}
+
+.page__content a {
+    text-underline-offset: 0.16em;
+    text-decoration-thickness: 1px;
+}
+
+.page__content img {
+    border-radius: 12px;
 }
 
 .paper-box {
@@ -134,9 +221,10 @@ body, p, li, a, span, div, button, input, textarea {
         img {
             width: 100%;
             max-width: 420px;
-            border-radius: 12px;
-            box-shadow: 0 8px 18px rgba(15, 23, 42, 0.18);
+            border-radius: 14px;
+            box-shadow: 0 10px 22px rgba(15, 23, 42, 0.16);
             object-fit: cover;
+            transition: transform 0.28s ease, box-shadow 0.28s ease;
         }
     }
     
@@ -145,8 +233,9 @@ body, p, li, a, span, div, button, input, textarea {
         min-width: 0;
         max-width: 62%;
         order: 2;
-        line-height: 1.65;
+        line-height: 1.72;
         font-size: 1.02rem;
+        color: #2c3748;
     }
     
     @include breakpoint($medium) {
@@ -157,6 +246,11 @@ body, p, li, a, span, div, button, input, textarea {
     }
 
 
+}
+
+.paper-box:hover .paper-box-image img {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 28px rgba(15, 23, 42, 0.20);
 }
 
 $scroll_offset : 2em;
@@ -211,16 +305,11 @@ h1:before, .anchor:before {
     }
 }
 
-.page__content h1,
-.page__content h2 {
+.nav__list, .masthead__menu-item {
     letter-spacing: 0.01em;
 }
 
 .page__content p,
 .page__content li {
     color: #2c3748;
-}
-
-.page__content a {
-    text-underline-offset: 0.14em;
 }
