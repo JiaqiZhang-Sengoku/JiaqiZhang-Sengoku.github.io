@@ -40,6 +40,10 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
+html, body {
+    font-family: Constantia, "Times New Roman", Georgia, serif;
+}
+
 .hero-card {
     background: linear-gradient(135deg, #f8fbff 0%, #eef4ff 100%);
     border: 1px solid #dbe7ff;
@@ -97,6 +101,10 @@
     color: #5b6474;
     margin: 0.2rem 0 0.5rem 0;
     font-size: 0.95rem;
+}
+
+body, p, li, a, span, div, button, input, textarea {
+    font-family: Constantia, "Times New Roman", Georgia, serif;
 }
 
 .paper-box {
