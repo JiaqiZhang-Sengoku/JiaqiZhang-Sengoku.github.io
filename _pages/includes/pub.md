@@ -306,7 +306,7 @@ Biomedical Signal Processing and Control (BSPC) **Under Review**
 Reviewer of ACM Transactions on Knowledge Discovery from Data (TKDD), ICASSP 2026. -->
 
 # 🔨 Projects
- <div class="paper-box" id="Projects">
+<div class="paper-box" id="Projects">
   <div class="paper-box-image">
     <div>
       <img src="images/Projects/Pro_1.png" alt="Pro_1" width="100%">
@@ -325,5 +325,66 @@ Reviewer of ACM Transactions on Knowledge Discovery from Data (TKDD), ICASSP 202
     第十六届中国大学生服务外包创新创业大赛东部区域赛-企业命题类：省级三等奖 <br>
     第六届全球校园人工智能算法精英大赛-专项赛数码艺术-创新创业项省级二等奖 <br>
     受理一项软件著作权
+  </div>
+</div>
+
+<div class="paper-box" id="Projects">
+  <div class="paper-box-image">
+    <div>
+      <img src="images/Projects/Pro_2.png" alt="Pro_2" width="100%">
+    </div>
+  </div>
+  <div class="paper-box-text">
+    <strong>BQAI+:基于知识图谱的中医药科普与在线问诊平台</strong><br>
+    项目核心成员 | 2024年01月 – 2024年12月<br>
+    <em>项目简介:</em><br>
+    本项目针对中医专家知识匮乏及语言模型幻觉等问题。通过构建中医知识图谱，结合RAG技术，实现症状与疾病关系的动态推理，提供个性化诊疗建议。用时通过专家知识库溯源增强结果可信度。本人负责中医实体提取和图谱搭建，Prompt设计优化，RAG链路实现。本项目已部署在百度飞桨AI Studio。<br>
+    <em>项目成果: </em><br>
+    第十七届中国大学生计算机设计大赛-软件应用与开发-Web应用与开发：国家级二等奖 <br>
+    第二十七届中国机器人及人工智能大赛-人工智能创新赛：国家级一等奖 <br>
+    第六届全球校园人工智能算法精英大赛-睡眠医学诊断及推理知识图谱：国家级三等奖
+  </div>
+</div>
+
+<div class="paper-box" id="Projects">
+  <div class="paper-box-image">
+    <div>
+      <img src="images/Projects/Pro_3.png" alt="Pro_3" width="100%">
+    </div>
+  </div>
+  <div class="paper-box-text">
+    <strong>RF-Nav: 基于动态代价预测的越野机器人建图与混合路径规划系统</strong><br>
+    项目负责人 | 2024年07月 – 2025年08月<br>
+    <em>项目简介:</em><br>
+    本项目采用Gmapping算法并优化RBpf粒子滤波，实现先定位后高精度建图。导航阶段基于AMCL算法结合已知地图实时跟踪位姿以完成精准定位，并借助Move_Base框架实现分层路径规划。其中，局部规划采用TEB算法进行实时敏捷避障。全局规划则融合了随机森林与Dijkstra算法，利用随机森林评估环境特征并预测通行代价，动态优化搜索权重，从而指导Dijkstra高效求取最优路径。最终构建出兼具全局预测与局部快速反应的自主导航系统。<br>
+    <em>项目成果: </em><br>
+    第二十届全国大学生智能汽车竞赛-全国总决赛室外ROS无人车赛：国家级二等奖 <br>
+    第二十七届中国机器人及人工智能大赛-机器人应用赛-智能驾驶：国家级一等奖 <br>
+    第十九届全国大学生智能汽车竞赛-全国总决赛室外ROS无人车赛：国家级三等奖 <br>
+    第二十届全国大学生智能汽车竞赛-南部赛区室外ROS无人车赛：省级一等奖 <br>
+    第二十七届中国机器人及人工智能大赛-机器人应用赛-智能驾驶：省级一等奖 <br>
+    第十九届全国大学生智能汽车竞赛-华东赛区室外ROS无人车赛：省级一等奖
+  </div>
+</div>
+
+
+<div class="paper-box" id="Projects">
+  <div class="paper-box-image">
+    <div>
+      <img src="images/Projects/Pro_3.png" alt="Pro_3" width="100%">
+    </div>
+  </div>
+  <div class="paper-box-text">
+    <strong>RF-Nav: 基于动态代价预测的越野机器人建图与混合路径规划系统</strong><br>
+    项目负责人 | 2024年07月 – 2025年08月<br>
+    <em>项目简介:</em><br>
+    本项目采用Gmapping算法并优化RBpf粒子滤波，实现先定位后高精度建图。导航阶段基于AMCL算法结合已知地图实时跟踪位姿以完成精准定位，并借助Move_Base框架实现分层路径规划。其中，局部规划采用TEB算法进行实时敏捷避障。全局规划则融合了随机森林与Dijkstra算法，利用随机森林评估环境特征并预测通行代价，动态优化搜索权重，从而指导Dijkstra高效求取最优路径。最终构建出兼具全局预测与局部快速反应的自主导航系统。<br>
+    <em>项目成果: </em><br>
+    第二十届全国大学生智能汽车竞赛-全国总决赛室外ROS无人车赛：国家级二等奖 <br>
+    第二十七届中国机器人及人工智能大赛-机器人应用赛-智能驾驶：国家级一等奖 <br>
+    第十九届全国大学生智能汽车竞赛-全国总决赛室外ROS无人车赛：国家级三等奖 <br>
+    第二十届全国大学生智能汽车竞赛-南部赛区室外ROS无人车赛：省级一等奖 <br>
+    第二十七届中国机器人及人工智能大赛-机器人应用赛-智能驾驶：省级一等奖 <br>
+    第十九届全国大学生智能汽车竞赛-华东赛区室外ROS无人车赛：省级一等奖
   </div>
 </div>
