@@ -1,3 +1,4 @@
+<span class='anchor' id='honors'></span>
 # 📜 Software Copyrights
 
 <style>

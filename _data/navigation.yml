@@ -4,13 +4,16 @@ main:
     url: "/#about-me"
 
   - title: "Research Interests"
-    url: "/#-research-interests"
+    url: "/#research-interests"
 
   - title: "News"
-    url: "/#-news"
+    url: "/#news"
 
   - title: "Publications"
-    url: "/#-publications"
+    url: "/#publications"
+
+  - title: "Projects"
+    url: "/#projects"
 
   - title: "Honors"
-    url: "/#-honors"
+    url: "/#honors"
