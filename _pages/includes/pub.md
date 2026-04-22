@@ -1,5 +1,4 @@
 <div class="section-heading section-heading--publications">
-  <span class="section-heading__eyebrow">Research Output</span>
   <h2 class="section-heading__title">📝 Publications</h2>
 </div>
 <p class="section-note"><sup>†</sup> Corresponding Author, <sup>*</sup> Equal Contribution</p>
