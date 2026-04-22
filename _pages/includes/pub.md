@@ -1,6 +1,17 @@
 # 📝 Publications
 <p class="section-note"><sup>†</sup> Corresponding Author, <sup>*</sup> Equal Contribution</p>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/Uni-IMD.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[A Unified Medical Incomplete Multimodal Diagnosis Framework Based on Optimal Feature Disentanglement]()
+<br>
+Pattern Recognition (PR) **Under Review**
+<br>
+Chongwen Lyu, Kai Han, Jun Chen, **Jiaqi Zhang**, Qiaoying Teng, Zhe Liu <sup>†</sup>
+<br>
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/IGR.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Balancing Representation and Fusion for Multimodal Classification]()
