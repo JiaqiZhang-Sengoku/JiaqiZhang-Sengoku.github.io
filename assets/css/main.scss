@@ -112,6 +112,37 @@ h1, h2, h3, h4, h5, h6, strong, em, small, blockquote, figcaption, figcaption *,
     border-radius: 12px;
 }
 
+.section-heading {
+    margin: 1.8rem 0 1rem;
+    padding: 0.15rem 0 0.9rem;
+    border-bottom: 1px solid #e6ecf7;
+}
+
+.section-heading__eyebrow {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #2f5fce;
+    margin-bottom: 0.45rem;
+}
+
+.section-heading__title {
+    margin: 0;
+    font-size: 1.55rem;
+    line-height: 1.25;
+    color: #1f2740;
+}
+
+.section-heading--publications .section-heading__title,
+.section-heading--projects .section-heading__title,
+.section-heading--honors .section-heading__title {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+}
+
 .masthead {
     background: rgba(255, 255, 255, 0.92);
     backdrop-filter: blur(10px);
@@ -351,6 +382,10 @@ h1:before, .anchor:before {
 
     .section-card {
         padding: 0.9rem;
+    }
+
+    .section-heading__title {
+        font-size: 1.25rem;
     }
 
     .paper-box {

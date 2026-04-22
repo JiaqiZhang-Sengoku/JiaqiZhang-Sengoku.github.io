@@ -1,4 +1,7 @@
-# 🔨 Projects
+<div class="section-heading section-heading--projects">
+  <span class="section-heading__eyebrow">Selected Work</span>
+  <h2 class="section-heading__title">🔨 Projects</h2>
+</div>
 <style>
 .paper-box {
   border-radius: 16px;

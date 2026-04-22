@@ -1,4 +1,7 @@
-# 📝 Publications
+<div class="section-heading section-heading--publications">
+  <span class="section-heading__eyebrow">Research Output</span>
+  <h2 class="section-heading__title">📝 Publications</h2>
+</div>
 <p class="section-note"><sup>†</sup> Corresponding Author, <sup>*</sup> Equal Contribution</p>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/Uni-IMD.png' alt="sym" width="100%"></div></div>
