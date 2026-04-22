@@ -112,6 +112,70 @@ h1, h2, h3, h4, h5, h6, strong, em, small, blockquote, figcaption, figcaption *,
     border-radius: 12px;
 }
 
+.masthead {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(219, 231, 255, 0.9);
+    box-shadow: 0 2px 12px rgba(15, 23, 42, 0.04);
+}
+
+.masthead__inner-wrap {
+    padding: 0.6em 0.9em !important;
+}
+
+.greedy-nav {
+    background: transparent;
+}
+
+.greedy-nav a {
+    margin: 0 0.85rem !important;
+    padding: 0.7rem 0 !important;
+    font-size: 0.96rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: #32415a !important;
+}
+
+.greedy-nav a:hover {
+    color: #2f5fce !important;
+}
+
+.greedy-nav .visible-links a:before {
+    height: 2px !important;
+    border-radius: 999px;
+    background: #2f5fce !important;
+}
+
+.greedy-nav button {
+    background: #2f5fce !important;
+    border-radius: 10px;
+}
+
+.nav__list {
+    font-size: 1.05rem;
+}
+
+.nav__title {
+    font-size: 1rem;
+    letter-spacing: 0.01em;
+}
+
+.page {
+    background: transparent;
+}
+
+.page__inner-wrap {
+    max-width: 1160px;
+}
+
+.page__content {
+    background: #ffffff;
+    border: 1px solid #e9eef7;
+    border-radius: 18px;
+    box-shadow: 0 8px 22px rgba(16, 24, 40, 0.05);
+    padding: 1.6rem 1.8rem;
+}
+
 .hero-card {
     background: linear-gradient(135deg, #f8fbff 0%, #eef4ff 100%);
     border: 1px solid #dbe7ff;
@@ -302,6 +366,16 @@ h1:before, .anchor:before {
     .paper-box .paper-box-text {
         max-width: 100%;
         font-size: 1rem;
+    }
+
+    .page__content {
+        padding: 1.1rem 1rem;
+        border-radius: 16px;
+    }
+
+    .greedy-nav a {
+        margin: 0 0.6rem !important;
+        font-size: 0.92rem;
     }
 }
 
