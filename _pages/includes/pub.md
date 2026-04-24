@@ -16,9 +16,9 @@ Chongwen Lyu, Kai Han, Jun Chen, **Jiaqi Zhang**, Qiaoying Teng, Zhe Liu <sup>�
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/IGR.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[Balancing Representation and Fusion for Multimodal Classification]()
+[Information-Guided Rebalance for Multimodal Classification]()
 <br>
-Engineering Applications of Artificial Intelligence (EAAI) **Under Review**
+Expert Systems With Applications (ESWA) **Under Review**
 <br>
 Zhe Liu, Lingling Yan, Chongwen Lyu, **Jiaqi Zhang**, Yi Liu, Jun Chen <sup>†</sup>, Kai Han <sup>†</sup>
 <br>
@@ -26,16 +26,16 @@ Zhe Liu, Lingling Yan, Chongwen Lyu, **Jiaqi Zhang**, Yi Liu, Jun Chen <sup>†<
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCES</div><img src='images/Publication/.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCES</div><img src='images/Publication/.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Attention-Aware Multi-Scale Segmentation for Industrial Defects with Low Contrast and High Intra-Class Variation]()
 <br>
 International Conference on Computational & Experimental Engineering and Sciences (ICCES)
 <br>
-Xiaocheng, **Jiaqi Zhang**, Jianguo Zhu, Xudong Ren, Kai Han, Zhe Liu<sup>†</sup>
+Xiaocheng Hu, **Jiaqi Zhang**, Jianguo Zhu, Xudong Ren, Kai Han, Zhe Liu<sup>†</sup>
 <br>
 </div>
-</div>
+</div> -->
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCES</div><img src='images/Publication/ProtoDBSeg.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
