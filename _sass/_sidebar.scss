@@ -73,8 +73,8 @@
     display: block;
   }
   display: flex;
-  justify-content: flex-start;
-  align-content: flex-start;
+  justify-content: center;
+  align-content: center;
   align-items: center;
 
   @include breakpoint($medium) {
@@ -131,11 +131,12 @@
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+    text-align: center;
   }
 
   @include breakpoint($medium) {
     padding-left: 0;
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -227,7 +228,7 @@
 
   @include breakpoint($medium) {
     margin: 0 auto;
-    text-align: left;
+    text-align: center;
   }
 
   &:before {
@@ -266,7 +267,6 @@
 
   li {
     white-space: nowrap;
-    text-align: left;
   }
 
   a {
