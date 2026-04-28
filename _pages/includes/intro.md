@@ -74,12 +74,24 @@ body {
   letter-spacing: -0.01em;
 }
 
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.section-heading__title {
+  display: inline-flex;
+  align-items: center;
+}
+
 .section-heading__title::after {
   content: "";
-  display: block;
+  display: inline-block;
   width: 64px;
   height: 3px;
-  margin-top: 10px;
+  margin-left: 14px;
+  vertical-align: middle;
   border-radius: 999px;
   background: linear-gradient(90deg, #4d63d2, rgba(77, 99, 210, 0.18));
 }
