@@ -216,6 +216,14 @@ h1, h2, h3, h4, h5, h6, strong, em, small, blockquote, figcaption, figcaption *,
     padding: 1.5rem 1.7rem 1.8rem;
 }
 
+.page__content #about-me {
+    margin-top: 0;
+}
+
+.page__content #about-me:before {
+    content: none;
+}
+
 .hero-card {
     background: linear-gradient(135deg, #f8fbff 0%, #eef4ff 100%);
     border: 1px solid #dbe7ff;
