@@ -14,7 +14,7 @@
   margin-bottom: 1em;
 
   @include breakpoint($large) {
-    @include span(2 of 12);
+    @include span(3 of 12);
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
@@ -76,6 +76,12 @@
   justify-content: flex-start;
   align-content: flex-start;
   align-items: center;
+
+  @include breakpoint($medium) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .author__avatar {
@@ -91,6 +97,11 @@
     height: auto;
   }
 
+  @include breakpoint($medium) {
+    width: 100%;
+    text-align: center;
+  }
+
   img {
     max-width: 175px;
     min-width: 75px;
@@ -99,6 +110,10 @@
     @include breakpoint($large) {
       padding: 5px;
       border: 1px solid $border-color;
+    }
+
+    @include breakpoint($medium) {
+      margin: 0 auto 6px;
     }
   }
 }
@@ -116,6 +131,11 @@
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  @include breakpoint($medium) {
+    padding-left: 0;
+    text-align: center;
   }
 }
 
@@ -154,6 +174,12 @@
   position: relative;
   margin-left: auto;
   cursor: pointer;
+
+  @include breakpoint($medium) {
+    display: block;
+    margin-left: 0;
+    text-align: center;
+  }
 
   li:last-child {
     a {
@@ -197,6 +223,10 @@
     border: 0;
     background: transparent;
     box-shadow: none;
+  }
+
+  @include breakpoint($medium) {
+    margin: 0 auto;
   }
 
   &:before {
