@@ -37,7 +37,7 @@ Xiaocheng Hu, **Jiaqi Zhang**, Jianguo Zhu, Xudong Ren, Kai Han, Zhe Liu<sup>†
 </div>
 </div> -->
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCES</div><img src='images/Publication/ProtoDBSeg.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCES</div><img src='images/Publication/ProtoDBSeg.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Prototype Guided Dual-Branch Framework for Industrial Surface Defect Segmentation]()
 <br>
@@ -46,10 +46,10 @@ International Conference on Computational & Experimental Engineering and Science
 **Jiaqi Zhang**, Xinjie Li, Jianguo Zhu, Xudong Ren, Kai Han, Zhe Liu<sup>†</sup>
 <br>
 </div>
-</div>
+</div> -->
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/AMON-Flow.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/AMON-Flow.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [AMON-Flow: Adaptive Momentum and Noise Scaling for Plug-and-Play Image Restoration]()
 <br>
@@ -58,7 +58,7 @@ International Conference on Computational & Experimental Engineering and Science
 Xiaoyu Gu, **Jiaqi Zhang**, Lanling Zeng, Yang Yang <sup>†</sup>
 <br>
 </div>
-</div>
+</div> -->
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/OrthoSeg.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -130,7 +130,7 @@ Zhe Liu, Lingling Yan, Jun Chen, Chongwen Lyu, **Jiaqi Zhang**, Qingli Li, Kai H
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Adaptive Risk-aware Implicit Quantile Network: Towards Safe andEnergy-Efficient USV Navigation in Dynamic Environments]()
 <br>
@@ -139,7 +139,7 @@ International Conference On Intelligent Computing (ICIC 2026) **Under Review**
 Wenjing Wang, Jintao Liu, Songyan Wang, Wenlong Meng, **Jiaqi Zhang**
 <br>
 </div>
-</div>
+</div> -->
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/SCA-Net.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -177,7 +177,7 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/Agent-SAM-I2V.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/Agent-SAM-I2V.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Agent-SAM-I2V: Self-Correcting Promptable Video Segmentation via Agentic Drift Detection and Multi-Prompt Fusion]()
 <br>
@@ -186,20 +186,20 @@ International Conference On Intelligent Computing (ICIC 2026) **Under Review**
 **Jiaqi Zhang**(Second Author), Anonymous
 <br>
 </div>
-</div>
+</div> -->
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/IFCLNet.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICIC</div><img src='images/Publication/IFCLNet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Intrinsic Feature Consistency Learning Network for Generalizable Medical Image Segmentation]()
 <br>
-International Conference On Intelligent Computing (ICIC 2026) **Under Review**
+International Conference On Intelligent Computing (ICIC 2026)
 <br>
-**Jiaqi Zhang**(First Author), Anonymous
+**Jiaqi Zhang**(First Author), Xinjie Li, Guo Yang, Kang Yang, Wenjing Wang, Yang Yang<sup>†</sup>
 <br>
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/Mamba.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/Mamba.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [PathoMamba: Piecewise-Diffeomorphic Registration via Stiffness-Modulated State Space Dynamics]()
 <br>
@@ -208,10 +208,10 @@ Medical Image Computing and Computer Assisted Intervention (MICCAI 2026) **Under
 **Jiaqi Zhang**, Anonymous
 <br>
 </div>
-</div>
+</div> -->
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/AH-Trans-Diff.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/AH-Trans-Diff.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [AH-Trans-Diff: Physics-Consistent Heteroscedastic Latent Diffusion for Uncertainty-Aware MR Restoration and Tumor Segmentation]()
 <br>
@@ -220,7 +220,7 @@ ICME 2026: IEEE International Conference on Multimedia & Expo **Under Review**
 Anonymous ICME submission
 <br>
 </div>
-</div>
+</div> -->
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">KBS 2026</div><img src='images/Publication/PIRP.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -228,7 +228,7 @@ Anonymous ICME submission
 <br>
 Knowledge-Based Systems (2026)
 <br>
-Yang Yang<sup>†</sup>(Corresponding Author), Xi Zhang, **Jiaqi Zhang**, Lanling Zeng
+Yang Yang<sup>†</sup>, Xi Zhang, **Jiaqi Zhang**, Lanling Zeng
 <br>
 [Paper](https://www.sciencedirect.com/science/article/abs/pii/S0950705126002303)
 </div>
@@ -257,7 +257,7 @@ Yang Yang, Yi Wang, **Jiaqi Zhang**, Lanling Zeng<sup>†</sup>(Corresponding Au
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/HQS-PnP.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/HQS-PnP.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Zero-shot Single Image Super-resolution via Plug-and-play Diffusive Sampling]()
 <br>
@@ -266,9 +266,9 @@ Journal of Electronic Imaging **Under Review**
 Xiaoya Song, **Jiaqi Zhang**, Lanling Zeng, Yang Yang<sup>†</sup>(Corresponding Author)
 <br>
 </div>
-</div>
+</div> -->
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/LR.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/LR.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Laplacian Regularization for Edge-preserving Image Smoothing]()
 <br>
@@ -277,7 +277,7 @@ Signal, Image and Video Processing **Under Review**
 Yang Yang<sup>†</sup>(Corresponding Author), Qi Wu, Jiaqi Zhang, Lanling Zeng
 <br>
 </div>
-</div>
+</div> -->
 
 <!-- 3 -->
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/FC-Net.png' alt="sym" width="100%"></div></div>
