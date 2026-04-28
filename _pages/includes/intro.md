@@ -1,3 +1,98 @@
+<style>
+.hero-card {
+  background: linear-gradient(135deg, rgba(255,255,255,0.96), rgba(248,250,255,0.96));
+  border: 1px solid rgba(102, 126, 234, 0.12);
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(20, 32, 70, 0.08);
+  padding: 28px 30px;
+  margin-bottom: 22px;
+}
+
+.hero-title {
+  margin: 0 0 8px;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #1f2a44;
+}
+
+.hero-subtitle {
+  margin: 0 0 14px;
+  font-size: 1rem;
+  color: #5d6b86;
+  font-weight: 600;
+}
+
+.hero-description {
+  margin: 0;
+  color: #3f4b63;
+  line-height: 1.9;
+}
+
+.section-heading {
+  margin: 10px 0 14px;
+}
+
+.section-heading__title {
+  font-size: 1.4rem;
+  margin: 0;
+  color: #1f2a44;
+}
+
+.news-panel {
+  max-height: 350px;
+  overflow-y: auto;
+  border: 1px solid rgba(34, 75, 141, 0.14);
+  border-radius: 16px;
+  padding: 14px 18px;
+  background: linear-gradient(135deg, rgba(234, 245, 255, 0.9) 0%, rgba(214, 233, 255, 0.78) 100%);
+  box-shadow: 0 8px 22px rgba(34, 75, 141, 0.08);
+}
+
+.news-panel ul {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.news-panel li {
+  margin: 0.45rem 0;
+  line-height: 1.8;
+  color: #36435d;
+}
+
+.news-panel a {
+  color: #315fd6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.news-panel a:hover {
+  text-decoration: underline;
+}
+
+.news-panel ul ul {
+  margin-top: 0.35rem;
+}
+
+@media (max-width: 600px) {
+  .hero-card {
+    padding: 22px 20px;
+    border-radius: 16px;
+  }
+
+  .hero-title {
+    font-size: 1.55rem;
+  }
+
+  .section-heading__title {
+    font-size: 1.2rem;
+  }
+
+  .news-panel {
+    padding: 12px 14px;
+  }
+}
+</style>
+
 <span class='anchor' id='about-me'></span>
 <div class="hero-card">
   <h1 class="hero-title">Hi! I am Jiaqi Zhang (Chinese name: 张家旗)</h1>
@@ -10,7 +105,7 @@
   <h2 class="section-heading__title">🔥 News</h2>
 </div>
 
-<div style="max-height: 350px; overflow-y: auto; border: 1px solid rgba(34, 75, 141, 0.18); border-radius: 8px; padding: 10px 15px; background: linear-gradient(135deg, rgba(234, 245, 255, 0.86) 0%, rgba(214, 233, 255, 0.74) 100%); box-shadow: 0 4px 14px rgba(34, 75, 141, 0.08);" markdown="1">
+<div class="news-panel" markdown="1">
 - *2026.04*: &nbsp;🎉🎉 Our work [ProgressLM](https://progresslm.github.io/ProgressLM/) on General Reward Model for Embodied Agents has been accepted to ***ACL 2026 Main Conference*** and ***ICLR 2026 Workshop on World Models***!
 - *2026.02*: &nbsp;🎉🎉 Our work [fMRI-LM](https://arxiv.org/abs/2511.21760) on Medical Foundation Models has been accepted by ***CVPR 2026***!
 - *2026.01*: &nbsp;🎉🎉 Three first/co-first author papers have been accepted by ***ICLR 2026***!

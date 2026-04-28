@@ -4,9 +4,18 @@
 </div>
 
 <style>
+.honors-panel {
+    max-width: 1400px;
+    margin: 0 auto 36px;
+}
 .awards-container {
     max-width: 1400px;
     margin: 28px auto 36px;
+    padding: 22px 22px 8px;
+    border: 1px solid rgba(102, 126, 234, 0.10);
+    border-radius: 18px;
+    background: linear-gradient(180deg, #ffffff 0%, #fbfcff 100%);
+    box-shadow: 0 8px 22px rgba(20, 32, 70, 0.08);
 }
 .section-title {
     font-size: 24px;
@@ -292,6 +301,7 @@
 </div>
 
 </div>
+</div>
 
 
 
@@ -383,6 +393,7 @@
 
 <h1>🥇 Honors</h1>
 
+<div class="honors-panel">
 <div class="awards-container">
 
 <div class="section-title" style="font-size: 16px;">
@@ -571,8 +582,6 @@
         <strong>国家级优秀奖</strong></div>
         <div class="award-date">2024年06月</div>
     </div>
-
-</div>
 
 </div>
 

@@ -3,18 +3,23 @@
   <h2 class="section-heading__title">🔨 Projects</h2>
 </div>
 <style>
+.projects-panel {
+  display: grid;
+  gap: 18px;
+}
+
 .paper-box {
-  border-radius: 16px;
+  border-radius: 18px;
   overflow: hidden;
   background: linear-gradient(180deg, #ffffff 0%, #fbfcff 100%);
   border: 1px solid rgba(102, 126, 234, 0.10);
-  box-shadow: 0 6px 18px rgba(20, 32, 70, 0.08);
+  box-shadow: 0 8px 22px rgba(20, 32, 70, 0.08);
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .paper-box:hover {
   transform: translateY(-4px);
-  box-shadow: 0 14px 30px rgba(20, 32, 70, 0.14);
+  box-shadow: 0 16px 34px rgba(20, 32, 70, 0.14);
   border-color: rgba(102, 126, 234, 0.18);
 }
 
@@ -34,15 +39,43 @@
 
 .paper-box-text {
   padding: 18px 20px 20px;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #445066;
 }
 
 .paper-box-text strong:first-child {
   font-size: 16px;
   line-height: 1.45;
-  color: #222;
+  color: #1f2a44;
 }
 
-.paper-box-text br + * {
+.paper-box-text strong {
+  color: #2f3b66;
+}
+
+.paper-box-text a {
+  color: #315fd6;
+  text-decoration: none;
+}
+
+.paper-box-text a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .paper-box-text {
+    padding: 14px 14px 16px;
+    font-size: 12.5px;
+    line-height: 1.7;
+  }
+
+  .paper-box-text strong:first-child {
+    font-size: 14px;
+  }
+}
+</style>
+<div class="projects-panel">
   line-height: 1.75;
 }
 
@@ -70,6 +103,12 @@
     padding: 14px 14px 16px;
     font-size: 12.5px;
     line-height: 1.7;
+  }
+
+  .paper-box-text br + * {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    text-indent: 0 !important;
   }
 
   .paper-box-text strong:first-child {
@@ -193,4 +232,5 @@
     <strong>项目成果:</strong><br>
     第七届全球校园人工智能算法精英大赛-算法挑战赛-大规模SAR图像多类别有向目标检测：国家一等奖
   </div>
+</div>
 </div>

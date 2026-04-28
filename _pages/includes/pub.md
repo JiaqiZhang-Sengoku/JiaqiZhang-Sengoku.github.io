@@ -1,8 +1,86 @@
+<style>
+.publications-panel {
+  display: grid;
+  gap: 18px;
+}
+
+.publications-note {
+  margin: 0;
+  color: #667085;
+  font-size: 0.95rem;
+}
+
+.paper-box {
+  border-radius: 18px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfcff 100%);
+  border: 1px solid rgba(102, 126, 234, 0.10);
+  box-shadow: 0 8px 22px rgba(20, 32, 70, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.paper-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 34px rgba(20, 32, 70, 0.14);
+  border-color: rgba(102, 126, 234, 0.18);
+}
+
+.paper-box-image {
+  background: #f6f8fc;
+}
+
+.paper-box-image img {
+  transition: transform 0.35s ease, filter 0.35s ease;
+  display: block;
+}
+
+.paper-box:hover .paper-box-image img {
+  transform: scale(1.02);
+  filter: saturate(1.03) contrast(1.02);
+}
+
+.paper-box-text {
+  padding: 18px 20px 20px;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #445066;
+}
+
+.paper-box-text strong:first-child {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1f2a44;
+}
+
+.paper-box-text a {
+  color: #315fd6;
+  text-decoration: none;
+}
+
+.paper-box-text a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .paper-box-text {
+    padding: 14px 14px 16px;
+    font-size: 12.5px;
+    line-height: 1.7;
+  }
+
+  .paper-box-text strong:first-child {
+    font-size: 14px;
+  }
+}
+</style>
+
 <span class='anchor' id='publications'></span>
 <div class="section-heading section-heading--publications">
-  <h2 class="section-heading__title">📝 Publications</h2>
+  <h2 class="section-heading__title">📝 Selected Publications</h2>
 </div>
-<p class="section-note"><sup>†</sup> Corresponding Author, <sup>*</sup> Equal Contribution</p>
+<p class="publications-note"><sup>†</sup> Corresponding Author, <sup>*</sup> Equal Contribution</p>
+
+<div class="publications-panel">
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/Uni-IMD.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -37,6 +115,8 @@ Xiaocheng Hu, **Jiaqi Zhang**, Jianguo Zhu, Xudong Ren, Kai Han, Zhe Liu<sup>†
 <br>
 </div>
 </div> -->
+
+</div>
 
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCES</div><img src='images/Publication/ProtoDBSeg.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -79,7 +159,7 @@ Kai Han, **Jiaqi Zhang**, Chongwen Lyu, Mengting Li, Jun Chen, Laihua Yang, Yang
 <br>
 IEEE Transactions on Image Processing (TIP) **Under Review**
 <br>
-Yang Yang <sup>†</sup>, <sup>*</sup>, Pengyu Li <sup>*</sup>, **Jiaqi Zhang**, Lanling Zeng
+Yang Yang <sup>†</sup> <sup>*</sup>, Pengyu Li <sup>*</sup>, **Jiaqi Zhang**, Lanling Zeng
 <br>
 </div>
 </div>
