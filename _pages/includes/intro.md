@@ -34,8 +34,10 @@ body {
 }
 
 .hero-card {
+  width: min(100%, 1200px);
+  margin: 0 auto 18px;
   padding: 24px 28px;
-  margin-bottom: 18px;
+  box-sizing: border-box;
 }
 
 .hero-title {
