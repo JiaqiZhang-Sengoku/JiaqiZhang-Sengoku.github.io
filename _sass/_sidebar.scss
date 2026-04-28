@@ -227,6 +227,7 @@
 
   @include breakpoint($medium) {
     margin: 0 auto;
+    text-align: left;
   }
 
   &:before {
@@ -265,6 +266,7 @@
 
   li {
     white-space: nowrap;
+    text-align: left;
   }
 
   a {
