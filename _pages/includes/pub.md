@@ -5,7 +5,7 @@
 }
 
 .publications-note {
-  margin: 0;
+  margin: 0 0 10px;
   color: #667085;
   font-size: 0.95rem;
 }

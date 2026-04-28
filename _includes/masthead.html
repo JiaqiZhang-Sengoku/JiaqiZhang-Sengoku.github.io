@@ -1,10 +1,82 @@
+<style>
+.masthead {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(102, 126, 234, 0.12);
+  box-shadow: 0 10px 30px rgba(20, 32, 70, 0.06);
+}
+
+.masthead__inner-wrap {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 10px 22px;
+}
+
+.greedy-nav {
+  min-height: 46px;
+}
+
+.masthead__menu .visible-links {
+  gap: 6px;
+  align-items: center;
+}
+
+.masthead__menu-item {
+  margin: 0;
+}
+
+.masthead__menu-item a {
+  display: inline-flex;
+  align-items: center;
+  padding: 9px 14px;
+  border-radius: 999px;
+  color: #33415c;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition: background 0.22s ease, color 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.masthead__menu-item a:hover {
+  background: rgba(77, 99, 210, 0.10);
+  color: #21325c;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(77, 99, 210, 0.10);
+}
+
+.masthead__menu-home-item a {
+  background: linear-gradient(135deg, #4d63d2, #6f86ff);
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(77, 99, 210, 0.24);
+}
+
+.masthead__menu-home-item a:hover {
+  background: linear-gradient(135deg, #4157c5, #5f79ff);
+  color: #fff;
+}
+
+.greedy-nav button {
+  border-radius: 12px;
+}
+
+@media (max-width: 900px) {
+  .masthead__inner-wrap {
+    padding: 10px 16px;
+  }
+}
+</style>
+
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
+        <button aria-label="Toggle menu"><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a href="#about-me">Homepage</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item">
+            <a href="#about-me">Homepage</a>
+          </li>
           {% for link in site.data.navigation.main %}
             <li class="masthead__menu-item">
               <a href="{% if link.url contains 'http' %}{{ link.url }}{% else %}{{ link.url | relative_url }}{% endif %}">
