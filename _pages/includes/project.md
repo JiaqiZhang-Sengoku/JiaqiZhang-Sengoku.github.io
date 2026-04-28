@@ -1,3 +1,4 @@
+<span class='anchor' id='projects'></span>
 <div class="section-heading section-heading--projects">
   <h2 class="section-heading__title">🔨 Projects</h2>
 </div>

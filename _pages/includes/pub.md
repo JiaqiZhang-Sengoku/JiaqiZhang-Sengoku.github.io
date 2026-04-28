@@ -1,3 +1,4 @@
+<span class='anchor' id='publications'></span>
 <div class="section-heading section-heading--publications">
   <h2 class="section-heading__title">📝 Publications</h2>
 </div>
@@ -141,7 +142,7 @@ Wenjing Wang, Jintao Liu, Songyan Wang, Wenlong Meng, **Jiaqi Zhang**
 </div>
 </div> -->
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/SCA-Net.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/SCA-Net.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [SCA-Net: A Scale- and Contrast-Aware Network for Subtle and Low-Contrast Polyp Segmentation]()
 <br>
@@ -150,9 +151,9 @@ Journal of Imaging Informatics in Medicine (JIIM) **Under Review**
 **Jiaqi Zhang**(Third Author), Anonymous
 <br>
 </div>
-</div>
+</div> -->
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/DG-SCL.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/DG-SCL.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [DG-SCL: Diffusion-Guided Semantic Contrastive Learning for Imbalanced Malicious
 Traffic Detectionl]()
@@ -162,7 +163,7 @@ Information Sciences **Under Review**
 Bingbing Gu <sup>*</sup>, Saihua Cai <sup>*</sup>, <sup>†</sup>, Jing Wang, Zhuole Li, Xiheng Jia, **Jiaqi Zhang**
 <br>
 </div>
-</div>
+</div> -->
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/A2L.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -194,7 +195,7 @@ International Conference On Intelligent Computing (ICIC 2026) **Under Review**
 <br>
 International Conference On Intelligent Computing (ICIC 2026)
 <br>
-**Jiaqi Zhang**(First Author), Xinjie Li, Guo Yang, Kang Yang, Wenjing Wang, Yang Yang<sup>†</sup>
+**Jiaqi Zhang**, Xinjie Li, Guo Yang, Kang Yang, Wenjing Wang, Yang Yang<sup>†</sup>
 <br>
 </div>
 </div>
