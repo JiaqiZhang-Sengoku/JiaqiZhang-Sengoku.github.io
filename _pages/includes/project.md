@@ -15,59 +15,42 @@
   background: linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(248,250,255,0.98) 100%);
   border: 1px solid rgba(102, 126, 234, 0.12);
   box-shadow: 0 10px 28px rgba(20, 32, 70, 0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
-.project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 18px 38px rgba(20, 32, 70, 0.14);
-  border-color: rgba(102, 126, 234, 0.18);
-}
-
-.project-card__layout {
+.project-card__grid {
   display: grid;
-  grid-template-columns: minmax(280px, 36%) 1fr;
+  grid-template-columns: minmax(280px, 38%) 1fr;
 }
 
-.project-card__media {
-  display: flex;
-  flex-direction: column;
-  background: #f6f8fc;
+.project-card__left {
   border-right: 1px solid rgba(102, 126, 234, 0.08);
+  background: #f6f8fc;
 }
 
-.project-card__media img {
+.project-card__image {
   width: 100%;
   display: block;
-  transition: transform 0.35s ease, filter 0.35s ease;
-}
-
-.project-card:hover .project-card__media img {
-  transform: scale(1.02);
-  filter: saturate(1.03) contrast(1.02);
 }
 
 .project-card__results {
-  margin-top: auto;
   padding: 14px 16px 16px;
   border-top: 1px solid rgba(102, 126, 234, 0.08);
-  background: linear-gradient(180deg, rgba(246, 248, 252, 0.72) 0%, rgba(255, 255, 255, 0.95) 100%);
+  background: linear-gradient(180deg, rgba(246,248,252,0.78) 0%, rgba(255,255,255,0.96) 100%);
 }
 
 .project-card__results-title {
   margin: 0 0 8px;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   font-weight: 700;
   color: #2f3b66;
-  letter-spacing: 0.01em;
 }
 
 .project-card__results-list {
   margin: 0;
   padding-left: 1.1rem;
   color: #4a5568;
-  line-height: 1.65;
-  font-size: 0.92rem;
+  line-height: 1.62;
+  font-size: 0.9rem;
 }
 
 .project-card__content {
@@ -96,16 +79,12 @@
   text-decoration: underline;
 }
 
-.project-card__meta {
-  margin: 0;
-}
-
 @media (max-width: 900px) {
-  .project-card__layout {
+  .project-card__grid {
     grid-template-columns: 1fr;
   }
 
-  .project-card__media {
+  .project-card__left {
     border-right: none;
     border-bottom: 1px solid rgba(102, 126, 234, 0.08);
   }
@@ -147,9 +126,9 @@
 
 <div class="projects-panel">
   <div class="project-card">
-    <div class="project-card__layout">
-      <div class="project-card__media">
-        <img src="images/Projects/Pro_1.png" alt="Pro_1">
+    <div class="project-card__grid">
+      <div class="project-card__left">
+        <img class="project-card__image" src="images/Projects/Pro_1.png" alt="Pro_1">
         <div class="project-card__results">
           <div class="project-card__results-title">项目成果</div>
           <ul class="project-card__results-list">
@@ -173,9 +152,9 @@
   </div>
 
   <div class="project-card">
-    <div class="project-card__layout">
-      <div class="project-card__media">
-        <img src="images/Projects/Pro_2.png" alt="Pro_2">
+    <div class="project-card__grid">
+      <div class="project-card__left">
+        <img class="project-card__image" src="images/Projects/Pro_2.png" alt="Pro_2">
         <div class="project-card__results">
           <div class="project-card__results-title">项目成果</div>
           <ul class="project-card__results-list">
@@ -195,9 +174,9 @@
   </div>
 
   <div class="project-card">
-    <div class="project-card__layout">
-      <div class="project-card__media">
-        <img src="images/Projects/Pro_3.png" alt="Pro_3">
+    <div class="project-card__grid">
+      <div class="project-card__left">
+        <img class="project-card__image" src="images/Projects/Pro_3.png" alt="Pro_3">
         <div class="project-card__results">
           <div class="project-card__results-title">项目成果</div>
           <ul class="project-card__results-list">
@@ -220,9 +199,9 @@
   </div>
 
   <div class="project-card">
-    <div class="project-card__layout">
-      <div class="project-card__media">
-        <img src="images/Projects/Pro_4.png" alt="Pro_4">
+    <div class="project-card__grid">
+      <div class="project-card__left">
+        <img class="project-card__image" src="images/Projects/Pro_4.png" alt="Pro_4">
         <div class="project-card__results">
           <div class="project-card__results-title">项目成果</div>
           <ul class="project-card__results-list">
@@ -247,9 +226,9 @@
   </div>
 
   <div class="project-card">
-    <div class="project-card__layout">
-      <div class="project-card__media">
-        <img src="images/Projects/Pro_5.png" alt="Pro_5">
+    <div class="project-card__grid">
+      <div class="project-card__left">
+        <img class="project-card__image" src="images/Projects/Pro_5.png" alt="Pro_5">
         <div class="project-card__results">
           <div class="project-card__results-title">项目成果</div>
           <ul class="project-card__results-list">
@@ -267,9 +246,9 @@
   </div>
 
   <div class="project-card">
-    <div class="project-card__layout">
-      <div class="project-card__media">
-        <img src="images/Projects/Pro_6.png" alt="Pro_6">
+    <div class="project-card__grid">
+      <div class="project-card__left">
+        <img class="project-card__image" src="images/Projects/Pro_6.png" alt="Pro_6">
         <div class="project-card__results">
           <div class="project-card__results-title">项目成果</div>
           <ul class="project-card__results-list">

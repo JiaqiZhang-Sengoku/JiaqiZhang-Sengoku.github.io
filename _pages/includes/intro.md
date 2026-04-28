@@ -29,8 +29,7 @@ body {
 }
 
 .hero-card,
-.news-panel,
-.section-box {
+.news-panel {
   background: var(--card-bg);
   border: 1px solid var(--card-border);
   border-radius: 22px;
