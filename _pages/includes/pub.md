@@ -147,7 +147,7 @@ Xiaoyu Gu, **Jiaqi Zhang**, Lanling Zeng, Yang Yang <sup>†</sup>
 <br>
 Journal of Biomedical and Health Informatics (JBHI) **Under Review**
 <br>
-Kai Han, **Jiaqi Zhang**, Chongwen Lyu, Mengting Li, Jun Chen, Laihua Yang, Yang Chen <sup>†</sup>, Zhe Liu <sup>†</sup>
+Kai Han, **Jiaqi Zhang**, Chongwen Lyu, Mengting Li, Jun Chen, Laihua Yang, Guangquan Zhou, Yang Chen, Zhe Liu <sup>†</sup>
 <br>
 [Paper](/Paper/OrthoSeg_Paper.pdf)<br>
 </div>

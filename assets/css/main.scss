@@ -121,8 +121,8 @@ h1, h2, h3, h4, h5, h6, strong, em, small, blockquote, figcaption, figcaption *,
 }
 
 .section-heading {
-    margin: 2.3rem 0 1rem;
-    padding: 0.15rem 0 0.9rem;
+    margin: 1.5rem 0 0.9rem;
+    padding: 0.1rem 0 0.65rem;
     border-bottom: 1px solid #e6ecf7;
 }
 
@@ -156,11 +156,13 @@ h1, h2, h3, h4, h5, h6, strong, em, small, blockquote, figcaption, figcaption *,
     background: rgba(255, 255, 255, 0.92);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(219, 231, 255, 0.9);
-    box-shadow: 0 2px 12px rgba(15, 23, 42, 0.04);
+    box-shadow: none !important;
 }
 
 .masthead__inner-wrap {
-    padding: 0.6em 0.9em !important;
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0.35em 1rem !important;
 }
 
 .greedy-nav {
@@ -168,8 +170,8 @@ h1, h2, h3, h4, h5, h6, strong, em, small, blockquote, figcaption, figcaption *,
 }
 
 .greedy-nav a {
-    margin: 0 0.85rem !important;
-    padding: 0.7rem 0 !important;
+    margin: 0 0.65rem !important;
+    padding: 0.45rem 0 !important;
     font-size: 0.96rem;
     font-weight: 600;
     letter-spacing: 0.01em;
@@ -205,7 +207,8 @@ h1, h2, h3, h4, h5, h6, strong, em, small, blockquote, figcaption, figcaption *,
 }
 
 .page__inner-wrap {
-    max-width: 1160px;
+    max-width: 1260px;
+    margin: 0 auto;
 }
 
 .page__content {
@@ -213,15 +216,24 @@ h1, h2, h3, h4, h5, h6, strong, em, small, blockquote, figcaption, figcaption *,
     border: 1px solid #e9eef7;
     border-radius: 18px;
     box-shadow: 0 8px 22px rgba(16, 24, 40, 0.05);
-    padding: 1.5rem 1.7rem 1.8rem;
+    padding: 1.0rem 1.25rem 1.35rem;
 }
 
 .page__content #about-me {
-    margin-top: 0;
+    margin-top: 0 !important;
 }
 
 .page__content #about-me:before {
-    content: none;
+    content: none !important;
+}
+
+.page__content > :first-child,
+.page__content > :first-child > :first-child {
+    margin-top: 0 !important;
+}
+
+.page__content > :first-child > .hero-card {
+    margin-top: 0 !important;
 }
 
 .hero-card {
@@ -288,6 +300,10 @@ h1, h2, h3, h4, h5, h6, strong, em, small, blockquote, figcaption, figcaption *,
 
 body, p, li, a, span, div, button, input, textarea {
     font-family: Constantia, "Times New Roman", Georgia, serif;
+}
+
+#main {
+    padding-top: 0.3rem;
 }
 
 .page__content {
