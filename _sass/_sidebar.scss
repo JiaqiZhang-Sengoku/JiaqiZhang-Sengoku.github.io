@@ -63,6 +63,14 @@
   @include breakpoint($x-large) {
     width: $right-sidebar-width;
   }
+
+  .profile_box {
+    @include breakpoint($large) {
+      width: calc(100% - 24px);
+      margin-left: 24px;
+      box-sizing: border-box;
+    }
+  }
 }
 
 /*
