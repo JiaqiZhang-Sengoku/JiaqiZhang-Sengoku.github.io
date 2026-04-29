@@ -76,6 +76,7 @@
   justify-content: center;
   align-content: center;
   align-items: center;
+  text-align: center;
 
   @include breakpoint($medium) {
     flex-direction: column;
@@ -132,9 +133,12 @@
     padding-left: 0;
     padding-right: 0;
     text-align: center;
+    margin: 0 auto;
   }
 
   @include breakpoint($medium) {
+    display: block;
+    width: 100%;
     padding-left: 0;
     text-align: center;
   }
@@ -227,6 +231,8 @@
   }
 
   @include breakpoint($medium) {
+    display: block;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
   }
