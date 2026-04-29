@@ -105,6 +105,40 @@ h1, h2, h3, h4, h5, h6, strong, em, small, blockquote, figcaption, figcaption *,
     color: #2c3748;
 }
 
+/* Author profile alignment overrides */
+.sidebar .profile_box {
+    width: 100%;
+}
+
+.sidebar .author__avatar,
+.sidebar .author__content,
+.sidebar .author__urls-wrapper {
+    float: none !important;
+    display: block !important;
+}
+
+.sidebar .author__avatar {
+    width: 100% !important;
+    text-align: center !important;
+}
+
+.sidebar .author__content {
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: center !important;
+}
+
+.sidebar .author__urls-wrapper {
+    width: 100% !important;
+    margin-left: 0 !important;
+    text-align: left !important;
+}
+
+.sidebar .author__urls {
+    width: 100% !important;
+}
+
 .page__content a {
     color: #355bd7;
     text-underline-offset: 0.14em;
