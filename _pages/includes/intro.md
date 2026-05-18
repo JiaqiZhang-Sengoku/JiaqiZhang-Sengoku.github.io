@@ -166,7 +166,8 @@ body {
 </div>
 
 <div class="news-panel" markdown="1">
-- *2026.04*: &nbsp;🎉🎉 Three papers have been accepted as Oral presentations by **ICIC** 2026!
+- *2026.05*: &nbsp;🎉🎉 Our work [DPG]() has been accepted by **Signal Processing**.
+- *2026.04*: &nbsp;🎉🎉 Three papers have been accepted as **Oral** presentations by **ICIC** 2026!
   - IFCLNet: Intrinsic Feature Consistency Learning Network for Generalizable Medical Image Segmentation.
   - Agent-SAM-I2V: Self-Correcting Framework for Robust Video Segmentation via Agentic Control Layer.
   - Adaptive IQN: Adaptive Risk-Aware Network for Safe, Energy-Efficient Unmanned Surface Vehicle Navigation.

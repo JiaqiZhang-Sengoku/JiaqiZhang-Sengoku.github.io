@@ -327,13 +327,13 @@ Chongwen Lyu, Kai Han, **Jiaqi Zhang**, Qiaoying Teng, Jun Chen, Zhe Liu<sup>†
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/DPG.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Signal Processing</div><img src='images/Publication/DPG.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Diffusive Image Restoration with Time Leap and Deviation Prediction Guidance]()
 <br>
-Signal Processing **Under Review**
+Signal Processing (2026)
 <br>
-Yang Yang, Yi Wang, **Jiaqi Zhang**, Lanling Zeng<sup>†</sup>(Corresponding Author)
+Yang Yang, Yi Wang, **Jiaqi Zhang**, Lanling Zeng<sup>†</sup>
 <br>
 </div>
 </div>
