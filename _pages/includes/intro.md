@@ -171,6 +171,7 @@ body {
   - IFCLNet: Intrinsic Feature Consistency Learning Network for Generalizable Medical Image Segmentation.
   - Agent-SAM-I2V: Self-Correcting Framework for Robust Video Segmentation via Agentic Control Layer.
   - Adaptive IQN: Adaptive Risk-Aware Network for Safe, Energy-Efficient Unmanned Surface Vehicle Navigation.
+- *2026.02*: &nbsp;🎉🎉 Our work [RRGCL]() has been accepted by **CVPR Findings**.
 - *2026.02*: &nbsp;🎉🎉 Our work [PIRP](https://www.sciencedirect.com/science/article/abs/pii/S0950705126002303) has been accepted by **Knowledge-Based Systems**. It is a parameterized image restoration method that combines diffusion and gradient dual priors.
 </div>
 
