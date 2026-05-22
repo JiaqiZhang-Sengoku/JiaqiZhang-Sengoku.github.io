@@ -141,6 +141,18 @@ Xiaoyu Gu, **Jiaqi Zhang**, Lanling Zeng, Yang Yang <sup>†</sup>
 </div>
 </div> -->
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/PriMD.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Modality Disentangled Learning for Incomplete Multimodal Emotion Recognition: A Primitive Memory Distillation Perspective]()
+<br>
+Empirical Methods in Natural Language Processing (EMNLP) **Under Review**
+<br>
+**Jiaqi Zhang**, Zheng Pang
+<br>
+</div>
+</div>
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/OrthoSeg.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Learning Orthogonal Disentanglement for Modality-Agnostic Medical Image Segmentation]()
@@ -269,7 +281,7 @@ International Conference On Intelligent Computing (ICIC 2026) **Under Review**
 </div>
 </div> -->
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICIC</div><img src='images/Publication/IFCLNet.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICIC 2026</div><img src='images/Publication/IFCLNet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Intrinsic Feature Consistency Learning Network for Generalizable Medical Image Segmentation]()
 <br>
@@ -329,12 +341,13 @@ Chongwen Lyu, Kai Han, **Jiaqi Zhang**, Qiaoying Teng, Jun Chen, Zhe Liu<sup>†
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Signal Processing</div><img src='images/Publication/DPG.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[Diffusive Image Restoration with Time Leap and Deviation Prediction Guidance]()
+[Zero-shot Diffusive Image Restoration with Consistency]()
 <br>
 Signal Processing (2026)
 <br>
-Yang Yang, Yi Wang, **Jiaqi Zhang**, Lanling Zeng<sup>†</sup>
+Yi Wang, Lanling Zeng, **Jiaqi Zhang**, Yang Yang<sup>†</sup>
 <br>
+[Paper](https://www.sciencedirect.com/science/article/abs/pii/S0165168426002197)
 </div>
 </div>
 
