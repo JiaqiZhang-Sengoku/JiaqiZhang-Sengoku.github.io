@@ -82,6 +82,19 @@
 
 <div class="publications-panel">
 
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/PriMD.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Modality Disentangled Learning for Incomplete Multimodal Emotion Recognition: A Primitive Memory Distillation Perspective]()
+<br>
+Empirical Methods in Natural Language Processing (EMNLP) **Under Review**
+<br>
+**Jiaqi Zhang**, Zheng Pang
+<br>
+</div>
+</div>
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/Uni-IMD.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [A Unified Medical Incomplete Multimodal Diagnosis Framework Based on Optimal Feature Disentanglement]()
@@ -141,16 +154,6 @@ Xiaoyu Gu, **Jiaqi Zhang**, Lanling Zeng, Yang Yang <sup>†</sup>
 </div>
 </div> -->
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/PriMD.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[Modality Disentangled Learning for Incomplete Multimodal Emotion Recognition: A Primitive Memory Distillation Perspective]()
-<br>
-Empirical Methods in Natural Language Processing (EMNLP) **Under Review**
-<br>
-**Jiaqi Zhang**, Zheng Pang
-<br>
-</div>
-</div>
 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/OrthoSeg.png' alt="sym" width="100%"></div></div>
