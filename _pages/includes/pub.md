@@ -463,7 +463,7 @@ Biomedical Signal Processing and Control (BSPC) **Under Review**
   <div class="other-paper-item">
     <div class="other-paper-title">Zero-shot Diffusive Image Restoration with Consistency</div>
     <div class="other-paper-authors">Signal Processing (2026)</div>
-    <div class="other-paper-authors">Yi Wang, Lanling Zeng, **Jiaqi Zhang**, Yang Yang<sup>†</sup></div>
+    <div class="other-paper-authors">Yi Wang, Lanling Zeng, <strong>Jiaqi Zhang</strong>, Yang Yang<sup>†</sup></div>
     <div class="other-paper-authors">[Paper](https://www.sciencedirect.com/science/article/abs/pii/S0165168426002197)</div>
   </div>
 </div>
@@ -472,8 +472,8 @@ Biomedical Signal Processing and Control (BSPC) **Under Review**
 <div class="other-publications-panel">
   <div class="other-paper-item">
     <div class="other-paper-title">Intrinsic Feature Consistency Learning Network for Generalizable Medical Image Segmentation</div>
-    <div class="other-paper-authors">**ICIC 2026 Oral**, International Conference On Intelligent Computing (2026) Oral</div>
-    <div class="other-paper-authors">**Jiaqi Zhang**, Xinjie Li, Guo Yang, Kang Yang, Wenjing Wang, Yang Yang<sup>†</sup></div>
+    <div class="other-paper-authors"><strong>ICIC 2026 Oral</strong>, International Conference On Intelligent Computing (2026) Oral</div>
+    <div class="other-paper-authors"><strong>Jiaqi Zhang</strong>, Xinjie Li, Guo Yang, Kang Yang, Wenjing Wang, Yang Yang<sup>†</sup></div>
     <div class="other-paper-authors"></div>
   </div>
 </div>
@@ -481,8 +481,8 @@ Biomedical Signal Processing and Control (BSPC) **Under Review**
 <div class="other-publications-panel">
   <div class="other-paper-item">
     <div class="other-paper-title">Agent-SAM-I2V: Self-Correcting Promptable Video Segmentation via Agentic Drift Detection and Multi-Prompt Fusion</div>
-    <div class="other-paper-authors">**ICIC 2026 Oral**, International Conference On Intelligent Computing (2026) Oral</div>
-    <div class="other-paper-authors">**Guo Yang**, Jiaqi Zhang, Yao Zhu, Longze Fan<sup>†</sup></div>
+    <div class="other-paper-authors"><strong>ICIC 2026 Oral</strong>, International Conference On Intelligent Computing (2026) Oral</div>
+    <div class="other-paper-authors">Guo Yang, <strong>Jiaqi Zhang</strong>, Yao Zhu, Longze Fan<sup>†</sup></div>
     <div class="other-paper-authors"></div>
   </div>
 </div>
@@ -490,8 +490,8 @@ Biomedical Signal Processing and Control (BSPC) **Under Review**
 <div class="other-publications-panel">
   <div class="other-paper-item">
     <div class="other-paper-title">Adaptive Risk-aware Implicit Quantile Network: Towards Safe and Energy-E!cient USV Navigation in Dynamic Environments</div>
-    <div class="other-paper-authors">**ICIC 2026 Oral**, International Conference On Intelligent Computing (2026) Oral</div>
-    <div class="other-paper-authors">**Wenjing Wang**, Jiaqi Zhang</div>
+    <div class="other-paper-authors"><strong>ICIC 2026 Oral</strong>, International Conference On Intelligent Computing (2026) Oral</div>
+    <div class="other-paper-authors">Wenjing Wang, <strong>Jiaqi Zhang</strong></div>
     <div class="other-paper-authors"></div>
   </div>
 </div>
@@ -499,8 +499,8 @@ Biomedical Signal Processing and Control (BSPC) **Under Review**
 <div class="other-publications-panel">
   <div class="other-paper-item">
     <div class="other-paper-title">Parameterized Image Restoration with Diffusion and Gradient Priors</div>
-    <div class="other-paper-authors">**KBS 2026**, Knowledge-Based Systems (2026)</div>
-    <div class="other-paper-authors">Yang Yang<sup>†</sup>, Xi Zhang, **Jiaqi Zhang**, Lanling Zeng
+    <div class="other-paper-authors"><strong>KBS 2026</strong>, Knowledge-Based Systems (2026)</div>
+    <div class="other-paper-authors">Yang Yang<sup>†</sup>, Xi Zhang, <strong>Jiaqi Zhang</strong>, Lanling Zeng
 <br></div>
     <div class="other-paper-authors">[Paper](https://www.sciencedirect.com/science/article/abs/pii/S0950705126002303)</div>
   </div>
