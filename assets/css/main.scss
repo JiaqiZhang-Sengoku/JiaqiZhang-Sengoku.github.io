@@ -126,14 +126,13 @@ h1, h2, h3, h4, h5, h6, strong, em, small, blockquote, figcaption, figcaption *,
 /* Author profile alignment overrides */
 .sidebar .profile_box {
     width: 100%;
-    transform: translateX(28px);
-    max-width: 300px;
+    transform: translateX(22px);
+    max-width: 240px;
     margin: 0 auto;
-    padding: 18px 18px 20px;
-    background: var(--surface-bg);
-    border: 1px solid var(--card-border);
-    border-radius: var(--radius-card);
-    box-shadow: var(--card-shadow);
+    padding: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
 }
 
 .sidebar .author__avatar,
@@ -150,11 +149,11 @@ h1, h2, h3, h4, h5, h6, strong, em, small, blockquote, figcaption, figcaption *,
 }
 
 .sidebar .author__avatar img {
-    max-width: 190px;
-    padding: 5px;
-    background: var(--surface-soft);
+    max-width: 180px;
+    padding: 4px;
+    background: var(--surface-bg);
     border: 1px solid var(--card-border);
-    box-shadow: 0 10px 24px rgba(26, 39, 70, 0.08);
+    box-shadow: 0 8px 18px rgba(26, 39, 70, 0.06);
 }
 
 .sidebar .author__content {
@@ -177,7 +176,7 @@ h1, h2, h3, h4, h5, h6, strong, em, small, blockquote, figcaption, figcaption *,
 }
 
 .sidebar .author__bio {
-    max-width: 220px;
+    max-width: 210px;
     margin: 10px auto 16px;
     color: var(--text-color);
     line-height: 1.45;
@@ -185,7 +184,7 @@ h1, h2, h3, h4, h5, h6, strong, em, small, blockquote, figcaption, figcaption *,
 
 .sidebar .author__urls {
     width: 100% !important;
-    margin-top: 8px !important;
+    margin-top: 6px !important;
 }
 
 .sidebar .author__urls li {
