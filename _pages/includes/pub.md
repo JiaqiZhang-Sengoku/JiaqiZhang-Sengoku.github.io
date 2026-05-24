@@ -61,6 +61,34 @@
   text-decoration: underline;
 }
 
+.other-publications-panel {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.other-paper-item {
+  padding: 16px 18px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfcff 100%);
+  border: 1px solid rgba(102, 126, 234, 0.10);
+  box-shadow: 0 6px 18px rgba(20, 32, 70, 0.06);
+}
+
+.other-paper-title {
+  margin-bottom: 6px;
+  color: #1f2a44;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.other-paper-authors {
+  color: #445066;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
 @media (max-width: 600px) {
   .paper-box-text {
     padding: 14px 14px 16px;
@@ -70,6 +98,19 @@
 
   .paper-box-text strong:first-child {
     font-size: 14px;
+  }
+
+  .other-paper-item {
+    padding: 14px;
+    border-radius: 14px;
+  }
+
+  .other-paper-title {
+    font-size: 14px;
+  }
+
+  .other-paper-authors {
+    font-size: 12.5px;
   }
 }
 </style>
@@ -411,6 +452,18 @@ Biomedical Signal Processing and Control (BSPC) **Under Review**
 <br>
 [Code](https://github.com/JiaqiZhang-Sengoku/DDGF)
 </div>
+</div>
+
+<span class='anchor' id='other-publications'></span>
+<div class="section-heading section-heading--other-publications">
+  <h2 class="section-heading__title">📚 Other Publications</h2>
+</div>
+
+<div class="other-publications-panel">
+  <div class="other-paper-item">
+    <div class="other-paper-title">A Lightweight Benchmark for Robust Multimodal Medical Image Understanding</div>
+    <div class="other-paper-authors"><strong>Jiaqi Zhang</strong>, Example Author, Yang Yang<sup>†</sup></div>
+  </div>
 </div>
 
 <!-- # 🎖 Academical Services
