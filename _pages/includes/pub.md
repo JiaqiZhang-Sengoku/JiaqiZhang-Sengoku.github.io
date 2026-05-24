@@ -487,7 +487,7 @@ Biomedical Signal Processing and Control (BSPC) **Under Review**
     <div class="other-paper-authors"><strong>KBS 2026</strong>, Knowledge-Based Systems (2026)</div>
     <div class="other-paper-authors">Yang Yang<sup>†</sup>, Xi Zhang, <strong>Jiaqi Zhang</strong>, Lanling Zeng
 <br></div>
-    <div class="other-paper-authors"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705126002303">Paper</a> <a href="https://github.com/AKA-hhh/PIRP">Code</a></div>
+    <div class="other-paper-authors"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705126002303">Paper</a>   <a href="https://github.com/AKA-hhh/PIRP">Code</a></div>
   </div>
 </div>
 
