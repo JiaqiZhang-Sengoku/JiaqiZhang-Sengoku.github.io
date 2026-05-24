@@ -1,9 +1,15 @@
 <style>
 :root {
   --page-bg: #f5f7fb;
-  --card-bg: rgba(255, 255, 255, 0.92);
+  --surface-bg: #ffffff;
+  --surface-soft: #f6f8fc;
+  --card-bg: rgba(255, 255, 255, 0.94);
   --card-border: rgba(102, 126, 234, 0.12);
-  --card-shadow: 0 12px 30px rgba(20, 32, 70, 0.08);
+  --section-border: #e6ecf7;
+  --card-shadow: 0 8px 22px rgba(20, 32, 70, 0.08);
+  --card-shadow-hover: 0 16px 34px rgba(20, 32, 70, 0.13);
+  --radius-card: 18px;
+  --radius-inner: 14px;
   --heading-color: #18233a;
   --text-color: #405066;
   --muted-color: #60708e;
@@ -17,7 +23,7 @@ body {
 #main {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 0 20px 24px;
+  padding: 0 20px 28px;
 }
 
 .hero-card {
@@ -28,7 +34,7 @@ body {
 .news-panel {
   background: var(--card-bg);
   border: 1px solid var(--card-border);
-  border-radius: 20px;
+  border-radius: var(--radius-card);
   box-shadow: var(--card-shadow);
   backdrop-filter: blur(6px);
 }
@@ -62,14 +68,18 @@ body {
 }
 
 .section-heading {
-  margin: 14px 0 10px;
+  margin: 28px 0 14px;
+  padding: 0 0 12px;
+  border-bottom: 1px solid var(--section-border);
 }
 
 .section-heading__title {
-  font-size: 1.25rem;
+  font-size: 1.45rem;
   margin: 0;
+  line-height: 1.25;
   color: var(--heading-color);
   letter-spacing: -0.01em;
+  font-weight: 700;
 }
 
 .section-heading {
@@ -86,7 +96,7 @@ body {
 .section-heading__title::after {
   content: "";
   display: inline-block;
-  width: 52px;
+  width: 64px;
   height: 3px;
   margin-left: 12px;
   vertical-align: middle;
@@ -97,8 +107,8 @@ body {
 .news-panel {
   max-height: 340px;
   overflow-y: auto;
-  padding: 14px 18px;
-  margin-bottom: 18px;
+  padding: 16px 18px;
+  margin-bottom: 20px;
   background: linear-gradient(135deg, rgba(244, 248, 255, 0.96) 0%, rgba(233, 242, 255, 0.9) 100%);
 }
 
@@ -134,7 +144,6 @@ body {
 
   .hero-card {
     padding: 20px 18px;
-    border-radius: 18px;
   }
 }
 
@@ -144,12 +153,15 @@ body {
   }
 
   .section-heading__title {
-    font-size: 1.08rem;
+    font-size: 1.18rem;
+  }
+
+  .section-heading__title::after {
+    width: 42px;
   }
 
   .news-panel {
     padding: 12px 14px;
-    border-radius: 18px;
   }
 }
 </style>

@@ -6,53 +6,54 @@
 <style>
 .honors-panel {
   max-width: 1400px;
-  margin: 0 auto 36px;
+  margin: 0 auto 28px;
 }
 
 .awards-section {
-  margin: 24px 0 0;
-  padding: 20px 20px 8px;
-  border: 1px solid rgba(102, 126, 234, 0.10);
-  border-radius: 18px;
-  background: linear-gradient(180deg, #ffffff 0%, #fbfcff 100%);
-  box-shadow: 0 8px 22px rgba(20, 32, 70, 0.08);
+  margin: 20px 0 0;
+  padding: 18px 18px 8px;
+  border: 1px solid var(--card-border, rgba(102, 126, 234, 0.10));
+  border-radius: var(--radius-card, 18px);
+  background: var(--surface-bg, #ffffff);
+  box-shadow: var(--card-shadow, 0 8px 22px rgba(20, 32, 70, 0.08));
 }
 
 .section-title {
   font-size: 1.02rem;
   font-weight: 700;
-  color: #2f3b66;
+  color: var(--heading-color, #2f3b66);
   margin: 0 0 16px;
   padding-bottom: 10px;
-  border-bottom: 2px solid rgba(102, 126, 234, 0.28);
+  border-bottom: 1px solid var(--section-border, #e6ecf7);
 }
 
 .awards-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 16px;
+  gap: 14px;
   padding: 8px 0 18px;
 }
 
 .award-card {
-  background: linear-gradient(180deg, #ffffff 0%, #fbfcff 100%);
-  border-radius: 14px;
+  background: var(--surface-bg, #ffffff);
+  border-radius: var(--radius-inner, 14px);
   overflow: hidden;
-  border: 1px solid rgba(102, 126, 234, 0.08);
-  box-shadow: 0 4px 14px rgba(20, 32, 70, 0.06);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid var(--card-border, rgba(102, 126, 234, 0.08));
+  box-shadow: 0 5px 16px rgba(20, 32, 70, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .award-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
   box-shadow: 0 12px 24px rgba(20, 32, 70, 0.12);
+  border-color: rgba(102, 126, 234, 0.18);
 }
 
 .award-image-container {
   width: 100%;
   aspect-ratio: 5 / 7;
   overflow: hidden;
-  background: #f6f8fc;
+  background: var(--surface-soft, #f6f8fc);
 }
 
 .award-image {
@@ -60,6 +61,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  border-radius: 0;
 }
 
 .award-info {
@@ -69,17 +71,17 @@
 .award-title {
   font-size: 13px;
   line-height: 1.55;
-  color: #2f3542;
+  color: var(--text-color, #2f3542);
   margin-bottom: 6px;
 }
 
 .award-title strong {
-  color: #1f2a44;
+  color: var(--heading-color, #1f2a44);
 }
 
 .award-date {
   font-size: 11px;
-  color: #7d8796;
+  color: var(--muted-color, #7d8796);
   font-weight: 600;
 }
 
@@ -94,7 +96,6 @@
 @media (max-width: 600px) {
   .awards-section {
     padding: 16px 14px 6px;
-    border-radius: 16px;
   }
 
   .awards-grid {

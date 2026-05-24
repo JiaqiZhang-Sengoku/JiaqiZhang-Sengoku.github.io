@@ -1,37 +1,44 @@
 <style>
 .publications-panel {
   display: grid;
-  gap: 18px;
+  gap: 16px;
+  margin-bottom: 16px;
 }
 
 .publications-note {
-  margin: 0 0 10px;
-  color: #667085;
-  font-size: 0.95rem;
+  margin: 0 0 14px;
+  color: var(--muted-color, #667085);
+  font-size: 0.94rem;
 }
 
 .paper-box {
-  border-radius: 18px;
+  margin: 0 0 16px;
+  border-radius: var(--radius-card, 18px);
   overflow: hidden;
-  background: linear-gradient(180deg, #ffffff 0%, #fbfcff 100%);
-  border: 1px solid rgba(102, 126, 234, 0.10);
-  box-shadow: 0 8px 22px rgba(20, 32, 70, 0.08);
+  background: var(--surface-bg, #ffffff);
+  border: 1px solid var(--card-border, rgba(102, 126, 234, 0.10));
+  box-shadow: var(--card-shadow, 0 8px 22px rgba(20, 32, 70, 0.08));
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
+.publications-panel .paper-box {
+  margin-bottom: 0;
+}
+
 .paper-box:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 34px rgba(20, 32, 70, 0.14);
+  transform: translateY(-3px);
+  box-shadow: var(--card-shadow-hover, 0 16px 34px rgba(20, 32, 70, 0.13));
   border-color: rgba(102, 126, 234, 0.18);
 }
 
 .paper-box-image {
-  background: #f6f8fc;
+  background: var(--surface-soft, #f6f8fc);
 }
 
 .paper-box-image img {
   transition: transform 0.35s ease, filter 0.35s ease;
   display: block;
+  border-radius: 0;
 }
 
 .paper-box:hover .paper-box-image img {
@@ -40,20 +47,20 @@
 }
 
 .paper-box-text {
-  padding: 18px 20px 20px;
-  font-size: 13px;
-  line-height: 1.8;
-  color: #445066;
+  padding: 18px 20px;
+  font-size: 0.94rem;
+  line-height: 1.75;
+  color: var(--text-color, #445066);
 }
 
 .paper-box-text strong:first-child {
-  font-size: 16px;
+  font-size: 1.02rem;
   line-height: 1.5;
-  color: #1f2a44;
+  color: var(--heading-color, #1f2a44);
 }
 
 .paper-box-text a {
-  color: #315fd6;
+  color: var(--accent, #315fd6);
   text-decoration: none;
 }
 
@@ -64,53 +71,59 @@
 .other-publications-panel {
   display: grid;
   gap: 12px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .other-paper-item {
   padding: 16px 18px;
-  border-radius: 16px;
-  background: linear-gradient(180deg, #ffffff 0%, #fbfcff 100%);
-  border: 1px solid rgba(102, 126, 234, 0.10);
-  box-shadow: 0 6px 18px rgba(20, 32, 70, 0.06);
+  border-radius: var(--radius-card, 18px);
+  background: var(--surface-bg, #ffffff);
+  border: 1px solid var(--card-border, rgba(102, 126, 234, 0.10));
+  box-shadow: var(--card-shadow, 0 8px 22px rgba(20, 32, 70, 0.08));
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.other-paper-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--card-shadow-hover, 0 16px 34px rgba(20, 32, 70, 0.13));
+  border-color: rgba(102, 126, 234, 0.18);
 }
 
 .other-paper-title {
   margin-bottom: 6px;
-  color: #1f2a44;
-  font-size: 15px;
+  color: var(--heading-color, #1f2a44);
+  font-size: 1.02rem;
   font-weight: 700;
   line-height: 1.55;
 }
 
 .other-paper-authors {
-  color: #445066;
-  font-size: 13px;
+  color: var(--text-color, #445066);
+  font-size: 0.94rem;
   line-height: 1.7;
 }
 
 @media (max-width: 600px) {
   .paper-box-text {
-    padding: 14px 14px 16px;
-    font-size: 12.5px;
+    padding: 14px;
+    font-size: 0.9rem;
     line-height: 1.7;
   }
 
   .paper-box-text strong:first-child {
-    font-size: 14px;
+    font-size: 0.98rem;
   }
 
   .other-paper-item {
     padding: 14px;
-    border-radius: 14px;
   }
 
   .other-paper-title {
-    font-size: 14px;
+    font-size: 0.98rem;
   }
 
   .other-paper-authors {
-    font-size: 12.5px;
+    font-size: 0.9rem;
   }
 }
 </style>
@@ -444,37 +457,24 @@ Biomedical Signal Processing and Control (BSPC) **Under Review**
     <div class="other-paper-authors">Yi Wang, Lanling Zeng, <strong>Jiaqi Zhang</strong>, Yang Yang<sup>†</sup></div>
     <div class="other-paper-authors">[Paper](https://www.sciencedirect.com/science/article/abs/pii/S0165168426002197)</div>
   </div>
-</div>
-
-
-<div class="other-publications-panel">
   <div class="other-paper-item">
     <div class="other-paper-title">Intrinsic Feature Consistency Learning Network for Generalizable Medical Image Segmentation</div>
     <div class="other-paper-authors"><strong>ICIC 2026 Oral</strong>, International Conference On Intelligent Computing (2026) Oral</div>
     <div class="other-paper-authors"><strong>Jiaqi Zhang</strong>, Xinjie Li, Guo Yang, Kang Yang, Wenjing Wang, Yang Yang<sup>†</sup></div>
     <div class="other-paper-authors"></div>
   </div>
-</div>
-
-<div class="other-publications-panel">
   <div class="other-paper-item">
     <div class="other-paper-title">Agent-SAM-I2V: Self-Correcting Promptable Video Segmentation via Agentic Drift Detection and Multi-Prompt Fusion</div>
     <div class="other-paper-authors"><strong>ICIC 2026 Oral</strong>, International Conference On Intelligent Computing (2026) Oral</div>
     <div class="other-paper-authors">Guo Yang, <strong>Jiaqi Zhang</strong>, Yao Zhu, Longze Fan<sup>†</sup></div>
     <div class="other-paper-authors"></div>
   </div>
-</div>
-
-<div class="other-publications-panel">
   <div class="other-paper-item">
     <div class="other-paper-title">Adaptive Risk-aware Implicit Quantile Network: Towards Safe and Energy-E!cient USV Navigation in Dynamic Environments</div>
     <div class="other-paper-authors"><strong>ICIC 2026 Oral</strong>, International Conference On Intelligent Computing (2026) Oral</div>
     <div class="other-paper-authors">Wenjing Wang, <strong>Jiaqi Zhang</strong></div>
     <div class="other-paper-authors"></div>
   </div>
-</div>
-
-<div class="other-publications-panel">
   <div class="other-paper-item">
     <div class="other-paper-title">Parameterized Image Restoration with Diffusion and Gradient Priors</div>
     <div class="other-paper-authors"><strong>KBS 2026</strong>, Knowledge-Based Systems (2026)</div>
