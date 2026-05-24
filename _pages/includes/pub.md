@@ -383,7 +383,7 @@ Chongwen Lyu, Kai Han, **Jiaqi Zhang**, Qiaoying Teng, Jun Chen, Zhe Liu<sup>†
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Signal Processing</div><img src='images/Publication/DPG.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Signal Processing</div><img src='images/Publication/DPG.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Zero-shot Diffusive Image Restoration with Consistency]()
 <br>
@@ -393,7 +393,7 @@ Yi Wang, Lanling Zeng, **Jiaqi Zhang**, Yang Yang<sup>†</sup>
 <br>
 [Paper](https://www.sciencedirect.com/science/article/abs/pii/S0165168426002197)
 </div>
-</div>
+</div> -->
 
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/HQS-PnP.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -461,7 +461,46 @@ Biomedical Signal Processing and Control (BSPC) **Under Review**
 
 <div class="other-publications-panel">
   <div class="other-paper-item">
+    <div class="other-paper-title">Zero-shot Diffusive Image Restoration with Consistency</div>
+    <div class="other-paper-authors">Signal Processing (2026)</div>
+    <div class="other-paper-authors">Yi Wang, Lanling Zeng, **Jiaqi Zhang**, Yang Yang<sup>†</sup></div>
+    <div class="other-paper-authors">[Paper](https://www.sciencedirect.com/science/article/abs/pii/S0165168426002197)</div>
+  </div>
+</div>
+
+
+<div class="other-publications-panel">
+  <div class="other-paper-item">
     <div class="other-paper-title">A Lightweight Benchmark for Robust Multimodal Medical Image Understanding</div>
+    <div class="other-paper-authors"><strong>Jiaqi Zhang</strong>, Example Author, Yang Yang<sup>†</sup></div>
+    <div class="other-paper-authors"><strong>Jiaqi Zhang</strong>, Example Author, Yang Yang<sup>†</sup></div>
+    <div class="other-paper-authors"><strong>Jiaqi Zhang</strong>, Example Author, Yang Yang<sup>†</sup></div>
+  </div>
+</div>
+
+<div class="other-publications-panel">
+  <div class="other-paper-item">
+    <div class="other-paper-title">A Lightweight Benchmark for Robust Multimodal Medical Image Understanding</div>
+    <div class="other-paper-authors"><strong>Jiaqi Zhang</strong>, Example Author, Yang Yang<sup>†</sup></div>
+    <div class="other-paper-authors"><strong>Jiaqi Zhang</strong>, Example Author, Yang Yang<sup>†</sup></div>
+    <div class="other-paper-authors"><strong>Jiaqi Zhang</strong>, Example Author, Yang Yang<sup>†</sup></div>
+  </div>
+</div>
+
+<div class="other-publications-panel">
+  <div class="other-paper-item">
+    <div class="other-paper-title">A Lightweight Benchmark for Robust Multimodal Medical Image Understanding</div>
+    <div class="other-paper-authors"><strong>Jiaqi Zhang</strong>, Example Author, Yang Yang<sup>†</sup></div>
+    <div class="other-paper-authors"><strong>Jiaqi Zhang</strong>, Example Author, Yang Yang<sup>†</sup></div>
+    <div class="other-paper-authors"><strong>Jiaqi Zhang</strong>, Example Author, Yang Yang<sup>†</sup></div>
+  </div>
+</div>
+
+<div class="other-publications-panel">
+  <div class="other-paper-item">
+    <div class="other-paper-title">A Lightweight Benchmark for Robust Multimodal Medical Image Understanding</div>
+    <div class="other-paper-authors"><strong>Jiaqi Zhang</strong>, Example Author, Yang Yang<sup>†</sup></div>
+    <div class="other-paper-authors"><strong>Jiaqi Zhang</strong>, Example Author, Yang Yang<sup>†</sup></div>
     <div class="other-paper-authors"><strong>Jiaqi Zhang</strong>, Example Author, Yang Yang<sup>†</sup></div>
   </div>
 </div>
