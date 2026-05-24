@@ -108,6 +108,7 @@ h1, h2, h3, h4, h5, h6, strong, em, small, blockquote, figcaption, figcaption *,
 /* Author profile alignment overrides */
 .sidebar .profile_box {
     width: 100%;
+    transform: translateX(14px);
 }
 
 .sidebar .author__avatar,
@@ -137,6 +138,12 @@ h1, h2, h3, h4, h5, h6, strong, em, small, blockquote, figcaption, figcaption *,
 
 .sidebar .author__urls {
     width: 100% !important;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar .profile_box {
+        transform: none;
+    }
 }
 
 .page__content a {

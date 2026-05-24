@@ -359,7 +359,7 @@ Anonymous ICME submission
 </div>
 </div> -->
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">KBS 2026</div><img src='images/Publication/PIRP.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">KBS 2026</div><img src='images/Publication/PIRP.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Parameterized Image Restoration with Diffusion and Gradient Priors]()
 <br>
@@ -369,7 +369,7 @@ Yang Yang<sup>†</sup>, Xi Zhang, **Jiaqi Zhang**, Lanling Zeng
 <br>
 [Paper](https://www.sciencedirect.com/science/article/abs/pii/S0950705126002303)
 </div>
-</div>
+</div> -->
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026 Finding</div><img src='images/Publication/RRGCL.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -471,37 +471,38 @@ Biomedical Signal Processing and Control (BSPC) **Under Review**
 
 <div class="other-publications-panel">
   <div class="other-paper-item">
-    <div class="other-paper-title">A Lightweight Benchmark for Robust Multimodal Medical Image Understanding</div>
-    <div class="other-paper-authors"><strong>Jiaqi Zhang</strong>, Example Author, Yang Yang<sup>†</sup></div>
-    <div class="other-paper-authors"><strong>Jiaqi Zhang</strong>, Example Author, Yang Yang<sup>†</sup></div>
-    <div class="other-paper-authors"><strong>Jiaqi Zhang</strong>, Example Author, Yang Yang<sup>†</sup></div>
+    <div class="other-paper-title">Intrinsic Feature Consistency Learning Network for Generalizable Medical Image Segmentation</div>
+    <div class="other-paper-authors">**ICIC 2026 Oral**, International Conference On Intelligent Computing (2026) Oral</div>
+    <div class="other-paper-authors">**Jiaqi Zhang**, Xinjie Li, Guo Yang, Kang Yang, Wenjing Wang, Yang Yang<sup>†</sup></div>
+    <div class="other-paper-authors"></div>
   </div>
 </div>
 
 <div class="other-publications-panel">
   <div class="other-paper-item">
-    <div class="other-paper-title">A Lightweight Benchmark for Robust Multimodal Medical Image Understanding</div>
-    <div class="other-paper-authors"><strong>Jiaqi Zhang</strong>, Example Author, Yang Yang<sup>†</sup></div>
-    <div class="other-paper-authors"><strong>Jiaqi Zhang</strong>, Example Author, Yang Yang<sup>†</sup></div>
-    <div class="other-paper-authors"><strong>Jiaqi Zhang</strong>, Example Author, Yang Yang<sup>†</sup></div>
+    <div class="other-paper-title">Agent-SAM-I2V: Self-Correcting Promptable Video Segmentation via Agentic Drift Detection and Multi-Prompt Fusion</div>
+    <div class="other-paper-authors">**ICIC 2026 Oral**, International Conference On Intelligent Computing (2026) Oral</div>
+    <div class="other-paper-authors">**Guo Yang**, Jiaqi Zhang, Yao Zhu, Longze Fan<sup>†</sup></div>
+    <div class="other-paper-authors"></div>
   </div>
 </div>
 
 <div class="other-publications-panel">
   <div class="other-paper-item">
-    <div class="other-paper-title">A Lightweight Benchmark for Robust Multimodal Medical Image Understanding</div>
-    <div class="other-paper-authors"><strong>Jiaqi Zhang</strong>, Example Author, Yang Yang<sup>†</sup></div>
-    <div class="other-paper-authors"><strong>Jiaqi Zhang</strong>, Example Author, Yang Yang<sup>†</sup></div>
-    <div class="other-paper-authors"><strong>Jiaqi Zhang</strong>, Example Author, Yang Yang<sup>†</sup></div>
+    <div class="other-paper-title">Adaptive Risk-aware Implicit Quantile Network: Towards Safe and Energy-E!cient USV Navigation in Dynamic Environments</div>
+    <div class="other-paper-authors">**ICIC 2026 Oral**, International Conference On Intelligent Computing (2026) Oral</div>
+    <div class="other-paper-authors">**Wenjing Wang**, Jiaqi Zhang</div>
+    <div class="other-paper-authors"></div>
   </div>
 </div>
 
 <div class="other-publications-panel">
   <div class="other-paper-item">
-    <div class="other-paper-title">A Lightweight Benchmark for Robust Multimodal Medical Image Understanding</div>
-    <div class="other-paper-authors"><strong>Jiaqi Zhang</strong>, Example Author, Yang Yang<sup>†</sup></div>
-    <div class="other-paper-authors"><strong>Jiaqi Zhang</strong>, Example Author, Yang Yang<sup>†</sup></div>
-    <div class="other-paper-authors"><strong>Jiaqi Zhang</strong>, Example Author, Yang Yang<sup>†</sup></div>
+    <div class="other-paper-title">Parameterized Image Restoration with Diffusion and Gradient Priors</div>
+    <div class="other-paper-authors">**KBS 2026**, Knowledge-Based Systems (2026)</div>
+    <div class="other-paper-authors">Yang Yang<sup>†</sup>, Xi Zhang, **Jiaqi Zhang**, Lanling Zeng
+<br></div>
+    <div class="other-paper-authors">[Paper](https://www.sciencedirect.com/science/article/abs/pii/S0950705126002303)</div>
   </div>
 </div>
 
