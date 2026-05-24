@@ -462,7 +462,7 @@ Biomedical Signal Processing and Control (BSPC) **Under Review**
     <div class="other-paper-title">Zero-shot Diffusive Image Restoration with Consistency</div>
     <div class="other-paper-authors">Signal Processing (2026)</div>
     <div class="other-paper-authors">Yi Wang, Lanling Zeng, <strong>Jiaqi Zhang</strong>, Yang Yang<sup>†</sup></div>
-    <div class="other-paper-authors">[Paper](https://www.sciencedirect.com/science/article/abs/pii/S0165168426002197)</div>
+    <div class="other-paper-authors"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0165168426002197">Paper</a></div>
   </div>
   <div class="other-paper-item">
     <div class="other-paper-title">Intrinsic Feature Consistency Learning Network for Generalizable Medical Image Segmentation</div>
@@ -487,7 +487,7 @@ Biomedical Signal Processing and Control (BSPC) **Under Review**
     <div class="other-paper-authors"><strong>KBS 2026</strong>, Knowledge-Based Systems (2026)</div>
     <div class="other-paper-authors">Yang Yang<sup>†</sup>, Xi Zhang, <strong>Jiaqi Zhang</strong>, Lanling Zeng
 <br></div>
-    <div class="other-paper-authors">[Paper](https://www.sciencedirect.com/science/article/abs/pii/S0950705126002303)</div>
+    <div class="other-paper-authors"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705126002303">Paper</a></div>
   </div>
 </div>
 
