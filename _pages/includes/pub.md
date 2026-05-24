@@ -359,18 +359,6 @@ Anonymous ICME submission
 </div>
 </div> -->
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">KBS 2026</div><img src='images/Publication/PIRP.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[Parameterized Image Restoration with Diffusion and Gradient Priors]()
-<br>
-Knowledge-Based Systems (2026)
-<br>
-Yang Yang<sup>†</sup>, Xi Zhang, **Jiaqi Zhang**, Lanling Zeng
-<br>
-[Paper](https://www.sciencedirect.com/science/article/abs/pii/S0950705126002303)
-</div>
-</div> -->
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026 Finding</div><img src='images/Publication/RRGCL.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Rethinking Imbalance in Radiology Report Generation: A Curriculum Learning Perspective]()
@@ -383,17 +371,7 @@ Chongwen Lyu, Kai Han, **Jiaqi Zhang**, Qiaoying Teng, Jun Chen, Zhe Liu<sup>†
 </div>
 </div>
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Signal Processing</div><img src='images/Publication/DPG.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[Zero-shot Diffusive Image Restoration with Consistency]()
-<br>
-Signal Processing (2026)
-<br>
-Yi Wang, Lanling Zeng, **Jiaqi Zhang**, Yang Yang<sup>†</sup>
-<br>
-[Paper](https://www.sciencedirect.com/science/article/abs/pii/S0165168426002197)
-</div>
-</div> -->
+
 
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/HQS-PnP.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
