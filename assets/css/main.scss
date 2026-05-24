@@ -377,35 +377,37 @@ body, p, li, a, span, div, button, input, textarea {
 .paper-box {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: stretch;
     flex-direction: row;
     flex-wrap: nowrap;
     border-bottom: 0;
-    padding: 0;
-    gap: 0;
+    padding: 18px;
+    gap: 32px;
     
 
     .paper-box-image{
         justify-content: flex-start;
         display: flex;
-        flex: 0 0 38%;
-        max-width: 38%;
+        align-items: center;
+        flex: 0 0 36%;
+        max-width: 36%;
         order: 1;
-        border-right: 1px solid rgba(102, 126, 234, 0.08);
+        overflow: hidden;
+        border-radius: var(--radius-inner, 14px);
         img {
             width: 100%;
             max-width: 100%;
-            border-radius: 0;
+            border-radius: 0 !important;
             box-shadow: none;
-            object-fit: cover;
+            object-fit: contain;
             transition: transform 0.28s ease, box-shadow 0.28s ease;
         }
     }
     
     .paper-box-text{
-        flex: 1 1 auto;
+        flex: 1 1 0;
         min-width: 0;
-        max-width: 62%;
+        max-width: none;
         order: 2;
         line-height: 1.75;
         font-size: 0.94rem;
@@ -487,15 +489,15 @@ h1:before, .anchor:before {
 
     .paper-box {
         flex-wrap: wrap;
-        gap: 0;
-        padding: 0;
+        gap: 12px;
+        padding: 14px;
     }
 
     .paper-box .paper-box-image {
         flex: 0 0 100%;
         max-width: 100%;
         border-right: 0;
-        border-bottom: 1px solid rgba(102, 126, 234, 0.08);
+        border-bottom: 0;
     }
 
     .paper-box .paper-box-text {
