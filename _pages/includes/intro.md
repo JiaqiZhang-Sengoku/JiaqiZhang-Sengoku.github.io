@@ -107,9 +107,10 @@ body {
 .news-panel {
   max-height: 340px;
   overflow-y: auto;
-  padding: 16px 18px;
+  padding: 18px 22px;
   margin-bottom: 20px;
-  background: linear-gradient(135deg, rgba(244, 248, 255, 0.96) 0%, rgba(233, 242, 255, 0.9) 100%);
+  background: var(--surface-bg);
+  border-color: var(--card-border);
 }
 
 .news-panel ul {
@@ -161,7 +162,7 @@ body {
   }
 
   .news-panel {
-    padding: 12px 14px;
+    padding: 14px 15px;
   }
 }
 </style>
