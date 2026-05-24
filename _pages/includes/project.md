@@ -59,7 +59,7 @@
 }
 
 .project-card__content a {
-  color: var(--accent, #315fd6);
+  color: var(--accent, #3b5fc7);
   text-decoration: none;
 }
 

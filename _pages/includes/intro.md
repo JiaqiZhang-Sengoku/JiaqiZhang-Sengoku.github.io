@@ -1,23 +1,24 @@
 <style>
 :root {
-  --page-bg: #f5f7fb;
+  --page-bg: #f7f8fb;
   --surface-bg: #ffffff;
-  --surface-soft: #f6f8fc;
-  --card-bg: rgba(255, 255, 255, 0.94);
-  --card-border: rgba(102, 126, 234, 0.12);
-  --section-border: #e6ecf7;
-  --card-shadow: 0 8px 22px rgba(20, 32, 70, 0.08);
-  --card-shadow-hover: 0 16px 34px rgba(20, 32, 70, 0.13);
+  --surface-soft: #f3f6fb;
+  --card-bg: #ffffff;
+  --card-border: #dfe7f3;
+  --section-border: #e3e9f2;
+  --card-shadow: 0 10px 26px rgba(26, 39, 70, 0.07);
+  --card-shadow-hover: 0 16px 34px rgba(26, 39, 70, 0.11);
   --radius-card: 18px;
   --radius-inner: 14px;
-  --heading-color: #18233a;
-  --text-color: #405066;
-  --muted-color: #60708e;
-  --accent: #315fd6;
+  --heading-color: #202b3d;
+  --text-color: #3f4c63;
+  --muted-color: #66758d;
+  --accent: #3b5fc7;
+  --accent-soft: rgba(59, 95, 199, 0.11);
 }
 
 body {
-  background: radial-gradient(circle at top, #fbfcff 0%, var(--page-bg) 58%, #eef3fb 100%);
+  background: var(--page-bg);
 }
 
 #main {
@@ -36,22 +37,23 @@ body {
   border: 1px solid var(--card-border);
   border-radius: var(--radius-card);
   box-shadow: var(--card-shadow);
-  backdrop-filter: blur(6px);
 }
 
 .hero-card {
   width: min(100%, 1200px);
-  margin: 0 auto 18px;
-  padding: 24px 28px;
+  margin: 0 auto 22px;
+  padding: 30px 34px;
   box-sizing: border-box;
 }
 
 .hero-title {
-  margin: 0 0 6px;
+  margin: 0 0 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--section-border);
   font-size: 1.9rem;
   line-height: 1.16;
   color: var(--heading-color);
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
 }
 
 .hero-subtitle {
@@ -62,9 +64,10 @@ body {
 }
 
 .hero-description {
-  margin: 0;
+  margin: 12px 0 0;
   color: var(--text-color);
   line-height: 1.85;
+  max-width: 980px;
 }
 
 .section-heading {
@@ -78,7 +81,7 @@ body {
   margin: 0;
   line-height: 1.25;
   color: var(--heading-color);
-  letter-spacing: -0.01em;
+  letter-spacing: 0;
   font-weight: 700;
 }
 
@@ -101,13 +104,13 @@ body {
   margin-left: 12px;
   vertical-align: middle;
   border-radius: 999px;
-  background: linear-gradient(90deg, #4d63d2, rgba(77, 99, 210, 0.18));
+  background: linear-gradient(90deg, var(--accent), rgba(59, 95, 199, 0.18));
 }
 
 .news-panel {
   max-height: 340px;
   overflow-y: auto;
-  padding: 18px 22px;
+  padding: 18px 24px;
   margin-bottom: 20px;
   background: var(--surface-bg);
   border-color: var(--card-border);
@@ -119,9 +122,9 @@ body {
 }
 
 .news-panel li {
-  margin: 0.5rem 0;
-  line-height: 1.85;
-  color: #36435d;
+  margin: 0.55rem 0;
+  line-height: 1.78;
+  color: var(--text-color);
 }
 
 .news-panel a {
@@ -144,13 +147,13 @@ body {
   }
 
   .hero-card {
-    padding: 20px 18px;
+    padding: 22px 20px;
   }
 }
 
 @media (max-width: 600px) {
   .hero-title {
-    font-size: 1.5rem;
+    font-size: 1.45rem;
   }
 
   .section-heading__title {
@@ -162,7 +165,7 @@ body {
   }
 
   .news-panel {
-    padding: 14px 15px;
+    padding: 15px;
   }
 }
 </style>
