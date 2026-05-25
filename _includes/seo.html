@@ -38,6 +38,11 @@
   <meta property="og:url" content="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
 {% endif %}
 
+{% if page.noindex %}
+  <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+  <meta name="googlebot" content="noindex, nofollow, noarchive, noimageindex">
+{% endif %}
+
 {% if page.excerpt %}
   <meta property="og:description" content="{{ seo_description }}">
 {% endif %}
