@@ -225,7 +225,7 @@ Journal of Biomedical and Health Informatics (JBHI) **Under Review**
 <br>
 Kai Han, **Jiaqi Zhang**, Chongwen Lyu, Mengting Li, Jun Chen, Laihua Yang, Guangquan Zhou, Yang Chen, Zhe Liu <sup>†</sup>
 <br>
-[Paper](/Paper/OrthoSeg_Paper.pdf)<br>
+Paper available upon request<br>
 </div>
 </div>
 
@@ -259,7 +259,7 @@ ACM International Conference on Multimedia (ACM MM 2026) **Under Review**
 <br>
 **Jiaqi Zhang**(First Author), Anonymous
 <br>
-[Paper](/Paper/LEADer_Paper.pdf) | [Supplementary Material](/Paper/LEADer_Supplementary_Material.pdf)<br>
+Paper and supplementary material available upon request<br>
 </div>
 </div>
 
@@ -272,7 +272,7 @@ ACM International Conference on Multimedia (ACM MM 2026) **Under Review**
 <br>
 **Jiaqi Zhang**(First Author), Anonymous
 <br>
-[Paper](/Paper/DynKD_Paper.pdf)<br>
+Paper available upon request<br>
 </div>
 </div>
 
@@ -329,7 +329,7 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
 <br>
 **Jiaqi Zhang**(First Author), Anonymous
 <br>
-[Paper](/Paper/A2L_Paper.pdf) | [Supplementary Material](/Paper/A2L_Supplementary_Meterial.pdf)<br>
+Paper and supplementary material available upon request<br>
 </div>
 </div>
 
@@ -387,7 +387,7 @@ IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026 Findin
 <br>
 Chongwen Lyu, Kai Han, **Jiaqi Zhang**, Qiaoying Teng, Jun Chen, Zhe Liu<sup>†</sup>
 <br>
-[Paper](/Paper/RRGCL_Paper.pdf)<br>
+Paper available upon request<br>
 </div>
 </div>
 
