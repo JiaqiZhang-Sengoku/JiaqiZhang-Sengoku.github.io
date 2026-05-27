@@ -143,6 +143,39 @@
 
 <div class="publications-panel">
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/ΠSkill.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[𝜋Skill: High-Density Knowledge Extraction from Single Trajectories via Circular Step-Level Analysis]()
+<br>
+Empirical Methods in Natural Language Processing (EMNLP) **Under Review**
+<br>
+Chenxi Qiu, Zichen Luo, Jiarui Fan, Keming Gu, **Jiaqi Zhang**, Chunbo Zhang, Peng Zhang <sup>†</sup>
+<br>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/DeltaFlow.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[DeltaFlow: Intent-Driven Latent World Model]()
+<br>
+Empirical Methods in Natural Language Processing (EMNLP) **Under Review**
+<br>
+Zichen Luo, Qiyuan Zhang, Siying Li, **Jiaqi Zhang**, Ke Shi, Chunbo Zhang, Zhaoxin Wang, Fanqi Kong, Ziming Zhao <sup>†</sup>
+<br>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/D2IB.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Differentiated Dual-Level Information Bottleneck for Imperfect Multimodal Emotion Recognition]()
+<br>
+Empirical Methods in Natural Language Processing (EMNLP) **Under Review**
+<br>
+Zheng Pang, **Jiaqi Zhang**, Mengting Li, Yiqi Wang, Guangyuan Dong, Yusen Wu, Chao Xue, Haoyu Wang, Hongsen Zhang, Zihao Li, Jiachen Luo <sup>†</sup>
+<br>
+</div>
+</div>
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/PriMD.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -150,7 +183,7 @@
 <br>
 Empirical Methods in Natural Language Processing (EMNLP) **Under Review**
 <br>
-**Jiaqi Zhang**, Zheng Pang
+**Jiaqi Zhang**, Zheng Pang, Mengting Li, Yiqi Wang, Guangyuan Dong, Chao Xue, Yusen Wu, Zihao Li, Huy Phan, Sicheng Zhao, Björn Schuller, Jiachen Luo <sup>†</sup>
 <br>
 </div>
 </div>
