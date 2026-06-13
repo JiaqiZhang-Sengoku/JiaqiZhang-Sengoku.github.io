@@ -143,6 +143,16 @@
 
 <div class="publications-panel">
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/Agent.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents]()
+<br>
+<br>
+Yiqi Wang, Jiaqi Zhang, Taotao Cai, Zirui Liu, Mingyi Liu, Qingqiang Sun, Zequn Sun, Zhangkai Wu, Mingkai Zheng, Xuefei Yin, Yanming Zhu, Tianyu Shi<sup>†</sup>
+<br>
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/ΠSkill.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [𝜋Skill: High-Density Knowledge Extraction from Single Trajectories via Circular Step-Level Analysis]()
@@ -200,7 +210,7 @@ Chongwen Lyu, Kai Han, Jun Chen, **Jiaqi Zhang**, Qiaoying Teng, Zhe Liu <sup>�
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/IGR.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/IGR.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Information-Guided Rebalance for Multimodal Classification]()
 <br>
@@ -210,7 +220,7 @@ Zhe Liu, Lingling Yan, Chongwen Lyu, **Jiaqi Zhang**, Yi Liu, Jun Chen <sup>†<
 <br>
 [Code](https://github.com/JiaqiZhang-Sengoku/IGR)
 </div>
-</div>
+</div> -->
 
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCES</div><img src='images/Publication/.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -223,7 +233,7 @@ Xiaocheng Hu, **Jiaqi Zhang**, Jianguo Zhu, Xudong Ren, Kai Han, Zhe Liu<sup>†
 </div>
 </div> -->
 
-</div>
+<!-- </div> -->
 
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCES</div><img src='images/Publication/ProtoDBSeg.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -273,7 +283,7 @@ Yang Yang <sup>†</sup> <sup>*</sup>, Pengyu Li <sup>*</sup>, **Jiaqi Zhang**, 
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/Amphisbaena.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/Amphisbaena.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Amphisbaena: Dual-Sided Neuron Intervention for Hallucination Mitigation in Vision-Language Models]()
 <br>
@@ -282,7 +292,7 @@ ACM International Conference on Multimedia (ACM MM 2026) **Under Review**
 **Jiaqi Zhang**(Second Author), Anonymous
 <br>
 </div>
-</div>
+</div> -->
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/LEADer.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -378,7 +388,7 @@ International Conference On Intelligent Computing (ICIC 2026) **Under Review**
 </div>
 </div> -->
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICIC 2026</div><img src='images/Publication/IFCLNet.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICIC 2026</div><img src='images/Publication/IFCLNet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Intrinsic Feature Consistency Learning Network for Generalizable Medical Image Segmentation]()
 <br>
@@ -387,7 +397,7 @@ International Conference On Intelligent Computing (ICIC 2026)
 **Jiaqi Zhang**, Xinjie Li, Guo Yang, Kang Yang, Wenjing Wang, Yang Yang<sup>†</sup>
 <br>
 </div>
-</div>
+</div> -->
 
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/Mamba.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -412,7 +422,7 @@ Anonymous ICME submission
 </div>
 </div> -->
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026 Finding</div><img src='images/Publication/RRGCL.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026 Finding</div><img src='images/Publication/RRGCL.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Rethinking Imbalance in Radiology Report Generation: A Curriculum Learning Perspective]()
 <br>
@@ -422,7 +432,7 @@ Chongwen Lyu, Kai Han, **Jiaqi Zhang**, Qiaoying Teng, Jun Chen, Zhe Liu<sup>†
 <br>
 [Paper](/Paper/RRGCL_Paper.pdf)<br>
 </div>
-</div>
+</div> -->
 
 
 
@@ -491,6 +501,12 @@ Biomedical Signal Processing and Control (BSPC) **Under Review**
 </div>
 
 <div class="other-publications-panel">
+  <div class="other-paper-item">
+    <div class="other-paper-title">PathoMamba: Piecewise-Diffeomorphic Registration via Stiffness-Modulated State Space Dynamics.</div>
+    <div class="other-paper-authors">International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2026)</div>
+    <div class="other-paper-authors">	Ernest Asimeng, Jun	Chen, Godbless Mensah, <strong>Jiaqi Zhang</strong>, Kai Han, Yang Chen, Zhe Liu<sup>†</sup></div>
+    <div class="other-paper-authors"></div>
+  </div>
   <div class="other-paper-item">
     <div class="other-paper-title">Zero-shot Diffusive Image Restoration with Consistency</div>
     <div class="other-paper-authors">Signal Processing (2026)</div>
