@@ -367,24 +367,38 @@ body::before {
     color: #27704e !important;
 }
 
+.sidebar .author__email-link {
+    color: var(--accent-strong) !important;
+}
+
 .sidebar .author__urls_sm {
     display: none !important;
 }
 
-.wechat-modal {
-    width: min(330px, calc(100vw - 44px));
+.wechat-modal,
+.email-modal {
     padding: 0;
     border: 0;
     background: transparent;
     overflow: visible;
 }
 
-.wechat-modal::backdrop {
+.wechat-modal {
+    width: min(330px, calc(100vw - 44px));
+}
+
+.email-modal {
+    width: min(390px, calc(100vw - 44px));
+}
+
+.wechat-modal::backdrop,
+.email-modal::backdrop {
     background: rgba(18, 27, 43, 0.42);
     backdrop-filter: blur(4px);
 }
 
-.wechat-modal__dialog {
+.wechat-modal__dialog,
+.email-modal__dialog {
     position: relative;
     padding: 20px;
     border: 1px solid var(--card-border);
@@ -394,14 +408,16 @@ body::before {
     text-align: center;
 }
 
-.wechat-modal__dialog h2 {
+.wechat-modal__dialog h2,
+.email-modal__dialog h2 {
     margin: 0 0 14px !important;
     color: var(--heading-color) !important;
     font-size: 1.35rem !important;
     line-height: 1.2 !important;
 }
 
-.wechat-modal__close {
+.wechat-modal__close,
+.email-modal__close {
     position: absolute;
     top: 10px;
     right: 12px;
@@ -417,7 +433,41 @@ body::before {
     text-decoration: none !important;
 }
 
-.wechat-modal__close:hover {
+.wechat-modal__close:hover,
+.email-modal__close:hover {
+    color: var(--accent-strong) !important;
+}
+
+.email-modal__choices {
+    display: grid;
+    gap: 9px;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none;
+}
+
+.email-modal__choice {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    min-height: 42px;
+    padding: 9px 12px !important;
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-inner);
+    background: var(--surface-soft);
+    color: var(--heading-color) !important;
+    font-size: 0.95rem !important;
+    font-weight: 700 !important;
+    line-height: 1.25 !important;
+    overflow-wrap: anywhere;
+    text-decoration: none !important;
+    transition: border-color 0.18s ease, background 0.18s ease, color 0.18s ease;
+}
+
+.email-modal__choice:hover {
+    border-color: rgba(55, 95, 200, 0.35);
+    background: #ffffff;
     color: var(--accent-strong) !important;
 }
 
