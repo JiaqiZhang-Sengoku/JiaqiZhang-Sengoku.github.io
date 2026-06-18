@@ -106,6 +106,9 @@
       {% if author.googlescholar %}
         <li><a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
       {% endif %}
+      {% if author.wechat or author.wechat_qr %}
+        <li><button class="author__wechat-link" type="button" data-wechat-open><i class="fab fa-fw fa-weixin" aria-hidden="true"></i> WeChat</button></li>
+      {% endif %}
       {% if author.pubmed %}
         <li><a href="{{ author.pubmed }}"><i class="ai ai-pubmed-square ai-fw"></i> PubMed</a></li>
       {% endif %}
@@ -119,6 +122,55 @@
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
 {% endif %}
     </ul>
+    {% if author.wechat or author.wechat_qr %}
+      <dialog id="wechat-modal" class="wechat-modal">
+        <div class="wechat-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="wechat-modal-title">
+          <button class="wechat-modal__close" type="button" aria-label="Close WeChat QR" data-wechat-close>Close</button>
+          <h2 id="wechat-modal-title">WeChat</h2>
+          {% if author.wechat_qr %}
+            <img src="{{ author.wechat_qr }}" alt="WeChat QR code" class="wechat-modal__qr">
+          {% else %}
+            <div class="wechat-modal__placeholder">QR code coming soon</div>
+          {% endif %}
+        </div>
+      </dialog>
+      <script>
+        (function () {
+          var dialog = document.getElementById("wechat-modal");
+          if (!dialog) return;
+
+          function closeDialog() {
+            if (typeof dialog.close === "function") {
+              dialog.close();
+            } else {
+              dialog.removeAttribute("open");
+            }
+          }
+
+          var openButtons = document.querySelectorAll("[data-wechat-open]");
+          for (var i = 0; i < openButtons.length; i += 1) {
+            openButtons[i].addEventListener("click", function () {
+              if (typeof dialog.showModal === "function") {
+                dialog.showModal();
+              } else {
+                dialog.setAttribute("open", "open");
+              }
+            });
+          }
+
+          var closeButton = dialog.querySelector("[data-wechat-close]");
+          if (closeButton) {
+            closeButton.addEventListener("click", closeDialog);
+          }
+
+          dialog.addEventListener("click", function (event) {
+            if (event.target === dialog) {
+              closeDialog();
+            }
+          });
+        }());
+      </script>
+    {% endif %}
       <div class="author__urls_sm">
       {% if author.uri %}
         <a href="{{ author.uri }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i></a>

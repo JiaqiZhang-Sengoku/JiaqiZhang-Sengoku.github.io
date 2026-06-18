@@ -27,8 +27,10 @@ author:
   location         : "Jiangsu China"
   employer         : 
   pubmed           : 
-  googlescholar    : #"https://scholar.google.com/citations?user=4FA6C0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=WylY07wAAAAJ&hl=en"
   email            : "sengokuzjq@gmail.com"
+  wechat           : "WeChat"
+  wechat_qr        :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
