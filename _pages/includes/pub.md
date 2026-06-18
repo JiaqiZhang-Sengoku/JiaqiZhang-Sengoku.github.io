@@ -364,7 +364,7 @@ Bingbing Gu <sup>*</sup>, Saihua Cai <sup>*</sup>, <sup>†</sup>, Jing Wang, Zh
 </div>
 </div> -->
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/A2L.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/A2L.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Breaking Confirmation Bias: Single-Round Active Manifold Calibration for Source-Free Domain Adaptation in Segmentation]()
 <br>
@@ -374,53 +374,8 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
 <br>
 [Paper](/Paper/A2L_Paper.pdf) | [Supplementary Material](/Paper/A2L_Supplementary_Meterial.pdf)<br>
 </div>
-</div>
-
-
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/Agent-SAM-I2V.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[Agent-SAM-I2V: Self-Correcting Promptable Video Segmentation via Agentic Drift Detection and Multi-Prompt Fusion]()
-<br>
-International Conference On Intelligent Computing (ICIC 2026) **Under Review**
-<br>
-**Jiaqi Zhang**(Second Author), Anonymous
-<br>
-</div>
 </div> -->
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICIC 2026</div><img src='images/Publication/IFCLNet.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[Intrinsic Feature Consistency Learning Network for Generalizable Medical Image Segmentation]()
-<br>
-International Conference On Intelligent Computing (ICIC 2026)
-<br>
-**Jiaqi Zhang**, Xinjie Li, Guo Yang, Kang Yang, Wenjing Wang, Yang Yang<sup>†</sup>
-<br>
-</div>
-</div> -->
-
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/Mamba.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[PathoMamba: Piecewise-Diffeomorphic Registration via Stiffness-Modulated State Space Dynamics]()
-<br>
-Medical Image Computing and Computer Assisted Intervention (MICCAI 2026) **Under Review**
-<br>
-**Jiaqi Zhang**, Anonymous
-<br>
-</div>
-</div> -->
-
-
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/AH-Trans-Diff.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[AH-Trans-Diff: Physics-Consistent Heteroscedastic Latent Diffusion for Uncertainty-Aware MR Restoration and Tumor Segmentation]()
-<br>
-ICME 2026: IEEE International Conference on Multimedia & Expo **Under Review**
-<br>
-Anonymous ICME submission
-<br>
-</div>
-</div> -->
 
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026 Finding</div><img src='images/Publication/RRGCL.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -434,29 +389,6 @@ Chongwen Lyu, Kai Han, **Jiaqi Zhang**, Qiaoying Teng, Jun Chen, Zhe Liu<sup>†
 </div>
 </div> -->
 
-
-
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/HQS-PnP.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[Zero-shot Single Image Super-resolution via Plug-and-play Diffusive Sampling]()
-<br>
-Journal of Electronic Imaging **Under Review**
-<br>
-Xiaoya Song, **Jiaqi Zhang**, Lanling Zeng, Yang Yang<sup>†</sup>(Corresponding Author)
-<br>
-</div>
-</div> -->
-
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/LR.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[Laplacian Regularization for Edge-preserving Image Smoothing]()
-<br>
-Signal, Image and Video Processing **Under Review**
-<br>
-Yang Yang<sup>†</sup>(Corresponding Author), Qi Wu, Jiaqi Zhang, Lanling Zeng
-<br>
-</div>
-</div> -->
 
 <!-- 3 -->
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/FC-Net.png' alt="sym" width="100%"></div></div>
