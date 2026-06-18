@@ -14,8 +14,8 @@ redirect_from:
 {% include_relative includes/pub.md %}
 <br>
 
-{% include_relative includes/project.md %}
-<br>
+<!-- {% include_relative includes/project.md %}
+<br> -->
 
 {% include_relative includes/honers.md %}
 <br>
