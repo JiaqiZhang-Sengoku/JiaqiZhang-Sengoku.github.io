@@ -148,7 +148,7 @@
 [From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents]()
 <br>
 <br>
-Yiqi Wang, Jiaqi Zhang, Taotao Cai, Zirui Liu, Mingyi Liu, Qingqiang Sun, Zequn Sun, Zhangkai Wu, Mingkai Zheng, Xuefei Yin, Yanming Zhu, Tianyu Shi<sup>†</sup>
+Yiqi Wang, **Jiaqi Zhang**, Taotao Cai, Zirui Liu, Mingyi Liu, Qingqiang Sun, Zequn Sun, Zhangkai Wu, Mingkai Zheng, Xuefei Yin, Yanming Zhu, Tianyu Shi<sup>†</sup>
 <br>
 </div>
 </div>
