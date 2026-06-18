@@ -503,7 +503,7 @@ Biomedical Signal Processing and Control (BSPC) **Under Review**
 <div class="other-publications-panel">
   <div class="other-paper-item">
     <div class="other-paper-title">SCA-Net: A Scale- and Contrast-Aware Network for Subtle and Low-Contrast Polyp Segmentation</div>
-    <div class="other-paper-authors">Journal of Imaging Informatics in Medicine (JIIM 2026)</div>
+    <div class="other-paper-authors">Journal of Imaging Informatics in Medicine (2026)</div>
     <div class="other-paper-authors">Jiaxu Huang, Yiyue Li, <strong>Jiaqi Zhang</strong>, Xiaocheng Hu, Yang Yang<sup>†</sup></div>
     <div class="other-paper-authors"></div>
   </div>
@@ -539,7 +539,7 @@ Biomedical Signal Processing and Control (BSPC) **Under Review**
   </div>
   <div class="other-paper-item">
     <div class="other-paper-title">Parameterized Image Restoration with Diffusion and Gradient Priors</div>
-    <div class="other-paper-authors">Knowledge-Based Systems (KBS 2026)</div>
+    <div class="other-paper-authors">Knowledge-Based Systems (2026)</div>
     <div class="other-paper-authors">Yang Yang<sup>†</sup>, Xi Zhang, <strong>Jiaqi Zhang</strong>, Lanling Zeng
 <br></div>
     <div class="other-paper-authors"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705126002303">Paper</a>   <a href="https://github.com/AKA-hhh/PIRP">Code</a></div>
