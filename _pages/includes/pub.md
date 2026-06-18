@@ -502,9 +502,15 @@ Biomedical Signal Processing and Control (BSPC) **Under Review**
 
 <div class="other-publications-panel">
   <div class="other-paper-item">
-    <div class="other-paper-title">PathoMamba: Piecewise-Diffeomorphic Registration via Stiffness-Modulated State Space Dynamics.</div>
+    <div class="other-paper-title">SCA-Net: A Scale- and Contrast-Aware Network for Subtle and Low-Contrast Polyp Segmentation</div>
+    <div class="other-paper-authors">Journal of Imaging Informatics in Medicine (JIIM 2026)</div>
+    <div class="other-paper-authors">Jiaxu Huang, Yiyue Li, <strong>Jiaqi Zhang</strong>, Xiaocheng Hu, Yang Yang<sup>†</sup></div>
+    <div class="other-paper-authors"></div>
+  </div>
+  <div class="other-paper-item">
+    <div class="other-paper-title">PathoMamba: Piecewise-Diffeomorphic Registration via Stiffness-Modulated State Space Dynamics</div>
     <div class="other-paper-authors">International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2026)</div>
-    <div class="other-paper-authors">	Ernest Asimeng, Jun	Chen, Godbless Mensah, <strong>Jiaqi Zhang</strong>, Kai Han, Yang Chen, Zhe Liu<sup>†</sup></div>
+    <div class="other-paper-authors">Ernest Asimeng, Jun Chen, Godbless Mensah, <strong>Jiaqi Zhang</strong>, Kai Han, Yang Chen, Zhe Liu<sup>†</sup></div>
     <div class="other-paper-authors"></div>
   </div>
   <div class="other-paper-item">
