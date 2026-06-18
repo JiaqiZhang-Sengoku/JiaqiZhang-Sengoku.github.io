@@ -63,8 +63,8 @@
     --accent-soft: rgba(55, 95, 200, 0.11);
     --accent-warm: #8a5f24;
     --accent-warm-soft: rgba(138, 95, 36, 0.10);
-    --max-page-width: 1260px;
-    --content-width: 930px;
+    --max-page-width: 1300px;
+    --content-width: 970px;
 }
 
 html,
@@ -167,8 +167,8 @@ body::before {
 
 #main {
     display: grid !important;
-    grid-template-columns: 292px minmax(0, 1fr);
-    gap: 16px;
+    grid-template-columns: 268px minmax(0, 1fr);
+    gap: 24px;
     max-width: var(--max-page-width) !important;
     margin: 0 auto !important;
     padding: 14px 20px 28px !important;
@@ -240,7 +240,7 @@ body::before {
     max-width: none !important;
     transform: none !important;
     margin-top: -6px !important;
-    padding: 18px 18px 19px !important;
+    padding: 16px 16px 17px !important;
     border: 1px solid rgba(55, 95, 200, 0.22) !important;
     border-radius: var(--radius-card) !important;
     background: linear-gradient(180deg, #ffffff 0%, #f7faff 100%) !important;
@@ -258,7 +258,7 @@ body::before {
 }
 
 .sidebar .author__avatar {
-    margin: 1px 0 11px !important;
+    margin: 0 0 9px !important;
     text-align: center !important;
 }
 
@@ -268,8 +268,8 @@ body::before {
 }
 
 .sidebar .author__avatar img {
-    width: 196px !important;
-    max-width: 196px !important;
+    width: 176px !important;
+    max-width: 176px !important;
     min-width: 0 !important;
     margin: 0 auto !important;
     padding: 6px !important;
@@ -281,18 +281,18 @@ body::before {
 }
 
 .sidebar .author__name {
-    margin: 12px 0 7px !important;
+    margin: 10px 0 6px !important;
     color: var(--heading-color) !important;
-    font-size: 1.66rem !important;
+    font-size: 1.5rem !important;
     letter-spacing: 0 !important;
     line-height: 1.16 !important;
 }
 
 .sidebar .author__bio {
     max-width: none !important;
-    margin: 0 auto 11px !important;
+    margin: 0 auto 9px !important;
     color: var(--muted-color) !important;
-    font-size: 1.02rem !important;
+    font-size: 0.95rem !important;
     line-height: 1.4 !important;
     overflow-wrap: anywhere;
 }
@@ -300,11 +300,11 @@ body::before {
 .sidebar .author__urls {
     display: grid !important;
     justify-items: center !important;
-    gap: 6px;
+    gap: 5px;
     position: static !important;
     z-index: auto !important;
     width: 100% !important;
-    margin: 10px 0 0 !important;
+    margin: 8px 0 0 !important;
     padding: 0 !important;
     border: 0 !important;
     background: transparent !important;
@@ -321,10 +321,10 @@ body::before {
     align-items: center !important;
     justify-content: center !important;
     gap: 6px !important;
-    min-height: 24px;
+    min-height: 22px;
     margin: 0 !important;
     color: var(--muted-color) !important;
-    font-size: 1rem !important;
+    font-size: 0.94rem !important;
     line-height: 1.34 !important;
     text-align: center !important;
     white-space: normal !important;
@@ -911,9 +911,9 @@ body::before {
 
     .sidebar .profile_box {
         display: block !important;
-        max-width: 400px !important;
+        max-width: 370px !important;
         margin: 0 auto !important;
-        padding: 17px 17px !important;
+        padding: 16px 16px !important;
         text-align: center !important;
     }
 
@@ -980,23 +980,23 @@ body::before {
 
     .sidebar .profile_box {
         display: block !important;
-        max-width: 380px !important;
-        padding: 17px 16px !important;
+        max-width: 350px !important;
+        padding: 15px 15px !important;
         text-align: center !important;
     }
 
     .sidebar .author__avatar img {
-        width: 168px !important;
-        max-width: 168px !important;
+        width: 150px !important;
+        max-width: 150px !important;
     }
 
     .sidebar .author__name {
-        font-size: 1.42rem !important;
+        font-size: 1.32rem !important;
     }
 
     .sidebar .author__bio,
     .sidebar .author__urls li {
-        font-size: 0.95rem !important;
+        font-size: 0.9rem !important;
     }
 
     .sidebar .author__avatar,
