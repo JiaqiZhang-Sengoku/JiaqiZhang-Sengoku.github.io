@@ -27,17 +27,6 @@ Chenxi Qiu, Zichen Luo, Jiarui Fan, Keming Gu, **Jiaqi Zhang**, Chunbo Zhang, Pe
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/DeltaFlow.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[DeltaFlow: Intent-Driven Latent World Model]()
-<br>
-Empirical Methods in Natural Language Processing (EMNLP) **Under Review**
-<br>
-Zichen Luo, Qiyuan Zhang, Siying Li, **Jiaqi Zhang**, Ke Shi, Chunbo Zhang, Zhaoxin Wang, Fanqi Kong, Ziming Zhao <sup>†</sup>
-<br>
-</div>
-</div>
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/D2IB.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Differentiated Dual-Level Information Bottleneck for Imperfect Multimodal Emotion Recognition]()
@@ -57,18 +46,6 @@ Zheng Pang, **Jiaqi Zhang**, Mengting Li, Yiqi Wang, Guangyuan Dong, Yusen Wu, C
 Empirical Methods in Natural Language Processing (EMNLP) **Under Review**
 <br>
 **Jiaqi Zhang**, Zheng Pang, Mengting Li, Yiqi Wang, Guangyuan Dong, Chao Xue, Yusen Wu, Zihao Li, Huy Phan, Sicheng Zhao, Björn Schuller, Jiachen Luo <sup>†</sup>
-<br>
-</div>
-</div>
-
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/Uni-IMD.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[A Unified Medical Incomplete Multimodal Diagnosis Framework Based on Optimal Feature Disentanglement]()
-<br>
-Pattern Recognition (PR) **Under Review**
-<br>
-Chongwen Lyu, Kai Han, Jun Chen, **Jiaqi Zhang**, Qiaoying Teng, Zhe Liu <sup>†</sup>
 <br>
 </div>
 </div>
@@ -182,16 +159,6 @@ ACM International Conference on Multimedia (ACM MM 2026) **Under Review**
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/NeuroCom.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[A Survey of Deep Learning-based Multimodal Fusion Techniques for Medical Classification]()
-<br>
-Neurocomputing **Under Review**
-<br>
-Zhe Liu, Lingling Yan, Jun Chen, Chongwen Lyu, **Jiaqi Zhang**, Qingli Li, Kai Han <sup>†</sup>, Lu Liu <sup>†</sup>, Zipeng Lu <sup>†</sup>
-<br>
-</div>
-</div>
 
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -252,18 +219,6 @@ Chongwen Lyu, Kai Han, **Jiaqi Zhang**, Qiaoying Teng, Jun Chen, Zhe Liu<sup>†
 </div>
 </div> -->
 
-
-<!-- 3 -->
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/FC-Net.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[FC-Net: Frequency–spatial Cooperation Network for Robust Medical Image Segmentation]()
-<br>
-Biomedical Signal Processing and Control (BSPC) **Under Review**
-<br>
-Jialiang Qiu, Kai Han, Jun Chen, **Jiaqi Zhang**, Yan Zhu, Chongwen Lyu, Min Xu<sup>†</sup>(Corresponding Author), Zhe Liu<sup>†</sup>(Corresponding Author)
-<br>
-</div>
-</div>
 
 <!-- 2 -->
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/FDGR.png' alt="sym" width="100%"></div></div>
