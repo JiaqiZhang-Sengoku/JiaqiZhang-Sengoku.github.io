@@ -186,8 +186,8 @@ body::before {
 
 .sidebar.sticky {
     align-self: start;
-    position: sticky;
-    top: 68px;
+    position: static !important;
+    top: auto;
 }
 
 .page {
@@ -239,7 +239,7 @@ body::before {
     width: 100% !important;
     max-width: none !important;
     transform: none !important;
-    margin-top: -6px !important;
+    margin-top: 0 !important;
     padding: 16px 16px 17px !important;
     border: 1px solid rgba(55, 95, 200, 0.22) !important;
     border-radius: var(--radius-card) !important;
