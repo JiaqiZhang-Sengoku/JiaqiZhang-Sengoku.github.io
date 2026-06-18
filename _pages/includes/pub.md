@@ -1,140 +1,3 @@
-<style>
-.publications-panel {
-  display: grid;
-  gap: 16px;
-  margin-bottom: 16px;
-}
-
-.publications-note {
-  margin: 0 0 14px;
-  color: var(--muted-color, #667085);
-  font-size: 0.94rem;
-}
-
-.paper-box {
-  margin: 0 0 16px;
-  border-radius: var(--radius-card, 18px);
-  overflow: hidden;
-  background: var(--surface-bg, #ffffff);
-  border: 1px solid var(--card-border, rgba(102, 126, 234, 0.10));
-  box-shadow: var(--card-shadow, 0 8px 22px rgba(20, 32, 70, 0.08));
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-}
-
-.publications-panel .paper-box {
-  margin-bottom: 0;
-}
-
-.paper-box:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--card-shadow-hover, 0 16px 34px rgba(20, 32, 70, 0.13));
-  border-color: rgba(102, 126, 234, 0.18);
-}
-
-.paper-box-image {
-  background: var(--surface-soft, #f6f8fc);
-}
-
-.paper-box-image img {
-  transition: transform 0.35s ease, filter 0.35s ease;
-  display: block;
-  border-radius: 0;
-}
-
-.paper-box:hover .paper-box-image img {
-  transform: scale(1.02);
-  filter: saturate(1.03) contrast(1.02);
-}
-
-.paper-box-text {
-  padding: 6px 8px 6px 0;
-  font-size: 0.94rem;
-  line-height: 1.78;
-  color: var(--text-color, #445066);
-}
-
-.paper-box-text a:first-of-type {
-  display: inline-block;
-  margin-bottom: 6px;
-  font-weight: 700;
-  line-height: 1.55;
-}
-
-.paper-box-text strong:first-child {
-  font-size: 1.02rem;
-  line-height: 1.5;
-  color: var(--heading-color, #1f2a44);
-}
-
-.paper-box-text a {
-  color: var(--accent, #3b5fc7);
-  text-decoration: none;
-}
-
-.paper-box-text a:hover {
-  text-decoration: underline;
-}
-
-.other-publications-panel {
-  display: grid;
-  gap: 14px;
-  margin-bottom: 22px;
-}
-
-.other-paper-item {
-  padding: 18px 22px;
-  border-radius: var(--radius-card, 18px);
-  background: var(--surface-bg, #ffffff);
-  border: 1px solid var(--card-border, rgba(102, 126, 234, 0.10));
-  box-shadow: var(--card-shadow, 0 8px 22px rgba(20, 32, 70, 0.08));
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-}
-
-.other-paper-item:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--card-shadow-hover, 0 16px 34px rgba(20, 32, 70, 0.13));
-  border-color: rgba(102, 126, 234, 0.18);
-}
-
-.other-paper-title {
-  margin-bottom: 6px;
-  color: var(--heading-color, #1f2a44);
-  font-size: 1.02rem;
-  font-weight: 700;
-  line-height: 1.55;
-}
-
-.other-paper-authors {
-  color: var(--text-color, #445066);
-  font-size: 0.94rem;
-  line-height: 1.7;
-}
-
-@media (max-width: 600px) {
-  .paper-box-text {
-    padding: 2px 0 0;
-    font-size: 0.9rem;
-    line-height: 1.7;
-  }
-
-  .paper-box-text strong:first-child {
-    font-size: 0.98rem;
-  }
-
-  .other-paper-item {
-    padding: 15px;
-  }
-
-  .other-paper-title {
-    font-size: 0.98rem;
-  }
-
-  .other-paper-authors {
-    font-size: 0.9rem;
-  }
-}
-</style>
-
 <span class='anchor' id='publications'></span>
 <div class="section-heading section-heading--publications">
   <h2 class="section-heading__title">📝 Selected Publications</h2>
@@ -143,7 +6,7 @@
 
 <div class="publications-panel">
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/Agent.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/Agent.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents]()
 <br>
@@ -153,7 +16,7 @@ Yiqi Wang, **Jiaqi Zhang**, Taotao Cai, Zirui Liu, Mingyi Liu, Qingqiang Sun, Ze
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/ΠSkill.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/ΠSkill.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [𝜋Skill: High-Density Knowledge Extraction from Single Trajectories via Circular Step-Level Analysis]()
 <br>
@@ -164,7 +27,7 @@ Chenxi Qiu, Zichen Luo, Jiarui Fan, Keming Gu, **Jiaqi Zhang**, Chunbo Zhang, Pe
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/DeltaFlow.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/DeltaFlow.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [DeltaFlow: Intent-Driven Latent World Model]()
 <br>
@@ -175,7 +38,7 @@ Zichen Luo, Qiyuan Zhang, Siying Li, **Jiaqi Zhang**, Ke Shi, Chunbo Zhang, Zhao
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/D2IB.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/D2IB.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Differentiated Dual-Level Information Bottleneck for Imperfect Multimodal Emotion Recognition]()
 <br>
@@ -187,7 +50,7 @@ Zheng Pang, **Jiaqi Zhang**, Mengting Li, Yiqi Wang, Guangyuan Dong, Yusen Wu, C
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/PriMD.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/PriMD.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Modality Disentangled Learning for Incomplete Multimodal Emotion Recognition: A Primitive Memory Distillation Perspective]()
 <br>
@@ -199,7 +62,7 @@ Empirical Methods in Natural Language Processing (EMNLP) **Under Review**
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/Uni-IMD.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/Uni-IMD.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [A Unified Medical Incomplete Multimodal Diagnosis Framework Based on Optimal Feature Disentanglement]()
 <br>
@@ -210,7 +73,7 @@ Chongwen Lyu, Kai Han, Jun Chen, **Jiaqi Zhang**, Qiaoying Teng, Zhe Liu <sup>�
 </div>
 </div>
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/IGR.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/IGR.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Information-Guided Rebalance for Multimodal Classification]()
 <br>
@@ -222,7 +85,7 @@ Zhe Liu, Lingling Yan, Chongwen Lyu, **Jiaqi Zhang**, Yi Liu, Jun Chen <sup>†<
 </div>
 </div> -->
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCES</div><img src='images/Publication/.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCES</div><img loading="lazy" decoding="async" src='images/Publication/.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Attention-Aware Multi-Scale Segmentation for Industrial Defects with Low Contrast and High Intra-Class Variation]()
 <br>
@@ -235,7 +98,7 @@ Xiaocheng Hu, **Jiaqi Zhang**, Jianguo Zhu, Xudong Ren, Kai Han, Zhe Liu<sup>†
 
 <!-- </div> -->
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCES</div><img src='images/Publication/ProtoDBSeg.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCES</div><img loading="lazy" decoding="async" src='images/Publication/ProtoDBSeg.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Prototype Guided Dual-Branch Framework for Industrial Surface Defect Segmentation]()
 <br>
@@ -247,7 +110,7 @@ International Conference on Computational & Experimental Engineering and Science
 </div> -->
 
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/AMON-Flow.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/AMON-Flow.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [AMON-Flow: Adaptive Momentum and Noise Scaling for Plug-and-Play Image Restoration]()
 <br>
@@ -260,7 +123,7 @@ Xiaoyu Gu, **Jiaqi Zhang**, Lanling Zeng, Yang Yang <sup>†</sup>
 
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/OrthoSeg.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/OrthoSeg.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Learning Orthogonal Disentanglement for Modality-Agnostic Medical Image Segmentation]()
 <br>
@@ -272,7 +135,7 @@ Kai Han, **Jiaqi Zhang**, Chongwen Lyu, Mengting Li, Jun Chen, Laihua Yang, Guan
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/DDDM.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/DDDM.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Structure-preserving Image Decomposition via Plug-and-Play Diffusion Models]()
 <br>
@@ -283,7 +146,7 @@ Yang Yang <sup>†</sup> <sup>*</sup>, Pengyu Li <sup>*</sup>, **Jiaqi Zhang**, 
 </div>
 </div>
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/Amphisbaena.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/Amphisbaena.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Amphisbaena: Dual-Sided Neuron Intervention for Hallucination Mitigation in Vision-Language Models]()
 <br>
@@ -294,7 +157,7 @@ ACM International Conference on Multimedia (ACM MM 2026) **Under Review**
 </div>
 </div> -->
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/LEADer.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/LEADer.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration]()
 <br>
@@ -306,7 +169,7 @@ ACM International Conference on Multimedia (ACM MM 2026) **Under Review**
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/DynKD.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/DynKD.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Rethinking Knowledge Distillation for Incomplete Multimodal
 Emotion Recognition: A Dynamic Approach]()
@@ -319,7 +182,7 @@ ACM International Conference on Multimedia (ACM MM 2026) **Under Review**
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/NeuroCom.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/NeuroCom.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [A Survey of Deep Learning-based Multimodal Fusion Techniques for Medical Classification]()
 <br>
@@ -330,7 +193,7 @@ Zhe Liu, Lingling Yan, Jun Chen, Chongwen Lyu, **Jiaqi Zhang**, Qingli Li, Kai H
 </div>
 </div>
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Adaptive Risk-aware Implicit Quantile Network: Towards Safe andEnergy-Efficient USV Navigation in Dynamic Environments]()
 <br>
@@ -341,7 +204,7 @@ Wenjing Wang, Jintao Liu, Songyan Wang, Wenlong Meng, **Jiaqi Zhang**
 </div>
 </div> -->
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/SCA-Net.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/SCA-Net.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [SCA-Net: A Scale- and Contrast-Aware Network for Subtle and Low-Contrast Polyp Segmentation]()
 <br>
@@ -352,7 +215,7 @@ Journal of Imaging Informatics in Medicine (JIIM) **Under Review**
 </div>
 </div> -->
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/DG-SCL.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/DG-SCL.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [DG-SCL: Diffusion-Guided Semantic Contrastive Learning for Imbalanced Malicious
 Traffic Detectionl]()
@@ -364,7 +227,7 @@ Bingbing Gu <sup>*</sup>, Saihua Cai <sup>*</sup>, <sup>†</sup>, Jing Wang, Zh
 </div>
 </div> -->
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/A2L.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/A2L.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Breaking Confirmation Bias: Single-Round Active Manifold Calibration for Source-Free Domain Adaptation in Segmentation]()
 <br>
@@ -377,7 +240,7 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
 </div> -->
 
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026 Finding</div><img src='images/Publication/RRGCL.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026 Finding</div><img loading="lazy" decoding="async" src='images/Publication/RRGCL.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Rethinking Imbalance in Radiology Report Generation: A Curriculum Learning Perspective]()
 <br>
@@ -391,7 +254,7 @@ Chongwen Lyu, Kai Han, **Jiaqi Zhang**, Qiaoying Teng, Jun Chen, Zhe Liu<sup>†
 
 
 <!-- 3 -->
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/FC-Net.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/FC-Net.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [FC-Net: Frequency–spatial Cooperation Network for Robust Medical Image Segmentation]()
 <br>
@@ -403,7 +266,7 @@ Jialiang Qiu, Kai Han, Jun Chen, **Jiaqi Zhang**, Yan Zhu, Chongwen Lyu, Min Xu<
 </div>
 
 <!-- 2 -->
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/FDGR.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/FDGR.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Image Restoration via Optimizing Fidelity with Diffusion and Gradient Regularization]()
 <br>
@@ -416,7 +279,7 @@ Engineering Applications of Artificial Intelligence (EAAI) **Under Review**
 </div>
 
 <!-- 1 -->
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img src='images/Publication/DDGF.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/DDGF.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Zero-Shot Medical Image Super-Resolution Using Denoising Diffusion Models with Gradient-Frequency Priors]() <br>
 Biomedical Signal Processing and Control (BSPC) **Under Review**
