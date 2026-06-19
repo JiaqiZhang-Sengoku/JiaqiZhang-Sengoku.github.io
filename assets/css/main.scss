@@ -70,8 +70,8 @@
     --accent-plum-soft: rgba(154, 134, 214, 0.12);
     --accent-warm: #d79670;
     --accent-warm-soft: rgba(221, 161, 124, 0.14);
-    --max-page-width: 1420px;
-    --content-width: 1060px;
+    --max-page-width: 1460px;
+    --content-width: 1090px;
 }
 
 html,
@@ -126,7 +126,7 @@ body::before {
 .masthead__inner-wrap {
     max-width: var(--max-page-width) !important;
     margin: 0 auto !important;
-    padding: 10px 28px !important;
+    padding: 11px 30px !important;
 }
 
 .greedy-nav {
@@ -148,12 +148,12 @@ body::before {
 .greedy-nav a {
     display: inline-flex !important;
     align-items: center;
-    min-height: 34px;
+    min-height: 35px;
     margin: 0 !important;
     padding: 6px 12px !important;
     border-radius: 999px;
     color: var(--heading-color) !important;
-    font-size: 1.04rem !important;
+    font-size: 1.07rem !important;
     font-weight: 600 !important;
     letter-spacing: 0 !important;
     text-decoration: none !important;
@@ -188,11 +188,11 @@ body::before {
 
 #main {
     display: grid !important;
-    grid-template-columns: 292px minmax(0, 1fr);
-    gap: 34px;
+    grid-template-columns: 302px minmax(0, 1fr);
+    gap: 36px;
     max-width: var(--max-page-width) !important;
     margin: 0 auto !important;
-    padding: 24px 26px 46px !important;
+    padding: 26px 28px 50px !important;
     animation: none !important;
     box-sizing: border-box;
 }
@@ -263,7 +263,7 @@ body::before {
     max-width: none !important;
     transform: none !important;
     margin-top: 0 !important;
-    padding: 21px 18px 20px !important;
+    padding: 22px 19px 21px !important;
     border: 1px solid rgba(221, 231, 243, 0.98) !important;
     border-radius: var(--radius-card) !important;
     background:
@@ -302,8 +302,8 @@ body::before {
 }
 
 .sidebar .author__avatar img {
-    width: 174px !important;
-    max-width: 174px !important;
+    width: 182px !important;
+    max-width: 182px !important;
     min-width: 0 !important;
     margin: 0 auto !important;
     padding: 5px !important;
@@ -317,16 +317,16 @@ body::before {
 .sidebar .author__name {
     margin: 12px 0 7px !important;
     color: var(--heading-color) !important;
-    font-size: 1.62rem !important;
+    font-size: 1.68rem !important;
     letter-spacing: 0 !important;
     line-height: 1.16 !important;
 }
 
 .sidebar .author__bio {
-    max-width: 250px !important;
+    max-width: 258px !important;
     margin: 0 auto 13px !important;
     color: var(--muted-color) !important;
-    font-size: 0.99rem !important;
+    font-size: 1.02rem !important;
     line-height: 1.46 !important;
     overflow-wrap: anywhere;
 }
@@ -355,15 +355,15 @@ body::before {
     align-items: center !important;
     justify-content: flex-start !important;
     gap: 7px !important;
-    width: min(242px, 100%);
-    min-height: 35px;
+    width: min(250px, 100%);
+    min-height: 37px;
     margin: 0 !important;
     padding: 0 12px !important;
     border: 1px solid rgba(221, 231, 243, 0.74);
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.70);
     color: var(--muted-color) !important;
-    font-size: 0.98rem !important;
+    font-size: 1.01rem !important;
     line-height: 1.34 !important;
     text-align: left !important;
     white-space: normal !important;
@@ -389,7 +389,7 @@ body::before {
     align-items: center !important;
     justify-content: flex-start !important;
     gap: 8px !important;
-    min-height: 27px;
+    min-height: 29px;
     margin: 0 !important;
     width: 100%;
     padding: 1px 0 !important;
@@ -563,8 +563,8 @@ body::before {
 }
 
 .hero-card {
-    padding: 35px 44px 36px !important;
-    margin: 0 0 28px !important;
+    padding: 38px 48px 39px !important;
+    margin: 0 0 30px !important;
     border: 1px solid rgba(221, 231, 243, 0.98) !important;
     background:
         linear-gradient(135deg, rgba(255, 255, 255, 0.995) 0%, rgba(250, 252, 255, 0.99) 64%, rgba(255, 247, 242, 0.58) 100%) !important;
@@ -615,7 +615,7 @@ body::before {
     padding: 0 !important;
     border: 0 !important;
     color: var(--heading-color) !important;
-    font-size: 2.18rem !important;
+    font-size: 2.28rem !important;
     line-height: 1.15 !important;
     letter-spacing: 0 !important;
 }
@@ -629,7 +629,7 @@ body::before {
     align-items: center;
     margin: 0 0 12px !important;
     color: var(--accent-strong) !important;
-    font-size: 1.12rem !important;
+    font-size: 1.16rem !important;
     font-weight: 700 !important;
 }
 
@@ -637,7 +637,7 @@ body::before {
     max-width: 980px !important;
     margin: 0 !important;
     color: var(--text-color) !important;
-    font-size: 1.10rem !important;
+    font-size: 1.14rem !important;
     line-height: 1.72 !important;
     overflow-wrap: anywhere;
 }
@@ -656,13 +656,13 @@ body::before {
 .hero-meta span {
     display: inline-flex;
     align-items: center;
-    min-height: 34px;
-    padding: 5px 14px;
+    min-height: 36px;
+    padding: 6px 15px;
     border: 1px solid rgba(85, 119, 214, 0.15);
     border-radius: 999px;
     background: rgba(238, 245, 255, 0.82);
     color: var(--text-color);
-    font-size: 0.98rem;
+    font-size: 1.02rem;
     font-weight: 700;
 }
 
@@ -708,7 +708,7 @@ body::before {
     gap: 10px;
     margin: 0 !important;
     color: var(--heading-color) !important;
-    font-size: 1.58rem !important;
+    font-size: 1.66rem !important;
     font-weight: 700 !important;
     letter-spacing: 0 !important;
     line-height: 1.2 !important;
@@ -730,7 +730,7 @@ body::before {
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.64);
     color: var(--muted-color) !important;
-    font-size: 0.94rem !important;
+    font-size: 0.97rem !important;
     font-weight: 700;
     line-height: 1.1 !important;
     box-sizing: border-box;
@@ -783,11 +783,11 @@ body::before {
     position: relative;
     counter-increment: paper-item;
     display: grid !important;
-    grid-template-columns: minmax(310px, 38%) minmax(0, 1fr) !important;
-    gap: 30px !important;
+    grid-template-columns: minmax(322px, 39%) minmax(0, 1fr) !important;
+    gap: 32px !important;
     align-items: center !important;
     margin: 0 !important;
-    padding: 22px 66px 22px 22px !important;
+    padding: 24px 70px 24px 24px !important;
     overflow: visible !important;
     z-index: 1;
 }
@@ -863,7 +863,7 @@ body::before {
     display: block !important;
     width: 100% !important;
     height: 100% !important;
-    max-height: 288px !important;
+    max-height: 302px !important;
     border-radius: var(--radius-inner) !important;
     box-shadow: none !important;
     object-fit: contain !important;
@@ -890,7 +890,7 @@ body::before {
     min-width: 0 !important;
     padding: 4px 0 4px 3px !important;
     color: var(--text-color) !important;
-    font-size: 1.04rem !important;
+    font-size: 1.07rem !important;
     line-height: 1.62 !important;
 }
 
@@ -911,7 +911,7 @@ body::before {
 .paper-box-text a:first-of-type {
     display: inline !important;
     color: var(--heading-color) !important;
-    font-size: 1.20rem !important;
+    font-size: 1.25rem !important;
     font-weight: 700 !important;
     line-height: 1.34 !important;
     text-decoration: none !important;
@@ -959,16 +959,16 @@ body::before {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
-    min-width: 66px;
-    min-height: 30px;
-    padding: 5px 12px !important;
+    min-width: 70px;
+    min-height: 32px;
+    padding: 6px 13px !important;
     box-sizing: border-box;
     border: 1px solid rgba(178, 194, 236, 0.88) !important;
     border-radius: 4px !important;
     background: linear-gradient(180deg, #ffffff 0%, #f6f8fe 100%) !important;
     color: var(--accent-strong) !important;
     box-shadow: 0 3px 9px rgba(42, 57, 88, 0.045) !important;
-    font-size: 0.92rem !important;
+    font-size: 0.95rem !important;
     font-weight: 700 !important;
     line-height: 1.12 !important;
     white-space: nowrap;
@@ -1027,8 +1027,8 @@ body::before {
 .other-paper-item {
     position: relative;
     overflow: hidden !important;
-    min-height: 154px;
-    padding: 19px 21px 20px !important;
+    min-height: 162px;
+    padding: 20px 22px 21px !important;
 }
 
 .other-paper-item::before {
@@ -1043,14 +1043,14 @@ body::before {
 .other-paper-title {
     margin: 0 0 9px !important;
     color: var(--heading-color) !important;
-    font-size: 1.16rem !important;
+    font-size: 1.20rem !important;
     font-weight: 700 !important;
     line-height: 1.40 !important;
 }
 
 .other-paper-authors {
     color: var(--text-color) !important;
-    font-size: 1.0rem !important;
+    font-size: 1.03rem !important;
     line-height: 1.56 !important;
 }
 
@@ -1094,12 +1094,12 @@ body::before {
     justify-content: space-between !important;
     gap: 14px;
     margin: 0 !important;
-    min-height: 62px;
+    min-height: 64px;
     padding: 15px 18px 15px 21px !important;
     color: var(--heading-color) !important;
     cursor: pointer;
     list-style: none;
-    font-size: 1.13rem !important;
+    font-size: 1.17rem !important;
     font-weight: 700 !important;
     background:
         linear-gradient(90deg, #ffffff 0%, rgba(238, 245, 255, 0.92) 58%, rgba(255, 247, 242, 0.82) 100%);
