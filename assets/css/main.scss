@@ -287,15 +287,7 @@ body::before {
 }
 
 .sidebar .profile_box::after {
-    content: "";
-    position: absolute;
-    right: 12px;
-    bottom: 12px;
-    width: 34px;
-    height: 34px;
-    border-right: 1px solid rgba(123, 142, 188, 0.16);
-    border-bottom: 1px solid rgba(123, 142, 188, 0.16);
-    pointer-events: none;
+    content: none;
 }
 
 .sidebar .author__avatar {
@@ -910,6 +902,56 @@ body::before {
 .paper-box-text a:not(:first-of-type):hover,
 .other-paper-authors a:hover {
     text-decoration: underline !important;
+}
+
+.paper-links,
+.other-paper-links {
+    display: inline-flex !important;
+    align-items: center !important;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 8px !important;
+    line-height: 1 !important;
+}
+
+.paper-links a,
+.other-paper-links a {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 24px;
+    padding: 3px 9px !important;
+    border: 1px solid rgba(178, 194, 236, 0.88) !important;
+    border-radius: 4px !important;
+    background: linear-gradient(180deg, #ffffff 0%, #f6f8fe 100%) !important;
+    color: var(--accent-strong) !important;
+    box-shadow: 0 3px 9px rgba(42, 57, 88, 0.045) !important;
+    font-size: 0.82rem !important;
+    font-weight: 700 !important;
+    line-height: 1.12 !important;
+    text-decoration: none !important;
+    transition: border-color 0.18s ease, background 0.18s ease, box-shadow 0.18s ease, color 0.18s ease, transform 0.18s ease;
+}
+
+.paper-links a:hover,
+.other-paper-links a:hover {
+    border-color: rgba(85, 119, 214, 0.72) !important;
+    background: linear-gradient(180deg, #ffffff 0%, #eef4ff 100%) !important;
+    color: var(--accent) !important;
+    box-shadow: 0 6px 14px rgba(42, 57, 88, 0.075) !important;
+    text-decoration: none !important;
+    transform: translateY(-1px);
+}
+
+.paper-link-separator {
+    color: rgba(116, 130, 151, 0.62);
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.other-paper-authors:empty {
+    display: none !important;
 }
 
 .badge {

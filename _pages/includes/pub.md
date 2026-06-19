@@ -108,7 +108,7 @@ Journal of Biomedical and Health Informatics (JBHI) **Under Review**
 <br>
 Kai Han, **Jiaqi Zhang**, Chongwen Lyu, Mengting Li, Jun Chen, Laihua Yang, Guangquan Zhou, Yang Chen, Zhe Liu <sup>†</sup>
 <br>
-[Paper](/Paper/OrthoSeg_Paper.pdf)<br>
+<div class="paper-links"><a href="/Paper/OrthoSeg_Paper.pdf">Paper</a></div>
 </div>
 </div>
 
@@ -142,7 +142,7 @@ ACM International Conference on Multimedia (ACM MM 2026) **Under Review**
 <br>
 **Jiaqi Zhang**(First Author), Anonymous
 <br>
-[Paper](/Paper/LEADer_Paper.pdf) | [Supplementary Material](/Paper/LEADer_Supplementary_Material.pdf)<br>
+<div class="paper-links"><a href="/Paper/LEADer_Paper.pdf">Paper</a><span class="paper-link-separator" aria-hidden="true">|</span><a href="/Paper/LEADer_Supplementary_Material.pdf">Supplementary Material</a></div>
 </div>
 </div>
 
@@ -155,7 +155,7 @@ ACM International Conference on Multimedia (ACM MM 2026) **Under Review**
 <br>
 **Jiaqi Zhang**(First Author), Anonymous
 <br>
-[Paper](/Paper/DynKD_Paper.pdf)<br>
+<div class="paper-links"><a href="/Paper/DynKD_Paper.pdf">Paper</a></div>
 </div>
 </div>
 
@@ -229,7 +229,7 @@ Engineering Applications of Artificial Intelligence (EAAI) **Under Review**
 <br>
 **Jiaqi Zhang**, Guo Yang, Zheng Pang, Yao Zhu, Bingbing Gu, Yang Yang<sup>†</sup>(Corresponding Author)
 <br>
-[Code](https://github.com/JiaqiZhang-Sengoku/FDGR)
+<div class="paper-links"><a href="https://github.com/JiaqiZhang-Sengoku/FDGR">Code</a></div>
 </div>
 </div>
 
@@ -241,7 +241,7 @@ Biomedical Signal Processing and Control (BSPC) **Under Review**
 <br>
 **Jiaqi Zhang**, Guo Yang, Rongrong Gao, Yang Yang<sup>†</sup>
 <br>
-[Code](https://github.com/JiaqiZhang-Sengoku/DDGF)
+<div class="paper-links"><a href="https://github.com/JiaqiZhang-Sengoku/DDGF">Code</a></div>
 </div>
 </div>
 
@@ -267,7 +267,7 @@ Biomedical Signal Processing and Control (BSPC) **Under Review**
     <div class="other-paper-title">Zero-shot Diffusive Image Restoration with Consistency</div>
     <div class="other-paper-authors">Signal Processing (2026)</div>
     <div class="other-paper-authors">Yi Wang, Lanling Zeng, <strong>Jiaqi Zhang</strong>, Yang Yang<sup>†</sup></div>
-    <div class="other-paper-authors"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0165168426002197">Paper</a></div>
+    <div class="other-paper-authors other-paper-links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0165168426002197">Paper</a></div>
   </div>
   <div class="other-paper-item">
     <div class="other-paper-title">Intrinsic Feature Consistency Learning Network for Generalizable Medical Image Segmentation</div>
@@ -292,7 +292,7 @@ Biomedical Signal Processing and Control (BSPC) **Under Review**
     <div class="other-paper-authors">Knowledge-Based Systems (2026)</div>
     <div class="other-paper-authors">Yang Yang<sup>†</sup>, Xi Zhang, <strong>Jiaqi Zhang</strong>, Lanling Zeng
 <br></div>
-    <div class="other-paper-authors"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705126002303">Paper</a>   <a href="https://github.com/AKA-hhh/PIRP">Code</a></div>
+    <div class="other-paper-authors other-paper-links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705126002303">Paper</a><span class="paper-link-separator" aria-hidden="true">|</span><a href="https://github.com/AKA-hhh/PIRP">Code</a></div>
   </div>
 </div>
 
