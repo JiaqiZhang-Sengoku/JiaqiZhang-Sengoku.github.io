@@ -45,31 +45,31 @@
    ========================================================================== */
 
 :root {
-    --page-bg: #f4f7fb;
+    --page-bg: #f7f9fd;
     --surface-bg: #ffffff;
-    --surface-soft: #f1f5fb;
-    --surface-blue: #edf4ff;
-    --surface-warm: #fff5ef;
-    --surface-plum: #f5f1ff;
-    --ink-panel: #5d6f96;
-    --card-border: #d8e2ee;
-    --section-border: #dee7f1;
-    --card-shadow: 0 12px 30px rgba(38, 55, 86, 0.07);
-    --card-shadow-hover: 0 20px 42px rgba(38, 55, 86, 0.12);
+    --surface-soft: #f5f8fd;
+    --surface-blue: #eef5ff;
+    --surface-warm: #fff7f2;
+    --surface-plum: #f7f3ff;
+    --ink-panel: #7b8ebc;
+    --card-border: #dde7f3;
+    --section-border: #e3ebf5;
+    --card-shadow: 0 10px 28px rgba(42, 57, 88, 0.065);
+    --card-shadow-hover: 0 18px 38px rgba(42, 57, 88, 0.105);
     --radius-card: 8px;
     --radius-inner: 6px;
-    --heading-color: #172033;
-    --text-color: #3d485b;
-    --muted-color: #6f7d91;
-    --accent: #3f6dd8;
-    --accent-strong: #284caa;
-    --accent-soft: rgba(63, 109, 216, 0.10);
-    --accent-teal: #3c9fa4;
-    --accent-teal-soft: rgba(60, 159, 164, 0.11);
-    --accent-plum: #8774c8;
-    --accent-plum-soft: rgba(135, 116, 200, 0.11);
-    --accent-warm: #d28a62;
-    --accent-warm-soft: rgba(210, 138, 98, 0.13);
+    --heading-color: #182235;
+    --text-color: #445067;
+    --muted-color: #748297;
+    --accent: #5577d6;
+    --accent-strong: #365aa7;
+    --accent-soft: rgba(85, 119, 214, 0.095);
+    --accent-teal: #61aeb2;
+    --accent-teal-soft: rgba(97, 174, 178, 0.12);
+    --accent-plum: #9a86d6;
+    --accent-plum-soft: rgba(154, 134, 214, 0.12);
+    --accent-warm: #dda17c;
+    --accent-warm-soft: rgba(221, 161, 124, 0.14);
     --max-page-width: 1300px;
     --content-width: 970px;
 }
@@ -93,11 +93,11 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0, rgba(248, 251, 255, 0.98) 240px, var(--page-bg) 640px),
-        linear-gradient(112deg, rgba(63, 109, 216, 0.055) 0 18%, transparent 18% 100%),
-        linear-gradient(65deg, transparent 0 74%, rgba(210, 138, 98, 0.06) 74% 100%),
-        repeating-linear-gradient(135deg, rgba(61, 72, 91, 0.022) 0 1px, transparent 1px 96px),
-        linear-gradient(180deg, #ffffff 0%, #eef3fa 100%) !important;
+        linear-gradient(180deg, rgba(255, 255, 255, 0.99) 0, rgba(249, 251, 255, 0.99) 260px, var(--page-bg) 680px),
+        linear-gradient(112deg, rgba(85, 119, 214, 0.045) 0 19%, transparent 19% 100%),
+        linear-gradient(65deg, transparent 0 76%, rgba(221, 161, 124, 0.045) 76% 100%),
+        repeating-linear-gradient(135deg, rgba(68, 80, 103, 0.018) 0 1px, transparent 1px 104px),
+        linear-gradient(180deg, #ffffff 0%, #f1f5fb 100%) !important;
     color: var(--text-color);
 }
 
@@ -111,7 +111,7 @@ body::before {
     z-index: 1000;
     background: rgba(255, 255, 255, 0.91) !important;
     border-bottom: 1px solid rgba(216, 226, 238, 0.92) !important;
-    box-shadow: 0 9px 26px rgba(38, 55, 86, 0.055) !important;
+    box-shadow: 0 8px 24px rgba(42, 57, 88, 0.045) !important;
     backdrop-filter: blur(16px);
 }
 
@@ -120,7 +120,7 @@ body::before {
     position: absolute;
     inset: 0 0 auto;
     height: 2px;
-    background: linear-gradient(90deg, #9fb6ee, var(--accent), var(--accent-plum), var(--accent-warm));
+    background: linear-gradient(90deg, #b9c9f3, var(--accent), var(--accent-plum), var(--accent-warm));
 }
 
 .masthead__inner-wrap {
@@ -262,11 +262,11 @@ body::before {
     transform: none !important;
     margin-top: 0 !important;
     padding: 17px 16px 18px !important;
-    border: 1px solid rgba(216, 226, 238, 0.96) !important;
+    border: 1px solid rgba(221, 231, 243, 0.98) !important;
     border-radius: var(--radius-card) !important;
     background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.99) 0%, rgba(248, 251, 255, 0.98) 62%, rgba(255, 245, 239, 0.62) 100%) !important;
-    box-shadow: 0 18px 42px rgba(38, 55, 86, 0.095) !important;
+        linear-gradient(180deg, rgba(255, 255, 255, 0.995) 0%, rgba(250, 252, 255, 0.99) 66%, rgba(255, 247, 242, 0.58) 100%) !important;
+    box-shadow: 0 16px 38px rgba(42, 57, 88, 0.080) !important;
     box-sizing: border-box;
     text-align: center !important;
 }
@@ -275,8 +275,8 @@ body::before {
     content: "";
     position: absolute;
     inset: 0 0 auto;
-    height: 5px;
-    background: linear-gradient(90deg, #9fb6ee, var(--accent), var(--accent-plum), var(--accent-warm));
+    height: 4px;
+    background: linear-gradient(90deg, #b9c9f3, var(--accent), var(--accent-plum), var(--accent-warm));
 }
 
 .sidebar .profile_box::after {
@@ -284,7 +284,7 @@ body::before {
     position: absolute;
     right: 12px;
     bottom: 10px;
-    color: rgba(93, 111, 150, 0.13);
+    color: rgba(123, 142, 188, 0.11);
     font-size: 0.63rem;
     font-weight: 700;
     letter-spacing: 0.16em;
@@ -311,8 +311,8 @@ body::before {
     border: 2px solid #ffffff !important;
     border-radius: 50% !important;
     background: var(--surface-bg);
-    outline: 1px solid rgba(63, 109, 216, 0.20);
-    box-shadow: 0 15px 34px rgba(38, 55, 86, 0.14) !important;
+    outline: 1px solid rgba(85, 119, 214, 0.18);
+    box-shadow: 0 14px 32px rgba(42, 57, 88, 0.12) !important;
 }
 
 .sidebar .author__name {
@@ -546,34 +546,24 @@ body::before {
 }
 
 .hero-card {
-    padding: 30px 34px 28px !important;
+    padding: 27px 34px 28px !important;
     margin: 0 0 22px !important;
-    border: 1px solid rgba(216, 226, 238, 0.98) !important;
-    border-left: 0 !important;
+    border: 1px solid rgba(221, 231, 243, 0.98) !important;
     background:
-        linear-gradient(135deg, rgba(255, 255, 255, 0.99) 0%, rgba(248, 251, 255, 0.99) 62%, rgba(255, 245, 239, 0.66) 100%) !important;
-    box-shadow: 0 18px 44px rgba(38, 55, 86, 0.095) !important;
+        linear-gradient(135deg, rgba(255, 255, 255, 0.995) 0%, rgba(250, 252, 255, 0.99) 64%, rgba(255, 247, 242, 0.58) 100%) !important;
+    box-shadow: 0 16px 40px rgba(42, 57, 88, 0.080) !important;
 }
 
 .hero-card::before {
     content: "";
     position: absolute;
-    inset: 0 auto 0 0;
-    width: 5px;
-    background: linear-gradient(180deg, #9fb6ee, var(--accent), var(--accent-plum), var(--accent-warm));
+    inset: 0 0 auto 0;
+    height: 4px;
+    background: linear-gradient(90deg, #b9c9f3, var(--accent), var(--accent-plum), var(--accent-warm));
 }
 
 .hero-card::after {
-    content: "PROFILE";
-    position: absolute;
-    right: 25px;
-    bottom: 17px;
-    color: rgba(93, 111, 150, 0.07);
-    font-size: 1.35rem;
-    font-weight: 700;
-    letter-spacing: 0.20em;
-    line-height: 1;
-    pointer-events: none;
+    content: none;
 }
 
 .hero-card > * {
@@ -585,9 +575,9 @@ body::before {
     width: fit-content;
     margin: 0 0 12px !important;
     padding: 5px 11px !important;
-    border: 1px solid rgba(63, 109, 216, 0.18);
+    border: 1px solid rgba(85, 119, 214, 0.18);
     border-radius: 999px;
-    background: rgba(237, 244, 255, 0.86);
+    background: rgba(239, 245, 255, 0.88);
     color: var(--accent-strong) !important;
     font-size: 0.78rem !important;
     font-weight: 700 !important;
@@ -645,9 +635,9 @@ body::before {
     align-items: center;
     min-height: 30px;
     padding: 4px 11px;
-    border: 1px solid rgba(40, 87, 197, 0.15);
+    border: 1px solid rgba(85, 119, 214, 0.15);
     border-radius: 999px;
-    background: rgba(234, 241, 255, 0.82);
+    background: rgba(238, 245, 255, 0.82);
     color: var(--text-color);
     font-size: 0.9rem;
     font-weight: 700;
@@ -671,20 +661,20 @@ body::before {
 .section-heading {
     display: flex !important;
     align-items: center !important;
-    gap: 12px;
-    margin: 22px 0 11px !important;
+    gap: 11px;
+    margin: 24px 0 12px !important;
     padding: 0 0 8px !important;
     border: 0 !important;
-    border-bottom: 1px solid rgba(216, 226, 238, 0.92) !important;
+    border-bottom: 1px solid rgba(227, 235, 245, 0.96) !important;
     border-radius: 0 !important;
     background: transparent !important;
 }
 
 .section-heading::before {
     content: "";
-    flex: 0 0 5px;
-    width: 5px;
-    height: 25px;
+    flex: 0 0 4px;
+    width: 4px;
+    height: 24px;
     border-radius: 999px;
     background: linear-gradient(180deg, var(--accent), var(--accent-plum), var(--accent-warm));
 }
@@ -726,10 +716,10 @@ body::before {
 .paper-box,
 .other-paper-item,
 .awards-section {
-    border: 1px solid rgba(216, 226, 238, 0.98) !important;
+    border: 1px solid rgba(221, 231, 243, 0.98) !important;
     border-radius: var(--radius-card) !important;
     background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.99) 0%, rgba(249, 251, 255, 0.99) 100%) !important;
+        linear-gradient(180deg, rgba(255, 255, 255, 0.995) 0%, rgba(250, 252, 255, 0.99) 100%) !important;
     box-shadow: var(--card-shadow) !important;
     box-sizing: border-box;
     transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease !important;
@@ -738,8 +728,8 @@ body::before {
 .paper-box:hover,
 .other-paper-item:hover,
 .awards-section:hover {
-    transform: translateY(-3px);
-    border-color: rgba(63, 109, 216, 0.23) !important;
+    transform: translateY(-2px);
+    border-color: rgba(85, 119, 214, 0.22) !important;
     box-shadow: var(--card-shadow-hover) !important;
     z-index: 40;
 }
@@ -748,11 +738,11 @@ body::before {
     position: relative;
     counter-increment: paper-item;
     display: grid !important;
-    grid-template-columns: minmax(260px, 36%) minmax(0, 1fr) !important;
-    gap: 20px !important;
+    grid-template-columns: minmax(260px, 35%) minmax(0, 1fr) !important;
+    gap: 22px !important;
     align-items: center !important;
     margin: 0 !important;
-    padding: 15px 56px 15px 15px !important;
+    padding: 16px 56px 16px 16px !important;
     overflow: visible !important;
     z-index: 1;
 }
@@ -760,8 +750,8 @@ body::before {
 .paper-box::before {
     content: "";
     position: absolute;
-    inset: 14px auto 14px 0;
-    width: 3px;
+    inset: 16px auto 16px 0;
+    width: 2px;
     border-radius: 999px;
     background: linear-gradient(180deg, var(--accent), var(--accent-plum), var(--accent-warm));
     opacity: 0;
@@ -777,7 +767,7 @@ body::before {
     position: absolute;
     top: 15px;
     right: 17px;
-    color: rgba(63, 109, 216, 0.22);
+    color: rgba(85, 119, 214, 0.20);
     font-size: 0.82rem;
     font-weight: 700;
     letter-spacing: 0.08em;
@@ -793,10 +783,10 @@ body::before {
     min-height: 0;
     aspect-ratio: 16 / 9;
     overflow: hidden !important;
-    border: 1px solid #dce6f2 !important;
+    border: 1px solid #dfe9f4 !important;
     border-radius: var(--radius-inner) !important;
     background:
-        linear-gradient(135deg, #ffffff 0%, #f8fbff 54%, #eef4ff 100%) !important;
+        linear-gradient(135deg, #ffffff 0%, #fafcff 54%, #f0f6ff 100%) !important;
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.78);
     z-index: 2;
 }
@@ -832,7 +822,7 @@ body::before {
     z-index: 70;
     transform: scale(1.36);
     background: #ffffff;
-    box-shadow: 0 18px 42px rgba(38, 55, 86, 0.20) !important;
+    box-shadow: 0 18px 42px rgba(42, 57, 88, 0.18) !important;
     filter: saturate(1.03) contrast(1.02);
 }
 
@@ -890,17 +880,28 @@ body::before {
 
 .badge {
     position: absolute !important;
-    top: 12px;
-    left: 12px;
+    top: -1px;
+    left: -1px;
     z-index: 90;
     margin: 0 !important;
-    padding: 4px 11px !important;
-    border-radius: 999px !important;
-    background: linear-gradient(90deg, var(--accent), var(--accent-plum)) !important;
-    color: #fff !important;
-    box-shadow: 0 5px 12px rgba(63, 109, 216, 0.20) !important;
+    padding: 5px 11px 5px 12px !important;
+    border: 0 !important;
+    border-right: 1px solid rgba(85, 119, 214, 0.18) !important;
+    border-bottom: 1px solid rgba(85, 119, 214, 0.18) !important;
+    border-radius: 0 0 8px 0 !important;
+    background: rgba(255, 255, 255, 0.94) !important;
+    color: var(--accent-strong) !important;
+    box-shadow: 0 5px 12px rgba(42, 57, 88, 0.08) !important;
     font-size: 0.76rem !important;
     font-weight: 700;
+    line-height: 1.1 !important;
+    pointer-events: none;
+    transition: opacity 0.16s ease, visibility 0.16s ease;
+}
+
+.paper-box-image:hover .badge {
+    opacity: 0;
+    visibility: hidden;
 }
 
 .other-paper-item {
@@ -932,6 +933,7 @@ body::before {
     margin: 0 !important;
     padding: 0 !important;
     overflow: hidden !important;
+    background: #ffffff !important;
 }
 
 .section-title {
@@ -966,7 +968,7 @@ body::before {
     border-radius: 999px;
     background: #ffffff;
     color: var(--accent);
-    box-shadow: inset 0 0 0 1px rgba(63, 109, 216, 0.16);
+    box-shadow: inset 0 0 0 1px rgba(85, 119, 214, 0.16);
     font-size: 1.05rem;
     line-height: 1;
 }
@@ -990,17 +992,17 @@ body::before {
 
 .award-card {
     overflow: hidden !important;
-    border: 1px solid rgba(216, 226, 238, 0.96) !important;
+    border: 1px solid rgba(221, 231, 243, 0.96) !important;
     border-radius: var(--radius-inner) !important;
     background: #ffffff !important;
-    box-shadow: 0 7px 18px rgba(38, 55, 86, 0.055) !important;
+    box-shadow: 0 7px 18px rgba(42, 57, 88, 0.050) !important;
     transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .award-card:hover {
     transform: translateY(-2px);
-    border-color: rgba(63, 109, 216, 0.22) !important;
-    box-shadow: 0 12px 26px rgba(38, 55, 86, 0.10) !important;
+    border-color: rgba(85, 119, 214, 0.20) !important;
+    box-shadow: 0 12px 26px rgba(42, 57, 88, 0.085) !important;
 }
 
 .award-image-container {
@@ -1042,12 +1044,12 @@ body::before {
 .visitor-map {
     margin: 14px 0 0 !important;
     padding: 12px !important;
-    border: 1px solid rgba(216, 226, 238, 0.9);
+    border: 1px solid rgba(221, 231, 243, 0.9);
     border-radius: var(--radius-card);
     background: rgba(255, 255, 255, 0.76);
     line-height: 0 !important;
     text-align: center;
-    box-shadow: 0 8px 22px rgba(38, 55, 86, 0.045);
+    box-shadow: 0 8px 22px rgba(42, 57, 88, 0.040);
 }
 
 .visitor-map img,
