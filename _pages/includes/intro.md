@@ -1,22 +1,40 @@
-<div class="hero-card" id="about-me">
-  <div class="hero-layout">
-    <div class="hero-copy">
-      <p class="hero-kicker">Jiangsu University / Undergraduate Researcher</p>
-      <h1 class="hero-title">Hi! I am Jiaqi Zhang <span class="hero-title__cn">(Chinese name: 张家旗)</span></h1>
-      <p class="hero-subtitle">Undergraduate Student - Jiangsu University</p>
-      <p class="hero-description">I am an undergraduate student from the <a href="https://cs.ujs.edu.cn/">School of Computer Science and Communication Engineering</a>, Jiangsu University, majoring in Computer Science and Technology. During my undergraduate studies, my academic advisor was <a href="https://ujsyyoung.github.io/homepage/">Associate Professor Yang Yang</a>. I am deeply grateful to him for introducing me to the world of research.</p>
+<section class="hero-layout" id="about-me" aria-label="Research profile">
+  <div class="hero-card">
+    <p class="hero-kicker">Jiangsu University / Undergraduate Researcher</p>
+    <h1 class="hero-title">Hi! I am Jiaqi Zhang <span class="hero-title__cn">(Chinese name: 张家旗)</span></h1>
+    <p class="hero-subtitle">Undergraduate Student - Jiangsu University</p>
+    <p class="hero-description">I am an undergraduate student from the <a href="https://cs.ujs.edu.cn/">School of Computer Science and Communication Engineering</a>, Jiangsu University, majoring in Computer Science and Technology. During my undergraduate studies, my academic advisor was <a href="https://ujsyyoung.github.io/homepage/">Associate Professor Yang Yang</a>. I am deeply grateful to him for introducing me to the world of research.</p>
+    <div class="hero-meta" aria-label="Research interests">
+      <span>Medical Image Analysis</span>
+      <span>Multimodal Learning</span>
+      <span>Diffusion Restoration</span>
+      <span>LLM Agents</span>
     </div>
-    <aside class="hero-focus-board" aria-label="Research interests">
-      <span class="focus-board__label">Research Focus</span>
-      <div class="focus-grid">
-        <div class="focus-item"><strong>Medical Imaging</strong><span>segmentation / restoration</span></div>
-        <div class="focus-item"><strong>Multimodal Learning</strong><span>robust representation</span></div>
-        <div class="focus-item"><strong>Diffusion Priors</strong><span>inverse problems</span></div>
-        <div class="focus-item"><strong>LLM Agents</strong><span>tracing / provenance</span></div>
-      </div>
-    </aside>
   </div>
-</div>
+  <div class="hero-focus-panel" aria-label="Research focus">
+    <p class="focus-kicker">Research Focus</p>
+    <h2 class="focus-title">Robust visual intelligence for medicine, restoration, and agents.</h2>
+    <div class="focus-list">
+      <div class="focus-item">
+        <span>01</span>
+        <p>Generalizable medical image segmentation and reliable clinical visual understanding.</p>
+      </div>
+      <div class="focus-item">
+        <span>02</span>
+        <p>Parameterized image restoration with diffusion priors and degradation-aware control.</p>
+      </div>
+      <div class="focus-item">
+        <span>03</span>
+        <p>Multimodal reasoning, LLM agents, and evidence-grounded decision workflows.</p>
+      </div>
+    </div>
+    <div class="focus-metrics" aria-label="Research summary">
+      <span><strong>CV</strong> Vision</span>
+      <span><strong>Med</strong> Imaging</span>
+      <span><strong>AI</strong> Agents</span>
+    </div>
+  </div>
+</section>
 
 <!-- Temporarily hidden: News section.
 <span class='anchor' id='news'></span>
