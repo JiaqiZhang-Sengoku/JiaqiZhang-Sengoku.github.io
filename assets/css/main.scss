@@ -70,8 +70,8 @@
     --accent-plum-soft: rgba(154, 134, 214, 0.12);
     --accent-warm: #d79670;
     --accent-warm-soft: rgba(221, 161, 124, 0.14);
-    --max-page-width: 1300px;
-    --content-width: 970px;
+    --max-page-width: 1420px;
+    --content-width: 1060px;
 }
 
 html,
@@ -126,7 +126,7 @@ body::before {
 .masthead__inner-wrap {
     max-width: var(--max-page-width) !important;
     margin: 0 auto !important;
-    padding: 8px 24px !important;
+    padding: 10px 28px !important;
 }
 
 .greedy-nav {
@@ -137,7 +137,7 @@ body::before {
 .masthead__menu .visible-links {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
 }
 
 .masthead__menu-item {
@@ -148,12 +148,12 @@ body::before {
 .greedy-nav a {
     display: inline-flex !important;
     align-items: center;
-    min-height: 30px;
+    min-height: 34px;
     margin: 0 !important;
-    padding: 5px 10px !important;
+    padding: 6px 12px !important;
     border-radius: 999px;
     color: var(--heading-color) !important;
-    font-size: 0.95rem !important;
+    font-size: 1.04rem !important;
     font-weight: 600 !important;
     letter-spacing: 0 !important;
     text-decoration: none !important;
@@ -188,11 +188,11 @@ body::before {
 
 #main {
     display: grid !important;
-    grid-template-columns: 268px minmax(0, 1fr);
-    gap: 28px;
+    grid-template-columns: 292px minmax(0, 1fr);
+    gap: 34px;
     max-width: var(--max-page-width) !important;
     margin: 0 auto !important;
-    padding: 18px 20px 36px !important;
+    padding: 24px 26px 46px !important;
     animation: none !important;
     box-sizing: border-box;
 }
@@ -263,7 +263,7 @@ body::before {
     max-width: none !important;
     transform: none !important;
     margin-top: 0 !important;
-    padding: 17px 15px 16px !important;
+    padding: 21px 18px 20px !important;
     border: 1px solid rgba(221, 231, 243, 0.98) !important;
     border-radius: var(--radius-card) !important;
     background:
@@ -292,7 +292,7 @@ body::before {
 }
 
 .sidebar .author__avatar {
-    margin: 0 0 9px !important;
+    margin: 0 0 12px !important;
     text-align: center !important;
 }
 
@@ -302,8 +302,8 @@ body::before {
 }
 
 .sidebar .author__avatar img {
-    width: 158px !important;
-    max-width: 158px !important;
+    width: 174px !important;
+    max-width: 174px !important;
     min-width: 0 !important;
     margin: 0 auto !important;
     padding: 5px !important;
@@ -315,30 +315,30 @@ body::before {
 }
 
 .sidebar .author__name {
-    margin: 10px 0 6px !important;
+    margin: 12px 0 7px !important;
     color: var(--heading-color) !important;
-    font-size: 1.48rem !important;
+    font-size: 1.62rem !important;
     letter-spacing: 0 !important;
     line-height: 1.16 !important;
 }
 
 .sidebar .author__bio {
-    max-width: 228px !important;
-    margin: 0 auto 10px !important;
+    max-width: 250px !important;
+    margin: 0 auto 13px !important;
     color: var(--muted-color) !important;
-    font-size: 0.93rem !important;
-    line-height: 1.42 !important;
+    font-size: 0.99rem !important;
+    line-height: 1.46 !important;
     overflow-wrap: anywhere;
 }
 
 .sidebar .author__urls {
     display: grid !important;
     justify-items: center !important;
-    gap: 7px;
+    gap: 8px;
     position: static !important;
     z-index: auto !important;
     width: 100% !important;
-    margin: 10px 0 0 !important;
+    margin: 12px 0 0 !important;
     padding: 0 !important;
     border: 0 !important;
     background: transparent !important;
@@ -355,15 +355,15 @@ body::before {
     align-items: center !important;
     justify-content: flex-start !important;
     gap: 7px !important;
-    width: min(218px, 100%);
-    min-height: 31px;
+    width: min(242px, 100%);
+    min-height: 35px;
     margin: 0 !important;
-    padding: 0 10px !important;
+    padding: 0 12px !important;
     border: 1px solid rgba(221, 231, 243, 0.74);
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.70);
     color: var(--muted-color) !important;
-    font-size: 0.92rem !important;
+    font-size: 0.98rem !important;
     line-height: 1.34 !important;
     text-align: left !important;
     white-space: normal !important;
@@ -388,8 +388,8 @@ body::before {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: flex-start !important;
-    gap: 7px !important;
-    min-height: 24px;
+    gap: 8px !important;
+    min-height: 27px;
     margin: 0 !important;
     width: 100%;
     padding: 1px 0 !important;
@@ -406,8 +406,8 @@ body::before {
 }
 
 .sidebar .author__urls i {
-    flex: 0 0 20px;
-    width: 20px;
+    flex: 0 0 22px;
+    width: 22px;
     margin-right: 3px !important;
     color: var(--accent-strong) !important;
     text-align: center;
@@ -563,8 +563,8 @@ body::before {
 }
 
 .hero-card {
-    padding: 27px 34px 28px !important;
-    margin: 0 0 22px !important;
+    padding: 35px 44px 36px !important;
+    margin: 0 0 28px !important;
     border: 1px solid rgba(221, 231, 243, 0.98) !important;
     background:
         linear-gradient(135deg, rgba(255, 255, 255, 0.995) 0%, rgba(250, 252, 255, 0.99) 64%, rgba(255, 247, 242, 0.58) 100%) !important;
@@ -610,12 +610,12 @@ body::before {
 }
 
 .hero-title {
-    max-width: 850px;
-    margin: 0 0 8px !important;
+    max-width: 960px;
+    margin: 0 0 10px !important;
     padding: 0 !important;
     border: 0 !important;
     color: var(--heading-color) !important;
-    font-size: 1.9rem !important;
+    font-size: 2.18rem !important;
     line-height: 1.15 !important;
     letter-spacing: 0 !important;
 }
@@ -627,18 +627,18 @@ body::before {
 .hero-subtitle {
     display: inline-flex;
     align-items: center;
-    margin: 0 0 9px !important;
+    margin: 0 0 12px !important;
     color: var(--accent-strong) !important;
-    font-size: 1.02rem !important;
+    font-size: 1.12rem !important;
     font-weight: 700 !important;
 }
 
 .hero-description {
-    max-width: 880px !important;
+    max-width: 980px !important;
     margin: 0 !important;
     color: var(--text-color) !important;
-    font-size: 1.02rem !important;
-    line-height: 1.68 !important;
+    font-size: 1.10rem !important;
+    line-height: 1.72 !important;
     overflow-wrap: anywhere;
 }
 
@@ -649,20 +649,20 @@ body::before {
 .hero-meta {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 14px;
+    gap: 10px;
+    margin-top: 18px;
 }
 
 .hero-meta span {
     display: inline-flex;
     align-items: center;
-    min-height: 30px;
-    padding: 4px 11px;
+    min-height: 34px;
+    padding: 5px 14px;
     border: 1px solid rgba(85, 119, 214, 0.15);
     border-radius: 999px;
     background: rgba(238, 245, 255, 0.82);
     color: var(--text-color);
-    font-size: 0.9rem;
+    font-size: 0.98rem;
     font-weight: 700;
 }
 
@@ -684,9 +684,9 @@ body::before {
 .section-heading {
     display: flex !important;
     align-items: center !important;
-    gap: 11px;
-    margin: 24px 0 12px !important;
-    padding: 0 0 8px !important;
+    gap: 13px;
+    margin: 31px 0 15px !important;
+    padding: 0 0 10px !important;
     border: 0 !important;
     border-bottom: 1px solid rgba(227, 235, 245, 0.96) !important;
     border-radius: 0 !important;
@@ -695,9 +695,9 @@ body::before {
 
 .section-heading::before {
     content: "";
-    flex: 0 0 4px;
-    width: 4px;
-    height: 24px;
+    flex: 0 0 5px;
+    width: 5px;
+    height: 30px;
     border-radius: 999px;
     background: linear-gradient(180deg, var(--accent), var(--accent-plum), var(--accent-warm));
 }
@@ -708,7 +708,7 @@ body::before {
     gap: 10px;
     margin: 0 !important;
     color: var(--heading-color) !important;
-    font-size: 1.38rem !important;
+    font-size: 1.58rem !important;
     font-weight: 700 !important;
     letter-spacing: 0 !important;
     line-height: 1.2 !important;
@@ -723,14 +723,14 @@ body::before {
     align-items: center;
     gap: 8px;
     flex-wrap: wrap;
-    min-height: 28px;
-    margin: -3px 0 11px !important;
-    padding: 4px 10px !important;
+    min-height: 32px;
+    margin: -4px 0 14px !important;
+    padding: 5px 12px !important;
     border: 1px solid rgba(221, 231, 243, 0.82);
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.64);
     color: var(--muted-color) !important;
-    font-size: 0.86rem !important;
+    font-size: 0.94rem !important;
     font-weight: 700;
     line-height: 1.1 !important;
     box-sizing: border-box;
@@ -745,8 +745,8 @@ body::before {
 .publications-panel,
 .other-publications-panel {
     display: grid !important;
-    gap: 12px !important;
-    margin-bottom: 16px !important;
+    gap: 15px !important;
+    margin-bottom: 20px !important;
     overflow: visible !important;
 }
 
@@ -783,11 +783,11 @@ body::before {
     position: relative;
     counter-increment: paper-item;
     display: grid !important;
-    grid-template-columns: minmax(270px, 36%) minmax(0, 1fr) !important;
-    gap: 24px !important;
+    grid-template-columns: minmax(310px, 38%) minmax(0, 1fr) !important;
+    gap: 30px !important;
     align-items: center !important;
     margin: 0 !important;
-    padding: 17px 58px 17px 17px !important;
+    padding: 22px 66px 22px 22px !important;
     overflow: visible !important;
     z-index: 1;
 }
@@ -795,8 +795,8 @@ body::before {
 .paper-box::before {
     content: "";
     position: absolute;
-    inset: 16px auto 16px 0;
-    width: 2px;
+    inset: 20px auto 20px 0;
+    width: 3px;
     border-radius: 999px;
     background: linear-gradient(180deg, var(--accent), var(--accent-plum), var(--accent-warm));
     opacity: 0;
@@ -810,15 +810,15 @@ body::before {
 .paper-box::after {
     content: counter(paper-item, decimal-leading-zero);
     position: absolute;
-    top: 15px;
-    right: 17px;
-    min-width: 30px;
-    padding: 4px 6px;
+    top: 18px;
+    right: 20px;
+    min-width: 34px;
+    padding: 5px 7px;
     border: 1px solid rgba(221, 231, 243, 0.80);
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.62);
     color: rgba(85, 119, 214, 0.50);
-    font-size: 0.82rem;
+    font-size: 0.88rem;
     font-weight: 700;
     letter-spacing: 0.08em;
     line-height: 1;
@@ -834,7 +834,7 @@ body::before {
     min-height: 0;
     aspect-ratio: 16 / 9;
     overflow: hidden !important;
-    padding: 5px;
+    padding: 7px;
     border: 1px solid #dfe9f4 !important;
     border-radius: var(--radius-inner) !important;
     background:
@@ -863,7 +863,7 @@ body::before {
     display: block !important;
     width: 100% !important;
     height: 100% !important;
-    max-height: 248px !important;
+    max-height: 288px !important;
     border-radius: var(--radius-inner) !important;
     box-shadow: none !important;
     object-fit: contain !important;
@@ -879,7 +879,7 @@ body::before {
 .paper-box-image:hover img {
     position: relative;
     z-index: 70;
-    transform: scale(1.36);
+    transform: scale(1.30);
     background: #ffffff;
     box-shadow: 0 18px 42px rgba(42, 57, 88, 0.18) !important;
     filter: saturate(1.03) contrast(1.02);
@@ -888,10 +888,10 @@ body::before {
 .paper-box-text {
     display: block !important;
     min-width: 0 !important;
-    padding: 3px 0 3px 2px !important;
+    padding: 4px 0 4px 3px !important;
     color: var(--text-color) !important;
-    font-size: 0.96rem !important;
-    line-height: 1.58 !important;
+    font-size: 1.04rem !important;
+    line-height: 1.62 !important;
 }
 
 .paper-box-text p {
@@ -911,9 +911,9 @@ body::before {
 .paper-box-text a:first-of-type {
     display: inline !important;
     color: var(--heading-color) !important;
-    font-size: 1.08rem !important;
+    font-size: 1.20rem !important;
     font-weight: 700 !important;
-    line-height: 1.32 !important;
+    line-height: 1.34 !important;
     text-decoration: none !important;
 }
 
@@ -948,8 +948,8 @@ body::before {
     display: inline-flex !important;
     align-items: center !important;
     flex-wrap: wrap;
-    gap: 5px;
-    margin-top: 8px !important;
+    gap: 6px;
+    margin-top: 10px !important;
     line-height: 1 !important;
 }
 
@@ -959,16 +959,16 @@ body::before {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
-    min-width: 58px;
-    min-height: 26px;
-    padding: 4px 10px !important;
+    min-width: 66px;
+    min-height: 30px;
+    padding: 5px 12px !important;
     box-sizing: border-box;
     border: 1px solid rgba(178, 194, 236, 0.88) !important;
     border-radius: 4px !important;
     background: linear-gradient(180deg, #ffffff 0%, #f6f8fe 100%) !important;
     color: var(--accent-strong) !important;
     box-shadow: 0 3px 9px rgba(42, 57, 88, 0.045) !important;
-    font-size: 0.84rem !important;
+    font-size: 0.92rem !important;
     font-weight: 700 !important;
     line-height: 1.12 !important;
     white-space: nowrap;
@@ -989,7 +989,7 @@ body::before {
 
 .paper-link-separator {
     color: rgba(116, 130, 151, 0.62);
-    font-size: 0.9rem;
+    font-size: 0.98rem;
     font-weight: 700;
     line-height: 1;
 }
@@ -1004,7 +1004,7 @@ body::before {
     left: -1px;
     z-index: 90;
     margin: 0 !important;
-    padding: 5px 11px 5px 12px !important;
+    padding: 6px 13px 6px 14px !important;
     border: 0 !important;
     border-right: 1px solid rgba(85, 119, 214, 0.18) !important;
     border-bottom: 1px solid rgba(85, 119, 214, 0.18) !important;
@@ -1012,7 +1012,7 @@ body::before {
     background: rgba(255, 255, 255, 0.94) !important;
     color: var(--accent-strong) !important;
     box-shadow: 0 5px 12px rgba(42, 57, 88, 0.08) !important;
-    font-size: 0.76rem !important;
+    font-size: 0.84rem !important;
     font-weight: 700;
     line-height: 1.1 !important;
     pointer-events: none;
@@ -1027,8 +1027,8 @@ body::before {
 .other-paper-item {
     position: relative;
     overflow: hidden !important;
-    min-height: 132px;
-    padding: 15px 17px 16px !important;
+    min-height: 154px;
+    padding: 19px 21px 20px !important;
 }
 
 .other-paper-item::before {
@@ -1041,17 +1041,17 @@ body::before {
 }
 
 .other-paper-title {
-    margin: 0 0 7px !important;
+    margin: 0 0 9px !important;
     color: var(--heading-color) !important;
-    font-size: 1.05rem !important;
+    font-size: 1.16rem !important;
     font-weight: 700 !important;
-    line-height: 1.38 !important;
+    line-height: 1.40 !important;
 }
 
 .other-paper-authors {
     color: var(--text-color) !important;
-    font-size: 0.92rem !important;
-    line-height: 1.52 !important;
+    font-size: 1.0rem !important;
+    line-height: 1.56 !important;
 }
 
 .other-paper-title,
@@ -1063,22 +1063,22 @@ body::before {
 .other-paper-venue {
     display: inline-flex;
     width: fit-content;
-    margin: 0 0 7px !important;
-    padding: 3px 8px !important;
+    margin: 0 0 9px !important;
+    padding: 4px 10px !important;
     border: 1px solid rgba(221, 231, 243, 0.82);
     border-radius: 999px;
     background: rgba(245, 248, 253, 0.80);
     color: var(--accent-strong) !important;
-    font-size: 0.78rem !important;
+    font-size: 0.86rem !important;
     font-weight: 700;
     line-height: 1.1 !important;
 }
 
 .honors-panel {
     display: grid;
-    gap: 12px;
+    gap: 15px;
     max-width: none !important;
-    margin: 0 0 12px !important;
+    margin: 0 0 16px !important;
 }
 
 .awards-section {
@@ -1092,14 +1092,14 @@ body::before {
     display: flex !important;
     align-items: center !important;
     justify-content: space-between !important;
-    gap: 12px;
+    gap: 14px;
     margin: 0 !important;
-    min-height: 54px;
-    padding: 13px 16px 13px 18px !important;
+    min-height: 62px;
+    padding: 15px 18px 15px 21px !important;
     color: var(--heading-color) !important;
     cursor: pointer;
     list-style: none;
-    font-size: 1.03rem !important;
+    font-size: 1.13rem !important;
     font-weight: 700 !important;
     background:
         linear-gradient(90deg, #ffffff 0%, rgba(238, 245, 255, 0.92) 58%, rgba(255, 247, 242, 0.82) 100%);
@@ -1125,14 +1125,14 @@ body::before {
     display: inline-flex !important;
     align-items: center;
     justify-content: center;
-    flex: 0 0 30px;
-    width: 30px;
-    height: 30px;
+    flex: 0 0 34px;
+    width: 34px;
+    height: 34px;
     border-radius: 999px;
     background: #ffffff;
     color: var(--accent);
     box-shadow: inset 0 0 0 1px rgba(85, 119, 214, 0.16);
-    font-size: 1.05rem;
+    font-size: 1.16rem;
     line-height: 1;
 }
 
@@ -1152,8 +1152,8 @@ body::before {
 .awards-grid {
     display: grid !important;
     grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
-    gap: 13px !important;
-    padding: 15px !important;
+    gap: 16px !important;
+    padding: 18px !important;
     background:
         linear-gradient(180deg, #ffffff 0%, #f5f8fd 100%);
 }
@@ -1198,14 +1198,14 @@ body::before {
 }
 
 .award-info {
-    padding: 11px 10px 12px !important;
+    padding: 13px 12px 14px !important;
 }
 
 .award-title {
     margin-bottom: 6px !important;
     color: var(--text-color) !important;
-    font-size: 0.81rem !important;
-    line-height: 1.48 !important;
+    font-size: 0.90rem !important;
+    line-height: 1.52 !important;
 }
 
 .award-title strong {
@@ -1215,11 +1215,11 @@ body::before {
 .award-date {
     display: inline-flex;
     width: fit-content;
-    padding: 2px 7px;
+    padding: 3px 8px;
     border-radius: 999px;
     background: rgba(245, 248, 253, 0.88);
     color: var(--muted-color) !important;
-    font-size: 0.73rem !important;
+    font-size: 0.80rem !important;
     font-weight: 700 !important;
 }
 
@@ -1243,8 +1243,8 @@ body::before {
 @media screen and (max-width: 1100px) {
     #main {
         grid-template-columns: minmax(0, 1fr) !important;
-        gap: 16px;
-        padding: 16px 18px 32px !important;
+        gap: 20px;
+        padding: 20px 22px 38px !important;
     }
 
     .sidebar.sticky {
@@ -1255,9 +1255,9 @@ body::before {
 
     .sidebar .profile_box {
         display: block !important;
-        max-width: 370px !important;
+        max-width: 410px !important;
         margin: 0 auto !important;
-        padding: 16px 16px !important;
+        padding: 20px 19px !important;
         text-align: center !important;
     }
 
@@ -1281,7 +1281,7 @@ body::before {
     }
 
     .paper-box {
-        grid-template-columns: minmax(270px, 42%) minmax(0, 1fr) !important;
+        grid-template-columns: minmax(300px, 43%) minmax(0, 1fr) !important;
     }
 
     .other-publications-panel {
@@ -1337,7 +1337,7 @@ body::before {
     }
 
     .hero-card {
-        padding: 22px 17px 21px !important;
+        padding: 25px 19px 24px !important;
         border-radius: var(--radius-card) !important;
     }
 
@@ -1355,7 +1355,7 @@ body::before {
     }
 
     .hero-title {
-        font-size: 1.5rem !important;
+        font-size: 1.64rem !important;
         line-height: 1.2 !important;
     }
 
@@ -1371,26 +1371,26 @@ body::before {
 
     .sidebar .profile_box {
         display: block !important;
-        width: min(100%, 320px) !important;
-        max-width: 320px !important;
-        padding: 15px 14px !important;
+        width: min(100%, 342px) !important;
+        max-width: 342px !important;
+        padding: 18px 16px !important;
         margin-left: auto !important;
         margin-right: auto !important;
         text-align: center !important;
     }
 
     .sidebar .author__avatar img {
-        width: 138px !important;
-        max-width: 138px !important;
+        width: 150px !important;
+        max-width: 150px !important;
     }
 
     .sidebar .author__name {
-        font-size: 1.24rem !important;
+        font-size: 1.36rem !important;
     }
 
     .sidebar .author__bio,
     .sidebar .author__urls li {
-        font-size: 0.88rem !important;
+        font-size: 0.94rem !important;
     }
 
     .sidebar .author__avatar,
@@ -1419,8 +1419,8 @@ body::before {
 
     .paper-box {
         grid-template-columns: minmax(0, 1fr) !important;
-        gap: 12px !important;
-        padding: 12px !important;
+        gap: 14px !important;
+        padding: 15px !important;
     }
 
     .paper-box::after {
@@ -1447,8 +1447,8 @@ body::before {
     .paper-box-text .paper-links a,
     .paper-box-text .paper-links a:first-of-type,
     .other-paper-links a {
-        min-height: 27px;
-        font-size: 0.8rem !important;
+        min-height: 29px;
+        font-size: 0.84rem !important;
     }
 
     .section-heading {
@@ -1456,7 +1456,7 @@ body::before {
     }
 
     .section-heading__title {
-        font-size: 1.2rem !important;
+        font-size: 1.32rem !important;
     }
 
     .section-heading__title::after {
@@ -1465,12 +1465,12 @@ body::before {
 
     .awards-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        gap: 11px !important;
-        padding: 13px !important;
+        gap: 12px !important;
+        padding: 14px !important;
     }
 
     .section-title {
-        padding: 13px 14px !important;
-        font-size: 0.98rem !important;
+        padding: 14px 15px !important;
+        font-size: 1.04rem !important;
     }
 }
