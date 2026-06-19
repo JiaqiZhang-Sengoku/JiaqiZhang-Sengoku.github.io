@@ -2,12 +2,27 @@
   <h1 class="hero-title">Hi! I am Jiaqi Zhang <span class="hero-title__cn">(Chinese name: 张家旗)</span></h1>
   <p class="hero-subtitle">Undergraduate Student - Jiangsu University</p>
   <p class="hero-description">I am an undergraduate student from the <a href="https://cs.ujs.edu.cn/">School of Computer Science and Communication Engineering</a>, Jiangsu University, majoring in Computer Science and Technology. During my undergraduate studies, my academic advisor was <a href="https://ujsyyoung.github.io/homepage/">Associate Professor Yang Yang</a>. I am deeply grateful to him for introducing me to the world of research.</p>
+  <div class="hero-overview" aria-label="Homepage overview">
+    <div class="hero-overview__item">
+      <strong>10+</strong>
+      <span>Selected Works</span>
+    </div>
+    <div class="hero-overview__item">
+      <strong>51</strong>
+      <span>Honors</span>
+    </div>
+    <div class="hero-overview__item">
+      <strong>4</strong>
+      <span>Focus Areas</span>
+    </div>
+  </div>
   <div class="hero-meta" aria-label="Research interests">
     <span>Medical Image Analysis</span>
     <span>Multimodal Learning</span>
     <span>Diffusion Restoration</span>
     <span>LLM Agents</span>
   </div>
+  <p class="hero-footnote">I am especially interested in research that turns visual and multimodal models into reliable tools for real-world scientific and industrial tasks.</p>
 </div>
 
 <!-- Temporarily hidden: News section.

@@ -2,7 +2,7 @@
 <div class="section-heading section-heading--publications">
   <h2 class="section-heading__title">Selected Publications</h2>
 </div>
-<p class="publications-note"><sup>†</sup> Corresponding Author, <sup>*</sup> Equal Contribution</p>
+<p class="publications-note"><span><sup>†</sup> Corresponding Author</span><span><sup>*</sup> Equal Contribution</span></p>
 
 <div class="publications-panel">
 
@@ -162,7 +162,7 @@ ACM International Conference on Multimedia (ACM MM 2026) **Under Review**
 
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[Adaptive Risk-aware Implicit Quantile Network: Towards Safe andEnergy-Efficient USV Navigation in Dynamic Environments]()
+[Adaptive Risk-aware Implicit Quantile Network: Towards Safe and Energy-Efficient USV Navigation in Dynamic Environments]()
 <br>
 International Conference On Intelligent Computing (ICIC 2026) **Under Review**
 <br>
@@ -185,7 +185,7 @@ Journal of Imaging Informatics in Medicine (JIIM) **Under Review**
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/DG-SCL.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [DG-SCL: Diffusion-Guided Semantic Contrastive Learning for Imbalanced Malicious
-Traffic Detectionl]()
+Traffic Detection]()
 <br>
 Information Sciences **Under Review**
 <br>
@@ -202,7 +202,7 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
 <br>
 **Jiaqi Zhang**(First Author), Anonymous
 <br>
-[Paper](/Paper/A2L_Paper.pdf) | [Supplementary Material](/Paper/A2L_Supplementary_Meterial.pdf)<br>
+[Paper](/Paper/A2L_Paper.pdf) | [Supplementary Material](/Paper/A2L_Supplementary_Material.pdf)<br>
 </div>
 </div> -->
 
@@ -253,43 +253,43 @@ Biomedical Signal Processing and Control (BSPC) **Under Review**
 <div class="other-publications-panel">
   <div class="other-paper-item">
     <div class="other-paper-title">SCA-Net: A Scale- and Contrast-Aware Network for Subtle and Low-Contrast Polyp Segmentation</div>
-    <div class="other-paper-authors">Journal of Imaging Informatics in Medicine (2026)</div>
+    <div class="other-paper-authors other-paper-venue">Journal of Imaging Informatics in Medicine (2026)</div>
     <div class="other-paper-authors">Jiaxu Huang, Yiyue Li, <strong>Jiaqi Zhang</strong>, Xiaocheng Hu, Yang Yang<sup>†</sup></div>
     <div class="other-paper-authors"></div>
   </div>
   <div class="other-paper-item">
     <div class="other-paper-title">PathoMamba: Piecewise-Diffeomorphic Registration via Stiffness-Modulated State Space Dynamics</div>
-    <div class="other-paper-authors">International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2026)</div>
+    <div class="other-paper-authors other-paper-venue">International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2026)</div>
     <div class="other-paper-authors">Ernest Asimeng, Jun Chen, Godbless Mensah, <strong>Jiaqi Zhang</strong>, Kai Han, Yang Chen, Zhe Liu<sup>†</sup></div>
     <div class="other-paper-authors"></div>
   </div>
   <div class="other-paper-item">
     <div class="other-paper-title">Zero-shot Diffusive Image Restoration with Consistency</div>
-    <div class="other-paper-authors">Signal Processing (2026)</div>
+    <div class="other-paper-authors other-paper-venue">Signal Processing (2026)</div>
     <div class="other-paper-authors">Yi Wang, Lanling Zeng, <strong>Jiaqi Zhang</strong>, Yang Yang<sup>†</sup></div>
     <div class="other-paper-authors other-paper-links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0165168426002197">Paper</a></div>
   </div>
   <div class="other-paper-item">
     <div class="other-paper-title">Intrinsic Feature Consistency Learning Network for Generalizable Medical Image Segmentation</div>
-    <div class="other-paper-authors">International Conference On Intelligent Computing (ICIC 2026 Oral)</div>
+    <div class="other-paper-authors other-paper-venue">International Conference On Intelligent Computing (ICIC 2026 Oral)</div>
     <div class="other-paper-authors"><strong>Jiaqi Zhang</strong>, Xinjie Li, Guo Yang, Kang Yang, Wenjing Wang, Yang Yang<sup>†</sup></div>
     <div class="other-paper-authors"></div>
   </div>
   <div class="other-paper-item">
     <div class="other-paper-title">Agent-SAM-I2V: Self-Correcting Promptable Video Segmentation via Agentic Drift Detection and Multi-Prompt Fusion</div>
-    <div class="other-paper-authors">International Conference On Intelligent Computing (ICIC 2026 Oral)</div>
+    <div class="other-paper-authors other-paper-venue">International Conference On Intelligent Computing (ICIC 2026 Oral)</div>
     <div class="other-paper-authors">Guo Yang, <strong>Jiaqi Zhang</strong>, Yao Zhu, Longze Fan<sup>†</sup></div>
     <div class="other-paper-authors"></div>
   </div>
   <div class="other-paper-item">
-    <div class="other-paper-title">Adaptive Risk-aware Implicit Quantile Network: Towards Safe and Energy-E!cient USV Navigation in Dynamic Environments</div>
-    <div class="other-paper-authors">International Conference On Intelligent Computing (ICIC 2026 Oral)</div>
+    <div class="other-paper-title">Adaptive Risk-aware Implicit Quantile Network: Towards Safe and Energy-Efficient USV Navigation in Dynamic Environments</div>
+    <div class="other-paper-authors other-paper-venue">International Conference On Intelligent Computing (ICIC 2026 Oral)</div>
     <div class="other-paper-authors">Wenjing Wang, <strong>Jiaqi Zhang</strong></div>
     <div class="other-paper-authors"></div>
   </div>
   <div class="other-paper-item">
     <div class="other-paper-title">Parameterized Image Restoration with Diffusion and Gradient Priors</div>
-    <div class="other-paper-authors">Knowledge-Based Systems (2026)</div>
+    <div class="other-paper-authors other-paper-venue">Knowledge-Based Systems (2026)</div>
     <div class="other-paper-authors">Yang Yang<sup>†</sup>, Xi Zhang, <strong>Jiaqi Zhang</strong>, Lanling Zeng
 <br></div>
     <div class="other-paper-authors other-paper-links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705126002303">Paper</a><span class="paper-link-separator" aria-hidden="true">|</span><a href="https://github.com/AKA-hhh/PIRP">Code</a></div>
