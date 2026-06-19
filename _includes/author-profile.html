@@ -321,3 +321,48 @@
     </div>
   </div>
 </div>
+
+<script>
+  (function () {
+    var card = document.querySelector(".sidebar .profile_box");
+    var sidebar = card && card.closest(".sidebar");
+    if (!card || !sidebar) return;
+
+    var topOffset = 66;
+    var desktopQuery = window.matchMedia("(min-width: 1101px)");
+
+    function reset() {
+      card.style.removeProperty("position");
+      card.style.removeProperty("top");
+      card.style.removeProperty("left");
+      card.style.removeProperty("width");
+      card.style.removeProperty("max-height");
+      card.style.removeProperty("overflow-x");
+      card.style.removeProperty("overflow-y");
+      card.style.removeProperty("z-index");
+    }
+
+    function update() {
+      if (!desktopQuery.matches) {
+        reset();
+        return;
+      }
+
+      reset();
+
+      var rect = sidebar.getBoundingClientRect();
+      card.style.setProperty("position", "fixed", "important");
+      card.style.setProperty("top", topOffset + "px", "important");
+      card.style.setProperty("left", Math.round(rect.left) + "px", "important");
+      card.style.setProperty("width", Math.round(rect.width) + "px", "important");
+      card.style.setProperty("max-height", "calc(100vh - " + (topOffset + 16) + "px)", "important");
+      card.style.setProperty("overflow-x", "hidden", "important");
+      card.style.setProperty("overflow-y", "auto", "important");
+      card.style.setProperty("z-index", "80", "important");
+    }
+
+    window.addEventListener("load", update);
+    window.addEventListener("resize", update);
+    update();
+  }());
+</script>
