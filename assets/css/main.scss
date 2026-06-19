@@ -206,10 +206,10 @@ body::before {
 }
 
 .sidebar.sticky {
-    align-self: start;
-    position: relative !important;
-    top: auto;
-    height: auto;
+    align-self: start !important;
+    position: sticky !important;
+    top: 66px;
+    height: max-content;
 }
 
 .page {
