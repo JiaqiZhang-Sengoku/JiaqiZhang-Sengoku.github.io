@@ -1,28 +1,36 @@
 <div class="hero-card" id="about-me">
-  <h1 class="hero-title">Hi! I am Jiaqi Zhang (Chinese name: 张家旗)</h1>
-  <p class="hero-subtitle">Undergraduate Student · Jiangsu University</p>
-  <p class="hero-description">I am an undergraduate student from the <a href="https://cs.ujs.edu.cn/">School of Computer Science and Communication Engineering</a>, Jiangsu University, majoring in Computer Science and Technology. During my undergraduate studies, my academic advisor was <a href="https://ujsyyoung.github.io/homepage/">Associate Professor Yang Yang</a>. I am deeply grateful to him for introducing me to the world of research.</p>
-  <div class="hero-meta" aria-label="Research interests">
-    <span>Medical Image Analysis</span>
-    <span>Multimodal Learning</span>
-    <span>Diffusion Restoration</span>
-    <span>LLM Agents</span>
+  <div class="hero-layout">
+    <div class="hero-copy">
+      <p class="hero-kicker">Jiangsu University / Undergraduate Researcher</p>
+      <h1 class="hero-title">Hi! I am Jiaqi Zhang <span class="hero-title__cn">(Chinese name: 张家旗)</span></h1>
+      <p class="hero-subtitle">Undergraduate Student - Jiangsu University</p>
+      <p class="hero-description">I am an undergraduate student from the <a href="https://cs.ujs.edu.cn/">School of Computer Science and Communication Engineering</a>, Jiangsu University, majoring in Computer Science and Technology. During my undergraduate studies, my academic advisor was <a href="https://ujsyyoung.github.io/homepage/">Associate Professor Yang Yang</a>. I am deeply grateful to him for introducing me to the world of research.</p>
+    </div>
+    <aside class="hero-focus-board" aria-label="Research interests">
+      <span class="focus-board__label">Research Focus</span>
+      <div class="focus-grid">
+        <div class="focus-item"><strong>Medical Imaging</strong><span>segmentation / restoration</span></div>
+        <div class="focus-item"><strong>Multimodal Learning</strong><span>robust representation</span></div>
+        <div class="focus-item"><strong>Diffusion Priors</strong><span>inverse problems</span></div>
+        <div class="focus-item"><strong>LLM Agents</strong><span>tracing / provenance</span></div>
+      </div>
+    </aside>
   </div>
 </div>
 
 <!-- Temporarily hidden: News section.
 <span class='anchor' id='news'></span>
 <div class="section-heading section-heading--news">
-  <h2 class="section-heading__title">🔥 News</h2>
+  <h2 class="section-heading__title">News</h2>
 </div>
 
 <div class="news-panel" markdown="1">
-- *2026.05*: &nbsp;🎉🎉 Our work [DPG](https://www.sciencedirect.com/science/article/abs/pii/S0165168426002197) has been accepted by **Signal Processing**.
-- *2026.04*: &nbsp;🎉🎉 Three papers have been accepted as **Oral** presentations by **ICIC** 2026!
+- *2026.05*: &nbsp; Our work [DPG](https://www.sciencedirect.com/science/article/abs/pii/S0165168426002197) has been accepted by **Signal Processing**.
+- *2026.04*: &nbsp; Three papers have been accepted as **Oral** presentations by **ICIC** 2026!
   - IFCLNet: Intrinsic Feature Consistency Learning Network for Generalizable Medical Image Segmentation.
   - Agent-SAM-I2V: Self-Correcting Framework for Robust Video Segmentation via Agentic Control Layer.
   - Adaptive IQN: Adaptive Risk-Aware Network for Safe, Energy-Efficient Unmanned Surface Vehicle Navigation.
-- *2026.02*: &nbsp;🎉🎉 Our work [RRGCL]() has been accepted by **CVPR Finding**.
-- *2026.02*: &nbsp;🎉🎉 Our work [PIRP](https://www.sciencedirect.com/science/article/abs/pii/S0950705126002303) has been accepted by **Knowledge-Based Systems**. It is a parameterized image restoration method that combines diffusion and gradient dual priors.
+- *2026.02*: &nbsp; Our work [RRGCL]() has been accepted by **CVPR Finding**.
+- *2026.02*: &nbsp; Our work [PIRP](https://www.sciencedirect.com/science/article/abs/pii/S0950705126002303) has been accepted by **Knowledge-Based Systems**. It is a parameterized image restoration method that combines diffusion and gradient dual priors.
 </div>
 -->

@@ -1,6 +1,6 @@
 <span class='anchor' id='publications'></span>
 <div class="section-heading section-heading--publications">
-  <h2 class="section-heading__title">📝 Selected Publications</h2>
+  <h2 class="section-heading__title">Selected Publications</h2>
 </div>
 <p class="publications-note"><sup>†</sup> Corresponding Author, <sup>*</sup> Equal Contribution</p>
 
@@ -247,7 +247,7 @@ Biomedical Signal Processing and Control (BSPC) **Under Review**
 
 <span class='anchor' id='other-publications'></span>
 <div class="section-heading section-heading--other-publications">
-  <h2 class="section-heading__title">📚 Other Publications</h2>
+  <h2 class="section-heading__title">Other Publications</h2>
 </div>
 
 <div class="other-publications-panel">

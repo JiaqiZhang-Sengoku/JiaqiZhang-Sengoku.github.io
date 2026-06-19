@@ -1,11 +1,11 @@
 <span class='anchor' id='honors'></span>
 <div class="section-heading section-heading--honors">
-  <h2 class="section-heading__title">📜 Honors</h2>
+  <h2 class="section-heading__title">Honors</h2>
 </div>
 
 <div class="honors-panel">
   <details class="awards-section">
-    <summary class="section-title">🏆 National Level Awards (21)</summary>
+    <summary class="section-title">National Level Awards (21)</summary>
     <div class="awards-grid">
       <div class="award-card"><div class="award-image-container"><img class="award-image" loading="lazy" src="images/Award/Guo_21.png" alt="国奖21"></div><div class="award-info"><div class="award-title">第七届全球校园人工智能算法精英大赛-算法挑战赛-大规模SAR图像多类别有向目标检测<br><strong>国家级一等奖</strong></div><div class="award-date">2025年12月</div></div></div>
       <div class="award-card"><div class="award-image-container"><img class="award-image" loading="lazy" src="images/Award/Guo_22.png" alt="国奖22"></div><div class="award-info"><div class="award-title">第七届全球校园人工智能算法精英大赛-算法挑战赛-基于图书借阅数据的用户潜在借阅预测推荐<br><strong>国家级一等奖</strong></div><div class="award-date">2025年12月</div></div></div>
@@ -32,7 +32,7 @@
   </details>
 
   <details class="awards-section">
-    <summary class="section-title">🎖️ Provincial Level Awards (30)</summary>
+    <summary class="section-title">Provincial Level Awards (30)</summary>
     <div class="awards-grid">
       <div class="award-card"><div class="award-image-container"><img class="award-image" loading="lazy" src="images/Award/Sheng_13.png" alt="省奖13"></div><div class="award-info"><div class="award-title">第二十届全国大学生智能汽车竞赛-南部赛区室外ROS无人车赛<br><strong>省级一等奖</strong></div><div class="award-date">2025年12月</div></div></div>
       <div class="award-card"><div class="award-image-container"><img class="award-image" loading="lazy" src="images/Award/Sheng_14.png" alt="省奖14"></div><div class="award-info"><div class="award-title">第二十届全国大学生智能汽车竞赛-南部赛区室外ROS无人车赛<br><strong>省级一等奖</strong></div><div class="award-date">2025年12月</div></div></div>
