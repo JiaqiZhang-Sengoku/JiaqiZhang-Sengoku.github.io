@@ -51,8 +51,6 @@ Empirical Methods in Natural Language Processing (EMNLP) **Under Review**
 </div>
 
 
-
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/OrthoSeg.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Learning Orthogonal Disentanglement for Modality-Agnostic Medical Image Segmentation]()
@@ -117,17 +115,7 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
 </div> -->
 
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026 Finding</div><img loading="lazy" decoding="async" src='images/Publication/RRGCL.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[Rethinking Imbalance in Radiology Report Generation: A Curriculum Learning Perspective]()
-<br>
-IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2026 Finding)
-<br>
-Chongwen Lyu, Kai Han, **Jiaqi Zhang**, Qiaoying Teng, Jun Chen, Zhe Liu<sup>†</sup>
-<br>
-[Paper](/Paper/RRGCL_Paper.pdf)<br>
-</div>
-</div> -->
+
 
 
 <!-- 2 -->

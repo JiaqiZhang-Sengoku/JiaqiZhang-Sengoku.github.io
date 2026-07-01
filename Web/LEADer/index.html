@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LEADer | Local Epistemic Uncertainty Guided Active Sampling</title>
+  <meta name="description" content="Project page for LEADer: Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="LEADer home">
+      <span class="brand-mark">L</span>
+      <span>LEADer</span>
+    </a>
+    <nav class="site-nav" aria-label="Project navigation">
+      <a href="#abstract">Abstract</a>
+      <a href="#method">Method</a>
+      <a href="#results">Results</a>
+      <a href="#ablation">Ablation</a>
+      <a href="#bibtex">BibTeX</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <div class="eyebrow-row">
+          <span class="pill">Preprint 2026</span>
+          <span class="pill pill-soft">Plug-and-play Image Restoration</span>
+        </div>
+        <h1>LEADer</h1>
+        <p class="paper-title">Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration</p>
+        <p class="hero-subtitle">
+          LEADer uses local epistemic uncertainty to actively control both where a diffusion prior should intervene and when redundant sampling steps can be skipped.
+        </p>
+        <div class="button-row">
+          <a class="button button-primary" href="Local_Epistemic_Uncertainty_Guided_Active_Diffusion_Models_Sampling_for_Plug_and_play_Image_Restoration.pdf">Paper</a>
+          <a class="button" href="#method">Method</a>
+          <a class="button" href="#results">Results</a>
+        </div>
+        <div class="author-block" aria-label="Authors">
+          <p>
+            <strong>Jiaqi Zhang*</strong>,
+            Zheng Pang*,
+            Rongrong Gao,
+            Qiyuan Zhang,
+            Yang Yang<sup>†</sup>
+          </p>
+          <p class="affiliation">Jiangsu University | Xi'an University of Technology</p>
+          <p class="author-note">* Equal contribution. † Corresponding author.</p>
+        </div>
+      </div>
+      <figure class="hero-figure image-frame">
+        <img src="Figure3.png" alt="LEADer architecture overview" width="4134" height="2362" loading="eager" decoding="async">
+        <figcaption>Architecture overview: uncertainty-calibrated prior modulation and state-aware trajectory pruning.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section-shell">
+      <div class="stat-grid" aria-label="Project highlights">
+        <article class="stat-card">
+          <span class="stat-label">Spatial Control</span>
+          <strong>Pixel-wise uncertainty</strong>
+          <p>Adapts null-space prior strength to preserve reliable details and suppress uncertain artifacts.</p>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">Temporal Control</span>
+          <strong>Active trajectory pruning</strong>
+          <p>Uses uncertainty trace to skip stationary sampling phases while keeping bounded error.</p>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">Integration</span>
+          <strong>Plug-and-play</strong>
+          <p>Improves multiple DMIR baselines without retraining and with negligible memory overhead.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="abstract" class="section-shell two-column">
+      <div>
+        <p class="section-kicker">Abstract</p>
+        <h2>Uncertainty turns diffusion restoration from fixed sampling into active sampling.</h2>
+      </div>
+      <div class="body-copy">
+        <p>
+          Diffusion model-based image restoration methods usually rely on fixed data constraints and uniform step sizes, which can create spatial distortions, lose fine details, and introduce redundant computation. LEADer addresses these limitations through a Local Epistemic Uncertainty Guided Active Sampling framework.
+        </p>
+        <p>
+          In the spatial domain, LEADer uses pixel-wise uncertainty to dynamically modulate prior strength in the null space. In the temporal domain, it quantifies sampling stability through uncertainty trace and adaptively prunes the denoising trajectory. The framework maintains strict data consistency, provides a deterministic skip-sampling error bound, and can be integrated into existing DMIR methods.
+        </p>
+      </div>
+    </section>
+
+    <section id="method" class="section-shell method-section">
+      <div class="section-heading">
+        <p class="section-kicker">Method</p>
+        <h2>LEADer couples local reliability with diffusion sampling decisions.</h2>
+      </div>
+      <div class="method-grid">
+        <article class="method-step">
+          <span>01</span>
+          <h3>Estimate local epistemic uncertainty</h3>
+          <p>At each reverse step, LEADer estimates a local uncertainty map that reveals where the current restoration state is reliable or ambiguous.</p>
+        </article>
+        <article class="method-step">
+          <span>02</span>
+          <h3>Modulate the null-space prior</h3>
+          <p>Uncertainty-Calibrated Prior Modulation adjusts the prior contribution region by region, balancing data fidelity and generative detail.</p>
+        </article>
+        <article class="method-step">
+          <span>03</span>
+          <h3>Prune redundant timesteps</h3>
+          <p>State-Aware Trajectory Pruning monitors uncertainty trace and selects an adaptive step size when the process becomes stable.</p>
+        </article>
+      </div>
+      <figure class="wide-figure image-frame">
+        <img src="Figure3.png" alt="Detailed LEADer method pipeline" width="4134" height="2362" loading="lazy" decoding="async">
+        <figcaption>LEADer converts uncertainty into two active controls: spatial prior modulation and temporal trajectory pruning.</figcaption>
+      </figure>
+    </section>
+
+    <section id="results" class="section-shell results-section">
+      <div class="section-heading">
+        <p class="section-kicker">Results</p>
+        <h2>Higher restoration quality with faster sampling.</h2>
+      </div>
+
+      <div class="metric-strip" aria-label="Average improvements from Table 1 on CelebA-HQ">
+        <div class="metric-card">
+          <span>DDNM + LEADer</span>
+          <strong>+2.382%</strong>
+          <p>Avg. PSNR</p>
+        </div>
+        <div class="metric-card">
+          <span>DDNM + LEADer</span>
+          <strong>-12.781%</strong>
+          <p>Avg. LPIPS</p>
+        </div>
+        <div class="metric-card">
+          <span>ProjDiff + LEADer</span>
+          <strong>-8.421%</strong>
+          <p>Avg. Time</p>
+        </div>
+        <div class="metric-card">
+          <span>DDPG + LEADer</span>
+          <strong>+1.197%</strong>
+          <p>Avg. PSNR</p>
+        </div>
+      </div>
+
+      <div class="paper-table-card">
+        <div class="table-title">
+          <p class="section-kicker">Table 1 Extract</p>
+          <h3>Average gains on CelebA-HQ 1K across five restoration tasks</h3>
+        </div>
+        <div class="table-scroll" role="region" aria-label="Quantitative highlight table" tabindex="0">
+          <table>
+            <thead>
+              <tr>
+                <th>Baseline</th>
+                <th>PSNR</th>
+                <th>LPIPS</th>
+                <th>Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>DDNM + LEADer</td>
+                <td>+2.382%</td>
+                <td>-12.781%</td>
+                <td>-5.747%</td>
+              </tr>
+              <tr>
+                <td>DDPG + LEADer</td>
+                <td>+1.197%</td>
+                <td>-7.137%</td>
+                <td>-6.662%</td>
+              </tr>
+              <tr>
+                <td>ProjDiff + LEADer</td>
+                <td>+0.882%</td>
+                <td>-7.330%</td>
+                <td>-8.421%</td>
+              </tr>
+              <tr>
+                <td>PIRP + LEADer</td>
+                <td>+0.934%</td>
+                <td>-7.618%</td>
+                <td>-5.824%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <figure class="wide-figure image-frame table-scan">
+        <img src="Table1.png" alt="Table 1 quantitative results for LEADer across image restoration tasks" width="1440" height="825" loading="lazy" decoding="async">
+        <figcaption>Full Table 1 cropped from the paper: quantitative results on CelebA-HQ 1K and ImageNet 1K.</figcaption>
+      </figure>
+
+      <figure class="wide-figure image-frame">
+        <img src="Figure2.png" alt="Qualitative and quantitative comparison of LEADer" width="3425" height="5905" loading="lazy" decoding="async">
+        <figcaption>Qualitative and quantitative comparison across image restoration tasks.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section-shell visual-section">
+      <div class="section-heading">
+        <p class="section-kicker">Visual Comparison</p>
+        <h2>Cleaner local structures across restoration degradations.</h2>
+      </div>
+      <figure class="wide-figure image-frame">
+        <img src="Figure4.png" alt="Visual comparison across image restoration tasks" width="1842" height="878" loading="lazy" decoding="async">
+        <figcaption>LEADer improves detail preservation while reducing artifacts in challenging degraded regions.</figcaption>
+      </figure>
+    </section>
+
+    <section id="ablation" class="section-shell ablation-section">
+      <div class="ablation-layout">
+        <div class="section-heading">
+          <p class="section-kicker">Ablation</p>
+          <h2>UCPM and SATP provide complementary gains.</h2>
+          <p class="section-copy">
+            The ablation tables show that uncertainty-calibrated prior modulation improves restoration quality, while state-aware trajectory pruning reduces sampling time. Their combination gives the strongest balance of fidelity and efficiency.
+          </p>
+        </div>
+        <figure class="image-frame ablation-figure">
+          <img src="AblationTables.png" alt="Ablation study and hyperparameter sensitivity tables for LEADer" width="705" height="610" loading="lazy" decoding="async">
+          <figcaption>Tables 2 and 3 cropped from the paper.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section-shell efficiency-section">
+      <div class="section-heading">
+        <p class="section-kicker">Efficiency</p>
+        <h2>State-aware pruning removes redundant reverse steps.</h2>
+      </div>
+      <div class="figure-grid">
+        <figure class="image-frame">
+          <img src="Figure5.png" alt="Sampling trajectory comparison" width="1889" height="461" loading="lazy" decoding="async">
+          <figcaption>Adaptive trajectory pruning shortens the denoising path.</figcaption>
+        </figure>
+        <figure class="image-frame">
+          <img src="Figure6.png" alt="PSNR LPIPS and time over sampling steps" width="7164" height="2543" loading="lazy" decoding="async">
+          <figcaption>Quality and time trends under different sampling steps.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="bibtex" class="section-shell bibtex-section">
+      <div class="section-heading">
+        <p class="section-kicker">Citation</p>
+        <h2>BibTeX</h2>
+      </div>
+      <div class="bibtex-card">
+        <button class="copy-button" type="button" data-copy-target="bibtex-code">Copy</button>
+        <pre><code id="bibtex-code">@article{zhang2026leader,
+  title={Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration},
+  author={Zhang, Jiaqi and Pang, Zheng and Gao, Rongrong and Zhang, Qiyuan and Yang, Yang},
+  year={2026}
+}</code></pre>
+      </div>
+    </section>
+  </main>
+
+  <div class="image-lightbox" aria-hidden="true">
+    <button type="button" class="lightbox-close" aria-label="Close image preview">Close</button>
+    <img alt="">
+  </div>
+
+  <script>
+    const copyButton = document.querySelector('.copy-button');
+    copyButton?.addEventListener('click', async () => {
+      const code = document.getElementById(copyButton.dataset.copyTarget)?.textContent || '';
+      try {
+        await navigator.clipboard.writeText(code);
+        copyButton.textContent = 'Copied';
+        setTimeout(() => copyButton.textContent = 'Copy', 1600);
+      } catch {
+        copyButton.textContent = 'Select';
+      }
+    });
+
+    const lightbox = document.querySelector('.image-lightbox');
+    const lightboxImage = lightbox?.querySelector('img');
+    document.querySelectorAll('.image-frame img').forEach((image) => {
+      image.addEventListener('click', () => {
+        if (!lightbox || !lightboxImage) return;
+        lightboxImage.src = image.currentSrc || image.src;
+        lightboxImage.alt = image.alt;
+        lightbox.setAttribute('aria-hidden', 'false');
+      });
+    });
+    document.querySelector('.lightbox-close')?.addEventListener('click', () => {
+      lightbox?.setAttribute('aria-hidden', 'true');
+      if (lightboxImage) lightboxImage.removeAttribute('src');
+    });
+    lightbox?.addEventListener('click', (event) => {
+      if (event.target === lightbox) {
+        lightbox.setAttribute('aria-hidden', 'true');
+        if (lightboxImage) lightboxImage.removeAttribute('src');
+      }
+    });
+  </script>
+</body>
+</html>
