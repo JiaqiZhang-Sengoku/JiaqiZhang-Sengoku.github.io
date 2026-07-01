@@ -50,53 +50,6 @@ Empirical Methods in Natural Language Processing (EMNLP) **Under Review**
 </div>
 </div>
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/IGR.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[Information-Guided Rebalance for Multimodal Classification]()
-<br>
-Expert Systems With Applications (ESWA) **Under Review**
-<br>
-Zhe Liu, Lingling Yan, Chongwen Lyu, **Jiaqi Zhang**, Yi Liu, Jun Chen <sup>†</sup>, Kai Han <sup>†</sup>
-<br>
-[Code](https://github.com/JiaqiZhang-Sengoku/IGR)
-</div>
-</div> -->
-
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCES</div><img loading="lazy" decoding="async" src='images/Publication/.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[Attention-Aware Multi-Scale Segmentation for Industrial Defects with Low Contrast and High Intra-Class Variation]()
-<br>
-International Conference on Computational & Experimental Engineering and Sciences (ICCES)
-<br>
-Xiaocheng Hu, **Jiaqi Zhang**, Jianguo Zhu, Xudong Ren, Kai Han, Zhe Liu<sup>†</sup>
-<br>
-</div>
-</div> -->
-
-<!-- </div> -->
-
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCES</div><img loading="lazy" decoding="async" src='images/Publication/ProtoDBSeg.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[Prototype Guided Dual-Branch Framework for Industrial Surface Defect Segmentation]()
-<br>
-International Conference on Computational & Experimental Engineering and Sciences (ICCES)
-<br>
-**Jiaqi Zhang**, Xinjie Li, Jianguo Zhu, Xudong Ren, Kai Han, Zhe Liu<sup>†</sup>
-<br>
-</div>
-</div> -->
-
-
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/AMON-Flow.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[AMON-Flow: Adaptive Momentum and Noise Scaling for Plug-and-Play Image Restoration]()
-<br>
-
-<br>
-Xiaoyu Gu, **Jiaqi Zhang**, Lanling Zeng, Yang Yang <sup>†</sup>
-<br>
-</div>
-</div> -->
 
 
 
@@ -122,17 +75,6 @@ Yang Yang <sup>†</sup> <sup>*</sup>, Pengyu Li <sup>*</sup>, **Jiaqi Zhang**, 
 <br>
 </div>
 </div>
-
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/Amphisbaena.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[Amphisbaena: Dual-Sided Neuron Intervention for Hallucination Mitigation in Vision-Language Models]()
-<br>
-ACM International Conference on Multimedia (ACM MM 2026) **Under Review**
-<br>
-**Jiaqi Zhang**(Second Author), Anonymous
-<br>
-</div>
-</div> -->
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/LEADer.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -160,39 +102,7 @@ ACM International Conference on Multimedia (ACM MM 2026) **Under Review**
 </div>
 
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[Adaptive Risk-aware Implicit Quantile Network: Towards Safe and Energy-Efficient USV Navigation in Dynamic Environments]()
-<br>
-International Conference On Intelligent Computing (ICIC 2026) **Under Review**
-<br>
-Wenjing Wang, Jintao Liu, Songyan Wang, Wenlong Meng, **Jiaqi Zhang**
-<br>
-</div>
-</div> -->
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/SCA-Net.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[SCA-Net: A Scale- and Contrast-Aware Network for Subtle and Low-Contrast Polyp Segmentation]()
-<br>
-Journal of Imaging Informatics in Medicine (JIIM) **Under Review**
-<br>
-**Jiaqi Zhang**(Third Author), Anonymous
-<br>
-</div>
-</div> -->
-
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/DG-SCL.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[DG-SCL: Diffusion-Guided Semantic Contrastive Learning for Imbalanced Malicious
-Traffic Detection]()
-<br>
-Information Sciences **Under Review**
-<br>
-Bingbing Gu <sup>*</sup>, Saihua Cai <sup>*</sup>, <sup>†</sup>, Jing Wang, Zhuole Li, Xiheng Jia, **Jiaqi Zhang**
-<br>
-</div>
-</div> -->
 
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/A2L.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -251,6 +161,12 @@ Biomedical Signal Processing and Control (BSPC) **Under Review**
 </div>
 
 <div class="other-publications-panel">
+  <div class="other-paper-item">
+    <div class="other-paper-title">DG-SCL: Diffusion-guided Semantic Contrastive Learning for Imbalanced Malicious Traffic Detection</div>
+    <div class="other-paper-authors other-paper-venue">Information Sciences (2026)</div>
+    <div class="other-paper-authors">Bingbing Gu<sup>*</sup>, Saihua <sup>†</sup> <sup>*</sup>, Jing Wang, Zhuole Li, Xiheng Jia, <strong>Jiaqi Zhang</strong></div>
+    <div class="other-paper-authors other-paper-links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0020025526007826">Paper</a></div>
+  </div>
   <div class="other-paper-item">
     <div class="other-paper-title">SCA-Net: A Scale- and Contrast-Aware Network for Subtle and Low-Contrast Polyp Segmentation</div>
     <div class="other-paper-authors other-paper-venue">Journal of Imaging Informatics in Medicine (2026)</div>
