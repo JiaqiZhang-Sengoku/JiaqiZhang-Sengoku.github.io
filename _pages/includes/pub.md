@@ -187,19 +187,19 @@ Biomedical Signal Processing and Control (BSPC) **Under Review**
   </div>
   <div class="other-paper-item">
     <div class="other-paper-title">Intrinsic Feature Consistency Learning Network for Generalizable Medical Image Segmentation</div>
-    <div class="other-paper-authors other-paper-venue">International Conference On Intelligent Computing (ICIC 2026 Oral)</div>
+    <div class="other-paper-authors other-paper-venue">International Conference on Intelligent Computing (ICIC 2026 Oral)</div>
     <div class="other-paper-authors"><strong>Jiaqi Zhang</strong>, Xinjie Li, Guo Yang, Kang Yang, Wenjing Wang, Yang Yang<sup>†</sup></div>
     <div class="other-paper-authors"></div>
   </div>
   <div class="other-paper-item">
     <div class="other-paper-title">Agent-SAM-I2V: Self-Correcting Promptable Video Segmentation via Agentic Drift Detection and Multi-Prompt Fusion</div>
-    <div class="other-paper-authors other-paper-venue">International Conference On Intelligent Computing (ICIC 2026 Oral)</div>
+    <div class="other-paper-authors other-paper-venue">International Conference on Intelligent Computing (ICIC 2026 Oral)</div>
     <div class="other-paper-authors">Guo Yang, <strong>Jiaqi Zhang</strong>, Yao Zhu, Longze Fan<sup>†</sup></div>
     <div class="other-paper-authors"></div>
   </div>
   <div class="other-paper-item">
     <div class="other-paper-title">Adaptive Risk-aware Implicit Quantile Network: Towards Safe and Energy-Efficient USV Navigation in Dynamic Environments</div>
-    <div class="other-paper-authors other-paper-venue">International Conference On Intelligent Computing (ICIC 2026 Oral)</div>
+    <div class="other-paper-authors other-paper-venue">International Conference on Intelligent Computing (ICIC 2026 Oral)</div>
     <div class="other-paper-authors">Wenjing Wang, <strong>Jiaqi Zhang</strong></div>
     <div class="other-paper-authors"></div>
   </div>
