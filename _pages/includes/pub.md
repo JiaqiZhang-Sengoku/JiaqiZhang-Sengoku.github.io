@@ -164,7 +164,7 @@ Biomedical Signal Processing and Control (BSPC) **Under Review**
   <div class="other-paper-item">
     <div class="other-paper-title">DG-SCL: Diffusion-guided Semantic Contrastive Learning for Imbalanced Malicious Traffic Detection</div>
     <div class="other-paper-authors other-paper-venue">Information Sciences (2026)</div>
-    <div class="other-paper-authors">Bingbing Gu<sup>*</sup>, Saihua <sup>†</sup> <sup>*</sup>, Jing Wang, Zhuole Li, Xiheng Jia, <strong>Jiaqi Zhang</strong></div>
+    <div class="other-paper-authors">Bingbing Gu<sup>*</sup>, Saihua Cai<sup>*</sup> <sup>†</sup>, Jing Wang, Zhuole Li, Xiheng Jia, <strong>Jiaqi Zhang</strong></div>
     <div class="other-paper-authors other-paper-links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0020025526007826">Paper</a></div>
   </div>
   <div class="other-paper-item">
