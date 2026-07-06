@@ -1246,6 +1246,24 @@ body > #main > .sidebar.sticky {
     line-height: 1.25 !important;
 }
 
+.internship-projects {
+    margin: 9px 0 8px !important;
+    padding-left: 19px !important;
+    color: var(--text-color);
+    font-size: 0.93rem;
+    line-height: 1.50 !important;
+}
+
+.internship-projects li {
+    margin: 0 0 7px !important;
+    padding-left: 2px;
+}
+
+.internship-projects li::marker {
+    color: var(--accent);
+    font-size: 0.86em;
+}
+
 .internship-mentor {
     color: var(--muted-color) !important;
     font-weight: 700;
