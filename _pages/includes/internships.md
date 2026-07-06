@@ -14,7 +14,7 @@
       </a>
     </div>
     <div class="internship-main">
-      <span class="internship-date">Jun. 2026 - Now</span>
+      <span class="internship-date">Jan. 2026 - Now</span>
       <h3>Technical University of Munich</h3>
       <p>Research Internship, Chair of Health Informatics</p>
       <p class="internship-mentor">Advisor: <a href="https://www.schuller.one/">Prof. Björn Schuller</a></p>

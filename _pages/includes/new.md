@@ -5,15 +5,15 @@
 
 <div class="updates-panel">
   <div class="update-card">
-    <span class="update-date">2026.05</span>
+    <span class="update-date">May. 2026</span>
     <p>Our work <a href="https://www.sciencedirect.com/science/article/abs/pii/S0165168426002197">DPG</a> has been accepted by <strong>Signal Processing</strong>.</p>
   </div>
   <div class="update-card">
-    <span class="update-date">2026.04</span>
+    <span class="update-date">Apr. 2026</span>
     <p>Three papers have been accepted as <strong>Oral</strong> presentations by <strong>ICIC 2026</strong>.</p>
   </div>
   <div class="update-card">
-    <span class="update-date">2026.02</span>
+    <span class="update-date">Feb. 2026</span>
     <p>Our work <a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705126002303">PIRP</a> has been accepted by <strong>Knowledge-Based Systems</strong>.</p>
   </div>
 </div>
