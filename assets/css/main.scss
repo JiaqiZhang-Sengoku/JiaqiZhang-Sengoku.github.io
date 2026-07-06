@@ -73,6 +73,8 @@
     --accent-warm-soft: rgba(221, 161, 124, 0.14);
     --max-page-width: 1600px;
     --content-width: 1240px;
+    --masthead-height: 62px;
+    --anchor-offset: 92px;
     --quiet-line: rgba(210, 222, 237, 0.82);
     --card-glow: 0 1px 0 rgba(255, 255, 255, 0.95) inset;
     --row-shadow: 0 5px 14px rgba(42, 57, 88, 0.034);
@@ -92,12 +94,13 @@ html {
     background: var(--page-bg);
     font-size: 15.5px;
     overflow-x: hidden;
-    scroll-padding-top: 76px;
+    scroll-padding-top: var(--anchor-offset);
 }
 
 body {
     min-height: 100vh;
     overflow-x: hidden;
+    padding-top: var(--masthead-height);
     background:
         linear-gradient(180deg, rgba(255, 255, 255, 0.995) 0, rgba(250, 253, 255, 0.985) 250px, var(--page-bg) 720px),
         linear-gradient(115deg, rgba(91, 132, 220, 0.050) 0 15%, transparent 15% 100%),
@@ -118,9 +121,12 @@ body::before {
 }
 
 .masthead {
-    position: sticky !important;
+    position: fixed !important;
     top: 0;
-    z-index: 1000;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 3000;
     background: rgba(255, 255, 255, 0.93) !important;
     border-bottom: 1px solid rgba(216, 226, 238, 0.92) !important;
     box-shadow: 0 9px 26px rgba(42, 57, 88, 0.048) !important;
@@ -1814,6 +1820,11 @@ body::before {
 }
 
 @media screen and (max-width: 760px) {
+    :root {
+        --masthead-height: 52px;
+        --anchor-offset: 78px;
+    }
+
     html,
     body {
         font-size: 15.2px;
@@ -1823,6 +1834,10 @@ body::before {
         margin: 0 !important;
         padding: 0 !important;
         overflow-x: hidden !important;
+    }
+
+    body {
+        padding-top: var(--masthead-height) !important;
     }
 
     .masthead__inner-wrap {
