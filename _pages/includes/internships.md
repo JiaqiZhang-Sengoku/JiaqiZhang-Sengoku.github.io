@@ -17,7 +17,7 @@
       <span class="internship-date">Jan. 2026 - Now</span>
       <h3>Technical University of Munich (TUM)</h3>
       <p>Research Assistant.</p>
-      <p class="internship-mentor">Advisor: <a href="https://www.schuller.one/">Prof. Björn Schuller</a></p>
+      <p class="internship-mentor">Advisor: <a href="https://www.schuller.one/">Prof. Björn Schuller</a> (IEEE Fellow)</p>
     </div>
   </div>
 </div>
