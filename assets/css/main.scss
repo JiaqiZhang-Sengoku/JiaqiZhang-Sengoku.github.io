@@ -270,13 +270,26 @@ html body .masthead {
 }
 
 .sidebar.sticky {
+    position: fixed !important;
+    top: calc(var(--masthead-height) + 18px) !important;
+    left: max(42px, calc((100vw - var(--max-page-width)) / 2 + 42px)) !important;
+    width: 284px !important;
+    max-height: calc(100vh - var(--masthead-height) - 34px);
+    z-index: 1200;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: none;
     align-self: start !important;
-    position: sticky !important;
-    top: 66px;
     height: max-content;
 }
 
+.sidebar.sticky::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
 .page {
+    grid-column: 2 !important;
     float: none !important;
     width: auto !important;
     min-width: 0 !important;
@@ -1930,7 +1943,15 @@ html body .masthead {
     .sidebar.sticky {
         position: static !important;
         top: auto;
+        left: auto !important;
+        width: auto !important;
+        max-height: none;
+        overflow: visible;
         height: auto;
+    }
+
+    .page {
+        grid-column: auto !important;
     }
 
     .sidebar .profile_box {
