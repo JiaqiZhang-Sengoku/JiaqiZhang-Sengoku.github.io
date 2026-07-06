@@ -130,10 +130,10 @@ body::before {
     width: 100% !important;
     z-index: 5000 !important;
     min-height: var(--masthead-height);
-    background: rgba(255, 255, 255, 0.93) !important;
-    border-bottom: 1px solid rgba(216, 226, 238, 0.92) !important;
-    box-shadow: 0 9px 26px rgba(42, 57, 88, 0.048) !important;
-    backdrop-filter: blur(16px);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.955), rgba(250, 253, 255, 0.86)) !important;
+    border-bottom: 0 !important;
+    box-shadow: none !important;
+    backdrop-filter: blur(14px);
     overflow: visible;
     transform: translateZ(0);
     will-change: transform;
@@ -148,7 +148,7 @@ body > .masthead {
 }
 
 .masthead::before {
-    content: "";
+    content: none;
     position: absolute;
     inset: 0 0 auto;
     height: 3px;
@@ -262,7 +262,7 @@ body > .masthead {
     gap: 30px;
     max-width: var(--max-page-width) !important;
     margin: 0 auto !important;
-    padding: 25px var(--page-side-padding) 50px !important;
+    padding: 0 var(--page-side-padding) 50px !important;
     animation: none !important;
     box-sizing: border-box;
 }
@@ -278,10 +278,10 @@ body > .masthead {
 
 .sidebar.sticky {
     position: fixed !important;
-    top: calc(var(--masthead-height) + 18px) !important;
+    top: var(--masthead-height) !important;
     left: max(var(--page-side-padding), calc((100vw - var(--max-page-width)) / 2 + var(--page-side-padding))) !important;
     width: var(--sidebar-width) !important;
-    max-height: calc(100vh - var(--masthead-height) - 34px);
+    max-height: calc(100vh - var(--masthead-height));
     z-index: 1200;
     overflow-y: auto;
     overscroll-behavior: contain;
@@ -292,7 +292,7 @@ body > .masthead {
 
 body > #main > .sidebar.sticky {
     position: fixed !important;
-    top: calc(var(--masthead-height) + 18px) !important;
+    top: var(--masthead-height) !important;
     left: max(var(--page-side-padding), calc((100vw - var(--max-page-width)) / 2 + var(--page-side-padding))) !important;
     width: var(--sidebar-width) !important;
 }
@@ -354,27 +354,27 @@ body > #main > .sidebar.sticky {
     transform: none !important;
     margin-top: 0 !important;
     padding: 20px 16px 20px !important;
-    border: 1px solid rgba(221, 231, 243, 0.98) !important;
-    border-radius: var(--radius-card) !important;
+    border: 0 !important;
+    border-radius: 0 0 var(--radius-card) var(--radius-card) !important;
     background:
         linear-gradient(180deg, rgba(255, 255, 255, 0.998) 0%, rgba(252, 254, 255, 0.99) 58%, rgba(248, 244, 255, 0.32) 100%) !important;
     box-shadow:
         var(--card-glow),
-        0 18px 40px rgba(42, 57, 88, 0.076) !important;
+        0 10px 24px rgba(42, 57, 88, 0.045) !important;
     box-sizing: border-box;
     text-align: center !important;
     transition: border-color 0.22s ease, box-shadow 0.22s ease, transform 0.22s ease;
 }
 
 .sidebar .profile_box:hover {
-    border-color: rgba(191, 208, 246, 0.96) !important;
+    border-color: transparent !important;
     box-shadow:
         var(--card-glow),
-        0 24px 52px rgba(42, 57, 88, 0.098) !important;
+        0 12px 28px rgba(42, 57, 88, 0.060) !important;
 }
 
 .sidebar .profile_box::before {
-    content: "";
+    content: none;
     position: absolute;
     inset: 0 0 auto;
     height: 5px;
