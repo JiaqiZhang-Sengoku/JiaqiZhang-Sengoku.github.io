@@ -180,7 +180,7 @@
           <button class="wechat-modal__close" type="button" aria-label="Close WeChat QR" data-wechat-close>Close</button>
           <h2 id="wechat-modal-title">WeChat</h2>
           {% if author.wechat_qr %}
-            <img src="{{ author.wechat_qr }}" alt="WeChat QR code" class="wechat-modal__qr">
+            <img src="{{ author.wechat_qr | relative_url }}" alt="WeChat QR code" class="wechat-modal__qr">
           {% else %}
             <div class="wechat-modal__placeholder">QR code coming soon</div>
           {% endif %}

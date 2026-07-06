@@ -34,7 +34,7 @@ author:
     - "zjq0427@qq.com"
     - "sengokuzjq@gmail.com"
   wechat           : "WeChat"
-  wechat_qr        :
+  wechat_qr        : "images/Contact/WeChat.jpg"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
