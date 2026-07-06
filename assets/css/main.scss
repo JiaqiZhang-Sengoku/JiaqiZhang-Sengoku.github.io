@@ -73,6 +73,8 @@
     --accent-warm-soft: rgba(221, 161, 124, 0.14);
     --max-page-width: 1520px;
     --content-width: 1160px;
+    --page-side-padding: 42px;
+    --sidebar-width: 284px;
     --masthead-height: 62px;
     --anchor-offset: 92px;
     --quiet-line: rgba(210, 222, 237, 0.82);
@@ -127,6 +129,7 @@ body::before {
     right: 0 !important;
     width: 100% !important;
     z-index: 5000 !important;
+    min-height: var(--masthead-height);
     background: rgba(255, 255, 255, 0.93) !important;
     border-bottom: 1px solid rgba(216, 226, 238, 0.92) !important;
     box-shadow: 0 9px 26px rgba(42, 57, 88, 0.048) !important;
@@ -136,8 +139,12 @@ body::before {
     will-change: transform;
 }
 
-html body .masthead {
+html body .masthead,
+body > .masthead {
     position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
 }
 
 .masthead::before {
@@ -251,11 +258,11 @@ html body .masthead {
 
 #main {
     display: grid !important;
-    grid-template-columns: 284px minmax(0, 1fr);
+    grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
     gap: 30px;
     max-width: var(--max-page-width) !important;
     margin: 0 auto !important;
-    padding: 25px 42px 50px !important;
+    padding: 25px var(--page-side-padding) 50px !important;
     animation: none !important;
     box-sizing: border-box;
 }
@@ -272,8 +279,8 @@ html body .masthead {
 .sidebar.sticky {
     position: fixed !important;
     top: calc(var(--masthead-height) + 18px) !important;
-    left: max(42px, calc((100vw - var(--max-page-width)) / 2 + 42px)) !important;
-    width: 284px !important;
+    left: max(var(--page-side-padding), calc((100vw - var(--max-page-width)) / 2 + var(--page-side-padding))) !important;
+    width: var(--sidebar-width) !important;
     max-height: calc(100vh - var(--masthead-height) - 34px);
     z-index: 1200;
     overflow-y: auto;
@@ -281,6 +288,13 @@ html body .masthead {
     scrollbar-width: none;
     align-self: start !important;
     height: max-content;
+}
+
+body > #main > .sidebar.sticky {
+    position: fixed !important;
+    top: calc(var(--masthead-height) + 18px) !important;
+    left: max(var(--page-side-padding), calc((100vw - var(--max-page-width)) / 2 + var(--page-side-padding))) !important;
+    width: var(--sidebar-width) !important;
 }
 
 .sidebar.sticky::-webkit-scrollbar {
@@ -1940,7 +1954,8 @@ html body .masthead {
         padding: 20px 32px 38px !important;
     }
 
-    .sidebar.sticky {
+    .sidebar.sticky,
+    body > #main > .sidebar.sticky {
         position: static !important;
         top: auto;
         left: auto !important;
