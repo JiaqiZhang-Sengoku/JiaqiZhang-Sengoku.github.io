@@ -71,8 +71,8 @@
     --accent-plum-soft: rgba(154, 134, 214, 0.12);
     --accent-warm: #d79670;
     --accent-warm-soft: rgba(221, 161, 124, 0.14);
-    --max-page-width: 1720px;
-    --content-width: 1360px;
+    --max-page-width: 1600px;
+    --content-width: 1240px;
     --quiet-line: rgba(210, 222, 237, 0.82);
     --card-glow: 0 1px 0 rgba(255, 255, 255, 0.95) inset;
     --row-shadow: 0 5px 14px rgba(42, 57, 88, 0.034);
@@ -140,7 +140,7 @@ body::before {
     position: relative;
     max-width: var(--max-page-width) !important;
     margin: 0 auto !important;
-    padding: 11px 22px !important;
+    padding: 12px 30px !important;
 }
 
 .greedy-nav {
@@ -163,12 +163,12 @@ body::before {
     position: relative;
     display: inline-flex !important;
     align-items: center;
-    min-height: 34px;
+    min-height: 36px;
     margin: 0 !important;
-    padding: 6px 12px !important;
+    padding: 7px 13px !important;
     border-radius: 999px;
     color: var(--heading-color) !important;
-    font-size: 1.01rem !important;
+    font-size: 1.07rem !important;
     font-weight: 600 !important;
     letter-spacing: 0 !important;
     text-decoration: none !important;
@@ -240,10 +240,10 @@ body::before {
 #main {
     display: grid !important;
     grid-template-columns: 294px minmax(0, 1fr);
-    gap: 28px;
+    gap: 32px;
     max-width: var(--max-page-width) !important;
     margin: 0 auto !important;
-    padding: 26px 18px 52px !important;
+    padding: 27px 34px 52px !important;
     animation: none !important;
     box-sizing: border-box;
 }
@@ -1175,8 +1175,8 @@ body::before {
     position: relative;
     counter-increment: paper-item;
     display: grid !important;
-    grid-template-columns: minmax(390px, 46%) minmax(0, 1fr) !important;
-    gap: 30px !important;
+    grid-template-columns: minmax(352px, 42%) minmax(0, 1fr) !important;
+    gap: 32px !important;
     align-items: center !important;
     margin: 0 !important;
     padding: 24px 70px 24px 24px !important;
@@ -1316,7 +1316,7 @@ body::before {
     display: block !important;
     width: 100% !important;
     height: 100% !important;
-    max-height: 390px !important;
+    max-height: 350px !important;
     border-radius: var(--radius-inner) !important;
     box-shadow: none !important;
     object-fit: contain !important;
@@ -1767,7 +1767,7 @@ body::before {
     #main {
         grid-template-columns: minmax(0, 1fr) !important;
         gap: 22px;
-        padding: 20px 22px 40px !important;
+        padding: 22px 28px 40px !important;
     }
 
     .sidebar.sticky {
@@ -1804,7 +1804,7 @@ body::before {
     }
 
     .paper-box {
-        grid-template-columns: minmax(360px, 46%) minmax(0, 1fr) !important;
+        grid-template-columns: minmax(330px, 42%) minmax(0, 1fr) !important;
         gap: 24px !important;
     }
 
