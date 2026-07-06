@@ -1,19 +1,31 @@
-<span class='anchor' id='new'></span>
-<div class="section-heading section-heading--new">
-  <h2 class="section-heading__title">New</h2>
+<span class='anchor' id='news'></span>
+<div class="section-heading section-heading--news">
+  <h2 class="section-heading__title">News</h2>
 </div>
 
-<div class="updates-panel">
+<div class="updates-panel" aria-label="Monthly news">
+  <div class="update-card">
+    <span class="update-date">Jul. 2026</span>
+    <p class="update-empty"></p>
+  </div>
+  <div class="update-card">
+    <span class="update-date">Jun. 2026</span>
+    <p class="update-empty"></p>
+  </div>
   <div class="update-card">
     <span class="update-date">May. 2026</span>
-    <p>Our work <a href="https://www.sciencedirect.com/science/article/abs/pii/S0165168426002197">DPG</a> has been accepted by <strong>Signal Processing</strong>.</p>
+    <p class="update-empty"></p>
   </div>
   <div class="update-card">
     <span class="update-date">Apr. 2026</span>
-    <p>Three papers have been accepted as <strong>Oral</strong> presentations by <strong>ICIC 2026</strong>.</p>
+    <p class="update-empty"></p>
+  </div>
+  <div class="update-card">
+    <span class="update-date">Mar. 2026</span>
+    <p class="update-empty"></p>
   </div>
   <div class="update-card">
     <span class="update-date">Feb. 2026</span>
-    <p>Our work <a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705126002303">PIRP</a> has been accepted by <strong>Knowledge-Based Systems</strong>.</p>
+    <p class="update-empty"></p>
   </div>
 </div>

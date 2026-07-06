@@ -903,7 +903,7 @@ body::before {
     background: linear-gradient(180deg, var(--accent), var(--accent-sky), var(--accent-warm));
 }
 
-.section-heading--new::before {
+.section-heading--news::before {
     background: linear-gradient(180deg, var(--accent-teal), var(--accent-sky), var(--accent-warm));
 }
 
@@ -1004,6 +1004,34 @@ body::before {
     margin: -2px 0 26px !important;
 }
 
+.updates-panel {
+    max-height: 286px;
+    padding: 14px 14px 14px 16px !important;
+    border: 1px solid rgba(221, 231, 243, 0.98);
+    border-radius: var(--radius-card);
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.992), rgba(249, 252, 255, 0.97)) !important;
+    box-shadow: var(--card-glow), 0 12px 28px rgba(42, 57, 88, 0.046);
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
+    scrollbar-gutter: stable;
+}
+
+.updates-panel::-webkit-scrollbar {
+    width: 8px;
+}
+
+.updates-panel::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.updates-panel::-webkit-scrollbar-thumb {
+    border: 2px solid rgba(255, 255, 255, 0.92);
+    border-radius: 999px;
+    background: rgba(116, 130, 151, 0.34);
+}
+
 .update-card,
 .internship-card {
     position: relative;
@@ -1018,6 +1046,20 @@ body::before {
         linear-gradient(135deg, rgba(255, 255, 255, 0.996), rgba(248, 253, 252, 0.99)) !important;
     box-shadow: var(--card-glow), 0 10px 26px rgba(42, 57, 88, 0.045);
     overflow: hidden;
+}
+
+.updates-panel .update-card {
+    min-height: 58px;
+    padding: 13px 15px !important;
+    border-color: rgba(226, 235, 245, 0.96);
+    background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.998), rgba(248, 252, 255, 0.93)) !important;
+    box-shadow: 0 4px 12px rgba(42, 57, 88, 0.028);
+}
+
+.updates-panel .update-card:hover {
+    border-color: rgba(174, 194, 232, 0.82);
+    box-shadow: 0 8px 18px rgba(42, 57, 88, 0.045);
 }
 
 .internship-card {
@@ -1045,6 +1087,18 @@ body::before {
     background: linear-gradient(180deg, var(--accent-warm), var(--accent-teal));
 }
 
+.update-card:nth-child(4)::before {
+    background: linear-gradient(180deg, var(--accent-plum), var(--accent-sky));
+}
+
+.update-card:nth-child(5)::before {
+    background: linear-gradient(180deg, var(--accent), var(--accent-warm));
+}
+
+.update-card:nth-child(6)::before {
+    background: linear-gradient(180deg, var(--accent-teal), var(--accent-plum));
+}
+
 .update-date,
 .internship-date {
     display: inline-flex;
@@ -1068,6 +1122,10 @@ body::before {
     color: var(--text-color);
     font-size: 0.95rem;
     line-height: 1.45 !important;
+}
+
+.update-empty {
+    min-height: 1.25rem;
 }
 
 .internship-logos {
@@ -1965,11 +2023,21 @@ body::before {
         content: none;
     }
 
+    .updates-panel {
+        max-height: 246px;
+        padding: 12px !important;
+    }
+
     .update-card,
     .internship-card {
         grid-template-columns: 1fr;
         gap: 9px;
         padding: 15px 16px !important;
+    }
+
+    .updates-panel .update-card {
+        min-height: 52px;
+        padding: 12px 13px !important;
     }
 
     .update-date,
