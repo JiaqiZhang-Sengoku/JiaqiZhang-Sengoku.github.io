@@ -74,7 +74,7 @@
     --max-page-width: 1520px;
     --content-width: 1160px;
     --page-side-padding: 42px;
-    --sidebar-width: 284px;
+    --sidebar-width: 300px;
     --masthead-height: 62px;
     --anchor-offset: 92px;
     --quiet-line: rgba(210, 222, 237, 0.82);
@@ -353,7 +353,7 @@ body > #main > .sidebar.sticky {
     max-width: none !important;
     transform: none !important;
     margin-top: 0 !important;
-    padding: 20px 16px 20px !important;
+    padding: 22px 18px 22px !important;
     border: 0 !important;
     border-radius: 0 0 var(--radius-card) var(--radius-card) !important;
     background:
@@ -386,7 +386,7 @@ body > #main > .sidebar.sticky {
 }
 
 .sidebar .author__avatar {
-    margin: 0 0 14px !important;
+    margin: 0 0 15px !important;
     text-align: center !important;
 }
 
@@ -396,8 +396,8 @@ body > #main > .sidebar.sticky {
 }
 
 .sidebar .author__avatar img {
-    width: 164px !important;
-    max-width: 164px !important;
+    width: 184px !important;
+    max-width: 184px !important;
     min-width: 0 !important;
     margin: 0 auto !important;
     padding: 5px !important;
@@ -406,8 +406,8 @@ body > #main > .sidebar.sticky {
     background: var(--surface-bg);
     outline: 1px solid rgba(82, 116, 208, 0.20);
     box-shadow:
-        0 0 0 7px rgba(238, 246, 255, 0.82),
-        0 15px 32px rgba(42, 57, 88, 0.112) !important;
+        0 0 0 8px rgba(238, 246, 255, 0.84),
+        0 16px 34px rgba(42, 57, 88, 0.116) !important;
 }
 
 .sidebar .author__name {
@@ -419,7 +419,7 @@ body > #main > .sidebar.sticky {
 }
 
 .sidebar .author__bio {
-    max-width: 240px !important;
+    max-width: 252px !important;
     margin: 0 auto 13px !important;
     color: var(--muted-color) !important;
     font-size: 0.91rem !important;
@@ -463,10 +463,10 @@ body > #main > .sidebar.sticky {
     align-items: center !important;
     justify-content: flex-start !important;
     gap: 7px !important;
-    width: min(238px, 100%);
-    min-height: 37px;
+    width: min(254px, 100%);
+    min-height: 39px;
     margin: 0 !important;
-    padding: 0 13px !important;
+    padding: 0 14px !important;
     border: 1px solid rgba(220, 231, 241, 0.92);
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.82);
@@ -2213,17 +2213,17 @@ body > #main > .sidebar.sticky {
 
     .sidebar .profile_box {
         display: block !important;
-        width: min(100%, calc(100vw - 24px), 338px) !important;
-        max-width: 338px !important;
-        padding: 17px 15px !important;
+        width: min(100%, calc(100vw - 24px), 350px) !important;
+        max-width: 350px !important;
+        padding: 18px 16px !important;
         margin-left: auto !important;
         margin-right: auto !important;
         text-align: center !important;
     }
 
     .sidebar .author__avatar img {
-        width: 140px !important;
-        max-width: 140px !important;
+        width: 148px !important;
+        max-width: 148px !important;
     }
 
     .sidebar .author__name {
@@ -2264,7 +2264,7 @@ body > #main > .sidebar.sticky {
     }
 
     .sidebar .author__urls li {
-        width: min(100%, 278px) !important;
+        width: min(100%, 286px) !important;
         min-height: 40px !important;
     }
 
