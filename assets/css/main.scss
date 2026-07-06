@@ -942,7 +942,7 @@ html body .masthead {
 }
 
 .publications-full-list {
-    margin: -8px 0 10px !important;
+    margin: -8px 0 10px 20px !important;
     color: var(--muted-color) !important;
     font-size: 0.92rem !important;
     font-weight: 700;
@@ -966,7 +966,7 @@ html body .masthead {
     gap: 7px;
     flex-wrap: wrap;
     min-height: 34px;
-    margin: -4px 0 15px !important;
+    margin: -4px 0 15px 20px !important;
     padding: 0 !important;
     border: 0;
     border-radius: 0;
@@ -1060,11 +1060,10 @@ html body .masthead {
 }
 
 .updates-panel .update-card {
-    grid-template-columns: 92px minmax(0, 1fr);
-    gap: 14px;
-    min-height: 42px;
-    margin: 0 4px 4px 0 !important;
-    padding: 8px 10px 8px 22px !important;
+    display: block;
+    min-height: 64px;
+    margin: 0 4px 10px 0 !important;
+    padding: 7px 10px 8px 0 !important;
     border: 0 !important;
     border-bottom: 0 !important;
     border-radius: 0 !important;
@@ -1078,9 +1077,9 @@ html body .masthead {
 
 .internship-card {
     grid-template-columns: minmax(0, 1fr);
-    gap: 14px;
+    gap: 16px;
     align-items: start;
-    padding: 18px 21px !important;
+    padding: 20px 24px !important;
 }
 
 .update-card::before,
@@ -1094,12 +1093,7 @@ html body .masthead {
 }
 
 .updates-panel .update-card::before {
-    inset: 20px auto auto 8px;
-    width: 5px;
-    height: 5px;
-    border-radius: 999px;
-    background: rgba(82, 116, 208, 0.58);
-    opacity: 0.78;
+    content: none;
 }
 
 .update-card:nth-child(2)::before {
@@ -1140,20 +1134,21 @@ html body .masthead {
 }
 
 .updates-panel .update-date {
-    justify-content: flex-start;
+    display: block;
     min-height: 0;
+    margin: 0 0 7px !important;
     padding: 0 !important;
     border: 0 !important;
     border-radius: 0;
     background: transparent !important;
     color: var(--heading-color);
-    font-size: 0.90rem;
-    font-style: italic;
+    font-size: 0.92rem;
+    font-style: normal;
     font-weight: 700;
+    line-height: 1.2 !important;
 }
 
 .update-card p,
-.update-empty,
 .internship-card p {
     margin: 3px 0 0 !important;
     color: var(--text-color);
@@ -1161,17 +1156,31 @@ html body .masthead {
     line-height: 1.45 !important;
 }
 
-.update-empty {
-    display: block;
-    min-height: 1.15rem;
+.update-list {
+    margin: 0 !important;
+    padding: 0 0 0 18px !important;
+    color: var(--text-color);
+    font-size: 0.94rem;
+    line-height: 1.45 !important;
+}
+
+.update-list li {
+    min-height: 1.2rem;
+    margin: 0 !important;
+    padding-left: 2px;
+}
+
+.update-list li::marker {
+    color: rgba(82, 116, 208, 0.72);
+    font-size: 0.82em;
 }
 
 .internship-logos {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 24px;
     align-items: center;
-    padding: 0 0 4px;
+    padding: 2px 0 2px;
 }
 
 .internship-logos a {
@@ -1187,17 +1196,19 @@ html body .masthead {
 }
 
 .internship-logos a:first-child {
-    width: 94px;
+    width: 96px;
+    flex: 0 0 96px;
 }
 
 .internship-logos a:nth-child(2) {
-    width: min(430px, 100%);
+    width: min(450px, calc(100% - 124px));
+    flex: 0 1 450px;
 }
 
 .internship-logos img {
     display: block;
     width: 100%;
-    max-height: 100px;
+    max-height: 96px;
     object-fit: contain;
 }
 
@@ -1277,8 +1288,8 @@ html body .masthead {
     position: relative;
     counter-increment: paper-item;
     display: grid !important;
-    grid-template-columns: minmax(318px, 39%) minmax(0, 1fr) !important;
-    gap: 28px !important;
+    grid-template-columns: minmax(338px, 42%) minmax(0, 1fr) !important;
+    gap: 27px !important;
     align-items: center !important;
     margin: 0 !important;
     padding: 22px 64px 22px 22px !important;
@@ -1335,7 +1346,7 @@ html body .masthead {
 }
 
 .paper-box:hover {
-    animation: paper-card-shine 0.78s ease-out 1;
+    animation: paper-card-shine 0.78s ease-out 1, paper-card-flash 0.78s ease-out 1;
 }
 
 @keyframes paper-card-shine {
@@ -1347,6 +1358,21 @@ html body .masthead {
     }
     100% {
         background-position: 185% 0, 0 0;
+    }
+}
+
+@keyframes paper-card-flash {
+    0% {
+        border-color: rgba(221, 231, 243, 0.98);
+        filter: brightness(1) saturate(1);
+    }
+    44% {
+        border-color: rgba(105, 155, 226, 0.38);
+        filter: brightness(1.045) saturate(1.04) drop-shadow(0 12px 20px rgba(82, 116, 208, 0.11));
+    }
+    100% {
+        border-color: rgba(85, 119, 214, 0.22);
+        filter: brightness(1) saturate(1);
     }
 }
 
@@ -1447,7 +1473,7 @@ html body .masthead {
     display: block !important;
     width: 100% !important;
     height: 100% !important;
-    max-height: 316px !important;
+    max-height: 342px !important;
     border-radius: var(--radius-inner) !important;
     box-shadow: none !important;
     object-fit: contain !important;
