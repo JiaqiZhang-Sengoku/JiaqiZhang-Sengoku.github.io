@@ -1169,7 +1169,7 @@ html body .masthead {
 .internship-logos {
     display: flex;
     flex-wrap: wrap;
-    gap: 26px;
+    gap: 30px;
     align-items: center;
     padding: 0 0 4px;
 }
@@ -1191,13 +1191,13 @@ html body .masthead {
 }
 
 .internship-logos a:nth-child(2) {
-    width: min(360px, 100%);
+    width: min(430px, 100%);
 }
 
 .internship-logos img {
     display: block;
     width: 100%;
-    max-height: 94px;
+    max-height: 100px;
     object-fit: contain;
 }
 
@@ -2124,7 +2124,7 @@ html body .masthead {
     }
 
     .internship-logos a:nth-child(2) {
-        width: min(282px, 100%);
+        width: min(306px, 100%);
     }
 
     .internship-logos img {
