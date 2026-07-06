@@ -6,26 +6,26 @@
 <div class="updates-panel" aria-label="Monthly news">
   <div class="update-card">
     <span class="update-date">Jul. 2026</span>
-    <p class="update-empty"></p>
+    <span class="update-empty" aria-label="No news yet"></span>
   </div>
   <div class="update-card">
     <span class="update-date">Jun. 2026</span>
-    <p class="update-empty"></p>
+    <span class="update-empty" aria-label="No news yet"></span>
   </div>
   <div class="update-card">
     <span class="update-date">May. 2026</span>
-    <p class="update-empty"></p>
+    <span class="update-empty" aria-label="No news yet"></span>
   </div>
   <div class="update-card">
     <span class="update-date">Apr. 2026</span>
-    <p class="update-empty"></p>
+    <span class="update-empty" aria-label="No news yet"></span>
   </div>
   <div class="update-card">
     <span class="update-date">Mar. 2026</span>
-    <p class="update-empty"></p>
+    <span class="update-empty" aria-label="No news yet"></span>
   </div>
   <div class="update-card">
     <span class="update-date">Feb. 2026</span>
-    <p class="update-empty"></p>
+    <span class="update-empty" aria-label="No news yet"></span>
   </div>
 </div>
