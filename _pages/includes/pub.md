@@ -2,6 +2,7 @@
 <div class="section-heading section-heading--publications">
   <h2 class="section-heading__title">Selected Publications</h2>
 </div>
+<p class="publications-full-list">(For the Full List, Please See <a href="https://scholar.google.com/citations?user=DZDZXtwAAAAJ&hl=en">Google Scholar</a>)</p>
 <p class="publications-note"><span><sup>†</sup> Corresponding Author</span><span><sup>*</sup> Equal Contribution</span></p>
 
 <div class="publications-panel">
@@ -143,6 +144,7 @@ Biomedical Signal Processing and Control (BSPC) **Under Review**
 </div>
 </div>
 
+<!--
 <span class='anchor' id='other-publications'></span>
 <div class="section-heading section-heading--other-publications">
   <h2 class="section-heading__title">Other Publications</h2>
@@ -199,6 +201,7 @@ Biomedical Signal Processing and Control (BSPC) **Under Review**
     <div class="other-paper-authors other-paper-links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705126002303">Paper</a><span class="paper-link-separator" aria-hidden="true">|</span><a href="https://github.com/AKA-hhh/PIRP">Code</a></div>
   </div>
 </div>
+-->
 
 <!-- # 🎖 Academical Services
 

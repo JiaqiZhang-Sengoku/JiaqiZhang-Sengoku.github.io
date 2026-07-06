@@ -6,11 +6,17 @@ main:
   # - title: "News"
   #   url: "/#news"
 
+  - title: "New"
+    url: "/#new"
+
   - title: "Publications"
     url: "/#publications"
 
   # - title: "Projects"
   #   url: "/#projects"
+
+  - title: "Internships"
+    url: "/#internships"
 
   - title: "Honors"
     url: "/#honors"

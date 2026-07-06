@@ -10,10 +10,14 @@ redirect_from:
 
 {% include_relative includes/intro.md %}
 
+{% include_relative includes/new.md %}
+
 {% include_relative includes/pub.md %}
 
 <!-- {% include_relative includes/project.md %}
 <br> -->
+
+{% include_relative includes/internships.md %}
 
 {% include_relative includes/honers.md %}
 
