@@ -9,11 +9,11 @@
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/Agent.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[FROM AGENT TRACES TO TRUST: A SURVEY OF EVIDENCE TRACING AND EXECUTION PROVENANCE IN LLM AGENTS]()
+[From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents]()
 <br>
 Transactions on Machine Learning Research (TMLR) **Under Review**
 <br>
-Yiqi Wang, **Jiaqi Zhang**, Taotao Cai, Zirui Liu, Mingyi Liu, Qingqiang Sun, Zequn Sun, Zhangkai Wu, Mingkai Zheng, Xuefei Yin, Yanming Zhu, Tianyu Shi<sup>†</sup>
+Yiqi Wang, **Jiaqi Zhang**, Zhangkai Wu, Taotao Cai, Zirui Liu, Qingqiang Sun, Zequn Sun, Manqing Dong, Mingkai Zheng, Yu-Xuan Qiu, Xuefei Yin, Yanming Zhu
 <br>
 </div>
 </div>
