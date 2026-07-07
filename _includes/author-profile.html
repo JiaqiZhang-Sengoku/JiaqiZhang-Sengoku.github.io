@@ -112,6 +112,9 @@
       {% if author.wechat or author.wechat_qr %}
         <li><button class="author__wechat-link" type="button" data-wechat-open><i class="fab fa-fw fa-weixin" aria-hidden="true"></i> WeChat</button></li>
       {% endif %}
+      {% if author.rednote %}
+        <li><a href="{{ author.rednote }}"><i class="fas fa-fw fa-book-open" aria-hidden="true"></i> RedNote</a></li>
+      {% endif %}
       {% if author.pubmed %}
         <li><a href="{{ author.pubmed }}"><i class="ai ai-pubmed-square ai-fw"></i> PubMed</a></li>
       {% endif %}
@@ -306,6 +309,9 @@
       {% endif %}
       {% if author.googlescholar %}
         <a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap"></i></a>
+      {% endif %}
+      {% if author.rednote %}
+        <a href="{{ author.rednote }}"><i class="fas fa-fw fa-book-open" aria-hidden="true"></i></a>
       {% endif %}
       {% if author.pubmed %}
         <a href="{{ author.pubmed }}"><i class="ai ai-pubmed-square ai-fw"></i></a>
