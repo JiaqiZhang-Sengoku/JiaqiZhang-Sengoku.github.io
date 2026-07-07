@@ -1,6 +1,6 @@
 <span class='anchor' id='news'></span>
 <div class="section-heading section-heading--news">
-  <h2 class="section-heading__title">News</h2>
+  <h2 class="section-heading__title">News &amp; Events</h2>
 </div>
 
 <div class="updates-panel" aria-label="Monthly news">

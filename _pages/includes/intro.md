@@ -13,7 +13,7 @@
 <!-- Temporarily hidden: News section.
 <span class='anchor' id='news'></span>
 <div class="section-heading section-heading--news">
-  <h2 class="section-heading__title">News</h2>
+  <h2 class="section-heading__title">News &amp; Events</h2>
 </div>
 
 <div class="news-panel" markdown="1">
