@@ -37,7 +37,7 @@
   <div class="update-card">
     <h3 class="update-date">Feb. 2026</h3>
     <ul class="update-list">
-      <li>Our paper (Parameterized Image Restoration) has been accepted to KBS 2026.</li>
+      <li>We have 1 paper (Parameterized Image Restoration) accepted to KBS 2026.</li>
     </ul>
   </div>
 </div>
