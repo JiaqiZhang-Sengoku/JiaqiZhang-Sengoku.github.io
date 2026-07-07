@@ -1202,6 +1202,13 @@ body > #main > .sidebar.sticky {
     font-size: 0.82em;
 }
 
+.update-list__aligned {
+    display: grid;
+    grid-template-columns: max-content minmax(0, 1fr);
+    column-gap: 0.42em;
+    row-gap: 2px;
+}
+
 .internship-logos {
     display: flex;
     flex-wrap: wrap;
