@@ -1039,9 +1039,9 @@ body > #main > .sidebar.sticky {
 
 .updates-panel {
     display: block;
-    height: 252px;
-    max-height: 252px;
-    padding: 13px 10px 13px 16px !important;
+    height: 288px;
+    max-height: 288px;
+    padding: 15px 10px 15px 16px !important;
     border: 1px solid rgba(221, 231, 243, 0.98);
     border-radius: var(--radius-card);
     background:
@@ -1169,7 +1169,7 @@ body > #main > .sidebar.sticky {
     border-radius: 0;
     background: transparent !important;
     color: var(--heading-color);
-    font-size: 1.03rem;
+    font-size: 1.08rem;
     font-style: normal;
     font-weight: 700;
     line-height: 1.2 !important;
@@ -1187,7 +1187,7 @@ body > #main > .sidebar.sticky {
     margin: 0 !important;
     padding: 0 0 0 18px !important;
     color: var(--text-color);
-    font-size: 1.06rem;
+    font-size: 1.10rem;
     line-height: 1.28 !important;
 }
 
@@ -2192,9 +2192,9 @@ body > #main > .sidebar.sticky {
     }
 
     .updates-panel {
-        height: 188px;
-        max-height: 188px;
-        padding: 10px 8px 10px 12px !important;
+        height: 232px;
+        max-height: 232px;
+        padding: 12px 8px 12px 12px !important;
     }
 
     .update-card,
