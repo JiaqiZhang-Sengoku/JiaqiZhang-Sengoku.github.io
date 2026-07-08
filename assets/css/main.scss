@@ -1197,16 +1197,19 @@ body > #main > .sidebar.sticky {
     padding-left: 2px;
 }
 
+.update-list li + li {
+    margin-top: 3px !important;
+}
+
 .update-list li::marker {
     color: rgba(82, 116, 208, 0.72);
     font-size: 0.82em;
 }
 
-.update-list__aligned {
-    display: grid;
-    grid-template-columns: max-content minmax(0, 1fr);
-    column-gap: 0.42em;
-    row-gap: 1px;
+.update-day {
+    color: var(--accent-strong);
+    font-weight: 800;
+    white-space: nowrap;
 }
 
 .highlight-oral {
