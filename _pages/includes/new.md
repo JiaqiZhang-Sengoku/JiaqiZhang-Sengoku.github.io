@@ -32,7 +32,7 @@
   <div class="update-card">
     <h3 class="update-date">Apr. 2026</h3>
     <ul class="update-list">
-      <li>27. We have 3 papers (Generalizable Medical Image Segmentation + Self-Correcting Video Segmentation + Risk-Aware USV Navigation) accepted to ICIC 2026 Oral (CCF C).</li>
+      <li>27. We have 3 papers (Generalizable Medical Image Segmentation + Self-Correcting Video Segmentation + Risk-Aware USV Navigation) accepted to ICIC 2026 <span class="highlight-oral">Oral</span> (CCF C).</li>
     </ul>
   </div>
   <div class="update-card">
