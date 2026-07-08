@@ -13,9 +13,9 @@
   <div class="update-card">
     <h3 class="update-date">June 2026</h3>
     <ul class="update-list">
-      <li><span class="update-day">June 29:</span> We have 1 paper (Diffusion-Guided Malicious Traffic Detection) accepted to INS 2026 (IF = 6.8).</li>
-      <li><span class="update-day">June 18:</span> We have 1 paper (Challenging Polyp Segmentation) accepted to JIIM 2026 (IF = 3.1).</li>
-      <li><span class="update-day">June 13:</span> We have 1 paper (Stiffness-Modulated Glioma Registration) accepted to MICCAI 2026 (CCF B).</li>
+      <li><span class="update-day">Jun. 29:</span> We have 1 paper (Diffusion-Guided Malicious Traffic Detection) accepted to INS 2026 (IF = 6.8).</li>
+      <li><span class="update-day">Jun. 18:</span> We have 1 paper (Challenging Polyp Segmentation) accepted to JIIM 2026 (IF = 3.1).</li>
+      <li><span class="update-day">Jun. 13:</span> We have 1 paper (Stiffness-Modulated Glioma Registration) accepted to MICCAI 2026 (CCF B).</li>
     </ul>
   </div>
   <div class="update-card">
@@ -27,13 +27,13 @@
   <div class="update-card">
     <h3 class="update-date">April 2026</h3>
     <ul class="update-list">
-      <li><span class="update-day">April 27:</span> We have 3 papers (Generalizable Medical Image Segmentation + Self-Correcting Video Segmentation + Risk-Aware USV Navigation) accepted to ICIC 2026 <span class="highlight-oral">Oral</span> (CCF C).</li>
+      <li><span class="update-day">Apr. 27:</span> We have 3 papers (Generalizable Medical Image Segmentation + Self-Correcting Video Segmentation + Risk-Aware USV Navigation) accepted to ICIC 2026 <span class="highlight-oral">Oral</span> (CCF C).</li>
     </ul>
   </div>
   <div class="update-card">
     <h3 class="update-date">February 2026</h3>
     <ul class="update-list">
-      <li><span class="update-day">February 5:</span> We have 1 paper (Parameterized Image Restoration) accepted to KBS 2026 (IF = 7.6).</li>
+      <li><span class="update-day">Feb. 5:</span> We have 1 paper (Parameterized Image Restoration) accepted to KBS 2026 (IF = 7.6).</li>
     </ul>
   </div>
 </div>
