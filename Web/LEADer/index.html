@@ -57,29 +57,27 @@ layout: null
     <div class="restoration-demo" aria-labelledby="restoration-demo-title">
 
       <div class="demo-flow">
-        <article class="demo-stage">
-          <span class="demo-label">Input</span>
-          <div class="demo-image">
+        <article class="demo-stage demo-stage-input">
+          <span class="demo-label demo-label-input">Input</span>
+          <div class="demo-image demo-image-input">
             <img data-demo="input" src="/Web/LEADer/Figures/Input/1.png" alt="Degraded input example">
           </div>
         </article>
-<article class="demo-stage">
-          <span class="demo-label">Others</span>
-          <div class="demo-image demo-transition demo-transition-middle">
+        <article class="demo-stage demo-stage-baseline">
+          <span class="demo-label demo-label-baseline" id="baseline-label">ProDiff</span>
+          <div class="demo-image demo-image-baseline demo-transition demo-transition-middle">
             <img data-demo="middle-from" src="/Web/LEADer/Figures/Input/1.png" alt="Input before baseline restoration">
             <img class="demo-reveal" data-demo="others" src="/Web/LEADer/Figures/Others/1.png" alt="Restoration produced by another method">
           </div>
         </article>
-<article class="demo-stage">
-          <span class="demo-label demo-label-ours">Ours</span>
-          <div class="demo-image demo-transition demo-transition-final">
+        <article class="demo-stage demo-stage-leader">
+          <span class="demo-label demo-label-ours">+ LEADer</span>
+          <div class="demo-image demo-image-leader demo-transition demo-transition-final">
             <img data-demo="final-from" src="/Web/LEADer/Figures/Others/1.png" alt="Baseline restoration before LEADer refinement">
             <img class="demo-reveal" data-demo="ours" src="/Web/LEADer/Figures/Ours/1.png" alt="Restoration produced by LEADer">
           </div>
         </article>
       </div>
-
-      <div class="demo-status" aria-live="polite">Example <span id="demo-index">1</span> / 5</div>
     </div>
     </section>
 
@@ -260,6 +258,7 @@ layout: null
     (function () {
       const total = 5;
       let current = 1;
+      const baselineMethods = ['ProDiff', 'ProDiff', 'DDNM', 'DDPG', 'SITCOM'];
       const images = {
         input: document.querySelector('[data-demo="input"]'),
         middleFrom: document.querySelector('[data-demo="middle-from"]'),
@@ -267,15 +266,15 @@ layout: null
         finalFrom: document.querySelector('[data-demo="final-from"]'),
         ours: document.querySelector('[data-demo="ours"]')
       };
-      const counter = document.getElementById('demo-index');
+      const baselineLabel = document.getElementById('baseline-label');
 
-      function showExample(index) {
+      function showDemo(index) {
         images.input.src = `/Web/LEADer/Figures/Input/${index}.png`;
         images.middleFrom.src = `/Web/LEADer/Figures/Input/${index}.png`;
         images.others.src = `/Web/LEADer/Figures/Others/${index}.png`;
         images.finalFrom.src = `/Web/LEADer/Figures/Others/${index}.png`;
         images.ours.src = `/Web/LEADer/Figures/Ours/${index}.png`;
-        counter.textContent = index;
+        baselineLabel.textContent = baselineMethods[index - 1];
 
         document.querySelectorAll('.demo-reveal').forEach(function (image) {
           image.style.animation = 'none';
@@ -286,7 +285,7 @@ layout: null
 
       window.setInterval(function () {
         current = current % total + 1;
-        showExample(current);
+        showDemo(current);
       }, 2500);
     }());
   </script></body>

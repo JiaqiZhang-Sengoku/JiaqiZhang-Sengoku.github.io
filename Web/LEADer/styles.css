@@ -221,18 +221,23 @@ h1 {
 
 .demo-label {
   display: block;
-  margin-bottom: 9px;
-  color: #44434f;
-  font-size: 14px;
-  font-weight: 700;
+  margin-bottom: 11px;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 1.2;
 }
 
-.demo-label-others {
-  color: #8a8f98;
+.demo-label-input {
+  color: #7b7f86;
+}
+
+.demo-label-baseline {
+  color: #17191d;
 }
 
 .demo-label-ours {
-  color: #2f7d5a;
+  color: #178052;
 }
 
 .demo-image {
@@ -240,10 +245,25 @@ h1 {
   overflow: hidden;
   width: 100%;
   aspect-ratio: 1;
-  border: 1px solid #e0e3e8;
-  border-radius: 7px;
+  border: 3px solid #d2d6de;
+  border-radius: 8px;
   background: #f3f4f6;
-  box-shadow: 0 12px 28px rgba(45, 48, 58, 0.10);
+  box-shadow: 0 14px 30px rgba(45, 48, 58, 0.13);
+}
+
+.demo-image-input {
+  border-color: #aeb4bf;
+  box-shadow: 0 14px 30px rgba(98, 105, 116, 0.18);
+}
+
+.demo-image-baseline {
+  border-color: #1d2026;
+  box-shadow: 0 14px 30px rgba(18, 20, 26, 0.18);
+}
+
+.demo-image-leader {
+  border-color: #15945f;
+  box-shadow: 0 14px 30px rgba(21, 148, 95, 0.22);
 }
 
 .demo-image img {
@@ -282,14 +302,6 @@ h1 {
   font-size: 38px;
   font-weight: 700;
   line-height: 1;
-}
-
-.demo-status {
-  margin-top: 15px;
-  color: #6b637d;
-  font-size: 13px;
-  font-weight: 700;
-  text-align: center;
 }
 
 .demo-caption {
