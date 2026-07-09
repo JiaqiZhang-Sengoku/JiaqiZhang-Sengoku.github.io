@@ -9,7 +9,7 @@ The webpage is built with plain HTML and CSS, with all visual assets stored loca
 ## Structure
 
 ```text
-Web/LEADer/
+LEADer/
 |-- index.html
 |-- styles.css
 |-- README.md

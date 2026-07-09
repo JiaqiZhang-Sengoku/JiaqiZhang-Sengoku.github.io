@@ -78,13 +78,13 @@ Yang Yang <sup>†</sup> <sup>*</sup>, Pengyu Li <sup>*</sup>, **Jiaqi Zhang**, 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/LEADer.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration](/Web/LEADer/)
+[Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration](/LEADer/)
 <br>
 ACM International Conference on Multimedia (ACM MM 2026) **Under Review**
 <br>
 **Jiaqi Zhang**(First Author), Anonymous
 <br>
-<div class="paper-links"><a href="/Web/LEADer/">Project</a><span class="paper-link-separator" aria-hidden="true">|</span><a href="/Paper/LEADer_Paper.pdf">Paper</a><span class="paper-link-separator" aria-hidden="true">|</span><a href="/Paper/LEADer_Supplementary_Material.pdf">Supplementary Material</a></div>
+<div class="paper-links"><a href="/LEADer/">Project</a><span class="paper-link-separator" aria-hidden="true">|</span><a href="/Paper/LEADer_Paper.pdf">Paper</a><span class="paper-link-separator" aria-hidden="true">|</span><a href="/Paper/LEADer_Supplementary_Material.pdf">Supplementary Material</a></div>
 </div>
 </div>
 
