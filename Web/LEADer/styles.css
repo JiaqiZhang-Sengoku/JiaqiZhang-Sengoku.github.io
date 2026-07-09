@@ -46,7 +46,7 @@ a:hover {
   overflow: hidden;
   margin-bottom: 0;
   padding: 48px 0 0;
-  background: linear-gradient(180deg, #edf5e8 0%, #fffaf1 54%, #ffffff 100%);
+  background: linear-gradient(180deg, #e7f0df 0%, #fff8e8 56%, #ffffff 100%);
 }
 
 .hero-band::before {
@@ -54,10 +54,10 @@ a:hover {
   z-index: 0;
   inset: 0;
   content: "";
-  background: url("/Web/LEADer/Figures/HeroBackground.png") center top / cover no-repeat;
-  filter: contrast(1.18) saturate(1.22);
+  background: url("/Web/LEADer/Figures/HeroBackground.png?v=20260709-122f08") center top / cover no-repeat;
+  filter: contrast(1.32) saturate(1.32);
   opacity: 1;
-  transform: scale(1.015);
+  transform: scale(1.01);
   pointer-events: none;
 }
 
@@ -67,12 +67,12 @@ a:hover {
   inset: 0;
   content: "";
   background:
-    radial-gradient(ellipse at 50% 25%, rgba(255, 255, 255, 0.48) 0%, rgba(255, 255, 255, 0.20) 31%, rgba(255, 255, 255, 0.00) 64%),
-    radial-gradient(ellipse at 8% 8%, rgba(18, 47, 8, 0.30) 0%, rgba(18, 47, 8, 0.00) 36%),
-    radial-gradient(ellipse at 91% 10%, rgba(183, 135, 59, 0.24) 0%, rgba(183, 135, 59, 0.00) 38%),
-    radial-gradient(ellipse at 74% 58%, rgba(84, 116, 133, 0.16) 0%, rgba(84, 116, 133, 0.00) 34%),
-    linear-gradient(100deg, rgba(255, 255, 255, 0.22), transparent 18%, transparent 82%, rgba(255, 255, 255, 0.24)),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.18) 58%, #ffffff 97%);
+    radial-gradient(ellipse at 50% 25%, rgba(255, 255, 255, 0.34) 0%, rgba(255, 255, 255, 0.12) 31%, rgba(255, 255, 255, 0.00) 64%),
+    radial-gradient(ellipse at 8% 8%, rgba(18, 47, 8, 0.42) 0%, rgba(18, 47, 8, 0.00) 38%),
+    radial-gradient(ellipse at 91% 10%, rgba(183, 135, 59, 0.31) 0%, rgba(183, 135, 59, 0.00) 40%),
+    radial-gradient(ellipse at 74% 58%, rgba(84, 116, 133, 0.22) 0%, rgba(84, 116, 133, 0.00) 36%),
+    linear-gradient(100deg, rgba(255, 255, 255, 0.12), transparent 18%, transparent 82%, rgba(255, 255, 255, 0.14)),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.10) 58%, #ffffff 97%);
   pointer-events: none;
 }
 
