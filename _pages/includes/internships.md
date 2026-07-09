@@ -5,23 +5,21 @@
 
 <div class="internships-panel">
   <div class="internship-card">
-    <div class="internship-logos internship-logos--single" aria-label="Institution logos">
+    <div class="internship-logos" aria-label="Institution logo">
       <a href="https://www.sustech.edu.cn/en/" aria-label="Southern University of Science and Technology">
-        <img src="Images/Logos/sustech-logo.svg" alt="Southern University of Science and Technology logo">
+        <img src="Images/Logos/sustech-seal.png" alt="Southern University of Science and Technology logo">
       </a>
     </div>
     <div class="internship-main">
       <h3>Southern University of Science and Technology (SUSTech)</h3>
+      <p>Research Assistant.</p>
     </div>
   </div>
 
   <div class="internship-card">
-    <div class="internship-logos" aria-label="Institution logos">
+    <div class="internship-logos" aria-label="Institution logo">
       <a href="https://www.tum.de/en/" aria-label="Technical University of Munich">
         <img src="Images/Logos/tum-icon.svg" alt="Technical University of Munich logo">
-      </a>
-      <a href="https://kiinformatik.mri.tum.de/en/chair-health-informatics-chi" aria-label="Chair of Health Informatics">
-        <img src="Images/Logos/chi-logo.svg" alt="Chair of Health Informatics logo">
       </a>
     </div>
     <div class="internship-main">
