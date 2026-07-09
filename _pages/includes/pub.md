@@ -84,7 +84,7 @@ ACM International Conference on Multimedia (ACM MM 2026) **Under Review**
 <br>
 **Jiaqi Zhang**(First Author), Anonymous
 <br>
-<div class="paper-links"><a href="/LEADer/">Project</a><span class="paper-link-separator" aria-hidden="true">|</span><a href="/Paper/LEADer_Paper.pdf">Paper</a><span class="paper-link-separator" aria-hidden="true">|</span><a href="/Paper/LEADer_Supplementary_Material.pdf">Supplementary Material</a></div>
+<div class="paper-links"><a href="/Paper/LEADer_Paper.pdf">Paper</a><span class="paper-link-separator" aria-hidden="true">|</span><a href="/LEADer/">Web</a></div>
 </div>
 </div>
 
@@ -112,7 +112,7 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
 <br>
 **Jiaqi Zhang**(First Author), Anonymous
 <br>
-[Paper](/Paper/A2L_Paper.pdf) | [Supplementary Material](/Paper/A2L_Supplementary_Material.pdf)<br>
+[Paper](/Paper/A2L_Paper.pdf)<br>
 </div>
 </div> -->
 
