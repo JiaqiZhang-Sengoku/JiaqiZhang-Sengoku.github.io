@@ -230,15 +230,15 @@ h1 {
 }
 
 .demo-label-input {
-  color: #7b7f86;
+  color: #64748b;
 }
 
 .demo-label-baseline {
-  color: #17191d;
+  color: #2f3440;
 }
 
 .demo-label-ours {
-  color: #178052;
+  color: #0f8f7b;
 }
 
 .demo-image {
@@ -246,25 +246,25 @@ h1 {
   overflow: hidden;
   width: 100%;
   aspect-ratio: 1;
-  border: 3px solid #d2d6de;
+  border: 3px solid #d9e1ea;
   border-radius: 8px;
-  background: #f3f4f6;
-  box-shadow: 0 14px 30px rgba(45, 48, 58, 0.13);
+  background: #f8fafc;
+  box-shadow: 0 16px 34px rgba(45, 55, 72, 0.12);
 }
 
 .demo-image-input {
-  border-color: #aeb4bf;
-  box-shadow: 0 14px 30px rgba(98, 105, 116, 0.18);
+  border-color: #9fb0c4;
+  box-shadow: 0 16px 34px rgba(100, 116, 139, 0.18);
 }
 
 .demo-image-baseline {
-  border-color: #1d2026;
-  box-shadow: 0 14px 30px rgba(18, 20, 26, 0.18);
+  border-color: #3f4654;
+  box-shadow: 0 16px 34px rgba(47, 52, 64, 0.20);
 }
 
 .demo-image-leader {
-  border-color: #15945f;
-  box-shadow: 0 14px 30px rgba(21, 148, 95, 0.22);
+  border-color: #14a58c;
+  box-shadow: 0 16px 34px rgba(20, 165, 140, 0.24);
 }
 
 .demo-image img {
