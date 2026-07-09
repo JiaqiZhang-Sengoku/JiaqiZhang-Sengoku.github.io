@@ -46,10 +46,11 @@ a:hover {
   margin-bottom: 0;
   padding: 48px 0 0;
   background:
-    radial-gradient(circle at 18% 18%, rgba(76, 128, 211, 0.20), transparent 32%),
-    radial-gradient(circle at 86% 12%, rgba(115, 174, 145, 0.22), transparent 30%),
-    radial-gradient(circle at 52% 92%, rgba(224, 179, 120, 0.18), transparent 34%),
-    linear-gradient(135deg, #f7fbff 0%, #f8fbf7 45%, #fff8f1 100%);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.70) 74%, #ffffff 100%),
+    url("/Web/LEADer/Figures/HeroBackground.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-band::before {
@@ -57,8 +58,8 @@ a:hover {
   inset: 0;
   content: "";
   background:
-    linear-gradient(90deg, rgba(255, 255, 255, 0.60), transparent 22%, transparent 78%, rgba(255, 255, 255, 0.60)),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.72));
+    radial-gradient(ellipse at 50% 28%, rgba(255, 255, 255, 0.80) 0%, rgba(255, 255, 255, 0.46) 36%, rgba(255, 255, 255, 0.10) 70%),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.72), transparent 18%, transparent 82%, rgba(255, 255, 255, 0.72));
   pointer-events: none;
 }
 
