@@ -5,6 +5,17 @@
 
 <div class="internships-panel">
   <div class="internship-card">
+    <div class="internship-logos internship-logos--single" aria-label="Institution logos">
+      <a href="https://www.sustech.edu.cn/en/" aria-label="Southern University of Science and Technology">
+        <img src="Images/Logos/sustech-logo.svg" alt="Southern University of Science and Technology logo">
+      </a>
+    </div>
+    <div class="internship-main">
+      <h3>Southern University of Science and Technology (SUSTech)</h3>
+    </div>
+  </div>
+
+  <div class="internship-card">
     <div class="internship-logos" aria-label="Institution logos">
       <a href="https://www.tum.de/en/" aria-label="Technical University of Munich">
         <img src="Images/Logos/tum-icon.svg" alt="Technical University of Munich logo">

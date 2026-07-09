@@ -1247,6 +1247,11 @@ body > #main > .sidebar.sticky {
     flex: 0 1 450px;
 }
 
+.internship-logos--single a:first-child {
+    width: min(430px, 100%);
+    flex: 0 1 430px;
+}
+
 .internship-logos img {
     display: block;
     width: 100%;
@@ -2266,6 +2271,10 @@ body > #main > .sidebar.sticky {
     }
 
     .internship-logos a:nth-child(2) {
+        width: min(306px, 100%);
+    }
+
+    .internship-logos--single a:first-child {
         width: min(306px, 100%);
     }
 
