@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LEADer</title>
+  <meta name="description" content="Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration.">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <main>
+    <section class="hero-band">
+      <div class="publication-header">
+        <div class="hero-card">
+          <h1>Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration</h1>
+          <p class="conference">ACM MM 2026</p>
+
+          <p class="authors">
+            <a href="#">Jiaqi Zhang</a><sup>1,*</sup>,
+            <a href="#">Zheng Pang</a><sup>1,*</sup>,
+            <a href="#">Rongrong Gao</a><sup>1</sup>,
+            <a href="#">Qiyuan Zhang</a><sup>2</sup>,
+            <a href="#">Yang Yang</a><sup>1,&dagger;</sup>
+          </p>
+
+          <p class="institutions">
+            <sup>1</sup>Jiangsu University,
+            <sup>2</sup>Xi'an University of Technology
+          </p>
+          <p class="notes">*Equal contribution. &dagger;Corresponding author.</p>
+
+          <div class="link-row" aria-label="Project links">
+            <a class="pill pill-primary" href="/Paper/LEADer_Paper.pdf">
+              <img class="pill-icon" src="figures/paper.svg" alt="">
+              <span>Paper</span>
+            </a>
+            <a class="pill pill-secondary" href="#" title="Code link to be added">
+              <img class="pill-icon" src="figures/GitHub.svg" alt="">
+              <span>Code</span>
+            </a>
+            <a class="pill pill-secondary" href="#" title="Poster link to be added">
+              <img class="pill-icon" src="figures/poster.svg" alt="">
+              <span>Poster</span>
+            </a>
+            <a class="pill pill-secondary" href="https://2026.acmmm.org/" target="_blank" rel="noreferrer">
+              <img class="pill-icon" src="figures/conference.svg" alt="">
+              <span>Conference</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    <div class="restoration-demo" aria-labelledby="restoration-demo-title">
+
+      <div class="demo-flow">
+        <article class="demo-stage">
+          <span class="demo-label">Input</span>
+          <div class="demo-image">
+            <img data-demo="input" src="figures/input/1.png" alt="Degraded input example">
+          </div>
+        </article>
+<article class="demo-stage">
+          <span class="demo-label">Others</span>
+          <div class="demo-image demo-transition demo-transition-middle">
+            <img data-demo="middle-from" src="figures/input/1.png" alt="Input before baseline restoration">
+            <img class="demo-reveal" data-demo="others" src="figures/others/1.png" alt="Restoration produced by another method">
+          </div>
+        </article>
+<article class="demo-stage">
+          <span class="demo-label demo-label-ours">Ours</span>
+          <div class="demo-image demo-transition demo-transition-final">
+            <img data-demo="final-from" src="figures/others/1.png" alt="Baseline restoration before LEADer refinement">
+            <img class="demo-reveal" data-demo="ours" src="figures/ours/1.png" alt="Restoration produced by LEADer">
+          </div>
+        </article>
+      </div>
+
+      <div class="demo-status" aria-live="polite">Example <span id="demo-index">1</span> / 5</div>
+    </div>
+    </section>
+
+    <section id="abstract" class="abstract-band">
+      <div class="section text-section abstract-content">
+        <h2>Abstract</h2>
+        <p>
+          Diffusion models have demonstrated remarkable effectiveness in image restoration tasks. However, existing
+          Diffusion Model-based Image Restoration (DMIR) methods typically rely on fixed data constraints and uniform
+          step sizes, overlooking the dynamic nature of the generative process. These rigid designs are vulnerable to
+          spatially non-uniform degradations and introduce computational redundancy.
+    
+          We propose Local Epistemic Uncertainty Guided Active Sampling, termed LEADer. In the spatial domain, LEADer
+          leverages pixel-wise uncertainty to dynamically modulate the prior strength within the null space, balancing
+          detail preservation and artifact suppression. In the temporal domain, it quantifies sampling stability via the
+          uncertainty trace to enable adaptive trajectory pruning. LEADer can be seamlessly integrated into various DMIR
+          baselines and improves restoration quality while significantly reducing sampling time.
+        </p>
+      </div>
+    </section>
+
+    <section id="method" class="section text-section">
+      <h2>Method Overview</h2>
+      <p>
+        LEADer revisits plug-and-play diffusion restoration from a state-aware sampling perspective. Instead of applying
+        the same restoration constraint everywhere and at every denoising step, it asks how reliable the diffusion prior
+        is for each local region and how stable the current sampling state is. This uncertainty signal then controls both
+        the spatial correction strength and the temporal sampling schedule.
+      </p>
+      <figure class="main-figure">
+        <img src="figures/Figure3.png" alt="Architecture of the LEADer framework.">
+        <figcaption>
+          Figure 1. Architecture of LEADer. Local epistemic uncertainty guides reverse sampling in both spatial and
+          temporal dimensions: UCPM adaptively modulates prior constraints, while SATP selects adaptive step sizes to
+          skip redundant iterations.
+        </figcaption>
+      </figure>
+      <ul>
+        <li>
+          <strong>Local Epistemic Uncertainty Quantification:</strong>
+          LEADer estimates local uncertainty from the diffusion model's state, treating it as a spatiotemporal signal
+          that reflects where the restoration is confident and where ambiguity remains.
+        </li>
+        <li>
+          <strong>Uncertainty-Calibrated Prior Modulation:</strong>
+          UCPM uses pixel-level uncertainty to adaptively modulate null-space prior strength, preserving details in
+          confident regions while suppressing artifacts in uncertain areas.
+        </li>
+        <li>
+          <strong>State-Aware Trajectory Pruning:</strong>
+          SATP uses the uncertainty trace to select adaptive step sizes, skipping redundant reverse-diffusion updates
+          while keeping the approximation error bounded.
+        </li>
+        <li>
+          <strong>Plug-and-play Integration:</strong>
+          The framework can be inserted into multiple zero-shot DMIR baselines without retraining the diffusion model.
+        </li>
+      </ul>
+      <p>
+        This design keeps the strict data-consistency benefit of null-space projection while making the reverse process
+        more flexible. Confident regions avoid unnecessary over-regularization, ambiguous regions receive stronger prior
+        guidance, and stable trajectory segments can be skipped to save inference time.
+      </p>
+    </section>
+
+    <section id="comparison" class="section">
+      <h2>Comparison Analysis</h2>
+      <p class="section-copy">
+        LEADer improves both visual quality and efficiency across restoration tasks, including super-resolution,
+        Gaussian deblurring, motion deblurring, and compressed sensing.
+      </p>
+      <p class="section-copy">
+        The comparison highlights the core benefit of uncertainty-guided restoration: baseline methods with fixed
+        sampling rules often lose local details or introduce artifacts under non-uniform degradations, while LEADer
+        adaptively allocates correction strength according to the current restoration difficulty.
+      </p>
+    
+
+      <figure class="figure4-wide">
+        <img src="figures/Figure4.png" alt="Qualitative comparisons on five restoration tasks.">
+        <figcaption>
+          Figure 2. Qualitative comparisons on five image restoration tasks.
+        </figcaption>
+      </figure>
+
+      <figure class="table-figure table-wide">
+        <img src="figures/paper_table_1_Table1.svg" alt="Quantitative results across five image restoration tasks on CelebA-HQ 1K and ImageNet 1K.">
+        <figcaption>
+          Table 1. Quantitative results for five image restoration tasks on CelebA-HQ 1K (top) and ImageNet 1K
+          (bottom). The average change reports performance improvements and time reductions over each baseline.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section id="trajectory" class="section">
+      <h2>Sampling Trajectory Analysis</h2>
+      <p class="section-copy">
+        Compared with fixed-step baselines, LEADer dynamically adjusts the sampling pace and converges to clearer local
+        structures at lower numbers of function evaluations.
+      </p>
+      <p class="section-copy">
+        The trajectory visualization shows that DDNM improves details gradually through dense and uniform updates. In
+        contrast, LEADer identifies stable states earlier and prunes redundant steps, while preserving the important
+        denoising updates needed for local texture recovery.
+      </p>
+      <figure>
+        <img src="figures/Figure5.png" alt="Comparison between DDNM and LEADer at different NFEs.">
+        <figcaption>
+          Figure 3. Comparison of restored states between DDNM and LEADer at different NFEs.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section id="ablation" class="section">
+      <h2>Ablation Analysis</h2>
+      <p class="section-copy">
+        Ablation studies indicate that UCPM improves restoration fidelity, SATP reduces redundant computation, and
+        their combination gives the strongest trade-off between quality and speed.
+      </p>
+      <p class="section-copy">
+        UCPM mainly contributes to perceptual and distortion improvements by making the prior modulation spatially
+        adaptive. SATP contributes to efficiency by adjusting the effective number of sampling steps according to the
+        uncertainty trace. When used together, the improved sampling stability from UCPM makes trajectory pruning safer.
+      </p>
+      <figure class="table-figure">
+        <img src="figures/paper_table_2_Table2.svg" alt="Ablation study results for UCPM and SATP.">
+        <figcaption>
+          Table 2. Ablation study of the UCPM and SATP components on three representative restoration tasks.
+        </figcaption>
+      </figure>
+
+      <p class="section-copy">
+        The information-loss budget controls the balance between restoration quality and acceleration. A conservative
+        budget permits fewer skipped steps, while an excessively large budget reduces runtime at the cost of noticeable
+        quality degradation. The experiments use 0.01 as the default balanced setting.
+      </p>
+      <figure class="paired-figure">
+        <div class="paired-media">
+          <div class="paired-panel paired-table">
+            <img src="figures/paper_table_3_Table3.svg" alt="Hyperparameter sensitivity analysis for the information-loss budget.">
+          </div>
+          <div class="paired-panel paired-image">
+            <img src="figures/Figure6.png" alt="Ablation study on different sampling steps.">
+          </div>
+        </div>
+        <figcaption>
+          Table 3 and Figure 4. Hyperparameter sensitivity analysis on the information-loss budget B, together with
+          ablation results across different sampling steps on CelebA-HQ 1K.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section id="memory" class="section">
+      <h2>Memory Consumption</h2>
+      <p class="section-copy">
+        LEADer introduces only marginal GPU memory overhead when integrated into existing DMIR methods. Across five
+        ImageNet restoration tasks, the additional memory consumption remains between 0.07% and 0.28%, showing that the
+        uncertainty-guided modules improve quality and efficiency without materially increasing deployment cost.
+      </p>
+      <figure class="table-figure table4-large">
+        <img src="figures/paper_table_4_Table4.svg" alt="GPU memory consumption comparison across five restoration tasks.">
+        <figcaption>
+          Table 4. Memory consumption comparison across five image restoration tasks.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section id="bibtex" class="section text-section">
+      <h2>BibTeX</h2>
+      <pre><code>@article{zhang2026leader,
+  title={Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration},
+  author={Zhang, Jiaqi and Pang, Zheng and Gao, Rongrong and Zhang, Qiyuan and Yang, Yang},
+  year={2026}
+}</code></pre>
+    </section>
+  </main>
+  <script>
+    (function () {
+      const total = 5;
+      let current = 1;
+      const images = {
+        input: document.querySelector('[data-demo="input"]'),
+        middleFrom: document.querySelector('[data-demo="middle-from"]'),
+        others: document.querySelector('[data-demo="others"]'),
+        finalFrom: document.querySelector('[data-demo="final-from"]'),
+        ours: document.querySelector('[data-demo="ours"]')
+      };
+      const counter = document.getElementById('demo-index');
+
+      function showExample(index) {
+        images.input.src = `figures/input/${index}.png`;
+        images.middleFrom.src = `figures/input/${index}.png`;
+        images.others.src = `figures/others/${index}.png`;
+        images.finalFrom.src = `figures/others/${index}.png`;
+        images.ours.src = `figures/ours/${index}.png`;
+        counter.textContent = index;
+
+        document.querySelectorAll('.demo-reveal').forEach(function (image) {
+          image.style.animation = 'none';
+          void image.offsetWidth;
+          image.style.animation = '';
+        });
+      }
+
+      window.setInterval(function () {
+        current = current % total + 1;
+        showExample(current);
+      }, 2500);
+    }());
+  </script></body>
+</html>
