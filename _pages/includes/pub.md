@@ -7,7 +7,7 @@
 
 <div class="publications-panel">
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/Agent.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='Images/Publication/Agent.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents]()
 <br>
@@ -18,7 +18,7 @@ Yiqi Wang, **Jiaqi Zhang**, Zhangkai Wu, Taotao Cai, Zirui Liu, Qingqiang Sun, Z
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/ΠSkill.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='Images/Publication/ΠSkill.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [𝜋Skill: High-Density Knowledge Extraction from Single Trajectories via Circular Step-Level Analysis]()
 <br>
@@ -29,7 +29,7 @@ Chenxi Qiu, Zichen Luo, Jiarui Fan, Keming Gu, **Jiaqi Zhang**, Chunbo Zhang, Pe
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/D2IB.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='Images/Publication/D2IB.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Differentiated Dual-Level Information Bottleneck for Imperfect Multimodal Emotion Recognition]()
 <br>
@@ -41,7 +41,7 @@ Zheng Pang, **Jiaqi Zhang**, Mengting Li, Yiqi Wang, Guangyuan Dong, Yusen Wu, C
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/PriMD.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='Images/Publication/PriMD.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Modality Disentangled Learning for Incomplete Multimodal Emotion Recognition: A Primitive Memory Distillation Perspective]()
 <br>
@@ -53,7 +53,7 @@ Empirical Methods in Natural Language Processing (EMNLP) **Under Review**
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/OrthoSeg.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='Images/Publication/OrthoSeg.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Learning Orthogonal Disentanglement for Modality-Agnostic Medical Image Segmentation]()
 <br>
@@ -65,7 +65,7 @@ Kai Han, **Jiaqi Zhang**, Chongwen Lyu, Mengting Li, Jun Chen, Laihua Yang, Guan
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/DDDM.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='Images/Publication/DDDM.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Structure-preserving Image Decomposition via Plug-and-Play Diffusion Models]()
 <br>
@@ -76,7 +76,7 @@ Yang Yang <sup>†</sup> <sup>*</sup>, Pengyu Li <sup>*</sup>, **Jiaqi Zhang**, 
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/LEADer.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='Images/Publication/LEADer.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration](/LEADer/)
 <br>
@@ -88,7 +88,7 @@ ACM International Conference on Multimedia (ACM MM 2026) **Under Review**
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/DynKD.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='Images/Publication/DynKD.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Rethinking Knowledge Distillation for Incomplete Multimodal
 Emotion Recognition: A Dynamic Approach]()
@@ -104,7 +104,7 @@ ACM International Conference on Multimedia (ACM MM 2026) **Under Review**
 
 
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/A2L.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='Images/Publication/A2L.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Breaking Confirmation Bias: Single-Round Active Manifold Calibration for Source-Free Domain Adaptation in Segmentation]()
 <br>
@@ -121,7 +121,7 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
 
 
 <!-- 2 -->
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/FDGR.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='Images/Publication/FDGR.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Image Restoration via Optimizing Fidelity with Diffusion and Gradient Regularization]()
 <br>
@@ -134,7 +134,7 @@ Engineering Applications of Artificial Intelligence (EAAI) **Under Review**
 </div>
 
 <!-- 1 -->
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='images/Publication/DDGF.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='Images/Publication/DDGF.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Zero-Shot Medical Image Super-Resolution Using Denoising Diffusion Models with Gradient-Frequency Priors]() <br>
 Biomedical Signal Processing and Control (BSPC) **Under Review**

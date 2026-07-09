@@ -22,7 +22,7 @@ google_scholar_stats_use_cdn : true
 # Site Author
 author:
   name             : "Jiaqi Zhang"
-  avatar           : "images/profile.png"
+  avatar           : "Images/profile.png"
   bio              : "School of Computer Science and Telecommunication Engineering, Jiangsu University"
   location         : "Jiangsu China"
   employer         : 
@@ -34,7 +34,7 @@ author:
     - "zjq0427@qq.com"
     - "sengokuzjq@gmail.com"
   wechat           : "WeChat"
-  wechat_qr        : "images/Contact/WeChat.jpg"
+  wechat_qr        : "Images/Contact/WeChat.jpg"
   rednote          : "https://www.xiaohongshu.com/user/profile/648c59bd0000000012037004?tab=fav&subTab=note"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
@@ -95,8 +95,6 @@ exclude:
   - package.json
   - tmp
   - vendor
-  - google_scholar_crawler
-  - github_myprofile_updater
 keep_files:
   - .git
   - .svn

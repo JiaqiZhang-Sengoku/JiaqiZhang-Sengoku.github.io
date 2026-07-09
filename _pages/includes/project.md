@@ -141,7 +141,7 @@
   <div class="project-card">
     <div class="project-card__top">
       <div class="project-card__media">
-        <img class="project-card__image" src="images/Projects/Pro_1.png" alt="Pro_1">
+        <img class="project-card__image" src="Images/Projects/Pro_1.png" alt="Pro_1">
       </div>
       <div class="project-card__content">
         <strong>Insightful Vision: 基于增强-恢复-识别的智能眼底疾病医疗系统</strong><br>
@@ -167,7 +167,7 @@
   <div class="project-card">
     <div class="project-card__top">
       <div class="project-card__media">
-        <img class="project-card__image" src="images/Projects/Pro_2.png" alt="Pro_2">
+        <img class="project-card__image" src="Images/Projects/Pro_2.png" alt="Pro_2">
       </div>
       <div class="project-card__content">
         <strong>BQAI+: 基于知识图谱的中医药科普与在线问诊平台</strong><br>
@@ -189,7 +189,7 @@
   <div class="project-card">
     <div class="project-card__top">
       <div class="project-card__media">
-        <img class="project-card__image" src="images/Projects/Pro_3.png" alt="Pro_3">
+        <img class="project-card__image" src="Images/Projects/Pro_3.png" alt="Pro_3">
       </div>
       <div class="project-card__content">
         <strong>RF-Nav: 基于动态代价预测的越野机器人建图与混合路径规划系统</strong><br>
@@ -214,7 +214,7 @@
   <div class="project-card">
     <div class="project-card__top">
       <div class="project-card__media">
-        <img class="project-card__image" src="images/Projects/Pro_4.png" alt="Pro_4">
+        <img class="project-card__image" src="Images/Projects/Pro_4.png" alt="Pro_4">
       </div>
       <div class="project-card__content">
         <strong>基于多模态大模型与多传感器信息融合的智能机器人</strong><br>
@@ -241,7 +241,7 @@
   <div class="project-card">
     <div class="project-card__top">
       <div class="project-card__media">
-        <img class="project-card__image" src="images/Projects/Pro_5.png" alt="Pro_5">
+        <img class="project-card__image" src="Images/Projects/Pro_5.png" alt="Pro_5">
       </div>
       <div class="project-card__content">
         <strong>基于时序行为模式与多阶段数据融合的智能图书推荐系统</strong><br>
@@ -261,7 +261,7 @@
   <div class="project-card">
     <div class="project-card__top">
       <div class="project-card__media">
-        <img class="project-card__image" src="images/Projects/Pro_6.png" alt="Pro_6">
+        <img class="project-card__image" src="Images/Projects/Pro_6.png" alt="Pro_6">
       </div>
       <div class="project-card__content">
         <strong>LSAR：面向大规模SAR图像的有向目标检测框架</strong><br>

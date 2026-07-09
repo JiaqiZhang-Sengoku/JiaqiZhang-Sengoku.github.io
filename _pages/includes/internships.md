@@ -7,10 +7,10 @@
   <div class="internship-card">
     <div class="internship-logos" aria-label="Institution logos">
       <a href="https://www.tum.de/en/" aria-label="Technical University of Munich">
-        <img src="images/Logos/tum-icon.svg" alt="Technical University of Munich logo">
+        <img src="Images/Logos/tum-icon.svg" alt="Technical University of Munich logo">
       </a>
       <a href="https://kiinformatik.mri.tum.de/en/chair-health-informatics-chi" aria-label="Chair of Health Informatics">
-        <img src="images/Logos/chi-logo.svg" alt="Chair of Health Informatics logo">
+        <img src="Images/Logos/chi-logo.svg" alt="Chair of Health Informatics logo">
       </a>
     </div>
     <div class="internship-main">
