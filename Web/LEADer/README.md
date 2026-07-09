@@ -4,40 +4,40 @@ This folder contains the static project webpage for:
 
 **Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration**
 
-The webpage is built with plain HTML and CSS, with all visual assets stored locally under `figures/`.
+The webpage is built with plain HTML and CSS, with all visual assets stored locally under `Figures/`.
 
 ## Structure
 
 ```text
-LEADer/
+Web/LEADer/
 |-- index.html
 |-- styles.css
 |-- README.md
-`-- figures/
-    |-- input/
-    |-- others/
-    |-- ours/
+`-- Figures/
+    |-- Input/
+    |-- Others/
+    |-- Ours/
     |-- Figure3.png
     |-- Figure4.png
     |-- Figure5.png
     |-- Figure6.png
-    |-- paper_table_1_Table1.svg
-    |-- paper_table_2_Table2.svg
-    |-- paper_table_3_Table3.svg
-    |-- paper_table_4_Table4.svg
+    |-- PaperTable1.svg
+    |-- PaperTable2.svg
+    |-- PaperTable3.svg
+    |-- PaperTable4.svg
     `-- icon SVG files
 ```
 
 ## Usage
 
-Open `index.html` directly in a browser to view the webpage.
+The GitHub Pages URL is `/LEADer/`, while the source files stay organized under `Web/LEADer/`.
 
-No build step or local server is required.
+GitHub Pages/Jekyll publishes this page through the `permalink: /LEADer/` front matter in `index.html`.
 
 ## Content Notes
 
 - The hero section includes paper information, author list, affiliation, and project links.
-- The restoration demo uses image triplets from `figures/input/`, `figures/others/`, and `figures/ours/`.
+- The restoration demo uses image triplets from `Figures/Input/`, `Figures/Others/`, and `Figures/Ours/`.
 - Main paper figures and table SVGs are placed in the corresponding method, comparison, ablation, and memory sections.
 - Table SVGs have been cropped for webpage display, while formal captions are written in HTML.
 

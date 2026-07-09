@@ -1,3 +1,7 @@
+---
+permalink: /LEADer/
+layout: null
+---
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LEADer</title>
   <meta name="description" content="Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration.">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/Web/LEADer/styles.css">
 
 </head>
 <body>
@@ -32,19 +36,19 @@
 
           <div class="link-row" aria-label="Project links">
             <a class="pill pill-primary" href="/Paper/LEADer_Paper.pdf">
-              <img class="pill-icon" src="figures/paper.svg" alt="">
+              <img class="pill-icon" src="/Web/LEADer/Figures/Paper.svg" alt="">
               <span>Paper</span>
             </a>
             <a class="pill pill-secondary" href="#" title="Code link to be added">
-              <img class="pill-icon" src="figures/GitHub.svg" alt="">
+              <img class="pill-icon" src="/Web/LEADer/Figures/GitHub.svg" alt="">
               <span>Code</span>
             </a>
             <a class="pill pill-secondary" href="#" title="Poster link to be added">
-              <img class="pill-icon" src="figures/poster.svg" alt="">
+              <img class="pill-icon" src="/Web/LEADer/Figures/Poster.svg" alt="">
               <span>Poster</span>
             </a>
             <a class="pill pill-secondary" href="https://2026.acmmm.org/" target="_blank" rel="noreferrer">
-              <img class="pill-icon" src="figures/conference.svg" alt="">
+              <img class="pill-icon" src="/Web/LEADer/Figures/Conference.svg" alt="">
               <span>Conference</span>
             </a>
           </div>
@@ -56,21 +60,21 @@
         <article class="demo-stage">
           <span class="demo-label">Input</span>
           <div class="demo-image">
-            <img data-demo="input" src="figures/input/1.png" alt="Degraded input example">
+            <img data-demo="input" src="/Web/LEADer/Figures/Input/1.png" alt="Degraded input example">
           </div>
         </article>
 <article class="demo-stage">
           <span class="demo-label">Others</span>
           <div class="demo-image demo-transition demo-transition-middle">
-            <img data-demo="middle-from" src="figures/input/1.png" alt="Input before baseline restoration">
-            <img class="demo-reveal" data-demo="others" src="figures/others/1.png" alt="Restoration produced by another method">
+            <img data-demo="middle-from" src="/Web/LEADer/Figures/Input/1.png" alt="Input before baseline restoration">
+            <img class="demo-reveal" data-demo="others" src="/Web/LEADer/Figures/Others/1.png" alt="Restoration produced by another method">
           </div>
         </article>
 <article class="demo-stage">
           <span class="demo-label demo-label-ours">Ours</span>
           <div class="demo-image demo-transition demo-transition-final">
-            <img data-demo="final-from" src="figures/others/1.png" alt="Baseline restoration before LEADer refinement">
-            <img class="demo-reveal" data-demo="ours" src="figures/ours/1.png" alt="Restoration produced by LEADer">
+            <img data-demo="final-from" src="/Web/LEADer/Figures/Others/1.png" alt="Baseline restoration before LEADer refinement">
+            <img class="demo-reveal" data-demo="ours" src="/Web/LEADer/Figures/Ours/1.png" alt="Restoration produced by LEADer">
           </div>
         </article>
       </div>
@@ -106,7 +110,7 @@
         the spatial correction strength and the temporal sampling schedule.
       </p>
       <figure class="main-figure">
-        <img src="figures/Figure3.png" alt="Architecture of the LEADer framework.">
+        <img src="/Web/LEADer/Figures/Figure3.png" alt="Architecture of the LEADer framework.">
         <figcaption>
           Figure 1. Architecture of LEADer. Local epistemic uncertainty guides reverse sampling in both spatial and
           temporal dimensions: UCPM adaptively modulates prior constraints, while SATP selects adaptive step sizes to
@@ -155,14 +159,14 @@
     
 
       <figure class="figure4-wide">
-        <img src="figures/Figure4.png" alt="Qualitative comparisons on five restoration tasks.">
+        <img src="/Web/LEADer/Figures/Figure4.png" alt="Qualitative comparisons on five restoration tasks.">
         <figcaption>
           Figure 2. Qualitative comparisons on five image restoration tasks.
         </figcaption>
       </figure>
 
       <figure class="table-figure table-wide">
-        <img src="figures/paper_table_1_Table1.svg" alt="Quantitative results across five image restoration tasks on CelebA-HQ 1K and ImageNet 1K.">
+        <img src="/Web/LEADer/Figures/PaperTable1.svg" alt="Quantitative results across five image restoration tasks on CelebA-HQ 1K and ImageNet 1K.">
         <figcaption>
           Table 1. Quantitative results for five image restoration tasks on CelebA-HQ 1K (top) and ImageNet 1K
           (bottom). The average change reports performance improvements and time reductions over each baseline.
@@ -182,7 +186,7 @@
         denoising updates needed for local texture recovery.
       </p>
       <figure>
-        <img src="figures/Figure5.png" alt="Comparison between DDNM and LEADer at different NFEs.">
+        <img src="/Web/LEADer/Figures/Figure5.png" alt="Comparison between DDNM and LEADer at different NFEs.">
         <figcaption>
           Figure 3. Comparison of restored states between DDNM and LEADer at different NFEs.
         </figcaption>
@@ -201,7 +205,7 @@
         uncertainty trace. When used together, the improved sampling stability from UCPM makes trajectory pruning safer.
       </p>
       <figure class="table-figure">
-        <img src="figures/paper_table_2_Table2.svg" alt="Ablation study results for UCPM and SATP.">
+        <img src="/Web/LEADer/Figures/PaperTable2.svg" alt="Ablation study results for UCPM and SATP.">
         <figcaption>
           Table 2. Ablation study of the UCPM and SATP components on three representative restoration tasks.
         </figcaption>
@@ -215,10 +219,10 @@
       <figure class="paired-figure">
         <div class="paired-media">
           <div class="paired-panel paired-table">
-            <img src="figures/paper_table_3_Table3.svg" alt="Hyperparameter sensitivity analysis for the information-loss budget.">
+            <img src="/Web/LEADer/Figures/PaperTable3.svg" alt="Hyperparameter sensitivity analysis for the information-loss budget.">
           </div>
           <div class="paired-panel paired-image">
-            <img src="figures/Figure6.png" alt="Ablation study on different sampling steps.">
+            <img src="/Web/LEADer/Figures/Figure6.png" alt="Ablation study on different sampling steps.">
           </div>
         </div>
         <figcaption>
@@ -236,7 +240,7 @@
         uncertainty-guided modules improve quality and efficiency without materially increasing deployment cost.
       </p>
       <figure class="table-figure table4-large">
-        <img src="figures/paper_table_4_Table4.svg" alt="GPU memory consumption comparison across five restoration tasks.">
+        <img src="/Web/LEADer/Figures/PaperTable4.svg" alt="GPU memory consumption comparison across five restoration tasks.">
         <figcaption>
           Table 4. Memory consumption comparison across five image restoration tasks.
         </figcaption>
@@ -266,11 +270,11 @@
       const counter = document.getElementById('demo-index');
 
       function showExample(index) {
-        images.input.src = `figures/input/${index}.png`;
-        images.middleFrom.src = `figures/input/${index}.png`;
-        images.others.src = `figures/others/${index}.png`;
-        images.finalFrom.src = `figures/others/${index}.png`;
-        images.ours.src = `figures/ours/${index}.png`;
+        images.input.src = `/Web/LEADer/Figures/Input/${index}.png`;
+        images.middleFrom.src = `/Web/LEADer/Figures/Input/${index}.png`;
+        images.others.src = `/Web/LEADer/Figures/Others/${index}.png`;
+        images.finalFrom.src = `/Web/LEADer/Figures/Others/${index}.png`;
+        images.ours.src = `/Web/LEADer/Figures/Ours/${index}.png`;
         counter.textContent = index;
 
         document.querySelectorAll('.demo-reveal').forEach(function (image) {
