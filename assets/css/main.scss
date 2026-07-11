@@ -936,6 +936,18 @@ body > #main > .sidebar.sticky {
     background: linear-gradient(180deg, var(--accent), var(--accent-sky), var(--accent-warm));
 }
 
+.section-heading--publications {
+    align-items: flex-end !important;
+}
+
+.section-heading--publications::after {
+    content: none !important;
+}
+
+.section-heading--publications .section-heading__title {
+    flex: 0 0 auto;
+}
+
 .section-heading--news::before {
     background: linear-gradient(180deg, var(--accent-teal), var(--accent-sky), var(--accent-warm));
 }
@@ -969,11 +981,15 @@ body > #main > .sidebar.sticky {
 }
 
 .publications-full-list {
-    margin: -8px 0 10px !important;
+    flex: 0 1 auto;
+    margin: 0 0 2px auto !important;
+    max-width: calc(100% - 300px);
     color: var(--muted-color) !important;
     font-size: 0.92rem !important;
     font-weight: 700;
-    line-height: 1.35 !important;
+    line-height: 1.25 !important;
+    text-align: right;
+    white-space: nowrap;
 }
 
 .publications-full-list a {
@@ -1003,6 +1019,11 @@ body > #main > .sidebar.sticky {
     font-weight: 700;
     line-height: 1.1 !important;
     box-sizing: border-box;
+    width: 100%;
+}
+
+.publications-panel {
+    width: 100%;
 }
 
 .publications-note span {
@@ -2242,6 +2263,36 @@ body > #main > .sidebar.sticky {
 
     .section-heading__title {
         flex-wrap: wrap;
+    }
+
+    .section-heading--publications {
+        display: grid !important;
+        grid-template-columns: 6px minmax(0, 1fr);
+        column-gap: 14px;
+        row-gap: 7px;
+        align-items: end !important;
+    }
+
+    .section-heading--publications::before {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .section-heading--publications .section-heading__title {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .section-heading--publications .publications-full-list {
+        grid-column: 2;
+        grid-row: 2;
+        justify-self: end;
+        max-width: 100%;
+        margin: 0 !important;
+        font-size: 0.86rem !important;
+        line-height: 1.30 !important;
+        text-align: right;
+        white-space: normal;
     }
 
     .section-heading::after {
