@@ -7,6 +7,18 @@
 
 <div class="publications-panel">
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2026</div><img loading="lazy" decoding="async" src='Images/Publication/LEADer.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration](/LEADer/)
+<br>
+ACM International Conference on Multimedia (ACM MM 2026) **Accepted**
+<br>
+**Jiaqi Zhang**<sup>*</sup>, Zheng Pang<sup>*</sup>, Rongrong Gao, Qiyuan Zhang, Yang Yang<sup>&dagger;</sup>
+<br>
+<div class="paper-links"><a href="/Paper/LEADer_Paper.pdf">Paper</a><span class="paper-link-separator" aria-hidden="true">|</span><a href="/LEADer/">Web</a><span class="paper-link-separator" aria-hidden="true">|</span><a href="https://github.com/JiaqiZhang-Sengoku/LEADer">Code</a></div>
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='Images/Publication/Agent.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents]()
@@ -73,18 +85,6 @@ IEEE Transactions on Image Processing (TIP) **Under Review**
 <br>
 Yang Yang <sup>†</sup> <sup>*</sup>, Pengyu Li <sup>*</sup>, **Jiaqi Zhang**, Lanling Zeng
 <br>
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='Images/Publication/LEADer.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration](/LEADer/)
-<br>
-ACM International Conference on Multimedia (ACM MM 2026) **Under Review**
-<br>
-**Jiaqi Zhang**(First Author), Anonymous
-<br>
-<div class="paper-links"><a href="/Paper/LEADer_Paper.pdf">Paper</a><span class="paper-link-separator" aria-hidden="true">|</span><a href="/LEADer/">Web</a></div>
 </div>
 </div>
 
