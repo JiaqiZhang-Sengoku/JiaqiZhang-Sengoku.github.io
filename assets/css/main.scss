@@ -1366,30 +1366,6 @@ body > #main > .sidebar.sticky {
     z-index: 1;
 }
 
-.paper-box::before {
-    content: "";
-    position: absolute;
-    inset: 0 auto 0 0;
-    width: 4px;
-    border-radius: 7px 0 0 7px;
-    background: linear-gradient(180deg, var(--accent), var(--accent-plum), var(--accent-warm));
-    opacity: 0.56;
-    z-index: 8;
-    transition: opacity 0.22s ease;
-}
-
-.paper-box:hover::before {
-    opacity: 0.92;
-}
-
-.paper-box:nth-child(3n + 2)::before {
-    background: linear-gradient(180deg, var(--accent-teal), var(--accent-plum));
-}
-
-.paper-box:nth-child(3n)::before {
-    background: linear-gradient(180deg, var(--accent-warm), var(--accent-sky));
-}
-
 .paper-box {
     --paper-box-surface: linear-gradient(180deg, #ffffff 0%, #fbfcfe 100%);
     background:
