@@ -908,19 +908,15 @@ body > #main > .sidebar.sticky {
     align-items: center !important;
     gap: 14px;
     margin: 31px 0 15px !important;
-    padding: 0 0 10px !important;
+    padding: 0 !important;
     border: 0 !important;
-    border-bottom: 1px solid rgba(227, 235, 245, 0.96) !important;
     border-radius: 0 !important;
     background: transparent !important;
 }
 
 .section-heading::after {
-    content: "";
-    flex: 1 1 auto;
-    height: 1px;
-    min-width: 28px;
-    background: linear-gradient(90deg, rgba(210, 222, 237, 0.95), transparent);
+    content: none !important;
+    display: none !important;
 }
 
 .section-heading::before {
@@ -938,10 +934,6 @@ body > #main > .sidebar.sticky {
 
 .section-heading--publications {
     align-items: flex-end !important;
-}
-
-.section-heading--publications::after {
-    content: none !important;
 }
 
 .section-heading--publications .section-heading__title {
@@ -2293,10 +2285,6 @@ body > #main > .sidebar.sticky {
         line-height: 1.30 !important;
         text-align: right;
         white-space: normal;
-    }
-
-    .section-heading::after {
-        min-width: 18px;
     }
 
     .publications-note {
