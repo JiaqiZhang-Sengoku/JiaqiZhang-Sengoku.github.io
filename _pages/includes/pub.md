@@ -1,7 +1,7 @@
 <span class='anchor' id='publications'></span>
 <div class="section-heading section-heading--publications">
   <h2 class="section-heading__title">Selected Publications</h2>
-  <p class="publications-full-list">(For the Full List, Please See <a href="https://scholar.google.com/citations?user=DZDZXtwAAAAJ&hl=en">Google Scholar</a>)</p>
+  <p class="publications-full-list">(For the Full List, Please See <a href="https://scholar.google.com/citations?user=WylY07wAAAAJ&hl=en">Google Scholar</a>)</p>
 </div>
 <p class="publications-note"><span><sup>†</sup> Corresponding Author</span><span><sup>*</sup> Equal Contribution</span></p>
 
