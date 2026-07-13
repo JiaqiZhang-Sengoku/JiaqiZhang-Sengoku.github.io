@@ -33,10 +33,11 @@
     <div class="paper-title">From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents</div>
     <div class="paper-venue">Transactions on Machine Learning Research (TMLR)<strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors">Yiqi Wang, <strong>Jiaqi Zhang</strong>, Zhangkai Wu, Taotao Cai, Zirui Liu, Qingqiang Sun, Zequn Sun, Manqing Dong, Mingkai Zheng, Yu-Xuan Qiu, Xuefei Yin, Yanming Zhu</div>
+    <div class="paper-links"><a href="https://arxiv.org/abs/2606.04990">Paper</a></div>
   </div>
 </div>
 
-<div class="paper-box">
+<!-- <div class="paper-box">
   <div class="paper-box-image">
     <div>
       <div class="badge">Preprint</div>
@@ -76,7 +77,7 @@
     <div class="paper-venue">Empirical Methods in Natural Language Processing (EMNLP)<strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Zheng Pang, Mengting Li, Yiqi Wang, Guangyuan Dong, Chao Xue, Yusen Wu, Zihao Li, Huy Phan, Sicheng Zhao, Björn Schuller, Jiachen Luo<sup>†</sup></div>
   </div>
-</div>
+</div> -->
 
 <div class="paper-box">
   <div class="paper-box-image">
@@ -93,7 +94,7 @@
   </div>
 </div>
 
-<div class="paper-box">
+<!-- <div class="paper-box">
   <div class="paper-box-image">
     <div>
       <div class="badge">Preprint</div>
@@ -105,9 +106,9 @@
     <div class="paper-venue">IEEE Transactions on Image Processing (TIP)<strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors">Yang Yang<sup>†</sup><sup>*</sup>, Pengyu Li<sup>*</sup>, <strong>Jiaqi Zhang</strong>, Lanling Zeng</div>
   </div>
-</div>
+</div> -->
 
-<div class="paper-box">
+<!-- <div class="paper-box">
   <div class="paper-box-image">
     <div>
       <div class="badge">Preprint</div>
@@ -120,7 +121,7 @@
     <div class="paper-authors"><strong>Jiaqi Zhang</strong> (First Author), Anonymous</div>
     <div class="paper-links"><a href="/Paper/DynKD_Paper.pdf">Paper</a></div>
   </div>
-</div>
+</div> -->
 
 
 
@@ -142,7 +143,7 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
 
 
 <!-- 2 -->
-<div class="paper-box">
+<!-- <div class="paper-box">
   <div class="paper-box-image">
     <div>
       <div class="badge">Preprint</div>
@@ -155,7 +156,7 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
     <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Guo Yang, Zheng Pang, Yao Zhu, Bingbing Gu, Yang Yang<sup>†</sup> (Corresponding Author)</div>
     <div class="paper-links"><a href="https://github.com/JiaqiZhang-Sengoku/FDGR">Code</a></div>
   </div>
-</div>
+</div> -->
 
 <!-- 1 -->
 <div class="paper-box">
@@ -237,5 +238,4 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
 <!-- # 🎖 Academical Services
 
 Reviewer of ACM Transactions on Knowledge Discovery from Data (TKDD), ICASSP 2026. -->
-
 
