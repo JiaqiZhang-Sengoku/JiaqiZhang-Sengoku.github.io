@@ -204,13 +204,6 @@ h1 {
   flex: 0 0 auto;
 }
 
-.pill-primary {
-  border-color: rgba(18, 47, 8, 0.62);
-  background: linear-gradient(180deg, #24401a 0%, #122F08 100%);
-  box-shadow: 0 14px 36px rgba(18, 47, 8, 0.28);
-  color: #ffffff;
-}
-
 .pill:hover {
   transform: translateY(-2px);
   border-color: rgba(107, 99, 125, 0.28);
@@ -220,11 +213,6 @@ h1 {
   text-decoration: none;
 }
 
-.pill-primary:hover {
-  border-color: rgba(18, 47, 8, 0.72);
-  background: linear-gradient(180deg, #2b4d1f 0%, #122F08 100%);
-  color: #ffffff;
-}
 .restoration-demo {
   position: relative;
   z-index: 1;
