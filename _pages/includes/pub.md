@@ -11,7 +11,7 @@
   <div class="paper-box-image">
     <div>
       <div class="badge">ACM MM 2026</div>
-      <img loading="lazy" decoding="async" src="Images/Publication/LEADer.png" alt="Overview of the LEADer framework" width="3100" height="1771">
+      <img loading="lazy" decoding="async" src="Images/Publication/LEADer.png?v=20260714" alt="Overview of the LEADer framework" width="8268" height="4724">
     </div>
   </div>
   <div class="paper-box-text">
@@ -238,4 +238,3 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
 <!-- # 🎖 Academical Services
 
 Reviewer of ACM Transactions on Knowledge Discovery from Data (TKDD), ICASSP 2026. -->
-
