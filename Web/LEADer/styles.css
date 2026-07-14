@@ -270,94 +270,45 @@ h1 {
 }
 
 .demo-image {
-  --frame-rgb: 96, 112, 132;
-  --frame-gradient: linear-gradient(135deg, #f5f8fb 0%, #9fb3c8 34%, #e4ebf1 62%, #72869f 100%);
-  --frame-highlight: rgba(255, 255, 255, 0.70);
-  --frame-shadow: 0 18px 38px rgba(38, 50, 68, 0.12), 0 0 0 5px rgba(var(--frame-rgb), 0.045);
-  --frame-hover-shadow: 0 22px 44px rgba(38, 50, 68, 0.17), 0 0 0 6px rgba(var(--frame-rgb), 0.070);
+  --frame-color: #78899d;
+  --frame-shadow: rgba(54, 67, 84, 0.16);
+  --frame-hover-shadow: rgba(54, 67, 84, 0.22);
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
+  isolation: isolate;
   width: 100%;
   aspect-ratio: 1;
-  border-radius: 12px;
-  background: #ffffff;
-  box-shadow:
-    var(--frame-shadow),
-    inset 0 0 0 1px var(--frame-highlight);
-  transition: transform 0.22s ease, box-shadow 0.22s ease, filter 0.22s ease;
-}
-
-.demo-image::before {
-  position: absolute;
-  z-index: 4;
-  inset: 0;
-  padding: 4px;
-  border-radius: inherit;
-  content: "";
-  background: var(--frame-gradient);
-  -webkit-mask:
-    linear-gradient(#000 0 0) content-box,
-    linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-  mask:
-    linear-gradient(#000 0 0) content-box,
-    linear-gradient(#000 0 0);
-  mask-composite: exclude;
-  pointer-events: none;
-}
-
-.demo-image::after {
-  position: absolute;
-  z-index: 5;
-  inset: 0;
-  border-radius: inherit;
-  content: "";
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.36) 0%, rgba(255, 255, 255, 0.00) 24%),
-    linear-gradient(315deg, rgba(var(--frame-rgb), 0.18) 0%, rgba(var(--frame-rgb), 0.00) 30%);
-  box-shadow:
-    inset 0 0 0 1px rgba(255, 255, 255, 0.70),
-    inset 0 0 0 5px rgba(var(--frame-rgb), 0.070);
-  opacity: 0.56;
-  pointer-events: none;
-  transition: opacity 0.22s ease, transform 0.22s ease;
+  padding: 0;
+  border: 3px solid var(--frame-color);
+  border-radius: 10px;
+  background: var(--frame-color);
+  box-shadow: 0 12px 28px var(--frame-shadow);
+  line-height: 0;
+  transition: box-shadow 0.22s ease, filter 0.22s ease;
 }
 
 .demo-image-input {
-  --frame-rgb: 98, 115, 137;
-  --frame-gradient: linear-gradient(135deg, #f6f9fb 0%, #91a7bd 36%, #dce6ee 63%, #687e97 100%);
-  --frame-highlight: rgba(255, 255, 255, 0.72);
-  --frame-shadow: 0 18px 38px rgba(96, 112, 132, 0.17), 0 0 0 5px rgba(98, 115, 137, 0.050);
-  --frame-hover-shadow: 0 22px 46px rgba(96, 112, 132, 0.23), 0 0 0 6px rgba(98, 115, 137, 0.080);
+  --frame-color: #8091a5;
+  --frame-shadow: rgba(72, 88, 108, 0.18);
+  --frame-hover-shadow: rgba(72, 88, 108, 0.24);
 }
 
 .demo-image-baseline {
-  --frame-rgb: 45, 52, 65;
-  --frame-gradient: linear-gradient(135deg, #d9dde4 0%, #2d3441 44%, #8f99a7 73%, #f5f4ef 100%);
-  --frame-highlight: rgba(255, 255, 255, 0.58);
-  --frame-shadow: 0 18px 38px rgba(41, 48, 61, 0.21), 0 0 0 5px rgba(45, 52, 65, 0.050);
-  --frame-hover-shadow: 0 22px 46px rgba(41, 48, 61, 0.28), 0 0 0 6px rgba(45, 52, 65, 0.075);
+  --frame-color: #303642;
+  --frame-shadow: rgba(36, 42, 52, 0.20);
+  --frame-hover-shadow: rgba(36, 42, 52, 0.27);
 }
 
 .demo-image-leader {
-  --frame-rgb: 18, 47, 8;
-  --frame-gradient: linear-gradient(135deg, #eef3e7 0%, #8da170 24%, #122F08 48%, #b78c42 72%, #f4f1e7 100%);
-  --frame-highlight: rgba(255, 255, 255, 0.72);
-  --frame-shadow: 0 18px 40px rgba(18, 47, 8, 0.28), 0 0 0 5px rgba(18, 47, 8, 0.080);
-  --frame-hover-shadow: 0 22px 50px rgba(18, 47, 8, 0.34), 0 0 0 6px rgba(18, 47, 8, 0.115);
+  --frame-color: #122F08;
+  --frame-shadow: rgba(18, 47, 8, 0.22);
+  --frame-hover-shadow: rgba(18, 47, 8, 0.30);
 }
 
 .demo-stage:hover .demo-image {
-  transform: translateY(-2px);
-  box-shadow:
-    var(--frame-hover-shadow),
-    inset 0 0 0 1px var(--frame-highlight);
+  box-shadow: 0 14px 32px var(--frame-hover-shadow);
   filter: saturate(1.03);
-}
-
-.demo-stage:hover .demo-image::after {
-  opacity: 0.76;
-  transform: translateX(2%);
 }
 
 .demo-image img {
@@ -367,6 +318,8 @@ h1 {
   inset: 0;
   width: 100%;
   height: 100%;
+  margin: 0;
+  border: 0;
   object-fit: cover;
 }
 
