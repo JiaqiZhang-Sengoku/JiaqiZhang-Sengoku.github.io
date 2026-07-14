@@ -113,37 +113,29 @@ layout: null
       <figure class="main-figure">
         <img src="/Web/LEADer/Figures/Figure3.png" alt="Architecture of the LEADer framework.">
         <figcaption>
-          Figure 1. Architecture of LEADer. Local epistemic uncertainty guides reverse sampling in both spatial and
-          temporal dimensions: UCPM adaptively modulates prior constraints, while SATP selects adaptive step sizes to
-          skip redundant iterations.
+          Figure 1. <strong>Architecture of LEADer.</strong> Existing DMIR methods rely on fixed step-by-step sampling
+          with uniform constraints, leading to computational redundancy and detail distortion in uncertain regions. To
+          address this, LEADer quantifies local epistemic uncertainty <strong><em>&Sigma;<sub>t</sub></em></strong> to
+          guide reverse sampling. Spatially, UCPM utilizes <strong><em>&Sigma;<sub>t</sub></em></strong> to adaptively
+          modulate prior constraints for strict data consistency. Temporally, SATP computes an adaptive step size
+          <em>&Delta;t<sub>Active</sub></em> based on the uncertainty trace to skip redundant iterations. As a result,
+          LEADer improves the restoration quality of various baselines while reducing sampling time.
         </figcaption>
       </figure>
       <ul>
         <li>
-          <strong>Local Epistemic Uncertainty Quantification:</strong>
-          LEADer estimates local uncertainty from the diffusion model's state, treating it as a spatiotemporal signal
-          that reflects where the restoration is confident and where ambiguity remains.
+          We propose a novel perspective on the diffusion reverse process based on local epistemic uncertainty, which
+          reveals the spatiotemporal limitations of the sampling strategies in existing DMIR methods.
         </li>
         <li>
-          <strong>Uncertainty-Calibrated Prior Modulation:</strong>
-          UCPM uses pixel-level uncertainty to adaptively modulate null-space prior strength, preserving details in
-          confident regions while suppressing artifacts in uncertain areas.
+          We propose an active diffusion sampling framework that proactively resolves local distortion and sampling
+          redundancy via uncertainty-calibrated prior modulation and state-aware trajectory pruning.
         </li>
         <li>
-          <strong>State-Aware Trajectory Pruning:</strong>
-          SATP uses the uncertainty trace to select adaptive step sizes, skipping redundant reverse-diffusion updates
-          while keeping the approximation error bounded.
-        </li>
-        <li>
-          <strong>Plug-and-play Integration:</strong>
-          The framework can be inserted into multiple zero-shot DMIR baselines without retraining the diffusion model.
+          Extensive experimental results demonstrate that our proposed plug-and-play framework effectively enhances
+          image restoration quality and performance while improving inference efficiency.
         </li>
       </ul>
-      <p>
-        This design keeps the strict data-consistency benefit of null-space projection while making the reverse process
-        more flexible. Confident regions avoid unnecessary over-regularization, ambiguous regions receive stronger prior
-        guidance, and stable trajectory segments can be skipped to save inference time.
-      </p>
     </section>
 
     <section id="comparison" class="section">
