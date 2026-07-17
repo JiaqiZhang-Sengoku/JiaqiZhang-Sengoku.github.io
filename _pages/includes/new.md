@@ -7,7 +7,7 @@
   <div class="update-card">
     <h3 class="update-date">July 2026</h3>
     <ul class="update-list">
-      <li><span class="update-day">Jul. 11:</span> My <span class="highlight-first-author">First Author</span> paper (Image Restoration with Diffusion Models) has been accepted to ACM MM 2026 (CCF A).</li>
+      <li><span class="update-day">Jul. 11:</span> We have 2 papers (Image Restoration with Diffusion Models + Cross-Subject IED Detection) accepted to ACM MM 2026 (CCF A). The Image Restoration with Diffusion Models paper is my <span class="highlight-first-author">first-author paper</span>.</li>
     </ul>
   </div>
   <div class="update-card">

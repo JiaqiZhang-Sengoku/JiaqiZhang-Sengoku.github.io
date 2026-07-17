@@ -25,6 +25,20 @@
 <div class="paper-box">
   <div class="paper-box-image">
     <div>
+      <div class="badge">ACM MM 2026</div>
+      <img loading="lazy" decoding="async" src="Images/Publication/JMTR.png?v=20260717" alt="Metric-aware test-time adaptation framework for cross-subject multimodal IED detection">
+    </div>
+  </div>
+  <div class="paper-box-text">
+    <div class="paper-title">Metric-Aware Test-Time Adaptation for Cross-Subject Multimodal Epileptiform-Discharge Detection</div>
+    <div class="paper-venue">ACM International Conference on Multimedia (ACM MM 2026)</div>
+    <div class="paper-authors">Yuting Yan, <strong>Jiaqi Zhang</strong>, Ziliang Wang</div>
+  </div>
+</div>
+
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div>
       <div class="badge">Preprint</div>
       <img loading="lazy" decoding="async" src="Images/Publication/Agent.png" alt="Evidence tracing and execution provenance framework for LLM agents" width="7712" height="5627">
     </div>
