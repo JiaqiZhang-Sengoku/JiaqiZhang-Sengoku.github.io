@@ -1773,10 +1773,11 @@ body > #main > .sidebar.sticky {
 }
 
 .badge--accepted {
-    border-right-color: rgba(82, 143, 105, 0.48) !important;
-    border-bottom-color: rgba(82, 143, 105, 0.48) !important;
-    background: rgba(239, 249, 242, 0.98) !important;
-    color: #3f7a5b !important;
+    border-right-color: rgba(47, 125, 88, 0.42) !important;
+    border-bottom-color: rgba(47, 125, 88, 0.42) !important;
+    background: rgba(237, 248, 241, 0.98) !important;
+    color: #2f7d58 !important;
+    box-shadow: 0 3px 10px rgba(47, 125, 88, 0.10) !important;
 }
 
 .paper-box-image:hover .badge {
