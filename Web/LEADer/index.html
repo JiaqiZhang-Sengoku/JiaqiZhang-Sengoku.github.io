@@ -9,7 +9,7 @@ layout: null
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LEADer</title>
   <meta name="description" content="Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration.">
-  <link rel="stylesheet" href="/Web/LEADer/styles.css?v=20260724-latest-figure-left-captions">
+  <link rel="stylesheet" href="/Web/LEADer/styles.css?v=20260724-latest-figure-left-captions-table">
 
 </head>
 <body>
@@ -189,13 +189,14 @@ layout: null
     <section id="ablation" class="section">
       <h2>Ablation Analysis</h2>
       <p class="section-copy">
-        Ablation studies indicate that UCPM improves restoration fidelity, SATP reduces redundant computation, and
-        their combination gives the strongest trade-off between quality and speed.
-      </p>
-      <p class="section-copy">
-        UCPM mainly contributes to perceptual and distortion improvements by making the prior modulation spatially
-        adaptive. SATP contributes to efficiency by adjusting the effective number of sampling steps according to the
-        uncertainty trace. When used together, the improved sampling stability from UCPM makes trajectory pruning safer.
+        As shown in <strong>Table 2</strong>, UCPM mainly improves restoration fidelity by making prior modulation
+        spatially adaptive, while SATP reduces redundant computation by adjusting the effective number of sampling
+        steps according to the uncertainty trace. Their combination gives the strongest trade-off between quality and
+        speed, as the improved sampling stability from UCPM makes trajectory pruning safer. The information-loss budget
+        controls the balance between restoration quality and acceleration: a conservative budget permits fewer skipped
+        steps, while an excessively large budget reduces runtime at the cost of noticeable quality degradation. The
+        corresponding sensitivity results in <strong>Table 3 and Figure 4</strong> show that 0.01 provides a balanced
+        default setting.
       </p>
       <figure class="table-figure">
         <img src="/Web/LEADer/Figures/PaperTable2.svg" alt="Ablation study results for UCPM and SATP.">
@@ -203,12 +204,6 @@ layout: null
           Table 2. Ablation study of the UCPM and SATP components on three representative restoration tasks.
         </figcaption>
       </figure>
-
-      <p class="section-copy">
-        The information-loss budget controls the balance between restoration quality and acceleration. A conservative
-        budget permits fewer skipped steps, while an excessively large budget reduces runtime at the cost of noticeable
-        quality degradation. The experiments use 0.01 as the default balanced setting.
-      </p>
       <figure class="paired-figure">
         <div class="paired-media">
           <div class="paired-panel paired-table">

@@ -492,7 +492,7 @@ img {
 }
 
 .table-wide {
-  width: min(980px, calc(100vw - 48px));
+  width: min(1080px, calc(100vw - 48px));
   margin-left: 50%;
   transform: translateX(-50%);
 }
