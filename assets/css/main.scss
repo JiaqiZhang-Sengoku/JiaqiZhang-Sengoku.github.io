@@ -1225,13 +1225,24 @@ body > #main > .sidebar.sticky {
     white-space: nowrap;
 }
 
+.update-item-layout {
+    display: grid;
+    grid-template-columns: max-content minmax(0, 1fr);
+    gap: 0 7px;
+    align-items: start;
+}
+
+.update-message {
+    min-width: 0;
+}
+
 .highlight-oral {
     color: #d62828 !important;
     font-weight: 800;
 }
 
 .highlight-conference {
-    color: #2f6f9f !important;
+    color: #4e769f !important;
     font-weight: 800;
 }
 
