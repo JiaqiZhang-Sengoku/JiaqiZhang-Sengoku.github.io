@@ -1247,7 +1247,7 @@ body > #main > .sidebar.sticky {
 }
 
 .highlight-conference {
-    color: #4e769f !important;
+    color: #c87636 !important;
     font-weight: 800;
 }
 
@@ -1634,9 +1634,18 @@ body > #main > .sidebar.sticky {
 }
 
 .paper-status--review {
-    border-color: rgba(143, 125, 208, 0.25);
-    background: #f6f3fb;
-    color: #6d5fa8 !important;
+    display: inline !important;
+    margin-left: 8px;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    color: #202938 !important;
+    box-shadow: none !important;
+    font-size: inherit;
+    font-weight: 800;
+    line-height: inherit;
+    vertical-align: baseline;
 }
 
 .paper-authors {
@@ -1749,11 +1758,11 @@ body > #main > .sidebar.sticky {
     margin: 0 !important;
     padding: 0 14px !important;
     border: 0 !important;
-    border-right: 1px solid rgba(174, 194, 232, 0.84) !important;
-    border-bottom: 1px solid rgba(174, 194, 232, 0.84) !important;
+    border-right: 1px solid rgba(159, 143, 205, 0.48) !important;
+    border-bottom: 1px solid rgba(159, 143, 205, 0.48) !important;
     border-radius: 0 0 7px 0 !important;
-    background: rgba(245, 249, 255, 0.97) !important;
-    color: var(--accent-strong) !important;
+    background: rgba(246, 242, 253, 0.98) !important;
+    color: #6f5d9e !important;
     box-shadow: 0 3px 9px rgba(42, 57, 88, 0.055) !important;
     font-size: 0.77rem !important;
     font-weight: 700;
@@ -1764,10 +1773,10 @@ body > #main > .sidebar.sticky {
 }
 
 .badge--accepted {
-    border-right-color: rgba(78, 118, 159, 0.38) !important;
-    border-bottom-color: rgba(78, 118, 159, 0.38) !important;
-    background: rgba(240, 247, 252, 0.98) !important;
-    color: #3f698b !important;
+    border-right-color: rgba(200, 118, 54, 0.48) !important;
+    border-bottom-color: rgba(200, 118, 54, 0.48) !important;
+    background: rgba(255, 245, 234, 0.98) !important;
+    color: #ad632b !important;
 }
 
 .paper-box-image:hover .badge {
