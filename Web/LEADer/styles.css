@@ -449,8 +449,15 @@ img {
   margin: 0 auto;
 }
 
+.main-figure {
+  width: min(960px, calc(100vw - 48px));
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
 .main-figure img {
-  max-width: 760px;
+  width: 100%;
+  max-width: 960px;
 }
 
 .figure4-wide {
