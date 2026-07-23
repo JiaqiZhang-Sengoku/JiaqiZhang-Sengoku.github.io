@@ -11,7 +11,7 @@
   <div class="paper-box-image">
     <div>
       <div class="badge badge--accepted">ACM MM 2026</div>
-      <img loading="lazy" decoding="async" src="Images/Publication/LEADer.png?v=20260714" alt="Overview of the LEADer framework" width="8268" height="4724">
+      <img loading="lazy" decoding="async" src="Images/Publication/LEADer.png?v=20260724" alt="Overview of the LEADer framework" width="8268" height="4724">
     </div>
   </div>
   <div class="paper-box-text">
