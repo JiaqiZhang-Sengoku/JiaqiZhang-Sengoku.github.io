@@ -204,6 +204,15 @@ h1 {
   flex: 0 0 auto;
 }
 
+.pill-icon-arxiv {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #a42a36;
+  font-size: 19px;
+  line-height: 1;
+}
+
 .pill:hover {
   transform: translateY(-2px);
   border-color: rgba(107, 99, 125, 0.28);
