@@ -10,7 +10,7 @@
 <div class="paper-box">
   <div class="paper-box-image">
     <div>
-      <div class="badge">ACM MM 2026</div>
+      <div class="badge badge--accepted">ACM MM 2026</div>
       <img loading="lazy" decoding="async" src="Images/Publication/LEADer.png?v=20260714" alt="Overview of the LEADer framework" width="8268" height="4724">
     </div>
   </div>
@@ -25,7 +25,7 @@
 <div class="paper-box">
   <div class="paper-box-image">
     <div>
-      <div class="badge">ACM MM 2026</div>
+      <div class="badge badge--accepted">ACM MM 2026</div>
       <img loading="lazy" decoding="async" src="Images/Publication/JMTR.png?v=20260717" alt="Metric-aware test-time adaptation framework for cross-subject multimodal IED detection">
     </div>
   </div>

@@ -1751,11 +1751,11 @@ body > #main > .sidebar.sticky {
     transition: opacity 0.16s ease, visibility 0.16s ease;
 }
 
-.paper-box:first-child .badge {
-    border-right-color: rgba(91, 157, 126, 0.36) !important;
-    border-bottom-color: rgba(91, 157, 126, 0.36) !important;
-    background: rgba(240, 249, 244, 0.97) !important;
-    color: #39765b !important;
+.badge--accepted {
+    border-right-color: rgba(78, 118, 159, 0.38) !important;
+    border-bottom-color: rgba(78, 118, 159, 0.38) !important;
+    background: rgba(240, 247, 252, 0.98) !important;
+    color: #3f698b !important;
 }
 
 .paper-box-image:hover .badge {
