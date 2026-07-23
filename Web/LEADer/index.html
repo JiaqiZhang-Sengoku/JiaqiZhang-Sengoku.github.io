@@ -9,7 +9,7 @@ layout: null
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LEADer</title>
   <meta name="description" content="Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration.">
-  <link rel="stylesheet" href="/Web/LEADer/styles.css?v=20260724-latest-figure-left-captions-table">
+  <link rel="stylesheet" href="/Web/LEADer/styles.css?v=20260724-table-bibtex-copy">
 
 </head>
 <body>
@@ -21,7 +21,7 @@ layout: null
             <span class="publication-title-line">Local Epistemic Uncertainty Guided Active Sampling</span>
             <span class="publication-title-line">for Plug-and-play Diffusive Image Restoration</span>
           </h1>
-          <p class="conference">ACM MM 2026 Accepted</p>
+          <p class="conference">ACM MM 2026 Accepted!</p>
 
           <p class="authors">
             <a href="#">Jiaqi Zhang</a><sup>1,*</sup>,
@@ -142,12 +142,10 @@ layout: null
       <h2>Comparison Analysis</h2>
       <p class="section-copy">
         LEADer improves both visual quality and efficiency across restoration tasks, including super-resolution,
-        Gaussian deblurring, motion deblurring, and compressed sensing.
-      </p>
-      <p class="section-copy">
-        The comparison highlights the core benefit of uncertainty-guided restoration: baseline methods with fixed
-        sampling rules often lose local details or introduce artifacts under non-uniform degradations, while LEADer
-        adaptively allocates correction strength according to the current restoration difficulty.
+        Gaussian deblurring, motion deblurring, and compressed sensing. The comparison highlights the core benefit of
+        uncertainty-guided restoration: baseline methods with fixed sampling rules often lose local details or introduce
+        artifacts under non-uniform degradations, while LEADer adaptively allocates correction strength according to the
+        current restoration difficulty.
       </p>
     
 
@@ -171,12 +169,9 @@ layout: null
       <h2>Sampling Trajectory Analysis</h2>
       <p class="section-copy">
         Compared with fixed-step baselines, LEADer dynamically adjusts the sampling pace and converges to clearer local
-        structures at lower numbers of function evaluations.
-      </p>
-      <p class="section-copy">
-        The trajectory visualization shows that DDNM improves details gradually through dense and uniform updates. In
-        contrast, LEADer identifies stable states earlier and prunes redundant steps, while preserving the important
-        denoising updates needed for local texture recovery.
+        structures at lower numbers of function evaluations. The trajectory visualization shows that DDNM improves
+        details gradually through dense and uniform updates. In contrast, LEADer identifies stable states earlier and
+        prunes redundant steps, while preserving the important denoising updates needed for local texture recovery.
       </p>
       <figure class="trajectory-figure">
         <img src="/Web/LEADer/Figures/Figure5.png" alt="Comparison between DDNM and LEADer at different NFEs.">

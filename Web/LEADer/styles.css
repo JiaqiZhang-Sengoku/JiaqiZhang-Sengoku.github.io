@@ -533,14 +533,21 @@ img {
 }
 
 .table4-large {
-  width: min(200%, calc(100vw - 48px));
-  margin-left: 50%;
-  transform: translateX(-50%);
+  width: min(680px, calc(100vw - 48px));
+  margin: 18px auto 34px;
+  text-align: center;
 }
 
 .table4-large img {
   width: 100%;
   max-width: 620px;
+  margin: 0 auto;
+}
+
+.table4-large figcaption {
+  max-width: 100%;
+  margin: 12px auto 0;
+  text-align: center;
 }
 
 figcaption {
@@ -558,10 +565,10 @@ figcaption {
   overflow-x: auto;
   border: 1px solid var(--border);
   border-radius: 4px;
-  background: var(--code-bg);
+  background: #ffffff;
   color: #222222;
-  font-size: 13px;
-  line-height: 1.45;
+  font-size: 15px;
+  line-height: 1.55;
   text-align: left;
 }
 
@@ -643,6 +650,10 @@ code {
 
   .table4-large {
     width: min(100%, calc(100vw - 48px));
+  }
+
+  pre {
+    font-size: 14px;
   }
 
   .pill {
