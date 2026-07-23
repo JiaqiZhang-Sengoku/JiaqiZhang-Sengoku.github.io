@@ -27,7 +27,7 @@
   <div class="update-card">
     <h3 class="update-date">April 2026</h3>
     <ul class="update-list">
-      <li><span class="update-day">Apr. 27:</span> We have 3 papers (Generalizable Medical Image Segmentation + Self-Correcting Video Segmentation + Risk-Aware USV Navigation) accepted to <span class="highlight-conference">ICIC 2026 <span class="highlight-oral">Oral</span> (CCF C).</span></li>
+      <li><span class="update-item-layout"><span class="update-day">Apr. 27:</span><span class="update-message">We have 3 papers (Generalizable Medical Image Segmentation + Self-Correcting Video Segmentation + Risk-Aware USV Navigation) accepted to <span class="highlight-conference">ICIC 2026 <span class="highlight-oral">Oral</span> (CCF C).</span><br>The Generalizable Medical Image Segmentation paper is my <span class="highlight-first-author">First Author</span> paper.</span></span></li>
     </ul>
   </div>
   <div class="update-card">
