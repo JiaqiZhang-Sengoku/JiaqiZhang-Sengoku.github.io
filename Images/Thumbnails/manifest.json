@@ -114,6 +114,14 @@
       "height": 1260
     },
     {
+      "source": "Images/Award/Guo_25.png",
+      "thumbnail": "Images/Thumbnails/Award/Guo_25-png.webp",
+      "sourceBytes": 4208116,
+      "thumbnailBytes": 43382,
+      "width": 900,
+      "height": 584
+    },
+    {
       "source": "Images/Award/Guo_3.jpg",
       "thumbnail": "Images/Thumbnails/Award/Guo_3-jpg.webp",
       "sourceBytes": 1202294,
