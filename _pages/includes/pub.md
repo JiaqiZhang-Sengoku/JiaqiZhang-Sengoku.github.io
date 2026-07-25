@@ -11,7 +11,7 @@
   <div class="paper-box-image">
     <div>
       <div class="badge badge--accepted">ACM MM 2026</div>
-      <img loading="lazy" decoding="async" src="Images/Publication/LEADer.png?v=20260724" alt="Overview of the LEADer framework" width="8268" height="4724">
+      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/LEADer-png.webp" alt="Overview of the LEADer framework" width="960" height="549" data-original-src="Images/Publication/LEADer.png">
     </div>
   </div>
   <div class="paper-box-text">
@@ -26,7 +26,7 @@
   <div class="paper-box-image">
     <div>
       <div class="badge badge--accepted">ACM MM 2026</div>
-      <img loading="lazy" decoding="async" src="Images/Publication/JMTR.png?v=20260717" alt="Metric-aware test-time adaptation framework for cross-subject multimodal IED detection">
+      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/JMTR-png.webp" alt="Metric-aware test-time adaptation framework for cross-subject multimodal IED detection" data-original-src="Images/Publication/JMTR.png" width="960" height="493">
     </div>
   </div>
   <div class="paper-box-text">
@@ -40,7 +40,7 @@
   <div class="paper-box-image">
     <div>
       <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Publication/Agent.png" alt="Evidence tracing and execution provenance framework for LLM agents" width="7712" height="5627">
+      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/Agent-png.webp" alt="Evidence tracing and execution provenance framework for LLM agents" width="877" height="640" data-original-src="Images/Publication/Agent.png">
     </div>
   </div>
   <div class="paper-box-text">
@@ -97,7 +97,7 @@
   <div class="paper-box-image">
     <div>
       <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Publication/OrthoSeg.png" alt="Overview of the OrthoSeg framework" width="6926" height="3713">
+      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/OrthoSeg-png.webp" alt="Overview of the OrthoSeg framework" width="960" height="515" data-original-src="Images/Publication/OrthoSeg.png">
     </div>
   </div>
   <div class="paper-box-text">
@@ -177,7 +177,7 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
   <div class="paper-box-image">
     <div>
       <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Publication/DDGF.png" alt="Overview of the DDGF medical image super-resolution framework" width="1842" height="895">
+      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/DDGF-png.webp" alt="Overview of the DDGF medical image super-resolution framework" width="960" height="466" data-original-src="Images/Publication/DDGF.png">
     </div>
   </div>
   <div class="paper-box-text">

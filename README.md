@@ -29,3 +29,21 @@ bash run_server.sh
 ```
 
 The local site will be available at `http://127.0.0.1:4000`.
+
+## Homepage Image Thumbnails
+
+The homepage loads generated WebP thumbnails while keeping the original images in place.
+Use Node.js 20.9 or newer. After adding or replacing a homepage image, run:
+
+```bash
+npm install
+npm run thumbnails
+```
+
+The command scans the active sections included by `_pages/about.md`, writes thumbnails
+under `Images/Thumbnails/`, and updates active image tags with lazy loading, asynchronous
+decoding, and intrinsic dimensions. Validate the thumbnail references with:
+
+```bash
+npm run thumbnails:check
+```

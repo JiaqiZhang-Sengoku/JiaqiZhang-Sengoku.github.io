@@ -1,0 +1,14 @@
+{
+  "name": "jiaqi-zhang-academic-homepage",
+  "private": true,
+  "engines": {
+    "node": ">=20.9"
+  },
+  "scripts": {
+    "thumbnails": "node scripts/generate-homepage-thumbnails.mjs --rewrite",
+    "thumbnails:check": "node scripts/generate-homepage-thumbnails.mjs --check"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.3"
+  }
+}
