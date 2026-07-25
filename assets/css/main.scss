@@ -998,18 +998,18 @@ body > #main > .sidebar.sticky {
 .publications-note {
     display: inline-flex;
     align-items: center;
-    gap: 18px;
+    gap: 0;
     flex-wrap: wrap;
-    min-height: 36px;
+    min-height: 24px;
     margin: -2px 0 16px !important;
     padding: 0 !important;
     border: 0;
     border-radius: 0;
     background: transparent;
-    color: var(--muted-color) !important;
-    font-size: 1rem !important;
-    font-weight: 700;
-    line-height: 1.1 !important;
+    color: #151515 !important;
+    font-size: 0.94rem !important;
+    font-weight: 600;
+    line-height: 1.35 !important;
     box-sizing: border-box;
     width: 100%;
 }
@@ -1022,30 +1022,37 @@ body > #main > .sidebar.sticky {
     position: relative;
     display: inline-flex;
     align-items: center;
-    height: 36px;
-    min-height: 36px;
-    padding: 0 13px;
-    border: 1px solid rgba(204, 218, 235, 0.94);
-    border-radius: 6px;
-    background: linear-gradient(180deg, #ffffff 0%, #f6f9fd 100%);
-    box-shadow: 0 3px 9px rgba(42, 57, 88, 0.045);
-    line-height: 1;
+    height: auto;
+    min-height: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    color: #151515 !important;
+    line-height: inherit;
     white-space: nowrap;
 }
 
 .publications-note span + span {
-    margin-left: 0;
+    margin-left: 12px;
+    padding-left: 14px;
 }
 
 .publications-note span + span::before {
     content: "|";
     position: absolute;
     top: 50%;
-    left: -11px;
+    left: 0;
     transform: translateY(-50%);
-    color: rgba(116, 130, 151, 0.66);
-    font-weight: 700;
+    color: #151515;
+    font-weight: 500;
     line-height: 1;
+}
+
+.publications-note sup {
+    color: #151515 !important;
+    font-weight: 700;
 }
 
 .updates-panel,
@@ -1618,6 +1625,15 @@ body > #main > .sidebar.sticky {
     line-height: 1.42;
 }
 
+.paper-venue--accepted {
+    color: #2e5b3e !important;
+    font-weight: 700;
+}
+
+.paper-venue--review {
+    color: #151515 !important;
+}
+
 .paper-status {
     display: inline-flex;
     align-items: center;
@@ -1646,6 +1662,11 @@ body > #main > .sidebar.sticky {
     font-weight: 800;
     line-height: inherit;
     vertical-align: baseline;
+}
+
+.paper-venue--review .paper-status--review {
+    margin-left: 0;
+    color: #151515 !important;
 }
 
 .paper-authors {
@@ -1773,11 +1794,11 @@ body > #main > .sidebar.sticky {
 }
 
 .badge--accepted {
-    border-right-color: rgba(47, 125, 88, 0.42) !important;
-    border-bottom-color: rgba(47, 125, 88, 0.42) !important;
-    background: rgba(237, 248, 241, 0.98) !important;
-    color: #2f7d58 !important;
-    box-shadow: 0 3px 10px rgba(47, 125, 88, 0.10) !important;
+    border-right-color: rgba(46, 91, 62, 0.42) !important;
+    border-bottom-color: rgba(46, 91, 62, 0.42) !important;
+    background: rgba(239, 246, 241, 0.98) !important;
+    color: #2e5b3e !important;
+    box-shadow: 0 3px 10px rgba(46, 91, 62, 0.10) !important;
 }
 
 .paper-box-image:hover .badge {
@@ -2306,21 +2327,23 @@ body > #main > .sidebar.sticky {
     }
 
     .publications-note {
-        gap: 9px !important;
+        gap: 0 !important;
     }
 
     .publications-note span {
-        height: 34px;
-        min-height: 34px;
-        padding: 0 10px;
+        height: auto;
+        min-height: 0;
+        padding: 0;
     }
 
     .publications-note span + span {
-        margin-left: 0;
+        margin-left: 10px;
+        padding-left: 12px;
     }
 
     .publications-note span + span::before {
-        content: none;
+        content: "|";
+        left: 0;
     }
 
     .updates-panel {

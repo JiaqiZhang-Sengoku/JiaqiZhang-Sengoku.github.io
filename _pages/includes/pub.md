@@ -16,7 +16,7 @@
   </div>
   <div class="paper-box-text">
     <a class="paper-title" href="/LEADer/">Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration</a>
-    <div class="paper-venue">ACM International Conference on Multimedia (ACM MM 2026)</div>
+    <div class="paper-venue paper-venue--accepted">ACM International Conference on Multimedia (ACM MM 2026)</div>
     <div class="paper-authors"><strong>Jiaqi Zhang</strong><sup>*</sup>, Zheng Pang<sup>*</sup>, Rongrong Gao, Qiyuan Zhang, Yang Yang<sup>&dagger;</sup></div>
     <div class="paper-links"><a href="/Paper/LEADer_Paper.pdf">Paper</a><span class="paper-link-separator" aria-hidden="true">|</span><a href="/LEADer/">Web</a><span class="paper-link-separator" aria-hidden="true">|</span><a href="https://github.com/JiaqiZhang-Sengoku/LEADer">Code</a></div>
   </div>
@@ -31,7 +31,7 @@
   </div>
   <div class="paper-box-text">
     <div class="paper-title">Metric-Aware Test-Time Adaptation for Cross-Subject Multimodal Epileptiform-Discharge Detection</div>
-    <div class="paper-venue">ACM International Conference on Multimedia (ACM MM 2026)</div>
+    <div class="paper-venue paper-venue--accepted">ACM International Conference on Multimedia (ACM MM 2026)</div>
     <div class="paper-authors">Yuting Yan, <strong>Jiaqi Zhang</strong>, Ziliang Wang</div>
   </div>
 </div>
@@ -45,7 +45,7 @@
   </div>
   <div class="paper-box-text">
     <div class="paper-title">From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents</div>
-    <div class="paper-venue">Transactions on Machine Learning Research (TMLR)<strong class="paper-status paper-status--review">Under Review</strong></div>
+    <div class="paper-venue paper-venue--review"><!-- Transactions on Machine Learning Research (TMLR) --><strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors">Yiqi Wang, <strong>Jiaqi Zhang</strong>, Zhangkai Wu, Taotao Cai, Zirui Liu, Qingqiang Sun, Zequn Sun, Manqing Dong, Mingkai Zheng, Yu-Xuan Qiu, Xuefei Yin, Yanming Zhu</div>
     <div class="paper-links"><a href="https://arxiv.org/abs/2606.04990">Paper</a></div>
   </div>
@@ -102,7 +102,7 @@
   </div>
   <div class="paper-box-text">
     <div class="paper-title">Learning Orthogonal Disentanglement for Modality-Agnostic Medical Image Segmentation</div>
-    <div class="paper-venue">Journal of Biomedical and Health Informatics (JBHI)<strong class="paper-status paper-status--review">Under Review</strong></div>
+    <div class="paper-venue paper-venue--review"><!-- Journal of Biomedical and Health Informatics (JBHI) --><strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors">Kai Han, <strong>Jiaqi Zhang</strong>, Chongwen Lyu, Mengting Li, Jun Chen, Laihua Yang, Guangquan Zhou, Yang Chen, Zhe Liu<sup>†</sup></div>
     <div class="paper-links"><a href="/Paper/OrthoSeg_Paper.pdf">Paper</a></div>
   </div>
@@ -182,7 +182,7 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
   </div>
   <div class="paper-box-text">
     <div class="paper-title">Zero-Shot Medical Image Super-Resolution Using Denoising Diffusion Models with Gradient-Frequency Priors</div>
-    <div class="paper-venue">Biomedical Signal Processing and Control (BSPC)<strong class="paper-status paper-status--review">Under Review</strong></div>
+    <div class="paper-venue paper-venue--review"><!-- Biomedical Signal Processing and Control (BSPC) --><strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Guo Yang, Rongrong Gao, Yang Yang<sup>†</sup></div>
     <div class="paper-links"><a href="https://github.com/JiaqiZhang-Sengoku/DDGF">Code</a></div>
   </div>
