@@ -1769,25 +1769,25 @@ body > #main > .sidebar.sticky {
 
 .badge {
     position: absolute !important;
-    top: 10px;
-    left: 10px;
+    top: 0;
+    left: 0;
     z-index: 90;
     display: inline-flex !important;
     align-items: center;
     justify-content: center;
     width: auto;
-    height: 36px;
-    min-height: 36px;
+    height: 39px;
+    min-height: 39px;
     margin: 0 !important;
-    padding: 0 13px !important;
+    padding: 0 15px !important;
     border: 1px solid rgba(110, 85, 120, 0.34) !important;
-    border-radius: 5px !important;
+    border-radius: 6px 0 6px 0 !important;
     background: rgba(250, 247, 252, 0.97) !important;
     color: #6e5578 !important;
     box-shadow:
         0 4px 12px rgba(58, 45, 68, 0.10),
         inset 0 1px 0 rgba(255, 255, 255, 0.92) !important;
-    font-size: 0.86rem !important;
+    font-size: 0.94rem !important;
     font-weight: 800;
     letter-spacing: 0;
     line-height: 1.1 !important;
@@ -2496,12 +2496,12 @@ body > #main > .sidebar.sticky {
     }
 
     .badge {
-        top: 9px;
-        left: 9px;
-        height: 35px;
-        min-height: 35px;
-        padding: 0 12px !important;
-        font-size: 0.84rem !important;
+        top: 0;
+        left: 0;
+        height: 37px;
+        min-height: 37px;
+        padding: 0 13px !important;
+        font-size: 0.90rem !important;
     }
 
     .paper-box-image:hover img {
