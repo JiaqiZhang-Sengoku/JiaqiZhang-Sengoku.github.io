@@ -1412,31 +1412,10 @@ body > #main > .sidebar.sticky {
 
 .paper-box--review {
     order: 2;
-    grid-template-columns: minmax(0, 1fr) !important;
-    min-height: 0;
-    overflow: hidden !important;
-}
-
-.paper-box--review .paper-box-text {
-    justify-content: flex-start;
-    padding: 22px 24px !important;
 }
 
 .paper-box--review::after {
     display: none;
-}
-
-.paper-box--review .paper-title {
-    font-size: 1.10rem !important;
-    line-height: 1.36 !important;
-}
-
-.paper-box--review .paper-authors {
-    margin-top: 9px;
-}
-
-.paper-box--review .paper-venue {
-    margin-top: 8px;
 }
 
 .paper-box {
@@ -2498,10 +2477,6 @@ body > #main > .sidebar.sticky {
 
     .paper-box-text {
         padding: 21px 18px 21px !important;
-    }
-
-    .paper-box--review .paper-box-text {
-        padding: 19px 18px !important;
     }
 
     .paper-box::after {

@@ -442,6 +442,14 @@
       "height": 384
     },
     {
+      "source": "Images/Publication/A2L.png",
+      "thumbnail": "Images/Thumbnails/Publication/A2L-png.webp",
+      "sourceBytes": 1242139,
+      "thumbnailBytes": 54320,
+      "width": 540,
+      "height": 640
+    },
+    {
       "source": "Images/Publication/Agent.png",
       "thumbnail": "Images/Thumbnails/Publication/Agent-png.webp",
       "sourceBytes": 2926475,
@@ -450,12 +458,44 @@
       "height": 640
     },
     {
+      "source": "Images/Publication/D2IB.png",
+      "thumbnail": "Images/Thumbnails/Publication/D2IB-png.webp",
+      "sourceBytes": 2586691,
+      "thumbnailBytes": 59668,
+      "width": 960,
+      "height": 588
+    },
+    {
+      "source": "Images/Publication/DDDM.png",
+      "thumbnail": "Images/Thumbnails/Publication/DDDM-png.webp",
+      "sourceBytes": 1079466,
+      "thumbnailBytes": 87596,
+      "width": 960,
+      "height": 505
+    },
+    {
       "source": "Images/Publication/DDGF.png",
       "thumbnail": "Images/Thumbnails/Publication/DDGF-png.webp",
       "sourceBytes": 878256,
       "thumbnailBytes": 72054,
       "width": 960,
       "height": 466
+    },
+    {
+      "source": "Images/Publication/DynKD.png",
+      "thumbnail": "Images/Thumbnails/Publication/DynKD-png.webp",
+      "sourceBytes": 5836144,
+      "thumbnailBytes": 79836,
+      "width": 960,
+      "height": 578
+    },
+    {
+      "source": "Images/Publication/FDGR.png",
+      "thumbnail": "Images/Thumbnails/Publication/FDGR-png.webp",
+      "sourceBytes": 1476613,
+      "thumbnailBytes": 103778,
+      "width": 907,
+      "height": 640
     },
     {
       "source": "Images/Publication/JMTR.png",
@@ -480,6 +520,22 @@
       "thumbnailBytes": 76852,
       "width": 960,
       "height": 515
+    },
+    {
+      "source": "Images/Publication/PriMD.png",
+      "thumbnail": "Images/Thumbnails/Publication/PriMD-png.webp",
+      "sourceBytes": 3281017,
+      "thumbnailBytes": 72478,
+      "width": 960,
+      "height": 469
+    },
+    {
+      "source": "Images/Publication/ΠSkill.png",
+      "thumbnail": "Images/Thumbnails/Publication/ΠSkill-png.webp",
+      "sourceBytes": 7933371,
+      "thumbnailBytes": 75434,
+      "width": 960,
+      "height": 498
     }
   ]
 }
