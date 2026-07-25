@@ -10,6 +10,48 @@
 <div class="paper-box">
   <div class="paper-box-image">
     <div>
+      <div class="badge">Preprint</div>
+      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/ReBridge-Flow-png.webp" alt="Overview of the ReBridge-Flow framework" width="960" height="443" data-original-src="Images/Publication/ReBridge-Flow.png">
+    </div>
+  </div>
+  <div class="paper-box-text">
+    <div class="paper-title">ReBridge-Flow: Re-Coupling Posterior Bridges in Flow Matching for Image Restoration</div>
+    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
+    <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Yiqi Wang, Hongjie Wu, Bohan Guo, Xinan Wang, Zichen Luo, Zirui Liu, Zhi Chen, Mingkai Zheng</div>
+  </div>
+</div>
+
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div>
+      <div class="badge">Preprint</div>
+      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/TrajSPC-png.webp" alt="Overview of the TrajSPC framework" width="939" height="640" data-original-src="Images/Publication/TrajSPC.png">
+    </div>
+  </div>
+  <div class="paper-box-text">
+    <div class="paper-title">Recycling the Reverse Trajectory: Subspace Proximal Correction for Few-Step Diffusion Image Restoration</div>
+    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
+    <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Bohan Guo, Yiqi Wang, Zheng Pang, Xinan Wang, Zichen Luo, Zirui Liu, Zhi Chen, Hongjie Wu</div>
+  </div>
+</div>
+
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div>
+      <div class="badge">Preprint</div>
+      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/TopoCMamba-png.webp" alt="Overview of the TopoCMamba framework" width="960" height="508" data-original-src="Images/Publication/TopoCMamba.png">
+    </div>
+  </div>
+  <div class="paper-box-text">
+    <div class="paper-title">Reparameterizing Mamba via Frequency-Induced Topological Conduction for Medical Image Segmentation under Clinical Acquisition Heterogeneity</div>
+    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
+    <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Yuting Yan, Guo Yang, Ziqian Liu, Zirui Liu, Zhi Chen, Wencheng Yang, Mingkai Zheng</div>
+  </div>
+</div>
+
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div>
       <div class="badge badge--accepted">ACM MM 2026</div>
       <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/LEADer-png.webp" alt="Overview of the LEADer framework" width="960" height="549" data-original-src="Images/Publication/LEADer.png">
     </div>

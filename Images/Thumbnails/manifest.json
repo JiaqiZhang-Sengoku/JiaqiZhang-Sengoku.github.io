@@ -504,6 +504,30 @@
       "thumbnailBytes": 72478,
       "width": 960,
       "height": 469
+    },
+    {
+      "source": "Images/Publication/ReBridge-Flow.png",
+      "thumbnail": "Images/Thumbnails/Publication/ReBridge-Flow-png.webp",
+      "sourceBytes": 409517,
+      "thumbnailBytes": 52594,
+      "width": 960,
+      "height": 443
+    },
+    {
+      "source": "Images/Publication/TopoCMamba.png",
+      "thumbnail": "Images/Thumbnails/Publication/TopoCMamba-png.webp",
+      "sourceBytes": 548372,
+      "thumbnailBytes": 71858,
+      "width": 960,
+      "height": 508
+    },
+    {
+      "source": "Images/Publication/TrajSPC.png",
+      "thumbnail": "Images/Thumbnails/Publication/TrajSPC-png.webp",
+      "sourceBytes": 773844,
+      "thumbnailBytes": 51548,
+      "width": 939,
+      "height": 640
     }
   ]
 }
