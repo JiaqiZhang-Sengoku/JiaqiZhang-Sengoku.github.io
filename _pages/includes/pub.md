@@ -36,6 +36,7 @@
   </div>
 </div>
 
+<!-- Temporarily hidden: Rethinking Knowledge Distillation.
 <div class="paper-box">
   <div class="paper-box-image">
     <div>
@@ -64,14 +65,14 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
 <br>
 [Paper](/Paper/A2L_Paper.pdf)<br>
 </div>
-</div>
+</div> -->
 
 
 <div class="paper-box">
   <div class="paper-box-image">
     <div>
       <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Publication/D2IB.png" alt="Overview of the D-squared-IB framework" width="10060" height="6157">
+      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/D2IB-png.webp" alt="Overview of the D-squared-IB framework" width="960" height="588" data-original-src="Images/Publication/D2IB.png">
     </div>
   </div>
   <div class="paper-box-text">
@@ -85,7 +86,7 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
   <div class="paper-box-image">
     <div>
       <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Publication/PriMD.png" alt="Overview of the PriMD framework" width="9784" height="4780">
+      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/PriMD-png.webp" alt="Overview of the PriMD framework" width="960" height="469" data-original-src="Images/Publication/PriMD.png">
     </div>
   </div>
   <div class="paper-box-text">
@@ -93,7 +94,7 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
     <div class="paper-venue">Empirical Methods in Natural Language Processing (EMNLP)<strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Zheng Pang, Mengting Li, Yiqi Wang, Guangyuan Dong, Chao Xue, Yusen Wu, Zihao Li, Huy Phan, Sicheng Zhao, Björn Schuller, Jiachen Luo<sup>†</sup></div>
   </div>
-</div> -->
+</div>
 
 <div class="paper-box">
   <div class="paper-box-image">
@@ -123,6 +124,7 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
     <div class="paper-authors">Chenxi Qiu, Zichen Luo, Jiarui Fan, Keming Gu, <strong>Jiaqi Zhang</strong>, Chunbo Zhang, Peng Zhang<sup>†</sup></div>
   </div>
 </div>
+-->
 
 
 <div class="paper-box">
@@ -165,7 +167,7 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
   <div class="paper-box-image">
     <div>
       <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Publication/FDGR.png" alt="Overview of the FDGR image restoration framework" width="1606" height="1133">
+      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/FDGR-png.webp" alt="Overview of the FDGR image restoration framework" width="907" height="640" data-original-src="Images/Publication/FDGR.png">
     </div>
   </div>
   <div class="paper-box-text">
