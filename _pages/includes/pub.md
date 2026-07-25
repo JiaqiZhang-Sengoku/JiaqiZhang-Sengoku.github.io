@@ -7,8 +7,7 @@
 
 <div class="publications-panel">
 
-<!-- Accepted publications: newest first. -->
-<div class="paper-box paper-box--accepted">
+<div class="paper-box">
   <div class="paper-box-image">
     <div>
       <div class="badge badge--accepted">ACM MM 2026</div>
@@ -23,7 +22,7 @@
   </div>
 </div>
 
-<div class="paper-box paper-box--accepted">
+<div class="paper-box">
   <div class="paper-box-image">
     <div>
       <div class="badge badge--accepted">ACM MM 2026</div>
@@ -37,154 +36,159 @@
   </div>
 </div>
 
-<!-- Under-review manuscripts: newest first. -->
-<div class="paper-box paper-box--review">
+<div class="paper-box">
   <div class="paper-box-image">
     <div>
       <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/Agent-png.webp" alt="Evidence tracing and execution provenance framework for LLM agents" data-original-src="Images/Publication/Agent.png" width="877" height="640">
-    </div>
-  </div>
-  <div class="paper-box-text">
-    <div class="paper-title">From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents</div>
-    <div class="paper-authors">Yiqi Wang, <strong>Jiaqi Zhang</strong>, Zhangkai Wu, Taotao Cai, Zirui Liu, Qingqiang Sun, Zequn Sun, Manqing Dong, Mingkai Zheng, Yu-Xuan Qiu, Xuefei Yin, Yanming Zhu</div>
-    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
-  </div>
-</div>
-
-<!-- Temporarily hidden: piSkill.
-<div class="paper-box paper-box--review">
-  <div class="paper-box-image">
-    <div>
-      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/ΠSkill-png.webp" alt="Overview of the piSkill framework" data-original-src="Images/Publication/ΠSkill.png" width="960" height="498">
-    </div>
-  </div>
-  <div class="paper-box-text">
-    <div class="paper-title">𝜋Skill: High-Density Knowledge Extraction from Single Trajectories via Circular Step-Level Analysis</div>
-    <div class="paper-authors">Chenxi Qiu, Zichen Luo, Jiarui Fan, Keming Gu, <strong>Jiaqi Zhang</strong>, Chunbo Zhang, Peng Zhang<sup>†</sup></div>
-    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
-  </div>
-</div>
--->
-
-<div class="paper-box paper-box--review">
-  <div class="paper-box-image">
-    <div>
-      <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/D2IB-png.webp" alt="Overview of the D-squared-IB framework" data-original-src="Images/Publication/D2IB.png" width="960" height="588">
-    </div>
-  </div>
-  <div class="paper-box-text">
-    <div class="paper-title">Differentiated Dual-Level Information Bottleneck for Imperfect Multimodal Emotion Recognition</div>
-    <div class="paper-authors">Zheng Pang, <strong>Jiaqi Zhang</strong>, Mengting Li, Yiqi Wang, Guangyuan Dong, Yusen Wu, Chao Xue, Haoyu Wang, Hongsen Zhang, Zihao Li, Jiachen Luo<sup>†</sup></div>
-    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
-  </div>
-</div>
-
-<div class="paper-box paper-box--review">
-  <div class="paper-box-image">
-    <div>
-      <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/PriMD-png.webp" alt="Overview of the PriMD framework" data-original-src="Images/Publication/PriMD.png" width="960" height="469">
-    </div>
-  </div>
-  <div class="paper-box-text">
-    <div class="paper-title">Modality Disentangled Learning for Incomplete Multimodal Emotion Recognition: A Primitive Memory Distillation Perspective</div>
-    <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Zheng Pang, Mengting Li, Yiqi Wang, Guangyuan Dong, Chao Xue, Yusen Wu, Zihao Li, Huy Phan, Sicheng Zhao, Björn Schuller, Jiachen Luo<sup>†</sup></div>
-    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
-  </div>
-</div>
-
-<div class="paper-box paper-box--review">
-  <div class="paper-box-image">
-    <div>
-      <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/OrthoSeg-png.webp" alt="Overview of the OrthoSeg framework" data-original-src="Images/Publication/OrthoSeg.png" width="960" height="515">
-    </div>
-  </div>
-  <div class="paper-box-text">
-    <div class="paper-title">Learning Orthogonal Disentanglement for Modality-Agnostic Medical Image Segmentation</div>
-    <div class="paper-authors">Kai Han, <strong>Jiaqi Zhang</strong>, Chongwen Lyu, Mengting Li, Jun Chen, Laihua Yang, Guangquan Zhou, Yang Chen, Zhe Liu<sup>†</sup></div>
-    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
-  </div>
-</div>
-
-<!-- Temporarily hidden: Structure-preserving Image Decomposition.
-<div class="paper-box paper-box--review">
-  <div class="paper-box-image">
-    <div>
-      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/DDDM-png.webp" alt="Overview of the DDDM image decomposition framework" data-original-src="Images/Publication/DDDM.png" width="960" height="505">
-    </div>
-  </div>
-  <div class="paper-box-text">
-    <div class="paper-title">Structure-preserving Image Decomposition via Plug-and-Play Diffusion Models</div>
-    <div class="paper-authors">Yang Yang<sup>†</sup><sup>*</sup>, Pengyu Li<sup>*</sup>, <strong>Jiaqi Zhang</strong>, Lanling Zeng</div>
-    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
-  </div>
-</div>
--->
-
-<div class="paper-box paper-box--review">
-  <div class="paper-box-image">
-    <div>
-      <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/DynKD-png.webp" alt="Overview of the DynKD framework" data-original-src="Images/Publication/DynKD.png" width="960" height="578">
+      <img loading="lazy" decoding="async" src="Images/Publication/DynKD.png" alt="Overview of the DynKD framework" width="8326" height="5011">
     </div>
   </div>
   <div class="paper-box-text">
     <div class="paper-title">Rethinking Knowledge Distillation for Incomplete Multimodal Emotion Recognition: A Dynamic Approach</div>
+    <div class="paper-venue">ACM International Conference on Multimedia (ACM MM 2026)<strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors"><strong>Jiaqi Zhang</strong> (First Author), Anonymous</div>
-    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
+    <div class="paper-links"><a href="/Paper/DynKD_Paper.pdf">Paper</a></div>
   </div>
+</div> -->
+
+
+
+
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='Images/Publication/A2L.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Breaking Confirmation Bias: Single-Round Active Manifold Calibration for Source-Free Domain Adaptation in Segmentation]()
+<br>
+European Conference on Computer Vision (ECCV 2026) **Under Review**
+<br>
+**Jiaqi Zhang**(First Author), Anonymous
+<br>
+[Paper](/Paper/A2L_Paper.pdf)<br>
+</div>
 </div>
 
 
-
-
-<!-- Temporarily hidden: Breaking Confirmation Bias.
-<div class="paper-box paper-box--review">
-  <div class="paper-box-image">
-    <div>
-      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/A2L-png.webp" alt="Overview of active manifold calibration for source-free segmentation" data-original-src="Images/Publication/A2L.png" width="540" height="640">
-    </div>
-  </div>
-  <div class="paper-box-text">
-    <div class="paper-title">Breaking Confirmation Bias: Single-Round Active Manifold Calibration for Source-Free Domain Adaptation in Segmentation</div>
-    <div class="paper-authors"><strong>Jiaqi Zhang</strong> (First Author), Anonymous</div>
-    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
-  </div>
-</div>
--->
-
-
-
-
-
-<div class="paper-box paper-box--review">
+<div class="paper-box">
   <div class="paper-box-image">
     <div>
       <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/FDGR-png.webp" alt="Overview of the FDGR image restoration framework" data-original-src="Images/Publication/FDGR.png" width="907" height="640">
+      <img loading="lazy" decoding="async" src="Images/Publication/D2IB.png" alt="Overview of the D-squared-IB framework" width="10060" height="6157">
+    </div>
+  </div>
+  <div class="paper-box-text">
+    <div class="paper-title">Differentiated Dual-Level Information Bottleneck for Imperfect Multimodal Emotion Recognition</div>
+    <div class="paper-venue">Empirical Methods in Natural Language Processing (EMNLP)<strong class="paper-status paper-status--review">Under Review</strong></div>
+    <div class="paper-authors">Zheng Pang, <strong>Jiaqi Zhang</strong>, Mengting Li, Yiqi Wang, Guangyuan Dong, Yusen Wu, Chao Xue, Haoyu Wang, Hongsen Zhang, Zihao Li, Jiachen Luo<sup>†</sup></div>
+  </div>
+</div>
+
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div>
+      <div class="badge">Preprint</div>
+      <img loading="lazy" decoding="async" src="Images/Publication/PriMD.png" alt="Overview of the PriMD framework" width="9784" height="4780">
+    </div>
+  </div>
+  <div class="paper-box-text">
+    <div class="paper-title">Modality Disentangled Learning for Incomplete Multimodal Emotion Recognition: A Primitive Memory Distillation Perspective</div>
+    <div class="paper-venue">Empirical Methods in Natural Language Processing (EMNLP)<strong class="paper-status paper-status--review">Under Review</strong></div>
+    <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Zheng Pang, Mengting Li, Yiqi Wang, Guangyuan Dong, Chao Xue, Yusen Wu, Zihao Li, Huy Phan, Sicheng Zhao, Björn Schuller, Jiachen Luo<sup>†</sup></div>
+  </div>
+</div> -->
+
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div>
+      <div class="badge">Preprint</div>
+      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/Agent-png.webp" alt="Evidence tracing and execution provenance framework for LLM agents" width="877" height="640" data-original-src="Images/Publication/Agent.png">
+    </div>
+  </div>
+  <div class="paper-box-text">
+    <div class="paper-title">From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents</div>
+    <div class="paper-venue paper-venue--review"><!-- Transactions on Machine Learning Research (TMLR) --><strong class="paper-status paper-status--review">Under Review</strong></div>
+    <div class="paper-authors">Yiqi Wang, <strong>Jiaqi Zhang</strong>, Zhangkai Wu, Taotao Cai, Zirui Liu, Qingqiang Sun, Zequn Sun, Manqing Dong, Mingkai Zheng, Yu-Xuan Qiu, Xuefei Yin, Yanming Zhu</div>
+    <div class="paper-links"><a href="https://arxiv.org/abs/2606.04990">Paper</a></div>
+  </div>
+</div>
+
+<!-- <div class="paper-box">
+  <div class="paper-box-image">
+    <div>
+      <div class="badge">Preprint</div>
+      <img loading="lazy" decoding="async" src="Images/Publication/ΠSkill.png" alt="Overview of the piSkill framework" width="11761" height="6102">
+    </div>
+  </div>
+  <div class="paper-box-text">
+    <div class="paper-title">𝜋Skill: High-Density Knowledge Extraction from Single Trajectories via Circular Step-Level Analysis</div>
+    <div class="paper-venue">Empirical Methods in Natural Language Processing (EMNLP)<strong class="paper-status paper-status--review">Under Review</strong></div>
+    <div class="paper-authors">Chenxi Qiu, Zichen Luo, Jiarui Fan, Keming Gu, <strong>Jiaqi Zhang</strong>, Chunbo Zhang, Peng Zhang<sup>†</sup></div>
+  </div>
+</div>
+
+
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div>
+      <div class="badge">Preprint</div>
+      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/OrthoSeg-png.webp" alt="Overview of the OrthoSeg framework" width="960" height="515" data-original-src="Images/Publication/OrthoSeg.png">
+    </div>
+  </div>
+  <div class="paper-box-text">
+    <div class="paper-title">Learning Orthogonal Disentanglement for Modality-Agnostic Medical Image Segmentation</div>
+    <div class="paper-venue paper-venue--review"><!-- Journal of Biomedical and Health Informatics (JBHI) --><strong class="paper-status paper-status--review">Under Review</strong></div>
+    <div class="paper-authors">Kai Han, <strong>Jiaqi Zhang</strong>, Chongwen Lyu, Mengting Li, Jun Chen, Laihua Yang, Guangquan Zhou, Yang Chen, Zhe Liu<sup>†</sup></div>
+    <div class="paper-links"><a href="/Paper/OrthoSeg_Paper.pdf">Paper</a></div>
+  </div>
+</div>
+
+<!-- <div class="paper-box">
+  <div class="paper-box-image">
+    <div>
+      <div class="badge">Preprint</div>
+      <img loading="lazy" decoding="async" src="Images/Publication/DDDM.png" alt="Overview of the DDDM image decomposition framework" width="1600" height="842">
+    </div>
+  </div>
+  <div class="paper-box-text">
+    <div class="paper-title">Structure-preserving Image Decomposition via Plug-and-Play Diffusion Models</div>
+    <div class="paper-venue">IEEE Transactions on Image Processing (TIP)<strong class="paper-status paper-status--review">Under Review</strong></div>
+    <div class="paper-authors">Yang Yang<sup>†</sup><sup>*</sup>, Pengyu Li<sup>*</sup>, <strong>Jiaqi Zhang</strong>, Lanling Zeng</div>
+  </div>
+</div> -->
+
+
+
+
+
+
+
+<!-- 2 -->
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div>
+      <div class="badge">Preprint</div>
+      <img loading="lazy" decoding="async" src="Images/Publication/FDGR.png" alt="Overview of the FDGR image restoration framework" width="1606" height="1133">
     </div>
   </div>
   <div class="paper-box-text">
     <div class="paper-title">Image Restoration via Optimizing Fidelity with Diffusion and Gradient Regularization</div>
+    <div class="paper-venue">Engineering Applications of Artificial Intelligence (EAAI)<strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Guo Yang, Zheng Pang, Yao Zhu, Bingbing Gu, Yang Yang<sup>†</sup> (Corresponding Author)</div>
-    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
+    <div class="paper-links"><a href="https://github.com/JiaqiZhang-Sengoku/FDGR">Code</a></div>
   </div>
 </div>
 
-<div class="paper-box paper-box--review">
+<!-- 1 -->
+<div class="paper-box">
   <div class="paper-box-image">
     <div>
       <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/DDGF-png.webp" alt="Overview of the DDGF medical image super-resolution framework" data-original-src="Images/Publication/DDGF.png" width="960" height="466">
+      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/DDGF-png.webp" alt="Overview of the DDGF medical image super-resolution framework" width="960" height="466" data-original-src="Images/Publication/DDGF.png">
     </div>
   </div>
   <div class="paper-box-text">
     <div class="paper-title">Zero-Shot Medical Image Super-Resolution Using Denoising Diffusion Models with Gradient-Frequency Priors</div>
+    <div class="paper-venue paper-venue--review"><!-- Biomedical Signal Processing and Control (BSPC) --><strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Guo Yang, Rongrong Gao, Yang Yang<sup>†</sup></div>
-    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
+    <div class="paper-links"><a href="https://github.com/JiaqiZhang-Sengoku/DDGF">Code</a></div>
   </div>
 </div>
 
