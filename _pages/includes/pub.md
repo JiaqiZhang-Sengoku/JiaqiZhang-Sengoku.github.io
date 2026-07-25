@@ -41,6 +41,7 @@
 <div class="paper-box paper-box--review">
   <div class="paper-box-image">
     <div>
+      <div class="badge">Preprint</div>
       <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/Agent-png.webp" alt="Evidence tracing and execution provenance framework for LLM agents" data-original-src="Images/Publication/Agent.png" width="877" height="640">
     </div>
   </div>
@@ -51,6 +52,7 @@
   </div>
 </div>
 
+<!-- Temporarily hidden: piSkill.
 <div class="paper-box paper-box--review">
   <div class="paper-box-image">
     <div>
@@ -63,10 +65,12 @@
     <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
   </div>
 </div>
+-->
 
 <div class="paper-box paper-box--review">
   <div class="paper-box-image">
     <div>
+      <div class="badge">Preprint</div>
       <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/D2IB-png.webp" alt="Overview of the D-squared-IB framework" data-original-src="Images/Publication/D2IB.png" width="960" height="588">
     </div>
   </div>
@@ -80,6 +84,7 @@
 <div class="paper-box paper-box--review">
   <div class="paper-box-image">
     <div>
+      <div class="badge">Preprint</div>
       <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/PriMD-png.webp" alt="Overview of the PriMD framework" data-original-src="Images/Publication/PriMD.png" width="960" height="469">
     </div>
   </div>
@@ -93,6 +98,7 @@
 <div class="paper-box paper-box--review">
   <div class="paper-box-image">
     <div>
+      <div class="badge">Preprint</div>
       <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/OrthoSeg-png.webp" alt="Overview of the OrthoSeg framework" data-original-src="Images/Publication/OrthoSeg.png" width="960" height="515">
     </div>
   </div>
@@ -103,6 +109,7 @@
   </div>
 </div>
 
+<!-- Temporarily hidden: Structure-preserving Image Decomposition.
 <div class="paper-box paper-box--review">
   <div class="paper-box-image">
     <div>
@@ -115,10 +122,12 @@
     <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
   </div>
 </div>
+-->
 
 <div class="paper-box paper-box--review">
   <div class="paper-box-image">
     <div>
+      <div class="badge">Preprint</div>
       <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/DynKD-png.webp" alt="Overview of the DynKD framework" data-original-src="Images/Publication/DynKD.png" width="960" height="578">
     </div>
   </div>
@@ -132,6 +141,7 @@
 
 
 
+<!-- Temporarily hidden: Breaking Confirmation Bias.
 <div class="paper-box paper-box--review">
   <div class="paper-box-image">
     <div>
@@ -144,6 +154,7 @@
     <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
   </div>
 </div>
+-->
 
 
 
@@ -152,6 +163,7 @@
 <div class="paper-box paper-box--review">
   <div class="paper-box-image">
     <div>
+      <div class="badge">Preprint</div>
       <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/FDGR-png.webp" alt="Overview of the FDGR image restoration framework" data-original-src="Images/Publication/FDGR.png" width="907" height="640">
     </div>
   </div>
@@ -165,6 +177,7 @@
 <div class="paper-box paper-box--review">
   <div class="paper-box-image">
     <div>
+      <div class="badge">Preprint</div>
       <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/DDGF-png.webp" alt="Overview of the DDGF medical image super-resolution framework" data-original-src="Images/Publication/DDGF.png" width="960" height="466">
     </div>
   </div>

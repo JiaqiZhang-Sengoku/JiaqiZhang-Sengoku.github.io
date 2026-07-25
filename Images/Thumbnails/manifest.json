@@ -442,14 +442,6 @@
       "height": 384
     },
     {
-      "source": "Images/Publication/A2L.png",
-      "thumbnail": "Images/Thumbnails/Publication/A2L-png.webp",
-      "sourceBytes": 1242139,
-      "thumbnailBytes": 54320,
-      "width": 540,
-      "height": 640
-    },
-    {
       "source": "Images/Publication/Agent.png",
       "thumbnail": "Images/Thumbnails/Publication/Agent-png.webp",
       "sourceBytes": 2926475,
@@ -464,14 +456,6 @@
       "thumbnailBytes": 59668,
       "width": 960,
       "height": 588
-    },
-    {
-      "source": "Images/Publication/DDDM.png",
-      "thumbnail": "Images/Thumbnails/Publication/DDDM-png.webp",
-      "sourceBytes": 1079466,
-      "thumbnailBytes": 87596,
-      "width": 960,
-      "height": 505
     },
     {
       "source": "Images/Publication/DDGF.png",
@@ -528,14 +512,6 @@
       "thumbnailBytes": 72478,
       "width": 960,
       "height": 469
-    },
-    {
-      "source": "Images/Publication/ΠSkill.png",
-      "thumbnail": "Images/Thumbnails/Publication/ΠSkill-png.webp",
-      "sourceBytes": 7933371,
-      "thumbnailBytes": 75434,
-      "width": 960,
-      "height": 498
     }
   ]
 }
