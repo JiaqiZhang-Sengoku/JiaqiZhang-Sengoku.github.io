@@ -7,7 +7,8 @@
 
 <div class="publications-panel">
 
-<div class="paper-box">
+<!-- Accepted publications: newest first. -->
+<div class="paper-box paper-box--accepted">
   <div class="paper-box-image">
     <div>
       <div class="badge badge--accepted">ACM MM 2026</div>
@@ -22,7 +23,7 @@
   </div>
 </div>
 
-<div class="paper-box">
+<div class="paper-box paper-box--accepted">
   <div class="paper-box-image">
     <div>
       <div class="badge badge--accepted">ACM MM 2026</div>
@@ -36,151 +37,91 @@
   </div>
 </div>
 
-<div class="paper-box">
-  <div class="paper-box-image">
-    <div>
-      <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/Agent-png.webp" alt="Evidence tracing and execution provenance framework for LLM agents" width="877" height="640" data-original-src="Images/Publication/Agent.png">
-    </div>
-  </div>
+<!-- Under-review manuscripts: newest first. -->
+<div class="paper-box paper-box--review">
   <div class="paper-box-text">
     <div class="paper-title">From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents</div>
-    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors">Yiqi Wang, <strong>Jiaqi Zhang</strong>, Zhangkai Wu, Taotao Cai, Zirui Liu, Qingqiang Sun, Zequn Sun, Manqing Dong, Mingkai Zheng, Yu-Xuan Qiu, Xuefei Yin, Yanming Zhu</div>
+    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
   </div>
 </div>
 
-<!-- <div class="paper-box">
-  <div class="paper-box-image">
-    <div>
-      <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Publication/ΠSkill.png" alt="Overview of the piSkill framework" width="11761" height="6102">
-    </div>
-  </div>
+<div class="paper-box paper-box--review">
   <div class="paper-box-text">
     <div class="paper-title">𝜋Skill: High-Density Knowledge Extraction from Single Trajectories via Circular Step-Level Analysis</div>
-    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors">Chenxi Qiu, Zichen Luo, Jiarui Fan, Keming Gu, <strong>Jiaqi Zhang</strong>, Chunbo Zhang, Peng Zhang<sup>†</sup></div>
+    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
   </div>
 </div>
 
-<div class="paper-box">
-  <div class="paper-box-image">
-    <div>
-      <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Publication/D2IB.png" alt="Overview of the D-squared-IB framework" width="10060" height="6157">
-    </div>
-  </div>
+<div class="paper-box paper-box--review">
   <div class="paper-box-text">
     <div class="paper-title">Differentiated Dual-Level Information Bottleneck for Imperfect Multimodal Emotion Recognition</div>
-    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors">Zheng Pang, <strong>Jiaqi Zhang</strong>, Mengting Li, Yiqi Wang, Guangyuan Dong, Yusen Wu, Chao Xue, Haoyu Wang, Hongsen Zhang, Zihao Li, Jiachen Luo<sup>†</sup></div>
+    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
   </div>
 </div>
 
-<div class="paper-box">
-  <div class="paper-box-image">
-    <div>
-      <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Publication/PriMD.png" alt="Overview of the PriMD framework" width="9784" height="4780">
-    </div>
-  </div>
+<div class="paper-box paper-box--review">
   <div class="paper-box-text">
     <div class="paper-title">Modality Disentangled Learning for Incomplete Multimodal Emotion Recognition: A Primitive Memory Distillation Perspective</div>
-    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Zheng Pang, Mengting Li, Yiqi Wang, Guangyuan Dong, Chao Xue, Yusen Wu, Zihao Li, Huy Phan, Sicheng Zhao, Björn Schuller, Jiachen Luo<sup>†</sup></div>
+    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
   </div>
-</div> -->
+</div>
 
-<div class="paper-box">
-  <div class="paper-box-image">
-    <div>
-      <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/OrthoSeg-png.webp" alt="Overview of the OrthoSeg framework" width="960" height="515" data-original-src="Images/Publication/OrthoSeg.png">
-    </div>
-  </div>
+<div class="paper-box paper-box--review">
   <div class="paper-box-text">
     <div class="paper-title">Learning Orthogonal Disentanglement for Modality-Agnostic Medical Image Segmentation</div>
-    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors">Kai Han, <strong>Jiaqi Zhang</strong>, Chongwen Lyu, Mengting Li, Jun Chen, Laihua Yang, Guangquan Zhou, Yang Chen, Zhe Liu<sup>†</sup></div>
+    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
   </div>
 </div>
 
-<!-- <div class="paper-box">
-  <div class="paper-box-image">
-    <div>
-      <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Publication/DDDM.png" alt="Overview of the DDDM image decomposition framework" width="1600" height="842">
-    </div>
-  </div>
+<div class="paper-box paper-box--review">
   <div class="paper-box-text">
     <div class="paper-title">Structure-preserving Image Decomposition via Plug-and-Play Diffusion Models</div>
-    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors">Yang Yang<sup>†</sup><sup>*</sup>, Pengyu Li<sup>*</sup>, <strong>Jiaqi Zhang</strong>, Lanling Zeng</div>
+    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
   </div>
-</div> -->
+</div>
 
-<!-- <div class="paper-box">
-  <div class="paper-box-image">
-    <div>
-      <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Publication/DynKD.png" alt="Overview of the DynKD framework" width="8326" height="5011">
-    </div>
-  </div>
+<div class="paper-box paper-box--review">
   <div class="paper-box-text">
     <div class="paper-title">Rethinking Knowledge Distillation for Incomplete Multimodal Emotion Recognition: A Dynamic Approach</div>
-    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors"><strong>Jiaqi Zhang</strong> (First Author), Anonymous</div>
+    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
   </div>
-</div> -->
-
-
-
-
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='Images/Publication/A2L.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[Breaking Confirmation Bias: Single-Round Active Manifold Calibration for Source-Free Domain Adaptation in Segmentation]()
-<br>
-**Under Review**
-<br>
-**Jiaqi Zhang**(First Author), Anonymous
-<br>
 </div>
-</div> -->
 
 
 
 
-
-<!-- 2 -->
-<!-- <div class="paper-box">
-  <div class="paper-box-image">
-    <div>
-      <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Publication/FDGR.png" alt="Overview of the FDGR image restoration framework" width="1606" height="1133">
-    </div>
+<div class="paper-box paper-box--review">
+  <div class="paper-box-text">
+    <div class="paper-title">Breaking Confirmation Bias: Single-Round Active Manifold Calibration for Source-Free Domain Adaptation in Segmentation</div>
+    <div class="paper-authors"><strong>Jiaqi Zhang</strong> (First Author), Anonymous</div>
+    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
   </div>
+</div>
+
+
+
+
+
+<div class="paper-box paper-box--review">
   <div class="paper-box-text">
     <div class="paper-title">Image Restoration via Optimizing Fidelity with Diffusion and Gradient Regularization</div>
-    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Guo Yang, Zheng Pang, Yao Zhu, Bingbing Gu, Yang Yang<sup>†</sup> (Corresponding Author)</div>
-    <div class="paper-links"><a href="https://github.com/JiaqiZhang-Sengoku/FDGR">Code</a></div>
+    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
   </div>
-</div> -->
+</div>
 
-<!-- 1 -->
-<div class="paper-box">
-  <div class="paper-box-image">
-    <div>
-      <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/DDGF-png.webp" alt="Overview of the DDGF medical image super-resolution framework" width="960" height="466" data-original-src="Images/Publication/DDGF.png">
-    </div>
-  </div>
+<div class="paper-box paper-box--review">
   <div class="paper-box-text">
     <div class="paper-title">Zero-Shot Medical Image Super-Resolution Using Denoising Diffusion Models with Gradient-Frequency Priors</div>
-    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Guo Yang, Rongrong Gao, Yang Yang<sup>†</sup></div>
-    <div class="paper-links"><a href="https://github.com/JiaqiZhang-Sengoku/DDGF">Code</a></div>
+    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
   </div>
 </div>
 
