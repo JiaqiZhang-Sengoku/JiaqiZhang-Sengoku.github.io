@@ -45,9 +45,8 @@
   </div>
   <div class="paper-box-text">
     <div class="paper-title">From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents</div>
-    <div class="paper-venue paper-venue--review"><!-- Transactions on Machine Learning Research (TMLR) --><strong class="paper-status paper-status--review">Under Review</strong></div>
+    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors">Yiqi Wang, <strong>Jiaqi Zhang</strong>, Zhangkai Wu, Taotao Cai, Zirui Liu, Qingqiang Sun, Zequn Sun, Manqing Dong, Mingkai Zheng, Yu-Xuan Qiu, Xuefei Yin, Yanming Zhu</div>
-    <div class="paper-links"><a href="https://arxiv.org/abs/2606.04990">Paper</a></div>
   </div>
 </div>
 
@@ -60,7 +59,7 @@
   </div>
   <div class="paper-box-text">
     <div class="paper-title">𝜋Skill: High-Density Knowledge Extraction from Single Trajectories via Circular Step-Level Analysis</div>
-    <div class="paper-venue">Empirical Methods in Natural Language Processing (EMNLP)<strong class="paper-status paper-status--review">Under Review</strong></div>
+    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors">Chenxi Qiu, Zichen Luo, Jiarui Fan, Keming Gu, <strong>Jiaqi Zhang</strong>, Chunbo Zhang, Peng Zhang<sup>†</sup></div>
   </div>
 </div>
@@ -74,7 +73,7 @@
   </div>
   <div class="paper-box-text">
     <div class="paper-title">Differentiated Dual-Level Information Bottleneck for Imperfect Multimodal Emotion Recognition</div>
-    <div class="paper-venue">Empirical Methods in Natural Language Processing (EMNLP)<strong class="paper-status paper-status--review">Under Review</strong></div>
+    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors">Zheng Pang, <strong>Jiaqi Zhang</strong>, Mengting Li, Yiqi Wang, Guangyuan Dong, Yusen Wu, Chao Xue, Haoyu Wang, Hongsen Zhang, Zihao Li, Jiachen Luo<sup>†</sup></div>
   </div>
 </div>
@@ -88,7 +87,7 @@
   </div>
   <div class="paper-box-text">
     <div class="paper-title">Modality Disentangled Learning for Incomplete Multimodal Emotion Recognition: A Primitive Memory Distillation Perspective</div>
-    <div class="paper-venue">Empirical Methods in Natural Language Processing (EMNLP)<strong class="paper-status paper-status--review">Under Review</strong></div>
+    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Zheng Pang, Mengting Li, Yiqi Wang, Guangyuan Dong, Chao Xue, Yusen Wu, Zihao Li, Huy Phan, Sicheng Zhao, Björn Schuller, Jiachen Luo<sup>†</sup></div>
   </div>
 </div> -->
@@ -102,9 +101,8 @@
   </div>
   <div class="paper-box-text">
     <div class="paper-title">Learning Orthogonal Disentanglement for Modality-Agnostic Medical Image Segmentation</div>
-    <div class="paper-venue paper-venue--review"><!-- Journal of Biomedical and Health Informatics (JBHI) --><strong class="paper-status paper-status--review">Under Review</strong></div>
+    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors">Kai Han, <strong>Jiaqi Zhang</strong>, Chongwen Lyu, Mengting Li, Jun Chen, Laihua Yang, Guangquan Zhou, Yang Chen, Zhe Liu<sup>†</sup></div>
-    <div class="paper-links"><a href="/Paper/OrthoSeg_Paper.pdf">Paper</a></div>
   </div>
 </div>
 
@@ -117,7 +115,7 @@
   </div>
   <div class="paper-box-text">
     <div class="paper-title">Structure-preserving Image Decomposition via Plug-and-Play Diffusion Models</div>
-    <div class="paper-venue">IEEE Transactions on Image Processing (TIP)<strong class="paper-status paper-status--review">Under Review</strong></div>
+    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors">Yang Yang<sup>†</sup><sup>*</sup>, Pengyu Li<sup>*</sup>, <strong>Jiaqi Zhang</strong>, Lanling Zeng</div>
   </div>
 </div> -->
@@ -131,9 +129,8 @@
   </div>
   <div class="paper-box-text">
     <div class="paper-title">Rethinking Knowledge Distillation for Incomplete Multimodal Emotion Recognition: A Dynamic Approach</div>
-    <div class="paper-venue">ACM International Conference on Multimedia (ACM MM 2026)<strong class="paper-status paper-status--review">Under Review</strong></div>
+    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors"><strong>Jiaqi Zhang</strong> (First Author), Anonymous</div>
-    <div class="paper-links"><a href="/Paper/DynKD_Paper.pdf">Paper</a></div>
   </div>
 </div> -->
 
@@ -144,11 +141,10 @@
 <div class='paper-box-text' markdown="1">
 [Breaking Confirmation Bias: Single-Round Active Manifold Calibration for Source-Free Domain Adaptation in Segmentation]()
 <br>
-European Conference on Computer Vision (ECCV 2026) **Under Review**
+**Under Review**
 <br>
 **Jiaqi Zhang**(First Author), Anonymous
 <br>
-[Paper](/Paper/A2L_Paper.pdf)<br>
 </div>
 </div> -->
 
@@ -166,7 +162,7 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
   </div>
   <div class="paper-box-text">
     <div class="paper-title">Image Restoration via Optimizing Fidelity with Diffusion and Gradient Regularization</div>
-    <div class="paper-venue">Engineering Applications of Artificial Intelligence (EAAI)<strong class="paper-status paper-status--review">Under Review</strong></div>
+    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Guo Yang, Zheng Pang, Yao Zhu, Bingbing Gu, Yang Yang<sup>†</sup> (Corresponding Author)</div>
     <div class="paper-links"><a href="https://github.com/JiaqiZhang-Sengoku/FDGR">Code</a></div>
   </div>
@@ -182,7 +178,7 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
   </div>
   <div class="paper-box-text">
     <div class="paper-title">Zero-Shot Medical Image Super-Resolution Using Denoising Diffusion Models with Gradient-Frequency Priors</div>
-    <div class="paper-venue paper-venue--review"><!-- Biomedical Signal Processing and Control (BSPC) --><strong class="paper-status paper-status--review">Under Review</strong></div>
+    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Guo Yang, Rongrong Gao, Yang Yang<sup>†</sup></div>
     <div class="paper-links"><a href="https://github.com/JiaqiZhang-Sengoku/DDGF">Code</a></div>
   </div>
