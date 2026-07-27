@@ -7,6 +7,37 @@
 
 <div class="publications-panel">
 
+<!-- Accepted publications -->
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div>
+      <div class="badge badge--accepted">ACM MM 2026</div>
+      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/LEADer-png.webp" alt="Overview of the LEADer framework" width="960" height="549" data-original-src="Images/Publication/LEADer.png">
+    </div>
+  </div>
+  <div class="paper-box-text">
+    <a class="paper-title" href="/LEADer/">Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration</a>
+    <div class="paper-venue paper-venue--accepted">ACM International Conference on Multimedia (ACM MM 2026)</div>
+    <div class="paper-authors"><strong>Jiaqi Zhang</strong><sup>*</sup>, Zheng Pang<sup>*</sup>, Rongrong Gao, Qiyuan Zhang, Yang Yang<sup>&dagger;</sup></div>
+    <div class="paper-links"><a href="/Paper/LEADer_Paper.pdf">Paper</a><span class="paper-link-separator" aria-hidden="true">|</span><a href="/LEADer/">Web</a><span class="paper-link-separator" aria-hidden="true">|</span><a href="https://github.com/JiaqiZhang-Sengoku/LEADer">Code</a></div>
+  </div>
+</div>
+
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div>
+      <div class="badge badge--accepted">ACM MM 2026</div>
+      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/JMTR-png.webp" alt="Metric-aware test-time adaptation framework for cross-subject multimodal IED detection" data-original-src="Images/Publication/JMTR.png" width="960" height="493">
+    </div>
+  </div>
+  <div class="paper-box-text">
+    <div class="paper-title">Metric-Aware Test-Time Adaptation for Cross-Subject Multimodal Epileptiform-Discharge Detection</div>
+    <div class="paper-venue paper-venue--accepted">ACM International Conference on Multimedia (ACM MM 2026)</div>
+    <div class="paper-authors">Yuting Yan, <strong>Jiaqi Zhang</strong>, Ziliang Wang</div>
+  </div>
+</div>
+
+<!-- Preprints and manuscripts under review -->
 <div class="paper-box">
   <div class="paper-box-image">
     <div>
@@ -46,35 +77,6 @@
     <div class="paper-title">Reparameterizing Mamba via Frequency-Induced Topological Conduction for Medical Image Segmentation under Clinical Acquisition Heterogeneity</div>
     <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Yuting Yan, Guo Yang, Ziqian Liu, Zirui Liu, Zhi Chen, Wencheng Yang, Mingkai Zheng</div>
-  </div>
-</div>
-
-<div class="paper-box">
-  <div class="paper-box-image">
-    <div>
-      <div class="badge badge--accepted">ACM MM 2026</div>
-      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/LEADer-png.webp" alt="Overview of the LEADer framework" width="960" height="549" data-original-src="Images/Publication/LEADer.png">
-    </div>
-  </div>
-  <div class="paper-box-text">
-    <a class="paper-title" href="/LEADer/">Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration</a>
-    <div class="paper-venue paper-venue--accepted">ACM International Conference on Multimedia (ACM MM 2026)</div>
-    <div class="paper-authors"><strong>Jiaqi Zhang</strong><sup>*</sup>, Zheng Pang<sup>*</sup>, Rongrong Gao, Qiyuan Zhang, Yang Yang<sup>&dagger;</sup></div>
-    <div class="paper-links"><a href="/Paper/LEADer_Paper.pdf">Paper</a><span class="paper-link-separator" aria-hidden="true">|</span><a href="/LEADer/">Web</a><span class="paper-link-separator" aria-hidden="true">|</span><a href="https://github.com/JiaqiZhang-Sengoku/LEADer">Code</a></div>
-  </div>
-</div>
-
-<div class="paper-box">
-  <div class="paper-box-image">
-    <div>
-      <div class="badge badge--accepted">ACM MM 2026</div>
-      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/JMTR-png.webp" alt="Metric-aware test-time adaptation framework for cross-subject multimodal IED detection" data-original-src="Images/Publication/JMTR.png" width="960" height="493">
-    </div>
-  </div>
-  <div class="paper-box-text">
-    <div class="paper-title">Metric-Aware Test-Time Adaptation for Cross-Subject Multimodal Epileptiform-Discharge Detection</div>
-    <div class="paper-venue paper-venue--accepted">ACM International Conference on Multimedia (ACM MM 2026)</div>
-    <div class="paper-authors">Yuting Yan, <strong>Jiaqi Zhang</strong>, Ziliang Wang</div>
   </div>
 </div>
 
