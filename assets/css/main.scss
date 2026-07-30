@@ -967,7 +967,7 @@ body > #main > .sidebar.sticky {
 }
 
 .section-heading--internships::before {
-    background: var(--accent);
+    background: linear-gradient(180deg, var(--accent), var(--accent-teal));
 }
 
 .section-heading--other-publications::before {
@@ -1084,6 +1084,15 @@ body > #main > .sidebar.sticky {
     margin: -2px 0 26px !important;
 }
 
+.internships-panel {
+    display: block;
+    border: 1px solid rgba(210, 222, 231, 0.96);
+    border-radius: var(--radius-card);
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: var(--card-glow), 0 12px 30px rgba(42, 57, 88, 0.052);
+    overflow: hidden;
+}
+
 .updates-panel {
     display: block;
     height: 288px;
@@ -1150,10 +1159,23 @@ body > #main > .sidebar.sticky {
 }
 
 .internship-card {
-    grid-template-columns: 104px minmax(0, 1fr);
-    gap: 18px;
+    grid-template-columns: 98px minmax(0, 1fr);
+    gap: 24px;
     align-items: start;
-    padding: 18px 24px !important;
+    padding: 25px 28px !important;
+    border: 0;
+    border-radius: 0;
+    background: transparent !important;
+    box-shadow: none;
+    overflow: visible;
+}
+
+.internship-card--compact {
+    align-items: center;
+}
+
+.internship-card + .internship-card {
+    border-top: 1px solid rgba(216, 226, 233, 0.92);
 }
 
 .update-card::before,
@@ -1164,6 +1186,10 @@ body > #main > .sidebar.sticky {
     width: 4px;
     background: linear-gradient(180deg, var(--accent-teal), var(--accent-sky));
     opacity: 0.72;
+}
+
+.internship-card::before {
+    content: none;
 }
 
 .updates-panel .update-card::before {
@@ -1205,6 +1231,30 @@ body > #main > .sidebar.sticky {
     font-weight: 800;
     line-height: 1.1;
     white-space: nowrap;
+}
+
+.internship-date {
+    gap: 7px;
+    min-height: 0;
+    margin-top: 2px;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    color: var(--accent-strong);
+    font-size: 0.86rem;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.internship-date::before {
+    content: "";
+    flex: 0 0 7px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--accent-teal);
+    box-shadow: 0 0 0 3px var(--accent-teal-soft);
 }
 
 .updates-panel .update-date {
@@ -1295,7 +1345,7 @@ body > #main > .sidebar.sticky {
     align-items: flex-start;
     justify-content: center;
     width: 100%;
-    padding: 1px 0 0;
+    padding: 0;
 }
 
 .internship-logos a {
@@ -1311,55 +1361,134 @@ body > #main > .sidebar.sticky {
 }
 
 .internship-logos a:first-child {
-    width: 88px;
-    flex: 0 0 88px;
+    width: 90px;
+    height: 90px;
+    flex: 0 0 90px;
 }
 
 .internship-logos img {
     display: block;
     width: 100%;
-    max-height: 88px;
+    height: 100%;
+    max-height: 90px;
     object-fit: contain;
 }
 
+.internship-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.internship-heading {
+    min-width: 0;
+}
+
 .internship-main h3 {
-    margin: 0 0 4px !important;
+    margin: 0 0 6px !important;
     color: var(--heading-color);
-    font-size: 1.10rem !important;
-    line-height: 1.25 !important;
+    font-size: 1.18rem !important;
+    line-height: 1.30 !important;
+}
+
+.internship-main h3 span {
+    color: var(--accent-strong);
+    font-size: 0.90em;
+    white-space: nowrap;
+}
+
+.internship-role {
+    position: relative;
+    margin: 0 !important;
+    padding-left: 13px;
+    color: var(--text-color) !important;
+    font-size: 0.98rem !important;
+    font-weight: 600;
+    line-height: 1.35 !important;
+}
+
+.internship-role::before {
+    content: "";
+    position: absolute;
+    top: 0.24em;
+    bottom: 0.24em;
+    left: 0;
+    width: 3px;
+    border-radius: 2px;
+    background: var(--accent-teal);
 }
 
 .internship-projects {
-    margin: 9px 0 8px !important;
-    padding-left: 19px !important;
+    margin: 15px 0 0 !important;
+    padding: 14px 0 0 !important;
+    border-top: 1px solid rgba(218, 227, 233, 0.88);
+    list-style: none;
     color: var(--text-color);
-    font-size: 0.93rem;
-    line-height: 1.50 !important;
+    font-size: 0.96rem;
+    line-height: 1.56 !important;
 }
 
 .internship-projects li {
-    margin: 0 0 7px !important;
-    padding-left: 2px;
+    position: relative;
+    margin: 0 !important;
+    padding: 0 0 0 22px;
 }
 
-.internship-projects li::marker {
-    color: var(--accent);
-    font-size: 0.86em;
+.internship-projects li + li {
+    margin-top: 10px !important;
+}
+
+.internship-projects li::before {
+    content: "";
+    position: absolute;
+    top: 0.63em;
+    left: 1px;
+    width: 7px;
+    height: 7px;
+    border: 2px solid var(--accent);
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.internship-projects strong {
+    color: var(--heading-color);
+    font-weight: 800;
 }
 
 .internship-mentor {
-    color: var(--muted-color) !important;
-    font-weight: 700;
+    display: flex;
+    align-items: baseline;
+    gap: 7px;
+    flex-wrap: wrap;
+    margin: 13px 0 0 !important;
+    color: var(--text-color) !important;
+    font-size: 0.94rem !important;
+    font-weight: 600;
+}
+
+.internship-mentor > span {
+    color: var(--muted-color);
+    font-size: 0.82rem;
+    font-weight: 800;
+    text-transform: uppercase;
 }
 
 .internship-mentor a {
     color: var(--accent-strong) !important;
+    font-weight: 800;
     text-decoration: none;
-    border-bottom: 1px solid rgba(52, 87, 159, 0.28);
+    border-bottom: 0;
 }
 
 .internship-mentor a:hover {
-    border-bottom-color: currentColor;
+    color: var(--accent-teal) !important;
+}
+
+.internship-mentor em {
+    color: var(--muted-color);
+    font-style: normal;
+    font-weight: 600;
 }
 
 .update-card a {
@@ -2432,12 +2561,38 @@ body > #main > .sidebar.sticky {
     }
 
     .internship-logos a:first-child {
-        width: 72px;
-        flex-basis: 72px;
+        width: 68px;
+        height: 68px;
+        flex-basis: 68px;
     }
 
     .internship-logos img {
-        max-height: 72px;
+        max-height: 68px;
+    }
+
+    .internship-header {
+        gap: 10px 14px;
+        flex-wrap: wrap;
+    }
+
+    .internship-date {
+        order: -1;
+        width: 100%;
+        margin: 0 0 2px;
+    }
+
+    .internship-main h3 {
+        font-size: 1.10rem !important;
+    }
+
+    .internship-projects {
+        margin-top: 13px !important;
+        padding-top: 12px !important;
+        font-size: 0.94rem;
+    }
+
+    .internship-projects li {
+        padding-left: 19px;
     }
 
     .sidebar .profile_box {
