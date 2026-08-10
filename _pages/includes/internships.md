@@ -4,7 +4,7 @@
 </div>
 
 <div class="internships-panel">
-  <article class="internship-card internship-card--compact">
+  <article class="internship-card">
     <div class="internship-logos" aria-label="Institution logo">
       <a href="https://www.sustech.edu.cn/en/" aria-label="Southern University of Science and Technology">
         <img src="Images/Thumbnails/Logos/sustech-seal-png.webp" alt="Southern University of Science and Technology logo" data-original-src="Images/Logos/sustech-seal.png" loading="lazy" decoding="async" width="180" height="180">
@@ -16,7 +16,13 @@
           <h3>Southern University of Science and Technology <span>(SUSTech)</span></h3>
           <p class="internship-role">Research Assistant</p>
         </div>
+        <span class="internship-date">Jun. 2026 - Aug. 2026</span>
       </div>
+      <p class="internship-mentor"><span>Advisor</span><strong>Mingkai Zheng</strong></p>
+      <ul class="internship-projects">
+        <li>We propose <strong>TopoCMamba</strong>, a topology-aware framework that integrates low-frequency structural information with high-frequency boundary cues to construct topological conductance constraints. These constraints directly regulate state propagation in Mamba. The proposed method addresses cross-boundary information mixing caused by the mismatch between scan adjacency and anatomical continuity under heterogeneous clinical acquisition conditions. It consequently improves boundary delineation and cross-domain generalization in medical image segmentation.</li>
+        <li>We propose <strong>ReBridge-Flow</strong>, a measurement-aware posterior bridge re-coupling framework for Flow Matching. It jointly re-couples the source and clean endpoints while incorporating observation constraints, thereby preserving their local compatibility with the current state. This design mitigates bridge mismatch caused by conventional local corrections, as well as the resulting structural drift, artifacts, and over-smoothing. It enables more stable image restoration with improved structural consistency.</li>
+      </ul>
     </div>
   </article>
 
