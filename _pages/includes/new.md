@@ -7,7 +7,7 @@
   <div class="update-card">
     <h3 class="update-date">August 2026</h3>
     <ul class="update-list">
-      <li><span class="update-day">Aug. 9:</span> We have 1 paper (Multimodal LLM Reasoning) accepted to <span class="highlight-conference">ACMMM 2026 Workshop AMI.</span></li>
+      <li><span class="update-day">Aug. 9:</span> We have 1 paper (Multimodal LLM Reasoning) accepted to <span class="highlight-conference">ACM MM 2026 Workshop AMI.</span></li>
     </ul>
   </div>
   <div class="update-card">
