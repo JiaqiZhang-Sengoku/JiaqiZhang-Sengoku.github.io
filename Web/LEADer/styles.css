@@ -529,8 +529,8 @@ img {
 .paired-media {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 6px;
-  align-items: stretch;
+  gap: 12px;
+  align-items: center;
 }
 
 .paired-panel {
@@ -541,13 +541,11 @@ img {
 }
 
 .paired-panel img {
+  display: block;
   width: 100%;
-  height: 280px;
+  height: auto;
+  max-height: 280px;
   object-fit: contain;
-}
-
-.paired-table img {
-  object-fit: fill;
 }
 
 .table4-large {
