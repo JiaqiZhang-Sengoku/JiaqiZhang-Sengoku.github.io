@@ -5,6 +5,12 @@
 
 <div class="updates-panel" aria-label="Monthly news">
   <div class="update-card">
+    <h3 class="update-date">August 2026</h3>
+    <ul class="update-list">
+      <li><span class="update-day">Aug. 9:</span> We have 1 paper (Multimodal LLM Reasoning) accepted to <span class="highlight-conference">ACMMM 2026 Workshop AMI.</span></li>
+    </ul>
+  </div>
+  <div class="update-card">
     <h3 class="update-date">July 2026</h3>
     <ul class="update-list">
       <li><span class="update-item-layout"><span class="update-day">Jul. 11:</span><span class="update-message">We have 2 papers (Image Restoration with Diffusion Models + Cross-Subject IED Detection) accepted to <span class="highlight-conference">ACM MM 2026 (CCF A).</span><br>The Image Restoration with Diffusion Models paper is my <span class="highlight-first-author">First Author</span> paper.</span></span></li>
