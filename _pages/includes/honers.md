@@ -5,8 +5,9 @@
 
 <div class="honors-panel">
   <details class="awards-section">
-    <summary class="section-title">National-Level Awards (22)</summary>
+    <summary class="section-title">National-Level Awards (23)</summary>
     <div class="awards-grid">
+      <div class="award-card"><div class="award-image-container"><img class="award-image" loading="lazy" src="Images/Award/Guo_26.webp" alt="2026 ICPC Shenyang Silver Medal Certificate" decoding="async" width="900" height="636"></div><div class="award-info"><div class="award-title">The 2026 ICPC China Shenyang National Invitational Programming Contest<br><strong>Silver Medal</strong></div><div class="award-date">Jul. 2026</div></div></div>
       <div class="award-card"><div class="award-image-container"><img class="award-image" loading="lazy" src="Images/Award/Guo_25.webp" alt="2026 ICPC Nanchang Bronze Medal Certificate" decoding="async" width="900" height="584"></div><div class="award-info"><div class="award-title">The 2026 ICPC China National Invitational Programming Contest (Nanchang)<br><strong>Bronze Medal</strong></div><div class="award-date">May 2026</div></div></div>
       <div class="award-card"><div class="award-image-container"><img class="award-image" loading="lazy" src="Images/Award/Guo_21.webp" alt="National Award 21" decoding="async" width="890" height="1260"></div><div class="award-info"><div class="award-title">7th Global Campus Artificial Intelligence Algorithm Elite Competition - Algorithm Challenge: Multi-Class Oriented Object Detection in Large-Scale SAR Images<br><strong>National First Prize</strong></div><div class="award-date">Dec. 2025</div></div></div>
       <div class="award-card"><div class="award-image-container"><img class="award-image" loading="lazy" src="Images/Award/Guo_22.webp" alt="National Award 22" decoding="async" width="890" height="1260"></div><div class="award-info"><div class="award-title">7th Global Campus Artificial Intelligence Algorithm Elite Competition - Algorithm Challenge: User Borrowing Prediction and Recommendation Based on Library Circulation Data<br><strong>National First Prize</strong></div><div class="award-date">Dec. 2025</div></div></div>
