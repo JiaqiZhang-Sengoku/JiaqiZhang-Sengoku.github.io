@@ -54,7 +54,7 @@ a:hover {
   z-index: 0;
   inset: 0;
   content: "";
-  background: url("/Web/LEADer/Figures/HeroBackground.png?v=20260709-gapfix") center top / cover no-repeat;
+  background: url("/Web/LEADer/Figures/HeroBackground.webp?v=20260709-gapfix") center top / cover no-repeat;
   filter: contrast(1.32) saturate(1.32);
   opacity: 1;
   transform: scale(1.01);

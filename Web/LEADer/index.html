@@ -64,21 +64,21 @@ layout: null
         <article class="demo-stage demo-stage-input">
           <span class="demo-label demo-label-input">Input</span>
           <div class="demo-image demo-image-input">
-            <img data-demo="input" src="/Web/LEADer/Figures/Input/1.png" alt="Degraded input example">
+            <img data-demo="input" src="/Web/LEADer/Figures/Input/1.webp" alt="Degraded input example">
           </div>
         </article>
         <article class="demo-stage demo-stage-baseline">
           <span class="demo-label demo-label-baseline" id="baseline-label">ProDiff</span>
           <div class="demo-image demo-image-baseline demo-transition demo-transition-middle">
-            <img data-demo="middle-from" src="/Web/LEADer/Figures/Input/1.png" alt="Input before baseline restoration">
-            <img class="demo-reveal" data-demo="others" src="/Web/LEADer/Figures/Others/1.png" alt="Restoration produced by another method">
+            <img data-demo="middle-from" src="/Web/LEADer/Figures/Input/1.webp" alt="Input before baseline restoration">
+            <img class="demo-reveal" data-demo="others" src="/Web/LEADer/Figures/Others/1.webp" alt="Restoration produced by another method">
           </div>
         </article>
         <article class="demo-stage demo-stage-leader">
           <span class="demo-label demo-label-ours">+ LEADer</span>
           <div class="demo-image demo-image-leader demo-transition demo-transition-final">
-            <img data-demo="final-from" src="/Web/LEADer/Figures/Others/1.png" alt="Baseline restoration before LEADer refinement">
-            <img class="demo-reveal" data-demo="ours" src="/Web/LEADer/Figures/Ours/1.png" alt="Restoration produced by LEADer">
+            <img data-demo="final-from" src="/Web/LEADer/Figures/Others/1.webp" alt="Baseline restoration before LEADer refinement">
+            <img class="demo-reveal" data-demo="ours" src="/Web/LEADer/Figures/Ours/1.webp" alt="Restoration produced by LEADer">
           </div>
         </article>
       </div>
@@ -112,7 +112,7 @@ layout: null
         the spatial correction strength and the temporal sampling schedule.
       </p>
       <figure class="main-figure">
-        <img src="/Images/Publication/LEADer.png?v=20260724" alt="Architecture of the LEADer framework.">
+        <img src="/Images/Publication/LEADer.webp?v=20260724" alt="Architecture of the LEADer framework." loading="lazy" decoding="async">
         <figcaption>
           Figure 1. <strong>Architecture of LEADer.</strong> Existing DMIR methods rely on fixed step-by-step sampling
           with uniform constraints, leading to computational redundancy and detail distortion in uncertain regions. To
@@ -151,14 +151,14 @@ layout: null
     
 
       <figure class="figure4-wide">
-        <img src="/Web/LEADer/Figures/Figure4.png" alt="Qualitative comparisons on five restoration tasks.">
+        <img src="/Web/LEADer/Figures/Figure4.webp" alt="Qualitative comparisons on five restoration tasks." loading="lazy" decoding="async">
         <figcaption>
           Figure 2. Qualitative comparisons on five image restoration tasks.
         </figcaption>
       </figure>
 
       <figure class="table-figure table-wide">
-        <img src="/Web/LEADer/Figures/PaperTable1.png?v=20260724" alt="Quantitative results across five image restoration tasks on CelebA-HQ 1K and ImageNet 1K.">
+        <img src="/Web/LEADer/Figures/PaperTable1.webp?v=20260724" alt="Quantitative results across five image restoration tasks on CelebA-HQ 1K and ImageNet 1K." loading="lazy" decoding="async">
         <figcaption>
           Table 1. Quantitative results for five image restoration tasks on CelebA-HQ 1K (top) and ImageNet 1K
           (bottom). The average change reports performance improvements and time reductions over each baseline.
@@ -175,7 +175,7 @@ layout: null
         prunes redundant steps, while preserving the important denoising updates needed for local texture recovery.
       </p>
       <figure class="trajectory-figure">
-        <img src="/Web/LEADer/Figures/Figure5.png" alt="Comparison between DDNM and LEADer at different NFEs.">
+        <img src="/Web/LEADer/Figures/Figure5.webp" alt="Comparison between DDNM and LEADer at different NFEs." loading="lazy" decoding="async">
         <figcaption>
           Figure 3. Comparison of restored states between DDNM and LEADer at different NFEs.
         </figcaption>
@@ -195,7 +195,7 @@ layout: null
         default setting.
       </p>
       <figure class="table-figure">
-        <img src="/Web/LEADer/Figures/PaperTable2.svg" alt="Ablation study results for UCPM and SATP.">
+        <img src="/Web/LEADer/Figures/PaperTable2.webp" alt="Ablation study results for UCPM and SATP." loading="lazy" decoding="async">
         <figcaption>
           Table 2. Ablation study of the UCPM and SATP components on three representative restoration tasks.
         </figcaption>
@@ -203,10 +203,10 @@ layout: null
       <figure class="paired-figure">
         <div class="paired-media">
           <div class="paired-panel paired-table">
-            <img src="/Web/LEADer/Figures/PaperTable3.svg" alt="Hyperparameter sensitivity analysis for the information-loss budget.">
+            <img src="/Web/LEADer/Figures/PaperTable3.webp" alt="Hyperparameter sensitivity analysis for the information-loss budget." loading="lazy" decoding="async">
           </div>
           <div class="paired-panel paired-image">
-            <img src="/Web/LEADer/Figures/Figure6.png" alt="Ablation study on different sampling steps.">
+            <img src="/Web/LEADer/Figures/Figure6.webp" alt="Ablation study on different sampling steps." loading="lazy" decoding="async">
           </div>
         </div>
         <figcaption>
@@ -224,7 +224,7 @@ layout: null
         uncertainty-guided modules improve quality and efficiency without materially increasing deployment cost.
       </p>
       <figure class="table-figure table4-large">
-        <img src="/Web/LEADer/Figures/PaperTable4.svg" alt="GPU memory consumption comparison across five restoration tasks.">
+        <img src="/Web/LEADer/Figures/PaperTable4.webp" alt="GPU memory consumption comparison across five restoration tasks." loading="lazy" decoding="async">
         <figcaption>
           Table 4. Memory consumption comparison across five image restoration tasks.
         </figcaption>
@@ -256,11 +256,11 @@ layout: null
       const baselineLabel = document.getElementById('baseline-label');
 
       function showDemo(index) {
-        images.input.src = `/Web/LEADer/Figures/Input/${index}.png`;
-        images.middleFrom.src = `/Web/LEADer/Figures/Input/${index}.png`;
-        images.others.src = `/Web/LEADer/Figures/Others/${index}.png`;
-        images.finalFrom.src = `/Web/LEADer/Figures/Others/${index}.png`;
-        images.ours.src = `/Web/LEADer/Figures/Ours/${index}.png`;
+        images.input.src = `/Web/LEADer/Figures/Input/${index}.webp`;
+        images.middleFrom.src = `/Web/LEADer/Figures/Input/${index}.webp`;
+        images.others.src = `/Web/LEADer/Figures/Others/${index}.webp`;
+        images.finalFrom.src = `/Web/LEADer/Figures/Others/${index}.webp`;
+        images.ours.src = `/Web/LEADer/Figures/Ours/${index}.webp`;
         baselineLabel.textContent = baselineMethods[index - 1];
 
         document.querySelectorAll('.demo-reveal').forEach(function (image) {

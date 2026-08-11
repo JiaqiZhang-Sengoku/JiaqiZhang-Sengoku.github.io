@@ -5,8 +5,7 @@
 <div itemscope itemtype="http://schema.org/Person" class="profile_box">
 
   <div class="author__avatar">
-    {% assign avatar_image = author.avatar_thumbnail | default: author.avatar %}
-    <img src="{{ avatar_image | relative_url }}" data-original-src="{{ author.avatar | relative_url }}" class="author__avatar" alt="{{ author.name }}" width="280" height="384" decoding="async" fetchpriority="high">
+    <img src="{{ author.avatar | relative_url }}" class="author__avatar" alt="{{ author.name }}" width="280" height="384" decoding="async" fetchpriority="high">
   </div>
 
   <div class="author__content">
@@ -184,8 +183,7 @@
           <button class="wechat-modal__close" type="button" aria-label="Close WeChat QR" data-wechat-close>Close</button>
           <h2 id="wechat-modal-title">WeChat</h2>
           {% if author.wechat_qr %}
-            {% assign wechat_qr_image = author.wechat_qr_thumbnail | default: author.wechat_qr %}
-            <img src="{{ wechat_qr_image | relative_url }}" data-original-src="{{ author.wechat_qr | relative_url }}" alt="WeChat QR code" class="wechat-modal__qr" width="430" height="640" loading="lazy" decoding="async">
+            <img src="{{ author.wechat_qr | relative_url }}" alt="WeChat QR code" class="wechat-modal__qr" width="430" height="640" loading="lazy" decoding="async">
           {% else %}
             <div class="wechat-modal__placeholder">QR code coming soon</div>
           {% endif %}

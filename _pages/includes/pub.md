@@ -12,7 +12,7 @@
   <div class="paper-box-image">
     <div>
       <div class="badge badge--accepted">ACM MM 2026</div>
-      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/LEADer-png.webp" alt="Overview of the LEADer framework" width="960" height="549" data-original-src="Images/Publication/LEADer.png">
+      <img loading="lazy" decoding="async" src="Images/Publication/LEADer.webp" alt="Overview of the LEADer framework" width="960" height="549">
     </div>
   </div>
   <div class="paper-box-text">
@@ -27,7 +27,7 @@
   <div class="paper-box-image">
     <div>
       <div class="badge badge--accepted">ACM MM 2026</div>
-      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/JMTR-png.webp" alt="Metric-aware test-time adaptation framework for cross-subject multimodal IED detection" data-original-src="Images/Publication/JMTR.png" width="960" height="493">
+      <img loading="lazy" decoding="async" src="Images/Publication/JMTR.webp" alt="Metric-aware test-time adaptation framework for cross-subject multimodal IED detection" width="960" height="493">
     </div>
   </div>
   <div class="paper-box-text">
@@ -44,7 +44,7 @@ Temporarily hidden: non-ACM-MM publications.
   <div class="paper-box-image">
     <div>
       <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/ReBridge-Flow-png.webp" alt="Overview of the ReBridge-Flow framework" width="960" height="443" data-original-src="Images/Publication/ReBridge-Flow.png">
+      <img loading="lazy" decoding="async" src="Images/Publication/ReBridge-Flow.webp" alt="Overview of the ReBridge-Flow framework" width="960" height="443">
     </div>
   </div>
   <div class="paper-box-text">
@@ -58,7 +58,7 @@ Temporarily hidden: non-ACM-MM publications.
   <div class="paper-box-image">
     <div>
       <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/TrajSPC-png.webp" alt="Overview of the TrajSPC framework" width="939" height="640" data-original-src="Images/Publication/TrajSPC.png">
+      <img loading="lazy" decoding="async" src="Images/Publication/TrajSPC.webp" alt="Overview of the TrajSPC framework" width="939" height="640">
     </div>
   </div>
   <div class="paper-box-text">
@@ -72,7 +72,7 @@ Temporarily hidden: non-ACM-MM publications.
   <div class="paper-box-image">
     <div>
       <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/TopoCMamba-png.webp" alt="Overview of the TopoCMamba framework" width="960" height="508" data-original-src="Images/Publication/TopoCMamba.png">
+      <img loading="lazy" decoding="async" src="Images/Publication/TopoCMamba.webp" alt="Overview of the TopoCMamba framework" width="960" height="508">
     </div>
   </div>
   <div class="paper-box-text">
@@ -88,7 +88,7 @@ Temporarily hidden: non-ACM-MM publications.
   <div class="paper-box-image">
     <div>
       <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Publication/DynKD.png" alt="Overview of the DynKD framework" width="8326" height="5011">
+      <img loading="lazy" decoding="async" src="Images/Publication/DynKD.webp" alt="Overview of the DynKD framework" width="8326" height="5011">
     </div>
   </div>
   <div class="paper-box-text">
@@ -102,7 +102,7 @@ Temporarily hidden: non-ACM-MM publications.
 
 
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='Images/Publication/A2L.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Preprint</div><img loading="lazy" decoding="async" src='Images/Publication/A2L.webp' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Breaking Confirmation Bias: Single-Round Active Manifold Calibration for Source-Free Domain Adaptation in Segmentation]()
 <br>
@@ -121,7 +121,7 @@ Temporarily hidden: non-ACM-MM publications.
   <div class="paper-box-image">
     <div>
       <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/D2IB-png.webp" alt="Overview of the D-squared-IB framework" width="960" height="588" data-original-src="Images/Publication/D2IB.png">
+      <img loading="lazy" decoding="async" src="Images/Publication/D2IB.webp" alt="Overview of the D-squared-IB framework" width="960" height="588">
     </div>
   </div>
   <div class="paper-box-text">
@@ -135,7 +135,7 @@ Temporarily hidden: non-ACM-MM publications.
   <div class="paper-box-image">
     <div>
       <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/PriMD-png.webp" alt="Overview of the PriMD framework" width="960" height="469" data-original-src="Images/Publication/PriMD.png">
+      <img loading="lazy" decoding="async" src="Images/Publication/PriMD.webp" alt="Overview of the PriMD framework" width="960" height="469">
     </div>
   </div>
   <div class="paper-box-text">
@@ -149,7 +149,7 @@ Temporarily hidden: non-ACM-MM publications.
   <div class="paper-box-image">
     <div>
       <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/Agent-png.webp" alt="Evidence tracing and execution provenance framework for LLM agents" width="877" height="640" data-original-src="Images/Publication/Agent.png">
+      <img loading="lazy" decoding="async" src="Images/Publication/Agent.webp" alt="Evidence tracing and execution provenance framework for LLM agents" width="877" height="640">
     </div>
   </div>
   <div class="paper-box-text">
@@ -165,7 +165,7 @@ Temporarily hidden: non-ACM-MM publications.
   <div class="paper-box-image">
     <div>
       <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Publication/ΠSkill.png" alt="Overview of the piSkill framework" width="11761" height="6102">
+      <img loading="lazy" decoding="async" src="Images/Publication/ΠSkill.webp" alt="Overview of the piSkill framework" width="11761" height="6102">
     </div>
   </div>
   <div class="paper-box-text">
@@ -183,7 +183,7 @@ Temporarily hidden: non-ACM-MM publications.
   <div class="paper-box-image">
     <div>
       <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/OrthoSeg-png.webp" alt="Overview of the OrthoSeg framework" width="960" height="515" data-original-src="Images/Publication/OrthoSeg.png">
+      <img loading="lazy" decoding="async" src="Images/Publication/OrthoSeg.webp" alt="Overview of the OrthoSeg framework" width="960" height="515">
     </div>
   </div>
   <div class="paper-box-text">
@@ -199,7 +199,7 @@ Temporarily hidden: non-ACM-MM publications.
   <div class="paper-box-image">
     <div>
       <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Publication/DDDM.png" alt="Overview of the DDDM image decomposition framework" width="1600" height="842">
+      <img loading="lazy" decoding="async" src="Images/Publication/DDDM.webp" alt="Overview of the DDDM image decomposition framework" width="1600" height="842">
     </div>
   </div>
   <div class="paper-box-text">
@@ -222,7 +222,7 @@ Temporarily hidden: non-ACM-MM publications.
   <div class="paper-box-image">
     <div>
       <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/FDGR-png.webp" alt="Overview of the FDGR image restoration framework" width="907" height="640" data-original-src="Images/Publication/FDGR.png">
+      <img loading="lazy" decoding="async" src="Images/Publication/FDGR.webp" alt="Overview of the FDGR image restoration framework" width="907" height="640">
     </div>
   </div>
   <div class="paper-box-text">
@@ -238,7 +238,7 @@ Temporarily hidden: non-ACM-MM publications.
   <div class="paper-box-image">
     <div>
       <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Thumbnails/Publication/DDGF-png.webp" alt="Overview of the DDGF medical image super-resolution framework" width="960" height="466" data-original-src="Images/Publication/DDGF.png">
+      <img loading="lazy" decoding="async" src="Images/Publication/DDGF.webp" alt="Overview of the DDGF medical image super-resolution framework" width="960" height="466">
     </div>
   </div>
   <div class="paper-box-text">

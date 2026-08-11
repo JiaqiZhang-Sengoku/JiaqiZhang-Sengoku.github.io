@@ -5,10 +5,14 @@
     "node": ">=20.9"
   },
   "scripts": {
-    "thumbnails": "node scripts/generate-homepage-thumbnails.mjs --rewrite",
-    "thumbnails:check": "node scripts/generate-homepage-thumbnails.mjs --check"
+    "images": "node scripts/optimize-web-images.mjs --write",
+    "images:check": "node scripts/optimize-web-images.mjs --check",
+    "thumbnails": "npm run images",
+    "thumbnails:check": "npm run images:check"
   },
   "devDependencies": {
+    "@napi-rs/canvas": "^1.0.5",
+    "pdfjs-dist": "^4.2.67",
     "sharp": "^0.35.3"
   }
 }

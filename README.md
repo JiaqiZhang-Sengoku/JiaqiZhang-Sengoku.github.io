@@ -13,7 +13,7 @@ Personal academic homepage for Jiaqi Zhang, deployed with GitHub Pages and Jekyl
 |-- _pages/              # Main homepage content sections
 |-- _sass/               # Theme and page styles
 |-- assets/              # Shared JavaScript and theme assets
-|-- Images/              # Homepage images, icons, awards, logos, CV, and publication thumbnails
+|-- Images/              # Optimized WebP images, icons, awards, logos, CV, and publication figures
 |-- Paper/               # Paper PDFs and supplementary files
 `-- Web/LEADer/          # LEADer project webpage source
 ```
@@ -30,20 +30,22 @@ bash run_server.sh
 
 The local site will be available at `http://127.0.0.1:4000`.
 
-## Homepage Image Thumbnails
+## Web Image Optimization
 
-The homepage loads generated WebP thumbnails while keeping the original images in place.
-Use Node.js 20.9 or newer. After adding or replacing a homepage image, run:
+All visual assets on the homepage and project websites are served directly as optimized
+WebP files. Use Node.js 20.9 or newer. After adding a PNG, JPG, JPEG, visual PDF, or paper
+table SVG under `Images/` or `Web/`, run:
 
 ```bash
 npm install
-npm run thumbnails
+npm run images
 ```
 
-The command scans the active sections included by `_pages/about.md`, writes thumbnails
-under `Images/Thumbnails/`, and updates active image tags with lazy loading, asynchronous
-decoding, and intrinsic dimensions. Validate the thumbnail references with:
+The command creates a same-directory WebP, rewrites site references, validates the output,
+and removes the source image only after conversion succeeds. For visual PDFs, the first page
+is rendered as the WebP preview. Downloadable documents in `Paper/` and `Images/CV.pdf` are
+preserved. Validate the repository with:
 
 ```bash
-npm run thumbnails:check
+npm run images:check
 ```

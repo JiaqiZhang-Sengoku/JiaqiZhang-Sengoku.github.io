@@ -7,7 +7,7 @@
   <article class="internship-card">
     <div class="internship-logos" aria-label="Institution logo">
       <a href="https://www.sustech.edu.cn/en/" aria-label="Southern University of Science and Technology">
-        <img src="Images/Thumbnails/Logos/sustech-seal-png.webp" alt="Southern University of Science and Technology logo" data-original-src="Images/Logos/sustech-seal.png" loading="lazy" decoding="async" width="180" height="180">
+        <img src="Images/Logos/sustech-seal.webp" alt="Southern University of Science and Technology logo" loading="lazy" decoding="async" width="180" height="180">
       </a>
     </div>
     <div class="internship-main">
