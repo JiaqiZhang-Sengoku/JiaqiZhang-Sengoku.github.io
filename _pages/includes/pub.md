@@ -19,7 +19,7 @@
     <a class="paper-title" href="/LEADer/">Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration</a>
     <div class="paper-venue paper-venue--accepted">ACM International Conference on Multimedia (ACM MM 2026)</div>
     <div class="paper-authors"><strong>Jiaqi Zhang</strong><sup>*</sup>, Zheng Pang<sup>*</sup>, Rongrong Gao, Qiyuan Zhang, Yang Yang<sup>&dagger;</sup></div>
-    <div class="paper-links"><a href="/Paper/LEADer_Paper.pdf">Paper</a><span class="paper-link-separator" aria-hidden="true">|</span><a href="/LEADer/">Web</a><span class="paper-link-separator" aria-hidden="true">|</span><a href="https://github.com/JiaqiZhang-Sengoku/LEADer">Code</a></div>
+    <div class="paper-links"><a href="https://arxiv.org/abs/2608.06981">Paper</a><span class="paper-link-separator" aria-hidden="true">|</span><a href="/LEADer/">Web</a><span class="paper-link-separator" aria-hidden="true">|</span><a href="https://github.com/JiaqiZhang-Sengoku/LEADer">Code</a></div>
   </div>
 </div>
 
