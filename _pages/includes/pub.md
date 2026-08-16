@@ -38,6 +38,8 @@
 </div>
 
 <!-- Preprints and manuscripts under review -->
+{% comment %}
+Temporarily hidden: non-ACM-MM publications.
 <div class="paper-box">
   <div class="paper-box-image">
     <div>
@@ -79,6 +81,7 @@
     <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Yuting Yan, Guo Yang, Ziqian Liu, Zirui Liu, Zhi Chen, Wencheng Yang, Mingkai Zheng</div>
   </div>
 </div>
+{% endcomment %}
 
 <!-- Temporarily hidden: Rethinking Knowledge Distillation.
 <div class="paper-box">
@@ -112,6 +115,8 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
 </div> -->
 
 
+{% comment %}
+Temporarily hidden: non-ACM-MM publications.
 <div class="paper-box">
   <div class="paper-box-image">
     <div>
@@ -154,6 +159,7 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
     <div class="paper-links"><a href="https://arxiv.org/abs/2606.04990">Paper</a></div>
   </div>
 </div>
+{% endcomment %}
 
 <!-- <div class="paper-box">
   <div class="paper-box-image">
@@ -171,6 +177,8 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
 -->
 
 
+{% comment %}
+Temporarily hidden: non-ACM-MM publications.
 <div class="paper-box">
   <div class="paper-box-image">
     <div>
@@ -185,6 +193,7 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
     <div class="paper-links"><a href="/Paper/OrthoSeg_Paper.pdf">Paper</a></div>
   </div>
 </div>
+{% endcomment %}
 
 <!-- <div class="paper-box">
   <div class="paper-box-image">
@@ -207,6 +216,8 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
 
 
 <!-- 2 -->
+{% comment %}
+Temporarily hidden: non-ACM-MM publications.
 <div class="paper-box">
   <div class="paper-box-image">
     <div>
@@ -237,6 +248,7 @@ European Conference on Computer Vision (ECCV 2026) **Under Review**
     <div class="paper-links"><a href="https://github.com/JiaqiZhang-Sengoku/DDGF">Code</a></div>
   </div>
 </div>
+{% endcomment %}
 
 </div>
 
