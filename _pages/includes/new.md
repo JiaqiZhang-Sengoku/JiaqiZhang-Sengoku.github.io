@@ -7,6 +7,7 @@
   <div class="update-card">
     <h3 class="update-date">August 2026</h3>
     <ul class="update-list">
+      <li><span class="update-item-layout"><span class="update-day">Aug. 14:</span><span class="update-message">We have 3 papers (Source-Free Domain Adaptive Segmentation + Low-Light Image Enhancement + Hyperspectral Domain Generalization) accepted to <span class="highlight-conference">ICONIP 2026 <span class="highlight-oral">Oral</span> (CCF C).</span><span class="update-reflection">These three articles were written together with friends who once accompanied me on my journey toward securing a recommendation-based postgraduate admission. Although I eventually chose a different path, I still cherish the time we spent striving toward the same goal. I sincerely hope that each of them will be admitted to the university of their dreams and move forward toward an even brighter future.</span></span></span></li>
       <li><span class="update-day">Aug. 9:</span> We have 1 paper (Multimodal LLM Reasoning) accepted to <span class="highlight-conference">ACM MM 2026 Workshop AMI.</span></li>
     </ul>
   </div>
