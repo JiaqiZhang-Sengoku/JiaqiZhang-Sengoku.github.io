@@ -232,23 +232,23 @@ Temporarily hidden: non-ACM-MM publications.
     <div class="paper-links"><a href="https://github.com/JiaqiZhang-Sengoku/FDGR">Code</a></div>
   </div>
 </div>
+{% endcomment %}
 
 <!-- 1 -->
 <div class="paper-box">
   <div class="paper-box-image">
     <div>
-      <div class="badge">Preprint</div>
+      <div class="badge badge--accepted">BSPC 2026</div>
       <img loading="lazy" decoding="async" src="Images/Publication/DDGF.webp" alt="Overview of the DDGF medical image super-resolution framework" width="960" height="466">
     </div>
   </div>
   <div class="paper-box-text">
     <div class="paper-title">Zero-Shot Medical Image Super-Resolution Using Denoising Diffusion Models with Gradient-Frequency Priors</div>
-    <div class="paper-venue paper-venue--review"><!-- Biomedical Signal Processing and Control (BSPC) --><strong class="paper-status paper-status--review">Under Review</strong></div>
+    <div class="paper-venue paper-venue--accepted">Biomedical Signal Processing and Control (BSPC 2026)</div>
     <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Guo Yang, Rongrong Gao, Yang Yang<sup>†</sup></div>
     <div class="paper-links"><a href="https://github.com/JiaqiZhang-Sengoku/DDGF">Code</a></div>
   </div>
 </div>
-{% endcomment %}
 
 </div>
 
