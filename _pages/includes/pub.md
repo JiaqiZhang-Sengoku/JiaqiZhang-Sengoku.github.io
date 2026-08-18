@@ -33,7 +33,7 @@
   <div class="paper-box-text">
     <div class="paper-title">Metric-Aware Test-Time Adaptation for Cross-Subject Multimodal Epileptiform-Discharge Detection</div>
     <div class="paper-venue paper-venue--accepted">ACM International Conference on Multimedia (ACM MM 2026)</div>
-    <div class="paper-authors">Yuting Yan, <strong>Jiaqi Zhang</strong>, Ziliang Wang</div>
+    <div class="paper-authors">Yuting Yan, <strong>Jiaqi Zhang</strong>, Ziliang Wang<sup>†</sup></div>
   </div>
 </div>
 
