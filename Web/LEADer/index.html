@@ -10,7 +10,7 @@ layout: null
   <title>LEADer</title>
   <meta name="description" content="Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration.">
   <link rel="stylesheet" href="/assets/css/academicons.min.css?v=1.8.0">
-  <link rel="stylesheet" href="/Web/LEADer/styles.css?v=20260724-arxiv-icon">
+  <link rel="stylesheet" href="/Web/LEADer/styles.css?v=20260818-demo-sync">
 
 </head>
 <body>
@@ -60,25 +60,25 @@ layout: null
       </div>
     <div class="restoration-demo" aria-labelledby="restoration-demo-title">
 
-      <div class="demo-flow">
+      <div class="demo-flow" data-demo-flow data-demo-index="1" aria-busy="false">
         <article class="demo-stage demo-stage-input">
           <span class="demo-label demo-label-input">Input</span>
           <div class="demo-image demo-image-input">
-            <img data-demo="input" src="/Web/LEADer/Figures/Input/1.webp" alt="Degraded input example">
+            <img data-demo="input" src="/Web/LEADer/Figures/Input/1.webp?v=20260818-demo-sync" alt="Degraded input for the ProDiff example" width="391" height="391" fetchpriority="high">
           </div>
         </article>
         <article class="demo-stage demo-stage-baseline">
           <span class="demo-label demo-label-baseline" id="baseline-label">ProDiff</span>
           <div class="demo-image demo-image-baseline demo-transition demo-transition-middle">
-            <img data-demo="middle-from" src="/Web/LEADer/Figures/Input/1.webp" alt="Input before baseline restoration">
-            <img class="demo-reveal" data-demo="others" src="/Web/LEADer/Figures/Others/1.webp" alt="Restoration produced by another method">
+            <img data-demo="middle-from" src="/Web/LEADer/Figures/Input/1.webp?v=20260818-demo-sync" alt="Input before ProDiff restoration" width="391" height="391" fetchpriority="high">
+            <img class="demo-reveal" data-demo="others" src="/Web/LEADer/Figures/Others/1.webp?v=20260818-demo-sync" alt="Restoration produced by ProDiff" width="391" height="391" fetchpriority="high">
           </div>
         </article>
         <article class="demo-stage demo-stage-leader">
           <span class="demo-label demo-label-ours">+ LEADer</span>
           <div class="demo-image demo-image-leader demo-transition demo-transition-final">
-            <img data-demo="final-from" src="/Web/LEADer/Figures/Others/1.webp" alt="Baseline restoration before LEADer refinement">
-            <img class="demo-reveal" data-demo="ours" src="/Web/LEADer/Figures/Ours/1.webp" alt="Restoration produced by LEADer">
+            <img data-demo="final-from" src="/Web/LEADer/Figures/Others/1.webp?v=20260818-demo-sync" alt="ProDiff restoration before LEADer refinement" width="391" height="391" fetchpriority="high">
+            <img class="demo-reveal" data-demo="ours" src="/Web/LEADer/Figures/Ours/1.webp?v=20260818-demo-sync" alt="ProDiff enhanced with LEADer" width="391" height="391" fetchpriority="high">
           </div>
         </article>
       </div>
@@ -246,9 +246,18 @@ layout: null
   </main>
   <script>
     (function () {
-      const total = 5;
-      let current = 1;
-      const baselineMethods = ['ProDiff', 'ProDiff', 'DDNM', 'DDPG', 'SITCOM'];
+      const assetVersion = '20260818-demo-sync';
+      const cycleDelay = 2800;
+      const assetPath = (group, index) => `/Web/LEADer/Figures/${group}/${index}.webp?v=${assetVersion}`;
+      const demos = ['ProDiff', 'ProDiff', 'DDNM', 'DDPG', 'SITCOM'].map(function (method, offset) {
+        const index = offset + 1;
+        return {
+          method: method,
+          input: assetPath('Input', index),
+          baseline: assetPath('Others', index),
+          leader: assetPath('Ours', index)
+        };
+      });
       const images = {
         input: document.querySelector('[data-demo="input"]'),
         middleFrom: document.querySelector('[data-demo="middle-from"]'),
@@ -257,15 +266,51 @@ layout: null
         ours: document.querySelector('[data-demo="ours"]')
       };
       const baselineLabel = document.getElementById('baseline-label');
+      const demoFlow = document.querySelector('[data-demo-flow]');
+      const preloadCache = new Map();
+      let currentIndex = 0;
+      let cycleTimer = null;
+      let transitionToken = 0;
 
-      function showDemo(index) {
-        images.input.src = `/Web/LEADer/Figures/Input/${index}.webp`;
-        images.middleFrom.src = `/Web/LEADer/Figures/Input/${index}.webp`;
-        images.others.src = `/Web/LEADer/Figures/Others/${index}.webp`;
-        images.finalFrom.src = `/Web/LEADer/Figures/Others/${index}.webp`;
-        images.ours.src = `/Web/LEADer/Figures/Ours/${index}.webp`;
-        baselineLabel.textContent = baselineMethods[index - 1];
+      function preloadImage(url) {
+        if (preloadCache.has(url)) {
+          return preloadCache.get(url);
+        }
 
+        const request = new Promise(function (resolve, reject) {
+          const image = new Image();
+          image.onload = async function () {
+            try {
+              if (typeof image.decode === 'function') {
+                await image.decode();
+              }
+            } catch (error) {
+              // The image is already loaded; decoding can safely fall back to the browser.
+            }
+            resolve(url);
+          };
+          image.onerror = function () {
+            reject(new Error(`Unable to load demo asset: ${url}`));
+          };
+          image.src = url;
+        });
+
+        preloadCache.set(url, request);
+        request.catch(function () {
+          preloadCache.delete(url);
+        });
+        return request;
+      }
+
+      function prepareDemo(demo) {
+        return Promise.all([
+          preloadImage(demo.input),
+          preloadImage(demo.baseline),
+          preloadImage(demo.leader)
+        ]);
+      }
+
+      function restartRevealAnimations() {
         document.querySelectorAll('.demo-reveal').forEach(function (image) {
           image.style.animation = 'none';
           void image.offsetWidth;
@@ -273,10 +318,98 @@ layout: null
         });
       }
 
-      window.setInterval(function () {
-        current = current % total + 1;
-        showDemo(current);
-      }, 2500);
+      function applyDemo(index) {
+        const demo = demos[index];
+        images.input.src = demo.input;
+        images.input.alt = `Degraded input for the ${demo.method} example`;
+        images.middleFrom.src = demo.input;
+        images.middleFrom.alt = `Input before ${demo.method} restoration`;
+        images.others.src = demo.baseline;
+        images.others.alt = `Restoration produced by ${demo.method}`;
+        images.finalFrom.src = demo.baseline;
+        images.finalFrom.alt = `${demo.method} restoration before LEADer refinement`;
+        images.ours.src = demo.leader;
+        images.ours.alt = `${demo.method} enhanced with LEADer`;
+        baselineLabel.textContent = demo.method;
+        demoFlow.dataset.demoIndex = String(index + 1);
+        currentIndex = index;
+        restartRevealAnimations();
+      }
+
+      async function showDemo(index) {
+        const token = ++transitionToken;
+        demoFlow.classList.add('is-preparing');
+        demoFlow.setAttribute('aria-busy', 'true');
+
+        try {
+          await prepareDemo(demos[index]);
+        } catch (error) {
+          if (token === transitionToken) {
+            demoFlow.classList.remove('is-preparing');
+            demoFlow.setAttribute('aria-busy', 'false');
+          }
+          return false;
+        }
+
+        if (token !== transitionToken) {
+          return false;
+        }
+
+        await new Promise(function (resolve) {
+          window.requestAnimationFrame(resolve);
+        });
+
+        if (token !== transitionToken) {
+          return false;
+        }
+
+        demoFlow.classList.add('is-updating');
+        applyDemo(index);
+
+        await new Promise(function (resolve) {
+          window.requestAnimationFrame(resolve);
+        });
+
+        if (token === transitionToken) {
+          demoFlow.classList.remove('is-preparing', 'is-updating');
+          demoFlow.setAttribute('aria-busy', 'false');
+        }
+        return true;
+      }
+
+      function scheduleNext() {
+        window.clearTimeout(cycleTimer);
+        if (document.hidden) {
+          return;
+        }
+        cycleTimer = window.setTimeout(advanceDemo, cycleDelay);
+      }
+
+      async function advanceDemo() {
+        for (let offset = 1; offset <= demos.length; offset += 1) {
+          const nextIndex = (currentIndex + offset) % demos.length;
+          if (await showDemo(nextIndex)) {
+            break;
+          }
+        }
+        scheduleNext();
+      }
+
+      document.addEventListener('visibilitychange', function () {
+        if (document.hidden) {
+          window.clearTimeout(cycleTimer);
+        } else {
+          scheduleNext();
+        }
+      });
+
+      window.addEventListener('pagehide', function () {
+        window.clearTimeout(cycleTimer);
+      });
+
+      Promise.allSettled(demos.flatMap(function (demo) {
+        return [demo.input, demo.baseline, demo.leader].map(preloadImage);
+      })).then(scheduleNext);
     }());
   </script></body>
 </html>
