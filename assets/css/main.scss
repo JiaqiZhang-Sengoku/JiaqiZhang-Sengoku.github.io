@@ -1924,13 +1924,19 @@ body > #main > .sidebar.sticky {
 }
 
 .badge--accepted {
-    right: 12px;
-    left: auto;
+    top: 14px;
+    right: auto;
+    left: 14px;
+    height: 32px;
+    min-height: 32px;
     padding: 0 !important;
-    border-color: rgba(46, 91, 62, 0.30) !important;
-    background: rgba(251, 253, 251, 0.96) !important;
+    overflow: visible;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
     color: var(--accepted-green) !important;
-    box-shadow: 0 4px 12px rgba(38, 78, 53, 0.09) !important;
+    box-shadow: none !important;
+    backdrop-filter: none;
 }
 
 .badge--accepted::before {
@@ -1939,32 +1945,58 @@ body > #main > .sidebar.sticky {
 
 .badge__label,
 .badge__year {
+    position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     align-self: stretch;
+    box-sizing: border-box;
     white-space: nowrap;
 }
 
 .badge__label {
-    padding: 0 10px;
+    z-index: 2;
+    padding: 0 12px 0 18px;
+    border: 1px solid rgba(32, 72, 46, 0.76);
+    border-radius: 3px 0 0 3px;
+    background: linear-gradient(180deg, #477c5b 0%, #356849 100%);
+    color: #ffffff;
+    box-shadow: 0 5px 12px rgba(30, 66, 43, 0.16);
 }
 
 .badge__label::before {
     content: "";
-    flex: 0 0 5px;
-    width: 5px;
-    height: 5px;
-    margin-right: 7px;
-    border-radius: 1px;
-    background: var(--accepted-green);
-    opacity: 0.78;
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: 7px;
+    width: 4px;
+    margin: 0;
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0.24);
+    opacity: 1;
+}
+
+.badge__label::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 5px;
+    width: 8px;
+    height: 8px;
+    background: #244b33;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 68%, 0 100%);
 }
 
 .badge__year {
-    padding: 0 8px;
-    border-left: 1px solid rgba(46, 91, 62, 0.18);
-    background: rgba(46, 91, 62, 0.075);
+    z-index: 1;
+    padding: 0 9px;
+    border: 1px solid rgba(46, 91, 62, 0.26);
+    border-left: 0;
+    border-radius: 0 3px 3px 0;
+    background: rgba(248, 252, 249, 0.96);
+    color: var(--accepted-green);
+    box-shadow: 0 5px 12px rgba(30, 66, 43, 0.10);
     font-size: 0.74rem;
     font-variant-numeric: tabular-nums;
 }
@@ -2687,17 +2719,20 @@ body > #main > .sidebar.sticky {
     }
 
     .badge--accepted {
-        right: 10px;
-        left: auto;
+        top: 12px;
+        right: auto;
+        left: 12px;
+        height: 31px;
+        min-height: 31px;
         padding: 0 !important;
     }
 
     .badge__label {
-        padding: 0 9px;
+        padding: 0 10px 0 17px;
     }
 
     .badge__year {
-        padding: 0 7px;
+        padding: 0 8px;
         font-size: 0.72rem;
     }
 
