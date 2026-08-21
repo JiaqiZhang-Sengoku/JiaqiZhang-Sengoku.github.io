@@ -11,7 +11,7 @@
 <div class="paper-box">
   <div class="paper-box-image">
     <div>
-      <div class="badge badge--accepted">ACM MM 2026</div>
+      <div class="badge badge--accepted"><span class="badge__label">ACM MM</span><span class="badge__year">2026</span></div>
       <img loading="lazy" decoding="async" src="Images/Publication/LEADer.webp" alt="Overview of the LEADer framework" width="960" height="549">
     </div>
   </div>
@@ -26,7 +26,7 @@
 <div class="paper-box">
   <div class="paper-box-image">
     <div>
-      <div class="badge badge--accepted">ACM MM 2026</div>
+      <div class="badge badge--accepted"><span class="badge__label">ACM MM</span><span class="badge__year">2026</span></div>
       <img loading="lazy" decoding="async" src="Images/Publication/JMTR.webp" alt="Metric-aware test-time adaptation framework for cross-subject multimodal IED detection" width="960" height="493">
     </div>
   </div>
@@ -238,7 +238,7 @@ Temporarily hidden: non-ACM-MM publications.
 <div class="paper-box">
   <div class="paper-box-image">
     <div>
-      <div class="badge badge--accepted">BSPC 2026</div>
+      <div class="badge badge--accepted"><span class="badge__label">BSPC</span><span class="badge__year">2026</span></div>
       <img loading="lazy" decoding="async" src="Images/Publication/DDGF.webp" alt="Overview of the DDGF medical image super-resolution framework" width="960" height="466">
     </div>
   </div>
