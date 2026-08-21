@@ -11,6 +11,35 @@
 <div class="paper-box">
   <div class="paper-box-image">
     <div>
+      <div class="badge badge--accepted"><span class="badge__label">EMNLP Findings</span><span class="badge__year">2026</span></div>
+      <img loading="lazy" decoding="async" src="Images/Publication/PriMD.webp" alt="Overview of the PriMD framework" width="960" height="469">
+    </div>
+  </div>
+  <div class="paper-box-text">
+    <div class="paper-title">Modality Disentangled Learning for Incomplete Multimodal Emotion Recognition: A Primitive Memory Distillation Perspective</div>
+    <div class="paper-venue paper-venue--accepted">Findings of the Association for Computational Linguistics: EMNLP 2026</div>
+    <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Zheng Pang, Mengting Li, Yiqi Wang, Guangyuan Dong, Chao Xue, Yusen Wu, Zihao Li, Huy Phan, Sicheng Zhao, Björn Schuller, Jiachen Luo<sup>&dagger;</sup></div>
+  </div>
+</div>
+
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div>
+      <div class="badge badge--accepted"><span class="badge__label">BSPC</span><span class="badge__year">2026</span></div>
+      <img loading="lazy" decoding="async" src="Images/Publication/DDGF.webp" alt="Overview of the DDGF medical image super-resolution framework" width="960" height="466">
+    </div>
+  </div>
+  <div class="paper-box-text">
+    <div class="paper-title">Zero-Shot Medical Image Super-Resolution Using Denoising Diffusion Models with Gradient-Frequency Priors</div>
+    <div class="paper-venue paper-venue--accepted">Biomedical Signal Processing and Control (BSPC 2026)</div>
+    <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Guo Yang, Rongrong Gao, Yang Yang<sup>&dagger;</sup></div>
+    <div class="paper-links"><a href="https://github.com/JiaqiZhang-Sengoku/DDGF">Code</a></div>
+  </div>
+</div>
+
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div>
       <div class="badge badge--accepted"><span class="badge__label">ACM MM</span><span class="badge__year">2026</span></div>
       <img loading="lazy" decoding="async" src="Images/Publication/LEADer.webp" alt="Overview of the LEADer framework" width="960" height="549">
     </div>
@@ -135,20 +164,6 @@ Temporarily hidden: non-ACM-MM publications.
   <div class="paper-box-image">
     <div>
       <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Publication/PriMD.webp" alt="Overview of the PriMD framework" width="960" height="469">
-    </div>
-  </div>
-  <div class="paper-box-text">
-    <div class="paper-title">Modality Disentangled Learning for Incomplete Multimodal Emotion Recognition: A Primitive Memory Distillation Perspective</div>
-    <div class="paper-venue">Empirical Methods in Natural Language Processing (EMNLP)<strong class="paper-status paper-status--review">Under Review</strong></div>
-    <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Zheng Pang, Mengting Li, Yiqi Wang, Guangyuan Dong, Chao Xue, Yusen Wu, Zihao Li, Huy Phan, Sicheng Zhao, Björn Schuller, Jiachen Luo<sup>†</sup></div>
-  </div>
-</div>
-
-<div class="paper-box">
-  <div class="paper-box-image">
-    <div>
-      <div class="badge">Preprint</div>
       <img loading="lazy" decoding="async" src="Images/Publication/Agent.webp" alt="Evidence tracing and execution provenance framework for LLM agents" width="877" height="640">
     </div>
   </div>
@@ -233,22 +248,6 @@ Temporarily hidden: non-ACM-MM publications.
   </div>
 </div>
 {% endcomment %}
-
-<!-- 1 -->
-<div class="paper-box">
-  <div class="paper-box-image">
-    <div>
-      <div class="badge badge--accepted"><span class="badge__label">BSPC</span><span class="badge__year">2026</span></div>
-      <img loading="lazy" decoding="async" src="Images/Publication/DDGF.webp" alt="Overview of the DDGF medical image super-resolution framework" width="960" height="466">
-    </div>
-  </div>
-  <div class="paper-box-text">
-    <div class="paper-title">Zero-Shot Medical Image Super-Resolution Using Denoising Diffusion Models with Gradient-Frequency Priors</div>
-    <div class="paper-venue paper-venue--accepted">Biomedical Signal Processing and Control (BSPC 2026)</div>
-    <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Guo Yang, Rongrong Gao, Yang Yang<sup>†</sup></div>
-    <div class="paper-links"><a href="https://github.com/JiaqiZhang-Sengoku/DDGF">Code</a></div>
-  </div>
-</div>
 
 </div>
 
