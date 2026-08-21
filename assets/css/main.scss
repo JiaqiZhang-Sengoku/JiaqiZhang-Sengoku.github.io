@@ -870,61 +870,6 @@ body > #main > .sidebar.sticky {
     overflow-wrap: anywhere;
 }
 
-.hero-meta {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 0;
-    width: min(980px, 100%);
-    margin-top: 21px;
-    overflow: visible;
-    border: 0;
-    border-radius: 0;
-    background: transparent;
-    box-shadow: none;
-}
-
-.hero-meta span {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 0;
-    min-height: 32px;
-    padding: 4px 18px;
-    border: 0 !important;
-    border-radius: 0;
-    background: transparent !important;
-    color: #526171;
-    font-size: 0.94rem;
-    font-weight: 700;
-    line-height: 1.25;
-    text-align: center;
-    transition: background 0.18s ease, color 0.18s ease;
-}
-
-.hero-meta span + span {
-    border-left: 1px solid #d5dfe2 !important;
-}
-
-.hero-meta span::before {
-    content: "";
-    flex: 0 0 6px;
-    width: 6px;
-    height: 6px;
-    margin-right: 9px;
-    border-radius: 1px;
-    background: var(--accepted-green);
-    opacity: 0.76;
-}
-
-.hero-meta span:nth-child(even)::before {
-    background: var(--accent);
-}
-
-.hero-meta span:hover {
-    background: transparent !important;
-    color: var(--accent-strong);
-}
-
 .section-heading {
     display: flex !important;
     align-items: center !important;
@@ -2450,34 +2395,6 @@ body > #main > .sidebar.sticky {
         padding-top: 0;
         font-size: 1rem !important;
         line-height: 1.7 !important;
-    }
-
-    .hero-meta {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        width: 100%;
-        margin-top: 18px;
-    }
-
-    .hero-meta span {
-        min-height: 45px;
-        padding: 8px 9px;
-        font-size: 0.87rem;
-    }
-
-    .hero-meta span + span {
-        border-left: 0 !important;
-    }
-
-    .hero-meta span:nth-child(even) {
-        border-left: 1px solid #dce7e6 !important;
-    }
-
-    .hero-meta span:nth-child(n + 3) {
-        border-top: 1px solid #dce7e6 !important;
-    }
-
-    .hero-meta span::before {
-        margin-right: 6px;
     }
 
     .hero-title__cn {
