@@ -1924,23 +1924,48 @@ body > #main > .sidebar.sticky {
 }
 
 .badge--accepted {
-    top: 14px;
+    top: -10px;
     right: auto;
-    left: 14px;
-    height: 32px;
-    min-height: 32px;
+    left: 24px;
+    height: 30px;
+    min-height: 30px;
     padding: 0 !important;
     overflow: visible;
-    border: 0 !important;
-    border-radius: 0 !important;
-    background: transparent !important;
+    border: 1px solid rgba(46, 91, 62, 0.27) !important;
+    border-radius: 3px !important;
+    background: linear-gradient(180deg, rgba(250, 253, 251, 0.99) 0%, rgba(239, 247, 242, 0.98) 100%) !important;
     color: var(--accepted-green) !important;
-    box-shadow: none !important;
-    backdrop-filter: none;
+    box-shadow:
+        0 5px 12px rgba(34, 70, 47, 0.11),
+        inset 0 1px 0 rgba(255, 255, 255, 0.92) !important;
+    backdrop-filter: blur(8px);
 }
 
 .badge--accepted::before {
-    content: none;
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -9px;
+    z-index: -1;
+    width: 10px;
+    height: 20px;
+    margin: 0;
+    border-radius: 0;
+    background: #3f7353;
+    clip-path: polygon(100% 0, 100% 100%, 0 82%, 3px 50%, 0 18%);
+    opacity: 1;
+}
+
+.badge--accepted::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -9px;
+    z-index: -1;
+    width: 10px;
+    height: 20px;
+    background: #3f7353;
+    clip-path: polygon(0 0, 0 100%, 100% 82%, 7px 50%, 100% 18%);
 }
 
 .badge__label,
@@ -1955,53 +1980,41 @@ body > #main > .sidebar.sticky {
 }
 
 .badge__label {
-    z-index: 2;
-    padding: 0 12px 0 18px;
-    border: 1px solid rgba(32, 72, 46, 0.76);
-    border-radius: 3px 0 0 3px;
-    background: linear-gradient(180deg, #477c5b 0%, #356849 100%);
-    color: #ffffff;
-    box-shadow: 0 5px 12px rgba(30, 66, 43, 0.16);
+    padding: 0 9px 0 12px;
+    color: var(--accepted-green);
 }
 
 .badge__label::before {
     content: "";
-    position: absolute;
-    top: -1px;
-    bottom: -1px;
-    left: 7px;
-    width: 4px;
-    margin: 0;
-    border-radius: 0;
-    background: rgba(255, 255, 255, 0.24);
-    opacity: 1;
+    position: static;
+    flex: 0 0 5px;
+    width: 5px;
+    height: 5px;
+    margin-right: 8px;
+    border-radius: 1px;
+    background: var(--accent-teal);
+    opacity: 0.82;
+    transform: rotate(45deg);
 }
 
 .badge__label::after {
-    content: "";
-    position: absolute;
-    bottom: -7px;
-    left: 5px;
-    width: 8px;
-    height: 8px;
-    background: #244b33;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 68%, 0 100%);
+    content: none;
 }
 
 .badge__year {
-    z-index: 1;
-    padding: 0 9px;
-    border: 1px solid rgba(46, 91, 62, 0.26);
-    border-left: 0;
-    border-radius: 0 3px 3px 0;
-    background: rgba(248, 252, 249, 0.96);
+    padding: 0 11px 0 9px;
+    border: 0;
+    border-left: 1px solid rgba(46, 91, 62, 0.18);
+    border-radius: 0;
+    background: transparent;
     color: var(--accepted-green);
-    box-shadow: 0 5px 12px rgba(30, 66, 43, 0.10);
+    box-shadow: none;
     font-size: 0.74rem;
     font-variant-numeric: tabular-nums;
 }
 
-.paper-box-image:hover .badge {
+.paper-box-image:hover .badge,
+.paper-box-image:hover + .badge--accepted {
     opacity: 0;
     visibility: hidden;
 }
@@ -2719,20 +2732,20 @@ body > #main > .sidebar.sticky {
     }
 
     .badge--accepted {
-        top: 12px;
+        top: -9px;
         right: auto;
-        left: 12px;
-        height: 31px;
-        min-height: 31px;
+        left: 20px;
+        height: 29px;
+        min-height: 29px;
         padding: 0 !important;
     }
 
     .badge__label {
-        padding: 0 10px 0 17px;
+        padding: 0 8px 0 10px;
     }
 
     .badge__year {
-        padding: 0 8px;
+        padding: 0 9px 0 8px;
         font-size: 0.72rem;
     }
 
@@ -2808,6 +2821,11 @@ body > #main > .sidebar.sticky {
     }
 
     .paper-box-image:hover .badge {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .paper-box-image:hover + .badge--accepted {
         opacity: 1;
         visibility: visible;
     }
