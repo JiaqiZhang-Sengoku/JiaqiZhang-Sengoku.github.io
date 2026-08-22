@@ -19,6 +19,7 @@
     <div class="paper-title">Modality Disentangled Learning for Incomplete Multimodal Emotion Recognition: A Primitive Memory Distillation Perspective</div>
     <div class="paper-venue paper-venue--accepted">Empirical Methods in Natural Language Processing (EMNLP Findings 2026)</div>
     <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Zheng Pang, Mengting Li, Yiqi Wang, Guangyuan Dong, Chao Xue, Yusen Wu, Zihao Li, Huy Phan, Sicheng Zhao, Björn Schuller, Jiachen Luo<sup>&dagger;</sup></div>
+    <div class="paper-links"><a href="https://github.com/JiaqiZhang-Sengoku/PriMD">Code</a></div>
   </div>
 </div>
 
