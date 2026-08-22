@@ -1924,16 +1924,16 @@ body > #main > .sidebar.sticky {
 }
 
 .badge--accepted {
-    top: 12px;
+    top: 0;
     right: auto;
-    left: 12px;
+    left: 0;
     height: 26px;
     min-height: 26px;
     padding: 0 !important;
     overflow: hidden;
     border: 1px solid rgba(63, 115, 83, 0.18) !important;
     border-left: 3px solid rgba(63, 115, 83, 0.55) !important;
-    border-radius: 2px !important;
+    border-radius: 7px 0 3px 0 !important;
     background: rgba(249, 252, 250, 0.90) !important;
     color: #476955 !important;
     box-shadow: 0 2px 6px rgba(34, 70, 47, 0.05) !important;
@@ -2715,9 +2715,9 @@ body > #main > .sidebar.sticky {
     }
 
     .badge--accepted {
-        top: 10px;
+        top: 0;
         right: auto;
-        left: 10px;
+        left: 0;
         height: 25px;
         min-height: 25px;
         padding: 0 !important;
