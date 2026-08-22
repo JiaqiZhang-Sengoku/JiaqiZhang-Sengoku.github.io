@@ -1924,48 +1924,31 @@ body > #main > .sidebar.sticky {
 }
 
 .badge--accepted {
-    top: -10px;
+    top: 12px;
     right: auto;
-    left: 24px;
-    height: 30px;
-    min-height: 30px;
+    left: 12px;
+    height: 26px;
+    min-height: 26px;
     padding: 0 !important;
-    overflow: visible;
-    border: 1px solid rgba(46, 91, 62, 0.27) !important;
-    border-radius: 3px !important;
-    background: linear-gradient(180deg, rgba(250, 253, 251, 0.99) 0%, rgba(239, 247, 242, 0.98) 100%) !important;
-    color: var(--accepted-green) !important;
-    box-shadow:
-        0 5px 12px rgba(34, 70, 47, 0.11),
-        inset 0 1px 0 rgba(255, 255, 255, 0.92) !important;
-    backdrop-filter: blur(8px);
+    overflow: hidden;
+    border: 1px solid rgba(63, 115, 83, 0.18) !important;
+    border-left: 3px solid rgba(63, 115, 83, 0.55) !important;
+    border-radius: 2px !important;
+    background: rgba(249, 252, 250, 0.90) !important;
+    color: #476955 !important;
+    box-shadow: 0 2px 6px rgba(34, 70, 47, 0.05) !important;
+    backdrop-filter: blur(4px);
+    font-size: 0.74rem !important;
+    font-weight: 700;
+    opacity: 0.94;
 }
 
 .badge--accepted::before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: -9px;
-    z-index: -1;
-    width: 10px;
-    height: 20px;
-    margin: 0;
-    border-radius: 0;
-    background: #3f7353;
-    clip-path: polygon(100% 0, 100% 100%, 0 82%, 3px 50%, 0 18%);
-    opacity: 1;
+    content: none;
 }
 
 .badge--accepted::after {
-    content: "";
-    position: absolute;
-    top: 5px;
-    right: -9px;
-    z-index: -1;
-    width: 10px;
-    height: 20px;
-    background: #3f7353;
-    clip-path: polygon(0 0, 0 100%, 100% 82%, 7px 50%, 100% 18%);
+    content: none;
 }
 
 .badge__label,
@@ -1980,20 +1963,20 @@ body > #main > .sidebar.sticky {
 }
 
 .badge__label {
-    padding: 0 9px 0 12px;
-    color: var(--accepted-green);
+    padding: 0 7px 0 8px;
+    color: #476955;
 }
 
 .badge__label::before {
     content: "";
     position: static;
-    flex: 0 0 5px;
-    width: 5px;
-    height: 5px;
-    margin-right: 8px;
+    flex: 0 0 4px;
+    width: 4px;
+    height: 4px;
+    margin-right: 6px;
     border-radius: 1px;
     background: var(--accent-teal);
-    opacity: 0.82;
+    opacity: 0.55;
     transform: rotate(45deg);
 }
 
@@ -2002,14 +1985,14 @@ body > #main > .sidebar.sticky {
 }
 
 .badge__year {
-    padding: 0 11px 0 9px;
+    padding: 0 8px 0 7px;
     border: 0;
     border-left: 1px solid rgba(46, 91, 62, 0.18);
     border-radius: 0;
     background: transparent;
-    color: var(--accepted-green);
+    color: #607667;
     box-shadow: none;
-    font-size: 0.74rem;
+    font-size: 0.67rem;
     font-variant-numeric: tabular-nums;
 }
 
@@ -2732,21 +2715,21 @@ body > #main > .sidebar.sticky {
     }
 
     .badge--accepted {
-        top: -9px;
+        top: 10px;
         right: auto;
-        left: 20px;
-        height: 29px;
-        min-height: 29px;
+        left: 10px;
+        height: 25px;
+        min-height: 25px;
         padding: 0 !important;
     }
 
     .badge__label {
-        padding: 0 8px 0 10px;
+        padding: 0 7px;
     }
 
     .badge__year {
-        padding: 0 9px 0 8px;
-        font-size: 0.72rem;
+        padding: 0 7px 0 6px;
+        font-size: 0.65rem;
     }
 
     .paper-box-image:hover img {
