@@ -1495,7 +1495,7 @@ body > #main > .sidebar.sticky {
 .paper-box {
     position: relative;
     display: grid !important;
-    grid-template-columns: minmax(340px, 41.7%) minmax(0, 1fr) !important;
+    grid-template-columns: minmax(340px, 45.9%) minmax(0, 1fr) !important;
     gap: 20px !important;
     align-items: center !important;
     min-height: 0;
@@ -2260,7 +2260,7 @@ body > #main > .sidebar.sticky {
     }
 
     .paper-box {
-        grid-template-columns: minmax(300px, 40%) minmax(0, 1fr) !important;
+        grid-template-columns: minmax(300px, 44%) minmax(0, 1fr) !important;
         gap: 16px !important;
         padding: 14px 15px !important;
     }
