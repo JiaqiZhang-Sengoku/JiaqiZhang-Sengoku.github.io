@@ -1,7 +1,10 @@
 import fs from "node:fs/promises";
+import { createRequire } from "node:module";
 import path from "node:path";
 import process from "node:process";
-import sharp from "sharp";
+
+const require = createRequire(import.meta.url);
+const sharp = require("sharp");
 
 const projectRoot = process.cwd();
 const assetRoots = ["Images", "Web"];
@@ -92,7 +95,7 @@ function settingsFor(relativeFile) {
     return { width: 512, height: 512, quality: 100, lossless: true };
   }
 
-  if (/^Images\/profile\.(?:png|jpe?g|pdf)$/i.test(relativeFile)) {
+  if (/^Images\/(?:profile|Avter)\.(?:png|jpe?g|pdf)$/i.test(relativeFile)) {
     return { width: 384, height: 384, quality: 88 };
   }
 

@@ -22,7 +22,8 @@ google_scholar_stats_use_cdn : true
 # Site Author
 author:
   name             : "Jiaqi Zhang"
-  avatar           : "Images/profile.webp"
+  avatar           : "Images/Avter.webp"
+  avatar_thumbnail : "Images/Avter.webp"
   bio              : "School of Computer Science and Telecommunication Engineering, Jiangsu University"
   location         : "Jiangsu China"
   employer         : 
