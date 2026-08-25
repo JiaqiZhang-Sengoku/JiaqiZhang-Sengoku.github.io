@@ -73,10 +73,10 @@
     --accent-warm-soft: rgba(113, 144, 128, 0.11);
     --accepted-green: #2e5b3e;
     --first-author-orange: #e4572e;
-    --max-page-width: 1520px;
-    --content-width: 1160px;
-    --page-side-padding: 42px;
-    --sidebar-width: 300px;
+    --max-page-width: 1560px;
+    --content-width: 1200px;
+    --page-side-padding: 28px;
+    --sidebar-width: 272px;
     --masthead-height: 62px;
     --anchor-offset: 92px;
     --quiet-line: rgba(210, 222, 237, 0.82);
@@ -260,7 +260,7 @@ body > .masthead {
 #main {
     display: grid !important;
     grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
-    gap: 30px;
+    gap: 26px;
     max-width: var(--max-page-width) !important;
     margin: 0 auto !important;
     padding: 0 var(--page-side-padding) 50px !important;
@@ -1495,12 +1495,12 @@ body > #main > .sidebar.sticky {
 .paper-box {
     position: relative;
     display: grid !important;
-    grid-template-columns: minmax(320px, 39.5%) minmax(0, 1fr) !important;
-    gap: 24px !important;
+    grid-template-columns: minmax(340px, 44%) minmax(0, 1fr) !important;
+    gap: 22px !important;
     align-items: center !important;
     min-height: 0;
     margin: 0 !important;
-    padding: 16px 18px !important;
+    padding: 15px 16px !important;
     border-color: rgba(213, 224, 229, 0.88) !important;
     border-radius: 6px !important;
     box-shadow: 0 5px 15px rgba(42, 57, 88, 0.045) !important;
@@ -1648,8 +1648,8 @@ body > #main > .sidebar.sticky {
     min-width: 0 !important;
     padding: 5px 2px !important;
     color: var(--text-color) !important;
-    font-size: 0.94rem !important;
-    line-height: 1.50 !important;
+    font-size: 0.89rem !important;
+    line-height: 1.47 !important;
 }
 
 .paper-box-text::before {
@@ -1675,9 +1675,9 @@ body > #main > .sidebar.sticky {
 .paper-box-text a.paper-title {
     display: block !important;
     color: var(--heading-color) !important;
-    font-size: 1.16rem !important;
+    font-size: 1.08rem !important;
     font-weight: 700 !important;
-    line-height: 1.36 !important;
+    line-height: 1.34 !important;
     margin: 0 !important;
     text-decoration: none !important;
     transition: color 0.18s ease, box-shadow 0.18s ease;
@@ -1691,7 +1691,7 @@ body > #main > .sidebar.sticky {
 .paper-venue {
     margin-top: 9px;
     color: #56647a;
-    font-size: 0.94rem;
+    font-size: 0.88rem;
     font-weight: 600;
     line-height: 1.42;
 }
@@ -1743,8 +1743,8 @@ body > #main > .sidebar.sticky {
 .paper-authors {
     margin-top: 8px;
     color: var(--text-color);
-    font-size: 0.93rem;
-    line-height: 1.52;
+    font-size: 0.87rem;
+    line-height: 1.48;
 }
 
 .paper-authors strong {
@@ -1786,10 +1786,10 @@ body > #main > .sidebar.sticky {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
-    width: 74px;
-    min-width: 74px;
-    height: 32px;
-    min-height: 32px;
+    width: 70px;
+    min-width: 70px;
+    height: 30px;
+    min-height: 30px;
     padding: 0 !important;
     box-sizing: border-box;
     border: 1px solid rgba(183, 199, 222, 0.82) !important;
@@ -1797,7 +1797,7 @@ body > #main > .sidebar.sticky {
     background: #f9fbfd !important;
     color: var(--accent-strong) !important;
     box-shadow: 0 2px 6px rgba(42, 57, 88, 0.035) !important;
-    font-size: 0.84rem !important;
+    font-size: 0.80rem !important;
     font-weight: 700 !important;
     line-height: 1.12 !important;
     white-space: nowrap;
@@ -1825,7 +1825,7 @@ body > #main > .sidebar.sticky {
     align-items: center;
     justify-content: center;
     width: 8px;
-    height: 32px;
+    height: 30px;
     color: rgba(116, 130, 151, 0.54);
     font-size: 0.92rem;
     font-weight: 700;
@@ -2260,9 +2260,9 @@ body > #main > .sidebar.sticky {
     }
 
     .paper-box {
-        grid-template-columns: minmax(290px, 39%) minmax(0, 1fr) !important;
-        gap: 20px !important;
-        padding: 15px 16px !important;
+        grid-template-columns: minmax(300px, 43%) minmax(0, 1fr) !important;
+        gap: 18px !important;
+        padding: 14px 15px !important;
     }
 
     .paper-box-text {
