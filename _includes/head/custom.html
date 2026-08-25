@@ -1,7 +1,9 @@
-<link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.webp">
-<link rel="icon" type="image/webp" sizes="32x32" href="Images/favicon-32x32.webp">
-<link rel="icon" type="image/webp" sizes="16x16" href="Images/favicon-16x16.webp">
-<link rel="manifest" href="Images/site.webmanifest">
+{% assign avatar_icon_version = site.time | date: "%s" %}
+<link rel="apple-touch-icon" sizes="180x180" href="{{ '/Images/apple-touch-icon.webp' | relative_url }}?v={{ avatar_icon_version }}">
+<link rel="icon" type="image/webp" sizes="32x32" href="{{ '/Images/favicon-32x32.webp' | relative_url }}?v={{ avatar_icon_version }}">
+<link rel="icon" type="image/webp" sizes="16x16" href="{{ '/Images/favicon-16x16.webp' | relative_url }}?v={{ avatar_icon_version }}">
+<link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}?v={{ avatar_icon_version }}">
+<link rel="manifest" href="{{ '/Images/site.webmanifest' | relative_url }}?v={{ avatar_icon_version }}">
 
 <meta name="msapplication-TileColor" content="#000000">
 <meta name="theme-color" content="#ffffff">
