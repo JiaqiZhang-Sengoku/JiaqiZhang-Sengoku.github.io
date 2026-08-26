@@ -15,7 +15,7 @@ layout: null
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v={{ site.time | date: '%s' }}">
   <link rel="manifest" href="/Images/site.webmanifest?v={{ site.time | date: '%s' }}">
   <link rel="stylesheet" href="/assets/css/academicons.min.css?v=1.8.0">
-  <link rel="stylesheet" href="/Web/LEADer/styles.css?v=20260826-labels-large">
+  <link rel="stylesheet" href="/Web/LEADer/styles.css?v=20260826-timeline">
 
 </head>
 <body>
@@ -65,25 +65,25 @@ layout: null
       </div>
     <div class="restoration-demo" aria-labelledby="restoration-demo-title">
 
-      <div class="demo-flow" data-demo-flow data-demo-index="1" aria-busy="false">
+      <div class="demo-flow is-cycle-reset" data-demo-flow data-demo-index="1" aria-busy="false">
         <article class="demo-stage demo-stage-input">
           <span class="demo-label demo-label-input">Input</span>
           <div class="demo-image demo-image-input">
-            <img data-demo="input" src="/Web/LEADer/Figures/Input/1.webp?v=20260818-demo-sync" alt="Degraded input for the ProDiff example" width="391" height="391" fetchpriority="high">
+            <img data-demo="input" src="/Web/LEADer/Figures/Input/1.webp?v=20260818-demo-sync" alt="Degraded input for the ProDiff example" width="391" height="391" decoding="async" fetchpriority="high">
           </div>
         </article>
         <article class="demo-stage demo-stage-baseline">
           <span class="demo-label demo-label-baseline" id="baseline-label">ProDiff</span>
           <div class="demo-image demo-image-baseline demo-transition demo-transition-middle">
-            <img data-demo="middle-from" src="/Web/LEADer/Figures/Input/1.webp?v=20260818-demo-sync" alt="Input before ProDiff restoration" width="391" height="391" fetchpriority="high">
-            <img class="demo-reveal" data-demo="others" src="/Web/LEADer/Figures/Others/1.webp?v=20260818-demo-sync" alt="Restoration produced by ProDiff" width="391" height="391" fetchpriority="high">
+            <img data-demo="middle-from" src="/Web/LEADer/Figures/Input/1.webp?v=20260818-demo-sync" alt="Input before ProDiff restoration" width="391" height="391" decoding="async" fetchpriority="high">
+            <img class="demo-reveal" data-demo="others" src="/Web/LEADer/Figures/Others/1.webp?v=20260818-demo-sync" alt="Restoration produced by ProDiff" width="391" height="391" decoding="async" fetchpriority="high">
           </div>
         </article>
         <article class="demo-stage demo-stage-leader">
           <span class="demo-label demo-label-ours">+ LEADer</span>
           <div class="demo-image demo-image-leader demo-transition demo-transition-final">
-            <img data-demo="final-from" src="/Web/LEADer/Figures/Others/1.webp?v=20260818-demo-sync" alt="ProDiff restoration before LEADer refinement" width="391" height="391" fetchpriority="high">
-            <img class="demo-reveal" data-demo="ours" src="/Web/LEADer/Figures/Ours/1.webp?v=20260818-demo-sync" alt="ProDiff enhanced with LEADer" width="391" height="391" fetchpriority="high">
+            <img data-demo="final-from" src="/Web/LEADer/Figures/Others/1.webp?v=20260818-demo-sync" alt="ProDiff restoration before LEADer refinement" width="391" height="391" decoding="async" fetchpriority="high">
+            <img class="demo-reveal" data-demo="ours" src="/Web/LEADer/Figures/Ours/1.webp?v=20260818-demo-sync" alt="ProDiff enhanced with LEADer" width="391" height="391" decoding="async" fetchpriority="high">
           </div>
         </article>
       </div>
@@ -253,7 +253,10 @@ layout: null
   <script>
     (function () {
       const assetVersion = '20260818-demo-sync';
-      const cycleDelay = 3100;
+      const animationFallbackDelay = 3400;
+      const reducedMotionCycleDelay = 3100;
+      const holdDelay = 420;
+      const retryDelay = 1600;
       const assetPath = (group, index) => `/Web/LEADer/Figures/${group}/${index}.webp?v=${assetVersion}`;
       const demos = ['ProDiff', 'ProDiff', 'DDNM', 'DDPG', 'SITCOM'].map(function (method, offset) {
         const index = offset + 1;
@@ -276,7 +279,13 @@ layout: null
       const preloadCache = new Map();
       let currentIndex = 0;
       let cycleTimer = null;
+      let fallbackTimer = null;
+      let activeCycleId = 0;
+      let cycleCompleted = true;
       let transitionToken = 0;
+      const reducedMotion = typeof window.matchMedia === 'function'
+        ? window.matchMedia('(prefers-reduced-motion: reduce)')
+        : { matches: false };
 
       function preloadImage(url) {
         if (preloadCache.has(url)) {
@@ -285,6 +294,7 @@ layout: null
 
         const request = new Promise(function (resolve, reject) {
           const image = new Image();
+          image.decoding = 'async';
           image.onload = async function () {
             try {
               if (typeof image.decode === 'function') {
@@ -316,25 +326,77 @@ layout: null
         ]);
       }
 
-      function restartRevealAnimations() {
-        const revealImages = document.querySelectorAll('.demo-reveal');
-        const scanPanels = document.querySelectorAll('.demo-transition');
+      function afterNextPaint() {
+        return new Promise(function (resolve) {
+          window.requestAnimationFrame(function () {
+            window.requestAnimationFrame(resolve);
+          });
+        });
+      }
 
-        revealImages.forEach(function (image) {
-          image.style.animation = 'none';
-        });
-        scanPanels.forEach(function (panel) {
-          panel.classList.add('is-scan-reset');
+      function decodeDisplayedImages() {
+        return Promise.all(Object.values(images).map(function (image) {
+          if (typeof image.decode !== 'function') {
+            return Promise.resolve();
+          }
+          return image.decode().catch(function () {
+            // The preloader already confirmed the asset; keep the rendered fallback.
+          });
+        }));
+      }
+
+      function clearCycleSchedule() {
+        window.clearTimeout(cycleTimer);
+        window.clearTimeout(fallbackTimer);
+        cycleTimer = null;
+        fallbackTimer = null;
+        activeCycleId += 1;
+        cycleCompleted = true;
+      }
+
+      function finishCycle(cycleId) {
+        if (cycleId !== activeCycleId || cycleCompleted || document.hidden) {
+          return;
+        }
+
+        cycleCompleted = true;
+        window.clearTimeout(fallbackTimer);
+        fallbackTimer = null;
+        cycleTimer = window.setTimeout(function () {
+          cycleTimer = null;
+          advanceDemo();
+        }, holdDelay);
+      }
+
+      function armCycleCompletion() {
+        window.clearTimeout(cycleTimer);
+        window.clearTimeout(fallbackTimer);
+        cycleTimer = null;
+        fallbackTimer = null;
+
+        const cycleId = ++activeCycleId;
+        const nextIndex = (currentIndex + 1) % demos.length;
+        cycleCompleted = false;
+
+        prepareDemo(demos[nextIndex]).catch(function () {
+          // A failed prefetch is retried before the actual swap.
         });
 
-        void demoFlow.offsetWidth;
+        fallbackTimer = window.setTimeout(function () {
+          finishCycle(cycleId);
+        }, reducedMotion.matches ? reducedMotionCycleDelay : animationFallbackDelay);
+      }
 
-        revealImages.forEach(function (image) {
-          image.style.animation = '';
-        });
-        scanPanels.forEach(function (panel) {
-          panel.classList.remove('is-scan-reset');
-        });
+      function activateCycle() {
+        if (document.hidden) {
+          return false;
+        }
+
+        demoFlow.classList.add('is-cycle-running');
+        demoFlow.classList.remove('is-cycle-reset');
+        demoFlow.setAttribute('aria-busy', 'false');
+        armCycleCompletion();
+        return true;
       }
 
       function applyDemo(index) {
@@ -352,83 +414,90 @@ layout: null
         baselineLabel.textContent = demo.method;
         demoFlow.dataset.demoIndex = String(index + 1);
         currentIndex = index;
-        restartRevealAnimations();
       }
 
       async function showDemo(index) {
         const token = ++transitionToken;
-        demoFlow.classList.add('is-preparing');
-        demoFlow.setAttribute('aria-busy', 'true');
 
         try {
           await prepareDemo(demos[index]);
         } catch (error) {
+          return false;
+        }
+
+        if (token !== transitionToken || document.hidden) {
+          return false;
+        }
+
+        clearCycleSchedule();
+        demoFlow.setAttribute('aria-busy', 'true');
+        demoFlow.classList.remove('is-cycle-running');
+        demoFlow.classList.add('is-cycle-reset');
+        void demoFlow.offsetWidth;
+        applyDemo(index);
+
+        await decodeDisplayedImages();
+        await afterNextPaint();
+
+        if (token !== transitionToken || document.hidden) {
           if (token === transitionToken) {
-            demoFlow.classList.remove('is-preparing');
+            demoFlow.classList.remove('is-cycle-reset');
             demoFlow.setAttribute('aria-busy', 'false');
           }
           return false;
         }
 
-        if (token !== transitionToken) {
-          return false;
-        }
-
-        await new Promise(function (resolve) {
-          window.requestAnimationFrame(resolve);
-        });
-
-        if (token !== transitionToken) {
-          return false;
-        }
-
-        demoFlow.classList.add('is-updating');
-        applyDemo(index);
-
-        await new Promise(function (resolve) {
-          window.requestAnimationFrame(resolve);
-        });
-
-        if (token === transitionToken) {
-          demoFlow.classList.remove('is-preparing', 'is-updating');
-          demoFlow.setAttribute('aria-busy', 'false');
-        }
-        return true;
+        return activateCycle();
       }
 
-      function scheduleNext() {
-        window.clearTimeout(cycleTimer);
-        if (document.hidden) {
+      function startCurrentCycle() {
+        if (document.hidden || demoFlow.classList.contains('is-cycle-running')) {
           return;
         }
-        cycleTimer = window.setTimeout(advanceDemo, cycleDelay);
+        showDemo(currentIndex).then(function (started) {
+          if (!started && !document.hidden) {
+            cycleTimer = window.setTimeout(startCurrentCycle, retryDelay);
+          }
+        });
       }
 
       async function advanceDemo() {
         for (let offset = 1; offset <= demos.length; offset += 1) {
           const nextIndex = (currentIndex + offset) % demos.length;
           if (await showDemo(nextIndex)) {
-            break;
+            return;
           }
         }
-        scheduleNext();
+        if (!document.hidden) {
+          cycleTimer = window.setTimeout(startCurrentCycle, retryDelay);
+        }
       }
+
+      images.ours.addEventListener('animationend', function (event) {
+        if (event.animationName === 'reveal-final') {
+          finishCycle(activeCycleId);
+        }
+      });
 
       document.addEventListener('visibilitychange', function () {
         if (document.hidden) {
-          window.clearTimeout(cycleTimer);
+          transitionToken += 1;
+          clearCycleSchedule();
+          demoFlow.classList.remove('is-cycle-running', 'is-cycle-reset');
+          demoFlow.setAttribute('aria-busy', 'false');
         } else {
-          scheduleNext();
+          startCurrentCycle();
         }
       });
 
       window.addEventListener('pagehide', function () {
-        window.clearTimeout(cycleTimer);
+        transitionToken += 1;
+        clearCycleSchedule();
       });
 
       Promise.allSettled(demos.flatMap(function (demo) {
         return [demo.input, demo.baseline, demo.leader].map(preloadImage);
-      })).then(scheduleNext);
+      })).then(startCurrentCycle);
     }());
   </script></body>
 </html>

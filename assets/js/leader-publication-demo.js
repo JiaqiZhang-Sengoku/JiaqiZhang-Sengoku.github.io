@@ -2,7 +2,10 @@
   "use strict";
 
   var assetVersion = "20260818-demo-sync";
-  var cycleDelay = 3100;
+  var animationFallbackDelay = 3400;
+  var reducedMotionCycleDelay = 3100;
+  var holdDelay = 420;
+  var retryDelay = 1600;
   var methods = ["ProDiff", "ProDiff", "DDNM", "DDPG", "SITCOM"];
   var preloadCache = new Map();
 
@@ -27,6 +30,7 @@
 
     var request = new Promise(function (resolve, reject) {
       var image = new Image();
+      image.decoding = "async";
       image.onload = async function () {
         try {
           if (typeof image.decode === "function") {
@@ -48,6 +52,14 @@
       preloadCache.delete(url);
     });
     return request;
+  }
+
+  function afterNextPaint() {
+    return new Promise(function (resolve) {
+      window.requestAnimationFrame(function () {
+        window.requestAnimationFrame(resolve);
+      });
+    });
   }
 
   function initializeDemo(root) {
@@ -72,10 +84,19 @@
 
     var currentIndex = 0;
     var cycleTimer = null;
+    var fallbackTimer = null;
+    var activeCycleId = 0;
+    var cycleCompleted = true;
     var transitionToken = 0;
+    var isTransitioning = false;
+    var restartAfterTransition = false;
     var isNearViewport = !("IntersectionObserver" in window);
     var preloadAllPromise = null;
     var observer = null;
+    var disposed = false;
+    var reducedMotion = typeof window.matchMedia === "function"
+      ? window.matchMedia("(prefers-reduced-motion: reduce)")
+      : { matches: false };
 
     function prepareDemo(demo) {
       return Promise.all([
@@ -94,29 +115,37 @@
       return preloadAllPromise;
     }
 
-    function canAnimate() {
-      return isNearViewport && !document.hidden;
+    function decodeDisplayedImages() {
+      return Promise.all(Object.keys(images).map(function (key) {
+        var image = images[key];
+        if (typeof image.decode !== "function") {
+          return Promise.resolve();
+        }
+        return image.decode().catch(function () {
+          // The preloader already confirmed the asset; keep the rendered fallback.
+        });
+      }));
     }
 
-    function restartRevealAnimations() {
-      var revealImages = root.querySelectorAll(".leader-publication-demo__reveal");
-      var scanPanels = root.querySelectorAll(".leader-publication-demo__transition");
+    function canAnimate() {
+      return !disposed && isNearViewport && !document.hidden;
+    }
 
-      revealImages.forEach(function (image) {
-        image.style.animation = "none";
-      });
-      scanPanels.forEach(function (panel) {
-        panel.classList.add("is-scan-reset");
-      });
+    function clearCycleSchedule() {
+      window.clearTimeout(cycleTimer);
+      window.clearTimeout(fallbackTimer);
+      cycleTimer = null;
+      fallbackTimer = null;
+      activeCycleId += 1;
+      cycleCompleted = true;
+    }
 
-      void root.offsetWidth;
-
-      revealImages.forEach(function (image) {
-        image.style.animation = "";
-      });
-      scanPanels.forEach(function (panel) {
-        panel.classList.remove("is-scan-reset");
-      });
+    function stopCycle() {
+      transitionToken += 1;
+      restartAfterTransition = false;
+      clearCycleSchedule();
+      root.classList.remove("is-cycle-running", "is-cycle-reset");
+      root.setAttribute("aria-busy", "false");
     }
 
     function applyDemo(index) {
@@ -134,81 +163,171 @@
       baselineLabel.textContent = demo.method;
       root.dataset.demoIndex = String(index + 1);
       currentIndex = index;
-      restartRevealAnimations();
     }
 
-    async function showDemo(index) {
+    function finishCycle(cycleId) {
+      if (cycleId !== activeCycleId || cycleCompleted || !canAnimate()) {
+        return;
+      }
+
+      cycleCompleted = true;
+      window.clearTimeout(fallbackTimer);
+      fallbackTimer = null;
+      cycleTimer = window.setTimeout(function () {
+        cycleTimer = null;
+        advanceDemo();
+      }, holdDelay);
+    }
+
+    function armCycleCompletion() {
+      window.clearTimeout(cycleTimer);
+      window.clearTimeout(fallbackTimer);
+      cycleTimer = null;
+      fallbackTimer = null;
+
+      var cycleId = ++activeCycleId;
+      var nextIndex = (currentIndex + 1) % demos.length;
+      cycleCompleted = false;
+
+      prepareDemo(demos[nextIndex]).catch(function () {
+        // A failed prefetch is retried before the actual swap.
+      });
+
+      fallbackTimer = window.setTimeout(function () {
+        finishCycle(cycleId);
+      }, reducedMotion.matches ? reducedMotionCycleDelay : animationFallbackDelay);
+    }
+
+    function activateCycle() {
+      if (!canAnimate()) {
+        return false;
+      }
+
+      root.classList.add("is-cycle-running");
+      root.classList.remove("is-cycle-reset");
+      root.setAttribute("aria-busy", "false");
+      armCycleCompletion();
+      return true;
+    }
+
+    async function renderCycle(index, updateContent) {
       var token = ++transitionToken;
-      root.classList.add("is-preparing");
-      root.setAttribute("aria-busy", "true");
 
       try {
         await prepareDemo(demos[index]);
       } catch (error) {
+        return false;
+      }
+
+      if (token !== transitionToken || !canAnimate()) {
+        return false;
+      }
+
+      clearCycleSchedule();
+      root.setAttribute("aria-busy", "true");
+      root.classList.remove("is-cycle-running");
+      root.classList.add("is-cycle-reset");
+      void root.offsetWidth;
+
+      if (updateContent) {
+        applyDemo(index);
+      }
+
+      await decodeDisplayedImages();
+      await afterNextPaint();
+
+      if (token !== transitionToken || !canAnimate()) {
         if (token === transitionToken) {
-          root.classList.remove("is-preparing");
+          root.classList.remove("is-cycle-reset");
           root.setAttribute("aria-busy", "false");
         }
         return false;
       }
 
-      if (token !== transitionToken || !canAnimate()) {
-        root.classList.remove("is-preparing");
-        root.setAttribute("aria-busy", "false");
-        return false;
-      }
-
-      await new Promise(function (resolve) {
-        window.requestAnimationFrame(resolve);
-      });
-
-      if (token !== transitionToken || !canAnimate()) {
-        root.classList.remove("is-preparing");
-        root.setAttribute("aria-busy", "false");
-        return false;
-      }
-
-      applyDemo(index);
-
-      await new Promise(function (resolve) {
-        window.requestAnimationFrame(resolve);
-      });
-
-      if (token === transitionToken) {
-        root.classList.remove("is-preparing");
-        root.setAttribute("aria-busy", "false");
-      }
-      return true;
+      return activateCycle();
     }
 
-    function scheduleNext() {
+    function queueRetry() {
       window.clearTimeout(cycleTimer);
       if (!canAnimate()) {
         return;
       }
-      cycleTimer = window.setTimeout(advanceDemo, cycleDelay);
+      cycleTimer = window.setTimeout(function () {
+        cycleTimer = null;
+        startCurrentCycle();
+      }, retryDelay);
+    }
+
+    async function startCurrentCycle() {
+      if (!canAnimate() || root.classList.contains("is-cycle-running")) {
+        return;
+      }
+      if (isTransitioning) {
+        restartAfterTransition = true;
+        return;
+      }
+
+      isTransitioning = true;
+      restartAfterTransition = false;
+      var started = await renderCycle(currentIndex, false);
+      isTransitioning = false;
+
+      if (!started && canAnimate()) {
+        if (restartAfterTransition) {
+          startCurrentCycle();
+        } else {
+          queueRetry();
+        }
+      }
     }
 
     async function advanceDemo() {
-      if (!canAnimate()) {
+      if (!canAnimate() || isTransitioning) {
         return;
       }
+
+      isTransitioning = true;
+      restartAfterTransition = false;
+      var switched = false;
 
       for (var offset = 1; offset <= demos.length; offset += 1) {
         if (!canAnimate()) {
           break;
         }
         var nextIndex = (currentIndex + offset) % demos.length;
-        if (await showDemo(nextIndex)) {
+        if (await renderCycle(nextIndex, true)) {
+          switched = true;
           break;
         }
       }
-      scheduleNext();
+
+      isTransitioning = false;
+      if (!switched && canAnimate()) {
+        if (restartAfterTransition) {
+          startCurrentCycle();
+        } else {
+          queueRetry();
+        }
+      }
     }
 
-    function warmAndSchedule() {
-      preloadAll().then(scheduleNext);
+    function warmAndStart() {
+      preloadAll();
+      if (!canAnimate()) {
+        return;
+      }
+      if (isTransitioning) {
+        restartAfterTransition = true;
+        return;
+      }
+      startCurrentCycle();
     }
+
+    images.ours.addEventListener("animationend", function (event) {
+      if (event.animationName === "leader-publication-reveal-final") {
+        finishCycle(activeCycleId);
+      }
+    });
 
     if ("IntersectionObserver" in window) {
       observer = new IntersectionObserver(function (entries) {
@@ -217,26 +336,27 @@
         });
 
         if (isNearViewport) {
-          warmAndSchedule();
+          warmAndStart();
         } else {
-          window.clearTimeout(cycleTimer);
+          stopCycle();
         }
       }, { rootMargin: "180px 0px" });
       observer.observe(root);
     } else {
-      warmAndSchedule();
+      warmAndStart();
     }
 
     document.addEventListener("visibilitychange", function () {
       if (document.hidden) {
-        window.clearTimeout(cycleTimer);
+        stopCycle();
       } else if (isNearViewport) {
-        warmAndSchedule();
+        warmAndStart();
       }
     });
 
     window.addEventListener("pagehide", function () {
-      window.clearTimeout(cycleTimer);
+      disposed = true;
+      stopCycle();
       if (observer) {
         observer.disconnect();
       }

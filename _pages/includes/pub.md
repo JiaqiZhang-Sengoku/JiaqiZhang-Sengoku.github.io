@@ -40,7 +40,7 @@
 
 <div class="paper-box paper-box--leader-demo">
   <div class="paper-box-image paper-box-image--leader-demo">
-    <div class="leader-publication-demo" data-leader-publication-demo data-demo-index="1" aria-label="Five rotating restoration comparisons for LEADer" aria-busy="false">
+    <div class="leader-publication-demo is-cycle-reset" data-leader-publication-demo data-demo-index="1" aria-label="Five rotating restoration comparisons for LEADer" aria-busy="false">
       <div class="badge badge--accepted">ACM MM 2026</div>
       <div class="leader-publication-demo__flow">
         <div class="leader-publication-demo__stage">
@@ -74,7 +74,7 @@
   </div>
 </div>
 
-<script src="/assets/js/leader-publication-demo.js?v=20260826-scan" defer></script>
+<script src="/assets/js/leader-publication-demo.js?v=20260826-timeline" defer></script>
 
 <div class="paper-box">
   <div class="paper-box-image">
