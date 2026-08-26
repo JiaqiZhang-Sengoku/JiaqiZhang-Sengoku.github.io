@@ -1776,8 +1776,8 @@ body > #main > .sidebar.sticky {
     display: inline-flex !important;
     align-items: center !important;
     flex-wrap: wrap;
-    gap: 7px;
-    margin-top: 12px !important;
+    gap: 8px;
+    margin-top: 11px !important;
     line-height: 1 !important;
 }
 
@@ -1786,18 +1786,19 @@ body > #main > .sidebar.sticky {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
-    width: 70px;
-    min-width: 70px;
-    height: 30px;
-    min-height: 30px;
-    padding: 0 !important;
+    width: 82px;
+    min-width: 82px;
+    height: 32px;
+    min-height: 32px;
+    gap: 7px;
+    padding: 0 10px !important;
     box-sizing: border-box;
-    border: 1px solid rgba(183, 199, 222, 0.82) !important;
-    border-radius: 5px !important;
-    background: #f9fbfd !important;
-    color: var(--accent-strong) !important;
-    box-shadow: 0 2px 6px rgba(42, 57, 88, 0.035) !important;
-    font-size: 0.80rem !important;
+    border: 1px solid rgba(191, 204, 214, 0.82) !important;
+    border-radius: 6px !important;
+    background: #ffffff !important;
+    color: #40566f !important;
+    box-shadow: 0 2px 7px rgba(42, 57, 88, 0.040) !important;
+    font-size: 0.78rem !important;
     font-weight: 700 !important;
     line-height: 1.12 !important;
     white-space: nowrap;
@@ -1807,29 +1808,79 @@ body > #main > .sidebar.sticky {
 
 .paper-box-text .paper-links a:hover,
 .other-paper-links a:hover {
-    border-color: rgba(85, 119, 214, 0.72) !important;
-    background: #eef4fc !important;
-    color: var(--accent) !important;
-    box-shadow: 0 5px 12px rgba(42, 57, 88, 0.065) !important;
+    box-shadow: 0 5px 13px rgba(42, 57, 88, 0.085) !important;
     text-decoration: none !important;
     transform: translateY(-1px);
+}
+
+.paper-links .paper-link__icon,
+.other-paper-links .paper-link__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 14px;
+    width: 14px;
+    font-size: 0.82rem !important;
+    line-height: 1 !important;
+}
+
+.paper-links .paper-link__icon.fas,
+.other-paper-links .paper-link__icon.fas {
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 900 !important;
+}
+
+.paper-links .paper-link__icon.fab,
+.other-paper-links .paper-link__icon.fab {
+    font-family: "Font Awesome 5 Brands" !important;
+    font-weight: 400 !important;
+}
+
+.paper-box-text .paper-links .paper-link--paper,
+.other-paper-links .paper-link--paper {
+    border-color: rgba(91, 139, 110, 0.34) !important;
+    background: #f4f9f6 !important;
+    color: #315f45 !important;
+}
+
+.paper-box-text .paper-links .paper-link--web,
+.other-paper-links .paper-link--web {
+    border-color: rgba(96, 139, 172, 0.34) !important;
+    background: #f3f8fb !important;
+    color: #3d6685 !important;
+}
+
+.paper-box-text .paper-links .paper-link--code,
+.other-paper-links .paper-link--code {
+    border-color: rgba(118, 139, 156, 0.34) !important;
+    background: #f6f8fa !important;
+    color: #40566f !important;
+}
+
+.paper-box-text .paper-links .paper-link--paper:hover,
+.other-paper-links .paper-link--paper:hover {
+    border-color: rgba(70, 119, 89, 0.58) !important;
+    background: #eaf4ed !important;
+    color: #274f38 !important;
+}
+
+.paper-box-text .paper-links .paper-link--web:hover,
+.other-paper-links .paper-link--web:hover {
+    border-color: rgba(74, 120, 155, 0.58) !important;
+    background: #eaf3f8 !important;
+    color: #315b7b !important;
+}
+
+.paper-box-text .paper-links .paper-link--code:hover,
+.other-paper-links .paper-link--code:hover {
+    border-color: rgba(92, 118, 139, 0.54) !important;
+    background: #edf2f5 !important;
+    color: #344b62 !important;
 }
 
 .paper-box-text a:focus-visible {
     outline: 2px solid rgba(82, 116, 208, 0.50);
     outline-offset: 3px;
-}
-
-.paper-link-separator {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 8px;
-    height: 30px;
-    color: rgba(116, 130, 151, 0.54);
-    font-size: 0.92rem;
-    font-weight: 700;
-    line-height: 1;
 }
 
 .other-paper-authors:empty {
@@ -2653,16 +2704,11 @@ body > #main > .sidebar.sticky {
 
     .paper-box-text .paper-links a,
     .other-paper-links a {
-        width: 72px;
-        min-width: 72px;
+        width: 80px;
+        min-width: 80px;
         height: 32px;
         min-height: 32px;
-        font-size: 0.82rem !important;
-    }
-
-    .paper-link-separator {
-        width: 6px;
-        height: 34px;
+        font-size: 0.77rem !important;
     }
 
     .section-heading {

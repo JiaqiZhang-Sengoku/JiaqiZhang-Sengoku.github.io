@@ -19,7 +19,7 @@
     <div class="paper-title">Modality Disentangled Learning for Incomplete Multimodal Emotion Recognition: A Primitive Memory Distillation Perspective</div>
     <div class="paper-venue paper-venue--accepted">Empirical Methods in Natural Language Processing (EMNLP Findings 2026)</div>
     <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Zheng Pang, Mengting Li, Yiqi Wang, Guangyuan Dong, Chao Xue, Yusen Wu, Zihao Li, Huy Phan, Sicheng Zhao, Björn Schuller, Jiachen Luo<sup>&dagger;</sup></div>
-    <div class="paper-links"><a href="https://github.com/JiaqiZhang-Sengoku/PriMD">Code</a></div>
+    <div class="paper-links"><a class="paper-link paper-link--code" href="https://github.com/JiaqiZhang-Sengoku/PriMD" title="View code on GitHub"><i class="fab fa-github paper-link__icon" aria-hidden="true"></i><span>Code</span></a></div>
   </div>
 </div>
 
@@ -34,7 +34,7 @@
     <div class="paper-title">Zero-Shot Medical Image Super-Resolution Using Denoising Diffusion Models with Gradient-Frequency Priors</div>
     <div class="paper-venue paper-venue--accepted">Biomedical Signal Processing and Control (BSPC 2026)</div>
     <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Guo Yang, Rongrong Gao, Yang Yang<sup>&dagger;</sup></div>
-    <div class="paper-links"><a href="https://github.com/JiaqiZhang-Sengoku/DDGF">Code</a></div>
+    <div class="paper-links"><a class="paper-link paper-link--code" href="https://github.com/JiaqiZhang-Sengoku/DDGF" title="View code on GitHub"><i class="fab fa-github paper-link__icon" aria-hidden="true"></i><span>Code</span></a></div>
   </div>
 </div>
 
@@ -49,7 +49,7 @@
     <a class="paper-title" href="/LEADer/">Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration</a>
     <div class="paper-venue paper-venue--accepted">ACM International Conference on Multimedia (ACM MM 2026)</div>
     <div class="paper-authors"><strong>Jiaqi Zhang</strong><sup>*</sup>, Zheng Pang<sup>*</sup>, Rongrong Gao, Qiyuan Zhang, Yang Yang<sup>&dagger;</sup></div>
-    <div class="paper-links"><a href="https://arxiv.org/abs/2608.06981">Paper</a><span class="paper-link-separator" aria-hidden="true">|</span><a href="/LEADer/">Web</a><span class="paper-link-separator" aria-hidden="true">|</span><a href="https://github.com/JiaqiZhang-Sengoku/LEADer">Code</a></div>
+    <div class="paper-links"><a class="paper-link paper-link--paper" href="https://arxiv.org/abs/2608.06981" title="Read the paper"><i class="fas fa-file-alt paper-link__icon" aria-hidden="true"></i><span>Paper</span></a><a class="paper-link paper-link--web" href="/LEADer/" title="Open the project website"><i class="fas fa-globe paper-link__icon" aria-hidden="true"></i><span>Web</span></a><a class="paper-link paper-link--code" href="https://github.com/JiaqiZhang-Sengoku/LEADer" title="View code on GitHub"><i class="fab fa-github paper-link__icon" aria-hidden="true"></i><span>Code</span></a></div>
   </div>
 </div>
 
@@ -125,7 +125,7 @@ Temporarily hidden: non-ACM-MM publications.
     <div class="paper-title">Rethinking Knowledge Distillation for Incomplete Multimodal Emotion Recognition: A Dynamic Approach</div>
     <div class="paper-venue">ACM International Conference on Multimedia (ACM MM 2026)<strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors"><strong>Jiaqi Zhang</strong> (First Author), Anonymous</div>
-    <div class="paper-links"><a href="/Paper/DynKD_Paper.pdf">Paper</a></div>
+    <div class="paper-links"><a class="paper-link paper-link--paper" href="/Paper/DynKD_Paper.pdf" title="Read the paper"><i class="fas fa-file-alt paper-link__icon" aria-hidden="true"></i><span>Paper</span></a></div>
   </div>
 </div> -->
 
@@ -172,7 +172,7 @@ Temporarily hidden: non-ACM-MM publications.
     <div class="paper-title">From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents</div>
     <div class="paper-venue paper-venue--review"><!-- Transactions on Machine Learning Research (TMLR) --><strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors">Yiqi Wang, <strong>Jiaqi Zhang</strong>, Zhangkai Wu, Taotao Cai, Zirui Liu, Qingqiang Sun, Zequn Sun, Manqing Dong, Mingkai Zheng, Yu-Xuan Qiu, Xuefei Yin, Yanming Zhu</div>
-    <div class="paper-links"><a href="https://arxiv.org/abs/2606.04990">Paper</a></div>
+    <div class="paper-links"><a class="paper-link paper-link--paper" href="https://arxiv.org/abs/2606.04990" title="Read the paper"><i class="fas fa-file-alt paper-link__icon" aria-hidden="true"></i><span>Paper</span></a></div>
   </div>
 </div>
 {% endcomment %}
@@ -206,7 +206,7 @@ Temporarily hidden: non-ACM-MM publications.
     <div class="paper-title">Learning Orthogonal Disentanglement for Modality-Agnostic Medical Image Segmentation</div>
     <div class="paper-venue paper-venue--review"><!-- Journal of Biomedical and Health Informatics (JBHI) --><strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors">Kai Han, <strong>Jiaqi Zhang</strong>, Chongwen Lyu, Mengting Li, Jun Chen, Laihua Yang, Guangquan Zhou, Yang Chen, Zhe Liu<sup>†</sup></div>
-    <div class="paper-links"><a href="/Paper/OrthoSeg_Paper.pdf">Paper</a></div>
+    <div class="paper-links"><a class="paper-link paper-link--paper" href="/Paper/OrthoSeg_Paper.pdf" title="Read the paper"><i class="fas fa-file-alt paper-link__icon" aria-hidden="true"></i><span>Paper</span></a></div>
   </div>
 </div>
 {% endcomment %}
@@ -245,7 +245,7 @@ Temporarily hidden: non-ACM-MM publications.
     <div class="paper-title">Image Restoration via Optimizing Fidelity with Diffusion and Gradient Regularization</div>
     <div class="paper-venue">Engineering Applications of Artificial Intelligence (EAAI)<strong class="paper-status paper-status--review">Under Review</strong></div>
     <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Guo Yang, Zheng Pang, Yao Zhu, Bingbing Gu, Yang Yang<sup>†</sup> (Corresponding Author)</div>
-    <div class="paper-links"><a href="https://github.com/JiaqiZhang-Sengoku/FDGR">Code</a></div>
+    <div class="paper-links"><a class="paper-link paper-link--code" href="https://github.com/JiaqiZhang-Sengoku/FDGR" title="View code on GitHub"><i class="fab fa-github paper-link__icon" aria-hidden="true"></i><span>Code</span></a></div>
   </div>
 </div>
 {% endcomment %}
@@ -263,7 +263,7 @@ Temporarily hidden: non-ACM-MM publications.
     <div class="other-paper-title">DG-SCL: Diffusion-guided Semantic Contrastive Learning for Imbalanced Malicious Traffic Detection</div>
     <div class="other-paper-authors other-paper-venue">Information Sciences (2026)</div>
     <div class="other-paper-authors">Bingbing Gu<sup>*</sup>, Saihua Cai<sup>*</sup> <sup>†</sup>, Jing Wang, Zhuole Li, Xiheng Jia, <strong>Jiaqi Zhang</strong></div>
-    <div class="other-paper-authors other-paper-links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0020025526007826">Paper</a></div>
+    <div class="other-paper-authors other-paper-links"><a class="paper-link paper-link--paper" href="https://www.sciencedirect.com/science/article/abs/pii/S0020025526007826" title="Read the paper"><i class="fas fa-file-alt paper-link__icon" aria-hidden="true"></i><span>Paper</span></a></div>
   </div>
   <div class="other-paper-item">
     <div class="other-paper-title">SCA-Net: A Scale- and Contrast-Aware Network for Subtle and Low-Contrast Polyp Segmentation</div>
@@ -281,7 +281,7 @@ Temporarily hidden: non-ACM-MM publications.
     <div class="other-paper-title">Zero-shot Diffusive Image Restoration with Consistency</div>
     <div class="other-paper-authors other-paper-venue">Signal Processing (2026)</div>
     <div class="other-paper-authors">Yi Wang, Lanling Zeng, <strong>Jiaqi Zhang</strong>, Yang Yang<sup>†</sup></div>
-    <div class="other-paper-authors other-paper-links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0165168426002197">Paper</a></div>
+    <div class="other-paper-authors other-paper-links"><a class="paper-link paper-link--paper" href="https://www.sciencedirect.com/science/article/abs/pii/S0165168426002197" title="Read the paper"><i class="fas fa-file-alt paper-link__icon" aria-hidden="true"></i><span>Paper</span></a></div>
   </div>
   <div class="other-paper-item">
     <div class="other-paper-title">Intrinsic Feature Consistency Learning Network for Generalizable Medical Image Segmentation</div>
@@ -306,7 +306,7 @@ Temporarily hidden: non-ACM-MM publications.
     <div class="other-paper-authors other-paper-venue">Knowledge-Based Systems (2026)</div>
     <div class="other-paper-authors">Yang Yang<sup>†</sup>, Xi Zhang, <strong>Jiaqi Zhang</strong>, Lanling Zeng
 <br></div>
-    <div class="other-paper-authors other-paper-links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705126002303">Paper</a><span class="paper-link-separator" aria-hidden="true">|</span><a href="https://github.com/AKA-hhh/PIRP">Code</a></div>
+    <div class="other-paper-authors other-paper-links"><a class="paper-link paper-link--paper" href="https://www.sciencedirect.com/science/article/abs/pii/S0950705126002303" title="Read the paper"><i class="fas fa-file-alt paper-link__icon" aria-hidden="true"></i><span>Paper</span></a><a class="paper-link paper-link--code" href="https://github.com/AKA-hhh/PIRP" title="View code on GitHub"><i class="fab fa-github paper-link__icon" aria-hidden="true"></i><span>Code</span></a></div>
   </div>
 </div>
 -->
