@@ -1741,23 +1741,44 @@ body > #main > .sidebar.sticky {
     color: #151515 !important;
 }
 
+.paper-authors,
+.paper-authors *,
+.other-paper-authors,
+.other-paper-authors * {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif !important;
+    letter-spacing: 0 !important;
+}
+
 .paper-authors {
-    margin-top: 8px;
-    color: var(--text-color);
-    font-size: 0.87rem;
-    line-height: 1.48;
+    margin-top: 9px;
+    color: #5b6878;
+    font-size: 0.84rem;
+    font-weight: 400;
+    line-height: 1.58;
+    text-rendering: optimizeLegibility;
+    text-wrap: pretty;
+}
+
+.paper-author {
+    display: inline-block;
+    white-space: nowrap;
 }
 
 .paper-authors strong {
-    color: var(--accent-strong) !important;
-    box-shadow: inset 0 -0.19em 0 rgba(82, 116, 208, 0.10);
+    color: #2e5b3e !important;
+    font-weight: 700 !important;
+    box-shadow: none;
 }
 
 .paper-authors sup {
-    color: var(--accent-warm);
-    font-size: 0.74em;
+    position: relative;
+    top: -0.24em;
+    margin-left: 2px;
+    color: #4d745f;
+    font-size: 0.68em;
     font-weight: 700;
-    margin-left: 1px;
+    line-height: 0;
+    vertical-align: baseline;
 }
 
 .paper-box-text a:not(.paper-title),
