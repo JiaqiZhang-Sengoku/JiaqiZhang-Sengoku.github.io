@@ -1760,6 +1760,11 @@ body > #main > .sidebar.sticky {
     color: #344054 !important;
     font-weight: 700 !important;
     box-shadow: none;
+    text-decoration-line: underline !important;
+    text-decoration-color: rgba(75, 115, 152, 0.52) !important;
+    text-decoration-thickness: 1px !important;
+    text-decoration-skip-ink: auto;
+    text-underline-offset: 3px;
 }
 
 .paper-authors sup {
