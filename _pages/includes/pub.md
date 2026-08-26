@@ -39,10 +39,31 @@
 </div>
 
 <div class="paper-box">
-  <div class="paper-box-image">
-    <div>
+  <div class="paper-box-image paper-box-image--leader-demo">
+    <div class="leader-publication-demo" data-leader-publication-demo data-demo-index="1" aria-label="Five rotating restoration comparisons for LEADer" aria-busy="false">
       <div class="badge badge--accepted">ACM MM 2026</div>
-      <img loading="lazy" decoding="async" src="Images/Publication/LEADer.webp" alt="Overview of the LEADer framework" width="960" height="549">
+      <div class="leader-publication-demo__flow">
+        <div class="leader-publication-demo__stage">
+          <span class="leader-publication-demo__label leader-publication-demo__label--input">Input</span>
+          <div class="leader-publication-demo__image leader-publication-demo__image--input">
+            <img data-leader-demo-image="input" loading="lazy" decoding="async" src="/Web/LEADer/Figures/Input/1.webp?v=20260818-demo-sync" alt="Degraded input for the ProDiff example" width="391" height="391">
+          </div>
+        </div>
+        <div class="leader-publication-demo__stage">
+          <span class="leader-publication-demo__label leader-publication-demo__label--baseline" data-leader-demo-label>ProDiff</span>
+          <div class="leader-publication-demo__image leader-publication-demo__image--baseline leader-publication-demo__transition leader-publication-demo__transition--middle">
+            <img data-leader-demo-image="middle-from" loading="lazy" decoding="async" src="/Web/LEADer/Figures/Input/1.webp?v=20260818-demo-sync" alt="Input before ProDiff restoration" width="391" height="391">
+            <img class="leader-publication-demo__reveal" data-leader-demo-image="baseline" loading="lazy" decoding="async" src="/Web/LEADer/Figures/Others/1.webp?v=20260818-demo-sync" alt="Restoration produced by ProDiff" width="391" height="391">
+          </div>
+        </div>
+        <div class="leader-publication-demo__stage">
+          <span class="leader-publication-demo__label leader-publication-demo__label--ours">+ LEADer</span>
+          <div class="leader-publication-demo__image leader-publication-demo__image--ours leader-publication-demo__transition leader-publication-demo__transition--final">
+            <img data-leader-demo-image="final-from" loading="lazy" decoding="async" src="/Web/LEADer/Figures/Others/1.webp?v=20260818-demo-sync" alt="ProDiff restoration before LEADer refinement" width="391" height="391">
+            <img class="leader-publication-demo__reveal" data-leader-demo-image="ours" loading="lazy" decoding="async" src="/Web/LEADer/Figures/Ours/1.webp?v=20260818-demo-sync" alt="ProDiff enhanced with LEADer" width="391" height="391">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="paper-box-text">
@@ -52,6 +73,8 @@
     <div class="paper-links"><a class="paper-link paper-link--paper" href="https://arxiv.org/abs/2608.06981" title="Read the paper"><i class="fas fa-file-alt paper-link__icon" aria-hidden="true"></i><span>Paper</span></a><a class="paper-link paper-link--web" href="/LEADer/" title="Open the project website"><i class="fas fa-globe paper-link__icon" aria-hidden="true"></i><span>Web</span></a><a class="paper-link paper-link--code" href="https://github.com/JiaqiZhang-Sengoku/LEADer" title="View code on GitHub"><i class="fab fa-github paper-link__icon" aria-hidden="true"></i><span>Code</span></a></div>
   </div>
 </div>
+
+<script src="/assets/js/leader-publication-demo.js?v=20260826" defer></script>
 
 <div class="paper-box">
   <div class="paper-box-image">
