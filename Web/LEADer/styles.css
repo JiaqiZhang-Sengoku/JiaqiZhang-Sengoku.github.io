@@ -273,33 +273,14 @@ h1 {
 }
 
 .demo-label {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-  min-height: 28px;
-  margin: 0 auto 12px;
-  padding: 0 5px 5px;
-  font-size: 21px;
+  display: block;
+  min-height: 29px;
+  margin: 0 0 12px;
+  font-size: 24px;
   font-weight: 700;
   letter-spacing: 0;
   line-height: 1.2;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.82);
   transition: color 0.16s ease, opacity 0.16s ease;
-}
-
-.demo-label::after {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 28px;
-  height: 2px;
-  border-radius: 999px;
-  background: currentColor;
-  content: "";
-  opacity: 0.34;
-  transform: translateX(-50%);
 }
 
 .demo-flow.is-preparing .demo-label {
@@ -709,9 +690,9 @@ code {
   }
 
   .demo-label {
-    min-height: 26px;
+    min-height: 27px;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .demo-flow {
