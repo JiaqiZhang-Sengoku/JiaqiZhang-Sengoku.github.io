@@ -73,9 +73,9 @@
     --accent-warm-soft: rgba(113, 144, 128, 0.11);
     --accepted-green: #2e5b3e;
     --first-author-orange: #e4572e;
-    --max-page-width: 1520px;
-    --content-width: 1140px;
-    --page-side-padding: 34px;
+    --max-page-width: 1460px;
+    --content-width: 1080px;
+    --page-side-padding: 40px;
     --sidebar-width: 272px;
     --masthead-height: 62px;
     --anchor-offset: 92px;
@@ -260,7 +260,7 @@ body > .masthead {
 #main {
     display: grid !important;
     grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
-    gap: 32px;
+    gap: 34px;
     max-width: var(--max-page-width) !important;
     margin: 0 auto !important;
     padding: 0 var(--page-side-padding) 50px !important;
