@@ -225,9 +225,9 @@ h1 {
 .restoration-demo {
   position: relative;
   z-index: 1;
-  width: min(1040px, calc(100% - 48px));
+  width: min(1220px, calc(100% - 40px));
   margin: 8px auto 0;
-  padding: 24px 0 8px;
+  padding: 20px 0 10px;
 }
 
 .demo-heading {
@@ -249,7 +249,7 @@ h1 {
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
+  gap: 14px;
   align-items: center;
   transition: opacity 0.16s ease, filter 0.16s ease;
 }
@@ -260,6 +260,10 @@ h1 {
 }
 
 .demo-flow.is-preparing .demo-reveal {
+  animation-play-state: paused;
+}
+
+.demo-flow.is-preparing .demo-transition::after {
   animation-play-state: paused;
 }
 
@@ -355,17 +359,58 @@ h1 {
   inset: 0;
 }
 
+.demo-transition {
+  --scan-line: rgba(150, 199, 229, 0.98);
+  --scan-glow: rgba(111, 170, 207, 0.34);
+}
+
+.demo-transition-final {
+  --scan-line: rgba(185, 226, 164, 0.98);
+  --scan-glow: rgba(101, 162, 86, 0.36);
+}
+
+.demo-transition::after {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 18px;
+  content: "";
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--scan-glow) 28%,
+    rgba(255, 255, 255, 0.98) 45%,
+    var(--scan-line) 50%,
+    rgba(255, 255, 255, 0.94) 56%,
+    var(--scan-glow) 72%,
+    transparent 100%
+  );
+  box-shadow: 0 0 12px var(--scan-glow);
+  opacity: 0;
+  transform: translateX(-50%);
+  pointer-events: none;
+  animation: demo-scan-line 2.7s cubic-bezier(.45, 0, .2, 1) infinite;
+  will-change: left, opacity;
+}
+
+.demo-transition.is-scan-reset::after {
+  animation: none !important;
+  opacity: 0;
+}
+
 .demo-reveal {
   z-index: 2;
   will-change: clip-path;
 }
 
 .demo-transition-middle .demo-reveal {
-  animation: reveal-middle 2.5s cubic-bezier(.45, 0, .2, 1) infinite;
+  animation: reveal-middle 2.7s cubic-bezier(.45, 0, .2, 1) infinite;
 }
 
 .demo-transition-final .demo-reveal {
-  animation: reveal-final 2.5s cubic-bezier(.45, 0, .2, 1) infinite;
+  animation: reveal-final 2.7s cubic-bezier(.45, 0, .2, 1) infinite;
 }
 
 .flow-arrow {
@@ -400,6 +445,14 @@ h1 {
   80%, 100% { clip-path: inset(0 0 0 0); }
 }
 
+@keyframes demo-scan-line {
+  0% { left: 0; opacity: 0; }
+  5% { opacity: 1; }
+  78% { opacity: 1; }
+  80% { left: 100%; opacity: 0.95; }
+  84%, 100% { left: 100%; opacity: 0; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .demo-flow,
   .demo-label {
@@ -409,6 +462,11 @@ h1 {
   .demo-transition .demo-reveal {
     animation: none;
     clip-path: inset(0 0 0 0);
+  }
+
+  .demo-transition::after {
+    display: none;
+    animation: none;
   }
 }
 
@@ -626,12 +684,10 @@ code {
 
 @media (max-width: 760px) {
   .restoration-demo {
-  position: relative;
-  z-index: 1;
-  width: min(1040px, calc(100% - 48px));
-  margin: 8px auto 0;
-  padding: 24px 0 8px;
-}
+    width: 100%;
+    margin: 8px auto 0;
+    padding: 20px 0 8px;
+  }
 
   .demo-flow {
     grid-template-columns: 1fr;

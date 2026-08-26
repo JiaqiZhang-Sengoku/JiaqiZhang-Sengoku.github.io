@@ -15,7 +15,7 @@ layout: null
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v={{ site.time | date: '%s' }}">
   <link rel="manifest" href="/Images/site.webmanifest?v={{ site.time | date: '%s' }}">
   <link rel="stylesheet" href="/assets/css/academicons.min.css?v=1.8.0">
-  <link rel="stylesheet" href="/Web/LEADer/styles.css?v=20260818-demo-sync">
+  <link rel="stylesheet" href="/Web/LEADer/styles.css?v=20260826-scan">
 
 </head>
 <body>
@@ -253,7 +253,7 @@ layout: null
   <script>
     (function () {
       const assetVersion = '20260818-demo-sync';
-      const cycleDelay = 2800;
+      const cycleDelay = 3100;
       const assetPath = (group, index) => `/Web/LEADer/Figures/${group}/${index}.webp?v=${assetVersion}`;
       const demos = ['ProDiff', 'ProDiff', 'DDNM', 'DDPG', 'SITCOM'].map(function (method, offset) {
         const index = offset + 1;
@@ -317,10 +317,23 @@ layout: null
       }
 
       function restartRevealAnimations() {
-        document.querySelectorAll('.demo-reveal').forEach(function (image) {
+        const revealImages = document.querySelectorAll('.demo-reveal');
+        const scanPanels = document.querySelectorAll('.demo-transition');
+
+        revealImages.forEach(function (image) {
           image.style.animation = 'none';
-          void image.offsetWidth;
+        });
+        scanPanels.forEach(function (panel) {
+          panel.classList.add('is-scan-reset');
+        });
+
+        void demoFlow.offsetWidth;
+
+        revealImages.forEach(function (image) {
           image.style.animation = '';
+        });
+        scanPanels.forEach(function (panel) {
+          panel.classList.remove('is-scan-reset');
         });
       }
 

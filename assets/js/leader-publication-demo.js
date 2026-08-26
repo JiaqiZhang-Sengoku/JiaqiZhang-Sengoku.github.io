@@ -2,7 +2,7 @@
   "use strict";
 
   var assetVersion = "20260818-demo-sync";
-  var cycleDelay = 2800;
+  var cycleDelay = 3100;
   var methods = ["ProDiff", "ProDiff", "DDNM", "DDPG", "SITCOM"];
   var preloadCache = new Map();
 
@@ -99,10 +99,23 @@
     }
 
     function restartRevealAnimations() {
-      root.querySelectorAll(".leader-publication-demo__reveal").forEach(function (image) {
+      var revealImages = root.querySelectorAll(".leader-publication-demo__reveal");
+      var scanPanels = root.querySelectorAll(".leader-publication-demo__transition");
+
+      revealImages.forEach(function (image) {
         image.style.animation = "none";
-        void image.offsetWidth;
+      });
+      scanPanels.forEach(function (panel) {
+        panel.classList.add("is-scan-reset");
+      });
+
+      void root.offsetWidth;
+
+      revealImages.forEach(function (image) {
         image.style.animation = "";
+      });
+      scanPanels.forEach(function (panel) {
+        panel.classList.remove("is-scan-reset");
       });
     }
 
