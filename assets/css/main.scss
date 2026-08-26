@@ -2620,44 +2620,6 @@ body > #main > .sidebar.sticky {
     background: linear-gradient(180deg, #fbfcfd 0%, #f5f9f8 100%);
 }
 
-.visitor-panel-heading {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 46px;
-    margin: 0;
-    padding: 0 17px;
-    border-bottom: 1px solid rgba(210, 222, 226, 0.72);
-    background: rgba(250, 252, 252, 0.72);
-    color: #334754;
-    font-size: 0.89rem !important;
-    font-weight: 700;
-    letter-spacing: 0 !important;
-    line-height: 1.2;
-}
-
-.visitor-panel-heading > span:first-child {
-    display: inline-flex;
-    align-items: center;
-    gap: 9px;
-}
-
-.visitor-panel-heading > span:first-child::before {
-    content: "";
-    display: inline-block;
-    flex: 0 0 7px;
-    width: 7px;
-    height: 7px;
-    border-radius: 2px;
-    background: var(--accent);
-    box-shadow: 0 0 0 3px rgba(75, 115, 152, 0.09);
-}
-
-.visitor-traffic .visitor-panel-heading > span:first-child::before {
-    background: var(--accent-teal);
-    box-shadow: 0 0 0 3px rgba(63, 121, 98, 0.09);
-}
-
 .visitor-map-embed {
     position: relative;
     height: var(--visitor-map-height);
@@ -2914,12 +2876,6 @@ body > #main > .sidebar.sticky {
 
     .visitor-insights__surface {
         border-radius: 6px;
-    }
-
-    .visitor-panel-heading {
-        height: 43px;
-        padding: 0 14px;
-        font-size: 0.85rem !important;
     }
 
     .visitor-map-embed {

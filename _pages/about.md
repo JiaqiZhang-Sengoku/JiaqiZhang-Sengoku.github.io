@@ -32,9 +32,6 @@ redirect_from:
 
   <div class="visitor-insights__surface">
     <div class="visitor-map-panel" data-visitor-map>
-      <div class="visitor-panel-heading">
-        <span>Worldwide Distribution</span>
-      </div>
       <div class="visitor-map-embed" aria-label="World map of visitor locations">
         <a class="visitor-map-fallback" href="https://s01.flagcounter.com/gmap/2XYa/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
           <img src="https://s01.flagcounter.com/map/2XYa/size_l/txt_2F4656/border_EAF2F4/pageviews_1/viewers_3/flags_0/" alt="" decoding="async">
@@ -52,9 +49,6 @@ redirect_from:
     </div>
 
     <aside class="visitor-traffic" data-visitor-chart aria-label="Cumulative website traffic">
-      <div class="visitor-panel-heading">
-        <span>All-time Traffic</span>
-      </div>
       <div class="visitor-chart">
         <div class="visitor-chart__bars">
           <div class="visitor-bar" data-visitor-bar>
