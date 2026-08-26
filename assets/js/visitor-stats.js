@@ -71,14 +71,17 @@
       return;
     }
 
-    var scale = Math.min(0.72, availableWidth / 875);
+    var scale = Math.min(1.2, availableWidth / 875);
     var region = map.closest(".visitor-insights") || map;
-    var mapWidth = 875 * scale;
-    var offsetX = ((availableWidth - mapWidth) / 2) - (33 * scale);
+    var renderedHeight = 500 * scale;
+    var visibleHeight = Math.min(renderedHeight, 400);
+    var offsetX = ((availableWidth - (875 * scale)) / 2) - (33 * scale);
+    var offsetY = Math.min(0, (visibleHeight - renderedHeight) / 2);
 
     region.style.setProperty("--visitor-map-scale", scale.toFixed(4));
-    region.style.setProperty("--visitor-map-height", Math.round(500 * scale) + "px");
+    region.style.setProperty("--visitor-map-height", Math.round(visibleHeight) + "px");
     region.style.setProperty("--visitor-map-offset-x", Math.round(offsetX) + "px");
+    region.style.setProperty("--visitor-map-offset-y", Math.round(offsetY) + "px");
   }
 
   if (chart && typeof MutationObserver === "function") {
