@@ -1509,11 +1509,6 @@ body > #main > .sidebar.sticky {
     z-index: 1;
 }
 
-.paper-box.paper-box--leader-demo {
-    grid-template-columns: minmax(360px, 48.8%) minmax(0, 1fr) !important;
-    gap: 18px !important;
-}
-
 .paper-box--accepted {
     order: 1;
 }
@@ -1688,18 +1683,38 @@ body > #main > .sidebar.sticky {
 }
 
 .leader-publication-demo__label {
-    display: block;
-    min-height: 14px;
-    margin: 0 0 5px;
-    overflow: hidden;
-    font-size: 0.67rem !important;
-    font-weight: 800;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    max-width: 100%;
+    min-height: 18px;
+    margin: 0 auto 7px;
+    padding: 0 2px 3px;
+    overflow: visible;
+    font-size: 0.80rem !important;
+    font-weight: 700;
     letter-spacing: 0;
     line-height: 1.15;
     text-align: center;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.84);
     text-overflow: ellipsis;
     white-space: nowrap;
     transition: color 0.16s ease, opacity 0.16s ease;
+}
+
+.leader-publication-demo__label::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 18px;
+    height: 2px;
+    border-radius: 999px;
+    background: currentColor;
+    opacity: 0.34;
+    transform: translateX(-50%);
 }
 
 .leader-publication-demo.is-preparing .leader-publication-demo__label {
@@ -1841,11 +1856,6 @@ body > #main > .sidebar.sticky {
 }
 
 @media screen and (max-width: 760px) {
-    .paper-box.paper-box--leader-demo {
-        grid-template-columns: minmax(0, 1fr) !important;
-        gap: 14px !important;
-    }
-
     .paper-box-image > .leader-publication-demo {
         padding: 8px 7px 7px;
     }
@@ -1856,9 +1866,9 @@ body > #main > .sidebar.sticky {
     }
 
     .leader-publication-demo__label {
-        min-height: 15px;
-        margin-bottom: 6px;
-        font-size: 0.72rem !important;
+        min-height: 18px;
+        margin-bottom: 7px;
+        font-size: 0.80rem !important;
     }
 }
 
@@ -1872,9 +1882,9 @@ body > #main > .sidebar.sticky {
     }
 
     .leader-publication-demo__label {
-        min-height: 13px;
-        margin-bottom: 4px;
-        font-size: 0.64rem !important;
+        min-height: 16px;
+        margin-bottom: 5px;
+        font-size: 0.72rem !important;
     }
 
     .leader-publication-demo__image {

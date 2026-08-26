@@ -225,7 +225,7 @@ h1 {
 .restoration-demo {
   position: relative;
   z-index: 1;
-  width: min(1220px, calc(100% - 40px));
+  width: min(1040px, calc(100% - 48px));
   margin: 8px auto 0;
   padding: 20px 0 10px;
 }
@@ -249,7 +249,7 @@ h1 {
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
+  gap: 10px;
   align-items: center;
   transition: opacity 0.16s ease, filter 0.16s ease;
 }
@@ -273,14 +273,33 @@ h1 {
 }
 
 .demo-label {
-  display: block;
-  min-height: 22px;
-  margin-bottom: 11px;
-  font-size: 18px;
-  font-weight: 800;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-height: 28px;
+  margin: 0 auto 12px;
+  padding: 0 5px 5px;
+  font-size: 21px;
+  font-weight: 700;
   letter-spacing: 0;
   line-height: 1.2;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.82);
   transition: color 0.16s ease, opacity 0.16s ease;
+}
+
+.demo-label::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 28px;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
+  content: "";
+  opacity: 0.34;
+  transform: translateX(-50%);
 }
 
 .demo-flow.is-preparing .demo-label {
@@ -687,6 +706,12 @@ code {
     width: 100%;
     margin: 8px auto 0;
     padding: 20px 0 8px;
+  }
+
+  .demo-label {
+    min-height: 26px;
+    margin-bottom: 10px;
+    font-size: 20px;
   }
 
   .demo-flow {
