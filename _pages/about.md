@@ -21,65 +21,48 @@ redirect_from:
 
 {% include_relative includes/honers.md %}
 
-<section class="visitor-stats" data-visitor-stats aria-labelledby="visitor-stats-title">
-  <header class="visitor-stats__header">
-    <div class="visitor-stats__identity">
-      <span class="visitor-stats__mark" aria-hidden="true"><i class="fas fa-globe-asia"></i></span>
-      <div>
-        <span class="visitor-stats__eyebrow">Visitor Footprint</span>
-        <h2 class="visitor-stats__title" id="visitor-stats-title">Visits Across Time and Place</h2>
-      </div>
+<section class="visitor-insights" aria-label="Visitor statistics">
+  <div class="visitor-map-panel" data-visitor-map>
+    <div class="visitor-panel-heading">
+      <span>Visitor Distribution</span>
+      <a href="https://s01.flagcounter.com/more30/2XYa/" target="_blank" rel="noopener noreferrer">Visit History</a>
     </div>
-    <span class="visitor-stats__status"><span class="visitor-stats__status-dot" aria-hidden="true"></span><span data-visitor-status>Connecting</span></span>
-  </header>
-
-  <div class="visitor-stats__body">
-    <div class="visitor-stats__metrics" aria-label="Cumulative visitor statistics">
-      <article class="visitor-stat">
-        <span class="visitor-stat__icon" aria-hidden="true"><i class="fas fa-eye"></i></span>
-        <div class="visitor-stat__copy">
-          <span class="visitor-stat__label">Total Views</span>
-          <strong class="visitor-stat__value" id="busuanzi_value_site_pv" data-visitor-value aria-live="polite">--</strong>
-          <span class="visitor-stat__hint">Page impressions</span>
-        </div>
-      </article>
-      <article class="visitor-stat">
-        <span class="visitor-stat__icon" aria-hidden="true"><i class="fas fa-user-friends"></i></span>
-        <div class="visitor-stat__copy">
-          <span class="visitor-stat__label">Visitors</span>
-          <strong class="visitor-stat__value" id="busuanzi_value_site_uv" data-visitor-value aria-live="polite">--</strong>
-          <span class="visitor-stat__hint">Unique readers</span>
-        </div>
-      </article>
+    <div class="visitor-map-embed" aria-label="World map of visitor locations">
+      <a class="visitor-map-fallback" href="https://s01.flagcounter.com/gmap/2XYa/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+        <img src="https://s01.flagcounter.com/map/2XYa/size_s/txt_2F4656/border_EDF4F7/pageviews_1/viewers_3/flags_0/" alt="" decoding="async">
+      </a>
+      <iframe
+        class="visitor-map-frame"
+        data-visitor-map-frame
+        src="https://s01.flagcounter.com/gmap/2XYa/#map"
+        title="Interactive map of cumulative visitor locations"
+        loading="lazy"
+        scrolling="no"
+        sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+      ></iframe>
     </div>
-
-    <aside class="visitor-session" aria-label="Current visit details">
-      <div class="visitor-session__header">
-        <span class="visitor-session__title">Current Visit</span>
-        <span class="visitor-session__scope">City-level estimate</span>
-      </div>
-      <div class="visitor-session__details">
-        <div class="visitor-session__detail">
-          <span class="visitor-session__icon" aria-hidden="true"><i class="fas fa-clock"></i></span>
-          <div>
-            <span class="visitor-session__label">Visit Time</span>
-            <time class="visitor-session__value" data-visitor-time>Detecting local time...</time>
-            <span class="visitor-session__meta" data-visitor-timezone>Local time zone</span>
-          </div>
-        </div>
-        <div class="visitor-session__detail">
-          <span class="visitor-session__icon" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></span>
-          <div>
-            <span class="visitor-session__label">Approx. Location</span>
-            <span class="visitor-session__value" data-visitor-location aria-live="polite">Locating...</span>
-            <span class="visitor-session__meta">Based on network location</span>
-          </div>
-        </div>
-      </div>
-    </aside>
   </div>
 
-  <p class="visitor-stats__note"><span class="visitor-stats__note-line" aria-hidden="true"></span><span>Thank you for following my research journey from around the world.</span></p>
+  <aside class="visitor-traffic" data-visitor-chart aria-label="Cumulative website traffic">
+    <div class="visitor-panel-heading">
+      <span>Traffic</span>
+      <span class="visitor-panel-heading__meta">All Time</span>
+    </div>
+    <div class="visitor-chart">
+      <div class="visitor-chart__bars">
+        <div class="visitor-bar" data-visitor-bar>
+          <strong class="visitor-bar__value" id="busuanzi_value_site_pv" data-visitor-value aria-live="polite">--</strong>
+          <span class="visitor-bar__track" aria-hidden="true"><span class="visitor-bar__fill visitor-bar__fill--views"></span></span>
+          <span class="visitor-bar__label">Views</span>
+        </div>
+        <div class="visitor-bar" data-visitor-bar>
+          <strong class="visitor-bar__value" id="busuanzi_value_site_uv" data-visitor-value aria-live="polite">--</strong>
+          <span class="visitor-bar__track" aria-hidden="true"><span class="visitor-bar__fill visitor-bar__fill--visitors"></span></span>
+          <span class="visitor-bar__label">Visitors</span>
+        </div>
+      </div>
+    </div>
+  </aside>
 </section>
 
 <script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script>
