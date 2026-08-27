@@ -68,4 +68,4 @@ redirect_from:
 </section>
 
 <script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script>
-<script src="/assets/js/visitor-stats.js?v=20260827-5" defer></script>
+<script src="/assets/js/visitor-stats.js?v=20260827-6" defer></script>
