@@ -616,11 +616,13 @@ code {
   .framework-figure,
   .wide-figure,
   .retrieval-figure {
-    width: calc(100vw - 24px);
+    width: 100%;
+    margin-left: 0;
+    transform: none;
   }
 
   .hero-story {
-    width: calc(100vw - 24px);
+    width: 100%;
     margin-top: 28px;
   }
 
@@ -647,7 +649,9 @@ code {
   }
 
   .table-figure {
-    width: calc(100vw - 24px);
+    width: 100%;
+    margin-left: 0;
+    transform: none;
   }
 
   .table-scroll img {
