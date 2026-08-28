@@ -16,6 +16,11 @@
   var observer = null;
   var resizeObserver = null;
   var timeout = null;
+  var sourceMapWidth = 875;
+  var sourceMapHeight = 500;
+  var sourceZoomLeft = 35.4;
+  var sourceZoomTop = 295.8;
+  var controlInset = 8;
 
   function readValue(element) {
     var digits = element.textContent.replace(/[^0-9]/g, "");
@@ -71,13 +76,12 @@
       return;
     }
 
-    var scale = Math.min(1.2, availableWidth / 875);
+    var scale = Math.min(1.2, availableWidth / sourceMapWidth);
     var region = map.closest(".visitor-insights") || map;
-    var renderedHeight = 500 * scale;
+    var renderedHeight = sourceMapHeight * scale;
     var visibleHeight = Math.min(renderedHeight, 400);
-    var controlInset = 12;
-    var offsetX = ((availableWidth - (875 * scale)) / 2) + controlInset - (45 * scale);
-    var offsetY = controlInset - (297 * scale);
+    var offsetX = controlInset - (sourceZoomLeft * scale);
+    var offsetY = controlInset - (sourceZoomTop * scale);
 
     region.style.setProperty("--visitor-map-scale", scale.toFixed(4));
     region.style.setProperty("--visitor-map-height", Math.round(visibleHeight) + "px");
