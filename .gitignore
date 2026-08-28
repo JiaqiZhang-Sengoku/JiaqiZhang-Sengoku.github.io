@@ -3,6 +3,10 @@ push.sh
 .DS_Store
 tmp/
 node_modules/
+
+# Local PriMD manuscript sources (not website assets)
+/Web/PriMD/Data/
+/Web/PriMD/*.pdf
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
