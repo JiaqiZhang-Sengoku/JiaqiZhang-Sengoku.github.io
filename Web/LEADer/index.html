@@ -9,13 +9,11 @@ layout: null
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LEADer</title>
   <meta name="description" content="Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration.">
-  <link rel="apple-touch-icon" sizes="180x180" href="/Images/apple-touch-icon.webp?v={{ site.time | date: '%s' }}">
-  <link rel="icon" type="image/webp" sizes="32x32" href="/Images/favicon-32x32.webp?v={{ site.time | date: '%s' }}">
-  <link rel="icon" type="image/webp" sizes="16x16" href="/Images/favicon-16x16.webp?v={{ site.time | date: '%s' }}">
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v={{ site.time | date: '%s' }}">
-  <link rel="manifest" href="/Images/site.webmanifest?v={{ site.time | date: '%s' }}">
+  <link rel="apple-touch-icon" href="/Web/LEADer/LEADer_Logo.webp?v=20260828-logo">
+  <link rel="icon" type="image/webp" sizes="any" href="/Web/LEADer/LEADer_Logo.webp?v=20260828-logo">
+  <link rel="shortcut icon" type="image/webp" href="/Web/LEADer/LEADer_Logo.webp?v=20260828-logo">
   <link rel="stylesheet" href="/assets/css/academicons.min.css?v=1.8.0">
-  <link rel="stylesheet" href="/Web/LEADer/styles.css?v=20260826-timeline">
+  <link rel="stylesheet" href="/Web/LEADer/styles.css?v=20260828-logo">
 
 </head>
 <body>
@@ -23,10 +21,13 @@ layout: null
     <section class="hero-band">
       <div class="publication-header">
         <div class="hero-card">
-          <h1>
-            <span class="publication-title-line">Local Epistemic Uncertainty Guided Active Sampling</span>
-            <span class="publication-title-line">for Plug-and-play Diffusive Image Restoration</span>
-          </h1>
+          <div class="title-lockup">
+            <img class="project-logo" src="/Web/LEADer/LEADer_Logo.webp?v=20260828-logo" alt="LEADer logo" width="384" height="384" decoding="async" fetchpriority="high">
+            <h1>
+              <span class="publication-title-line">Local Epistemic Uncertainty Guided Active Sampling</span>
+              <span class="publication-title-line">for Plug-and-play Diffusive Image Restoration</span>
+            </h1>
+          </div>
           <p class="conference">ACM MM 2026 Accepted!</p>
 
           <p class="authors">
@@ -59,6 +60,10 @@ layout: null
             <a class="pill pill-secondary" href="https://2026.acmmm.org/" target="_blank" rel="noreferrer">
               <img class="pill-icon" src="/Web/LEADer/Figures/Conference.svg" alt="">
               <span>Conference</span>
+            </a>
+            <a class="pill pill-secondary" href="#bibtex" aria-label="Jump to the BibTeX citation">
+              <span class="pill-icon pill-icon-bibtex" aria-hidden="true">{ }</span>
+              <span>BibTeX</span>
             </a>
           </div>
         </div>
@@ -117,7 +122,7 @@ layout: null
         the spatial correction strength and the temporal sampling schedule.
       </p>
       <figure class="main-figure">
-        <img src="/Images/Publication/LEADer.webp?v=20260724" alt="Architecture of the LEADer framework." loading="lazy" decoding="async">
+        <img src="/Images/Publication/LEADer.webp?v=20260724" alt="Architecture of the LEADer framework." width="1800" height="1028" loading="lazy" decoding="async">
         <figcaption>
           Figure 1. <strong>Architecture of LEADer.</strong> Existing DMIR methods rely on fixed step-by-step sampling
           with uniform constraints, leading to computational redundancy and detail distortion in uncertain regions. To
@@ -156,14 +161,14 @@ layout: null
     
 
       <figure class="figure4-wide">
-        <img src="/Web/LEADer/Figures/Figure4.webp" alt="Qualitative comparisons on five restoration tasks." loading="lazy" decoding="async">
+        <img src="/Web/LEADer/Figures/Figure4.webp" alt="Qualitative comparisons on five restoration tasks." width="1842" height="878" loading="lazy" decoding="async">
         <figcaption>
           Figure 2. Qualitative comparisons on five image restoration tasks.
         </figcaption>
       </figure>
 
       <figure class="table-figure table-wide">
-        <img src="/Web/LEADer/Figures/PaperTable1.webp?v=20260724" alt="Quantitative results across five image restoration tasks on CelebA-HQ 1K and ImageNet 1K." loading="lazy" decoding="async">
+        <img src="/Web/LEADer/Figures/PaperTable1.webp?v=20260724" alt="Quantitative results across five image restoration tasks on CelebA-HQ 1K and ImageNet 1K." width="2200" height="1045" loading="lazy" decoding="async">
         <figcaption>
           Table 1. Quantitative results for five image restoration tasks on CelebA-HQ 1K (top) and ImageNet 1K
           (bottom). The average change reports performance improvements and time reductions over each baseline.
@@ -180,7 +185,7 @@ layout: null
         prunes redundant steps, while preserving the important denoising updates needed for local texture recovery.
       </p>
       <figure class="trajectory-figure">
-        <img src="/Web/LEADer/Figures/Figure5.webp" alt="Comparison between DDNM and LEADer at different NFEs." loading="lazy" decoding="async">
+        <img src="/Web/LEADer/Figures/Figure5.webp" alt="Comparison between DDNM and LEADer at different NFEs." width="1889" height="461" loading="lazy" decoding="async">
         <figcaption>
           Figure 3. Comparison of restored states between DDNM and LEADer at different NFEs.
         </figcaption>
@@ -200,7 +205,7 @@ layout: null
         default setting.
       </p>
       <figure class="table-figure">
-        <img src="/Web/LEADer/Figures/PaperTable2.webp" alt="Ablation study results for UCPM and SATP." loading="lazy" decoding="async">
+        <img src="/Web/LEADer/Figures/PaperTable2.webp" alt="Ablation study results for UCPM and SATP." width="2200" height="596" loading="lazy" decoding="async">
         <figcaption>
           Table 2. Ablation study of the UCPM and SATP components on three representative restoration tasks.
         </figcaption>
@@ -208,10 +213,10 @@ layout: null
       <figure class="paired-figure">
         <div class="paired-media">
           <div class="paired-panel paired-table">
-            <img src="/Web/LEADer/Figures/PaperTable3.webp" alt="Hyperparameter sensitivity analysis for the information-loss budget." loading="lazy" decoding="async">
+            <img src="/Web/LEADer/Figures/PaperTable3.webp" alt="Hyperparameter sensitivity analysis for the information-loss budget." width="2200" height="750" loading="lazy" decoding="async">
           </div>
           <div class="paired-panel paired-image">
-            <img src="/Web/LEADer/Figures/Figure6.webp" alt="Ablation study on different sampling steps." loading="lazy" decoding="async">
+            <img src="/Web/LEADer/Figures/Figure6.webp" alt="Ablation study on different sampling steps." width="2000" height="710" loading="lazy" decoding="async">
           </div>
         </div>
         <figcaption>
@@ -229,7 +234,7 @@ layout: null
         uncertainty-guided modules improve quality and efficiency without materially increasing deployment cost.
       </p>
       <figure class="table-figure table4-large">
-        <img src="/Web/LEADer/Figures/PaperTable4.webp" alt="GPU memory consumption comparison across five restoration tasks." loading="lazy" decoding="async">
+        <img src="/Web/LEADer/Figures/PaperTable4.webp" alt="GPU memory consumption comparison across five restoration tasks." width="2200" height="820" loading="lazy" decoding="async">
         <figcaption>
           Table 4. Memory consumption comparison across five image restoration tasks.
         </figcaption>

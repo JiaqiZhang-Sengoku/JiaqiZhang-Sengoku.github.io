@@ -108,11 +108,37 @@ a:hover {
 
 h1 {
   max-width: 1420px;
-  margin: 0 auto 18px;
+  margin: 0;
   font-size: 43px;
   font-weight: 600;
   line-height: 1.15;
   letter-spacing: 0;
+}
+
+.title-lockup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  max-width: 1500px;
+  margin: 0 auto 18px;
+}
+
+.title-lockup::after {
+  width: 92px;
+  height: 1px;
+  flex: 0 0 92px;
+  content: "";
+}
+
+.project-logo {
+  width: 92px;
+  height: 92px;
+  margin: 0;
+  flex: 0 0 92px;
+  border-radius: 18px;
+  object-fit: contain;
+  box-shadow: 0 10px 24px rgba(18, 47, 8, 0.12);
 }
 
 .publication-title-line {
@@ -123,6 +149,18 @@ h1 {
 @media (min-width: 1240px) {
   .publication-title-line {
     white-space: nowrap;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1299px) {
+  h1 {
+    font-size: 39px;
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1399px) {
+  h1 {
+    font-size: 40px;
   }
 }
 
@@ -200,6 +238,7 @@ h1 {
 .pill-icon {
   width: 18px;
   height: 18px;
+  margin: 0;
   object-fit: contain;
   flex: 0 0 auto;
 }
@@ -211,6 +250,21 @@ h1 {
   color: #a42a36;
   font-size: 19px;
   line-height: 1;
+}
+
+.pill-icon-bibtex {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  color: #2e5b3e;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+#bibtex {
+  scroll-margin-top: 24px;
 }
 
 .pill:hover {
@@ -715,6 +769,22 @@ code {
 
   .hero-card {
     padding: 20px 0 14px;
+  }
+
+  .title-lockup {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .title-lockup::after {
+    display: none;
+  }
+
+  .project-logo {
+    width: 72px;
+    height: 72px;
+    flex-basis: 72px;
   }
 
   h1 {
