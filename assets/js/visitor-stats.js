@@ -76,10 +76,12 @@
     var renderedHeight = 500 * scale;
     var visibleHeight = Math.min(renderedHeight, 400);
     var offsetX = ((availableWidth - (875 * scale)) / 2) - (33 * scale);
+    var offsetY = 48 * scale;
 
     region.style.setProperty("--visitor-map-scale", scale.toFixed(4));
     region.style.setProperty("--visitor-map-height", Math.round(visibleHeight) + "px");
     region.style.setProperty("--visitor-map-offset-x", Math.round(offsetX) + "px");
+    region.style.setProperty("--visitor-map-offset-y", Math.round(offsetY) + "px");
   }
 
   if (chart && typeof MutationObserver === "function") {
