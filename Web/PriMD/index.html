@@ -2,28 +2,32 @@
 permalink: /PriMD/
 layout: null
 ---
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PriMD | EMNLP 2026 Findings</title>
   <meta name="description" content="Primitive Memory Distillation for incomplete multimodal emotion recognition.">
-  <link rel="apple-touch-icon" sizes="180x180" href="/Images/apple-touch-icon.webp?v={{ site.time | date: '%s' }}">
-  <link rel="icon" type="image/webp" sizes="32x32" href="/Images/favicon-32x32.webp?v={{ site.time | date: '%s' }}">
-  <link rel="icon" type="image/webp" sizes="16x16" href="/Images/favicon-16x16.webp?v={{ site.time | date: '%s' }}">
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v={{ site.time | date: '%s' }}">
-  <link rel="stylesheet" href="/Web/PriMD/styles.css?v=20260828-paper2">
+  <meta name="theme-color" content="#f4f8f9">
+  <link rel="icon" type="image/svg+xml" href="/Web/PriMD/PriMD_Logo.svg?v=20260828">
+  <link rel="icon" type="image/webp" sizes="512x512" href="/Web/PriMD/PriMD_Logo.webp?v=20260828">
+  <link rel="apple-touch-icon" href="/Web/PriMD/PriMD_Logo.webp?v=20260828">
+  <link rel="shortcut icon" href="/Web/PriMD/PriMD_Logo.svg?v=20260828">
+  <link rel="stylesheet" href="/Web/PriMD/styles.css?v=20260828-layout">
 </head>
 <body>
   <main>
     <section class="hero-band" aria-labelledby="paper-title">
       <div class="publication-header">
         <p class="conference">EMNLP 2026 Findings</p>
-        <h1 id="paper-title">
-          <span class="title-line">Modality Disentangled Learning for Incomplete Multimodal</span>
-          <span class="title-line">Emotion Recognition: A Primitive Memory Distillation Perspective</span>
-        </h1>
+        <div class="title-lockup">
+          <img class="paper-logo" src="/Web/PriMD/PriMD_Logo.svg" alt="PriMD logo" width="88" height="88">
+          <h1 id="paper-title">
+            <span class="title-line">Modality Disentangled Learning for Incomplete Multimodal</span>
+            <span class="title-line">Emotion Recognition: A Primitive Memory Distillation Perspective</span>
+          </h1>
+        </div>
 
         <p class="authors">
           <span class="author-line">
@@ -44,7 +48,7 @@ layout: null
           </span>
         </p>
 
-        <div class="institutions" aria-label="Author affiliations">
+        <div class="institutions" role="group" aria-label="Author affiliations">
           <p>
             <sup>1</sup>Jiangsu University &middot;
             <sup>2</sup>Griffith University &middot;
@@ -62,7 +66,11 @@ layout: null
         </div>
         <p class="author-note"><sup>*</sup>Corresponding author.</p>
 
-        <div class="link-row" aria-label="Project links">
+        <div class="link-row" role="group" aria-label="Project links">
+          <span class="paper-link paper-link--pending" title="Paper coming soon">
+            <img src="/Web/PriMD/Figures/Paper.svg" alt="">
+            <span>Paper</span>
+          </span>
           <a class="paper-link" href="https://github.com/JiaqiZhang-Sengoku/PriMD" target="_blank" rel="noreferrer">
             <img src="/Web/PriMD/Figures/GitHub.svg" alt="">
             <span>Code</span>
@@ -78,17 +86,32 @@ layout: null
         </div>
       </div>
 
-      <figure class="paper-figure hero-figure">
-        <img src="/Web/PriMD/Figures/Concept.webp" alt="Comparison of incomplete multimodal inputs, holistic recovery methods, and PriMD." width="2000" height="1481" decoding="async" fetchpriority="high">
-        <figcaption>
-          Figure 1. (a) Real-world inputs may suffer from partial modality missingness, leading to uncertain predictions.
-          (b) Existing holistic generation, alignment, or distillation methods treat missing modalities as a whole. This
-          tends to mix modality-shared semantics with uncertain modality-specific details, leaving the learned representations
-          ambiguous. (c) PriMD first disentangles shared semantics from modality-specific information and performs constrained
-          compensation for the missing modality-specific information. This enables more robust predictions under
-          modality-missing conditions.
-        </figcaption>
-      </figure>
+      <div class="hero-story">
+        <figure class="paper-figure hero-figure">
+          <img src="/Web/PriMD/Figures/Concept.webp" alt="Comparison of incomplete multimodal inputs, holistic recovery methods, and PriMD." width="2000" height="1481" decoding="async" fetchpriority="high">
+          <figcaption>
+            Figure 1. (a) Real-world inputs may suffer from partial modality missingness, leading to uncertain predictions.
+            (b) Existing holistic generation, alignment, or distillation methods treat missing modalities as a whole. This
+            tends to mix modality-shared semantics with uncertain modality-specific details, leaving the learned representations
+            ambiguous. (c) PriMD first disentangles shared semantics from modality-specific information and performs constrained
+            compensation for the missing modality-specific information. This enables more robust predictions under
+            modality-missing conditions.
+          </figcaption>
+        </figure>
+        <div class="hero-context">
+          <p>
+            Our research focuses on the problem of missing modalities in multimodal emotion recognition. While examining
+            existing approaches, we found that many of them generate, align, or distill a missing modality as a whole,
+            overlooking the fact that different information components are not equally recoverable. Cross-modal emotional
+            semantics can often be reliably estimated from the available modalities, whereas modality-specific details, such
+            as vocal tone and facial expressions, remain inherently uncertain. Processing these two types of information
+            together can introduce ambiguous or even conflicting representations, leading to unstable predictions under
+            different missing-modality conditions. This observation motivated PriMD, which separates shared semantics from
+            modality-specific information and compensates for missing cues within a constrained primitive memory space,
+            enabling more stable and robust emotion recognition.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section id="abstract" class="abstract-band">
@@ -145,15 +168,6 @@ layout: null
     <section id="comparison" class="section">
       <h2>Comparison with SOTA Methods</h2>
       <h3>Inter-modal Missingness</h3>
-      <p class="section-copy">
-        To evaluate the robustness of PriMD in incomplete multimodal scenarios, we quantitatively compare it with SOTA methods
-        under different missing-modality settings. PriMD achieves the best average performance across all three experimental
-        settings. On the four-class IEMOCAP task, PriMD achieves 77.43% WA and 77.28% UA, outperforming the second-best method,
-        HARDY-MER, by 1.87% and 1.86%, respectively. On the more challenging six-class IEMOCAP task, PriMD achieves 58.13%
-        WA and 54.62% UA, improving over HARDY-MER by 1.42% and 1.97%, respectively. On CMU-MOSEI, PriMD obtains an average
-        ACC/F1 of 79.81%/79.57%. These results indicate that constrained compensation through shared-semantics-guided
-        prototype retrieval more effectively mitigates representation shifts caused by missing modalities.
-      </p>
 
       <figure class="paper-figure table-figure table-figure--main">
         <div class="table-scroll" tabindex="0" aria-label="Scrollable performance comparison table">
@@ -166,15 +180,6 @@ layout: null
       </figure>
 
       <h3>Intra-modal Missingness</h3>
-      <p class="section-copy">
-        We further evaluate robustness under intra-modal missingness on CMU-MOSI and CMU-MOSEI by increasing the missing rate
-        from 0.0 to 0.9. The performance of most methods decreases as the missing rate increases, while PriMD maintains higher
-        F1 scores and lower MAE under most settings. P-RMF alleviates information deficiency through proxy modalities, but its
-        compensation process still relies on holistic representation recovery and remains vulnerable to uncertain details.
-        LNLN improves F1 under some settings while its MAE keeps degrading, suggesting that its predictions may be affected by
-        data bias. PriMD shows more stable performance across missing rates, indicating that it can capture shared semantics
-        from the remaining modalities and reduce representation shifts caused by intra-modal information loss.
-      </p>
 
       <figure class="paper-figure wide-figure">
         <img src="/Web/PriMD/Figures/MissingRate.webp" alt="Performance curves under varying missing rates on CMU-MOSI and CMU-MOSEI." width="2200" height="549" loading="lazy" decoding="async">
@@ -201,32 +206,6 @@ layout: null
       </figure>
     </section>
 
-    <section id="decomposition" class="section">
-      <h2>Decomposition and Compensation</h2>
-      <p class="section-copy">
-        We construct a capacity-matched variant, Holistic-PriMD, to evaluate the role of shared-specific semantic
-        disentanglement. This variant constructs memory banks directly from holistic modality representations and queries
-        them using the fused representation of the available modalities. PriMD improves WA/UA from 75.02%/74.81% to
-        77.43%/77.28%, while reducing cross-combination JS and teacher-student KL from 0.091/0.121 to 0.066/0.081.
-      </p>
-      <p class="section-copy">
-        Under the same SSSD framework, we further compare SSSD+MLP, SSSD+CVAE, continuous compensation, and discrete
-        primitive retrieval. PriMD achieves the highest WA/UA and the lowest JS/KL. Its normalized within-class dispersion
-        is 0.64, compared with 1.00 for continuous compensation, showing that discrete primitive retrieval yields a more
-        compact within-class distribution.
-      </p>
-
-      <figure class="paper-figure table-figure table-figure--analysis">
-        <div class="table-scroll table-scroll--analysis" tabindex="0" aria-label="Scrollable decomposition and compensation table">
-          <img src="/Web/PriMD/Figures/Table3.webp" alt="Analysis of shared-specific decomposition and feature compensation." width="1936" height="917" loading="lazy" decoding="async">
-        </div>
-        <figcaption>
-          Table 3. Analysis of shared-specific decomposition and feature compensation on Four-Class IEMOCAP. Disp. denotes
-          normalized within-class dispersion.
-        </figcaption>
-      </figure>
-    </section>
-
     <section id="efficiency" class="section">
       <h2>Computational Efficiency</h2>
       <p class="section-copy">
@@ -243,32 +222,9 @@ layout: null
       </figure>
     </section>
 
-    <section id="sssd-components" class="section">
-      <h2>SSSD Components</h2>
-      <p class="section-copy">
-        Using only the shared semantic alignment objective or only the independence constraint produces lower performance
-        than the complete setting. Their combination aligns shared semantics across modalities while reducing redundant
-        correlations between shared and modality-specific representations.
-      </p>
-
-      <figure class="paper-figure table-figure table-figure--components">
-        <div class="table-scroll table-scroll--components" tabindex="0" aria-label="Scrollable SSSD component ablation table">
-          <img src="/Web/PriMD/Figures/Table5.webp" alt="Ablation results for the alignment and independence constraints in SSSD." width="925" height="390" loading="lazy" decoding="async">
-        </div>
-        <figcaption>Table 5. Ablation results of the SSSD components.</figcaption>
-      </figure>
-    </section>
-
     <section id="visualization" class="section">
       <h2>Visualization Analysis</h2>
       <h3>Primitive Retrieval Patterns</h3>
-      <p class="section-copy">
-        Different emotion categories activate different subsets of primitives within the same memory bank. Happy, Sad,
-        Neutral, and Angry correspond to distinct high-weight regions, showing that retrieval is correlated with the emotion
-        category rather than being random. The audio, text, and visual memory banks also exhibit different activation
-        patterns, and their weights form category-related usage patterns across multiple primitives instead of concentrating
-        on a few fixed entries.
-      </p>
 
       <figure class="paper-figure retrieval-figure">
         <img src="/Web/PriMD/Figures/PrimitiveRetrieval.webp" alt="Class-level primitive retrieval patterns for audio, text, and visual memory banks." width="1600" height="1690" loading="lazy" decoding="async">
@@ -276,13 +232,6 @@ layout: null
       </figure>
 
       <h3>Fused Representations</h3>
-      <p class="section-copy">
-        On the IEMOCAP test set with text as the only observed modality, the complete PriMD model produces a clearer class
-        structure: samples from the same class are more compact and overlaps between different classes are reduced. Removing
-        SSSD makes the class distributions more scattered, removing DPMC weakens the class boundaries, and removing DRAD
-        makes the sample distribution more entangled. The three modules jointly improve the separability of emotion
-        representations.
-      </p>
 
       <figure class="paper-figure wide-figure">
         <img src="/Web/PriMD/Figures/Representation.webp" alt="t-SNE visualization of PriMD and its ablated variants." width="2000" height="546" loading="lazy" decoding="async">
@@ -316,11 +265,6 @@ layout: null
     </section>
   </main>
 
-  <footer class="site-footer">
-    <a href="https://jiaqizhang-sengoku.github.io/">Jiaqi Zhang</a>
-    <span>PriMD &middot; EMNLP 2026 Findings</span>
-  </footer>
-
-  <script src="/Web/PriMD/script.js?v=20260828-paper" defer></script>
+  <script src="/Web/PriMD/script.js?v=20260828-layout" defer></script>
 </body>
 </html>
