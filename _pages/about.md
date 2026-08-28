@@ -45,6 +45,10 @@ redirect_from:
           scrolling="no"
           sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
         ></iframe>
+        <span class="visitor-map-controls" aria-hidden="true">
+          <span class="visitor-map-controls__button">+</span>
+          <span class="visitor-map-controls__button">&minus;</span>
+        </span>
       </div>
     </div>
 
@@ -68,4 +72,4 @@ redirect_from:
 </section>
 
 <script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script>
-<script src="/assets/js/visitor-stats.js?v=20260828-3" defer></script>
+<script src="/assets/js/visitor-stats.js?v=20260828-4" defer></script>

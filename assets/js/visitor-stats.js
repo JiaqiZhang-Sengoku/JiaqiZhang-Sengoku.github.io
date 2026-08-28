@@ -18,8 +18,10 @@
   var timeout = null;
   var sourceMapWidth = 875;
   var sourceMapHeight = 500;
-  var sourceZoomLeft = 35.4;
+  var sourceZoomLeft = 43.1;
   var sourceZoomTop = 295.8;
+  var sourceZoomWidth = 33.2;
+  var sourceZoomHeight = 64;
   var controlInset = 8;
 
   function readValue(element) {
@@ -80,8 +82,15 @@
     var region = map.closest(".visitor-insights") || map;
     var renderedHeight = sourceMapHeight * scale;
     var visibleHeight = Math.min(renderedHeight, 400);
-    var offsetX = controlInset - (sourceZoomLeft * scale);
-    var offsetY = controlInset - (sourceZoomTop * scale);
+    var compactControls = window.matchMedia && window.matchMedia("(max-width: 430px)").matches;
+    var targetControlWidth = compactControls ? 28 : 32;
+    var targetControlHeight = compactControls ? 36 : 60;
+    var offsetX = controlInset
+      + ((targetControlWidth - (sourceZoomWidth * scale)) / 2)
+      - (sourceZoomLeft * scale);
+    var offsetY = controlInset
+      + ((targetControlHeight - (sourceZoomHeight * scale)) / 2)
+      - (sourceZoomTop * scale);
 
     region.style.setProperty("--visitor-map-scale", scale.toFixed(4));
     region.style.setProperty("--visitor-map-height", Math.round(visibleHeight) + "px");
