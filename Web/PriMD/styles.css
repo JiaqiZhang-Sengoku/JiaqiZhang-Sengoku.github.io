@@ -52,37 +52,33 @@ sup {
 .hero-band {
   position: relative;
   overflow: hidden;
-  padding: 52px 24px 38px;
+  padding: 45px 24px 42px;
+  border-top: 4px solid #6f93a3;
   border-bottom: 1px solid var(--line);
-  background: #f3f8f9;
+  background: #f4f8f9;
 }
 
 .publication-header {
   position: relative;
   z-index: 1;
-  max-width: 1460px;
+  max-width: 1320px;
   margin: 0 auto;
   text-align: center;
 }
 
-.venue {
-  display: inline-block;
-  margin: 0 0 15px;
-  padding: 5px 12px;
-  border: 1px solid #c6d9df;
-  border-radius: 4px;
-  background: rgba(255, 255, 255, 0.78);
+.conference {
+  margin: 0 0 17px;
   color: var(--green);
-  font-size: 16px;
+  font-size: 23px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 h1 {
-  max-width: 1420px;
-  margin: 0 auto 15px;
+  max-width: 1280px;
+  margin: 0 auto 20px;
   color: var(--heading);
-  font-size: 42px;
+  font-size: 40px;
   font-weight: 600;
   line-height: 1.16;
   letter-spacing: 0;
@@ -92,19 +88,11 @@ h1 {
   display: block;
 }
 
-.conference-name {
-  margin: 0 0 19px;
-  color: var(--green);
-  font-size: 23px;
-  font-weight: 700;
-  line-height: 1.3;
-}
-
 .authors {
-  max-width: 1140px;
-  margin: 0 auto 11px;
+  max-width: 1210px;
+  margin: 0 auto 12px;
   color: #30383c;
-  font-size: 19px;
+  font-size: 18.5px;
   line-height: 1.66;
 }
 
@@ -127,11 +115,12 @@ h1 {
 }
 
 .institutions {
-  max-width: 1220px;
+  max-width: 1240px;
   margin: 0 auto;
   color: #58666c;
-  font-size: 15px;
+  font-size: 14.5px;
   line-height: 1.55;
+  overflow-wrap: anywhere;
 }
 
 .institutions p {
@@ -149,7 +138,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  margin-top: 23px;
+  margin-top: 22px;
 }
 
 .paper-link {
@@ -192,13 +181,13 @@ h1 {
 }
 
 .section {
-  max-width: 900px;
+  max-width: 948px;
   margin: 0 auto;
-  padding: 34px 24px;
+  padding: 42px 24px;
 }
 
 .text-section {
-  max-width: 900px;
+  max-width: 948px;
 }
 
 .abstract-band {
@@ -208,19 +197,29 @@ h1 {
 }
 
 .abstract-band .section {
-  padding-top: 31px;
-  padding-bottom: 31px;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 h2 {
-  max-width: 852px;
-  margin: 0 auto 17px;
+  max-width: 900px;
+  margin: 0 auto 18px;
   color: var(--heading);
-  font-size: 29px;
+  font-size: 30px;
   font-weight: 600;
   line-height: 1.25;
   letter-spacing: 0;
   text-align: left;
+}
+
+h3 {
+  max-width: 900px;
+  margin: 28px auto 10px;
+  color: #315f73;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0;
 }
 
 p {
@@ -230,7 +229,7 @@ p {
 .section > p,
 .section-copy,
 .text-section > p {
-  max-width: 852px;
+  max-width: 900px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -240,7 +239,7 @@ p {
 }
 
 .contributions {
-  max-width: 852px;
+  max-width: 900px;
   margin: 25px auto 0;
   padding-left: 27px;
 }
@@ -272,8 +271,8 @@ p {
 .hero-figure {
   position: relative;
   z-index: 1;
-  width: min(820px, calc(100vw - 48px));
-  margin: 31px auto 0;
+  width: min(960px, calc(100vw - 48px));
+  margin: 35px auto 0;
 }
 
 .hero-figure img {
@@ -281,7 +280,7 @@ p {
 }
 
 .framework-figure {
-  width: min(1120px, calc(100vw - 48px));
+  width: min(1160px, calc(100vw - 48px));
   margin-left: 50%;
   transform: translateX(-50%);
 }
@@ -293,7 +292,7 @@ p {
 }
 
 .retrieval-figure {
-  width: min(650px, calc(100vw - 48px));
+  width: min(720px, calc(100vw - 48px));
 }
 
 figcaption {
@@ -319,6 +318,33 @@ figcaption {
 
 .table-figure--analysis {
   width: min(1050px, calc(100vw - 32px));
+}
+
+.table-figure--efficiency {
+  width: min(1030px, calc(100vw - 32px));
+}
+
+.table-figure--components {
+  width: min(690px, calc(100vw - 32px));
+}
+
+.analysis-notes {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1px 0 1px 19px;
+  border-left: 2px solid #a9c0c9;
+}
+
+.analysis-notes p {
+  margin: 0;
+}
+
+.analysis-notes p + p {
+  margin-top: 13px;
+}
+
+.analysis-notes strong {
+  color: var(--heading);
 }
 
 .table-scroll {
@@ -362,7 +388,7 @@ figcaption {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  max-width: 852px;
+  max-width: 900px;
   margin: 0 auto 14px;
 }
 
@@ -388,7 +414,7 @@ figcaption {
 }
 
 pre {
-  max-width: 852px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 18px 20px;
   overflow-x: auto;
@@ -418,7 +444,7 @@ code {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  max-width: 900px;
+  max-width: 948px;
   margin: 0 auto;
   padding: 25px 24px 31px;
   border-top: 1px solid var(--line);
@@ -439,7 +465,7 @@ code {
 @media (max-width: 980px) {
   h1 {
     max-width: 900px;
-    font-size: 37px;
+    font-size: 36px;
   }
 
   .title-line {
@@ -465,12 +491,12 @@ code {
   }
 
   .hero-band {
-    padding: 34px 16px 29px;
+    padding: 31px 12px 30px;
   }
 
-  .venue {
-    margin-bottom: 13px;
-    font-size: 15px;
+  .conference {
+    margin-bottom: 14px;
+    font-size: 20px;
   }
 
   h1 {
@@ -478,12 +504,8 @@ code {
     line-height: 1.18;
   }
 
-  .conference-name {
-    font-size: 20px;
-  }
-
   .authors {
-    font-size: 17px;
+    font-size: 16.5px;
     line-height: 1.6;
   }
 
@@ -505,15 +527,20 @@ code {
   .framework-figure,
   .wide-figure,
   .retrieval-figure {
-    width: calc(100vw - 32px);
+    width: calc(100vw - 24px);
   }
 
   .section {
-    padding: 29px 18px;
+    padding: 32px 18px;
   }
 
   h2 {
-    font-size: 26px;
+    font-size: 27px;
+  }
+
+  h3 {
+    margin-top: 24px;
+    font-size: 19px;
   }
 
   figcaption {
@@ -536,6 +563,18 @@ code {
     width: 850px;
   }
 
+  .table-scroll--efficiency img {
+    width: 760px;
+  }
+
+  .table-scroll--components img {
+    width: 650px;
+  }
+
+  .analysis-notes {
+    padding-left: 14px;
+  }
+
   pre {
     padding: 15px;
     font-size: 13px;
@@ -549,11 +588,11 @@ code {
 
 @media (max-width: 430px) {
   h1 {
-    font-size: 28px;
+    font-size: 27px;
   }
 
-  .conference-name {
-    font-size: 18px;
+  .conference {
+    font-size: 19px;
   }
 
   .link-row {
