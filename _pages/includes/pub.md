@@ -41,7 +41,7 @@
 <div class="paper-box paper-box--leader-demo">
   <div class="paper-box-image paper-box-image--leader-demo">
     <div class="leader-publication-demo is-cycle-reset" data-leader-publication-demo data-demo-index="1" aria-label="Five rotating restoration comparisons for LEADer" aria-busy="false">
-      <div class="badge badge--accepted">ACM MM 2026</div>
+      <div class="badge badge--accepted">ACM MM 2026 <span class="badge-oral">Oral!</span></div>
       <div class="leader-publication-demo__flow">
         <div class="leader-publication-demo__stage">
           <span class="leader-publication-demo__label leader-publication-demo__label--input">Input</span>
@@ -68,7 +68,7 @@
   </div>
   <div class="paper-box-text">
     <a class="paper-title" href="/LEADer/">Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration</a>
-    <div class="paper-venue paper-venue--accepted">ACM International Conference on Multimedia (ACM MM 2026)</div>
+    <div class="paper-venue paper-venue--accepted">ACM International Conference on Multimedia (ACM MM 2026) <span class="paper-oral">Oral!</span></div>
     <div class="paper-authors"><span class="paper-author"><strong>Jiaqi Zhang</strong><sup>*</sup></span>, <span class="paper-author">Zheng Pang<sup>*</sup></span>, <span class="paper-author">Rongrong Gao</span>, <span class="paper-author">Qiyuan Zhang</span>, <span class="paper-author">Yang Yang<sup>&dagger;</sup></span></div>
     <div class="paper-links"><a class="paper-link paper-link--paper" href="https://arxiv.org/abs/2608.06981" title="Read the paper"><i class="fas fa-file-alt paper-link__icon" aria-hidden="true"></i><span>Paper</span></a><a class="paper-link paper-link--web" href="/LEADer/" title="Open the project website"><i class="fas fa-globe paper-link__icon" aria-hidden="true"></i><span>Web</span></a><a class="paper-link paper-link--code" href="https://github.com/JiaqiZhang-Sengoku/LEADer" title="View code on GitHub"><i class="fab fa-github paper-link__icon" aria-hidden="true"></i><span>Code</span></a></div>
   </div>

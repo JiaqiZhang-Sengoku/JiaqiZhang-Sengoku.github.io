@@ -1281,6 +1281,14 @@ body > #main > .sidebar.sticky {
     font-weight: 800;
 }
 
+.highlight-oral {
+    display: inline-block;
+    color: var(--accepted-green) !important;
+    font-size: 1.1em;
+    font-weight: 800;
+    line-height: 1;
+}
+
 .highlight-journal {
     color: #79539a !important;
     font-weight: 800;
@@ -1949,6 +1957,14 @@ body > #main > .sidebar.sticky {
     font-weight: 700;
 }
 
+.paper-oral {
+    display: inline-block;
+    margin-left: 0.12em;
+    font-size: 1.1em;
+    font-weight: 800;
+    line-height: 1;
+}
+
 .paper-venue--review {
     color: #151515 !important;
 }
@@ -2222,6 +2238,14 @@ body > #main > .sidebar.sticky {
     font-weight: 700;
     text-shadow: 0 1px 1px rgba(17, 44, 28, 0.18);
     opacity: 0.98;
+}
+
+.badge-oral {
+    display: inline-block;
+    margin-left: 0.28em;
+    font-size: 1.1em;
+    font-weight: 800;
+    line-height: 1;
 }
 
 .badge--accepted::before {

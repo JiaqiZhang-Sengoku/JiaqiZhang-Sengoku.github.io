@@ -119,26 +119,25 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 22px;
+  gap: 20px;
   max-width: 1500px;
   margin: 0 auto 18px;
 }
 
 .title-lockup::after {
-  width: 92px;
+  width: 124px;
   height: 1px;
-  flex: 0 0 92px;
+  flex: 0 0 124px;
   content: "";
 }
 
 .project-logo {
-  width: 92px;
-  height: 92px;
+  width: 124px;
+  height: 124px;
   margin: 0;
-  flex: 0 0 92px;
-  border-radius: 18px;
+  flex: 0 0 124px;
   object-fit: contain;
-  box-shadow: 0 10px 24px rgba(18, 47, 8, 0.12);
+  filter: drop-shadow(0 10px 16px rgba(18, 47, 8, 0.14));
 }
 
 .publication-title-line {
@@ -164,6 +163,19 @@ h1 {
   }
 }
 
+@media (min-width: 761px) and (max-width: 1399px) {
+  .title-lockup::after {
+    width: 104px;
+    flex-basis: 104px;
+  }
+
+  .project-logo {
+    width: 104px;
+    height: 104px;
+    flex-basis: 104px;
+  }
+}
+
 .hero-card h1 {
   text-shadow:
     0 1px 0 rgba(255, 255, 255, 0.74),
@@ -172,9 +184,17 @@ h1 {
 
 .conference {
   margin: 0 0 18px;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 700;
   color: var(--text);
+}
+
+.conference-oral {
+  display: inline-block;
+  color: #2e5b3e;
+  font-size: 1.1em;
+  font-weight: 800;
+  line-height: 1;
 }
 
 .hero-card .conference {
@@ -715,7 +735,51 @@ figcaption {
   overflow-wrap: anywhere;
 }
 
-  pre {
+.bibtex-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.bibtex-heading h2 {
+  margin: 0;
+}
+
+.bibtex-copy {
+  min-width: 82px;
+  min-height: 36px;
+  padding: 7px 14px;
+  border: 1px solid #cfd9d2;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #2e5b3e;
+  font: 700 15px/1 Constantia, Georgia, serif;
+  letter-spacing: 0;
+  cursor: pointer;
+  transition: color 0.16s ease, background 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease, transform 0.16s ease;
+}
+
+.bibtex-copy:hover {
+  border-color: #8eaa97;
+  background: #f6faf7;
+  box-shadow: 0 6px 16px rgba(46, 91, 62, 0.11);
+  transform: translateY(-1px);
+}
+
+.bibtex-copy:focus-visible {
+  outline: 2px solid rgba(46, 91, 62, 0.34);
+  outline-offset: 3px;
+}
+
+.bibtex-copy.is-copied {
+  border-color: #7fa18a;
+  background: #edf6f0;
+  color: #234b32;
+}
+
+pre {
   margin: 0;
   padding: 18px 20px;
   overflow-x: auto;
@@ -782,9 +846,9 @@ code {
   }
 
   .project-logo {
-    width: 72px;
-    height: 72px;
-    flex-basis: 72px;
+    width: 96px;
+    height: 96px;
+    flex-basis: 96px;
   }
 
   h1 {
@@ -792,7 +856,7 @@ code {
   }
 
   .conference {
-    font-size: 22px;
+    font-size: 25px;
   }
 
   body {
