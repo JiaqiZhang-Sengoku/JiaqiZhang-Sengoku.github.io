@@ -54,11 +54,12 @@ sup {
 
 .hero-band {
   position: relative;
+  isolation: isolate;
   overflow: hidden;
   padding: 50px 24px 44px;
   border-top: 0;
   border-bottom: 1px solid var(--line);
-  background: #fbfdfd;
+  background: #fafcfc;
 }
 
 .hero-spectrum {
@@ -69,8 +70,24 @@ sup {
   left: 0;
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
-  height: 4px;
+  height: 6px;
+  border-bottom: 1px solid rgba(91, 108, 119, 0.14);
+  box-shadow: 0 8px 24px rgba(75, 100, 111, 0.07);
   pointer-events: none;
+}
+
+.hero-spectrum span {
+  position: relative;
+}
+
+.hero-spectrum span:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .hero-spectrum span:nth-child(1) { background: #c96788; }
@@ -88,81 +105,192 @@ sup {
   pointer-events: none;
 }
 
+.hero-primitives::before,
+.hero-primitives::after {
+  content: "";
+  position: absolute;
+  top: 118px;
+  width: 235px;
+  height: 186px;
+  border-color: rgba(88, 124, 140, 0.12);
+  pointer-events: none;
+}
+
+.hero-primitives::before {
+  left: -128px;
+  border-top: 1px solid rgba(180, 95, 121, 0.13);
+  border-right: 1px solid rgba(74, 120, 146, 0.14);
+  transform: rotate(-8deg);
+}
+
+.hero-primitives::after {
+  right: -128px;
+  border-top: 1px solid rgba(107, 95, 142, 0.13);
+  border-left: 1px solid rgba(57, 112, 99, 0.14);
+  transform: rotate(8deg);
+}
+
 .hero-primitives span {
   position: absolute;
   display: block;
-  border: 1px solid rgba(94, 113, 137, 0.12);
-  border-radius: 7px;
+  border: 1px solid currentColor;
+  border-radius: 8px;
   transform: rotate(45deg);
-  box-shadow: 0 8px 20px rgba(74, 93, 112, 0.035);
+  box-shadow: 0 10px 24px rgba(64, 84, 101, 0.055);
+}
+
+.hero-primitives span::before,
+.hero-primitives span::after {
+  content: "";
+  position: absolute;
+  display: block;
+}
+
+.hero-primitives span::before {
+  inset: 10px;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.46);
+  opacity: 0.58;
+}
+
+.hero-primitives span::after {
+  top: 50%;
+  left: 50%;
+  width: 7px;
+  height: 7px;
+  border-radius: 2px;
+  background: currentColor;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.62);
+  transform: translate(-50%, -50%);
 }
 
 .hero-primitives span:nth-child(1) {
-  top: 78px;
-  left: 3.2%;
-  width: 62px;
-  height: 62px;
-  background: rgba(201, 103, 136, 0.075);
+  top: 72px;
+  left: 2.6%;
+  width: 72px;
+  height: 72px;
+  color: rgba(180, 95, 121, 0.27);
+  background: rgba(201, 103, 136, 0.13);
 }
 
 .hero-primitives span:nth-child(2) {
-  top: 208px;
-  left: 8.5%;
-  width: 26px;
-  height: 26px;
-  background: rgba(77, 145, 133, 0.10);
+  top: 215px;
+  left: 8.2%;
+  width: 30px;
+  height: 30px;
+  color: rgba(57, 112, 99, 0.3);
+  background: rgba(77, 145, 133, 0.15);
 }
 
 .hero-primitives span:nth-child(3) {
-  top: 66px;
-  right: 3.4%;
-  width: 76px;
-  height: 76px;
-  background: rgba(118, 105, 159, 0.065);
+  top: 60px;
+  right: 2.8%;
+  width: 86px;
+  height: 86px;
+  color: rgba(107, 95, 142, 0.24);
+  background: rgba(118, 105, 159, 0.11);
 }
 
 .hero-primitives span:nth-child(4) {
-  top: 224px;
-  right: 9.2%;
-  width: 32px;
-  height: 32px;
-  background: rgba(78, 136, 163, 0.085);
+  top: 232px;
+  right: 8.8%;
+  width: 36px;
+  height: 36px;
+  color: rgba(74, 120, 146, 0.28);
+  background: rgba(78, 136, 163, 0.14);
 }
 
 .hero-primitives span:nth-child(5) {
-  top: 404px;
-  left: 14%;
-  width: 20px;
-  height: 20px;
-  background: rgba(201, 148, 56, 0.065);
-  opacity: 0.72;
+  top: 398px;
+  left: 13.5%;
+  width: 24px;
+  height: 24px;
+  color: rgba(169, 117, 45, 0.25);
+  background: rgba(201, 148, 56, 0.12);
+  opacity: 0.82;
 }
 
 .hero-primitives span:nth-child(6) {
-  top: 466px;
-  right: 14.5%;
-  width: 24px;
-  height: 24px;
-  background: rgba(131, 167, 79, 0.055);
-  opacity: 0.64;
+  top: 462px;
+  right: 13.5%;
+  width: 28px;
+  height: 28px;
+  color: rgba(76, 135, 111, 0.23);
+  background: rgba(104, 157, 123, 0.1);
+  opacity: 0.74;
 }
 
 .hero-primitives span:nth-child(7) {
   bottom: 154px;
-  left: 5.6%;
-  width: 14px;
-  height: 14px;
-  background: rgba(78, 136, 163, 0.045);
-  opacity: 0.48;
+  left: 5.2%;
+  width: 18px;
+  height: 18px;
+  color: rgba(74, 120, 146, 0.19);
+  background: rgba(78, 136, 163, 0.08);
+  opacity: 0.62;
 }
 
 .hero-primitives span:nth-child(8) {
-  right: 6.4%;
+  right: 6%;
   bottom: 96px;
-  width: 17px;
-  height: 17px;
-  background: rgba(201, 103, 136, 0.04);
-  opacity: 0.38;
+  width: 21px;
+  height: 21px;
+  color: rgba(180, 95, 121, 0.17);
+  background: rgba(201, 103, 136, 0.075);
+  opacity: 0.54;
+}
+
+.hero-primitives span:nth-child(9) {
+  top: 324px;
+  left: 3.8%;
+  width: 40px;
+  height: 40px;
+  color: rgba(107, 95, 142, 0.18);
+  background: rgba(118, 105, 159, 0.07);
+  opacity: 0.66;
+}
+
+.hero-primitives span:nth-child(10) {
+  top: 348px;
+  right: 3.9%;
+  width: 44px;
+  height: 44px;
+  color: rgba(169, 117, 45, 0.17);
+  background: rgba(201, 148, 56, 0.07);
+  opacity: 0.62;
+}
+
+.hero-primitives span:nth-child(11) {
+  bottom: 286px;
+  left: 9.4%;
+  width: 16px;
+  height: 16px;
+  color: rgba(57, 112, 99, 0.17);
+  background: rgba(77, 145, 133, 0.06);
+  opacity: 0.5;
+}
+
+.hero-primitives span:nth-child(12) {
+  right: 9.2%;
+  bottom: 248px;
+  width: 18px;
+  height: 18px;
+  color: rgba(74, 120, 146, 0.16);
+  background: rgba(78, 136, 163, 0.06);
+  opacity: 0.46;
+}
+
+.hero-primitives span:nth-child(n+5)::before {
+  inset: 4px;
+  border-radius: 3px;
+}
+
+.hero-primitives span:nth-child(n+5)::after {
+  width: 3px;
+  height: 3px;
+  border-radius: 1px;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.58);
 }
 
 .publication-header {
@@ -690,8 +818,23 @@ code {
     padding: 35px 12px 32px;
   }
 
+  .hero-primitives::before,
+  .hero-primitives::after {
+    display: none;
+  }
+
   .hero-primitives span:nth-child(n+5) {
     display: none;
+  }
+
+  .hero-primitives span::before {
+    inset: 6px;
+  }
+
+  .hero-primitives span::after {
+    width: 4px;
+    height: 4px;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.58);
   }
 
   .hero-primitives span:nth-child(1) {
