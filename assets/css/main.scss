@@ -2532,8 +2532,8 @@ body > #main > .sidebar.sticky {
 .visitor-insights {
     --visitor-map-scale: 0.72;
     --visitor-map-height: 360px;
-    --visitor-map-offset-x: -24px;
-    --visitor-map-offset-y: 42px;
+    --visitor-map-offset-x: -21px;
+    --visitor-map-offset-y: -202px;
     margin: 31px 0 8px;
     color: var(--text-color);
 }
@@ -2672,7 +2672,7 @@ body > #main > .sidebar.sticky {
     top: var(--visitor-map-offset-y);
     left: var(--visitor-map-offset-x);
     width: 935px;
-    height: 520px;
+    height: 820px;
     margin: 0;
     border: 0;
     opacity: 0;

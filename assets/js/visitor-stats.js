@@ -75,8 +75,9 @@
     var region = map.closest(".visitor-insights") || map;
     var renderedHeight = 500 * scale;
     var visibleHeight = Math.min(renderedHeight, 400);
-    var offsetX = ((availableWidth - (875 * scale)) / 2) - (33 * scale);
-    var offsetY = 48 * scale;
+    var controlInset = 12;
+    var offsetX = ((availableWidth - (875 * scale)) / 2) + controlInset - (45 * scale);
+    var offsetY = controlInset - (297 * scale);
 
     region.style.setProperty("--visitor-map-scale", scale.toFixed(4));
     region.style.setProperty("--visitor-map-height", Math.round(visibleHeight) + "px");

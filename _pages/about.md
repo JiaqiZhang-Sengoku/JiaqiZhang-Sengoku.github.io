@@ -39,7 +39,7 @@ redirect_from:
         <iframe
           class="visitor-map-frame"
           data-visitor-map-frame
-          src="https://s01.flagcounter.com/gmap/2XYa/#map"
+          src="https://s01.flagcounter.com/gmap/2XYa/"
           title="Interactive map of cumulative visitor locations"
           loading="lazy"
           scrolling="no"
@@ -68,4 +68,4 @@ redirect_from:
 </section>
 
 <script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script>
-<script src="/assets/js/visitor-stats.js?v=20260828-1" defer></script>
+<script src="/assets/js/visitor-stats.js?v=20260828-2" defer></script>
