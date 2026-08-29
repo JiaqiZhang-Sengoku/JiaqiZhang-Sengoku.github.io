@@ -29,7 +29,7 @@ body {
   color: var(--ink);
   background: #f4f7f7;
   font-family: Cambria, Constantia, Georgia, serif;
-  font-size: 17px;
+  font-size: 18.5px;
   line-height: 1.64;
 }
 
@@ -449,29 +449,29 @@ sup {
 .publication-header {
   position: relative;
   z-index: 1;
-  max-width: 1380px;
+  max-width: 1500px;
   margin: 0 auto;
   text-align: center;
 }
 
 .title-lockup {
   display: grid;
-  grid-template-columns: 102px minmax(0, 1fr) 102px;
+  grid-template-columns: 112px minmax(0, 1fr) 112px;
   align-items: center;
-  gap: 20px;
-  max-width: 1450px;
+  gap: 22px;
+  max-width: 1530px;
   margin: 0 auto;
 }
 
 .title-lockup::after {
   content: "";
-  width: 102px;
+  width: 112px;
 }
 
 .paper-logo {
   display: block;
-  width: 102px;
-  height: 102px;
+  width: 112px;
+  height: 112px;
   object-fit: contain;
   filter: drop-shadow(0 8px 14px rgba(60, 54, 78, 0.12));
 }
@@ -483,7 +483,7 @@ sup {
   gap: 13px;
   margin: 18px auto 19px;
   color: #5353a3;
-  font-size: 21.5px;
+  font-size: 23.5px;
   font-weight: 700;
   line-height: 1.25;
 }
@@ -507,10 +507,10 @@ sup {
 }
 
 h1 {
-  max-width: 1280px;
+  max-width: 1380px;
   margin: 0 auto;
   color: var(--heading);
-  font-size: 40px;
+  font-size: 44px;
   font-weight: 600;
   line-height: 1.16;
   letter-spacing: 0;
@@ -524,7 +524,7 @@ h1 {
   max-width: 1210px;
   margin: 0 auto 12px;
   color: #343940;
-  font-size: 20px;
+  font-size: 21.5px;
   line-height: 1.62;
 }
 
@@ -550,7 +550,7 @@ h1 {
   max-width: 1240px;
   margin: 0 auto;
   color: #5f6971;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.58;
   overflow-wrap: anywhere;
 }
@@ -562,7 +562,7 @@ h1 {
 .author-note {
   margin: 7px 0 0;
   color: var(--muted);
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .link-row {
@@ -578,29 +578,29 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  min-width: 124px;
-  min-height: 43px;
-  padding: 9px 17px;
+  min-width: 132px;
+  min-height: 46px;
+  padding: 10px 18px;
   border: 1px solid var(--line-strong);
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 5px 14px rgba(47, 78, 88, 0.06);
   color: #2c373b;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1;
   transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
 }
 
 .paper-link img {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   object-fit: contain;
 }
 
 .link-symbol {
   color: var(--violet);
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 700;
 }
 
@@ -626,13 +626,13 @@ h1 {
 .section {
   position: relative;
   z-index: 1;
-  max-width: 1040px;
+  max-width: 1160px;
   margin: 0 auto;
   padding: 66px 28px 62px;
 }
 
 .text-section {
-  max-width: 1040px;
+  max-width: 1160px;
 }
 
 .content-band {
@@ -746,10 +746,10 @@ h1 {
 }
 
 h2 {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto 18px;
   color: var(--heading);
-  font-size: 30px;
+  font-size: 33px;
   font-weight: 600;
   line-height: 1.25;
   letter-spacing: 0;
@@ -784,10 +784,10 @@ h2 {
 }
 
 h3 {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 28px auto 10px;
   color: var(--blue);
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   line-height: 1.3;
   letter-spacing: 0;
@@ -817,7 +817,7 @@ p {
 .section > p,
 .section-copy,
 .text-section > p {
-  max-width: 900px;
+  max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -827,7 +827,7 @@ p {
 }
 
 .contributions {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 28px auto 0;
   padding: 20px 24px 20px 48px;
   border-top: 1px solid var(--section-rule);
@@ -871,10 +871,10 @@ p {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(0, 640px) minmax(390px, 1fr);
+  grid-template-columns: minmax(0, 700px) minmax(420px, 1fr);
   align-items: center;
-  gap: 48px;
-  width: min(1300px, calc(100vw - 56px));
+  gap: 50px;
+  width: min(1400px, calc(100vw - 56px));
   margin: 44px auto 0;
 }
 
@@ -893,7 +893,7 @@ p {
 }
 
 .hero-figure {
-  width: min(100%, 640px);
+  width: min(100%, 700px);
   margin: 0;
   justify-self: center;
 }
@@ -903,7 +903,7 @@ p {
 }
 
 .hero-figure figcaption {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -912,7 +912,7 @@ p {
   padding: 6px 0 6px 25px;
   border-left: 3px solid #9d94bb;
   color: #3b4249;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 1.69;
   text-align: left;
 }
@@ -932,19 +932,19 @@ p {
 }
 
 .framework-figure {
-  width: min(980px, calc(100vw - 48px));
+  width: min(1080px, calc(100vw - 48px));
   margin-left: 50%;
   transform: translateX(-50%);
 }
 
 .wide-figure {
-  width: min(930px, calc(100vw - 48px));
+  width: min(1030px, calc(100vw - 48px));
   margin-left: 50%;
   transform: translateX(-50%);
 }
 
 .retrieval-figure {
-  width: min(580px, calc(100vw - 48px));
+  width: min(650px, calc(100vw - 48px));
 }
 
 figcaption {
@@ -952,34 +952,34 @@ figcaption {
   max-width: 100%;
   margin: 12px auto 0;
   color: var(--muted);
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.52;
   text-align: left;
   overflow-wrap: anywhere;
 }
 
 .table-figure {
-  width: min(930px, calc(100vw - 32px));
+  width: min(1030px, calc(100vw - 32px));
   margin-left: 50%;
   transform: translateX(-50%);
 }
 
 .table-figure--main {
-  width: min(980px, calc(100vw - 32px));
+  width: min(1080px, calc(100vw - 32px));
 }
 
 .table-figure--ablation {
-  width: min(840px, calc(100vw - 32px));
+  width: min(930px, calc(100vw - 32px));
 }
 
 .table-figure--efficiency {
-  width: min(760px, calc(100vw - 32px));
+  width: min(840px, calc(100vw - 32px));
 }
 
 .analysis-notes {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 20px 0;
   border-top: 1px solid var(--section-rule);
@@ -1043,7 +1043,7 @@ figcaption {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto 14px;
 }
 
@@ -1060,7 +1060,7 @@ figcaption {
   border-radius: 4px;
   background: #ffffff;
   color: var(--blue);
-  font: 700 14px/1.2 Cambria, Constantia, Georgia, serif;
+  font: 700 15px/1.2 Cambria, Constantia, Georgia, serif;
   cursor: pointer;
 }
 
@@ -1071,7 +1071,7 @@ figcaption {
 }
 
 pre {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 18px 20px;
   overflow-x: auto;
@@ -1079,7 +1079,7 @@ pre {
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.78);
   color: #293236;
-  font-size: 14px;
+  font-size: 15.5px;
   line-height: 1.55;
   text-align: left;
 }
@@ -1092,22 +1092,22 @@ code {
   min-height: 22px;
   margin: 7px auto 0 !important;
   color: var(--green);
-  font-size: 14px;
+  font-size: 15px;
   text-align: right;
 }
 
-@media (min-width: 1460px) {
+@media (min-width: 1640px) {
   .title-line {
     white-space: nowrap;
   }
 
   .hero-story {
-    grid-template-columns: minmax(0, 660px) minmax(400px, 1fr);
-    width: min(1340px, calc(100vw - 72px));
+    grid-template-columns: minmax(0, 720px) minmax(430px, 1fr);
+    width: min(1460px, calc(100vw - 72px));
   }
 
   .hero-figure {
-    width: min(100%, 660px);
+    width: min(100%, 720px);
   }
 }
 
@@ -1115,37 +1115,37 @@ code {
   .hero-story {
     grid-template-columns: minmax(0, 1fr);
     gap: 30px;
-    width: min(820px, calc(100vw - 48px));
+    width: min(900px, calc(100vw - 48px));
   }
 
   .hero-figure {
-    width: min(100%, 680px);
+    width: min(100%, 760px);
   }
 
   .hero-context {
-    width: min(100%, 780px);
+    width: min(100%, 840px);
     margin: 0 auto;
   }
 }
 
 @media (max-width: 980px) {
   .title-lockup {
-    grid-template-columns: 78px minmax(0, 1fr) 78px;
+    grid-template-columns: 84px minmax(0, 1fr) 84px;
     gap: 16px;
   }
 
   .title-lockup::after,
   .paper-logo {
-    width: 78px;
+    width: 84px;
   }
 
   .paper-logo {
-    height: 78px;
+    height: 84px;
   }
 
   h1 {
-    max-width: 900px;
-    font-size: 36px;
+    max-width: 960px;
+    font-size: 39px;
   }
 
   .title-line {
@@ -1157,13 +1157,13 @@ code {
   }
 
   .authors {
-    font-size: 19px;
+    font-size: 20.5px;
   }
 
   .hero-story {
     grid-template-columns: minmax(0, 1fr);
     gap: 26px;
-    width: min(760px, calc(100vw - 48px));
+    width: min(820px, calc(100vw - 48px));
   }
 
   .hero-context {
@@ -1173,7 +1173,7 @@ code {
 
 @media (max-width: 720px) {
   body {
-    font-size: 16px;
+    font-size: 17.2px;
   }
 
   main {
@@ -1353,15 +1353,15 @@ code {
   }
 
   .paper-logo {
-    width: 66px;
-    height: 66px;
+    width: 72px;
+    height: 72px;
   }
 
   .conference {
     gap: 8px;
     margin-top: 13px;
     margin-bottom: 16px;
-    font-size: 19.5px;
+    font-size: 21px;
   }
 
   .conference-divider {
@@ -1370,12 +1370,12 @@ code {
   }
 
   h1 {
-    font-size: 31px;
+    font-size: 33px;
     line-height: 1.18;
   }
 
   .authors {
-    font-size: 17.4px;
+    font-size: 18.5px;
     line-height: 1.6;
   }
 
@@ -1384,16 +1384,16 @@ code {
   }
 
   .institutions {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .author-note {
-    font-size: 14.5px;
+    font-size: 15.5px;
   }
 
   .paper-link {
-    min-width: 108px;
-    min-height: 41px;
+    min-width: 114px;
+    min-height: 44px;
     padding: 8px 14px;
   }
 
@@ -1416,14 +1416,14 @@ code {
   }
 
   .hero-figure {
-    width: min(100%, 620px);
+    width: min(100%, 680px);
     margin-right: auto;
     margin-left: auto;
   }
 
   .hero-context {
     padding: 2px 3px 2px 17px;
-    font-size: 16.5px;
+    font-size: 17.5px;
   }
 
   .section {
@@ -1449,7 +1449,7 @@ code {
   }
 
   h2 {
-    font-size: 27px;
+    font-size: 29.5px;
   }
 
   .content-band h2 {
@@ -1468,11 +1468,11 @@ code {
 
   h3 {
     margin-top: 24px;
-    font-size: 19px;
+    font-size: 20.5px;
   }
 
   figcaption {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .table-figure {
@@ -1487,15 +1487,15 @@ code {
   }
 
   .table-scroll img {
-    width: 760px;
+    width: 820px;
   }
 
   .table-scroll--compact img {
-    width: 660px;
+    width: 710px;
   }
 
   .table-scroll--efficiency img {
-    width: 600px;
+    width: 650px;
   }
 
   .analysis-notes {
@@ -1518,18 +1518,18 @@ code {
 
   pre {
     padding: 15px;
-    font-size: 13px;
+    font-size: 14px;
   }
 
 }
 
 @media (max-width: 430px) {
   h1 {
-    font-size: 27px;
+    font-size: 29px;
   }
 
   h2 {
-    font-size: 25px;
+    font-size: 27px;
   }
 
   .content-band h2::after {
@@ -1538,7 +1538,7 @@ code {
 
   .conference {
     flex-wrap: wrap;
-    font-size: 18.5px;
+    font-size: 19.5px;
   }
 
   .link-row {
@@ -1551,7 +1551,7 @@ code {
     min-width: 0;
     padding-right: 9px;
     padding-left: 9px;
-    font-size: 14px;
+    font-size: 15px;
   }
 
 }
