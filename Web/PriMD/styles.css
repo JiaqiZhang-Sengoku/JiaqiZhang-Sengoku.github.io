@@ -896,7 +896,7 @@ p {
 .hero-context {
   position: relative;
   padding: 6px 0 6px 25px;
-  border-left: 3px solid #9d94bb;
+  border-left: 0;
   color: #3b4249;
   font-size: 14.7px;
   line-height: 1.69;
@@ -906,11 +906,14 @@ p {
 .hero-context::before {
   content: "";
   position: absolute;
-  top: 4px;
-  left: -3px;
-  width: 3px;
-  height: 74px;
-  background: var(--green);
+  top: 9px;
+  bottom: 9px;
+  left: 0;
+  width: 2px;
+  height: auto;
+  border-radius: 999px;
+  background: #5b7f82;
+  opacity: 0.78;
 }
 
 .hero-context p {
