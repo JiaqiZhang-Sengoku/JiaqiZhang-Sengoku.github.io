@@ -57,7 +57,7 @@ sup {
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  padding: 54px 24px 78px;
+  padding: 54px 24px 64px;
   border-top: 0;
   border-bottom: 0;
   background: #f4f9f8;
@@ -628,7 +628,7 @@ h1 {
   z-index: auto;
   max-width: 1240px;
   margin: 0 auto;
-  padding: 66px 28px 62px;
+  padding: 54px 28px 50px;
 }
 
 .text-section {
@@ -741,13 +741,13 @@ h1 {
 }
 
 .content-band--abstract .section {
-  padding-top: 62px;
-  padding-bottom: 58px;
+  padding-top: 52px;
+  padding-bottom: 48px;
 }
 
 h2 {
   max-width: 1080px;
-  margin: 0 auto 18px;
+  margin: 0 auto 14px;
   color: var(--heading);
   font-size: 36px;
   font-weight: 600;
@@ -785,7 +785,7 @@ h2 {
 
 h3 {
   max-width: 1080px;
-  margin: 28px auto 10px;
+  margin: 22px auto 8px;
   color: var(--blue);
   font-size: 24px;
   font-weight: 700;
@@ -811,7 +811,7 @@ h3 {
 }
 
 p {
-  margin: 0 0 16px;
+  margin: 0 0 13px;
 }
 
 .section > p,
@@ -823,13 +823,13 @@ p {
 }
 
 .section-copy + .paper-figure {
-  margin-top: 24px;
+  margin-top: 18px;
 }
 
 .contributions {
   max-width: 1080px;
-  margin: 28px auto 0;
-  padding: 20px 24px 20px 48px;
+  margin: 22px auto 0;
+  padding: 18px 24px 18px 48px;
   border-top: 1px solid var(--section-rule);
   border-bottom: 1px solid var(--section-rule);
   background: rgba(255, 255, 255, 0.58);
@@ -844,11 +844,11 @@ p {
 }
 
 .contributions li + li {
-  margin-top: 11px;
+  margin-top: 8px;
 }
 
 .paper-figure {
-  margin: 24px auto 37px;
+  margin: 18px auto 28px;
   text-align: center;
 }
 
@@ -1026,8 +1026,8 @@ figcaption {
 }
 
 .bibtex-section {
-  padding-top: 50px;
-  padding-bottom: 58px;
+  padding-top: 44px;
+  padding-bottom: 48px;
 }
 
 .bibtex-heading {
@@ -1071,8 +1071,8 @@ pre {
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.78);
   color: #293236;
-  font-size: 17px;
-  line-height: 1.55;
+  font-size: 19.5px;
+  line-height: 1.58;
   text-align: left;
 }
 
@@ -1173,7 +1173,7 @@ code {
   }
 
   .hero-band {
-    padding: 40px 10px 60px;
+    padding: 40px 10px 48px;
   }
 
   .hero-backdrop span:nth-child(1) {
@@ -1419,7 +1419,7 @@ code {
   }
 
   .section {
-    padding: 52px 14px 48px;
+    padding: 44px 14px 40px;
   }
 
   .content-band::before {
@@ -1436,8 +1436,8 @@ code {
   }
 
   .content-band--abstract .section {
-    padding-top: 50px;
-    padding-bottom: 46px;
+    padding-top: 42px;
+    padding-bottom: 38px;
   }
 
   h2 {
@@ -1459,7 +1459,7 @@ code {
   }
 
   h3 {
-    margin-top: 24px;
+    margin-top: 20px;
     font-size: 22px;
   }
 
@@ -1496,7 +1496,7 @@ code {
   }
 
   .analysis-notes p {
-    padding: 16px 0;
+    padding: 13px 0;
   }
 
   .analysis-notes p + p {
@@ -1505,12 +1505,12 @@ code {
   }
 
   .contributions {
-    padding: 18px 16px 18px 39px;
+    padding: 16px 16px 16px 39px;
   }
 
   pre {
     padding: 15px;
-    font-size: 15px;
+    font-size: 17.5px;
   }
 
 }

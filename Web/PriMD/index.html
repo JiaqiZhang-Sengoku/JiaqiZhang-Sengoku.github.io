@@ -13,7 +13,7 @@ layout: null
   <link rel="icon" type="image/webp" sizes="1024x1024" href="/Web/PriMD/PriMD_Logo.webp?v=20260829-hd">
   <link rel="apple-touch-icon" href="/Web/PriMD/PriMD_Logo.webp?v=20260829-hd">
   <link rel="shortcut icon" type="image/webp" href="/Web/PriMD/PriMD_Logo.webp?v=20260829-hd">
-  <link rel="stylesheet" href="/Web/PriMD/styles.css?v=20260829-blend-scale-3">
+  <link rel="stylesheet" href="/Web/PriMD/styles.css?v=20260829-content-spacing">
 </head>
 <body>
   <main>
@@ -115,15 +115,18 @@ layout: null
         </figure>
         <div class="hero-context">
           <p>
-            Our research focuses on the problem of missing modalities in multimodal emotion recognition. While examining
-            existing approaches, we found that many of them generate, align, or distill a missing modality as a whole,
-            overlooking the fact that different information components are not equally recoverable. Cross-modal emotional
-            semantics can often be reliably estimated from the available modalities, whereas modality-specific details, such
-            as vocal tone and facial expressions, remain inherently uncertain. Processing these two types of information
-            together can introduce ambiguous or even conflicting representations, leading to unstable predictions under
-            different missing-modality conditions. This observation motivated PriMD, which separates shared semantics from
-            modality-specific information and compensates for missing cues within a constrained primitive memory space,
-            enabling more stable and robust emotion recognition.
+            Our research focuses on the problem of missing modalities in multimodal emotion recognition. By examining existing
+            approaches, we found that many methods generate, align, or distill a missing modality as a whole, overlooking the
+            fact that different information components within a modality are not equally recoverable. Cross-modal shared
+            emotional semantics can usually be reliably estimated from the available modalities, whereas modality-specific
+            details are inherently more uncertain. Processing these two types of information together can produce ambiguous
+            or even conflicting representations, leading to unstable predictions under different missing-modality conditions.
+            Based on this insight, we propose <strong>PriMD</strong>, which reformulates the missing-modality problem as
+            <strong>shared semantic estimation</strong> and <strong>constrained compensation of modality-specific
+            information</strong>. PriMD first disentangles these two types of information, then organizes modality-specific
+            information into discrete primitive memories and uses the shared semantics of the available modalities to
+            dynamically retrieve relevant primitives. By avoiding unconstrained inference of the entire missing modality,
+            PriMD enables more stable and robust emotion recognition.
           </p>
         </div>
       </div>
