@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Noto Serif SC";
+  font-style: normal;
+  font-weight: 500 800;
+  font-display: swap;
+  src:
+    local("Noto Serif SC Medium"),
+    local("Noto Serif SC"),
+    url("/assets/fonts/noto-serif-sc-latin-vf.woff2?v=20260829") format("woff2");
+}

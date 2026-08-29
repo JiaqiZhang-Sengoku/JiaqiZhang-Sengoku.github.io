@@ -13,11 +13,11 @@ $paragraph-indent           : false; // true, false (default)
 $indent-var                 : 0.5em;
 
 /* site typeface */
-$bookman                    : "Bookman Old Style", Bookman, serif;
-$serif                      : $bookman;
-$sans-serif                 : $bookman;
-$monospace                  : $bookman;
-$sans-serif-narrow          : $bookman;
+$noto-serif-sc              : "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+$serif                      : $noto-serif-sc;
+$sans-serif                 : $noto-serif-sc;
+$monospace                  : $noto-serif-sc;
+$sans-serif-narrow          : $noto-serif-sc;
 
 $global-font-family         : $sans-serif;
 $header-font-family         : $sans-serif;

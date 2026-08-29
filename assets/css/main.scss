@@ -91,7 +91,7 @@ body, p, li, a, span, div, button, input, textarea, select, option, label, th, t
 h1, h2, h3, h4, h5, h6, strong, em, small, blockquote,
 .paper-box, .paper-box *, .award-card, .award-card *,
 .masthead, .masthead *, .page__content, .page__content * {
-    font-family: "Bookman Old Style", Bookman, serif !important;
+    font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif !important;
 }
 
 .fa,
@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6, strong, em, small, blockquote,
 
 html {
     background: var(--page-bg);
-    font-size: 15.6px;
+    font-size: 16.8px;
     overflow-x: hidden;
     scroll-padding-top: var(--anchor-offset);
 }
@@ -121,6 +121,7 @@ body {
     padding-top: var(--masthead-height);
     background: linear-gradient(180deg, #ffffff 0, #fafcfc 430px, var(--page-bg) 100%) !important;
     color: var(--text-color);
+    font-weight: 500;
 }
 
 body::before {
@@ -2758,7 +2759,7 @@ body > #main > .sidebar.sticky {
     display: grid;
     place-items: center;
     color: #1f2d33;
-    font-family: "Bookman Old Style", Bookman, serif;
+    font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
     font-size: 21px !important;
     font-weight: 700;
     line-height: 1 !important;
@@ -3079,7 +3080,7 @@ body > #main > .sidebar.sticky {
 
     html,
     body {
-        font-size: 15.2px;
+        font-size: 16.3px;
         width: 100vw !important;
         max-width: 100vw !important;
         min-width: 0 !important;

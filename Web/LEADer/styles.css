@@ -20,8 +20,9 @@ body {
   margin: 0;
   color: var(--text);
   background: #ffffff;
-  font-family: "Bookman Old Style", Bookman, serif;
-  font-size: 17px;
+  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+  font-size: 18.5px;
+  font-weight: 500;
   line-height: 1.62;
 }
 
@@ -102,14 +103,14 @@ a:hover {
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.76);
   color: var(--muted);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
 }
 
 h1 {
   max-width: 1420px;
   margin: 0;
-  font-size: 43px;
+  font-size: 46px;
   font-weight: 600;
   line-height: 1.15;
   letter-spacing: 0;
@@ -153,13 +154,13 @@ h1 {
 
 @media (min-width: 761px) and (max-width: 1299px) {
   h1 {
-    font-size: 39px;
+    font-size: 42px;
   }
 }
 
 @media (min-width: 1300px) and (max-width: 1399px) {
   h1 {
-    font-size: 40px;
+    font-size: 43px;
   }
 }
 
@@ -184,7 +185,7 @@ h1 {
 
 .conference {
   margin: 0 0 18px;
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 700;
   color: var(--text);
 }
@@ -204,7 +205,7 @@ h1 {
 .authors {
   max-width: 980px;
   margin: 0 auto 12px;
-  font-size: 20px;
+  font-size: 21.5px;
   line-height: 1.72;
 }
 
@@ -216,14 +217,14 @@ h1 {
 .notes {
   margin: 6px auto;
   color: var(--muted);
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .summary {
   max-width: 720px;
   margin: 18px auto 0;
   color: #3d3d3d;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .link-row {
@@ -249,7 +250,7 @@ h1 {
   color: #272636;
   backdrop-filter: blur(18px) saturate(1.12);
   -webkit-backdrop-filter: blur(18px) saturate(1.12);
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1;
   transition: transform 0.18s ease, background 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
@@ -268,7 +269,7 @@ h1 {
   align-items: center;
   justify-content: center;
   color: #a42a36;
-  font-size: 19px;
+  font-size: 20.5px;
   line-height: 1;
 }
 
@@ -278,7 +279,7 @@ h1 {
   justify-content: center;
   width: 22px;
   color: #2e5b3e;
-  font-size: 18px;
+  font-size: 19.5px;
   font-weight: 700;
   line-height: 1;
 }
@@ -337,7 +338,7 @@ h1 {
   display: block;
   min-height: 29px;
   margin: 0 0 12px;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 700;
   letter-spacing: 0;
   line-height: 1.2;
@@ -491,7 +492,7 @@ h1 {
   -webkit-background-clip: text;
   color: transparent;
   filter: drop-shadow(0 3px 5px rgba(77, 104, 105, 0.22));
-  font-size: 38px;
+  font-size: 40.5px;
   font-weight: 700;
   line-height: 1;
 }
@@ -500,7 +501,7 @@ h1 {
   max-width: 760px;
   margin: 8px auto 0;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.5;
   text-align: center;
 }
@@ -563,7 +564,7 @@ h1 {
 h2 {
   max-width: 820px;
   margin: 0 auto 18px;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 500;
   line-height: 1.25;
   text-align: left;
@@ -729,7 +730,7 @@ figcaption {
   max-width: 100%;
   margin: 12px auto 0;
   color: var(--muted);
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.5;
   text-align: left;
   overflow-wrap: anywhere;
@@ -755,7 +756,7 @@ figcaption {
   border-radius: 6px;
   background: #ffffff;
   color: #2e5b3e;
-  font: 700 15px/1 "Bookman Old Style", Bookman, serif;
+  font: 700 16px/1 "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
   letter-spacing: 0;
   cursor: pointer;
   transition: color 0.16s ease, background 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease, transform 0.16s ease;
@@ -787,13 +788,13 @@ pre {
   border-radius: 4px;
   background: #ffffff;
   color: #222222;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.55;
   text-align: left;
 }
 
 code {
-  font-family: "Bookman Old Style", Bookman, serif;
+  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
 }
 
 @media (max-width: 760px) {
@@ -806,7 +807,7 @@ code {
   .demo-label {
     min-height: 27px;
     margin-bottom: 10px;
-    font-size: 22px;
+    font-size: 23.5px;
   }
 
   .demo-flow {
@@ -852,32 +853,32 @@ code {
   }
 
   h1 {
-    font-size: 34px;
+    font-size: 36.5px;
   }
 
   .conference {
-    font-size: 25px;
+    font-size: 27px;
   }
 
   body {
-    font-size: 16px;
+    font-size: 17.2px;
   }
 
   .authors {
-    font-size: 18px;
+    font-size: 19.5px;
   }
 
   .institutions,
   .notes {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   h2 {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   figcaption {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .paired-media {
@@ -893,7 +894,7 @@ code {
   }
 
   pre {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .pill {

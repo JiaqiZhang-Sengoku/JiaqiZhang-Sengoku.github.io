@@ -28,8 +28,9 @@ body {
   margin: 0;
   color: var(--ink);
   background: #f4f7f7;
-  font-family: "Bookman Old Style", Bookman, serif;
-  font-size: 20px;
+  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+  font-size: 21.5px;
+  font-weight: 500;
   line-height: 1.66;
 }
 
@@ -483,7 +484,7 @@ sup {
   gap: 13px;
   margin: 18px auto 19px;
   color: #5353a3;
-  font-size: 25.5px;
+  font-size: 27.5px;
   font-weight: 700;
   line-height: 1.25;
 }
@@ -510,7 +511,7 @@ h1 {
   max-width: 1500px;
   margin: 0 auto;
   color: var(--heading);
-  font-size: 48px;
+  font-size: 51.5px;
   font-weight: 600;
   line-height: 1.16;
   letter-spacing: 0;
@@ -524,7 +525,7 @@ h1 {
   max-width: 1320px;
   margin: 0 auto 12px;
   color: #343940;
-  font-size: 23px;
+  font-size: 24.5px;
   line-height: 1.62;
 }
 
@@ -561,7 +562,7 @@ h1 {
   max-width: 1340px;
   margin: 0 auto;
   color: #5f6971;
-  font-size: 18.5px;
+  font-size: 20px;
   line-height: 1.58;
   overflow-wrap: anywhere;
 }
@@ -573,7 +574,7 @@ h1 {
 .author-note {
   margin: 7px 0 0;
   color: var(--muted);
-  font-size: 17px;
+  font-size: 18.5px;
 }
 
 .link-row {
@@ -597,7 +598,7 @@ h1 {
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 5px 14px rgba(47, 78, 88, 0.06);
   color: #2c373b;
-  font-size: 17.5px;
+  font-size: 19px;
   font-weight: 700;
   line-height: 1;
   transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
@@ -611,7 +612,7 @@ h1 {
 
 .link-symbol {
   color: var(--violet);
-  font-size: 18.5px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -760,7 +761,7 @@ h2 {
   max-width: 1080px;
   margin: 0 auto 14px;
   color: var(--heading);
-  font-size: 36px;
+  font-size: 38.5px;
   font-weight: 600;
   line-height: 1.25;
   letter-spacing: 0;
@@ -798,7 +799,7 @@ h3 {
   max-width: 1080px;
   margin: 22px auto 8px;
   color: var(--blue);
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 700;
   line-height: 1.3;
   letter-spacing: 0;
@@ -906,7 +907,7 @@ p {
 }
 
 .hero-figure figcaption {
-  font-size: 17.5px;
+  font-size: 19px;
   line-height: 1.5;
 }
 
@@ -915,7 +916,7 @@ p {
   padding: 6px 0 6px 25px;
   border-left: 3px solid #9d94bb;
   color: #3b4249;
-  font-size: 20.5px;
+  font-size: 22px;
   line-height: 1.69;
   text-align: left;
 }
@@ -955,7 +956,7 @@ figcaption {
   max-width: 100%;
   margin: 12px auto 0;
   color: var(--muted);
-  font-size: 17.5px;
+  font-size: 19px;
   line-height: 1.52;
   text-align: left;
   overflow-wrap: anywhere;
@@ -1063,7 +1064,7 @@ figcaption {
   border-radius: 4px;
   background: #ffffff;
   color: var(--blue);
-  font: 700 16.5px/1.2 "Bookman Old Style", Bookman, serif;
+  font: 700 18px/1.2 "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
   cursor: pointer;
 }
 
@@ -1082,20 +1083,20 @@ pre {
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.78);
   color: #293236;
-  font-size: 19.5px;
+  font-size: 21px;
   line-height: 1.58;
   text-align: left;
 }
 
 code {
-  font-family: "Bookman Old Style", Bookman, serif;
+  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
 }
 
 .copy-status {
   min-height: 22px;
   margin: 7px auto 0 !important;
   color: var(--green);
-  font-size: 16px;
+  font-size: 17.5px;
   text-align: right;
 }
 
@@ -1148,7 +1149,7 @@ code {
 
   h1 {
     max-width: 960px;
-    font-size: 42.5px;
+    font-size: 45.5px;
   }
 
   .title-line {
@@ -1160,7 +1161,7 @@ code {
   }
 
   .authors {
-    font-size: 22px;
+    font-size: 23.5px;
   }
 
   .hero-story {
@@ -1176,7 +1177,7 @@ code {
 
 @media (max-width: 720px) {
   body {
-    font-size: 18.5px;
+    font-size: 20px;
   }
 
   main {
@@ -1364,7 +1365,7 @@ code {
     gap: 8px;
     margin-top: 13px;
     margin-bottom: 16px;
-    font-size: 22.5px;
+    font-size: 24px;
   }
 
   .conference-divider {
@@ -1373,12 +1374,12 @@ code {
   }
 
   h1 {
-    font-size: 35px;
+    font-size: 37.5px;
     line-height: 1.18;
   }
 
   .authors {
-    font-size: 19.8px;
+    font-size: 21.2px;
     line-height: 1.6;
   }
 
@@ -1387,11 +1388,11 @@ code {
   }
 
   .institutions {
-    font-size: 17px;
+    font-size: 18.2px;
   }
 
   .author-note {
-    font-size: 16.5px;
+    font-size: 17.8px;
   }
 
   .paper-link {
@@ -1426,7 +1427,7 @@ code {
 
   .hero-context {
     padding: 2px 3px 2px 17px;
-    font-size: 18.8px;
+    font-size: 20.2px;
   }
 
   .section {
@@ -1452,7 +1453,7 @@ code {
   }
 
   h2 {
-    font-size: 32px;
+    font-size: 34.5px;
   }
 
   .content-band h2 {
@@ -1471,11 +1472,11 @@ code {
 
   h3 {
     margin-top: 20px;
-    font-size: 22px;
+    font-size: 23.5px;
   }
 
   figcaption {
-    font-size: 16.5px;
+    font-size: 17.8px;
   }
 
   .table-figure {
@@ -1521,18 +1522,18 @@ code {
 
   pre {
     padding: 15px;
-    font-size: 17.5px;
+    font-size: 18.8px;
   }
 
 }
 
 @media (max-width: 430px) {
   h1 {
-    font-size: 31px;
+    font-size: 33.5px;
   }
 
   h2 {
-    font-size: 29px;
+    font-size: 31.5px;
   }
 
   .content-band h2::after {
@@ -1541,7 +1542,7 @@ code {
 
   .conference {
     flex-wrap: wrap;
-    font-size: 21px;
+    font-size: 22.5px;
   }
 
   .link-row {
@@ -1554,7 +1555,7 @@ code {
     min-width: 0;
     padding-right: 9px;
     padding-left: 9px;
-    font-size: 16px;
+    font-size: 17.2px;
   }
 
 }
