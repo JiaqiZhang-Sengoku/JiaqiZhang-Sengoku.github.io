@@ -907,10 +907,9 @@ p {
   content: "";
   position: absolute;
   top: 9px;
-  bottom: 9px;
   left: 0;
   width: 2px;
-  height: auto;
+  height: 82px;
   border-radius: 999px;
   background: #5b7f82;
   opacity: 0.78;
