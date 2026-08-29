@@ -7,7 +7,7 @@
   <article class="internship-card">
     <div class="internship-logos" aria-label="Institution logo">
       <a href="https://www.sustech.edu.cn/en/" aria-label="Southern University of Science and Technology">
-        <img src="Images/Logos/sustech-seal.webp" alt="Southern University of Science and Technology logo" loading="lazy" decoding="async" width="180" height="180">
+        <img class="internship-logo internship-logo--sustech" src="/Images/Logos/sustech-logo.webp?v=20260829-transparent-hd" alt="Southern University of Science and Technology logo" loading="lazy" decoding="async" width="512" height="512">
       </a>
     </div>
     <div class="internship-main">
@@ -29,7 +29,7 @@
   <article class="internship-card">
     <div class="internship-logos" aria-label="Institution logo">
       <a href="https://www.tum.de/en/" aria-label="Technical University of Munich">
-        <img src="Images/Logos/tum-icon.svg" alt="Technical University of Munich logo" width="150" height="150" loading="lazy" decoding="async">
+        <img class="internship-logo internship-logo--tum" src="/Images/Logos/tum-logo.webp?v=20260829-transparent-hd" alt="Technical University of Munich logo" width="768" height="400" loading="lazy" decoding="async">
       </a>
     </div>
     <div class="internship-main">
