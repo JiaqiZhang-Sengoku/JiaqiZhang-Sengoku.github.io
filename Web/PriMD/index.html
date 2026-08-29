@@ -13,13 +13,16 @@ layout: null
   <link rel="icon" type="image/webp" sizes="1024x1024" href="/Web/PriMD/PriMD_Logo.webp?v=20260829-hd">
   <link rel="apple-touch-icon" href="/Web/PriMD/PriMD_Logo.webp?v=20260829-hd">
   <link rel="shortcut icon" type="image/webp" href="/Web/PriMD/PriMD_Logo.webp?v=20260829-hd">
-  <link rel="stylesheet" href="/Web/PriMD/styles.css?v=20260828-hero-depth">
+  <link rel="stylesheet" href="/Web/PriMD/styles.css?v=20260829-blocks">
 </head>
 <body>
   <main>
     <section class="hero-band" aria-labelledby="paper-title">
       <div class="hero-spectrum" aria-hidden="true">
         <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="hero-backdrop" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
       </div>
       <div class="hero-primitives" aria-hidden="true">
         <span></span><span></span><span></span><span></span>
@@ -123,9 +126,12 @@ layout: null
           </p>
         </div>
       </div>
+      <div class="hero-footer-spectrum" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
     </section>
 
-    <section id="abstract" class="abstract-band">
+    <section id="abstract" class="content-band content-band--abstract">
       <div class="section text-section">
         <h2>Abstract</h2>
         <p>
@@ -146,9 +152,10 @@ layout: null
       </div>
     </section>
 
-    <section id="method" class="section text-section">
-      <h2>Method Overview</h2>
-      <p>
+    <section id="method" class="content-band content-band--method">
+      <div class="section text-section">
+        <h2>Method Overview</h2>
+        <p>
         PriMD does not treat missing-modality recovery as an isolated generation problem. Instead, it integrates recovery
         into structured representation learning and teacher-student knowledge transfer. In the full-modality teacher network,
         Shared-Specific Semantic Decoupling (SSSD) learns and disentangles cross-modal shared semantics and modality-specific
@@ -157,105 +164,115 @@ layout: null
         conditions, Dynamic Retrieval Augmented Distillation (DRAD) retrieves relevant prototypes according to the shared
         semantics of visible modalities, performs constrained compensation, and aligns the student with the full-modality
         teacher.
-      </p>
+        </p>
 
-      <figure class="paper-figure framework-figure">
-        <img src="/Web/PriMD/Figures/Framework.webp" alt="Overall framework of PriMD." width="2400" height="1173" loading="lazy" decoding="async">
-        <figcaption>
-          Figure 2. <strong>Overall framework of PriMD.</strong> The full-modality teacher disentangles shared semantics from
-          modality-specific information via SSSD. DPMC quantizes the modality-specific representations into discrete semantic
-          prototypes and constructs primitive memory banks. In missing-modality scenarios, DRAD retrieves relevant prototypes
-          based on the semantics of available modalities, enabling constrained compensation and teacher-student alignment.
-        </figcaption>
-      </figure>
+        <figure class="paper-figure framework-figure">
+          <img src="/Web/PriMD/Figures/Framework.webp" alt="Overall framework of PriMD." width="2400" height="1173" loading="lazy" decoding="async">
+          <figcaption>
+            Figure 2. <strong>Overall framework of PriMD.</strong> The full-modality teacher disentangles shared semantics from
+            modality-specific information via SSSD. DPMC quantizes the modality-specific representations into discrete semantic
+            prototypes and constructs primitive memory banks. In missing-modality scenarios, DRAD retrieves relevant prototypes
+            based on the semantics of available modalities, enabling constrained compensation and teacher-student alignment.
+          </figcaption>
+        </figure>
 
-      <ul class="contributions">
-        <li>We propose PriMD, a framework that starts from the internal information structure of modalities and formulates incomplete MER as a unified process of shared semantic estimation and constrained compensation of modality-specific information.</li>
-        <li>PriMD includes SSSD for separating shared and specific features, as well as DPMC and DRAD for discretizing the feature space and addressing missing-modality compensation.</li>
-        <li>Extensive experiments show that PriMD mitigates the instability caused by holistic representation and outperforms existing methods under various modality-missing scenarios.</li>
-      </ul>
-    </section>
-
-    <section id="comparison" class="section">
-      <h2>Comparison with SOTA Methods</h2>
-      <h3>Inter-modal Missingness</h3>
-
-      <figure class="paper-figure table-figure table-figure--main">
-        <div class="table-scroll" tabindex="0" aria-label="Scrollable performance comparison table">
-          <img src="/Web/PriMD/Figures/Table1.webp" alt="Performance comparison with SOTA methods across six missing-modality combinations." width="1920" height="993" loading="lazy" decoding="async">
-        </div>
-        <figcaption>
-          Table 1. Performance comparison with SOTA methods on two datasets under various missing-modality scenarios. "Avg."
-          indicates the mean performance across all settings. A, T, and V denote the acoustic, textual, and visual modalities.
-        </figcaption>
-      </figure>
-
-      <h3>Intra-modal Missingness</h3>
-
-      <figure class="paper-figure wide-figure">
-        <img src="/Web/PriMD/Figures/MissingRate.webp" alt="Performance curves under varying missing rates on CMU-MOSI and CMU-MOSEI." width="2200" height="549" loading="lazy" decoding="async">
-        <figcaption>
-          Figure 3. Performance curves of different methods under varying missing rates on the CMU-MOSI and CMU-MOSEI
-          datasets. Subfigures (a)-(b) and (c)-(d) show F1 and MAE results on MOSI and MOSEI, respectively.
-        </figcaption>
-      </figure>
-    </section>
-
-    <section id="ablation" class="section">
-      <h2>Ablation Study</h2>
-      <div class="analysis-notes">
-        <p><strong>w/o SSSD.</strong> Replacing SSSD with a single-modal representation reduces average WA/UA to 74.36%/74.05%. Directly mixing shared and modality-specific information makes subsequent memory construction and distillation vulnerable to redundant or unstable modality-specific cues.</p>
-        <p><strong>w/o DPMC.</strong> Removing discrete prototype memory construction reduces average WA/UA to 75.95%/75.76%. DPMC provides a constrained compensation space for modality-specific information that would otherwise remain uncertain in the continuous feature space.</p>
-        <p><strong>w/o DRAD.</strong> Removing dynamic retrieval-augmented distillation causes the largest degradation, with average WA/UA of 72.31%/72.10%. Static prior information alone cannot adapt to different missing-modality combinations.</p>
+        <ul class="contributions">
+          <li>We propose PriMD, a framework that starts from the internal information structure of modalities and formulates incomplete MER as a unified process of shared semantic estimation and constrained compensation of modality-specific information.</li>
+          <li>PriMD includes SSSD for separating shared and specific features, as well as DPMC and DRAD for discretizing the feature space and addressing missing-modality compensation.</li>
+          <li>Extensive experiments show that PriMD mitigates the instability caused by holistic representation and outperforms existing methods under various modality-missing scenarios.</li>
+        </ul>
       </div>
-
-      <figure class="paper-figure table-figure table-figure--ablation">
-        <div class="table-scroll table-scroll--compact" tabindex="0" aria-label="Scrollable PriMD ablation table">
-          <img src="/Web/PriMD/Figures/Table2.webp" alt="Ablation results for SSSD, DPMC, and DRAD." width="1920" height="305" loading="lazy" decoding="async">
-        </div>
-        <figcaption>Table 2. Results of the ablation experiments under the Four-Class IEMOCAP setting.</figcaption>
-      </figure>
     </section>
 
-    <section id="efficiency" class="section">
-      <h2>Computational Efficiency</h2>
-      <p class="section-copy">
-        Compared with HARDY-MER, PriMD reduces the parameter count, training time, and peak CUDA memory by 79.7%, 51.4%,
-        and 82.2%, respectively, while increasing inference latency by 8.1%. This trade-off substantially reduces model size,
-        training time, and memory usage with only a modest latency increase.
-      </p>
+    <section id="comparison" class="content-band content-band--comparison">
+      <div class="section">
+        <h2>Comparison with SOTA Methods</h2>
+        <h3>Inter-modal Missingness</h3>
 
-      <figure class="paper-figure table-figure table-figure--efficiency">
-        <div class="table-scroll table-scroll--efficiency" tabindex="0" aria-label="Scrollable computational efficiency table">
-          <img src="/Web/PriMD/Figures/Table4.webp" alt="Computational efficiency comparison between HARDY-MER and PriMD." width="1940" height="275" loading="lazy" decoding="async">
-        </div>
-        <figcaption>Table 4. Computational efficiency comparison.</figcaption>
-      </figure>
-    </section>
+        <figure class="paper-figure table-figure table-figure--main">
+          <div class="table-scroll" tabindex="0" aria-label="Scrollable performance comparison table">
+            <img src="/Web/PriMD/Figures/Table1.webp" alt="Performance comparison with SOTA methods across six missing-modality combinations." width="1920" height="993" loading="lazy" decoding="async">
+          </div>
+          <figcaption>
+            Table 1. Performance comparison with SOTA methods on two datasets under various missing-modality scenarios. "Avg."
+            indicates the mean performance across all settings. A, T, and V denote the acoustic, textual, and visual modalities.
+          </figcaption>
+        </figure>
 
-    <section id="visualization" class="section">
-      <h2>Visualization Analysis</h2>
-      <h3>Primitive Retrieval Patterns</h3>
+        <h3>Intra-modal Missingness</h3>
 
-      <figure class="paper-figure retrieval-figure">
-        <img src="/Web/PriMD/Figures/PrimitiveRetrieval.webp" alt="Class-level primitive retrieval patterns for audio, text, and visual memory banks." width="1600" height="1690" loading="lazy" decoding="async">
-        <figcaption>Figure 4. Visualization of class-level primitive retrieval patterns on audio, text, and visual memory banks.</figcaption>
-      </figure>
-
-      <h3>Fused Representations</h3>
-
-      <figure class="paper-figure wide-figure">
-        <img src="/Web/PriMD/Figures/Representation.webp" alt="t-SNE visualization of PriMD and its ablated variants." width="2000" height="546" loading="lazy" decoding="async">
-        <figcaption>Figure 5. t-SNE visualization of fused representations on Four-Class IEMOCAP using only the text modality.</figcaption>
-      </figure>
-    </section>
-
-    <section id="bibtex" class="section text-section bibtex-section">
-      <div class="bibtex-heading">
-        <h2>BibTeX</h2>
-        <button class="copy-button" type="button" data-copy-bibtex>Copy</button>
+        <figure class="paper-figure wide-figure">
+          <img src="/Web/PriMD/Figures/MissingRate.webp" alt="Performance curves under varying missing rates on CMU-MOSI and CMU-MOSEI." width="2200" height="549" loading="lazy" decoding="async">
+          <figcaption>
+            Figure 3. Performance curves of different methods under varying missing rates on the CMU-MOSI and CMU-MOSEI
+            datasets. Subfigures (a)-(b) and (c)-(d) show F1 and MAE results on MOSI and MOSEI, respectively.
+          </figcaption>
+        </figure>
       </div>
-      <pre><code id="bibtex-code">@inproceedings{zhang2026primd,
+    </section>
+
+    <section id="ablation" class="content-band content-band--ablation">
+      <div class="section">
+        <h2>Ablation Study</h2>
+        <div class="analysis-notes">
+          <p><strong>w/o SSSD.</strong> Replacing SSSD with a single-modal representation reduces average WA/UA to 74.36%/74.05%. Directly mixing shared and modality-specific information makes subsequent memory construction and distillation vulnerable to redundant or unstable modality-specific cues.</p>
+          <p><strong>w/o DPMC.</strong> Removing discrete prototype memory construction reduces average WA/UA to 75.95%/75.76%. DPMC provides a constrained compensation space for modality-specific information that would otherwise remain uncertain in the continuous feature space.</p>
+          <p><strong>w/o DRAD.</strong> Removing dynamic retrieval-augmented distillation causes the largest degradation, with average WA/UA of 72.31%/72.10%. Static prior information alone cannot adapt to different missing-modality combinations.</p>
+        </div>
+
+        <figure class="paper-figure table-figure table-figure--ablation">
+          <div class="table-scroll table-scroll--compact" tabindex="0" aria-label="Scrollable PriMD ablation table">
+            <img src="/Web/PriMD/Figures/Table2.webp" alt="Ablation results for SSSD, DPMC, and DRAD." width="1920" height="305" loading="lazy" decoding="async">
+          </div>
+          <figcaption>Table 2. Results of the ablation experiments under the Four-Class IEMOCAP setting.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="efficiency" class="content-band content-band--efficiency">
+      <div class="section">
+        <h2>Computational Efficiency</h2>
+        <p class="section-copy">
+          Compared with HARDY-MER, PriMD reduces the parameter count, training time, and peak CUDA memory by 79.7%, 51.4%,
+          and 82.2%, respectively, while increasing inference latency by 8.1%. This trade-off substantially reduces model size,
+          training time, and memory usage with only a modest latency increase.
+        </p>
+
+        <figure class="paper-figure table-figure table-figure--efficiency">
+          <div class="table-scroll table-scroll--efficiency" tabindex="0" aria-label="Scrollable computational efficiency table">
+            <img src="/Web/PriMD/Figures/Table4.webp" alt="Computational efficiency comparison between HARDY-MER and PriMD." width="1940" height="275" loading="lazy" decoding="async">
+          </div>
+          <figcaption>Table 4. Computational efficiency comparison.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="visualization" class="content-band content-band--visualization">
+      <div class="section">
+        <h2>Visualization Analysis</h2>
+        <h3>Primitive Retrieval Patterns</h3>
+
+        <figure class="paper-figure retrieval-figure">
+          <img src="/Web/PriMD/Figures/PrimitiveRetrieval.webp" alt="Class-level primitive retrieval patterns for audio, text, and visual memory banks." width="1600" height="1690" loading="lazy" decoding="async">
+          <figcaption>Figure 4. Visualization of class-level primitive retrieval patterns on audio, text, and visual memory banks.</figcaption>
+        </figure>
+
+        <h3>Fused Representations</h3>
+
+        <figure class="paper-figure wide-figure">
+          <img src="/Web/PriMD/Figures/Representation.webp" alt="t-SNE visualization of PriMD and its ablated variants." width="2000" height="546" loading="lazy" decoding="async">
+          <figcaption>Figure 5. t-SNE visualization of fused representations on Four-Class IEMOCAP using only the text modality.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="bibtex" class="content-band content-band--bibtex">
+      <div class="section text-section bibtex-section">
+        <div class="bibtex-heading">
+          <h2>BibTeX</h2>
+          <button class="copy-button" type="button" data-copy-bibtex>Copy</button>
+        </div>
+        <pre><code id="bibtex-code">@inproceedings{zhang2026primd,
   title     = {Modality Disentangled Learning for Incomplete Multimodal Emotion Recognition: A Primitive Memory Distillation Perspective},
   author    = {Jiaqi Zhang and
                Zheng Pang and
@@ -272,7 +289,8 @@ layout: null
   booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2026},
   year      = {2026}
 }</code></pre>
-      <p class="copy-status" data-copy-status aria-live="polite"></p>
+        <p class="copy-status" data-copy-status aria-live="polite"></p>
+      </div>
     </section>
   </main>
 
