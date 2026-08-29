@@ -4,6 +4,7 @@
   var button = document.querySelector("[data-copy-bibtex]");
   var code = document.getElementById("bibtex-code");
   var status = document.querySelector("[data-copy-status]");
+  var label = button ? button.querySelector("[data-copy-label]") : null;
 
   if (!button || !code) {
     return;
@@ -22,6 +23,13 @@
     return copied ? Promise.resolve() : Promise.reject(new Error("Copy failed"));
   }
 
+  function setButtonState(copied) {
+    if (label) {
+      label.textContent = copied ? "Copied" : "Copy";
+    }
+    button.classList.toggle("is-copied", copied);
+  }
+
   button.addEventListener("click", function () {
     var text = code.textContent;
     var request = navigator.clipboard && window.isSecureContext
@@ -29,12 +37,12 @@
       : copyFallback(text);
 
     request.then(function () {
-      button.textContent = "Copied";
+      setButtonState(true);
       if (status) {
         status.textContent = "BibTeX copied to clipboard.";
       }
       window.setTimeout(function () {
-        button.textContent = "Copy";
+        setButtonState(false);
         if (status) {
           status.textContent = "";
         }

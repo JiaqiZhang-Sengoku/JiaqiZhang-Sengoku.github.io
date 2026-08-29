@@ -622,7 +622,7 @@ h1 {
   z-index: auto;
   max-width: 1240px;
   margin: 0 auto;
-  padding: 54px 28px 50px;
+  padding: 38px 28px 28px;
 }
 
 .text-section {
@@ -640,38 +640,29 @@ h1 {
   overflow: hidden;
   scroll-margin-top: 18px;
   border: 0;
-  background: var(--section-bg);
+  background: linear-gradient(180deg, var(--section-bridge) 0, var(--section-bg) 50px, var(--section-bg) 100%);
 }
 
 .content-band + .content-band {
-  margin-top: -2px;
+  margin-top: -1px;
 }
 
 .content-band::before {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  height: 42px;
-  background: var(--section-bridge);
-  clip-path: polygon(0 0, 100% 0, 100% 22%, 87% 48%, 73% 25%, 58% 62%, 43% 31%, 28% 76%, 14% 40%, 0 67%);
-  opacity: 0.88;
+  display: none;
 }
 
 .content-band::after {
   content: "";
   position: absolute;
   z-index: 0;
-  top: 42px;
-  right: -8%;
-  width: 43%;
-  height: 180px;
-  background: var(--section-detail);
+  top: 18px;
+  right: -5%;
+  width: 38%;
+  height: 142px;
+  background: linear-gradient(135deg, var(--section-detail) 0%, rgba(255, 255, 255, 0) 78%);
   clip-path: polygon(32% 0, 100% 0, 100% 72%, 79% 100%, 55% 58%, 0 79%);
-  opacity: 0.62;
+  opacity: 0.42;
+  filter: blur(1px);
 }
 
 .content-band--abstract {
@@ -679,11 +670,7 @@ h1 {
   --section-bg: #eef8f4;
   --section-detail: rgba(51, 121, 103, 0.12);
   --section-rule: rgba(51, 121, 103, 0.25);
-  --section-bridge: #f2eff8;
-}
-
-.content-band--abstract::before {
-  opacity: 0.96;
+  --section-bridge: #f4f9f8;
 }
 
 .content-band--method {
@@ -735,8 +722,8 @@ h1 {
 }
 
 .content-band--abstract .section {
-  padding-top: 52px;
-  padding-bottom: 48px;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 h2 {
@@ -817,7 +804,7 @@ p {
 }
 
 .section-copy + .paper-figure {
-  margin-top: 18px;
+  margin-top: 14px;
 }
 
 .contributions {
@@ -842,7 +829,7 @@ p {
 }
 
 .paper-figure {
-  margin: 18px auto 28px;
+  margin: 16px auto 20px;
   text-align: center;
 }
 
@@ -852,6 +839,10 @@ p {
   border-radius: 0;
   background: transparent;
   box-shadow: none;
+}
+
+.content-band .paper-figure:last-child {
+  margin-bottom: 0;
 }
 
 .paper-figure img {
@@ -1022,8 +1013,8 @@ figcaption {
 }
 
 .bibtex-section {
-  padding-top: 44px;
-  padding-bottom: 48px;
+  padding-top: 36px;
+  padding-bottom: 38px;
 }
 
 .bibtex-heading {
@@ -1042,20 +1033,63 @@ figcaption {
 }
 
 .copy-button {
-  min-width: 72px;
-  padding: 7px 13px;
-  border: 1px solid var(--line-strong);
-  border-radius: 4px;
-  background: #ffffff;
-  color: var(--blue);
-  font: 700 11.9px/1.2 "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-width: 88px;
+  min-height: 38px;
+  padding: 7px 14px;
+  border: 1px solid rgba(81, 125, 139, 0.3);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 5px 15px rgba(55, 84, 94, 0.07);
+  color: #466f82;
+  font: 700 12.1px/1.2 "Noto Serif SC", "Source Han Serif SC", "Songti SC", serif;
   cursor: pointer;
+  transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
 }
 
 .copy-button:hover,
 .copy-button:focus-visible {
-  border-color: #9db9c3;
-  color: var(--green);
+  border-color: rgba(57, 112, 99, 0.48);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 7px 18px rgba(55, 84, 94, 0.11);
+  color: #397063;
+  transform: translateY(-1px);
+}
+
+.copy-button:focus-visible {
+  outline: 2px solid rgba(74, 120, 146, 0.22);
+  outline-offset: 3px;
+}
+
+.copy-button:active {
+  transform: translateY(0);
+}
+
+.copy-button.is-copied {
+  border-color: rgba(57, 112, 99, 0.38);
+  background: rgba(238, 248, 244, 0.9);
+  color: #397063;
+}
+
+.copy-button__icon {
+  width: 15px;
+  height: 15px;
+  flex: 0 0 15px;
+}
+
+.copy-button__icon--check {
+  display: none;
+}
+
+.copy-button.is-copied .copy-button__icon--copy {
+  display: none;
+}
+
+.copy-button.is-copied .copy-button__icon--check {
+  display: block;
 }
 
 pre {
@@ -1411,25 +1445,20 @@ code {
   }
 
   .section {
-    padding: 44px 14px 40px;
-  }
-
-  .content-band::before {
-    width: 100%;
-    height: 24px;
+    padding: 32px 14px 26px;
   }
 
   .content-band::after {
-    top: 24px;
+    top: 18px;
     right: -28%;
     width: 78%;
-    height: 132px;
-    opacity: 0.5;
+    height: 112px;
+    opacity: 0.34;
   }
 
   .content-band--abstract .section {
-    padding-top: 42px;
-    padding-bottom: 38px;
+    padding-top: 34px;
+    padding-bottom: 27px;
   }
 
   h2 {
