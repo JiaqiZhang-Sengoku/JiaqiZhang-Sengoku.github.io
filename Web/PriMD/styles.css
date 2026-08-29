@@ -866,7 +866,7 @@ p {
   height: auto;
   margin: 0 auto;
   background: transparent;
-  mix-blend-mode: multiply;
+  mix-blend-mode: darken;
 }
 
 .hero-story {
