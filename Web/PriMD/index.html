@@ -8,7 +8,7 @@ layout: null
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PriMD | EMNLP 2026 Findings</title>
-  <meta name="description" content="Primitive Memory Distillation for incomplete multimodal emotion recognition.">
+  <meta name="description" content="PriMD disentangles shared semantics from modality-specific information for robust incomplete multimodal emotion recognition.">
   <meta name="theme-color" content="#fbfdfd">
   <link rel="icon" type="image/webp" sizes="1024x1024" href="/Web/PriMD/PriMD_Logo.webp?v=20260829-hd">
   <link rel="apple-touch-icon" href="/Web/PriMD/PriMD_Logo.webp?v=20260829-hd">
@@ -58,8 +58,8 @@ layout: null
             <span>Zihao Li</span><sup>6</sup>,
             <span>Huy Phan</span><sup>7</sup>,
             <span>Sicheng Zhao</span><sup>8</sup>,
-            <span>Bj&ouml;rn Schuller</span><sup>9</sup>,
-            <a class="corresponding-author" href="mailto:jiachen.luo@qmul.ac.uk">Jiachen Luo</a><sup>10,*</sup>
+            <span>Bj&ouml;rn W. Schuller</span><sup>9,10</sup>,
+            <a class="corresponding-author" href="mailto:jiachen.luo@qmul.ac.uk">Jiachen Luo</a><sup>9,11,*</sup>
           </span>
         </p>
 
@@ -68,15 +68,18 @@ layout: null
             <sup>1</sup>Jiangsu University &middot;
             <sup>2</sup>Griffith University &middot;
             <sup>3</sup>National University of Singapore &middot;
-            <sup>4</sup>ByteDance &middot;
-            <sup>5</sup>Fujian University of Technology
+            <sup>4</sup>University of New South Wales
           </p>
           <p>
+            <sup>5</sup>Fujian University of Technology &middot;
             <sup>6</sup>Xi'an Jiaotong-Liverpool University &middot;
-            <sup>7</sup>Meta &middot;
+            <sup>7</sup>German Research Center for Artificial Intelligence
+          </p>
+          <p>
             <sup>8</sup>Tsinghua University &middot;
-            <sup>9</sup>Technische Universit&auml;t M&uuml;nchen &middot;
-            <sup>10</sup>Queen Mary University of London
+            <sup>9</sup>Technical University of Munich &middot;
+            <sup>10</sup>Imperial College London &middot;
+            <sup>11</sup>Queen Mary University of London
           </p>
         </div>
         <p class="author-note"><sup>*</sup>Corresponding author.</p>
@@ -108,25 +111,22 @@ layout: null
             Figure 1. (a) Real-world inputs may suffer from partial modality missingness, leading to uncertain predictions.
             (b) Existing holistic generation, alignment, or distillation methods treat missing modalities as a whole. This
             tends to mix modality-shared semantics with uncertain modality-specific details, leaving the learned representations
-            ambiguous. (c) PriMD first disentangles shared semantics from modality-specific information and performs constrained
+            ambiguous. (c) Our PriMD first disentangles shared semantics from modality-specific information and performs constrained
             compensation for the missing modality-specific information. This enables more robust predictions under
-            modality-missing conditions.
+            missing-modality conditions.
           </figcaption>
         </figure>
         <div class="hero-context">
           <p>
-            Our research focuses on the problem of missing modalities in multimodal emotion recognition. By examining existing
-            approaches, we found that many methods generate, align, or distill a missing modality as a whole, overlooking the
-            fact that different information components within a modality are not equally recoverable. Cross-modal shared
-            emotional semantics can usually be reliably estimated from the available modalities, whereas modality-specific
-            details are inherently more uncertain. Processing these two types of information together can produce ambiguous
-            or even conflicting representations, leading to unstable predictions under different missing-modality conditions.
-            Based on this insight, we propose <strong>PriMD</strong>, which reformulates the missing-modality problem as
-            <strong>shared semantic estimation</strong> and <strong>constrained compensation of modality-specific
-            information</strong>. PriMD first disentangles these two types of information, then organizes modality-specific
-            information into discrete primitive memories and uses the shared semantics of the available modalities to
-            dynamically retrieve relevant primitives. By avoiding unconstrained inference of the entire missing modality,
-            PriMD enables more stable and robust emotion recognition.
+            <strong>PriMD</strong> revisits incomplete multimodal emotion recognition from an intra-modal perspective.
+            Information within a missing modality is not equally recoverable: cross-modal shared semantics can usually be
+            estimated from available modalities, whereas modality-specific details are more uncertain. PriMD therefore
+            formulates incomplete MER as <strong>shared-semantic estimation</strong> and <strong>constrained compensation of
+            modality-specific information</strong>. Shared-Specific Semantic Decoupling separates the two information types,
+            Discrete Primitive Memory Construction organizes the modality-specific space into primitive memories, and Dynamic
+            Retrieval-Augmented Distillation uses the shared semantics of available modalities to retrieve relevant primitives.
+            This avoids unconstrained holistic inference and yields more stable representations across missing-modality
+            conditions.
           </p>
         </div>
       </div>
@@ -139,19 +139,19 @@ layout: null
       <div class="section text-section">
         <h2>Abstract</h2>
         <p>
-          Multimodal Emotion Recognition (MER) often suffers from missing modalities in real-world scenarios. Existing
-          methods usually generate, align, or distill missing modalities as a whole, overlooking the heterogeneity of
-          information components within each modality. Such holistic treatment mixes inferable shared semantics with
-          uncertain modality-specific details, causing unstable representations and weakening robustness. To address this
-          issue, we propose the Primitive Memory Distillation (PriMD) framework. Unlike existing methods, PriMD takes an
-          intra-modal perspective and focuses on the differences among information components within each modality. PriMD
-          first disentangles cross-modal shared semantics from modality-specific representations, and then discretizes the
-          latter into learnable semantic prototypes to construct modality-specific memory banks. When modalities are missing,
-          the student uses the shared semantics of visible modalities as queries to dynamically retrieve prototypes. It
-          compensates for missing modality-specific information within a constrained memory space and aligns with the teacher.
-          Extensive experiments on IEMOCAP, CMU-MOSI, and CMU-MOSEI demonstrate that PriMD achieves state-of-the-art
-          robustness across a wide range of missing-modality settings, while mitigating the instability caused by holistic
-          feature inference.
+          Multimodal Emotion Recognition (MER) systems often suffer from missing modalities in real-world scenarios. Existing
+          methods usually generate, align, or distill missing modalities as a whole, overlooking the heterogeneous nature of
+          the information carried by each modality. Such holistic treatment mixes inferable shared semantics with uncertain
+          modality-specific details, yielding unstable representations and degrading robustness. To address this issue, we
+          propose the Primitive Memory Distillation (PriMD) framework. Unlike existing methods, PriMD takes an intra-modal
+          perspective and focuses on how different types of information within a modality differ in recoverability within each
+          modality. PriMD first disentangles cross-modal shared semantics from modality-specific representations, and then
+          discretizes the latter into learnable semantic primitives to construct modality-specific memory banks. When modalities
+          are missing, PriMD is a teacher-student framework that the student model uses the shared semantics of available
+          modalities as queries to dynamically retrieve primitives. It compensates for missing modality-specific information
+          within a constrained memory space and aligns with the teacher model. Extensive experiments on IEMOCAP, CMU-MOSI,
+          and CMU-MOSEI demonstrate that PriMD achieves state-of-the-art performance and consistently stronger robustness
+          across a wide range of missing-modality settings, while mitigating the instability caused by holistic feature inference.
         </p>
       </div>
     </section>
@@ -160,30 +160,30 @@ layout: null
       <div class="section text-section">
         <h2>Method Overview</h2>
         <p>
-        PriMD does not treat missing-modality recovery as an isolated generation problem. Instead, it integrates recovery
-        into structured representation learning and teacher-student knowledge transfer. In the full-modality teacher network,
-        Shared-Specific Semantic Decoupling (SSSD) learns and disentangles cross-modal shared semantics and modality-specific
-        representations. Discrete Primitive Memory Construction (DPMC) discretizes modality-specific representations into
-        learnable semantic prototypes and constructs modality-specific primitive memory banks. Under modality-missing
-        conditions, Dynamic Retrieval Augmented Distillation (DRAD) retrieves relevant prototypes according to the shared
-        semantics of visible modalities, performs constrained compensation, and aligns the student with the full-modality
-        teacher.
+        PriMD consists of a full-modality teacher model and an incomplete-modality student model. The teacher model first
+        disentangles complete multimodal representations into cross-modal shared semantics and modality-specific information,
+        and then constructs a discrete primitive memory based on the modality-specific information. In the student model, when
+        some modalities are missing, the model dynamically retrieves relevant primitives according to the shared semantics of
+        the available modalities to compensate for the missing modality-specific information. Finally, PriMD aligns the student
+        model with the full-modality teacher model via retrieval-augmented distillation.
         </p>
 
         <figure class="paper-figure framework-figure">
           <img src="/Web/PriMD/Figures/Framework.webp" alt="Overall framework of PriMD." width="2400" height="1173" loading="lazy" decoding="async">
           <figcaption>
-            Figure 2. <strong>Overall framework of PriMD.</strong> The full-modality teacher disentangles shared semantics from
-            modality-specific information via SSSD. DPMC quantizes the modality-specific representations into discrete semantic
-            prototypes and constructs primitive memory banks. In missing-modality scenarios, DRAD retrieves relevant prototypes
-            based on the semantics of available modalities, enabling constrained compensation and teacher-student alignment.
+            Figure 2. <strong>Overall framework of PriMD.</strong> The full-modality teacher model first encodes the inputs and
+            disentangles shared semantics from modality-specific information via SSSD. Then, DPMC quantizes the modality-specific representations into discrete
+            semantic primitives and constructs primitive memory banks. In missing-modality scenarios, the student model uses
+            DRAD to dynamically retrieve relevant primitives from the memory banks based on the semantics of available modalities,
+            enabling constrained compensation for the missing information. Finally, the compensated student model representations
+            are aligned with the teacher model through retrieval-augmented distillation.
           </figcaption>
         </figure>
 
         <ul class="contributions">
-          <li>We propose PriMD, a framework that starts from the internal information structure of modalities and formulates incomplete MER as a unified process of shared semantic estimation and constrained compensation of modality-specific information.</li>
-          <li>PriMD includes SSSD for separating shared and specific features, as well as DPMC and DRAD for discretizing the feature space and addressing missing-modality compensation.</li>
-          <li>Extensive experiments show that PriMD mitigates the instability caused by holistic representation and outperforms existing methods under various modality-missing scenarios.</li>
+          <li>We revisit incomplete MER from an intra-modal perspective and formulate it as a unified process of shared-semantic estimation and constrained compensation of modality-specific information.</li>
+          <li>We design SSSD to disentangle shared and modality-specific features, and DPMC/DRAD to discretize the modality-specific space into semantic primitives and retrieve them for compensation under missing modalities.</li>
+          <li>Extensive experiments on three benchmarks show that PriMD outperforms prior methods under diverse missing-modality settings, with especially large gains when two modalities are absent.</li>
         </ul>
       </div>
     </section>
@@ -199,7 +199,9 @@ layout: null
           </div>
           <figcaption>
             Table 1. Performance comparison with SOTA methods on two datasets under various missing-modality scenarios. "Avg."
-            indicates the mean performance across all settings. A, T, and V denote the acoustic, textual, and visual modalities.
+            indicates the mean performance across all settings. The best and suboptimal results are highlighted. A, T, and V
+            denote the acoustic, textual, and visual modalities, respectively. Gray shading indicates the presence of a modality,
+            while gray dashed lines indicate its absence.
           </figcaption>
         </figure>
 
@@ -219,16 +221,16 @@ layout: null
       <div class="section">
         <h2>Ablation Study</h2>
         <div class="analysis-notes">
-          <p><strong>w/o SSSD.</strong> Replacing SSSD with a single-modal representation reduces average WA/UA to 74.36%/74.05%. Directly mixing shared and modality-specific information makes subsequent memory construction and distillation vulnerable to redundant or unstable modality-specific cues.</p>
-          <p><strong>w/o DPMC.</strong> Removing discrete prototype memory construction reduces average WA/UA to 75.95%/75.76%. DPMC provides a constrained compensation space for modality-specific information that would otherwise remain uncertain in the continuous feature space.</p>
-          <p><strong>w/o DRAD.</strong> Removing dynamic retrieval-augmented distillation causes the largest degradation, with average WA/UA of 72.31%/72.10%. Static prior information alone cannot adapt to different missing-modality combinations.</p>
+          <p><strong>w/o SSSD.</strong> Replacing the two projection branches with a single projection yields one entangled representation per modality and reduces average performance to 74.36% WA and 74.05% UA. Mixing shared and modality-specific information makes subsequent memory construction and distillation vulnerable to redundant or unstable modality-specific information.</p>
+          <p><strong>w/o DPMC.</strong> Removing DPMC reduces average WA/UA to 75.95%/75.76%. This confirms that discrete primitive memory provides a constrained compensation space for uncertain missing modality-specific information.</p>
+          <p><strong>w/o DRAD.</strong> Removing DRAD causes the largest degradation, to 72.31% WA and 72.10% UA. Representations from the available modalities alone cannot adapt to different missing-modality combinations.</p>
         </div>
 
         <figure class="paper-figure table-figure table-figure--ablation">
           <div class="table-scroll table-scroll--compact" tabindex="0" aria-label="Scrollable PriMD ablation table">
             <img src="/Web/PriMD/Figures/Table2.webp" alt="Ablation results for SSSD, DPMC, and DRAD." width="1920" height="305" loading="lazy" decoding="async">
           </div>
-          <figcaption>Table 2. Results of the ablation experiments under the Four-Class IEMOCAP setting.</figcaption>
+          <figcaption>Table 2. Results of the ablation experiments under the Four-Class IEMOCAP. The best results are highlighted.</figcaption>
         </figure>
       </div>
     </section>
@@ -237,9 +239,8 @@ layout: null
       <div class="section">
         <h2>Computational Efficiency</h2>
         <p class="section-copy">
-          Compared with HARDY-MER, PriMD reduces the parameter count, training time, and peak CUDA memory by 79.7%, 51.4%,
-          and 82.2%, respectively, while increasing inference latency by 8.1%. This trade-off substantially reduces model size,
-          training time, and memory usage with only a modest latency increase.
+          PriMD reduces the parameter count, training time, and peak CUDA memory by 79.7%, 51.4%, and 82.2%, respectively,
+          compared with HARDY-MER, while increasing inference latency by 8.1%.
         </p>
 
         <figure class="paper-figure table-figure table-figure--efficiency">
@@ -254,18 +255,28 @@ layout: null
     <section id="visualization" class="content-band content-band--visualization">
       <div class="section">
         <h2>Visualization Analysis</h2>
-        <h3>Primitive Retrieval Patterns</h3>
-
-        <figure class="paper-figure retrieval-figure">
-          <img src="/Web/PriMD/Figures/PrimitiveRetrieval.webp" alt="Class-level primitive retrieval patterns for audio, text, and visual memory banks." width="1600" height="1690" loading="lazy" decoding="async">
-          <figcaption>Figure 4. Visualization of class-level primitive retrieval patterns on audio, text, and visual memory banks.</figcaption>
-        </figure>
-
         <h3>Fused Representations</h3>
+
+        <p class="section-copy">
+          Using only the text modality, the complete PriMD model produces a clearer class structure than its ablated variants:
+          samples from the same class are more compact, while overlap between different classes is reduced.
+        </p>
 
         <figure class="paper-figure wide-figure">
           <img src="/Web/PriMD/Figures/Representation.webp" alt="t-SNE visualization of PriMD and its ablated variants." width="2000" height="546" loading="lazy" decoding="async">
-          <figcaption>Figure 5. t-SNE visualization of fused representations on Four-Class IEMOCAP using only the text modality.</figcaption>
+          <figcaption>Figure 7. t-SNE visualization of fused representations on Four-Class IEMOCAP using only the text modality.</figcaption>
+        </figure>
+
+        <h3>Primitive Retrieval Patterns</h3>
+
+        <p class="section-copy">
+          Different emotion categories activate different subsets of primitives within each memory bank, while the audio, text,
+          and visual banks learn distinct modality-specific primitive distributions.
+        </p>
+
+        <figure class="paper-figure retrieval-figure">
+          <img src="/Web/PriMD/Figures/PrimitiveRetrieval.webp" alt="Class-level primitive retrieval patterns for audio, text, and visual memory banks." width="1600" height="1690" loading="lazy" decoding="async">
+          <figcaption>Figure 8. Visualization of class-level primitive retrieval patterns on audio, text, and visual memory banks.</figcaption>
         </figure>
       </div>
     </section>
@@ -288,7 +299,7 @@ layout: null
                Zihao Li and
                Huy Phan and
                Sicheng Zhao and
-               Bj{\"o}rn Schuller and
+               Bj{\"o}rn W. Schuller and
                Jiachen Luo},
   booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2026},
   year      = {2026}
