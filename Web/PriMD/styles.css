@@ -546,6 +546,17 @@ h1 {
   text-decoration-color: currentColor;
 }
 
+.authors .corresponding-author {
+  color: inherit;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.authors .corresponding-author:hover {
+  color: var(--blue);
+  text-decoration: none;
+}
+
 .institutions {
   max-width: 1340px;
   margin: 0 auto;
