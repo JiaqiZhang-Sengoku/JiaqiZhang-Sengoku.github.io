@@ -28,7 +28,7 @@ body {
   margin: 0;
   color: var(--ink);
   background: #f4f7f7;
-  font-family: Cambria, Constantia, Georgia, serif;
+  font-family: "Bookman Old Style", Bookman, serif;
   font-size: 20px;
   line-height: 1.66;
 }
@@ -1052,7 +1052,7 @@ figcaption {
   border-radius: 4px;
   background: #ffffff;
   color: var(--blue);
-  font: 700 16.5px/1.2 Cambria, Constantia, Georgia, serif;
+  font: 700 16.5px/1.2 "Bookman Old Style", Bookman, serif;
   cursor: pointer;
 }
 
@@ -1077,7 +1077,7 @@ pre {
 }
 
 code {
-  font-family: Cambria, Constantia, Georgia, serif;
+  font-family: "Bookman Old Style", Bookman, serif;
 }
 
 .copy-status {

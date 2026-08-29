@@ -20,7 +20,7 @@ body {
   margin: 0;
   color: var(--text);
   background: #ffffff;
-  font-family: Constantia, Georgia, serif;
+  font-family: "Bookman Old Style", Bookman, serif;
   font-size: 17px;
   line-height: 1.62;
 }
@@ -755,7 +755,7 @@ figcaption {
   border-radius: 6px;
   background: #ffffff;
   color: #2e5b3e;
-  font: 700 15px/1 Constantia, Georgia, serif;
+  font: 700 15px/1 "Bookman Old Style", Bookman, serif;
   letter-spacing: 0;
   cursor: pointer;
   transition: color 0.16s ease, background 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease, transform 0.16s ease;
@@ -793,7 +793,7 @@ pre {
 }
 
 code {
-  font-family: Constantia, Georgia, serif;
+  font-family: "Bookman Old Style", Bookman, serif;
 }
 
 @media (max-width: 760px) {

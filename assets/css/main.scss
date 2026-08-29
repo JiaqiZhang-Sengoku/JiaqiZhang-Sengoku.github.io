@@ -91,7 +91,21 @@ body, p, li, a, span, div, button, input, textarea, select, option, label, th, t
 h1, h2, h3, h4, h5, h6, strong, em, small, blockquote,
 .paper-box, .paper-box *, .award-card, .award-card *,
 .masthead, .masthead *, .page__content, .page__content * {
-    font-family: Cambria, "Times New Roman", serif !important;
+    font-family: "Bookman Old Style", Bookman, serif !important;
+}
+
+.fa,
+.fas,
+.far {
+    font-family: "Font Awesome 5 Free" !important;
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands" !important;
+}
+
+.ai {
+    font-family: Academicons !important;
 }
 
 html {
@@ -2744,7 +2758,7 @@ body > #main > .sidebar.sticky {
     display: grid;
     place-items: center;
     color: #1f2d33;
-    font-family: Arial, sans-serif;
+    font-family: "Bookman Old Style", Bookman, serif;
     font-size: 21px !important;
     font-weight: 700;
     line-height: 1 !important;
