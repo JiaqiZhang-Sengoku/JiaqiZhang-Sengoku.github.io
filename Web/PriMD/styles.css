@@ -625,7 +625,7 @@ h1 {
 
 .section {
   position: relative;
-  z-index: 1;
+  z-index: auto;
   max-width: 1240px;
   margin: 0 auto;
   padding: 66px 28px 62px;
@@ -871,7 +871,7 @@ p {
 
 .hero-story {
   position: relative;
-  z-index: 1;
+  z-index: auto;
   display: grid;
   grid-template-columns: minmax(0, 760px) minmax(440px, 1fr);
   align-items: center;
@@ -881,17 +881,7 @@ p {
 }
 
 .hero-story::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: -42px;
-  bottom: -48px;
-  left: 50%;
-  width: 100vw;
-  border: 0;
-  background: rgba(255, 255, 255, 0.12);
-  clip-path: polygon(0 5%, 18% 0, 41% 4%, 63% 0, 82% 5%, 100% 1%, 100% 95%, 81% 100%, 60% 96%, 38% 100%, 17% 95%, 0 99%);
-  transform: translateX(-50%);
+  display: none;
 }
 
 .hero-figure {
