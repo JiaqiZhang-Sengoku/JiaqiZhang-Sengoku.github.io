@@ -867,7 +867,7 @@ p {
   position: relative;
   z-index: auto;
   display: grid;
-  grid-template-columns: minmax(0, 650px) minmax(400px, 1fr);
+  grid-template-columns: minmax(0, 780px) minmax(400px, 1fr);
   align-items: center;
   gap: 44px;
   width: min(1320px, calc(100vw - 96px));
@@ -879,7 +879,7 @@ p {
 }
 
 .hero-figure {
-  width: min(100%, 650px);
+  width: min(100%, 780px);
   margin: 0;
   justify-self: center;
 }
@@ -918,19 +918,19 @@ p {
 }
 
 .framework-figure {
-  width: min(980px, calc(100vw - 96px));
+  width: min(1176px, calc(100vw - 96px));
   margin-left: 50%;
   transform: translateX(-50%);
 }
 
 .wide-figure {
-  width: min(940px, calc(100vw - 96px));
+  width: min(1128px, calc(100vw - 96px));
   margin-left: 50%;
   transform: translateX(-50%);
 }
 
 .retrieval-figure {
-  width: min(600px, calc(100vw - 96px));
+  width: min(720px, calc(100vw - 96px));
 }
 
 figcaption {
@@ -945,21 +945,21 @@ figcaption {
 }
 
 .table-figure {
-  width: min(950px, calc(100vw - 96px));
+  width: min(1140px, calc(100vw - 96px));
   margin-left: 50%;
   transform: translateX(-50%);
 }
 
 .table-figure--main {
-  width: min(1000px, calc(100vw - 96px));
+  width: min(1200px, calc(100vw - 96px));
 }
 
 .table-figure--ablation {
-  width: min(860px, calc(100vw - 96px));
+  width: min(1032px, calc(100vw - 96px));
 }
 
 .table-figure--efficiency {
-  width: min(780px, calc(100vw - 96px));
+  width: min(936px, calc(100vw - 96px));
 }
 
 .analysis-notes {
@@ -1088,12 +1088,12 @@ code {
   }
 
   .hero-story {
-    grid-template-columns: minmax(0, 700px) minmax(430px, 1fr);
+    grid-template-columns: minmax(0, 840px) minmax(430px, 1fr);
     width: min(1400px, calc(100vw - 120px));
   }
 
   .hero-figure {
-    width: min(100%, 700px);
+    width: min(100%, 840px);
   }
 }
 
@@ -1105,7 +1105,7 @@ code {
   }
 
   .hero-figure {
-    width: min(100%, 680px);
+    width: min(100%, 816px);
   }
 
   .hero-context {
@@ -1398,7 +1398,7 @@ code {
   }
 
   .hero-figure {
-    width: min(100%, 650px);
+    width: min(100%, 780px);
     margin-right: auto;
     margin-left: auto;
   }
@@ -1470,15 +1470,15 @@ code {
   }
 
   .table-scroll img {
-    width: 760px;
+    width: 912px;
   }
 
   .table-scroll--compact img {
-    width: 660px;
+    width: 792px;
   }
 
   .table-scroll--efficiency img {
-    width: 600px;
+    width: 720px;
   }
 
   .analysis-notes {
