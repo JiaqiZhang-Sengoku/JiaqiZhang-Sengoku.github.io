@@ -1669,7 +1669,31 @@ body > #main > .sidebar.sticky {
     box-shadow: 0 5px 13px rgba(39, 57, 82, 0.095);
     box-sizing: border-box;
     transform-origin: center center;
-    transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+    transition:
+        transform 0.30s cubic-bezier(0.20, 0.78, 0.24, 1),
+        border-color 0.22s ease,
+        box-shadow 0.30s ease;
+}
+
+.paper-box-image > div::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    z-index: 35;
+    border-radius: 1px;
+    background:
+        linear-gradient(
+            108deg,
+            transparent 0%,
+            transparent 34%,
+            rgba(255, 255, 255, 0.16) 42%,
+            rgba(255, 255, 255, 0.72) 50%,
+            rgba(186, 220, 226, 0.24) 57%,
+            transparent 66%,
+            transparent 100%
+        ) -170% 0 / 58% 100% no-repeat;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .paper-box-image img {
@@ -1702,9 +1726,30 @@ body > #main > .sidebar.sticky {
 
 .paper-box-image:hover > div {
     z-index: 70;
-    border-color: rgba(151, 180, 191, 0.92);
-    box-shadow: 0 12px 24px rgba(39, 57, 82, 0.14);
-    transform: scale(1.028);
+    border-color: rgba(132, 169, 182, 0.94);
+    box-shadow: 0 18px 36px rgba(39, 57, 82, 0.19);
+    transform: scale(1.065);
+}
+
+.paper-box-image:hover > div::after {
+    animation: paper-image-glint 0.72s cubic-bezier(0.30, 0.04, 0.24, 1) 1 both;
+}
+
+@keyframes paper-image-glint {
+    0% {
+        background-position: -170% 0;
+        opacity: 0;
+    }
+    16% {
+        opacity: 0.78;
+    }
+    78% {
+        opacity: 0.58;
+    }
+    100% {
+        background-position: 270% 0;
+        opacity: 0;
+    }
 }
 
 .paper-box-image > .leader-publication-demo {
@@ -3571,6 +3616,10 @@ body > #main > .sidebar.sticky {
     .paper-box-image:hover > div {
         transform: none;
     }
+
+    .paper-box-image:hover > div::after {
+        animation: none;
+    }
 }
 
 @media (hover: none), (pointer: coarse) {
@@ -3585,6 +3634,10 @@ body > #main > .sidebar.sticky {
     .paper-box-image:hover > div {
         box-shadow: 0 7px 16px rgba(39, 57, 82, 0.13);
         transform: none;
+    }
+
+    .paper-box-image > div::after {
+        display: none;
     }
 
     .paper-box-image:hover .badge {
