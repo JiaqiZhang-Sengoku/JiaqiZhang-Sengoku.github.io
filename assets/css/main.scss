@@ -2016,25 +2016,11 @@ body > #main > .sidebar.sticky {
     min-height: 94px;
 }
 
-.paper-card-footer {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    min-width: 0;
-    gap: 16px;
-    margin-top: 8px;
-}
-
-.paper-card-footer .paper-links {
-    flex: 1 1 auto;
-    min-width: 0;
-    margin-top: 0 !important;
-}
-
 .paper-method-logo {
-    position: static;
+    position: absolute;
+    right: 2px;
+    bottom: 1px;
     display: block;
-    flex: 0 0 76px;
     width: 76px;
     height: 76px;
     margin: 0;
@@ -3534,7 +3520,8 @@ body > #main > .sidebar.sticky {
     }
 
     .paper-method-logo {
-        flex-basis: 64px;
+        right: 1px;
+        bottom: 3px;
         width: 64px;
         height: 64px;
     }
