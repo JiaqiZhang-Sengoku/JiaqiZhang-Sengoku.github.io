@@ -45,10 +45,10 @@
    ========================================================================== */
 
 :root {
-    --page-bg: #eaf1f1;
-    --page-bg-top: #f4f8f6;
-    --page-bg-middle: #eaf2f2;
-    --page-bg-bottom: #edf4f1;
+    --page-bg: #e8f0ef;
+    --page-bg-top: #f2f7f5;
+    --page-bg-middle: #e9f2f1;
+    --page-bg-bottom: #eaf2ef;
     --surface-bg: #ffffff;
     --surface-soft: #f6f9f8;
     --surface-blue: #f0f5f9;
@@ -125,13 +125,21 @@ body {
     overflow-x: hidden;
     padding-top: var(--masthead-height);
     background-color: var(--page-bg) !important;
-    background-image: linear-gradient(
-        180deg,
-        var(--page-bg-top) 0%,
-        var(--page-bg-middle) 38%,
-        #e8f0f1 70%,
-        var(--page-bg-bottom) 100%
-    ) !important;
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(75, 115, 152, 0.052) 0%,
+            transparent 22%,
+            transparent 76%,
+            rgba(63, 121, 98, 0.048) 100%
+        ),
+        linear-gradient(
+            180deg,
+            var(--page-bg-top) 0%,
+            var(--page-bg-middle) 38%,
+            #e6efef 70%,
+            var(--page-bg-bottom) 100%
+        ) !important;
     background-attachment: fixed !important;
     color: var(--text-color);
     font-weight: 500;
@@ -144,11 +152,11 @@ body::before {
     z-index: -1;
     pointer-events: none;
     background-image:
-        linear-gradient(rgba(54, 104, 91, 0.026) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(65, 104, 137, 0.024) 1px, transparent 1px),
-        linear-gradient(118deg, rgba(64, 122, 99, 0.040), transparent 24%, transparent 74%, rgba(75, 115, 152, 0.034));
-    background-size: 44px 44px, 44px 44px, 100% 100%;
-    opacity: 0.72;
+        linear-gradient(rgba(54, 104, 91, 0.020) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(65, 104, 137, 0.018) 1px, transparent 1px),
+        linear-gradient(118deg, rgba(255, 255, 255, 0.30), transparent 28%, transparent 72%, rgba(202, 224, 218, 0.16));
+    background-size: 48px 48px, 48px 48px, 100% 100%;
+    opacity: 0.78;
 }
 
 ::selection {
@@ -164,10 +172,10 @@ body::before {
     width: 100% !important;
     z-index: 5000 !important;
     min-height: var(--masthead-height);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.955), rgba(250, 253, 255, 0.86)) !important;
+    background: linear-gradient(180deg, rgba(247, 250, 249, 0.97), rgba(237, 245, 244, 0.88)) !important;
     border-bottom: 0 !important;
-    box-shadow: none !important;
-    backdrop-filter: blur(14px);
+    box-shadow: 0 8px 24px rgba(42, 74, 88, 0.028) !important;
+    backdrop-filter: blur(16px);
     overflow: visible;
     transform: translateZ(0);
     will-change: transform;
@@ -396,7 +404,7 @@ body > #main > .sidebar.sticky {
     padding: 22px 18px 22px !important;
     border: 0 !important;
     border-radius: 0 0 var(--radius-card) var(--radius-card) !important;
-    background: linear-gradient(180deg, #ffffff 0%, rgba(246, 249, 249, 0.82) 100%) !important;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(241, 248, 246, 0.72) 100%) !important;
     box-shadow:
         var(--card-glow),
         0 10px 24px rgba(42, 57, 88, 0.045) !important;
@@ -3119,8 +3127,8 @@ body > #main > .sidebar.sticky {
 
     body::before {
         position: absolute;
-        background-size: 36px 36px, 36px 36px, 100% 100%;
-        opacity: 0.58;
+        background-size: 40px 40px, 40px 40px, 100% 100%;
+        opacity: 0.66;
     }
 
     .masthead__inner-wrap {
