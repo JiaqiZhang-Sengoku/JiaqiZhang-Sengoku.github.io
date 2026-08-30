@@ -45,7 +45,10 @@
    ========================================================================== */
 
 :root {
-    --page-bg: #f5f7f8;
+    --page-bg: #eaf1f1;
+    --page-bg-top: #f4f8f6;
+    --page-bg-middle: #eaf2f2;
+    --page-bg-bottom: #edf4f1;
     --surface-bg: #ffffff;
     --surface-soft: #f6f9f8;
     --surface-blue: #f0f5f9;
@@ -116,16 +119,36 @@ html {
 }
 
 body {
+    position: relative;
+    isolation: isolate;
     min-height: 100vh;
     overflow-x: hidden;
     padding-top: var(--masthead-height);
-    background: linear-gradient(180deg, #ffffff 0, #fafcfc 430px, var(--page-bg) 100%) !important;
+    background-color: var(--page-bg) !important;
+    background-image: linear-gradient(
+        180deg,
+        var(--page-bg-top) 0%,
+        var(--page-bg-middle) 38%,
+        #e8f0f1 70%,
+        var(--page-bg-bottom) 100%
+    ) !important;
+    background-attachment: fixed !important;
     color: var(--text-color);
     font-weight: 500;
 }
 
 body::before {
-    content: none;
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image:
+        linear-gradient(rgba(54, 104, 91, 0.026) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(65, 104, 137, 0.024) 1px, transparent 1px),
+        linear-gradient(118deg, rgba(64, 122, 99, 0.040), transparent 24%, transparent 74%, rgba(75, 115, 152, 0.034));
+    background-size: 44px 44px, 44px 44px, 100% 100%;
+    opacity: 0.72;
 }
 
 ::selection {
@@ -3091,6 +3114,13 @@ body > #main > .sidebar.sticky {
 
     body {
         padding-top: var(--masthead-height) !important;
+        background-attachment: scroll !important;
+    }
+
+    body::before {
+        position: absolute;
+        background-size: 36px 36px, 36px 36px, 100% 100%;
+        opacity: 0.58;
     }
 
     .masthead__inner-wrap {
