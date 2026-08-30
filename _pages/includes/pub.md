@@ -15,11 +15,12 @@
       <img loading="lazy" decoding="async" src="Images/Publication/PriMD.webp" alt="Overview of the PriMD framework" width="960" height="469">
     </div>
   </div>
-  <div class="paper-box-text">
+  <div class="paper-box-text paper-box-text--with-logo">
     <a class="paper-title" href="/PriMD/">Modality Disentangled Learning for Incomplete Multimodal Emotion Recognition: A Primitive Memory Distillation Perspective</a>
     <div class="paper-venue paper-venue--accepted">Empirical Methods in Natural Language Processing (EMNLP 2026 Findings)</div>
     <div class="paper-authors"><span class="paper-author"><strong>Jiaqi Zhang</strong></span>, <span class="paper-author">Zheng Pang</span>, <span class="paper-author">Mengting Li</span>, <span class="paper-author">Yiqi Wang</span>, <span class="paper-author">Guangyuan Dong</span>, <span class="paper-author">Chao Xue</span>, <span class="paper-author">Yusen Wu</span>, <span class="paper-author">Zihao Li</span>, <span class="paper-author">Huy Phan</span>, <span class="paper-author">Sicheng Zhao</span>, <span class="paper-author">Bj&ouml;rn Schuller</span>, <span class="paper-author">Jiachen Luo<sup>&dagger;</sup></span></div>
     <div class="paper-links"><a class="paper-link paper-link--web" href="/PriMD/" title="Open the project website"><i class="fas fa-globe paper-link__icon" aria-hidden="true"></i><span>Web</span></a><a class="paper-link paper-link--code" href="https://github.com/JiaqiZhang-Sengoku/PriMD" title="View code on GitHub"><i class="fab fa-github paper-link__icon" aria-hidden="true"></i><span>Code</span></a></div>
+    <img class="paper-method-logo" loading="lazy" decoding="async" src="/Images/Publication/PriMD-Logo.webp" alt="PriMD logo" width="192" height="192">
   </div>
 </div>
 
@@ -66,11 +67,12 @@
       </div>
     </div>
   </div>
-  <div class="paper-box-text">
+  <div class="paper-box-text paper-box-text--with-logo">
     <a class="paper-title" href="/LEADer/">Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration</a>
     <div class="paper-venue paper-venue--accepted">ACM International Conference on Multimedia (ACM MM 2026) <span class="paper-oral">Oral!</span></div>
     <div class="paper-authors"><span class="paper-author"><strong>Jiaqi Zhang</strong><sup>*</sup></span>, <span class="paper-author">Zheng Pang<sup>*</sup></span>, <span class="paper-author">Rongrong Gao</span>, <span class="paper-author">Qiyuan Zhang</span>, <span class="paper-author">Yang Yang<sup>&dagger;</sup></span></div>
     <div class="paper-links"><a class="paper-link paper-link--paper" href="https://arxiv.org/abs/2608.06981" title="Read the paper"><i class="fas fa-file-alt paper-link__icon" aria-hidden="true"></i><span>Paper</span></a><a class="paper-link paper-link--web" href="/LEADer/" title="Open the project website"><i class="fas fa-globe paper-link__icon" aria-hidden="true"></i><span>Web</span></a><a class="paper-link paper-link--code" href="https://github.com/JiaqiZhang-Sengoku/LEADer" title="View code on GitHub"><i class="fab fa-github paper-link__icon" aria-hidden="true"></i><span>Code</span></a></div>
+    <img class="paper-method-logo" loading="lazy" decoding="async" src="/Images/Publication/LEADer-Logo.webp" alt="LEADer logo" width="192" height="192">
   </div>
 </div>
 

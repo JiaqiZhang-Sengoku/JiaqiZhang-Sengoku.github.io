@@ -1562,7 +1562,7 @@ body > #main > .sidebar.sticky {
 .paper-box {
     position: relative;
     display: grid !important;
-    grid-template-columns: minmax(350px, 45.2%) minmax(0, 1fr) !important;
+    grid-template-columns: minmax(350px, 50%) minmax(0, 1fr) !important;
     gap: 18px !important;
     align-items: center !important;
     min-height: 0;
@@ -2010,6 +2010,33 @@ body > #main > .sidebar.sticky {
     color: var(--text-color) !important;
     font-size: 0.89rem !important;
     line-height: 1.47 !important;
+}
+
+.paper-box-text--with-logo {
+    min-height: 94px;
+    padding-right: 92px !important;
+}
+
+.paper-method-logo {
+    position: absolute;
+    right: 2px;
+    bottom: 1px;
+    display: block;
+    width: 76px;
+    height: 76px;
+    margin: 0;
+    object-fit: contain;
+    opacity: 0.92;
+    filter: drop-shadow(0 6px 10px rgba(39, 57, 82, 0.13));
+    pointer-events: none;
+    user-select: none;
+    transition: transform 0.26s ease, opacity 0.26s ease, filter 0.26s ease;
+}
+
+.paper-box:hover .paper-method-logo {
+    transform: translateY(-2px) scale(1.045);
+    opacity: 1;
+    filter: drop-shadow(0 9px 15px rgba(39, 57, 82, 0.18));
 }
 
 .paper-box-text::before {
@@ -3147,7 +3174,7 @@ body > #main > .sidebar.sticky {
     }
 
     .paper-box {
-        grid-template-columns: minmax(310px, 43.8%) minmax(0, 1fr) !important;
+        grid-template-columns: minmax(300px, 50%) minmax(0, 1fr) !important;
         gap: 15px !important;
         padding: 14px 15px !important;
     }
@@ -3487,6 +3514,18 @@ body > #main > .sidebar.sticky {
 
     .paper-box-text {
         padding: 3px 2px 5px !important;
+    }
+
+    .paper-box-text--with-logo {
+        min-height: 80px;
+        padding-right: 76px !important;
+    }
+
+    .paper-method-logo {
+        right: 1px;
+        bottom: 3px;
+        width: 64px;
+        height: 64px;
     }
 
     .paper-box::after {
