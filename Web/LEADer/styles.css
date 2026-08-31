@@ -336,12 +336,13 @@ h1 {
 
 .demo-label {
   display: block;
-  min-height: 29px;
-  margin: 0 0 12px;
-  font-size: 21.8px;
+  min-height: 34px;
+  margin: 0 0 13px;
+  font-family: "Comic Sans Pro", "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 28px;
   font-weight: 700;
   letter-spacing: 0;
-  line-height: 1.2;
+  line-height: 1.12;
   transition: color 0.16s ease, opacity 0.16s ease;
 }
 
@@ -805,9 +806,9 @@ code {
   }
 
   .demo-label {
-    min-height: 27px;
+    min-height: 30px;
     margin-bottom: 10px;
-    font-size: 19.8px;
+    font-size: 24px;
   }
 
   .demo-flow {

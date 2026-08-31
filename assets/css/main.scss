@@ -1783,13 +1783,14 @@ body > #main > .sidebar.sticky {
 
 .leader-publication-demo__label {
     display: block;
-    min-height: 17px;
-    margin: 0 0 7px;
+    min-height: 24px;
+    margin: 0 0 8px;
     overflow: hidden;
-    font-size: 0.90rem !important;
+    font-family: "Comic Sans Pro", "Comic Sans MS", "Comic Sans", cursive !important;
+    font-size: 1.20rem !important;
     font-weight: 700;
     letter-spacing: 0;
-    line-height: 1.15;
+    line-height: 1.10;
     text-align: center;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -1954,9 +1955,9 @@ body > #main > .sidebar.sticky {
     }
 
     .leader-publication-demo__label {
-        min-height: 17px;
+        min-height: 23px;
         margin-bottom: 7px;
-        font-size: 0.88rem !important;
+        font-size: 1.12rem !important;
     }
 }
 
@@ -1970,9 +1971,9 @@ body > #main > .sidebar.sticky {
     }
 
     .leader-publication-demo__label {
-        min-height: 16px;
+        min-height: 21px;
         margin-bottom: 5px;
-        font-size: 0.78rem !important;
+        font-size: 1.02rem !important;
     }
 
     .leader-publication-demo__image {
