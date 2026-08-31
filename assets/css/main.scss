@@ -2305,10 +2305,10 @@ body > #main > .sidebar.sticky {
     align-items: center;
     justify-content: center;
     width: auto;
-    height: 31px;
-    min-height: 31px;
+    height: 36px;
+    min-height: 36px;
     margin: 0 !important;
-    padding: 0 11px !important;
+    padding: 0 13px !important;
     overflow: hidden;
     border: 1px solid rgba(75, 115, 152, 0.28) !important;
     border-radius: 4px !important;
@@ -2316,7 +2316,7 @@ body > #main > .sidebar.sticky {
     color: var(--accent-strong) !important;
     box-shadow: 0 4px 12px rgba(42, 57, 88, 0.08) !important;
     backdrop-filter: blur(8px);
-    font-size: 0.80rem !important;
+    font-size: 0.88rem !important;
     font-weight: 800;
     letter-spacing: 0;
     line-height: 1.1 !important;
@@ -2337,18 +2337,18 @@ body > #main > .sidebar.sticky {
 }
 
 .badge--accepted {
-    --ribbon-wrap: 6px;
-    --ribbon-body-height: 22px;
-    --ribbon-midpoint: 11px;
-    --ribbon-tip: 6px;
-    --ribbon-fold: 7px;
+    --ribbon-wrap: 7px;
+    --ribbon-body-height: 28px;
+    --ribbon-midpoint: 14px;
+    --ribbon-tip: 8px;
+    --ribbon-fold: 8px;
     top: 7px !important;
     right: auto;
     left: calc(-1 * var(--ribbon-wrap)) !important;
     box-sizing: border-box;
     height: calc(var(--ribbon-body-height) + var(--ribbon-fold));
     min-height: calc(var(--ribbon-body-height) + var(--ribbon-fold));
-    padding: 0 calc(var(--ribbon-tip) + 10px) var(--ribbon-fold) 11px !important;
+    padding: 0 calc(var(--ribbon-tip) + 12px) var(--ribbon-fold) 13px !important;
     overflow: hidden;
     border: 0 !important;
     border-radius: 0 !important;
@@ -2366,21 +2366,10 @@ body > #main > .sidebar.sticky {
         0 var(--ribbon-body-height)
     );
     filter: drop-shadow(0 2px 3px rgba(25, 61, 40, 0.22));
-    font-size: 0.69rem !important;
+    font-size: 0.86rem !important;
     font-weight: 700;
     text-shadow: 0 1px 1px rgba(17, 44, 28, 0.18);
     opacity: 0.98;
-}
-
-.paper-box--leader-demo .badge--accepted {
-    --ribbon-wrap: 7px;
-    --ribbon-body-height: 28px;
-    --ribbon-midpoint: 14px;
-    --ribbon-tip: 8px;
-    --ribbon-fold: 8px;
-    top: 7px !important;
-    padding: 0 calc(var(--ribbon-tip) + 12px) var(--ribbon-fold) 13px !important;
-    font-size: 0.86rem !important;
 }
 
 .paper-box--leader-demo .leader-publication-demo__flow {
@@ -3578,34 +3567,23 @@ body > #main > .sidebar.sticky {
     .badge {
         top: 10px;
         left: 10px;
-        height: 30px;
-        min-height: 30px;
-        padding: 0 10px !important;
-        font-size: 0.78rem !important;
+        height: 34px;
+        min-height: 34px;
+        padding: 0 11px !important;
+        font-size: 0.84rem !important;
     }
 
     .badge--accepted {
-        --ribbon-wrap: 5px;
-        --ribbon-body-height: 20px;
-        --ribbon-midpoint: 10px;
-        --ribbon-tip: 5px;
-        --ribbon-fold: 6px;
-        top: 6px !important;
-        right: auto;
-        left: calc(-1 * var(--ribbon-wrap)) !important;
-        height: calc(var(--ribbon-body-height) + var(--ribbon-fold));
-        min-height: calc(var(--ribbon-body-height) + var(--ribbon-fold));
-        padding: 0 calc(var(--ribbon-tip) + 9px) var(--ribbon-fold) 10px !important;
-        font-size: 0.65rem !important;
-    }
-
-    .paper-box--leader-demo .badge--accepted {
         --ribbon-wrap: 6px;
         --ribbon-body-height: 25px;
         --ribbon-midpoint: 12.5px;
         --ribbon-tip: 7px;
         --ribbon-fold: 7px;
         top: 6px !important;
+        right: auto;
+        left: calc(-1 * var(--ribbon-wrap)) !important;
+        height: calc(var(--ribbon-body-height) + var(--ribbon-fold));
+        min-height: calc(var(--ribbon-body-height) + var(--ribbon-fold));
         padding: 0 calc(var(--ribbon-tip) + 10px) var(--ribbon-fold) 11px !important;
         font-size: 0.78rem !important;
     }
