@@ -93,8 +93,6 @@
 </div>
 
 <!-- Preprints and manuscripts under review -->
-{% comment %}
-Temporarily hidden: non-ACM-MM publications.
 <div class="paper-box">
   <div class="paper-box-image">
     <div>
@@ -104,11 +102,13 @@ Temporarily hidden: non-ACM-MM publications.
   </div>
   <div class="paper-box-text">
     <div class="paper-title">ReBridge-Flow: Re-Coupling Posterior Bridges in Flow Matching for Image Restoration</div>
-    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">Under Review</strong></div>
+    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">arXiv</strong></div>
     <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Yiqi Wang, Hongjie Wu, Bohan Guo, Xinan Wang, Zichen Luo, Zirui Liu, Zhi Chen, Mingkai Zheng</div>
   </div>
 </div>
 
+{% comment %}
+Temporarily hidden: non-ACM-MM publications.
 <div class="paper-box">
   <div class="paper-box-image">
     <div>
