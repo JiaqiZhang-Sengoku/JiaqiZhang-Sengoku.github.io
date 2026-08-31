@@ -1,0 +1,175 @@
+---
+permalink: /ReBridge-Flow/
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ReBridge-Flow | Flow Matching for Image Restoration</title>
+  <meta name="description" content="ReBridge-Flow re-couples posterior source-clean endpoint pairs for measurement-aware image restoration with Flow Matching.">
+  <meta name="theme-color" content="#f8fbfa">
+  <meta property="og:title" content="ReBridge-Flow: Re-Coupling Posterior Bridges in Flow Matching for Image Restoration">
+  <meta property="og:description" content="Posterior bridge re-coupling for structurally consistent Flow Matching image restoration.">
+  <meta property="og:image" content="https://jiaqizhang-sengoku.github.io/Web/ReBridge-Flow/Figures/Framework.webp">
+  <meta property="og:type" content="article">
+  <link rel="preload" href="/assets/fonts/noto-serif-sc-latin-vf.woff2?v=20260829" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/noto-serif-sc.css?v=20260829">
+  <link rel="stylesheet" href="/Web/ReBridge-Flow/styles.css?v=20260901-first-release">
+</head>
+<body>
+  <main>
+    <section class="hero" aria-labelledby="paper-title">
+      <div class="bridge-field" aria-hidden="true">
+        <span class="bridge-path bridge-path--one"></span>
+        <span class="bridge-path bridge-path--two"></span>
+        <span class="bridge-path bridge-path--three"></span>
+        <span class="bridge-node bridge-node--one"></span>
+        <span class="bridge-node bridge-node--two"></span>
+        <span class="bridge-node bridge-node--three"></span>
+        <span class="bridge-node bridge-node--four"></span>
+      </div>
+
+      <div class="hero-inner">
+        <a class="home-link" href="/" aria-label="Back to Jiaqi Zhang's homepage">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
+          <span>Jiaqi Zhang</span>
+        </a>
+
+        <div class="status-line">
+          <span class="status-mark" aria-hidden="true"></span>
+          <span>arXiv Preprint</span>
+          <span class="status-separator" aria-hidden="true"></span>
+          <span>August 2026</span>
+        </div>
+
+        <h1 id="paper-title">
+          <span>ReBridge-Flow: Re-Coupling Posterior Bridges</span>
+          <span>in Flow Matching for Image Restoration</span>
+        </h1>
+
+        <p class="authors">
+          <span class="author-line">
+            <a href="https://jiaqizhang-sengoku.github.io/">Jiaqi Zhang</a><sup>1</sup>,
+            <span>Yiqi Wang</span><sup>2</sup>,
+            <span>Hongjie Wu</span><sup>3</sup>,
+            <span>Bohan Guo</span><sup>4</sup>,
+            <span>Xinan Wang</span><sup>5</sup>,
+          </span>
+          <span class="author-line">
+            <span>Zichen Luo</span><sup>6</sup>,
+            <span>Taotao Cai</span><sup>7</sup>,
+            <span>Zhi Chen</span><sup>7</sup>,
+            <span>Mingkai Zheng</span><sup>8*</sup>
+          </span>
+        </p>
+
+        <div class="institutions" aria-label="Author affiliations">
+          <p><sup>1</sup>Jiangsu University &middot; <sup>2</sup>Griffith University &middot; <sup>3</sup>Sichuan University &middot; <sup>4</sup>University of Malaya</p>
+          <p><sup>5</sup>University of Science and Technology of China &middot; <sup>6</sup>Tianjin University</p>
+          <p><sup>7</sup>University of Southern Queensland &middot; <sup>8</sup>Southern University of Science and Technology</p>
+        </div>
+        <p class="author-note"><sup>*</sup>Corresponding author.</p>
+
+        <div class="link-row" role="group" aria-label="Project links">
+          <a class="project-link" href="#abstract">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"></path></svg>
+            <span>Paper</span>
+          </a>
+          <a class="project-link" href="#method">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path><path d="m3.3 7 8.7 5 8.7-5"></path><path d="M12 22V12"></path></svg>
+            <span>Method</span>
+          </a>
+          <a class="project-link" href="#bibtex">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H7a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2 2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1"></path><path d="M16 3h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2 2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-1"></path></svg>
+            <span>BibTeX</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="opening-figure" aria-label="ReBridge-Flow overview">
+      <div class="page-shell">
+        <figure class="paper-figure framework-figure">
+          <img src="/Web/ReBridge-Flow/Figures/Framework.webp" alt="Overview of endpoint decoding, clean-side correction, and posterior bridge re-coupling in ReBridge-Flow." width="960" height="443" decoding="async" fetchpriority="high">
+          <figcaption>
+            <strong>ReBridge-Flow overview.</strong> The current state is decoded into a locally compatible source-clean endpoint pair. Measurement-aware clean-side anchoring is followed by source-side re-coupling, producing a posterior-informed direction for image restoration.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="abstract" class="content-section content-section--abstract">
+      <div class="page-shell text-shell">
+        <div class="section-heading">
+          <span>01</span>
+          <h2>Abstract</h2>
+        </div>
+        <p class="lead-copy">
+          Flow Matching provides an efficient generative prior for image restoration by learning continuous transport between source and data distributions. However, existing methods typically incorporate measurement constraints through local corrections. Such corrections may disrupt the source-clean endpoint coupling implicitly encoded by the pretrained flow, making the corrected endpoint pair incompatible with the current state. To address this issue, we propose <strong>ReBridge-Flow</strong>, a posterior bridge re-coupling method. Given the current state, ReBridge-Flow decodes the corresponding local source and clean endpoints, incorporates measurement information through clean-side anchoring, and synchronously re-couples the source endpoint. The re-coupled pair defines a posterior-informed transport direction that improves local bridge compatibility and structural consistency across natural and medical image restoration tasks.
+        </p>
+      </div>
+    </section>
+
+    <section id="method" class="content-section content-section--method">
+      <div class="page-shell text-shell">
+        <div class="section-heading">
+          <span>02</span>
+          <h2>Posterior Bridge Re-Coupling</h2>
+        </div>
+
+        <p class="section-copy">
+          ReBridge-Flow treats image restoration as measurement-conditioned endpoint re-coupling instead of an isolated correction to a state, velocity, or clean endpoint. This keeps the local bridge and its transport direction compatible with the current Flow Matching state.
+        </p>
+
+        <ol class="method-steps">
+          <li>
+            <span class="step-index">01</span>
+            <div><h3>Local Endpoint Decoding</h3><p>Decode source and clean pseudo-endpoints from the current state and pretrained velocity field.</p></div>
+          </li>
+          <li>
+            <span class="step-index">02</span>
+            <div><h3>Clean-Side Anchoring</h3><p>Inject the observation through a noise-aware correction that preserves the local flow prior.</p></div>
+          </li>
+          <li>
+            <span class="step-index">03</span>
+            <div><h3>Source-Side Re-Coupling</h3><p>Synchronously update the source endpoint and form a posterior-informed direction for the next state.</p></div>
+          </li>
+        </ol>
+
+        <ul class="contributions">
+          <li>We identify bridge mismatch as a source of trajectory error in Flow Matching-based image restoration.</li>
+          <li>We introduce the Posterior Bridge Defect to jointly characterize measurement error, flow-prior deviation, and bridge residual.</li>
+          <li>We derive clean-side anchoring and source-side re-coupling as a unified closed-form posterior bridge update.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="bibtex" class="content-section content-section--bibtex">
+      <div class="page-shell text-shell">
+        <div class="bibtex-heading">
+          <div class="section-heading">
+            <span>03</span>
+            <h2>BibTeX</h2>
+          </div>
+          <button class="copy-button" type="button" data-copy-bibtex aria-label="Copy BibTeX citation">
+            <svg class="copy-icon" viewBox="0 0 24 24" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>
+            <svg class="check-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4 4L19 6"></path></svg>
+            <span data-copy-label>Copy</span>
+          </button>
+        </div>
+        <pre><code id="bibtex-code">@article{zhang2026rebridgeflow,
+  title   = {ReBridge-Flow: Re-Coupling Posterior Bridges in Flow Matching for Image Restoration},
+  author  = {Jiaqi Zhang and Yiqi Wang and Hongjie Wu and Bohan Guo and Xinan Wang and Zichen Luo and Taotao Cai and Zhi Chen and Mingkai Zheng},
+  journal = {arXiv preprint},
+  year    = {2026}
+}</code></pre>
+        <p class="copy-status" data-copy-status aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="/Web/ReBridge-Flow/script.js?v=20260901-first-release" defer></script>
+</body>
+</html>

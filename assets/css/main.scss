@@ -2402,6 +2402,16 @@ body > #main > .sidebar.sticky {
     opacity: 1;
 }
 
+.badge--accepted.badge--preprint {
+    background: linear-gradient(180deg, #897ba8 0%, #746590 55%, #66597f 100%) !important;
+    filter: drop-shadow(0 2px 3px rgba(67, 56, 92, 0.22));
+    text-shadow: 0 1px 1px rgba(49, 39, 70, 0.18);
+}
+
+.badge--accepted.badge--preprint::after {
+    background: linear-gradient(135deg, #443a5d 0 48%, #574a70 49% 100%);
+}
+
 .paper-box-image:hover .badge {
     opacity: 0;
     visibility: hidden;

@@ -7,6 +7,22 @@
 
 <div class="publications-panel">
 
+<!-- Latest preprint -->
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div>
+      <div class="badge badge--accepted badge--preprint">Preprint</div>
+      <img loading="lazy" decoding="async" src="Images/Publication/ReBridge-Flow.webp" alt="Overview of the ReBridge-Flow framework" width="960" height="443">
+    </div>
+  </div>
+  <div class="paper-box-text">
+    <a class="paper-title" href="/ReBridge-Flow/">ReBridge-Flow: Re-Coupling Posterior Bridges in Flow Matching for Image Restoration</a>
+    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">arXiv</strong></div>
+    <div class="paper-authors"><span class="paper-author"><strong>Jiaqi Zhang</strong></span>, <span class="paper-author">Yiqi Wang</span>, <span class="paper-author">Hongjie Wu</span>, <span class="paper-author">Bohan Guo</span>, <span class="paper-author">Xinan Wang</span>, <span class="paper-author">Zichen Luo</span>, <span class="paper-author">Taotao Cai</span>, <span class="paper-author">Zhi Chen</span>, <span class="paper-author">Mingkai Zheng<sup>&dagger;</sup></span></div>
+    <div class="paper-links"><a class="paper-link paper-link--web" href="/ReBridge-Flow/" title="Open the project website"><i class="fas fa-globe paper-link__icon" aria-hidden="true"></i><span>Web</span></a></div>
+  </div>
+</div>
+
 <!-- Accepted publications -->
 <div class="paper-box">
   <div class="paper-box-image">
@@ -89,21 +105,6 @@
     <div class="paper-title">Metric-Aware Test-Time Adaptation for Cross-Subject Multimodal Epileptiform-Discharge Detection</div>
     <div class="paper-venue paper-venue--accepted">ACM International Conference on Multimedia (ACM MM 2026)</div>
     <div class="paper-authors"><span class="paper-author">Yuting Yan</span>, <span class="paper-author"><strong>Jiaqi Zhang</strong></span>, <span class="paper-author">Ziliang Wang<sup>&dagger;</sup></span></div>
-  </div>
-</div>
-
-<!-- Preprints and manuscripts under review -->
-<div class="paper-box">
-  <div class="paper-box-image">
-    <div>
-      <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Publication/ReBridge-Flow.webp" alt="Overview of the ReBridge-Flow framework" width="960" height="443">
-    </div>
-  </div>
-  <div class="paper-box-text">
-    <div class="paper-title">ReBridge-Flow: Re-Coupling Posterior Bridges in Flow Matching for Image Restoration</div>
-    <div class="paper-venue paper-venue--review"><strong class="paper-status paper-status--review">arXiv</strong></div>
-    <div class="paper-authors"><strong>Jiaqi Zhang</strong>, Yiqi Wang, Hongjie Wu, Bohan Guo, Xinan Wang, Zichen Luo, Zirui Liu, Zhi Chen, Mingkai Zheng</div>
   </div>
 </div>
 
