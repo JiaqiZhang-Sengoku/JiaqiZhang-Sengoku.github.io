@@ -2372,6 +2372,21 @@ body > #main > .sidebar.sticky {
     opacity: 0.98;
 }
 
+.paper-box--leader-demo .badge--accepted {
+    --ribbon-wrap: 7px;
+    --ribbon-body-height: 28px;
+    --ribbon-midpoint: 14px;
+    --ribbon-tip: 8px;
+    --ribbon-fold: 8px;
+    top: 7px !important;
+    padding: 0 calc(var(--ribbon-tip) + 12px) var(--ribbon-fold) 13px !important;
+    font-size: 0.86rem !important;
+}
+
+.paper-box--leader-demo .leader-publication-demo__flow {
+    padding-top: 34px;
+}
+
 .badge-oral {
     display: inline-block;
     margin-left: 0.28em;
@@ -3582,6 +3597,21 @@ body > #main > .sidebar.sticky {
         min-height: calc(var(--ribbon-body-height) + var(--ribbon-fold));
         padding: 0 calc(var(--ribbon-tip) + 9px) var(--ribbon-fold) 10px !important;
         font-size: 0.65rem !important;
+    }
+
+    .paper-box--leader-demo .badge--accepted {
+        --ribbon-wrap: 6px;
+        --ribbon-body-height: 25px;
+        --ribbon-midpoint: 12.5px;
+        --ribbon-tip: 7px;
+        --ribbon-fold: 7px;
+        top: 6px !important;
+        padding: 0 calc(var(--ribbon-tip) + 10px) var(--ribbon-fold) 11px !important;
+        font-size: 0.78rem !important;
+    }
+
+    .paper-box--leader-demo .leader-publication-demo__flow {
+        padding-top: 31px;
     }
 
     .badge--accepted::before {
