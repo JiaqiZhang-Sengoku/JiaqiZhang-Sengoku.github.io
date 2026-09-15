@@ -909,6 +909,10 @@ body > #main > .sidebar.sticky {
     overflow-wrap: anywhere;
 }
 
+.hero-description + .hero-description {
+    margin-top: 0.75em !important;
+}
+
 .hero-description a {
     color: var(--accent-strong) !important;
     font-weight: 700;

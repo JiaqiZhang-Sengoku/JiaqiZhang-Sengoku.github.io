@@ -5,6 +5,7 @@
     <span class="hero-title__cn">(Chinese name: 张家旗)</span>
   </h1>
   <p class="hero-description">I am an undergraduate student from the <a href="https://cs.ujs.edu.cn/">School of Computer Science and Communication Engineering</a>, Jiangsu University, majoring in Computer Science and Technology. During my undergraduate studies, my academic advisor was <a href="https://ujsyyoung.github.io/homepage/">Associate Professor Yang Yang</a>. I am deeply grateful to him for introducing me to the world of research.</p>
+  <p class="hero-description">My research interests include Bayesian Inverse Problems, Generative Modeling, and Multimodal Affective Computing. Additionally, my recent research focuses on Large Multimodal Models and World Models.</p>
 </div>
 
 <!-- Temporarily hidden: News section.
