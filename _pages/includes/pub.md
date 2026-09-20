@@ -3,7 +3,7 @@
   <h2 class="section-heading__title">Selected Publications</h2>
   <p class="publications-full-list">(For the Full List, Please See <a href="https://scholar.google.com/citations?user=WylY07wAAAAJ&hl=en">Google Scholar</a>)</p>
 </div>
-<p class="publications-note"><span><sup>†</sup> Corresponding Author</span></p>
+<p class="publications-note"><span><sup>*</sup> Equal Contribution</span><span><sup>†</sup> Corresponding Author</span></p>
 
 <div class="publications-panel">
 
