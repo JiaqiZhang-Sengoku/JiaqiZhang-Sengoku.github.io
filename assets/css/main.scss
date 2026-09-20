@@ -1010,7 +1010,7 @@ body > #main > .sidebar.sticky {
     align-items: baseline !important;
     gap: 10px;
     margin: 0 !important;
-    color: var(--heading-color) !important;
+    color: #000 !important;
     font-size: 1.50rem !important;
     font-weight: 700 !important;
     letter-spacing: 0 !important;
@@ -1135,7 +1135,7 @@ body > #main > .sidebar.sticky {
     display: flex;
     align-items: center;
     gap: 12px;
-    color: var(--heading-color);
+    color: #000;
     font-size: 0.95rem;
 }
 
@@ -1159,7 +1159,7 @@ body > #main > .sidebar.sticky {
 
 .academic-service p {
     margin: 0;
-    color: var(--text-color);
+    color: #000;
     font-size: 0.96rem;
     line-height: 1.55;
 }
@@ -1167,7 +1167,7 @@ body > #main > .sidebar.sticky {
 .academic-service__acronym {
     display: inline-block;
     margin-left: 6px;
-    color: var(--accent-strong);
+    color: #000;
     font-weight: 700;
 }
 
@@ -2182,7 +2182,7 @@ body > #main > .sidebar.sticky {
 .paper-title,
 .paper-box-text a.paper-title {
     display: block !important;
-    color: var(--heading-color) !important;
+    color: #000 !important;
     font-size: 1rem !important;
     font-weight: 700 !important;
     line-height: 1.31 !important;
@@ -2192,7 +2192,7 @@ body > #main > .sidebar.sticky {
 }
 
 .paper-box-text a.paper-title:hover {
-    color: var(--accent-strong) !important;
+    color: #000 !important;
     box-shadow: none;
 }
 
@@ -2597,7 +2597,7 @@ body > #main > .sidebar.sticky {
 
 .other-paper-title {
     margin: 0 0 10px !important;
-    color: var(--heading-color) !important;
+    color: #000 !important;
     font-size: 1.27rem !important;
     font-weight: 700 !important;
     line-height: 1.40 !important;
@@ -2651,7 +2651,7 @@ body > #main > .sidebar.sticky {
     margin: 0 !important;
     min-height: 70px;
     padding: 18px 21px 18px 24px !important;
-    color: var(--heading-color) !important;
+    color: #000 !important;
     cursor: pointer;
     list-style: none;
     font-size: 1.23rem !important;
@@ -2874,7 +2874,7 @@ body > #main > .sidebar.sticky {
 
 .visitor-insights__title {
     margin: 0 !important;
-    color: var(--heading-color) !important;
+    color: #000 !important;
     font-size: 1.50rem !important;
     font-weight: 700 !important;
     letter-spacing: 0 !important;
