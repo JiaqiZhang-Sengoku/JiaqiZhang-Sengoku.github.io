@@ -19,7 +19,7 @@
     <div class="paper-title">From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents</div>
     <div class="paper-venue paper-venue--accepted">Transactions on Machine Learning Research (TMLR 2026)</div>
     <div class="paper-authors">Yiqi Wang, <strong>Jiaqi Zhang</strong>, Zhangkai Wu, Taotao Cai, Zirui Liu, Qingqiang Sun, Zequn Sun, Manqing Dong, Mingkai Zheng, Yu-Xuan Qiu, Xuefei Yin, Yanming Zhu</div>
-    <div class="paper-links"><a class="paper-link paper-link--paper" href="https://arxiv.org/abs/2606.04990" title="Read the paper"><i class="fas fa-file-alt paper-link__icon" aria-hidden="true"></i><span>Paper</span></a></div>
+    <div class="paper-links"><a class="paper-link paper-link--paper" href="https://arxiv.org/abs/2606.04990" title="Read the paper"><i class="fas fa-file-alt paper-link__icon" aria-hidden="true"></i><span>Paper</span></a><a class="paper-link paper-link--github" href="https://github.com/JiaqiZhang-Sengoku/Agent-Tracing-Survey" title="View the project repository on GitHub"><i class="fab fa-github paper-link__icon" aria-hidden="true"></i><span>GitHub</span></a></div>
   </div>
 </div>
 

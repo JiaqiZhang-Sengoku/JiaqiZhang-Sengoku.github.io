@@ -2405,6 +2405,8 @@ body > #main > .sidebar.sticky {
 }
 
 .paper-box-text .paper-links .paper-link--code,
+.paper-box-text .paper-links .paper-link--github,
+.other-paper-links .paper-link--github,
 .other-paper-links .paper-link--code {
     background: transparent !important;
     color: #40566f !important;
@@ -2423,6 +2425,8 @@ body > #main > .sidebar.sticky {
 }
 
 .paper-box-text .paper-links .paper-link--code:hover,
+.paper-box-text .paper-links .paper-link--github:hover,
+.other-paper-links .paper-link--github:hover,
 .other-paper-links .paper-link--code:hover {
     background: rgba(92, 118, 139, 0.09) !important;
     color: #344b62 !important;
