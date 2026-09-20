@@ -254,7 +254,7 @@ body > .masthead {
     margin: 0 !important;
     padding: 7px 13px !important;
     border-radius: 999px;
-    color: var(--heading-color) !important;
+    color: #000 !important;
     font-size: 1.07rem !important;
     font-weight: 600 !important;
     letter-spacing: 0 !important;
@@ -265,7 +265,7 @@ body > .masthead {
 
 .masthead__menu .visible-links a,
 .greedy-nav .visible-links a {
-    color: var(--heading-color) !important;
+    color: #000 !important;
     opacity: 1 !important;
 }
 
@@ -286,7 +286,7 @@ body > .masthead {
 .masthead__menu-item a:hover,
 .greedy-nav a:hover {
     background: var(--accent-soft) !important;
-    color: var(--accent-strong) !important;
+    color: #000 !important;
     box-shadow: inset 0 0 0 1px rgba(63, 109, 216, 0.14);
     transform: none;
 }
@@ -1372,7 +1372,7 @@ body > #main > .sidebar.sticky {
     border: 0 !important;
     border-radius: 0;
     background: transparent !important;
-    color: var(--heading-color);
+    color: #000;
     font-size: 1.08rem;
     font-style: normal;
     font-weight: 700;
@@ -1390,7 +1390,7 @@ body > #main > .sidebar.sticky {
 .update-list {
     margin: 0 !important;
     padding: 0 0 0 18px !important;
-    color: var(--text-color);
+    color: #000;
     font-size: 1.10rem;
     line-height: 1.28 !important;
 }
@@ -1406,12 +1406,12 @@ body > #main > .sidebar.sticky {
 }
 
 .update-list li::marker {
-    color: rgba(82, 116, 208, 0.72);
+    color: #000;
     font-size: 0.82em;
 }
 
 .update-day {
-    color: var(--accent-strong);
+    color: #000;
     font-weight: 800;
     white-space: nowrap;
 }
@@ -1425,12 +1425,13 @@ body > #main > .sidebar.sticky {
 
 .update-message {
     min-width: 0;
+    color: #000;
 }
 
 .update-reflection {
     display: block;
     margin-top: 6px;
-    color: #536174;
+    color: #000;
     font-size: 0.96em;
     font-weight: 500;
     line-height: 1.42;
