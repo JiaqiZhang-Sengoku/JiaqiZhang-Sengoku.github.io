@@ -16,7 +16,7 @@
         <span class="academic-service__icon" aria-hidden="true"><i class="fas fa-users"></i></span>
         <strong>Conference Reviewer</strong>
       </div>
-      <p><span class="academic-service__acronym">(ICLR 2027)</span></p>
+      <p class="academic-service__conference">ICLR 2027</p>
     </div>
   </div>
 </section>

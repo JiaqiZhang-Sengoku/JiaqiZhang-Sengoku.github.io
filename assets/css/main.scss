@@ -930,6 +930,20 @@ body > #main > .sidebar.sticky {
     box-shadow: none;
 }
 
+#about-me .hero-title,
+#about-me .hero-title__name,
+#about-me .hero-title__cn,
+#about-me .hero-description,
+#about-me .hero-description a,
+#about-me .hero-description a:hover {
+    color: #000 !important;
+}
+
+#about-me .hero-description a,
+#about-me .hero-description a:hover {
+    text-decoration-color: rgba(0, 0, 0, 0.34) !important;
+}
+
 .page__content a {
     overflow-wrap: anywhere;
 }
@@ -1155,6 +1169,11 @@ body > #main > .sidebar.sticky {
     margin-left: 6px;
     color: var(--accent-strong);
     font-weight: 700;
+}
+
+.academic-service__conference {
+    color: #000 !important;
+    font-weight: 400 !important;
 }
 
 @media (max-width: 680px) {
