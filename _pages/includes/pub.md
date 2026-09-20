@@ -3,7 +3,7 @@
   <h2 class="section-heading__title">Selected Publications</h2>
   <p class="publications-full-list">(For the Full List, Please See <a href="https://scholar.google.com/citations?user=WylY07wAAAAJ&hl=en">Google Scholar</a>)</p>
 </div>
-<p class="publications-note"><span><sup>†</sup> Corresponding Author</span><span><sup>*</sup> Equal Contribution</span></p>
+<p class="publications-note"><span><sup>†</sup> Corresponding Author</span></p>
 
 <div class="publications-panel">
 
@@ -86,7 +86,7 @@
   <div class="paper-box-text paper-box-text--with-logo">
     <a class="paper-title" href="/LEADer/">Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration</a>
     <div class="paper-venue paper-venue--accepted">ACM International Conference on Multimedia (ACM MM 2026) <span class="paper-oral">Oral!</span></div>
-    <div class="paper-authors"><span class="paper-author"><strong>Jiaqi Zhang</strong><sup>*</sup></span>, <span class="paper-author">Zheng Pang<sup>*</sup></span>, <span class="paper-author">Rongrong Gao</span>, <span class="paper-author">Qiyuan Zhang</span>, <span class="paper-author">Yang Yang<sup>&dagger;</sup></span></div>
+    <div class="paper-authors"><span class="paper-author"><strong>Jiaqi Zhang</strong></span>, <span class="paper-author">Zheng Pang</span>, <span class="paper-author">Rongrong Gao</span>, <span class="paper-author">Qiyuan Zhang</span>, <span class="paper-author">Yang Yang<sup>&dagger;</sup></span></div>
     <div class="paper-links"><a class="paper-link paper-link--paper" href="https://arxiv.org/abs/2608.06981" title="Read the paper"><i class="fas fa-file-alt paper-link__icon" aria-hidden="true"></i><span>Paper</span></a><a class="paper-link paper-link--web" href="/LEADer/" title="Open the project website"><i class="fas fa-globe paper-link__icon" aria-hidden="true"></i><span>Web</span></a><a class="paper-link paper-link--code" href="https://github.com/JiaqiZhang-Sengoku/LEADer" title="View code on GitHub"><i class="fab fa-github paper-link__icon" aria-hidden="true"></i><span>Code</span></a></div>
     <img class="paper-method-logo" loading="lazy" decoding="async" src="/Images/Publication/LEADer-Logo.webp" alt="LEADer logo" width="192" height="192">
   </div>

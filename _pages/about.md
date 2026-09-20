@@ -17,6 +17,8 @@ redirect_from:
 <!-- {% include_relative includes/project.md %}
 <br> -->
 
+{% include_relative includes/services.md %}
+
 {% include_relative includes/internships.md %}
 
 {% include_relative includes/honers.md %}

@@ -1086,6 +1086,17 @@ body > #main > .sidebar.sticky {
     font-weight: 700;
 }
 
+.academic-services {
+    margin-bottom: 26px;
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.academic-services p {
+    margin: 0 0 8px;
+}
+
 .updates-panel,
 .internships-panel {
     display: grid;
