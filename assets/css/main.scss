@@ -1256,13 +1256,17 @@ body > #main > .sidebar.sticky {
 .updates-panel .update-card {
     display: block;
     min-height: 54px;
-    margin: 0 4px 5px 0 !important;
-    padding: 4px 10px 5px 0 !important;
+    margin: 0 4px 0 0 !important;
+    padding: 0 10px 0 0 !important;
     border: 0 !important;
     border-bottom: 0 !important;
     border-radius: 0 !important;
     background: transparent !important;
     box-shadow: none !important;
+}
+
+.updates-panel .update-card + .update-card {
+    margin-top: 18px !important;
 }
 
 .updates-panel .update-card:hover {
@@ -1367,7 +1371,7 @@ body > #main > .sidebar.sticky {
 .updates-panel .update-date {
     display: block;
     min-height: 0;
-    margin: 0 0 3px !important;
+    margin: 0 0 8px !important;
     padding: 0 !important;
     border: 0 !important;
     border-radius: 0;
@@ -1388,6 +1392,8 @@ body > #main > .sidebar.sticky {
 }
 
 .update-list {
+    display: grid;
+    row-gap: 9px;
     margin: 0 !important;
     padding: 0 0 0 18px !important;
     color: #000;
@@ -1402,7 +1408,7 @@ body > #main > .sidebar.sticky {
 }
 
 .update-list li + li {
-    margin-top: 3px !important;
+    margin-top: 0 !important;
 }
 
 .update-list li::marker {
@@ -1418,14 +1424,20 @@ body > #main > .sidebar.sticky {
 
 .update-item-layout {
     display: grid;
-    grid-template-columns: max-content minmax(0, 1fr);
-    gap: 0 7px;
+    grid-template-columns: 5.1em minmax(0, 1fr);
+    gap: 0 8px;
     align-items: start;
 }
 
 .update-message {
     min-width: 0;
     color: #000;
+    line-height: 1.38;
+}
+
+.update-detail {
+    display: block;
+    margin-top: 6px;
 }
 
 .update-reflection {
@@ -3531,9 +3543,8 @@ body > #main > .sidebar.sticky {
     }
 
     .updates-panel .update-card {
-        grid-template-columns: 84px minmax(0, 1fr) !important;
         min-height: 38px;
-        padding: 7px 8px 7px 20px !important;
+        padding: 0 8px 0 0 !important;
     }
 
     .update-date,
