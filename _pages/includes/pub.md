@@ -7,6 +7,22 @@
 
 <div class="publications-panel">
 
+<!-- Latest accepted publication -->
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div>
+      <div class="badge badge--accepted">TMLR 2026</div>
+      <img loading="lazy" decoding="async" src="Images/Publication/Agent.webp" alt="Evidence tracing and execution provenance framework for LLM agents" width="877" height="640">
+    </div>
+  </div>
+  <div class="paper-box-text">
+    <div class="paper-title">From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents</div>
+    <div class="paper-venue paper-venue--accepted">Transactions on Machine Learning Research (TMLR 2026)</div>
+    <div class="paper-authors">Yiqi Wang, <strong>Jiaqi Zhang</strong>, Zhangkai Wu, Taotao Cai, Zirui Liu, Qingqiang Sun, Zequn Sun, Manqing Dong, Mingkai Zheng, Yu-Xuan Qiu, Xuefei Yin, Yanming Zhu</div>
+    <div class="paper-links"><a class="paper-link paper-link--paper" href="https://arxiv.org/abs/2606.04990" title="Read the paper"><i class="fas fa-file-alt paper-link__icon" aria-hidden="true"></i><span>Paper</span></a></div>
+  </div>
+</div>
+
 <!-- Latest preprint -->
 <div class="paper-box">
   <div class="paper-box-image">
@@ -187,20 +203,6 @@ Temporarily hidden: non-ACM-MM publications.
   </div>
 </div>
 
-<div class="paper-box">
-  <div class="paper-box-image">
-    <div>
-      <div class="badge">Preprint</div>
-      <img loading="lazy" decoding="async" src="Images/Publication/Agent.webp" alt="Evidence tracing and execution provenance framework for LLM agents" width="877" height="640">
-    </div>
-  </div>
-  <div class="paper-box-text">
-    <div class="paper-title">From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents</div>
-    <div class="paper-venue paper-venue--review"><!-- Transactions on Machine Learning Research (TMLR) --><strong class="paper-status paper-status--review">Under Review</strong></div>
-    <div class="paper-authors">Yiqi Wang, <strong>Jiaqi Zhang</strong>, Zhangkai Wu, Taotao Cai, Zirui Liu, Qingqiang Sun, Zequn Sun, Manqing Dong, Mingkai Zheng, Yu-Xuan Qiu, Xuefei Yin, Yanming Zhu</div>
-    <div class="paper-links"><a class="paper-link paper-link--paper" href="https://arxiv.org/abs/2606.04990" title="Read the paper"><i class="fas fa-file-alt paper-link__icon" aria-hidden="true"></i><span>Paper</span></a></div>
-  </div>
-</div>
 {% endcomment %}
 
 <!-- <div class="paper-box">
