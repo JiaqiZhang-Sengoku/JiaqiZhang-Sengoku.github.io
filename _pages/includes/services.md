@@ -1,10 +1,22 @@
 <span class="anchor" id="academic-services"></span>
-<section aria-labelledby="academic-services-title">
-  <div class="section-heading">
+<section class="academic-services-section" aria-labelledby="academic-services-title">
+  <div class="section-heading section-heading--services">
     <h2 class="section-heading__title" id="academic-services-title">Academic Services</h2>
   </div>
-  <div class="academic-services">
-    <p><strong>Journal Reviewer:</strong> Engineering Applications of Artificial Intelligence (EAAI)</p>
-    <p><strong>Conference Reviewer:</strong> ICLR 2027</p>
+  <div class="academic-services-panel" role="list">
+    <div class="academic-service" role="listitem">
+      <div class="academic-service__type">
+        <span class="academic-service__icon" aria-hidden="true"><i class="fas fa-book-open"></i></span>
+        <strong>Journal Reviewer</strong>
+      </div>
+      <p>Engineering Applications of Artificial Intelligence <span class="academic-service__acronym">EAAI</span></p>
+    </div>
+    <div class="academic-service" role="listitem">
+      <div class="academic-service__type">
+        <span class="academic-service__icon" aria-hidden="true"><i class="fas fa-users"></i></span>
+        <strong>Conference Reviewer</strong>
+      </div>
+      <p>ICLR 2027</p>
+    </div>
   </div>
 </section>
