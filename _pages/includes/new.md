@@ -7,7 +7,7 @@
   <div class="update-card">
     <h3 class="update-date">September 2026</h3>
     <ul class="update-list">
-      <li><span class="update-item-layout"><span class="update-day">Sep. 20:</span><span class="update-message">We have 1 paper (LLM Agent Trustworthiness Survey) accepted to <span class="highlight-journal">TMLR 2026.</span></span></span></li>
+      <li><span class="update-item-layout"><span class="update-day">Sep. 20:</span><span class="update-message">We have 1 paper (Survey of LLM Agent Trustworthiness) accepted to <span class="highlight-journal">TMLR 2026.</span></span></span></li>
     </ul>
   </div>
   <div class="update-card">
