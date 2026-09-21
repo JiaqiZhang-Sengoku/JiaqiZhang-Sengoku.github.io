@@ -2380,7 +2380,7 @@ body > #main > .sidebar.sticky {
     color: #40566f !important;
     box-shadow: none !important;
     font-size: 0.86rem !important;
-    font-weight: 700 !important;
+    font-weight: 800 !important;
     line-height: 1.12 !important;
     white-space: nowrap;
     text-decoration: none !important;
@@ -2403,7 +2403,7 @@ body > #main > .sidebar.sticky {
     width: 14px;
     font-size: 0.90rem !important;
     line-height: 1 !important;
-    opacity: 0.90;
+    opacity: 1;
 }
 
 .paper-links .paper-link__icon.fas,
@@ -2421,49 +2421,49 @@ body > #main > .sidebar.sticky {
 .paper-box-text .paper-links .paper-link--paper,
 .other-paper-links .paper-link--paper {
     background: transparent !important;
-    color: #c43b31 !important;
+    color: #c62828 !important;
 }
 
 .paper-box-text .paper-links .paper-link--web,
 .other-paper-links .paper-link--web {
     background: transparent !important;
-    color: #086fa1 !important;
+    color: #0067c5 !important;
 }
 
 .paper-box-text .paper-links .paper-link--code,
 .other-paper-links .paper-link--code {
     background: transparent !important;
-    color: #d05a12 !important;
+    color: #00875a !important;
 }
 
 .paper-box-text .paper-links .paper-link--github,
 .other-paper-links .paper-link--github {
     background: transparent !important;
-    color: #6b3fb5 !important;
+    color: #7b1fa2 !important;
 }
 
 .paper-box-text .paper-links .paper-link--paper:hover,
 .other-paper-links .paper-link--paper:hover {
-    background: rgba(196, 59, 49, 0.10) !important;
-    color: #9f2f27 !important;
+    background: rgba(198, 40, 40, 0.11) !important;
+    color: #8e1b1b !important;
 }
 
 .paper-box-text .paper-links .paper-link--web:hover,
 .other-paper-links .paper-link--web:hover {
-    background: rgba(8, 111, 161, 0.10) !important;
-    color: #07577d !important;
+    background: rgba(0, 103, 197, 0.11) !important;
+    color: #004c99 !important;
 }
 
 .paper-box-text .paper-links .paper-link--code:hover,
 .other-paper-links .paper-link--code:hover {
-    background: rgba(208, 90, 18, 0.10) !important;
-    color: #a9470d !important;
+    background: rgba(0, 135, 90, 0.11) !important;
+    color: #006b47 !important;
 }
 
 .paper-box-text .paper-links .paper-link--github:hover,
 .other-paper-links .paper-link--github:hover {
-    background: rgba(107, 63, 181, 0.10) !important;
-    color: #512e8d !important;
+    background: rgba(123, 31, 162, 0.11) !important;
+    color: #58157a !important;
 }
 
 .paper-box-text a:focus-visible {
