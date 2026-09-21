@@ -1860,6 +1860,16 @@ body > #main > .sidebar.sticky {
     filter: saturate(1.03) contrast(1.02);
 }
 
+.paper-box-image img.paper-image--crisp,
+.paper-box-image:hover img.paper-image--crisp {
+    image-rendering: -webkit-optimize-contrast;
+    filter: none !important;
+}
+
+.paper-box-image > .paper-image-frame--crisp {
+    transition: border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
 .paper-box-image:hover > div {
     z-index: 70;
     border-color: rgba(132, 169, 182, 0.94);
