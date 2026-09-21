@@ -1841,7 +1841,7 @@ body > #main > .sidebar.sticky {
     box-shadow: none !important;
     object-fit: contain !important;
     object-position: center center;
-    image-rendering: -webkit-optimize-contrast;
+    image-rendering: auto;
     transition: none;
 }
 
@@ -1862,12 +1862,33 @@ body > #main > .sidebar.sticky {
 
 .paper-box-image img.paper-image--crisp,
 .paper-box-image:hover img.paper-image--crisp {
-    image-rendering: -webkit-optimize-contrast;
+    image-rendering: auto;
     filter: none !important;
 }
 
 .paper-box-image > .paper-image-frame--crisp {
     transition: border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+.paper-image-frame--pdf {
+    isolation: isolate;
+}
+
+.paper-pdf-preview {
+    position: absolute;
+    inset: 3px;
+    z-index: 20;
+    display: block;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    background: #ffffff;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.16s ease;
+}
+
+.paper-pdf-preview.is-ready {
+    opacity: 1;
 }
 
 .paper-box-image:hover > div {

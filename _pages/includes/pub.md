@@ -112,9 +112,10 @@
 
 <div class="paper-box">
   <div class="paper-box-image">
-    <div class="paper-image-frame--crisp">
+    <div class="paper-image-frame--crisp paper-image-frame--pdf">
       <div class="badge badge--accepted">ACM MM 2026</div>
-      <img class="paper-image--crisp" loading="lazy" decoding="async" src="Images/Publication/JMTR.webp?v=20260921-hq2" alt="Metric-aware test-time adaptation framework for cross-subject multimodal IED detection" width="2317" height="1181">
+      <img class="paper-image--crisp paper-pdf-fallback" loading="lazy" decoding="async" src="Images/Publication/JMTR.webp?v=20260921-hq2" alt="Metric-aware test-time adaptation framework for cross-subject multimodal IED detection" width="2317" height="1181">
+      <canvas class="paper-pdf-preview" data-pdf-src="/Images/Publication/JMTR.pdf?v=20260921-vector" width="2574" height="1311" aria-label="Metric-aware test-time adaptation framework for cross-subject multimodal IED detection"></canvas>
     </div>
   </div>
   <div class="paper-box-text">
@@ -123,6 +124,8 @@
     <div class="paper-authors"><span class="paper-author">Yuting Yan</span>, <span class="paper-author"><strong>Jiaqi Zhang</strong></span>, <span class="paper-author">Ziliang Wang<sup>&dagger;</sup></span></div>
   </div>
 </div>
+
+<script type="module" src="/assets/js/publication-pdf-preview.js?v=20260921-vector"></script>
 
 {% comment %}
 Temporarily hidden: non-ACM-MM publications.
