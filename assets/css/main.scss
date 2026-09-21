@@ -2305,7 +2305,7 @@ body > #main > .sidebar.sticky {
 
 .paper-authors {
     margin-top: 8px;
-    color: #596579;
+    color: #000;
     font-size: 0.94rem;
     font-weight: 500;
     line-height: 1.54;
@@ -2319,7 +2319,7 @@ body > #main > .sidebar.sticky {
 }
 
 .paper-authors strong {
-    color: #344054 !important;
+    color: #000 !important;
     font-weight: 700 !important;
     box-shadow: none;
     text-decoration-line: underline !important;
@@ -2333,7 +2333,7 @@ body > #main > .sidebar.sticky {
     position: relative;
     top: -0.24em;
     margin-left: 2px;
-    color: #77808d;
+    color: #000;
     font-size: 0.70em;
     font-weight: 700;
     line-height: 0;
@@ -2421,41 +2421,49 @@ body > #main > .sidebar.sticky {
 .paper-box-text .paper-links .paper-link--paper,
 .other-paper-links .paper-link--paper {
     background: transparent !important;
-    color: #315f45 !important;
+    color: #c43b31 !important;
 }
 
 .paper-box-text .paper-links .paper-link--web,
 .other-paper-links .paper-link--web {
     background: transparent !important;
-    color: #3d6685 !important;
+    color: #086fa1 !important;
 }
 
 .paper-box-text .paper-links .paper-link--code,
-.paper-box-text .paper-links .paper-link--github,
-.other-paper-links .paper-link--github,
 .other-paper-links .paper-link--code {
     background: transparent !important;
-    color: #40566f !important;
+    color: #d05a12 !important;
+}
+
+.paper-box-text .paper-links .paper-link--github,
+.other-paper-links .paper-link--github {
+    background: transparent !important;
+    color: #6b3fb5 !important;
 }
 
 .paper-box-text .paper-links .paper-link--paper:hover,
 .other-paper-links .paper-link--paper:hover {
-    background: rgba(71, 124, 91, 0.09) !important;
-    color: #274f38 !important;
+    background: rgba(196, 59, 49, 0.10) !important;
+    color: #9f2f27 !important;
 }
 
 .paper-box-text .paper-links .paper-link--web:hover,
 .other-paper-links .paper-link--web:hover {
-    background: rgba(74, 120, 155, 0.09) !important;
-    color: #315b7b !important;
+    background: rgba(8, 111, 161, 0.10) !important;
+    color: #07577d !important;
 }
 
 .paper-box-text .paper-links .paper-link--code:hover,
-.paper-box-text .paper-links .paper-link--github:hover,
-.other-paper-links .paper-link--github:hover,
 .other-paper-links .paper-link--code:hover {
-    background: rgba(92, 118, 139, 0.09) !important;
-    color: #344b62 !important;
+    background: rgba(208, 90, 18, 0.10) !important;
+    color: #a9470d !important;
+}
+
+.paper-box-text .paper-links .paper-link--github:hover,
+.other-paper-links .paper-link--github:hover {
+    background: rgba(107, 63, 181, 0.10) !important;
+    color: #512e8d !important;
 }
 
 .paper-box-text a:focus-visible {
@@ -2634,9 +2642,14 @@ body > #main > .sidebar.sticky {
 }
 
 .other-paper-authors {
-    color: var(--text-color) !important;
+    color: #000 !important;
     font-size: 1.06rem !important;
     line-height: 1.58 !important;
+}
+
+.other-paper-authors strong,
+.other-paper-authors sup {
+    color: #000 !important;
 }
 
 .other-paper-title,
