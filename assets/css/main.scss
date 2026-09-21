@@ -1168,12 +1168,12 @@ body > #main > .sidebar.sticky {
     display: inline-block;
     margin-left: 6px;
     color: #000;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .academic-service__conference {
     color: #000 !important;
-    font-weight: 400 !important;
+    font-weight: 500 !important;
 }
 
 #academic-services-title,
@@ -1183,6 +1183,17 @@ body > #main > .sidebar.sticky {
 .academic-services-panel .academic-service__acronym,
 .academic-services-panel .academic-service__conference {
     color: #000 !important;
+    -webkit-text-fill-color: #000 !important;
+    opacity: 1 !important;
+    filter: none !important;
+    mix-blend-mode: normal;
+    text-shadow: none !important;
+}
+
+.academic-services-panel .academic-service p,
+.academic-services-panel .academic-service__acronym,
+.academic-services-panel .academic-service__conference {
+    font-weight: 500 !important;
 }
 
 @media (max-width: 680px) {
