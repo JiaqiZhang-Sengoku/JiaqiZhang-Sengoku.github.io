@@ -1806,7 +1806,6 @@ body > #main > .sidebar.sticky {
     box-sizing: border-box;
     transform-origin: center center;
     transition:
-        transform 0.30s cubic-bezier(0.20, 0.78, 0.24, 1),
         border-color 0.22s ease,
         box-shadow 0.30s ease;
 }
@@ -1842,7 +1841,8 @@ body > #main > .sidebar.sticky {
     box-shadow: none !important;
     object-fit: contain !important;
     object-position: center center;
-    transition: filter 0.22s ease;
+    image-rendering: -webkit-optimize-contrast;
+    transition: none;
 }
 
 .paper-box-image:hover {
@@ -1857,7 +1857,7 @@ body > #main > .sidebar.sticky {
     background: #ffffff;
     border-radius: 1px !important;
     box-shadow: none !important;
-    filter: saturate(1.03) contrast(1.02);
+    filter: none;
 }
 
 .paper-box-image img.paper-image--crisp,
