@@ -5,6 +5,12 @@
 
 <div class="updates-panel" aria-label="Monthly news">
   <div class="update-card">
+    <h3 class="update-date">September 2026</h3>
+    <ul class="update-list">
+      <li><span class="update-item-layout"><span class="update-day">Sep. 20:</span><span class="update-message">We have 1 paper (LLM Agent Trustworthiness Survey) accepted to <span class="highlight-journal">TMLR 2026.</span></span></span></li>
+    </ul>
+  </div>
+  <div class="update-card">
     <h3 class="update-date">August 2026</h3>
     <ul class="update-list">
       <li><span class="update-item-layout"><span class="update-day">Aug. 21:</span><span class="update-message">My <span class="highlight-first-author">First Author</span> paper (Multimodal Emotion Recognition) accepted to <strong class="highlight-conference">EMNLP 2026 Findings.</strong></span></span></li>
