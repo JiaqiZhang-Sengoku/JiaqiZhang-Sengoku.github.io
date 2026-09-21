@@ -2529,14 +2529,9 @@ body > #main > .sidebar.sticky {
 .badge-oral {
     display: inline-block;
     margin-left: 0.28em;
-    padding: 1px 4px;
-    border-radius: 3px;
-    background: rgba(255, 255, 255, 0.92);
-    color: #d62828 !important;
     font-size: 1.1em;
     font-weight: 800;
     line-height: 1;
-    text-shadow: none;
 }
 
 .badge--accepted::before {
