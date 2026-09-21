@@ -1168,7 +1168,7 @@ body > #main > .sidebar.sticky {
     display: inline-block;
     margin-left: 6px;
     color: #000;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .academic-service__conference {
@@ -1458,19 +1458,14 @@ body > #main > .sidebar.sticky {
     line-height: 1.42;
 }
 
-.highlight-oral {
-    color: #d62828 !important;
-    font-weight: 800;
-}
-
 .highlight-conference {
-    color: var(--accepted-green) !important;
+    color: #2e5b3e !important;
     font-weight: 800;
 }
 
 .highlight-oral {
     display: inline-block;
-    color: var(--accepted-green) !important;
+    color: #d62828 !important;
     font-size: 1.1em;
     font-weight: 800;
     line-height: 1;
@@ -1482,7 +1477,7 @@ body > #main > .sidebar.sticky {
 }
 
 .highlight-first-author {
-    color: var(--first-author-orange) !important;
+    color: #d62828 !important;
     font-weight: 800;
 }
 
@@ -2221,6 +2216,7 @@ body > #main > .sidebar.sticky {
 .paper-oral {
     display: inline-block;
     margin-left: 0.12em;
+    color: #d62828 !important;
     font-size: 1.1em;
     font-weight: 800;
     line-height: 1;
@@ -2533,9 +2529,14 @@ body > #main > .sidebar.sticky {
 .badge-oral {
     display: inline-block;
     margin-left: 0.28em;
+    padding: 1px 4px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.92);
+    color: #d62828 !important;
     font-size: 1.1em;
     font-weight: 800;
     line-height: 1;
+    text-shadow: none;
 }
 
 .badge--accepted::before {
