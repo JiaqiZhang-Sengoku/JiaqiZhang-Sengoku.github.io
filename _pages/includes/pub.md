@@ -114,7 +114,7 @@
   <div class="paper-box-image">
     <div>
       <div class="badge badge--accepted">ACM MM 2026</div>
-      <img loading="lazy" decoding="async" src="Images/Publication/JMTR.webp" alt="Metric-aware test-time adaptation framework for cross-subject multimodal IED detection" width="960" height="493">
+      <img loading="lazy" decoding="async" src="Images/Publication/JMTR.webp" alt="Metric-aware test-time adaptation framework for cross-subject multimodal IED detection" width="960" height="489">
     </div>
   </div>
   <div class="paper-box-text">
