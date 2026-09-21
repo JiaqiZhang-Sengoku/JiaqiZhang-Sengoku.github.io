@@ -1176,6 +1176,15 @@ body > #main > .sidebar.sticky {
     font-weight: 400 !important;
 }
 
+#academic-services-title,
+.academic-services-panel .academic-service__type,
+.academic-services-panel .academic-service__type strong,
+.academic-services-panel .academic-service p,
+.academic-services-panel .academic-service__acronym,
+.academic-services-panel .academic-service__conference {
+    color: #000 !important;
+}
+
 @media (max-width: 680px) {
     .academic-service {
         grid-template-columns: 1fr;
