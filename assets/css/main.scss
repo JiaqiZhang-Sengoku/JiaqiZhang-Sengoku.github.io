@@ -2487,22 +2487,22 @@ body > #main > .sidebar.sticky {
 }
 
 .badge--accepted {
-    --ribbon-wrap: 7px;
-    --ribbon-body-height: 28px;
-    --ribbon-midpoint: 14px;
-    --ribbon-tip: 8px;
-    --ribbon-fold: 8px;
-    top: 7px !important;
+    --ribbon-wrap: 5px;
+    --ribbon-body-height: 24px;
+    --ribbon-midpoint: 12px;
+    --ribbon-tip: 7px;
+    --ribbon-fold: 5px;
+    top: 8px !important;
     right: auto;
     left: calc(-1 * var(--ribbon-wrap)) !important;
     box-sizing: border-box;
     height: calc(var(--ribbon-body-height) + var(--ribbon-fold));
     min-height: calc(var(--ribbon-body-height) + var(--ribbon-fold));
-    padding: 0 calc(var(--ribbon-tip) + 12px) var(--ribbon-fold) 13px !important;
+    padding: 0 calc(var(--ribbon-tip) + 9px) var(--ribbon-fold) 10px !important;
     overflow: hidden;
     border: 0 !important;
     border-radius: 0 !important;
-    background: linear-gradient(180deg, #386b4c 0%, #2e5b3e 55%, #294f37 100%) !important;
+    background: linear-gradient(180deg, #376b4d 0%, #2e5b3e 100%) !important;
     color: #ffffff !important;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.17) !important;
     backdrop-filter: none;
@@ -2515,15 +2515,15 @@ body > #main > .sidebar.sticky {
         var(--ribbon-wrap) 100%,
         0 var(--ribbon-body-height)
     );
-    filter: drop-shadow(0 2px 3px rgba(25, 61, 40, 0.22));
-    font-size: 0.86rem !important;
+    filter: drop-shadow(0 1px 2px rgba(25, 61, 40, 0.20));
+    font-size: 0.76rem !important;
     font-weight: 700;
-    text-shadow: 0 1px 1px rgba(17, 44, 28, 0.18);
+    text-shadow: none;
     opacity: 0.98;
 }
 
 .paper-box--leader-demo .leader-publication-demo__flow {
-    padding-top: 38px;
+    padding-top: 31px;
 }
 
 .badge-oral {
@@ -2553,9 +2553,9 @@ body > #main > .sidebar.sticky {
 }
 
 .badge--accepted.badge--preprint {
-    background: linear-gradient(180deg, #6d5284 0%, var(--preprint-purple) 55%, #4b305f 100%) !important;
-    filter: drop-shadow(0 2px 3px rgba(58, 36, 76, 0.24));
-    text-shadow: 0 1px 1px rgba(43, 26, 57, 0.22);
+    background: linear-gradient(180deg, #684e7d 0%, var(--preprint-purple) 100%) !important;
+    filter: drop-shadow(0 1px 2px rgba(58, 36, 76, 0.22));
+    text-shadow: none;
 }
 
 .badge--accepted.badge--preprint::after {
@@ -3733,22 +3733,22 @@ body > #main > .sidebar.sticky {
     }
 
     .badge--accepted {
-        --ribbon-wrap: 6px;
-        --ribbon-body-height: 25px;
-        --ribbon-midpoint: 12.5px;
-        --ribbon-tip: 7px;
-        --ribbon-fold: 7px;
-        top: 6px !important;
+        --ribbon-wrap: 5px;
+        --ribbon-body-height: 22px;
+        --ribbon-midpoint: 11px;
+        --ribbon-tip: 6px;
+        --ribbon-fold: 5px;
+        top: 7px !important;
         right: auto;
         left: calc(-1 * var(--ribbon-wrap)) !important;
         height: calc(var(--ribbon-body-height) + var(--ribbon-fold));
         min-height: calc(var(--ribbon-body-height) + var(--ribbon-fold));
-        padding: 0 calc(var(--ribbon-tip) + 10px) var(--ribbon-fold) 11px !important;
-        font-size: 0.78rem !important;
+        padding: 0 calc(var(--ribbon-tip) + 8px) var(--ribbon-fold) 9px !important;
+        font-size: 0.70rem !important;
     }
 
     .paper-box--leader-demo .leader-publication-demo__flow {
-        padding-top: 35px;
+        padding-top: 28px;
     }
 
     .badge--accepted::before {
