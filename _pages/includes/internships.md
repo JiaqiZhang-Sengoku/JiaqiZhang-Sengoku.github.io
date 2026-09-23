@@ -16,7 +16,7 @@
           <h3>Southern University of Science and Technology <span>(SUSTech)</span></h3>
           <p class="internship-role">Research Assistant</p>
         </div>
-        <span class="internship-date">Jun. 2026 - Aug. 2026</span>
+        <span class="internship-date">Jun. 2026 - Now</span>
       </div>
       <p class="internship-mentor"><span>Advisor</span><strong>Mingkai Zheng</strong></p>
       <div class="internship-projects">
