@@ -1652,15 +1652,21 @@ body > #main > .sidebar.sticky {
 
 .internship-project summary .internship-project__title {
     min-width: 0;
-    color: inherit;
+    color: #000;
     font-size: inherit;
     font-weight: inherit;
 }
 
 .internship-project summary .internship-project__venue {
-    color: var(--accent-strong);
+    color: #000;
     font-size: 0.88em;
     font-weight: 700;
+}
+
+.internship-project summary .internship-project__full-title {
+    color: #44545b;
+    font-size: 0.84em;
+    font-weight: 500;
 }
 
 .internship-project p {
