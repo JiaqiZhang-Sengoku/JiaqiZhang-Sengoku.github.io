@@ -59,13 +59,13 @@
 <div class="paper-box">
   <div class="paper-box-image">
     <div>
-      <div class="badge badge--accepted">BSPC 2026</div>
+      <div class="badge badge--accepted">BSPC 2027</div>
       <img loading="lazy" decoding="async" src="Images/Publication/DDGF.webp?v=20260921-hq2" alt="Overview of the DDGF medical image super-resolution framework" width="1842" height="895">
     </div>
   </div>
   <div class="paper-box-text">
     <div class="paper-title">Zero-Shot Medical Image Super-Resolution Using Denoising Diffusion Models with Gradient-Frequency Priors</div>
-    <div class="paper-venue paper-venue--accepted">Biomedical Signal Processing and Control (BSPC 2026)</div>
+    <div class="paper-venue paper-venue--accepted">Biomedical Signal Processing and Control (BSPC 2027)</div>
     <div class="paper-authors"><span class="paper-author"><strong>Jiaqi Zhang</strong></span>, <span class="paper-author">Guo Yang</span>, <span class="paper-author">Rongrong Gao</span>, <span class="paper-author">Yang Yang<sup>&dagger;</sup></span></div>
     <div class="paper-links"><a class="paper-link paper-link--paper" href="https://www.sciencedirect.com/science/article/pii/S1746809426018975?via%3Dihub" title="Read the paper on ScienceDirect"><i class="fas fa-file-alt paper-link__icon" aria-hidden="true"></i><span>Paper</span></a><a class="paper-link paper-link--code" href="https://github.com/JiaqiZhang-Sengoku/DDGF" title="View code on GitHub"><i class="fab fa-github paper-link__icon" aria-hidden="true"></i><span>Code</span></a></div>
   </div>
