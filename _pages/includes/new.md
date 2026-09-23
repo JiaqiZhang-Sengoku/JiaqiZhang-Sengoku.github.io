@@ -47,7 +47,7 @@
   <div class="update-card">
     <h3 class="update-date">February 2026</h3>
     <ul class="update-list">
-      <li><span class="update-item-layout"><span class="update-day">Feb. 5:</span><span class="update-message">We have 1 paper (Parameterized Image Restoration) accepted to <span class="highlight-journal">Knowledge-Based Systems (KBS 2026 IF = 7.6).</span></span></span></li>
+      <li><span class="update-item-layout"><span class="update-day">Feb. 05:</span><span class="update-message">We have 1 paper (Parameterized Image Restoration) accepted to <span class="highlight-journal">Knowledge-Based Systems (KBS 2026 IF = 7.6).</span></span></span></li>
     </ul>
   </div>
 </div>
