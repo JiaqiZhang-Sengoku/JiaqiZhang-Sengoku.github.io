@@ -500,7 +500,7 @@ body > #main > .sidebar.sticky {
 .sidebar .author__urls {
     display: grid !important;
     justify-items: center !important;
-    gap: 9px;
+    gap: 3px;
     position: static !important;
     z-index: auto !important;
     width: 100% !important;
@@ -518,19 +518,18 @@ body > #main > .sidebar.sticky {
 
 .sidebar .author__urls li {
     position: relative;
-    overflow: hidden;
     display: flex !important;
     align-items: center !important;
     justify-content: flex-start !important;
     gap: 11px !important;
     width: min(254px, 100%);
-    min-height: 39px;
+    min-height: 38px;
     margin: 0 !important;
-    padding: 0 14px !important;
-    border: 1px solid rgba(220, 231, 241, 0.92);
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.82);
-    box-shadow: var(--row-shadow);
+    padding: 0 10px !important;
+    border: 0;
+    border-radius: 4px;
+    background: transparent;
+    box-shadow: none;
     color: var(--heading-color) !important;
     font-size: 0.90rem !important;
     font-weight: 700 !important;
@@ -538,29 +537,15 @@ body > #main > .sidebar.sticky {
     text-align: left !important;
     white-space: normal !important;
     box-sizing: border-box;
-    transition: border-color 0.18s ease, background 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+    transition: background 0.18s ease;
 }
 
 .sidebar .author__urls li::before {
-    content: "";
-    position: absolute;
-    inset: 9px auto 9px 0;
-    width: 3px;
-    border-radius: 999px;
-    background: linear-gradient(180deg, var(--accent-sky), var(--accent-plum));
-    opacity: 0;
-    transition: opacity 0.18s ease;
+    content: none;
 }
 
 .sidebar .author__urls li:hover {
-    border-color: rgba(82, 116, 208, 0.28);
-    background: rgba(248, 251, 255, 0.96);
-    box-shadow: var(--row-shadow-hover);
-    transform: translateY(-1px);
-}
-
-.sidebar .author__urls li:hover::before {
-    opacity: 1;
+    background: rgba(225, 240, 242, 0.48);
 }
 
 .sidebar .author__urls li > div {
