@@ -12,6 +12,9 @@ main:
   # - title: "Projects"
   #   url: "/#projects"
 
+  - title: "Academic Services"
+    url: "/#academic-services"
+
   - title: "Internships"
     url: "/#internships"
 
