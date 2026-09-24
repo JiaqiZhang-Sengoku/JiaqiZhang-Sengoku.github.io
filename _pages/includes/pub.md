@@ -71,6 +71,23 @@
   </div>
 </div>
 
+<div class="paper-box">
+  <div class="paper-box-image">
+    <div class="paper-image-frame--crisp paper-image-frame--pdf">
+      <div class="badge badge--accepted">ACM MM 2026</div>
+      <img class="paper-image--crisp paper-pdf-fallback" loading="lazy" decoding="async" src="Images/Publication/JMTR.webp?v=20260921-hq2" alt="Metric-aware test-time adaptation framework for cross-subject multimodal IED detection" width="2317" height="1181">
+      <canvas class="paper-pdf-preview" data-pdf-src="/Images/Publication/JMTR.pdf?v=20260921-vector" width="2574" height="1311" aria-label="Metric-aware test-time adaptation framework for cross-subject multimodal IED detection"></canvas>
+    </div>
+  </div>
+  <div class="paper-box-text">
+    <div class="paper-title">Metric-Aware Test-Time Adaptation for Cross-Subject Multimodal Epileptiform-Discharge Detection</div>
+    <div class="paper-venue paper-venue--accepted">ACM International Conference on Multimedia (ACM MM 2026)</div>
+    <div class="paper-authors"><span class="paper-author">Yuting Yan</span>, <span class="paper-author"><strong>Jiaqi Zhang</strong></span>, <span class="paper-author">Ziliang Wang<sup>&dagger;</sup></span></div>
+  </div>
+</div>
+
+<script type="module" src="/assets/js/publication-pdf-preview.js?v=20260921-vector"></script>
+
 <div class="paper-box paper-box--leader-demo">
   <div class="paper-box-image paper-box-image--leader-demo">
     <div class="leader-publication-demo is-cycle-reset" data-leader-publication-demo data-demo-index="1" aria-label="Five rotating restoration comparisons for LEADer" aria-busy="false">
@@ -109,23 +126,6 @@
 </div>
 
 <script src="/assets/js/leader-publication-demo.js?v=20260826-timeline" defer></script>
-
-<div class="paper-box">
-  <div class="paper-box-image">
-    <div class="paper-image-frame--crisp paper-image-frame--pdf">
-      <div class="badge badge--accepted">ACM MM 2026</div>
-      <img class="paper-image--crisp paper-pdf-fallback" loading="lazy" decoding="async" src="Images/Publication/JMTR.webp?v=20260921-hq2" alt="Metric-aware test-time adaptation framework for cross-subject multimodal IED detection" width="2317" height="1181">
-      <canvas class="paper-pdf-preview" data-pdf-src="/Images/Publication/JMTR.pdf?v=20260921-vector" width="2574" height="1311" aria-label="Metric-aware test-time adaptation framework for cross-subject multimodal IED detection"></canvas>
-    </div>
-  </div>
-  <div class="paper-box-text">
-    <div class="paper-title">Metric-Aware Test-Time Adaptation for Cross-Subject Multimodal Epileptiform-Discharge Detection</div>
-    <div class="paper-venue paper-venue--accepted">ACM International Conference on Multimedia (ACM MM 2026)</div>
-    <div class="paper-authors"><span class="paper-author">Yuting Yan</span>, <span class="paper-author"><strong>Jiaqi Zhang</strong></span>, <span class="paper-author">Ziliang Wang<sup>&dagger;</sup></span></div>
-  </div>
-</div>
-
-<script type="module" src="/assets/js/publication-pdf-preview.js?v=20260921-vector"></script>
 
 {% comment %}
 Temporarily hidden: non-ACM-MM publications.
