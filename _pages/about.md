@@ -57,14 +57,14 @@ redirect_from:
     <aside class="visitor-traffic" data-visitor-chart aria-label="Cumulative website traffic">
       <div class="visitor-chart">
         <div class="visitor-chart__bars">
-          <div class="visitor-bar visitor-bar--views" data-visitor-bar>
+          <div class="visitor-bar" data-visitor-bar>
             <span class="visitor-bar__track">
               <span class="visitor-bar__fill visitor-bar__fill--views" aria-hidden="true"></span>
               <strong class="visitor-bar__value" id="busuanzi_value_site_pv" data-visitor-value aria-live="polite">--</strong>
             </span>
             <span class="visitor-bar__label">Views</span>
           </div>
-          <div class="visitor-bar visitor-bar--visitors" data-visitor-bar>
+          <div class="visitor-bar" data-visitor-bar>
             <span class="visitor-bar__track">
               <span class="visitor-bar__fill visitor-bar__fill--visitors" aria-hidden="true"></span>
               <strong class="visitor-bar__value" id="busuanzi_value_site_uv" data-visitor-value aria-live="polite">--</strong>

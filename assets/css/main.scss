@@ -3057,8 +3057,10 @@ body > #main > .sidebar.sticky {
 
 .visitor-traffic {
     position: relative;
+    display: flex;
+    align-items: center;
     border-left: 1px solid rgba(202, 216, 222, 0.74);
-    background: linear-gradient(180deg, rgba(251, 253, 253, 0.96) 0%, rgba(243, 249, 247, 0.92) 100%);
+    background: #fff;
 }
 
 .visitor-map-embed {
@@ -3179,7 +3181,9 @@ body > #main > .sidebar.sticky {
 
 .visitor-chart {
     position: relative;
+    width: 100%;
     height: var(--visitor-map-height);
+    max-height: 320px;
     min-height: 160px;
     overflow: hidden;
     border: 0;
@@ -3191,18 +3195,11 @@ body > #main > .sidebar.sticky {
 .visitor-chart::before {
     content: "";
     position: absolute;
-    top: 54px;
     right: 18px;
     bottom: 45px;
     left: 18px;
-    border-bottom: 1px solid rgba(89, 126, 139, 0.32);
-    background: repeating-linear-gradient(
-        to top,
-        rgba(112, 148, 158, 0.14) 0,
-        rgba(112, 148, 158, 0.14) 1px,
-        transparent 1px,
-        transparent 25%
-    );
+    height: 1px;
+    background: #9aaab0;
     pointer-events: none;
 }
 
@@ -3246,106 +3243,48 @@ body > #main > .sidebar.sticky {
     height: 100%;
 }
 
-.visitor-bar__track::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 42px;
-    height: 100%;
-    border: 1px solid rgba(79, 120, 135, 0.10);
-    border-radius: 7px 7px 0 0;
-    background: rgba(224, 237, 239, 0.24);
-    transform: translateX(-50%);
-}
-
 .visitor-bar__fill {
     position: relative;
-    width: 42px;
+    width: 44px;
     height: var(--visitor-bar-height);
     min-height: 7px;
-    border-radius: 7px 7px 0 0;
-    box-shadow: inset 1px 0 rgba(255, 255, 255, 0.20), 0 7px 14px rgba(42, 82, 91, 0.12);
-    transition: height 0.65s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.visitor-bar__fill::after {
-    content: "";
-    position: absolute;
-    top: 5px;
-    right: 6px;
-    left: 6px;
-    height: 2px;
-    border-radius: 2px;
-    background: rgba(255, 255, 255, 0.50);
+    border-radius: 2px 2px 0 0;
 }
 
 .visitor-bar__fill--views {
-    background: linear-gradient(180deg, #679ab3 0%, #326b88 100%);
+    background: #2b7197;
 }
 
 .visitor-bar__fill--visitors {
-    background: linear-gradient(180deg, #6da890 0%, #33755b 100%);
+    background: #287a55;
 }
 
 .visitor-bar__value {
     position: absolute;
-    bottom: calc(var(--visitor-bar-height) + 9px);
+    bottom: calc(var(--visitor-bar-height) + 6px);
     left: 50%;
-    min-width: 60px;
-    padding: 3px 5px;
-    border: 1px solid rgba(195, 214, 220, 0.82);
-    border-radius: 4px;
-    background: rgba(255, 255, 255, 0.94);
-    box-shadow: 0 2px 8px rgba(43, 84, 98, 0.08);
-    color: #1d3540 !important;
+    color: #000 !important;
     font-size: 1.12rem !important;
     font-variant-numeric: tabular-nums;
     font-weight: 700;
     letter-spacing: 0 !important;
-    line-height: 1.08;
+    line-height: 1;
     text-align: center;
     white-space: nowrap;
-    opacity: 0.55;
     transform: translateX(-50%);
-    transition: bottom 0.65s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.2s ease;
-}
-
-.visitor-chart.is-ready .visitor-bar__value {
-    opacity: 1;
 }
 
 .visitor-bar__label {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    gap: 6px;
     align-self: stretch;
-    color: #2b424b;
-    font-size: 0.82rem !important;
+    color: #000 !important;
+    font-size: 0.86rem !important;
     font-weight: 700;
     letter-spacing: 0 !important;
     line-height: 1;
     text-transform: none;
-}
-
-.visitor-bar__label::before {
-    content: "";
-    flex: 0 0 5px;
-    width: 5px;
-    height: 5px;
-    margin-bottom: 2px;
-    border-radius: 2px;
-    background: #326b88;
-}
-
-.visitor-bar--visitors .visitor-bar__label::before {
-    background: #33755b;
-}
-
-.visitor-chart.is-unavailable .visitor-bar__value {
-    color: var(--muted-color);
-    opacity: 1;
 }
 
 @media screen and (max-width: 860px) {
@@ -3366,10 +3305,6 @@ body > #main > .sidebar.sticky {
     .visitor-chart__bars {
         gap: 52px;
         padding-top: 48px;
-    }
-
-    .visitor-chart::before {
-        top: 48px;
     }
 }
 
@@ -3444,8 +3379,6 @@ body > #main > .sidebar.sticky {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .visitor-bar__fill,
-    .visitor-bar__value,
     .visitor-map-fallback,
     .visitor-map-frame,
     .visitor-map-controls {
