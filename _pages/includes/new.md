@@ -7,6 +7,7 @@
   <div class="update-card">
     <h3 class="update-date">September 2026</h3>
     <ul class="update-list">
+      <li><span class="update-item-layout"><span class="update-day">Sep. 27:</span><span class="update-message">We have 1 paper (Incomplete Multimodal Medical Diagnosis) accepted to <span class="highlight-journal">Pattern Recognition (PR 2026 IF = 9.1).</span></span></span></li>
       <li><span class="update-item-layout"><span class="update-day">Sep. 20:</span><span class="update-message">We have 1 paper (Survey of LLM Agent) accepted to <span class="highlight-journal">Transactions on Machine Learning Research (TMLR 2026).</span></span></span></li>
     </ul>
   </div>
