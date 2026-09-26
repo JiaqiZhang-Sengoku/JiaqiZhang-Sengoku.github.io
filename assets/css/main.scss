@@ -609,34 +609,61 @@ body > #main > .sidebar.sticky {
 }
 
 .sidebar .author__urls .author__contact-icon {
-    display: inline-block;
-    flex: 0 0 25px;
-    width: 25px;
-    height: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 28px;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    line-height: 1;
+    transition: transform 0.18s ease, filter 0.18s ease;
+}
+
+.sidebar .author__urls .author__contact-icon::before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
     background-color: #243c43;
     -webkit-mask-position: center;
     mask-position: center;
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
-    -webkit-mask-size: 22px 22px;
-    mask-size: 22px 22px;
-    transition: background-color 0.18s ease;
+    -webkit-mask-size: contain;
+    mask-size: contain;
 }
 
 .sidebar .author__urls li:hover .author__contact-icon,
 .sidebar .author__urls li:focus-within .author__contact-icon {
-    background-color: #2e5b3e;
+    transform: translateY(-1px);
+    filter: saturate(1.14);
 }
 
-.author__contact-icon--location { -webkit-mask-image: url("../icons/profile/location.svg"); mask-image: url("../icons/profile/location.svg"); }
-.author__contact-icon--email { -webkit-mask-image: url("../icons/profile/email.svg"); mask-image: url("../icons/profile/email.svg"); }
-.author__contact-icon--github { -webkit-mask-image: url("../icons/profile/github.svg"); mask-image: url("../icons/profile/github.svg"); }
-.author__contact-icon--huggingface { -webkit-mask-image: url("../icons/profile/huggingface.svg"); mask-image: url("../icons/profile/huggingface.svg"); }
-.author__contact-icon--linkedin { -webkit-mask-image: url("../icons/profile/linkedin.svg"); mask-image: url("../icons/profile/linkedin.svg"); }
-.author__contact-icon--scholar { -webkit-mask-image: url("../icons/profile/scholar.svg"); mask-image: url("../icons/profile/scholar.svg"); }
-.author__contact-icon--wechat { -webkit-mask-image: url("../icons/profile/wechat.svg"); mask-image: url("../icons/profile/wechat.svg"); }
-.author__contact-icon--rednote { -webkit-mask-image: url("../icons/profile/rednote.svg"); mask-image: url("../icons/profile/rednote.svg"); }
-.author__contact-icon--orcid { -webkit-mask-image: url("../icons/profile/orcid.svg"); mask-image: url("../icons/profile/orcid.svg"); }
+.sidebar .author__urls .author__contact-icon--location { background-color: #e8f3f6; }
+.sidebar .author__urls .author__contact-icon--location::before { background-color: #28748a; -webkit-mask-image: url("../icons/profile/location.svg"); mask-image: url("../icons/profile/location.svg"); }
+.sidebar .author__urls .author__contact-icon--email { background-color: #fbf0e9; }
+.sidebar .author__urls .author__contact-icon--email::before { background-color: #be7041; -webkit-mask-image: url("../icons/profile/email.svg"); mask-image: url("../icons/profile/email.svg"); }
+.sidebar .author__urls .author__contact-icon--github { background-color: #eef0f1; }
+.sidebar .author__urls .author__contact-icon--github::before { background-color: #24292f; -webkit-mask-image: url("../icons/profile/github.svg"); mask-image: url("../icons/profile/github.svg"); }
+.sidebar .author__urls .author__contact-icon--huggingface { background-color: #fff4da; font-family: "Segoe UI Emoji", "Apple Color Emoji", sans-serif; font-size: 22px; }
+.sidebar .author__urls .author__contact-icon--huggingface::before { content: none; }
+.sidebar .author__urls .author__contact-icon--linkedin { background-color: #e9f2fc; }
+.sidebar .author__urls .author__contact-icon--linkedin::before { background-color: #0a66c2; -webkit-mask-image: url("../icons/profile/linkedin.svg"); mask-image: url("../icons/profile/linkedin.svg"); }
+.sidebar .author__urls .author__contact-icon--scholar { background-color: #ecf1fb; }
+.sidebar .author__urls .author__contact-icon--scholar::before { background-color: #4568b0; -webkit-mask-image: url("../icons/profile/scholar.svg"); mask-image: url("../icons/profile/scholar.svg"); }
+.sidebar .author__urls .author__contact-icon--wechat { background-color: #e9f6ee; }
+.sidebar .author__urls .author__contact-icon--wechat::before { background-color: #168b56; -webkit-mask-image: url("../icons/profile/wechat.svg"); mask-image: url("../icons/profile/wechat.svg"); }
+.sidebar .author__urls .author__contact-icon--rednote { background-color: #fff0f0; }
+.sidebar .author__urls .author__contact-icon--rednote::before { background: url("../icons/profile/rednote.webp") center / cover no-repeat; border-radius: 4px; }
+.sidebar .author__urls .author__contact-icon--orcid { background-color: #f0f5df; }
+.sidebar .author__urls .author__contact-icon--orcid::before { background-color: #a6ce39; -webkit-mask-image: url("../icons/profile/orcid.svg"); mask-image: url("../icons/profile/orcid.svg"); }
+
+@media (prefers-reduced-motion: reduce) {
+    .sidebar .author__urls .author__contact-icon { transition: none; }
+    .sidebar .author__urls li:hover .author__contact-icon,
+    .sidebar .author__urls li:focus-within .author__contact-icon { transform: none; }
+}
 
 .sidebar .author__urls a:hover,
 .sidebar .author__urls button:hover {
