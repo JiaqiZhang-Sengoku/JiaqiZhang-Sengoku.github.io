@@ -2510,7 +2510,7 @@ body > #main > .sidebar.sticky {
     height: auto;
     min-height: 33px;
     gap: 7px;
-    padding: 4px 2px !important;
+    padding: 2px 2px !important;
     box-sizing: border-box;
     border: 0 !important;
     border-radius: 4px !important;
@@ -2534,45 +2534,31 @@ body > #main > .sidebar.sticky {
 
 .paper-links .paper-link__icon,
 .other-paper-links .paper-link__icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex: 0 0 25px;
-    width: 25px;
-    height: 25px;
-    border-radius: 7px;
-    font-size: 1rem !important;
-    line-height: 1 !important;
-    opacity: 1;
+    display: block;
+    flex: 0 0 29px;
+    width: 29px;
+    height: 29px;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 0 !important;
+    line-height: 0 !important;
 }
 
-.paper-links .paper-link__icon.fas,
-.other-paper-links .paper-link__icon.fas {
-    font-family: "Font Awesome 5 Free" !important;
-    font-weight: 900 !important;
-}
-
-.paper-links .paper-link__icon.fab,
-.other-paper-links .paper-link__icon.fab {
-    font-family: "Font Awesome 5 Brands" !important;
-    font-weight: 400 !important;
-}
-
-.paper-links .paper-link__icon--huggingface {
-    font-family: "Segoe UI Emoji", "Apple Color Emoji", sans-serif;
-    font-size: 1.10rem !important;
-}
+.paper-links .paper-link__icon::before,
+.other-paper-links .paper-link__icon::before { content: none !important; }
 
 .paper-links .paper-link--paper .paper-link__icon,
-.other-paper-links .paper-link--paper .paper-link__icon { background: #faecea; }
+.other-paper-links .paper-link--paper .paper-link__icon { background-image: url("../icons/publication/paper.webp"); }
 .paper-links .paper-link--web .paper-link__icon,
-.other-paper-links .paper-link--web .paper-link__icon { background: #eaf1ff; }
+.other-paper-links .paper-link--web .paper-link__icon { background-image: url("../icons/publication/web.webp"); }
 .paper-links .paper-link--code .paper-link__icon,
-.other-paper-links .paper-link--code .paper-link__icon { background: #e7f5ef; }
+.other-paper-links .paper-link--code .paper-link__icon { background-image: url("../icons/publication/code.webp"); }
 .paper-links .paper-link--github .paper-link__icon,
-.other-paper-links .paper-link--github .paper-link__icon { background: #f2eaf7; }
+.other-paper-links .paper-link--github .paper-link__icon { background-image: url("../icons/publication/github.webp"); }
 .paper-links .paper-link--huggingface .paper-link__icon,
-.other-paper-links .paper-link--huggingface .paper-link__icon { background: #fff4da; }
+.other-paper-links .paper-link--huggingface .paper-link__icon { background-image: url("../icons/publication/huggingface.webp"); }
 
 .paper-box-text .paper-links .paper-link--paper,
 .other-paper-links .paper-link--paper {
