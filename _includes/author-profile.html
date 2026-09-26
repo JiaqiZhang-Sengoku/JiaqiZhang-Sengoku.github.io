@@ -21,7 +21,7 @@
         <li><div style="white-space: normal; margin-bottom: 1em;">{{ site_description }}</div></li>
       {% endif %}
       {% if author.location %}
-        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i><span class="author__urls-label">{{ author.location }}</span></li>
+        <li><span class="author__contact-icon author__contact-icon--location" aria-hidden="true"></span><span class="author__urls-label">{{ author.location }}</span></li>
       {% endif %}
       {% if author.employer %}
         <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i><span class="author__urls-label">{{ author.employer }}</span></li>
@@ -30,9 +30,9 @@
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Website</a></li>
       {% endif %}
       {% if author.emails %}
-        <li><button class="author__email-link" type="button" data-email-open aria-haspopup="dialog" aria-controls="email-modal"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</button></li>
+        <li><button class="author__email-link" type="button" data-email-open aria-haspopup="dialog" aria-controls="email-modal"><span class="author__contact-icon author__contact-icon--email" aria-hidden="true"></span> Email</button></li>
       {% elsif author.email %}
-        <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>
+        <li><a href="mailto:{{ author.email }}"><span class="author__contact-icon author__contact-icon--email" aria-hidden="true"></span> Email</a></li>
       {% endif %}
       {% if author.keybase %}
         <li><a href="https://keybase.io/{{ author.keybase }}"><i class="fas fa-fw fa-key" aria-hidden="true"></i> Keybase</a></li>
@@ -65,13 +65,13 @@
         <li><a href="https://bitbucket.org/{{ author.bitbucket }}"><i class="fab fa-fw fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
       {% endif %}
       {% if author.github %}
-        <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+        <li><a href="https://github.com/{{ author.github }}"><span class="author__contact-icon author__contact-icon--github" aria-hidden="true"></span> Github</a></li>
       {% endif %}
       {% if author.huggingface %}
-        <li><a href="{{ author.huggingface }}"><span class="author__brand-icon author__brand-icon--huggingface" aria-hidden="true">🤗</span> Hugging Face</a></li>
+        <li><a href="{{ author.huggingface }}"><span class="author__contact-icon author__contact-icon--huggingface" aria-hidden="true"></span> Hugging Face</a></li>
       {% endif %}
       {% if author.linkedin %}
-        <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}/"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}/"><span class="author__contact-icon author__contact-icon--linkedin" aria-hidden="true"></span> LinkedIn</a></li>
       {% endif %}
       {% if author.stackoverflow %}
         <li><a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}"><i class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow</a></li>
@@ -110,19 +110,19 @@
         <li><a href="https://vine.co/u/{{ author.vine }}"><i class="fab fa-fw fa-vine" aria-hidden="true"></i> Vine</a></li>
       {% endif %}
       {% if author.googlescholar %}
-        <li><a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+        <li><a href="{{ author.googlescholar }}"><span class="author__contact-icon author__contact-icon--scholar" aria-hidden="true"></span> Google Scholar</a></li>
       {% endif %}
       {% if author.wechat or author.wechat_qr %}
-        <li><button class="author__wechat-link" type="button" data-wechat-open><i class="fab fa-fw fa-weixin" aria-hidden="true"></i> WeChat</button></li>
+        <li><button class="author__wechat-link" type="button" data-wechat-open><span class="author__contact-icon author__contact-icon--wechat" aria-hidden="true"></span> WeChat</button></li>
       {% endif %}
       {% if author.rednote %}
-        <li><a href="{{ author.rednote }}"><i class="fas fa-fw fa-book-open" aria-hidden="true"></i> RedNote</a></li>
+        <li><a href="{{ author.rednote }}"><span class="author__contact-icon author__contact-icon--rednote" aria-hidden="true"></span> RedNote</a></li>
       {% endif %}
       {% if author.pubmed %}
         <li><a href="{{ author.pubmed }}"><i class="ai ai-pubmed-square ai-fw"></i> PubMed</a></li>
       {% endif %}
       {% if author.orcid %}
-        <li><a href="{{ author.orcid }}"><i class="ai ai-orcid ai-fw" aria-hidden="true"></i> ORCID</a></li>
+        <li><a href="{{ author.orcid }}"><span class="author__contact-icon author__contact-icon--orcid" aria-hidden="true"></span> ORCID</a></li>
       {% endif %}
       {% if author.impactstory %}
         <li><a href="{{ author.impactstory }}"><i class="ai ai-impactstory ai-fw"></i> Impactstory</a></li>

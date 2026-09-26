@@ -608,19 +608,37 @@ body > #main > .sidebar.sticky {
     text-align: center;
 }
 
-.sidebar .author__urls .fa-map-marker { color: #263b43 !important; }
-.sidebar .author__urls .fa-envelope { color: #526d70 !important; }
-.sidebar .author__urls .fa-github { color: #24292f !important; }
-.sidebar .author__urls .fa-linkedin { color: #17699b !important; }
-.sidebar .author__urls .fa-graduation-cap { color: #385a6c !important; }
-.sidebar .author__urls .fa-weixin { color: #287b65 !important; }
-.sidebar .author__urls .fa-book-open { color: #b44c58 !important; }
-.sidebar .author__urls .ai-orcid { color: #6a922d !important; }
-
-.sidebar .author__urls .author__brand-icon--huggingface {
-    font-family: "Segoe UI Emoji", "Apple Color Emoji", sans-serif;
-    font-size: 18px;
+.sidebar .author__urls .author__contact-icon {
+    display: inline-block;
+    flex: 0 0 25px;
+    width: 25px;
+    height: 25px;
+    background-color: #243c43;
+    -webkit-mask-image: var(--profile-icon);
+    mask-image: var(--profile-icon);
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 22px 22px;
+    mask-size: 22px 22px;
+    transition: background-color 0.18s ease;
 }
+
+.sidebar .author__urls li:hover .author__contact-icon,
+.sidebar .author__urls li:focus-within .author__contact-icon {
+    background-color: #2e5b3e;
+}
+
+.author__contact-icon--location { --profile-icon: url("../icons/profile/location.svg"); }
+.author__contact-icon--email { --profile-icon: url("../icons/profile/email.svg"); }
+.author__contact-icon--github { --profile-icon: url("../icons/profile/github.svg"); }
+.author__contact-icon--huggingface { --profile-icon: url("../icons/profile/huggingface.svg"); }
+.author__contact-icon--linkedin { --profile-icon: url("../icons/profile/linkedin.svg"); }
+.author__contact-icon--scholar { --profile-icon: url("../icons/profile/scholar.svg"); }
+.author__contact-icon--wechat { --profile-icon: url("../icons/profile/wechat.svg"); }
+.author__contact-icon--rednote { --profile-icon: url("../icons/profile/rednote.svg"); }
+.author__contact-icon--orcid { --profile-icon: url("../icons/profile/orcid.svg"); }
 
 .sidebar .author__urls a:hover,
 .sidebar .author__urls button:hover {
