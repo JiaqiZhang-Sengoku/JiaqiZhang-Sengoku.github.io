@@ -2535,9 +2535,9 @@ body > #main > .sidebar.sticky {
 .paper-links .paper-link__icon,
 .other-paper-links .paper-link__icon {
     display: block;
-    flex: 0 0 29px;
-    width: 29px;
-    height: 29px;
+    flex: 0 0 24px;
+    width: 24px;
+    height: 24px;
     background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
@@ -2554,9 +2554,19 @@ body > #main > .sidebar.sticky {
 .paper-links .paper-link--web .paper-link__icon,
 .other-paper-links .paper-link--web .paper-link__icon { background-image: url("../icons/publication/web.webp"); }
 .paper-links .paper-link--code .paper-link__icon,
-.other-paper-links .paper-link--code .paper-link__icon { background-image: url("../icons/publication/code.webp"); }
+.other-paper-links .paper-link--code .paper-link__icon,
 .paper-links .paper-link--github .paper-link__icon,
-.other-paper-links .paper-link--github .paper-link__icon { background-image: url("../icons/publication/github.webp"); }
+.other-paper-links .paper-link--github .paper-link__icon {
+    background-color: #24292f;
+    -webkit-mask-image: url("../icons/profile/github.svg");
+    mask-image: url("../icons/profile/github.svg");
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: 20px 20px;
+    mask-size: 20px 20px;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
 .paper-links .paper-link--huggingface .paper-link__icon,
 .other-paper-links .paper-link--huggingface .paper-link__icon { background-image: url("../icons/publication/huggingface.webp"); }
 
