@@ -655,7 +655,7 @@ body > #main > .sidebar.sticky {
 .sidebar .author__urls .author__contact-icon--wechat { background-color: #e9f6ee; }
 .sidebar .author__urls .author__contact-icon--wechat::before { background-color: #168b56; -webkit-mask-image: url("../icons/profile/wechat.svg"); mask-image: url("../icons/profile/wechat.svg"); }
 .sidebar .author__urls .author__contact-icon--rednote { background-color: #fff0f0; }
-.sidebar .author__urls .author__contact-icon--rednote::before { background: url("../icons/profile/rednote.webp") center / cover no-repeat; border-radius: 4px; }
+.sidebar .author__urls .author__contact-icon--rednote::before { width: 23px; height: 23px; background: url("../icons/profile/rednote-book.svg") center / contain no-repeat; }
 .sidebar .author__urls .author__contact-icon--orcid { background-color: #f0f5df; }
 .sidebar .author__urls .author__contact-icon--orcid::before { background-color: #a6ce39; -webkit-mask-image: url("../icons/profile/orcid.svg"); mask-image: url("../icons/profile/orcid.svg"); }
 
@@ -2508,9 +2508,9 @@ body > #main > .sidebar.sticky {
     width: auto;
     min-width: 0;
     height: auto;
-    min-height: 30px;
-    gap: 6px;
-    padding: 4px 3px !important;
+    min-height: 33px;
+    gap: 7px;
+    padding: 4px 2px !important;
     box-sizing: border-box;
     border: 0 !important;
     border-radius: 4px !important;
@@ -2537,9 +2537,11 @@ body > #main > .sidebar.sticky {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    flex: 0 0 14px;
-    width: 14px;
-    font-size: 0.90rem !important;
+    flex: 0 0 25px;
+    width: 25px;
+    height: 25px;
+    border-radius: 7px;
+    font-size: 1rem !important;
     line-height: 1 !important;
     opacity: 1;
 }
@@ -2557,11 +2559,20 @@ body > #main > .sidebar.sticky {
 }
 
 .paper-links .paper-link__icon--huggingface {
-    flex-basis: 18px;
-    width: 18px;
     font-family: "Segoe UI Emoji", "Apple Color Emoji", sans-serif;
-    font-size: 1.05rem !important;
+    font-size: 1.10rem !important;
 }
+
+.paper-links .paper-link--paper .paper-link__icon,
+.other-paper-links .paper-link--paper .paper-link__icon { background: #faecea; }
+.paper-links .paper-link--web .paper-link__icon,
+.other-paper-links .paper-link--web .paper-link__icon { background: #eaf1ff; }
+.paper-links .paper-link--code .paper-link__icon,
+.other-paper-links .paper-link--code .paper-link__icon { background: #e7f5ef; }
+.paper-links .paper-link--github .paper-link__icon,
+.other-paper-links .paper-link--github .paper-link__icon { background: #f2eaf7; }
+.paper-links .paper-link--huggingface .paper-link__icon,
+.other-paper-links .paper-link--huggingface .paper-link__icon { background: #fff4da; }
 
 .paper-box-text .paper-links .paper-link--paper,
 .other-paper-links .paper-link--paper {
@@ -2594,30 +2605,30 @@ body > #main > .sidebar.sticky {
 
 .paper-box-text .paper-links .paper-link--paper:hover,
 .other-paper-links .paper-link--paper:hover {
-    background: rgba(198, 40, 40, 0.11) !important;
+    background: transparent !important;
     color: #8e1b1b !important;
 }
 
 .paper-box-text .paper-links .paper-link--web:hover,
 .other-paper-links .paper-link--web:hover {
-    background: rgba(36, 94, 216, 0.10) !important;
+    background: transparent !important;
     color: #1746ad !important;
 }
 
 .paper-box-text .paper-links .paper-link--code:hover,
 .other-paper-links .paper-link--code:hover {
-    background: rgba(0, 132, 93, 0.10) !important;
+    background: transparent !important;
     color: #006a49 !important;
 }
 
 .paper-box-text .paper-links .paper-link--github:hover,
 .other-paper-links .paper-link--github:hover {
-    background: rgba(123, 31, 162, 0.11) !important;
+    background: transparent !important;
     color: #58157a !important;
 }
 
 .paper-box-text .paper-links .paper-link--huggingface:hover {
-    background: rgba(165, 85, 0, 0.10) !important;
+    background: transparent !important;
     color: #834100 !important;
 }
 

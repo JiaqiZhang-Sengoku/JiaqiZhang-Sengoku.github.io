@@ -6,7 +6,10 @@ Profile icon sources
   The required license notice is in `LICENSE-TABLER.txt`.
 - `github.svg`, `scholar.svg`, `wechat.svg`, and `orcid.svg`:
   [Simple Icons](https://simpleicons.org), CC0 project license.
-- `rednote.webp`: scaled from the [RedNote App Store artwork](https://apps.apple.com/cn/app/id741292507).
+- `rednote-book.svg`: [Twemoji closed book](https://github.com/jdecked/twemoji/blob/main/assets/svg/1f4d5.svg),
+  renamed without modifying the artwork. The graphic is licensed under
+  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); its license text
+  is in `LICENSE-TWEMOJI.txt`.
 
 The Hugging Face entry uses its familiar emoji mark. Brand names and links
 remain unchanged.
