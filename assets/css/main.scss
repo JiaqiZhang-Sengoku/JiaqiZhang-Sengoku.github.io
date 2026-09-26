@@ -2513,6 +2513,13 @@ body > #main > .sidebar.sticky {
     font-weight: 400 !important;
 }
 
+.paper-links .paper-link__icon--huggingface {
+    flex-basis: 18px;
+    width: 18px;
+    font-family: "Segoe UI Emoji", "Apple Color Emoji", sans-serif;
+    font-size: 1.05rem !important;
+}
+
 .paper-box-text .paper-links .paper-link--paper,
 .other-paper-links .paper-link--paper {
     background: transparent !important;
@@ -2537,6 +2544,11 @@ body > #main > .sidebar.sticky {
     color: #7b1fa2 !important;
 }
 
+.paper-box-text .paper-links .paper-link--huggingface {
+    background: transparent !important;
+    color: #a55500 !important;
+}
+
 .paper-box-text .paper-links .paper-link--paper:hover,
 .other-paper-links .paper-link--paper:hover {
     background: rgba(198, 40, 40, 0.11) !important;
@@ -2559,6 +2571,11 @@ body > #main > .sidebar.sticky {
 .other-paper-links .paper-link--github:hover {
     background: rgba(123, 31, 162, 0.11) !important;
     color: #58157a !important;
+}
+
+.paper-box-text .paper-links .paper-link--huggingface:hover {
+    background: rgba(165, 85, 0, 0.10) !important;
+    color: #834100 !important;
 }
 
 .paper-box-text a:focus-visible {
