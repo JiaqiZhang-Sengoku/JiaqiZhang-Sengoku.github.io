@@ -614,8 +614,6 @@ body > #main > .sidebar.sticky {
     width: 25px;
     height: 25px;
     background-color: #243c43;
-    -webkit-mask-image: var(--profile-icon);
-    mask-image: var(--profile-icon);
     -webkit-mask-position: center;
     mask-position: center;
     -webkit-mask-repeat: no-repeat;
@@ -630,15 +628,15 @@ body > #main > .sidebar.sticky {
     background-color: #2e5b3e;
 }
 
-.author__contact-icon--location { --profile-icon: url("../icons/profile/location.svg"); }
-.author__contact-icon--email { --profile-icon: url("../icons/profile/email.svg"); }
-.author__contact-icon--github { --profile-icon: url("../icons/profile/github.svg"); }
-.author__contact-icon--huggingface { --profile-icon: url("../icons/profile/huggingface.svg"); }
-.author__contact-icon--linkedin { --profile-icon: url("../icons/profile/linkedin.svg"); }
-.author__contact-icon--scholar { --profile-icon: url("../icons/profile/scholar.svg"); }
-.author__contact-icon--wechat { --profile-icon: url("../icons/profile/wechat.svg"); }
-.author__contact-icon--rednote { --profile-icon: url("../icons/profile/rednote.svg"); }
-.author__contact-icon--orcid { --profile-icon: url("../icons/profile/orcid.svg"); }
+.author__contact-icon--location { -webkit-mask-image: url("../icons/profile/location.svg"); mask-image: url("../icons/profile/location.svg"); }
+.author__contact-icon--email { -webkit-mask-image: url("../icons/profile/email.svg"); mask-image: url("../icons/profile/email.svg"); }
+.author__contact-icon--github { -webkit-mask-image: url("../icons/profile/github.svg"); mask-image: url("../icons/profile/github.svg"); }
+.author__contact-icon--huggingface { -webkit-mask-image: url("../icons/profile/huggingface.svg"); mask-image: url("../icons/profile/huggingface.svg"); }
+.author__contact-icon--linkedin { -webkit-mask-image: url("../icons/profile/linkedin.svg"); mask-image: url("../icons/profile/linkedin.svg"); }
+.author__contact-icon--scholar { -webkit-mask-image: url("../icons/profile/scholar.svg"); mask-image: url("../icons/profile/scholar.svg"); }
+.author__contact-icon--wechat { -webkit-mask-image: url("../icons/profile/wechat.svg"); mask-image: url("../icons/profile/wechat.svg"); }
+.author__contact-icon--rednote { -webkit-mask-image: url("../icons/profile/rednote.svg"); mask-image: url("../icons/profile/rednote.svg"); }
+.author__contact-icon--orcid { -webkit-mask-image: url("../icons/profile/orcid.svg"); mask-image: url("../icons/profile/orcid.svg"); }
 
 .sidebar .author__urls a:hover,
 .sidebar .author__urls button:hover {
