@@ -978,6 +978,64 @@ body > #main > .sidebar.sticky {
     text-decoration-color: rgba(0, 0, 0, 0.34) !important;
 }
 
+.research-note {
+    position: relative;
+    width: 100%;
+    max-width: 920px;
+    margin: 0 !important;
+    padding: 22px 27px 23px !important;
+    border: 1px solid #b7ccb3;
+    border-left: 5px solid #3f7962;
+    border-radius: 3px;
+    background: #f5f9ed;
+    box-shadow: 0 8px 24px rgba(35, 74, 57, 0.09);
+    box-sizing: border-box;
+}
+
+.research-note::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 25px;
+    width: 13px;
+    height: 13px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: #d66d48;
+    box-shadow: 0 2px 5px rgba(65, 67, 47, 0.2);
+}
+
+.research-note__title {
+    margin: 0 0 8px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    color: #17241d !important;
+    font-size: 1.30rem !important;
+    font-weight: 700 !important;
+    line-height: 1.25 !important;
+}
+
+.research-note p {
+    max-width: 850px;
+    margin: 0 !important;
+    color: #26372d !important;
+    font-size: 1.03rem !important;
+    line-height: 1.65 !important;
+}
+
+.research-note a,
+.research-note a:hover {
+    color: #2e5b3e !important;
+    font-weight: 700;
+    text-decoration: underline !important;
+    text-underline-offset: 3px;
+}
+
+.research-note a:focus-visible {
+    outline: 2px solid #2e5b3e;
+    outline-offset: 3px;
+}
+
 .page__content a {
     overflow-wrap: anywhere;
 }
@@ -3639,6 +3697,18 @@ body > #main > .sidebar.sticky {
         padding-top: 0;
         font-size: 1rem !important;
         line-height: 1.7 !important;
+    }
+
+    .research-note {
+        padding: 20px 18px 21px !important;
+    }
+
+    .research-note__title {
+        font-size: 1.18rem !important;
+    }
+
+    .research-note p {
+        font-size: 0.98rem !important;
     }
 
     .hero-title__cn {

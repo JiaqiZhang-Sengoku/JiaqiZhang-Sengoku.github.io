@@ -10,6 +10,11 @@ redirect_from:
 
 {% include_relative includes/intro.md %}
 
+<aside class="research-note" aria-labelledby="research-note-title">
+  <h2 class="research-note__title" id="research-note-title">Seeking Research Internships</h2>
+  <p>I am looking for research internship opportunities in generative AI and am open to broader research directions. I'm also interested in understanding the limitations of current diffusion-based approaches and exploring new paradigms for visual generation. Please feel free to contact me by <a href="mailto:{{ site.author.email }}">email</a>.</p>
+</aside>
+
 {% include_relative includes/new.md %}
 
 {% include_relative includes/pub.md %}
