@@ -984,7 +984,6 @@ body > #main > .sidebar.sticky {
 }
 
 .research-note {
-    position: relative;
     width: 100%;
     max-width: 920px;
     margin: 0 !important;
@@ -995,19 +994,6 @@ body > #main > .sidebar.sticky {
     background: #f5f9ed;
     box-shadow: 0 8px 24px rgba(35, 74, 57, 0.09);
     box-sizing: border-box;
-}
-
-.research-note::before {
-    content: "";
-    position: absolute;
-    top: -8px;
-    left: 25px;
-    width: 13px;
-    height: 13px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    background: #d66d48;
-    box-shadow: 0 2px 5px rgba(65, 67, 47, 0.2);
 }
 
 .research-note__title {
