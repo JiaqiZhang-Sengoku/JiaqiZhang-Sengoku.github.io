@@ -978,6 +978,11 @@ body > #main > .sidebar.sticky {
     text-decoration-color: rgba(0, 0, 0, 0.34) !important;
 }
 
+#about-me {
+    margin-bottom: 14px !important;
+    padding-bottom: 18px !important;
+}
+
 .research-note {
     position: relative;
     width: 100%;
@@ -1009,7 +1014,7 @@ body > #main > .sidebar.sticky {
     margin: 0 0 8px !important;
     padding: 0 !important;
     border: 0 !important;
-    color: #17241d !important;
+    color: #000 !important;
     font-size: 1.30rem !important;
     font-weight: 700 !important;
     line-height: 1.25 !important;
@@ -1018,21 +1023,23 @@ body > #main > .sidebar.sticky {
 .research-note p {
     max-width: 850px;
     margin: 0 !important;
-    color: #26372d !important;
+    color: #000 !important;
     font-size: 1.03rem !important;
+    font-weight: 600 !important;
     line-height: 1.65 !important;
 }
 
 .research-note a,
 .research-note a:hover {
-    color: #2e5b3e !important;
+    color: #000 !important;
     font-weight: 700;
     text-decoration: underline !important;
+    text-decoration-color: #000 !important;
     text-underline-offset: 3px;
 }
 
 .research-note a:focus-visible {
-    outline: 2px solid #2e5b3e;
+    outline: 2px solid #000;
     outline-offset: 3px;
 }
 
@@ -1079,6 +1086,10 @@ body > #main > .sidebar.sticky {
 
 .section-heading--news::before {
     background: var(--accent-teal);
+}
+
+.section-heading--news {
+    margin-top: 26px !important;
 }
 
 .section-heading--internships::before {
