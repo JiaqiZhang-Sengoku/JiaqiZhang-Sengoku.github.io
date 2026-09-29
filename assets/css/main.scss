@@ -1313,6 +1313,11 @@ body > #main > .sidebar.sticky {
     overflow: hidden;
 }
 
+.section-heading--internships .section-heading__title,
+.internships-panel .internship-card :is(h3, p, span, a, time, strong, em, summary) {
+    color: #000;
+}
+
 .updates-panel {
     display: block;
     height: 576px;
@@ -1461,8 +1466,8 @@ body > #main > .sidebar.sticky {
     border: 0;
     border-radius: 0;
     background: transparent;
-    color: var(--accent-strong);
-    font-size: 0.86rem;
+    color: #000;
+    font-size: 0.91rem;
     font-weight: 700;
     line-height: 1.35;
 }
@@ -1628,13 +1633,13 @@ body > #main > .sidebar.sticky {
 
 .internship-main h3 {
     margin: 0 0 6px !important;
-    color: var(--heading-color);
-    font-size: 1.18rem !important;
+    color: #000;
+    font-size: 1.23rem !important;
     line-height: 1.30 !important;
 }
 
 .internship-main h3 span {
-    color: var(--accent-strong);
+    color: #000;
     font-size: 0.90em;
     white-space: nowrap;
 }
@@ -1643,8 +1648,8 @@ body > #main > .sidebar.sticky {
     position: relative;
     margin: 0 !important;
     padding-left: 13px;
-    color: var(--text-color) !important;
-    font-size: 0.98rem !important;
+    color: #000 !important;
+    font-size: 1.02rem !important;
     font-weight: 600;
     line-height: 1.35 !important;
 }
@@ -1666,8 +1671,8 @@ body > #main > .sidebar.sticky {
     margin: 15px 0 0 !important;
     padding: 10px 0 0 !important;
     border-top: 1px solid rgba(218, 227, 233, 0.88);
-    color: var(--text-color);
-    font-size: 0.96rem;
+    color: #000;
+    font-size: 1rem;
     line-height: 1.56 !important;
 }
 
@@ -1685,10 +1690,10 @@ body > #main > .sidebar.sticky {
     grid-template-columns: 3px minmax(0, 1fr) 24px;
     gap: 11px;
     align-items: center;
-    min-height: 46px;
+    min-height: 56px;
     padding: 8px 12px;
     color: #000;
-    font-size: 0.98rem;
+    font-size: 1.02rem;
     font-weight: 800;
     line-height: 1.3;
     cursor: pointer;
@@ -1716,7 +1721,7 @@ body > #main > .sidebar.sticky {
     place-items: center;
     width: 24px;
     height: 24px;
-    color: var(--accent-strong);
+    color: #000;
     font-size: 1.22rem;
     font-weight: 500;
     line-height: 1;
@@ -1725,7 +1730,7 @@ body > #main > .sidebar.sticky {
 
 .internship-project[open] summary::after {
     content: "−";
-    color: var(--accent-teal);
+    color: #000;
     transform: rotate(180deg);
 }
 
@@ -1736,7 +1741,7 @@ body > #main > .sidebar.sticky {
 
 .internship-project summary:hover,
 .internship-project summary:focus-visible {
-    color: var(--accent-strong);
+    color: #000;
     background: rgba(237, 246, 247, 0.56);
     outline: none;
 }
@@ -1749,34 +1754,44 @@ body > #main > .sidebar.sticky {
 }
 
 .internship-project summary .internship-project__title {
+    display: grid;
+    gap: 2px;
     min-width: 0;
     color: #000;
     font-size: inherit;
     font-weight: inherit;
 }
 
+.internship-project__short-title {
+    display: block;
+    color: #000;
+    font-weight: 800;
+}
+
 .internship-project summary .internship-project__venue {
     color: #000;
-    font-size: 0.88em;
+    font-size: 0.9em;
     font-weight: 700;
 }
 
 .internship-project summary .internship-project__full-title {
-    color: #44545b;
-    font-size: 0.84em;
+    display: block;
+    color: #000;
+    font-size: 0.92em;
     font-weight: 500;
+    line-height: 1.35;
 }
 
 .internship-project p {
     margin: 0 !important;
     padding: 2px 43px 15px 26px;
-    color: var(--text-color) !important;
-    font-size: 0.93rem !important;
+    color: #000 !important;
+    font-size: 0.97rem !important;
     line-height: 1.52 !important;
 }
 
 .internship-projects strong {
-    color: var(--heading-color);
+    color: #000;
     font-weight: 800;
 }
 
@@ -1786,36 +1801,36 @@ body > #main > .sidebar.sticky {
     gap: 7px;
     flex-wrap: wrap;
     margin: 13px 0 0 !important;
-    color: var(--text-color) !important;
-    font-size: 0.94rem !important;
+    color: #000 !important;
+    font-size: 0.99rem !important;
     font-weight: 600;
 }
 
 .internship-mentor > span {
-    color: var(--muted-color);
-    font-size: 0.82rem;
+    color: #000;
+    font-size: 0.86rem;
     font-weight: 800;
     text-transform: uppercase;
 }
 
 .internship-mentor a {
-    color: var(--accent-strong) !important;
+    color: #000 !important;
     font-weight: 800;
     text-decoration: none;
     border-bottom: 0;
 }
 
 .internship-mentor > strong {
-    color: var(--heading-color);
+    color: #000;
     font-weight: 800;
 }
 
 .internship-mentor a:hover {
-    color: var(--accent-teal) !important;
+    color: #000 !important;
 }
 
 .internship-mentor em {
-    color: var(--muted-color);
+    color: #000;
     font-style: normal;
     font-weight: 600;
 }
@@ -3819,20 +3834,20 @@ body > #main > .sidebar.sticky {
     }
 
     .internship-main h3 {
-        font-size: 1.10rem !important;
+        font-size: 1.14rem !important;
     }
 
     .internship-projects {
         margin-top: 13px !important;
         padding-top: 12px !important;
-        font-size: 0.94rem;
+        font-size: 0.98rem;
     }
 
     .internship-project summary {
         grid-template-columns: 3px minmax(0, 1fr) 22px;
         gap: 9px;
-        min-height: 44px;
-        font-size: 0.96rem;
+        min-height: 54px;
+        font-size: 1rem;
         padding: 8px 10px;
     }
 
