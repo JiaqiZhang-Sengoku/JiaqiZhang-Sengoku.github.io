@@ -59,28 +59,31 @@ redirect_from:
       </div>
     </div>
 
-    <aside class="visitor-traffic" data-visitor-chart aria-label="Cumulative website traffic">
+    <aside class="visitor-traffic is-fallback" data-visitor-chart aria-label="Cumulative website traffic">
       <div class="visitor-chart">
+        <p class="visitor-chart__source">As of Oct. 6, 2026</p>
         <div class="visitor-chart__bars">
           <div class="visitor-bar" data-visitor-bar>
             <span class="visitor-bar__track">
               <span class="visitor-bar__fill visitor-bar__fill--views" aria-hidden="true"></span>
-              <strong class="visitor-bar__value" id="busuanzi_value_site_pv" data-visitor-value data-visitor-fallback="492" aria-live="polite">492</strong>
+              <strong class="visitor-bar__value" data-visitor-value data-visitor-fallback="492" aria-live="polite">492</strong>
             </span>
             <span class="visitor-bar__label">Views</span>
           </div>
           <div class="visitor-bar" data-visitor-bar>
             <span class="visitor-bar__track">
               <span class="visitor-bar__fill visitor-bar__fill--visitors" aria-hidden="true"></span>
-              <strong class="visitor-bar__value" id="busuanzi_value_site_uv" data-visitor-value data-visitor-fallback="245" aria-live="polite">245</strong>
+              <strong class="visitor-bar__value" data-visitor-value data-visitor-fallback="245" aria-live="polite">245</strong>
             </span>
             <span class="visitor-bar__label">Visitors</span>
           </div>
         </div>
       </div>
+      <span id="busuanzi_value_site_pv" data-visitor-source hidden aria-hidden="true"></span>
+      <span id="busuanzi_value_site_uv" data-visitor-source hidden aria-hidden="true"></span>
     </aside>
   </div>
 </section>
 
 <script src="https://busuanzi.icodeq.com/busuanzi.pure.mini.js" defer></script>
-<script src="/assets/js/visitor-stats.js?v=20261007-2" defer></script>
+<script src="/assets/js/visitor-stats.js?v=20261007-3" defer></script>

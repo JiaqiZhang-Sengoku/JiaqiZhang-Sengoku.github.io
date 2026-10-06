@@ -3358,6 +3358,23 @@ body > #main > .sidebar.sticky {
     pointer-events: none;
 }
 
+.visitor-chart__source {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    left: 18px;
+    margin: 0;
+    color: #000;
+    font-size: 0.74rem;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.visitor-traffic.is-fallback .visitor-chart__source {
+    display: block;
+}
+
 .visitor-chart__bars {
     position: relative;
     z-index: 1;

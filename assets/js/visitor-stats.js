@@ -10,12 +10,14 @@
   var bars = chart
     ? Array.prototype.slice.call(chart.querySelectorAll("[data-visitor-bar]"))
     : [];
+  var sources = chart
+    ? Array.prototype.slice.call(chart.querySelectorAll("[data-visitor-source]"))
+    : [];
   var formatter = typeof Intl !== "undefined" && typeof Intl.NumberFormat === "function"
     ? new Intl.NumberFormat("en-US")
     : null;
   var observer = null;
   var resizeObserver = null;
-  var timeout = null;
   var sourceMapWidth = 875;
   var sourceMapHeight = 500;
   var sourceZoomLeft = 43.1;
@@ -24,26 +26,18 @@
   var sourceZoomHeight = 64;
   var controlInset = 8;
 
-  function readValue(element) {
-    var digits = element.textContent.replace(/[^0-9]/g, "");
-    if (!digits) {
-      var fallback = element.getAttribute("data-visitor-fallback") || "";
-      digits = fallback.replace(/[^0-9]/g, "");
-
-      if (digits) {
-        var fallbackValue = Number(digits);
-        return Number.isFinite(fallbackValue)
-          ? { value: fallbackValue, isFallback: true }
-          : null;
-      }
-    }
-
-    if (!digits) {
+  function readValue(source, display) {
+    var liveText = source ? source.textContent.trim() : "";
+    var isFallback = !/^\d[\d,]*$/.test(liveText);
+    var rawValue = isFallback
+      ? display.getAttribute("data-visitor-fallback")
+      : liveText;
+    if (!rawValue) {
       return null;
     }
 
-    var value = Number(digits);
-    return Number.isFinite(value) ? { value: value, isFallback: false } : null;
+    var value = Number(rawValue.replace(/,/g, ""));
+    return Number.isFinite(value) ? { value: value, isFallback: isFallback } : null;
   }
 
   function render() {
@@ -51,8 +45,8 @@
       return;
     }
 
-    var values = bars.map(function (bar) {
-      return readValue(bar.querySelector("[data-visitor-value]"));
+    var values = bars.map(function (bar, index) {
+      return readValue(sources[index], bar.querySelector("[data-visitor-value]"));
     });
 
     if (values.some(function (value) { return value === null; })) {
@@ -75,19 +69,18 @@
       var formattedValue = formatter ? formatter.format(value) : String(value);
 
       bar.style.setProperty("--visitor-bar-height", height + "%");
-      // Busuanzi can briefly replace the value with "--" when its endpoint is unavailable.
-      // Only write when the visible value actually changes, otherwise the observer loops.
       if (valueElement.textContent !== formattedValue) {
         valueElement.textContent = formattedValue;
       }
-      valueElement.title = String(value);
+      valueElement.title = values[index].isFallback
+        ? "As of Oct. 6, 2026"
+        : String(value);
     });
 
     chart.classList.add("is-ready");
     chart.classList.remove("is-unavailable");
     chart.classList.toggle("is-fallback", usingFallback);
 
-    window.clearTimeout(timeout);
   }
 
   function sizeMap() {
@@ -123,8 +116,8 @@
 
   if (chart && typeof MutationObserver === "function") {
     observer = new MutationObserver(render);
-    bars.forEach(function (bar) {
-      observer.observe(bar.querySelector("[data-visitor-value]"), {
+    sources.forEach(function (source) {
+      observer.observe(source, {
         childList: true,
         characterData: true,
         subtree: true
@@ -133,11 +126,6 @@
   }
 
   if (chart) {
-    timeout = window.setTimeout(function () {
-      if (!chart.classList.contains("is-fallback")) {
-        chart.classList.add("is-unavailable");
-      }
-    }, 8000);
     render();
   }
 
@@ -160,7 +148,6 @@
   }
 
   window.addEventListener("pagehide", function () {
-    window.clearTimeout(timeout);
     if (observer) {
       observer.disconnect();
     }
