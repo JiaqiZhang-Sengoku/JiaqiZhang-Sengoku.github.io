@@ -569,6 +569,8 @@ h1 {
 
 .paper-link {
   --link-accent: #24292f;
+  --link-bg: #edf0f2;
+  --link-hover-bg: #e0e6e9;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -578,7 +580,7 @@ h1 {
   padding: 9px 13px;
   border: 0;
   border-radius: 4px;
-  background: transparent;
+  background: var(--link-bg);
   color: var(--link-accent);
   font-size: 13.3px;
   font-weight: 600;
@@ -597,27 +599,42 @@ h1 {
 
 .paper-link--arxiv {
   --link-accent: #b31b1b;
+  --link-bg: #fbe9e7;
+  --link-hover-bg: #f5d9d5;
 }
 
 .paper-link--poster {
   --link-accent: #8a5a13;
+  --link-bg: #f7ecd7;
+  --link-hover-bg: #efddb9;
+}
+
+.paper-link--code {
+  --link-bg: #e9eef0;
+  --link-hover-bg: #dce5e8;
 }
 
 .paper-link--huggingface {
   --link-accent: #8f5416;
+  --link-bg: #fff0cc;
+  --link-hover-bg: #f9e3aa;
 }
 
 .paper-link--conference {
   --link-accent: #295f85;
+  --link-bg: #e6f0f6;
+  --link-hover-bg: #d5e6f0;
 }
 
 .paper-link--bibtex {
   --link-accent: #66509a;
+  --link-bg: #eee9f7;
+  --link-hover-bg: #e2d9f1;
 }
 
 .paper-link:hover {
   transform: translateY(-1px);
-  background: rgba(255, 255, 255, 0.64);
+  background: var(--link-hover-bg);
   color: var(--link-accent);
   text-decoration: none;
 }
@@ -625,7 +642,7 @@ h1 {
 .paper-link:focus-visible {
   outline: 2px solid var(--link-accent);
   outline-offset: 2px;
-  background: rgba(255, 255, 255, 0.64);
+  background: var(--link-hover-bg);
 }
 
 .section {
