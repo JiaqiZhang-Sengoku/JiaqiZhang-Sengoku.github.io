@@ -27,6 +27,11 @@
   function readValue(element) {
     var digits = element.textContent.replace(/[^0-9]/g, "");
     if (!digits) {
+      var fallback = element.getAttribute("data-visitor-fallback") || "";
+      digits = fallback.replace(/[^0-9]/g, "");
+    }
+
+    if (!digits) {
       return null;
     }
 
@@ -47,6 +52,11 @@
       return;
     }
 
+    var usingFallback = bars.some(function (bar, index) {
+      var fallback = bar.querySelector("[data-visitor-value]").getAttribute("data-visitor-fallback");
+      return fallback && String(values[index]) === fallback;
+    });
+
     var maximum = Math.max.apply(Math, values.concat([1]));
 
     bars.forEach(function (bar, index) {
@@ -61,6 +71,12 @@
 
     chart.classList.add("is-ready");
     chart.classList.remove("is-unavailable");
+    chart.classList.toggle("is-fallback", usingFallback);
+
+    if (usingFallback) {
+      return;
+    }
+
     window.clearTimeout(timeout);
     if (observer) {
       observer.disconnect();
@@ -111,7 +127,9 @@
 
   if (chart) {
     timeout = window.setTimeout(function () {
-      chart.classList.add("is-unavailable");
+      if (!chart.classList.contains("is-fallback")) {
+        chart.classList.add("is-unavailable");
+      }
     }, 8000);
     render();
   }
