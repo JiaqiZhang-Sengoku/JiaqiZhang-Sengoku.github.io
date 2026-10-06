@@ -83,4 +83,4 @@ redirect_from:
 </section>
 
 <script src="https://busuanzi.icodeq.com/busuanzi.pure.mini.js" defer></script>
-<script src="/assets/js/visitor-stats.js?v=20261007-1" defer></script>
+<script src="/assets/js/visitor-stats.js?v=20261007-2" defer></script>

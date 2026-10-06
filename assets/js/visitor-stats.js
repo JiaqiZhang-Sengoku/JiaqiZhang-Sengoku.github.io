@@ -29,6 +29,13 @@
     if (!digits) {
       var fallback = element.getAttribute("data-visitor-fallback") || "";
       digits = fallback.replace(/[^0-9]/g, "");
+
+      if (digits) {
+        var fallbackValue = Number(digits);
+        return Number.isFinite(fallbackValue)
+          ? { value: fallbackValue, isFallback: true }
+          : null;
+      }
     }
 
     if (!digits) {
@@ -36,7 +43,7 @@
     }
 
     var value = Number(digits);
-    return Number.isFinite(value) ? value : null;
+    return Number.isFinite(value) ? { value: value, isFallback: false } : null;
   }
 
   function render() {
@@ -52,20 +59,27 @@
       return;
     }
 
-    var usingFallback = bars.some(function (bar, index) {
-      var fallback = bar.querySelector("[data-visitor-value]").getAttribute("data-visitor-fallback");
-      return fallback && String(values[index]) === fallback;
+    var usingFallback = values.some(function (value) {
+      return value.isFallback;
+    });
+    var numericValues = values.map(function (value) {
+      return value.value;
     });
 
-    var maximum = Math.max.apply(Math, values.concat([1]));
+    var maximum = Math.max.apply(Math, numericValues.concat([1]));
 
     bars.forEach(function (bar, index) {
-      var value = values[index];
+      var value = numericValues[index];
       var valueElement = bar.querySelector("[data-visitor-value]");
       var height = value === 0 ? 6 : Math.max(14, Math.round((value / maximum) * 100));
+      var formattedValue = formatter ? formatter.format(value) : String(value);
 
       bar.style.setProperty("--visitor-bar-height", height + "%");
-      valueElement.textContent = formatter ? formatter.format(value) : String(value);
+      // Busuanzi can briefly replace the value with "--" when its endpoint is unavailable.
+      // Only write when the visible value actually changes, otherwise the observer loops.
+      if (valueElement.textContent !== formattedValue) {
+        valueElement.textContent = formattedValue;
+      }
       valueElement.title = String(value);
     });
 
@@ -73,14 +87,7 @@
     chart.classList.remove("is-unavailable");
     chart.classList.toggle("is-fallback", usingFallback);
 
-    if (usingFallback) {
-      return;
-    }
-
     window.clearTimeout(timeout);
-    if (observer) {
-      observer.disconnect();
-    }
   }
 
   function sizeMap() {
