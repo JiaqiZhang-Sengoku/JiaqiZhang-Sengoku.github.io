@@ -2367,14 +2367,16 @@ body > #main > .sidebar.sticky {
 }
 
 .paper-box-text--with-logo {
-    position: static;
-    min-height: 94px;
+    position: relative;
+    align-self: stretch;
+    min-height: 0;
+    padding: 5px 2px 84px !important;
 }
 
 .paper-method-logo {
     position: absolute;
-    right: 16px;
-    bottom: 15px;
+    right: 0;
+    bottom: 6px;
     display: block;
     width: 76px;
     height: 76px;
@@ -2625,7 +2627,7 @@ body > #main > .sidebar.sticky {
 .other-paper-links .paper-link--web .paper-link__icon { background-image: url("../icons/publication/web.webp"); }
 .paper-links .paper-link--poster .paper-link__icon,
 .other-paper-links .paper-link--poster .paper-link__icon {
-    color: #8a5a13;
+    background-image: url("/Web/PriMD/Figures/Poster.svg");
 }
 .paper-links .paper-link--code .paper-link__icon,
 .other-paper-links .paper-link--code .paper-link__icon,
@@ -3958,12 +3960,14 @@ body > #main > .sidebar.sticky {
     }
 
     .paper-box-text--with-logo {
-        min-height: 80px;
+        align-self: auto;
+        min-height: 0;
+        padding: 3px 2px 76px !important;
     }
 
     .paper-method-logo {
-        right: 12px;
-        bottom: 12px;
+        right: 0;
+        bottom: 5px;
         width: 64px;
         height: 64px;
     }
