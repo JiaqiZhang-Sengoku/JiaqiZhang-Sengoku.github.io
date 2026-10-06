@@ -2375,11 +2375,11 @@ body > #main > .sidebar.sticky {
 
 .paper-method-logo {
     position: absolute;
-    right: 0;
-    bottom: 6px;
+    right: 12px;
+    bottom: 8px;
     display: block;
-    width: 76px;
-    height: 76px;
+    width: 72px;
+    height: 72px;
     margin: 0;
     object-fit: contain;
     opacity: 0.92;
@@ -3361,14 +3361,16 @@ body > #main > .sidebar.sticky {
 .visitor-chart__source {
     display: none;
     position: absolute;
-    top: 15px;
-    right: 18px;
-    left: 18px;
+    z-index: 2;
+    top: 8px;
+    right: 16px;
+    left: auto;
     margin: 0;
     color: #000;
     font-size: 0.74rem;
     line-height: 1.2;
-    text-align: center;
+    text-align: right;
+    white-space: nowrap;
 }
 
 .visitor-traffic.is-fallback .visitor-chart__source {
@@ -3983,10 +3985,10 @@ body > #main > .sidebar.sticky {
     }
 
     .paper-method-logo {
-        right: 0;
-        bottom: 5px;
-        width: 64px;
-        height: 64px;
+        right: 10px;
+        bottom: 7px;
+        width: 62px;
+        height: 62px;
     }
 
     .paper-box::after {

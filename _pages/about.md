@@ -60,8 +60,8 @@ redirect_from:
     </div>
 
     <aside class="visitor-traffic is-fallback" data-visitor-chart aria-label="Cumulative website traffic">
+      <p class="visitor-chart__source">As of Oct. 6, 2026</p>
       <div class="visitor-chart">
-        <p class="visitor-chart__source">As of Oct. 6, 2026</p>
         <div class="visitor-chart__bars">
           <div class="visitor-bar" data-visitor-bar>
             <span class="visitor-bar__track">
