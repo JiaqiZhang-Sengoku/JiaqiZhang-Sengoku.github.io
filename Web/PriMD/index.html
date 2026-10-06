@@ -15,7 +15,7 @@ layout: null
   <link rel="shortcut icon" type="image/webp" href="/Web/PriMD/PriMD_Logo.webp?v=20260829-hd">
   <link rel="preload" href="/assets/fonts/noto-serif-sc-latin-vf.woff2?v=20260829" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/noto-serif-sc.css?v=20260829">
-  <link rel="stylesheet" href="/Web/PriMD/styles.css?v=20261006-colored-links">
+  <link rel="stylesheet" href="/Web/PriMD/styles.css?v=20261006-poster-preview">
 </head>
 <body>
   <main>
@@ -89,10 +89,10 @@ layout: null
             <img src="/Web/PriMD/Figures/Arxiv.svg" alt="" width="24" height="24">
             <span>arXiv</span>
           </a>
-          <a class="paper-link paper-link--poster" href="/Web/PriMD/EMNLP%202026_Find-8619.pdf" target="_blank" rel="noopener noreferrer">
+          <button class="paper-link paper-link--poster" type="button" data-poster-open aria-haspopup="dialog" aria-controls="poster-modal">
             <img src="/Web/PriMD/Figures/Poster.svg" alt="" width="24" height="24">
             <span>Poster</span>
-          </a>
+          </button>
           <a class="paper-link paper-link--code" href="https://github.com/JiaqiZhang-Sengoku/PriMD" target="_blank" rel="noopener noreferrer">
             <img src="/assets/icons/profile/github.svg" alt="" width="24" height="24">
             <span>Code</span>
@@ -329,6 +329,25 @@ layout: null
     </section>
   </main>
 
-  <script src="/Web/PriMD/script.js?v=20260830-copy-control" defer></script>
+  <div class="poster-modal" id="poster-modal" aria-hidden="true">
+    <div class="poster-modal__backdrop" data-poster-close></div>
+    <section class="poster-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="poster-modal-title">
+      <div class="poster-modal__toolbar">
+        <h2 class="poster-modal__title" id="poster-modal-title">PriMD Poster</h2>
+        <div class="poster-modal__controls" role="group" aria-label="Poster controls">
+          <button class="poster-modal__control" type="button" data-poster-zoom-out aria-label="Zoom out">−</button>
+          <span class="poster-modal__zoom-value" data-poster-zoom-value>100%</span>
+          <button class="poster-modal__control" type="button" data-poster-zoom-in aria-label="Zoom in">+</button>
+          <button class="poster-modal__control poster-modal__control--reset" type="button" data-poster-zoom-reset>Reset</button>
+          <button class="poster-modal__control poster-modal__control--close" type="button" data-poster-close aria-label="Close poster">×</button>
+        </div>
+      </div>
+      <div class="poster-modal__viewport" data-poster-viewport>
+        <img class="poster-modal__image" data-poster-image data-poster-src="/Web/PriMD/Figures/PriMD-Poster.webp?v=20261006" alt="Full PriMD poster" width="5960" height="8426" decoding="async">
+      </div>
+    </section>
+  </div>
+
+  <script src="/Web/PriMD/script.js?v=20261006-poster-preview" defer></script>
 </body>
 </html>

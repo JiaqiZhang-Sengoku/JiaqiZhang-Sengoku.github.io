@@ -54,3 +54,102 @@
     });
   });
 }());
+
+(function () {
+  "use strict";
+
+  var modal = document.getElementById("poster-modal");
+  var openButton = document.querySelector("[data-poster-open]");
+  var image = document.querySelector("[data-poster-image]");
+  var imageSource = image ? image.getAttribute("data-poster-src") : null;
+  var zoomValue = document.querySelector("[data-poster-zoom-value]");
+  var zoomIn = document.querySelector("[data-poster-zoom-in]");
+  var zoomOut = document.querySelector("[data-poster-zoom-out]");
+  var zoomReset = document.querySelector("[data-poster-zoom-reset]");
+  var closeButtons = document.querySelectorAll("[data-poster-close]");
+  var viewport = document.querySelector("[data-poster-viewport]");
+  var zoom = 1;
+  var opener = null;
+
+  if (!modal || !openButton || !image) {
+    return;
+  }
+
+  function updateZoom() {
+    var availableWidth = viewport ? viewport.clientWidth - 44 : 780;
+    var baseWidth = Math.min(780, Math.max(240, availableWidth));
+    image.style.width = Math.round(baseWidth * zoom) + "px";
+    if (zoomValue) {
+      zoomValue.textContent = Math.round(zoom * 100) + "%";
+    }
+  }
+
+  function setOpen(open) {
+    modal.classList.toggle("is-open", open);
+    modal.setAttribute("aria-hidden", open ? "false" : "true");
+    document.body.classList.toggle("poster-modal-open", open);
+    if (open) {
+      opener = document.activeElement;
+      if (imageSource && !image.getAttribute("src")) {
+        image.setAttribute("src", imageSource);
+      }
+      zoom = 1;
+      updateZoom();
+      window.setTimeout(function () {
+        var close = modal.querySelector(".poster-modal__control--close");
+        if (close) {
+          close.focus();
+        }
+      }, 0);
+    } else if (opener && typeof opener.focus === "function") {
+      opener.focus();
+    }
+  }
+
+  function changeZoom(amount) {
+    zoom = Math.min(2.6, Math.max(0.6, +(zoom + amount).toFixed(2)));
+    updateZoom();
+  }
+
+  openButton.addEventListener("click", function () {
+    history.replaceState(null, "", window.location.pathname + window.location.search + "#poster-preview");
+    setOpen(true);
+  });
+
+  Array.prototype.forEach.call(closeButtons, function (button) {
+    button.addEventListener("click", function () {
+      setOpen(false);
+      if (window.location.hash === "#poster-preview") {
+        history.replaceState(null, "", window.location.pathname + window.location.search);
+      }
+    });
+  });
+
+  if (zoomIn) {
+    zoomIn.addEventListener("click", function () { changeZoom(0.2); });
+  }
+  if (zoomOut) {
+    zoomOut.addEventListener("click", function () { changeZoom(-0.2); });
+  }
+  if (zoomReset) {
+    zoomReset.addEventListener("click", function () {
+      zoom = 1;
+      updateZoom();
+    });
+  }
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && modal.classList.contains("is-open")) {
+      setOpen(false);
+      if (window.location.hash === "#poster-preview") {
+        history.replaceState(null, "", window.location.pathname + window.location.search);
+      }
+    }
+  });
+
+  window.addEventListener("resize", updateZoom);
+
+  if (window.location.hash === "#poster-preview") {
+    setOpen(true);
+  }
+}());
