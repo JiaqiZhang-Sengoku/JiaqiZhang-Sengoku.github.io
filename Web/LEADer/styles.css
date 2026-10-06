@@ -18,6 +18,8 @@ html {
 }
 
 body {
+  position: relative;
+  isolation: isolate;
   margin: 0;
   color: var(--text);
   background:
@@ -30,6 +32,19 @@ body {
   font-size: 15.6px;
   font-weight: 500;
   line-height: 1.62;
+}
+
+body::before {
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  content: "";
+  background:
+    linear-gradient(180deg, rgba(238, 247, 242, 0.74), rgba(242, 245, 243, 0.82)),
+    url("/Web/LEADer/Figures/HeroBackground.webp?v=20261006-full-page") center top / cover no-repeat;
+  filter: contrast(1.08) saturate(1.08);
+  opacity: 0.72;
+  pointer-events: none;
 }
 
 main {
