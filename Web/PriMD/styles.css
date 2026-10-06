@@ -599,6 +599,10 @@ h1 {
   --link-accent: #b31b1b;
 }
 
+.paper-link--poster {
+  --link-accent: #8a5a13;
+}
+
 .paper-link--huggingface {
   --link-accent: #8f5416;
 }

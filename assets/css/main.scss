@@ -2623,6 +2623,10 @@ body > #main > .sidebar.sticky {
 .other-paper-links .paper-link--paper .paper-link__icon { background-image: url("../icons/publication/paper.webp"); }
 .paper-links .paper-link--web .paper-link__icon,
 .other-paper-links .paper-link--web .paper-link__icon { background-image: url("../icons/publication/web.webp"); }
+.paper-links .paper-link--poster .paper-link__icon,
+.other-paper-links .paper-link--poster .paper-link__icon {
+    color: #8a5a13;
+}
 .paper-links .paper-link--code .paper-link__icon,
 .other-paper-links .paper-link--code .paper-link__icon,
 .paper-links .paper-link--github .paper-link__icon,
@@ -2652,6 +2656,12 @@ body > #main > .sidebar.sticky {
     color: #245ed8 !important;
 }
 
+.paper-box-text .paper-links .paper-link--poster,
+.other-paper-links .paper-link--poster {
+    background: transparent !important;
+    color: #8a5a13 !important;
+}
+
 .paper-box-text .paper-links .paper-link--code,
 .other-paper-links .paper-link--code {
     background: transparent !important;
@@ -2679,6 +2689,12 @@ body > #main > .sidebar.sticky {
 .other-paper-links .paper-link--web:hover {
     background: transparent !important;
     color: #1746ad !important;
+}
+
+.paper-box-text .paper-links .paper-link--poster:hover,
+.other-paper-links .paper-link--poster:hover {
+    background: transparent !important;
+    color: #68430d !important;
 }
 
 .paper-box-text .paper-links .paper-link--code:hover,
