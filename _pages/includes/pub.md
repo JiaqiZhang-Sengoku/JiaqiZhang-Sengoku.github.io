@@ -51,7 +51,7 @@
     <a class="paper-title" href="/PriMD/">Modality Disentangled Learning for Incomplete Multimodal Emotion Recognition: A Primitive Memory Distillation Perspective</a>
     <div class="paper-venue paper-venue--accepted">Empirical Methods in Natural Language Processing (EMNLP 2026 Findings)</div>
     <div class="paper-authors"><span class="paper-author"><strong>Jiaqi Zhang</strong></span>, <span class="paper-author">Zheng Pang</span>, <span class="paper-author">Mengting Li</span>, <span class="paper-author">Yiqi Wang</span>, <span class="paper-author">Guangyuan Dong</span>, <span class="paper-author">Chao Xue</span>, <span class="paper-author">Yusen Wu</span>, <span class="paper-author">Zihao Li</span>, <span class="paper-author">Huy Phan</span>, <span class="paper-author">Sicheng Zhao</span>, <span class="paper-author">Bj&ouml;rn Schuller</span>, <span class="paper-author">Jiachen Luo<sup>&dagger;</sup></span></div>
-    <div class="paper-links"><a class="paper-link paper-link--paper" href="https://arxiv.org/abs/2608.30563" title="Read the paper on arXiv"><i class="fas fa-file-alt paper-link__icon" aria-hidden="true"></i><span>Paper</span></a><a class="paper-link paper-link--poster" href="/PriMD/#poster-preview" title="View the full poster"><i class="fas fa-image paper-link__icon" aria-hidden="true"></i><span>Poster</span></a><a class="paper-link paper-link--web" href="/PriMD/" title="Open the project website"><i class="fas fa-globe paper-link__icon" aria-hidden="true"></i><span>Web</span></a><a class="paper-link paper-link--code" href="https://github.com/JiaqiZhang-Sengoku/PriMD" title="View code on GitHub"><i class="fab fa-github paper-link__icon" aria-hidden="true"></i><span>Code</span></a><a class="paper-link paper-link--huggingface" href="https://huggingface.co/JiaqiZhang-Sengoku/PriMD" title="View PriMD on Hugging Face"><span class="paper-link__icon paper-link__icon--huggingface" aria-hidden="true">&#129303;</span><span>Hugging Face</span></a></div>
+    <div class="paper-links"><a class="paper-link paper-link--paper" href="https://arxiv.org/abs/2608.30563" title="Read the paper on arXiv"><i class="fas fa-file-alt paper-link__icon" aria-hidden="true"></i><span>Paper</span></a><button class="paper-link paper-link--poster" type="button" data-poster-open data-poster-src="/Web/PriMD/Figures/PriMD-Poster.webp?v=20261006" data-poster-title="PriMD Poster" title="View the full poster"><i class="fas fa-image paper-link__icon" aria-hidden="true"></i><span>Poster</span></button><a class="paper-link paper-link--web" href="/PriMD/" title="Open the project website"><i class="fas fa-globe paper-link__icon" aria-hidden="true"></i><span>Web</span></a><a class="paper-link paper-link--code" href="https://github.com/JiaqiZhang-Sengoku/PriMD" title="View code on GitHub"><i class="fab fa-github paper-link__icon" aria-hidden="true"></i><span>Code</span></a><a class="paper-link paper-link--huggingface" href="https://huggingface.co/JiaqiZhang-Sengoku/PriMD" title="View PriMD on Hugging Face"><span class="paper-link__icon paper-link__icon--huggingface" aria-hidden="true">&#129303;</span><span>Hugging Face</span></a></div>
   </div>
   <img class="paper-method-logo" loading="lazy" decoding="async" src="/Images/Publication/PriMD-Logo.webp" alt="PriMD logo" width="192" height="192">
 </div>
@@ -120,12 +120,32 @@
     <a class="paper-title" href="/LEADer/">Local Epistemic Uncertainty Guided Active Sampling for Plug-and-play Diffusive Image Restoration</a>
     <div class="paper-venue paper-venue--accepted">ACM International Conference on Multimedia (ACM MM 2026) <span class="paper-oral">Oral!</span></div>
     <div class="paper-authors"><span class="paper-author"><strong>Jiaqi Zhang</strong></span>, <span class="paper-author">Zheng Pang</span>, <span class="paper-author">Rongrong Gao</span>, <span class="paper-author">Qiyuan Zhang</span>, <span class="paper-author">Yang Yang<sup>&dagger;</sup></span></div>
-    <div class="paper-links"><a class="paper-link paper-link--paper" href="https://arxiv.org/abs/2608.06981" title="Read the paper"><i class="fas fa-file-alt paper-link__icon" aria-hidden="true"></i><span>Paper</span></a><a class="paper-link paper-link--web" href="/LEADer/" title="Open the project website"><i class="fas fa-globe paper-link__icon" aria-hidden="true"></i><span>Web</span></a><a class="paper-link paper-link--code" href="https://github.com/JiaqiZhang-Sengoku/LEADer" title="View code on GitHub"><i class="fab fa-github paper-link__icon" aria-hidden="true"></i><span>Code</span></a></div>
+    <div class="paper-links"><a class="paper-link paper-link--paper" href="https://arxiv.org/abs/2608.06981" title="Read the paper"><i class="fas fa-file-alt paper-link__icon" aria-hidden="true"></i><span>Paper</span></a><button class="paper-link paper-link--poster" type="button" data-poster-open data-poster-src="/Web/LEADer/Figures/LEADer-Poster.webp?v=20261007" data-poster-title="LEADer Poster" title="View the full poster"><i class="fas fa-image paper-link__icon" aria-hidden="true"></i><span>Poster</span></button><a class="paper-link paper-link--web" href="/LEADer/" title="Open the project website"><i class="fas fa-globe paper-link__icon" aria-hidden="true"></i><span>Web</span></a><a class="paper-link paper-link--code" href="https://github.com/JiaqiZhang-Sengoku/LEADer" title="View code on GitHub"><i class="fab fa-github paper-link__icon" aria-hidden="true"></i><span>Code</span></a></div>
   </div>
   <img class="paper-method-logo" loading="lazy" decoding="async" src="/Images/Publication/LEADer-Logo.webp" alt="LEADer logo" width="192" height="192">
 </div>
 
 <script src="/assets/js/leader-publication-demo.js?v=20260826-timeline" defer></script>
+
+<div class="publication-poster-modal" data-publication-poster-modal aria-hidden="true">
+  <div class="publication-poster-modal__backdrop" data-poster-close></div>
+  <section class="publication-poster-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="publication-poster-title">
+    <div class="publication-poster-modal__toolbar">
+      <h2 class="publication-poster-modal__title" id="publication-poster-title" data-poster-title>Poster</h2>
+      <div class="publication-poster-modal__controls" role="group" aria-label="Poster controls">
+        <button class="publication-poster-modal__control" type="button" data-poster-zoom-out aria-label="Zoom out">−</button>
+        <span class="publication-poster-modal__zoom-value" data-poster-zoom-value>100%</span>
+        <button class="publication-poster-modal__control" type="button" data-poster-zoom-in aria-label="Zoom in">+</button>
+        <button class="publication-poster-modal__control publication-poster-modal__control--reset" type="button" data-poster-zoom-reset>Reset</button>
+        <button class="publication-poster-modal__control publication-poster-modal__control--close" type="button" data-poster-close aria-label="Close poster">×</button>
+      </div>
+    </div>
+    <div class="publication-poster-modal__viewport" data-poster-viewport>
+      <img class="publication-poster-modal__image" data-poster-image alt="Full poster" decoding="async">
+    </div>
+  </section>
+</div>
+<script src="/assets/js/publication-poster-modal.js?v=20261007" defer></script>
 
 {% comment %}
 Temporarily hidden: non-ACM-MM publications.
