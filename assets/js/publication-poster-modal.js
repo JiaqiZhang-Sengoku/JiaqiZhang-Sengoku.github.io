@@ -27,8 +27,7 @@
     if (open) {
       opener = document.activeElement;
       image.setAttribute("src", source);
-      zoom = 1;
-      updateZoom();
+      applyZoom(1);
       window.setTimeout(function () {
         var close = modal.querySelector("[data-poster-close].publication-poster-modal__control");
         if (close) close.focus();
@@ -38,9 +37,30 @@
     }
   }
 
-  function changeZoom(amount) {
-    zoom = Math.min(2.6, Math.max(0.6, +(zoom + amount).toFixed(2)));
+  function applyZoom(nextZoom, pointer) {
+    var oldWidth = image.offsetWidth;
+    var oldHeight = image.offsetHeight;
+    var oldLeft = image.offsetLeft;
+    var oldTop = image.offsetTop;
+    var viewportRect = viewport ? viewport.getBoundingClientRect() : null;
+    var pointX = pointer && viewportRect ? pointer.clientX - viewportRect.left + viewport.scrollLeft : null;
+    var pointY = pointer && viewportRect ? pointer.clientY - viewportRect.top + viewport.scrollTop : null;
+    var ratioX = pointX !== null && oldWidth ? (pointX - oldLeft) / oldWidth : 0.5;
+    var ratioY = pointY !== null && oldHeight ? (pointY - oldTop) / oldHeight : 0.5;
+
+    zoom = Math.min(2.6, Math.max(0.6, +nextZoom.toFixed(2)));
     updateZoom();
+
+    if (pointer && viewportRect && viewport) {
+      var nextLeft = image.offsetLeft + ratioX * image.offsetWidth - (pointer.clientX - viewportRect.left);
+      var nextTop = image.offsetTop + ratioY * image.offsetHeight - (pointer.clientY - viewportRect.top);
+      viewport.scrollLeft = Math.max(0, nextLeft);
+      viewport.scrollTop = Math.max(0, nextTop);
+    }
+  }
+
+  function changeZoom(amount) {
+    applyZoom(zoom + amount);
   }
 
   Array.prototype.forEach.call(openButtons, function (button) {
@@ -58,9 +78,17 @@
   modal.querySelector("[data-poster-zoom-in]")?.addEventListener("click", function () { changeZoom(0.2); });
   modal.querySelector("[data-poster-zoom-out]")?.addEventListener("click", function () { changeZoom(-0.2); });
   modal.querySelector("[data-poster-zoom-reset]")?.addEventListener("click", function () {
-    zoom = 1;
-    updateZoom();
+    applyZoom(1);
   });
+
+  if (viewport) {
+    viewport.addEventListener("wheel", function (event) {
+      if (!event.ctrlKey) return;
+      event.preventDefault();
+      var factor = event.deltaY < 0 ? 1.15 : 1 / 1.15;
+      applyZoom(zoom * factor, event);
+    }, { passive: false });
+  }
 
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape" && modal.classList.contains("is-open")) setOpen(false);

@@ -145,7 +145,7 @@
     </div>
   </section>
 </div>
-<script src="/assets/js/publication-poster-modal.js?v=20261007" defer></script>
+<script src="/assets/js/publication-poster-modal.js?v=20261007-ctrl-wheel" defer></script>
 
 {% comment %}
 Temporarily hidden: non-ACM-MM publications.
