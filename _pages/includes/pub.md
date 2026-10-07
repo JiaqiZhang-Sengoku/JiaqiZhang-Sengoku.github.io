@@ -12,7 +12,7 @@
   <div class="paper-box-image">
     <div>
       <div class="badge badge--accepted">TMLR 2026</div>
-      <img loading="lazy" decoding="async" src="Images/Publication/Agent.webp?v=20260921-hq2" alt="Evidence tracing and execution provenance framework for LLM agents" width="2400" height="1751">
+      <img loading="lazy" decoding="async" src="Images/Publication/Agent-Tracing-Survey.webp?v=20261007-hq" alt="Evidence tracing and execution provenance framework for LLM agents" width="2400" height="1351">
     </div>
   </div>
   <div class="paper-box-text">
