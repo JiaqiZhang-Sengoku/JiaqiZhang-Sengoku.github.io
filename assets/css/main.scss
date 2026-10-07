@@ -2383,11 +2383,6 @@ body > #main > .sidebar.sticky {
     transition: transform 0.26s ease, opacity 0.26s ease, filter 0.26s ease;
 }
 
-.paper-box:has(.paper-method-logo) .paper-box-text {
-    --paper-logo-safe-space: 46px;
-    padding-right: var(--paper-logo-safe-space) !important;
-}
-
 .paper-box:has(.paper-method-logo) .paper-links {
     gap: 4px;
 }
@@ -2462,6 +2457,7 @@ body > #main > .sidebar.sticky {
     font-size: 1.1em;
     font-weight: 800;
     line-height: 1;
+    white-space: nowrap;
 }
 
 .paper-venue--review {
@@ -4133,11 +4129,6 @@ body > #main > .sidebar.sticky {
 
     .paper-box-text {
         padding: 3px 2px 5px !important;
-    }
-
-    .paper-box:has(.paper-method-logo) .paper-box-text {
-        --paper-logo-safe-space: 38px;
-        padding-right: var(--paper-logo-safe-space) !important;
     }
 
     .paper-box:has(.paper-method-logo) .paper-links {
