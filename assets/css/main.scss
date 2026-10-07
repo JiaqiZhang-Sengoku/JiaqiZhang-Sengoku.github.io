@@ -3519,14 +3519,15 @@ body > #main > .sidebar.sticky {
     position: absolute;
     z-index: 2;
     top: 8px;
-    right: 16px;
-    left: auto;
+    right: auto;
+    left: 50%;
     margin: 0;
     color: #000;
     font-size: 0.74rem;
     line-height: 1.2;
-    text-align: right;
+    text-align: center;
     white-space: nowrap;
+    transform: translateX(-50%);
 }
 
 .visitor-traffic.is-fallback .visitor-chart__source {
