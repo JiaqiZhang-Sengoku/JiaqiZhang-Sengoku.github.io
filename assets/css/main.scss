@@ -1556,9 +1556,20 @@ body > #main > .sidebar.sticky {
 
 .update-item-layout {
     display: grid;
-    grid-template-columns: 5.1em minmax(0, 1fr);
-    gap: 0 8px;
+    grid-template-columns: 1.6em 5.1em minmax(0, 1fr);
+    gap: 0 7px;
     align-items: start;
+}
+
+.update-symbol {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 1.6em;
+    min-height: 1.38em;
+    font-size: 1em;
+    line-height: 1.38;
+    text-align: center;
 }
 
 .update-message {
