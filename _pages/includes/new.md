@@ -5,10 +5,18 @@
 
 <div class="updates-panel" aria-label="Monthly news">
   <div class="update-card">
+    <h3 class="update-date">October 2026</h3>
+    <ul class="update-list">
+      <li><span class="update-item-layout"><span class="update-day">Oct. 04:</span><span class="update-message">I have been invited to serve as a Reviewer for <span class="highlight-review-conference">ICLR 2027</span>.</span></span></li>
+    </ul>
+  </div>
+  <div class="update-card">
     <h3 class="update-date">September 2026</h3>
     <ul class="update-list">
+      <li><span class="update-item-layout"><span class="update-day">Sep. 29:</span><span class="update-message">I have been invited to serve as a Reviewer for <span class="highlight-review-conference">ICASSP 2027</span>.</span></span></li>
       <li><span class="update-item-layout"><span class="update-day">Sep. 27:</span><span class="update-message">We have 1 paper (Incomplete Multimodal Medical Diagnosis) accepted to <span class="highlight-journal">Pattern Recognition (PR 2026 IF = 9.1).</span></span></span></li>
       <li><span class="update-item-layout"><span class="update-day">Sep. 20:</span><span class="update-message">We have 1 paper (Survey of LLM Agent) accepted to <span class="highlight-journal">Transactions on Machine Learning Research (TMLR 2026).</span></span></span></li>
+      <li><span class="update-item-layout"><span class="update-day">Sep. 12:</span><span class="update-message">I have been invited to serve as a Reviewer for <span class="highlight-review-journal">Engineering Applications of Artificial Intelligence (EAAI)</span>.</span></span></li>
     </ul>
   </div>
   <div class="update-card">
