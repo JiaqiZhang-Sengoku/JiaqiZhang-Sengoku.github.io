@@ -4,14 +4,14 @@
     <h2 class="section-heading__title" id="academic-services-title">Academic Services</h2>
   </div>
   <div class="academic-services-panel" role="list">
-    <div class="academic-service" role="listitem">
+    <div class="academic-service academic-service--journal" role="listitem">
       <div class="academic-service__type">
         <span class="academic-service__icon" aria-hidden="true"><i class="fas fa-book-open"></i></span>
         <strong>Journal Reviewer</strong>
       </div>
       <p>Engineering Applications of Artificial Intelligence <span class="academic-service__acronym">(EAAI)</span></p>
     </div>
-    <div class="academic-service" role="listitem">
+    <div class="academic-service academic-service--conference" role="listitem">
       <div class="academic-service__type">
         <span class="academic-service__icon" aria-hidden="true"><i class="fas fa-users"></i></span>
         <strong>Conference Reviewer</strong>
